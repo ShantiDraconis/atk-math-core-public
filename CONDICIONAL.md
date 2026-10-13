@@ -74,6 +74,24 @@ NS (C)/(D): portão rodado no ambiente externo (run `38387829506` em `atk-navier
 Em todos os portões os controles passaram: decisão verdadeira de brinquedo aceita; `axiom`,
 `sorry`, ponte sem H, explosão sem testemunha e `alvo ∨ ¬alvo` recusados.
 
+## 2d. Regime suave — versões relaxadas que já são teoremas (sub-alvos fechados no kernel)
+
+Mesma lógica do NS: lá fechou a versão **com força** (C)/(D). Para cada problema, a versão
+relaxada correspondente que já é teorema foi formalizada e passou pelo mesmo portão
+(`CLOSED_MATH_SUB`). O alvo oficial continua com a sua própria bandeira, que não muda por isso.
+
+| Problema | Versão relaxada fechada (kernel) | O que falta para o alvo oficial |
+|---|---|---|
+| NS | (C), (D) com força; **(B) para a família laminar** (`laminar_global`) | (A)/(B) para todo dado, sem força |
+| Riemann | **faixa crítica** `0 < Re s < 1`, **simetria** `s ↔ 1 − s`, zeros triviais (`RHStrip`) | estreitar a faixa até a reta `Re s = 1/2` |
+| Beal | **Beal sobre polinômios** `ℚ[X]` (`beal_poly`, via Mason–Stothers) e **diagonal** `x=y=z=n`, `3∣n` ou `4∣n` | os inteiros com expoentes arbitrários (o análogo inteiro de Mason–Stothers é a conjectura abc) |
+| P vs NP | — (relaxadas conhecidas: separação com oráculo, hierarquia de tempo; não formalizadas em TM2) | cota inferior para SAT sem oráculo |
+| BSD | — (relaxada conhecida: ordem analítica ≤ 1, Gross–Zagier–Kolyvagin; não formalizada) | ordem ≥ 2 |
+| Hodge | — (relaxada conhecida: `p = 1`, Lefschetz; falta a geometria na Mathlib) | `p ≥ 2` |
+| Yang–Mills | — (relaxadas conhecidas: modelos em dimensão 2 e 3; falta a fundação) | 4 dimensões com lacuna |
+
+Runs: Beal `38415686430` (2/2), Riemann `38415688927` (3/3), NS `38415696751` (1/1).
+
 ## 3. Itens deste repositório — o que precisa ser arrumado
 
 | # | Item | Por que é condicional | O que fechar |
