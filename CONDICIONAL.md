@@ -20,7 +20,8 @@ tabela registra também o **estado de H**.
 
 | Problema | Alvo exato | Hipótese H | Ponte (kernel) | Estado de H | Repositório |
 |---|---|---|---|---|---|
-| NS (C) | `ATK.Exact.ClayC` | `FCBreakdownR3` (enunciado da OpenAI, Apache-2.0) | `ATK.NSBridge.clayC_of_fc` | **prova externa reivindicada** (Lean, 816 arquivos); compilação em auditoria (Q2) | `atk-navier-stokes-public` |
+| NS (C) | `ATK.Exact.ClayC` | `FCBreakdownR3` (enunciado da OpenAI, Apache-2.0) | `ATK.NSBridge.clayC_of_fc` | **demonstrada por prova externa** (OpenAI): compila só com axiomas padrão e `atk_clayC_certified : ClayC` foi aceito pelo kernel no ambiente deles (13/10/2026) → (C) **FECHADO por prova externa** | `atk-navier-stokes-public` |
+| NS (D) | `ATK.Exact.ClayD` | teorema periódico da OpenAI | ponte ATK por escrever | axiomas padrão verificados; **CONDICIONAL** à ponte | `atk-navier-stokes-public` |
 | NS (A)/(B) | `ClayA`, `ClayB` | — | — | **abertos**, sem ponte | `atk-navier-stokes-public` |
 | Riemann | `RiemannHypothesis` (Mathlib) | `NoZerosRightOfHalf`: `ζ(s) ≠ 0` em `Re s > 1/2` | `ATK.RHBridge.rh_of_noZerosRightOfHalf` | **aberta**; equivalente ao alvo (`rh_iff_noZerosRightOfHalf`) | `atk-riemann-public` |
 | P vs NP | `ATK.Exact.P_ne_NP` (TM2 da Mathlib) | `SAT ∈ NP ∧ G2.1(SAT)` | `ATK.PNPBridge.pne_np_of_H` | P01: teorema clássico **não formalizado**; G2.1 ⇔ `SAT ∉ P` (`g21_iff_not_inP`): **aberta** | `atk-p-vs-np-public` |
@@ -61,5 +62,6 @@ stated hypothesis H + kernel-checked bridge `H → target`. Bridges now exist fo
 P vs NP, Beal and BSD (BSD became statable thanks to Mathlib's elliptic-curve L-function). For
 Riemann, Beal and SAT-lower-bound, H is equivalent to the target (a reformulation); for BSD, H
 splits into a published-but-unformalized theorem (modularity) and the open rank equality; for
-NS-(C), H has an external claimed proof under audit. Yang–Mills and Hodge remain not statable in
+NS-(C), H has an external proof that now passes the Lean kernel (OpenAI's environment), so (C) is
+closed by an external proof; (A)/(B) remain open. Yang–Mills and Hodge remain not statable in
 Mathlib; their current interfaces are shown vacuous/independent by kernel-checked lemmas.
