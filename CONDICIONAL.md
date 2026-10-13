@@ -24,7 +24,7 @@ tabela registra também o **estado de H**.
 | NS (D) | `ATK.Exact.ClayD` | `FCBreakdownPeriodic` (OpenAI) | `ATK.NSBridgeD.clayD_of_fc` | **demonstrada por prova externa**: `atk_clayD_certified : ClayD` aceito pelo kernel no ambiente deles → (D) **FECHADO por prova externa** | `atk-navier-stokes-public` |
 | NS (A)/(B) | `ClayA`, `ClayB` | — | — | **abertos**, sem ponte | `atk-navier-stokes-public` |
 | Riemann | `RiemannHypothesis` (Mathlib) | `NoZerosRightOfHalf`: `ζ(s) ≠ 0` em `Re s > 1/2` | `ATK.RHBridge.rh_of_noZerosRightOfHalf` | **aberta**; equivalente ao alvo (`rh_iff_noZerosRightOfHalf`) | `atk-riemann-public` |
-| P vs NP | `ATK.Exact.P_ne_NP` (TM2 da Mathlib) | `SAT ∈ NP ∧ G2.1(SAT)` | `ATK.PNPBridge.pne_np_of_H` | P01: teorema clássico **não formalizado**; G2.1 ⇔ `SAT ∉ P` (`g21_iff_not_inP`): **aberta** | `atk-p-vs-np-public` |
+| P vs NP | `ATK.Exact.P_ne_NP` (TM2 da Mathlib) | `SAT ∈ NP ∧ G2.1(SAT)` | `ATK.PNPBridge.pne_np_of_H` | P01: **fechado no modelo do programa** (`p01ConstructionGap_closed`, runs 37913791428/38420031935; falta refazer em TM2); G2.1 ⇔ `SAT ∉ P`: **aberta** | `atk-p-vs-np-public` |
 | Beal | `ATK.Exact.Beal` | `GCDLowerBoundProducer` (do programa) | `ATK.BealBridge.beal_of_producer` | **aberta**; equivalente ao alvo (`producer_iff_beal`) | `atk-beal-public` |
 | BSD | `ATK.BSDBridge.BSDRank` — **novo**: forma oficial do Clay com `WeierstrassCurve.LSeries` da Mathlib | `AnalyticContinuation ∧ RankEquality` | `ATK.BSDBridge.bsd_of_H` | H1: **teorema publicado e aceito** (modularidade), não formalizado; H2: **aberta** | `atk-bsd-public` |
 | Yang–Mills | **não enunciável** (sem QFT axiomática em `ℝ⁴` na Mathlib) | — | — | interface `YMClosure` **vacuosa** (kernel) | `atk-yang-mills-public` |
