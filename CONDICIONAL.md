@@ -51,6 +51,29 @@ Fechar pela explosão = exibir a testemunha; fechar pelo lado regular = provar q
 | Hodge | `HodgeExplosion G` (classe não algébrica) | `hodge_iff_no_explosion` (sobre `G`) | não (a versão inteira explode) |
 | Yang–Mills | `GaplessWitness` (sem lacuna) | `producer_iff_no_explosion` (forma) | não enunciável |
 
+## 2c. Linha de fechamento — CLOSED_MATH calculado pelo kernel
+
+Terceira linha, no mesmo formato das outras duas: **alvo exato** → **certificado** (declaração sem
+hipóteses, de tipo exatamente o alvo ou a sua negação) → **portão** (`closure_gate.py`: kernel +
+axiomas padrão + controles) → **bandeira calculada**. A bandeira não é editável: só muda quando
+o registro recebe uma declaração que o kernel aceita.
+
+| Problema | CLOSED_MATH | Certificado aceito | Como pode chegar um certificado | Repositório |
+|---|---|---|---|---|
+| NS (C) | **true** | `atk_clayC_certified : ClayC` (ambiente externo) | ponte + prova da OpenAI — chegou | `atk-navier-stokes-public` |
+| NS (D) | **true** | `atk_clayD_certified : ClayD` (ambiente externo) | ponte + prova da OpenAI — chegou | `atk-navier-stokes-public` |
+| NS (A)/(B) | false | — | provar regularidade sem força, ou exibir `UnforcedBlowup*` | `atk-navier-stokes-public` |
+| Riemann | false | — | provar `NoZerosRightOfHalf`, ou exibir `OffLineZero` | `atk-riemann-public` |
+| P vs NP | false | — | provar `SATInNP` + G2.1, ou um decisor de SAT + Cook–Levin | `atk-p-vs-np-public` |
+| Beal | false | — | provar `GCDLowerBoundProducer`/descida, ou exibir `PrimitiveSolution` | `atk-beal-public` |
+| BSD | false | — | formalizar H1 e provar H2, ou exibir `RankDiscrepancy` | `atk-bsd-public` |
+| Hodge | false (não enunciável) | — | primeiro a fundação (`G` geométrico) | `atk-hodge-public` |
+| Yang–Mills | false (não enunciável) | — | primeiro a fundação (axiomas OS/Wightman + lacuna) | `atk-yang-mills-public` |
+
+NS (C)/(D): portão rodado no ambiente externo (run `38387829506` em `atk-navier-stokes-public`).
+Em todos os portões os controles passaram: decisão verdadeira de brinquedo aceita; `axiom`,
+`sorry`, ponte sem H, explosão sem testemunha e `alvo ∨ ¬alvo` recusados.
+
 ## 3. Itens deste repositório — o que precisa ser arrumado
 
 | # | Item | Por que é condicional | O que fechar |
