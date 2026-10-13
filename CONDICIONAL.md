@@ -21,7 +21,7 @@ tabela registra também o **estado de H**.
 | Problema | Alvo exato | Hipótese H | Ponte (kernel) | Estado de H | Repositório |
 |---|---|---|---|---|---|
 | NS (C) | `ATK.Exact.ClayC` | `FCBreakdownR3` (enunciado da OpenAI, Apache-2.0) | `ATK.NSBridge.clayC_of_fc` | **demonstrada por prova externa** (OpenAI): compila só com axiomas padrão e `atk_clayC_certified : ClayC` foi aceito pelo kernel no ambiente deles (13/10/2026) → (C) **FECHADO por prova externa** | `atk-navier-stokes-public` |
-| NS (D) | `ATK.Exact.ClayD` | teorema periódico da OpenAI | ponte ATK por escrever | axiomas padrão verificados; **CONDICIONAL** à ponte | `atk-navier-stokes-public` |
+| NS (D) | `ATK.Exact.ClayD` | `FCBreakdownPeriodic` (OpenAI) | `ATK.NSBridgeD.clayD_of_fc` | **demonstrada por prova externa**: `atk_clayD_certified : ClayD` aceito pelo kernel no ambiente deles → (D) **FECHADO por prova externa** | `atk-navier-stokes-public` |
 | NS (A)/(B) | `ClayA`, `ClayB` | — | — | **abertos**, sem ponte | `atk-navier-stokes-public` |
 | Riemann | `RiemannHypothesis` (Mathlib) | `NoZerosRightOfHalf`: `ζ(s) ≠ 0` em `Re s > 1/2` | `ATK.RHBridge.rh_of_noZerosRightOfHalf` | **aberta**; equivalente ao alvo (`rh_iff_noZerosRightOfHalf`) | `atk-riemann-public` |
 | P vs NP | `ATK.Exact.P_ne_NP` (TM2 da Mathlib) | `SAT ∈ NP ∧ G2.1(SAT)` | `ATK.PNPBridge.pne_np_of_H` | P01: teorema clássico **não formalizado**; G2.1 ⇔ `SAT ∉ P` (`g21_iff_not_inP`): **aberta** | `atk-p-vs-np-public` |
@@ -42,7 +42,7 @@ Fechar pela explosão = exibir a testemunha; fechar pelo lado regular = provar q
 
 | Problema | Testemunha de explosão | Dicotomia (kernel) | Testemunha conhecida? |
 |---|---|---|---|
-| NS (C)/(D) | explosão com força | `clayC_of_fc`, `clayD_of_fc` | **sim** — prova da OpenAI (C verificado no kernel; D em verificação) |
+| NS (C)/(D) | explosão com força | `clayC_of_fc`, `clayD_of_fc` | **sim** — prova da OpenAI; C e D verificados no kernel |
 | NS (A)/(B) | `UnforcedBlowupR3`, `UnforcedBlowupTorus` | `clayA_iff_no_explosion`, `clayB_iff_no_explosion` | não |
 | Riemann | `OffLineZero` (zero com `Re s > 1/2`) | `rh_iff_no_explosion` | não |
 | P vs NP | `CollapseWitness` (decisor de SAT) ou `LowerBoundExplosion` (G2.1) | `explosion_dichotomy` | não |
