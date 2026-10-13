@@ -34,6 +34,23 @@ Onde a tabela diz "equivalente ao alvo", a ponte é uma **reformulação**, não
 é exatamente tão difícil quanto provar o alvo. Ela continua útil porque fixa o enunciado e liga a
 rota do programa ao alvo oficial, sem hipóteses escondidas.
 
+## 2b. Linhas de explosão (adaptação do NS a cada problema)
+
+No NS a explosão (blow-up) fechou (C) e (D). Para cada problema a mesma forma foi escrita no
+kernel: **testemunha de explosão** → **refutação** → **dicotomia** `alvo ↔ não há explosão`.
+Fechar pela explosão = exibir a testemunha; fechar pelo lado regular = provar que ela não existe.
+
+| Problema | Testemunha de explosão | Dicotomia (kernel) | Testemunha conhecida? |
+|---|---|---|---|
+| NS (C)/(D) | explosão com força | `clayC_of_fc`, `clayD_of_fc` | **sim** — prova da OpenAI (C verificado no kernel; D em verificação) |
+| NS (A)/(B) | `UnforcedBlowupR3`, `UnforcedBlowupTorus` | `clayA_iff_no_explosion`, `clayB_iff_no_explosion` | não |
+| Riemann | `OffLineZero` (zero com `Re s > 1/2`) | `rh_iff_no_explosion` | não |
+| P vs NP | `CollapseWitness` (decisor de SAT) ou `LowerBoundExplosion` (G2.1) | `explosion_dichotomy` | não |
+| Beal | `PrimitiveSolution` (certificado finito) | `beal_iff_no_explosion`, `descent_iff_no_explosion` | não |
+| BSD | `RankDiscrepancy` (ordem ≠ posto) | `bsd_iff_no_explosion` (dada H1) | não |
+| Hodge | `HodgeExplosion G` (classe não algébrica) | `hodge_iff_no_explosion` (sobre `G`) | não (a versão inteira explode) |
+| Yang–Mills | `GaplessWitness` (sem lacuna) | `producer_iff_no_explosion` (forma) | não enunciável |
+
 ## 3. Itens deste repositório — o que precisa ser arrumado
 
 | # | Item | Por que é condicional | O que fechar |
