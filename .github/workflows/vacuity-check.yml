@@ -1,0 +1,66 @@
+name: Auditoria de vacuidade (Lean core)
+
+# Compila audit/Vacuity.lean só com o Lean core (sem Mathlib, sem MCore) e exige:
+#   * nenhuma mensagem de erro;
+#   * todo `#print axioms` sem axiomas além de propext / Classical.choice / Quot.sound.
+# Os teoremas desse arquivo mostram se a estrutura de "fechamento" importada neste repositório
+# pode ser habitada SEM a matemática do problema (vacuidade) — o que a torna CONDICIONAL.
+
+on:
+  push:
+    paths:
+      - "audit/**"
+      - ".github/workflows/vacuity-check.yml"
+  pull_request:
+    paths:
+      - "audit/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  vacuity:
+    name: Kernel — audit/Vacuity.lean
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar Lean v4.34.1 (elan)
+        shell: bash
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o elan-init.sh
+          bash elan-init.sh -y --default-toolchain leanprover/lean4:v4.34.1
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Compilar e auditar axiomas
+        shell: bash
+        run: |
+          lean --version
+          lean audit/Vacuity.lean > vacuity.log 2>&1 || true
+          cat vacuity.log
+          python3 - <<'PY'
+          import re, sys
+          t = open("vacuity.log").read()
+          ok = True
+          if re.search(r"(^|\n)[^\n]*error", t):
+              ok = False
+              print("::error title=Vacuity.lean::erro de compilação")
+          allowed = {"propext", "Classical.choice", "Quot.sound"}
+          n = 0
+          for m in re.finditer(r"'([^']+)' depends on axioms: \[([^\]]*)\]", t, re.S):
+              n += 1
+              ax = {a.strip() for a in m.group(2).replace("\n", " ").split(",") if a.strip()}
+              good = ax <= allowed
+              ok &= good
+              print(f"::notice title={m.group(1)}::{'OK' if good else 'FALHOU'} axiomas={sorted(ax)}")
+          for m in re.finditer(r"'([^']+)' does not depend on any axioms", t):
+              n += 1
+              print(f"::notice title={m.group(1)}::OK sem axiomas")
+          if n == 0:
+              ok = False
+              print("::error title=Vacuity.lean::nenhum #print axioms encontrado")
+          print(f"::notice title=resumo::{n} declarações auditadas; {'CERTIFICADO' if ok else 'FALHOU'}")
+          sys.exit(0 if ok else 1)
+          PY
