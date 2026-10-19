@@ -16,6 +16,9 @@ Formal specification, Lean 4 proof engineering, proof-auditing workflows, depend
 
 Links identify research repositories; **they are not endorsements of theorem correctness or build status**.
 
+## Verified engineering case study
+- [Lean Audit Kit — CI hardening](CASE_STUDIES/LEAN_AUDIT_KIT_CI_HARDENING.md): successful GitHub Actions run on commit `d561024b`, with source-level CI security changes; private code remains under review.
+
 ## Engineering projects under private review
 - Lean Audit Kit: source-level checks for proof placeholders and explicit axiom declarations. **Pre-release; full kernel audit not established.**
 - M-Core: formal audit framework for invariants and dependency rules. **Build and proof claims require verification.**
