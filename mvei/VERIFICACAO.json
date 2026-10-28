@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-28T13:47:17+00:00",
+ "generated_at": "2026-10-28T16:41:02+00:00",
  "standard_axioms": [
   "Classical.choice",
   "Quot.sound",
   "propext"
  ],
  "source_repository": "ShantiDraconis/M-Core",
- "verified_commit": "60a04e720bb2352053d572dbfbc25445a4af5f6d",
+ "verified_commit": "390e3781109fa42e977d143caa9204ed94166a7b",
  "projects": [
   {
    "repo": "M-Core",
@@ -15,7 +15,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 64.9,
+   "build_seconds": 56.7,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -1869,7 +1869,4034 @@
     }
    ],
    "integrity": [],
-   "note": "",
+   "note": "CORRIGIDO PELO MVEI (imports-no-topo): imports movidos para o início (antes de comentários de módulo ou de documentação) em 24 arquivo(s).",
+   "corrections": [
+    "imports-no-topo"
+   ],
+   "lakefile_gerado": "",
+   "avulso": false,
+   "salvage": [
+    {
+     "arquivo": "Contaminated/NotImported/atk-kernel-experimentos/AxiomaHipotetico.lean",
+     "linha": 25,
+     "nome": "ATK.Experimento.rh_e_beal_postulados",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'ATK' No directory 'ATK' or file 'ATK.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batteries/.lake/build/lib/lean ././.lake/p"
+    },
+    {
+     "arquivo": "Contaminated/NotImported/atk-kernel-experimentos/AxiomaHipotetico.lean",
+     "linha": 31,
+     "nome": "ATK.Experimento.rh_e_nao_rh",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'ATK' No directory 'ATK' or file 'ATK.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batteries/.lake/build/lib/lean ././.lake/p"
+    },
+    {
+     "arquivo": "Contaminated/NotImported/atk-kernel-experimentos/AxiomaHipotetico.lean",
+     "linha": 34,
+     "nome": "ATK.Experimento.falso",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'ATK' No directory 'ATK' or file 'ATK.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batteries/.lake/build/lib/lean ././.lake/p"
+    },
+    {
+     "arquivo": "Contaminated/NotImported/atk-kernel-experimentos/AxiomaHipotetico.lean",
+     "linha": 36,
+     "nome": "ATK.Experimento.rh_por_sorry",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "unknown module prefix 'ATK' No directory 'ATK' or file 'ATK.olean' in the search path entries: ././.lake/packages/Cli/.lake/build/lib/lean ././.lake/packages/batteries/.lake/build/lib/lean ././.lake/p"
+    },
+    {
+     "arquivo": "Contaminated/NotImported/lean-MCore/Poincare.lean",
+     "linha": 78,
+     "nome": "MCore.Poincare.core_formal_gaps_zero",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "Contaminated/NotImported/lean-MCore/Poincare.lean",
+     "linha": 80,
+     "nome": "MCore.Poincare.material_producer_gaps_zero",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "Contaminated/NotImported/lean-MCore/Poincare.lean",
+     "linha": 81,
+     "nome": "MCore.Poincare.formal_import_gap_one",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "Contaminated/NotImported/lean-MCore/Poincare.lean",
+     "linha": 82,
+     "nome": "MCore.Poincare.poincare_claims_one",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "Contaminated/NotImported/lean-MCore/Poincare.lean",
+     "linha": 83,
+     "nome": "MCore.Poincare.promote_to_kernel_endpoint",
+     "status": "aberto-sorry",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "MCore/A1Amplitude.lean",
+     "linha": 10,
+     "nome": "MCore.amplitude_unbounded",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Core.olean' of module MCore.Core does not exist"
+    },
+    {
+     "arquivo": "MCore/A1Amplitude.lean",
+     "linha": 26,
+     "nome": "MCore.no_fixed_delta_gap",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Core.olean' of module MCore.Core does not exist"
+    },
+    {
+     "arquivo": "MCore/A3Zero.lean",
+     "linha": 13,
+     "nome": "MCore.no_path_independent_extension",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Core.olean' of module MCore.Core does not exist"
+    },
+    {
+     "arquivo": "MCore/A4Scale.lean",
+     "linha": 19,
+     "nome": "MCore.scaleCritical_implies_positive",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Core.olean' of module MCore.Core does not exist"
+    },
+    {
+     "arquivo": "MCore/A4Scale.lean",
+     "linha": 53,
+     "nome": "MCore.rhoStarScaleLaw_holds",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Core.olean' of module MCore.Core does not exist"
+    },
+    {
+     "arquivo": "MCore/Admissible.lean",
+     "linha": 45,
+     "nome": "MCore.certifiedObligations_iff_zeroTotal",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A1Amplitude.olean' of module MCore.A1Amplitude does not exist"
+    },
+    {
+     "arquivo": "MCore/Admissible.lean",
+     "linha": 62,
+     "nome": "MCore.adapter_to_classification",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A1Amplitude.olean' of module MCore.A1Amplitude does not exist"
+    },
+    {
+     "arquivo": "MCore/BSDLogicOpenMath.lean",
+     "linha": 39,
+     "nome": "MCore.BSDLogic.collision_refutes_complete_representation",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/IBoundaryProvenance.olean' of module MCore.IBoundaryProvenance does not exist"
+    },
+    {
+     "arquivo": "MCore/BSDLogicOpenMath.lean",
+     "linha": 59,
+     "nome": "MCore.BSDLogic.BSDClosureLogicRefutation",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/IBoundaryProvenance.olean' of module MCore.IBoundaryProvenance does not exist"
+    },
+    {
+     "arquivo": "MCore/BSDLogicOpenMath.lean",
+     "linha": 71,
+     "nome": "MCore.BSDLogic.certificate_ready_implies_logic_refutation",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/IBoundaryProvenance.olean' of module MCore.IBoundaryProvenance does not exist"
+    },
+    {
+     "arquivo": "MCore/Bridge20.lean",
+     "linha": 14,
+     "nome": "MCore.bridge20_not_certified",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/CertificateKernel.olean' of module MCore.CertificateKernel does not exist"
+    },
+    {
+     "arquivo": "MCore/CertificateKernel.lean",
+     "linha": 27,
+     "nome": "MCore.no_open",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "MCore/CertificateKernel.lean",
+     "linha": 36,
+     "nome": "MCore.no_promotion",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "MCore/Core.lean",
+     "linha": 38,
+     "nome": "MCore.admissible_preserves_S0",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "MCore/DAG.lean",
+     "linha": 32,
+     "nome": "MCore.forbiddenFixture_g1CycleNonempty",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A2SelfRef.olean' of module MCore.A2SelfRef does not exist"
+    },
+    {
+     "arquivo": "MCore/DAG.lean",
+     "linha": 40,
+     "nome": "MCore.forbiddenFixture_hasFeedback",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A2SelfRef.olean' of module MCore.A2SelfRef does not exist"
+    },
+    {
+     "arquivo": "MCore/DAG.lean",
+     "linha": 45,
+     "nome": "MCore.forbiddenFixture_hasDownstreamViolation",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A2SelfRef.olean' of module MCore.A2SelfRef does not exist"
+    },
+    {
+     "arquivo": "MCore/DAG.lean",
+     "linha": 50,
+     "nome": "MCore.forbidden_detected_rejected",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A2SelfRef.olean' of module MCore.A2SelfRef does not exist"
+    },
+    {
+     "arquivo": "MCore/DAG.lean",
+     "linha": 84,
+     "nome": "MCore.downstreamFixture_noFeedback",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A2SelfRef.olean' of module MCore.A2SelfRef does not exist"
+    },
+    {
+     "arquivo": "MCore/DAG.lean",
+     "linha": 88,
+     "nome": "MCore.downstreamFixture_noViolation",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A2SelfRef.olean' of module MCore.A2SelfRef does not exist"
+    },
+    {
+     "arquivo": "MCore/DAG.lean",
+     "linha": 95,
+     "nome": "MCore.downstream_accepted",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A2SelfRef.olean' of module MCore.A2SelfRef does not exist"
+    },
+    {
+     "arquivo": "MCore/DagAudit.lean",
+     "linha": 23,
+     "nome": "MCore.blocked_necessary",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/CertificateKernel.olean' of module MCore.CertificateKernel does not exist"
+    },
+    {
+     "arquivo": "MCore/DagAudit.lean",
+     "linha": 66,
+     "nome": "MCore.audit_illegal_promotions",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/CertificateKernel.olean' of module MCore.CertificateKernel does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 71,
+     "nome": "MCore.IBoundary.singularity_kinds_pairwise_distinct",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 80,
+     "nome": "MCore.IBoundary.canonical_states_pairwise_distinct",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 85,
+     "nome": "MCore.IBoundary.canonical_states_boundary_equivalent",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 99,
+     "nome": "MCore.IBoundary.approach_orientation_distinct",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 103,
+     "nome": "MCore.IBoundary.approach_states_distinct",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 109,
+     "nome": "MCore.IBoundary.negative_terminal_limit",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 115,
+     "nome": "MCore.IBoundary.positive_terminal_limit",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 121,
+     "nome": "MCore.IBoundary.two_sided_terminal_distance",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 145,
+     "nome": "MCore.IBoundary.same_terminal_different_nature",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 152,
+     "nome": "MCore.IBoundary.same_boundary_different_orientation",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 160,
+     "nome": "MCore.IBoundary.collapse_preserves_terminal",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 168,
+     "nome": "MCore.IBoundary.negative_approach_has_residue",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 172,
+     "nome": "MCore.IBoundary.positive_approach_has_residue",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 176,
+     "nome": "MCore.IBoundary.terminal_projection_not_injective",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/IBoundaryProvenance.lean",
+     "linha": 184,
+     "nome": "MCore.IBoundary.StructuralBoundaryInformationLoss",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "MCore/ScaleFixture.lean",
+     "linha": 13,
+     "nome": "MCore.scaleFixture_invariant",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A4Scale.olean' of module MCore.A4Scale does not exist"
+    },
+    {
+     "arquivo": "MCore/ZeroQuotient.lean",
+     "linha": 13,
+     "nome": "MCore.zeroG_tendsto",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A3Zero.olean' of module MCore.A3Zero does not exist"
+    },
+    {
+     "arquivo": "MCore/ZeroQuotient.lean",
+     "linha": 18,
+     "nome": "MCore.zeroH_tendsto",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A3Zero.olean' of module MCore.A3Zero does not exist"
+    },
+    {
+     "arquivo": "MCore/ZeroQuotient.lean",
+     "linha": 23,
+     "nome": "MCore.quotient_zeroPath",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A3Zero.olean' of module MCore.A3Zero does not exist"
+    },
+    {
+     "arquivo": "MCore/ZeroQuotient.lean",
+     "linha": 29,
+     "nome": "MCore.quotient_tendsto",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A3Zero.olean' of module MCore.A3Zero does not exist"
+    },
+    {
+     "arquivo": "MCore/ZeroQuotient.lean",
+     "linha": 45,
+     "nome": "MCore.K0_RHO_incompatible",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A3Zero.olean' of module MCore.A3Zero does not exist"
+    },
+    {
+     "arquivo": "MCore/ZeroQuotient.lean",
+     "linha": 49,
+     "nome": "MCore.quotient_explicit",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A3Zero.olean' of module MCore.A3Zero does not exist"
+    },
+    {
+     "arquivo": "MCore/ZeroQuotient.lean",
+     "linha": 58,
+     "nome": "MCore.K0_limit",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A3Zero.olean' of module MCore.A3Zero does not exist"
+    },
+    {
+     "arquivo": "MCore/ZeroQuotient.lean",
+     "linha": 65,
+     "nome": "MCore.RHO_limit",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A3Zero.olean' of module MCore.A3Zero does not exist"
+    },
+    {
+     "arquivo": "MCore/ZeroQuotient.lean",
+     "linha": 70,
+     "nome": "MCore.explicit_no_common_extension",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/A3Zero.olean' of module MCore.A3Zero does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BEAL/d039136f/lean/MCore/BackwardAudit/WithoutOracle.lean",
+     "linha": 7,
+     "nome": "MCore.BackwardAudit.witness_contract_closes_beal",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/BealSpecification.olean' of module MCore.BealSpecification does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BEAL/d039136f/lean/MCore/BackwardAudit/WithoutOracle.lean",
+     "linha": 13,
+     "nome": "MCore.BackwardAudit.beal_without_oracle_still_open",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/BealSpecification.olean' of module MCore.BealSpecification does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BEAL/d039136f/lean/MCore/BealSpecification.lean",
+     "linha": 33,
+     "nome": "MCore.counterexample_refutes",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "imports/final-proof/BEAL/d039136f/lean/MCore/BealSpecification.lean",
+     "linha": 37,
+     "nome": "MCore.conjecture_excludes_counterexamples",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "imports/final-proof/BEAL/d039136f/lean/MCore/GCDSignature.lean",
+     "linha": 4,
+     "nome": "MCore.commonPrime_to_commonDivisor",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/BealSpecification.olean' of module MCore.BealSpecification does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BEAL/d039136f/lean/MCore/GCDSignature.lean",
+     "linha": 9,
+     "nome": "MCore.beal_commonPrime_implies_commonDivisor",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/BealSpecification.olean' of module MCore.BealSpecification does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BEAL/d039136f/lean/MCore/K8.lean",
+     "linha": 8,
+     "nome": "MCore.noCommonPrime_is_counterexample",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K7.olean' of module MCore.K7 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BEAL/d039136f/lean/MCore/K8.lean",
+     "linha": 13,
+     "nome": "MCore.beal_excludes_all_counterexamples",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K7.olean' of module MCore.K7 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BEAL/d039136f/lean/MCore/K8.lean",
+     "linha": 19,
+     "nome": "MCore.noCommonPrime_refutes_beal",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K7.olean' of module MCore.K7 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BEAL/d039136f/lean/MCore/K8.lean",
+     "linha": 25,
+     "nome": "MCore.closeBeal_from_commonPrime_witnesses",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K7.olean' of module MCore.K7 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BSD/dfa710de/lean/MCore/BackwardAudit/WithoutOracle.lean",
+     "linha": 7,
+     "nome": "MCore.BackwardAudit.rank_witness_contract_closes",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K13.olean' of module MCore.K13 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BSD/dfa710de/lean/MCore/BackwardAudit/WithoutOracle.lean",
+     "linha": 14,
+     "nome": "MCore.BackwardAudit.bsd_rank_part_without_oracle_still_open",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K13.olean' of module MCore.K13 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BSD/dfa710de/lean/MCore/K13.lean",
+     "linha": 7,
+     "nome": "MCore.k13_consume_open_core",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K12.olean' of module MCore.K12 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BSD/dfa710de/lean/MCore/K13.lean",
+     "linha": 12,
+     "nome": "MCore.k13_open_core_iff_rank_part",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K12.olean' of module MCore.K12 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BSD/dfa710de/lean/MCore/K13.lean",
+     "linha": 20,
+     "nome": "MCore.k13_open_core_status",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K12.olean' of module MCore.K12 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BSD/dfa710de/lean/MCore/K13.lean",
+     "linha": 22,
+     "nome": "MCore.k13_open_core_not_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K12.olean' of module MCore.K12 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BSD/dfa710de/lean/MCore/K13.lean",
+     "linha": 25,
+     "nome": "MCore.k13_open_core_not_certified",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K12.olean' of module MCore.K12 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BSD/dfa710de/lean/MCore/K13.lean",
+     "linha": 31,
+     "nome": "MCore.k13_upstream_k12_open",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K12.olean' of module MCore.K12 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BSD/dfa710de/lean/MCore/K13.lean",
+     "linha": 35,
+     "nome": "MCore.k13_upstream_k11_open",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K12.olean' of module MCore.K12 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BSD/dfa710de/lean/MCore/K14.lean",
+     "linha": 19,
+     "nome": "MCore.k14_chain_preserves_open_core",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K13.olean' of module MCore.K13 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BSD/dfa710de/lean/MCore/K14.lean",
+     "linha": 27,
+     "nome": "MCore.k14_no_false_final_certificate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K13.olean' of module MCore.K13 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BSD/dfa710de/lean/MCore/K14.lean",
+     "linha": 37,
+     "nome": "MCore.k14_final_node_open",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K13.olean' of module MCore.K13 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/BSD/dfa710de/lean/MCore/K14.lean",
+     "linha": 39,
+     "nome": "MCore.k14_final_node_not_certified",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K13.olean' of module MCore.K13 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/HODGE/f0fffbe0/audit/EndpointCompression.lean",
+     "linha": 118,
+     "nome": "HodgeBackwardAudit.endpoint_compression",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K26.olean' of module MCore.K26 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/HODGE/f0fffbe0/audit/EndpointCompression.lean",
+     "linha": 127,
+     "nome": "HodgeBackwardAudit.real_frontier_closes_endpoint",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K26.olean' of module MCore.K26 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/HODGE/f0fffbe0/audit/EndpointCompression.lean",
+     "linha": 134,
+     "nome": "HodgeBackwardAudit.spread_variational_compression",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K26.olean' of module MCore.K26 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/HODGE/f0fffbe0/audit/EndpointCompression.lean",
+     "linha": 153,
+     "nome": "HodgeBackwardAudit.compression_is_nonpromoting",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K26.olean' of module MCore.K26 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/HODGE/f0fffbe0/audit/FinalEndpoint.lean",
+     "linha": 10,
+     "nome": "HodgeBackwardAudit.final_statement_is_existing_endpoint",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K26.olean' of module MCore.K26 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/HODGE/f0fffbe0/audit/FinalEndpoint.lean",
+     "linha": 37,
+     "nome": "HodgeBackwardAudit.endpoint_is_nonpromoting",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K26.olean' of module MCore.K26 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/HODGE/f0fffbe0/lean/MCore/Hodge.lean",
+     "linha": 34,
+     "nome": "MCore.bridge_implies_hodge",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K6.olean' of module MCore.K6 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/HODGE/f0fffbe0/lean/MCore/Hodge.lean",
+     "linha": 43,
+     "nome": "MCore.hodge_algebraicity_bridge_is_open",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K6.olean' of module MCore.K6 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/HODGE/f0fffbe0/lean/MCore/HodgeReduction.lean",
+     "linha": 15,
+     "nome": "MCore.rationalHodge_iff_pointwise",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Hodge.olean' of module MCore.Hodge does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/HODGE/f0fffbe0/lean/MCore/HodgeReduction.lean",
+     "linha": 21,
+     "nome": "MCore.bridge_gives_pointwise",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Hodge.olean' of module MCore.Hodge does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/HODGE/f0fffbe0/lean/MCore/HodgeReduction.lean",
+     "linha": 26,
+     "nome": "MCore.pointwise_closes_hodge",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Hodge.olean' of module MCore.Hodge does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/HODGE/f0fffbe0/lean/MCore/HodgeReduction.lean",
+     "linha": 37,
+     "nome": "MCore.hodge_reduction_proved",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Hodge.olean' of module MCore.Hodge does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/HODGE/f0fffbe0/lean/MCore/HodgeReduction.lean",
+     "linha": 39,
+     "nome": "MCore.pointwise_payload_open",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Hodge.olean' of module MCore.Hodge does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 29,
+     "nome": "MillenniumAudit.G1KAdmissible.K0a_regularizedAmplitude_ge",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 37,
+     "nome": "MillenniumAudit.G1KAdmissible.K0a_regularizedAmplitude_nonneg",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 51,
+     "nome": "MillenniumAudit.G1KAdmissible.K0b_degenerate_branch",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 57,
+     "nome": "MillenniumAudit.G1KAdmissible.K1a_chebyshev_superlevel_arithmetic",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 70,
+     "nome": "MillenniumAudit.G1KAdmissible.K1b_weighted_gradient_budget",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 90,
+     "nome": "MillenniumAudit.G1KAdmissible.K1c_liminf_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 108,
+     "nome": "MillenniumAudit.G1KAdmissible.G1a1_sum_six_term_bounds",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 121,
+     "nome": "MillenniumAudit.G1KAdmissible.G1a5_expansive_mode_detected",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ],
+     "preenchimento": {
+      "resultado": "demonstrável",
+      "tatica": "first | (rfl) | (decide) | (trivial) | (simp) | (omega) | (simp_all) | (exact fun _ => trivial) | (norm_num) | (linarith) | (positivity) | (ring) | (tauto) | (aesop) | (nlinarith)"
+     }
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 139,
+     "nome": "MillenniumAudit.G1KAdmissible.G1a2_joint_evolution",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 177,
+     "nome": "MillenniumAudit.G1KAdmissible.G1bc_bulk_tail_to_signed_depletion",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 196,
+     "nome": "MillenniumAudit.G1KAdmissible.G1b2_total_absorption_budget",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 216,
+     "nome": "MillenniumAudit.G1KAdmissible.G1b3_leray_budget",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 231,
+     "nome": "MillenniumAudit.G1KAdmissible.G1d2_energy_controls_time_coefficient",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 253,
+     "nome": "MillenniumAudit.G1KAdmissible.G2a_enstrophy_differential",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 272,
+     "nome": "MillenniumAudit.G1KAdmissible.G2b_uniform_enstrophy",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 291,
+     "nome": "MillenniumAudit.G1KAdmissible.G3_critical_bound",
+     "status": "erro",
+     "axioms": []
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 302,
+     "nome": "MillenniumAudit.G1KAdmissible.G4_apply_endpoint",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
+     "linha": 314,
+     "nome": "MillenniumAudit.G1KAdmissible.F_conditional_global_regularity",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/G1/G1_DynamicCriticalGeometry.lean",
+     "linha": 30,
+     "nome": "G1Dynamic.tangentialPart_add_parallel",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/G1/G1_DynamicCriticalGeometry.lean",
+     "linha": 43,
+     "nome": "G1Dynamic.tangentialPart_self_formula",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/G1/G1_DynamicCriticalGeometry.lean",
+     "linha": 53,
+     "nome": "G1Dynamic.tangentialPart_self_nonzero_of_nonunit",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/G1/G1_DynamicCriticalGeometry.lean",
+     "linha": 129,
+     "nome": "G1Dynamic.criticalCoherence_interface_admits_vacuous_witness",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/G1/G1_DynamicCriticalGeometry.lean",
+     "linha": 316,
+     "nome": "G1Dynamic.coherenceToKernel_interface_can_ignore_constant",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/G1/G1_DynamicCriticalGeometry.lean",
+     "linha": 341,
+     "nome": "G1Dynamic.dynamic_geometry_closes_G1",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/G1/G1_DynamicCriticalGeometry.lean",
+     "linha": 500,
+     "nome": "G1Dynamic.fullChain_interface_admits_vacuous_composition",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 34,
+     "nome": "CriticalBarrier.B28GapIsolation.sqrt10_gt_three",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 41,
+     "nome": "CriticalBarrier.B28GapIsolation.proposed_strain_chain_exceeds_target",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 84,
+     "nome": "CriticalBarrier.B28GapIsolation.expansive_trace_zero",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 87,
+     "nome": "CriticalBarrier.B28GapIsolation.expansive_total_weight_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 90,
+     "nome": "CriticalBarrier.B28GapIsolation.expansive_is_concentrated",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 96,
+     "nome": "CriticalBarrier.B28GapIsolation.expansive_alignment_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 100,
+     "nome": "CriticalBarrier.B28GapIsolation.traceless_and_concentrated_do_not_force_alignment_09",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
+     "linha": 118,
+     "nome": "CriticalBarrier.B28GapIsolation.signed_flux_from_directional_certificate",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 59,
+     "nome": "CriticalBarrier.B2Deterministic.differential_decay",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 77,
+     "nome": "CriticalBarrier.B2Deterministic.high_L3_squared_bound",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 99,
+     "nome": "CriticalBarrier.B2Deterministic.total_L3_from_low_high",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 114,
+     "nome": "CriticalBarrier.B2Deterministic.target_kappa",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 126,
+     "nome": "CriticalBarrier.B2Deterministic.C_error_decimal_exact",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 132,
+     "nome": "CriticalBarrier.B2Deterministic.arithmetic_at_R51",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
+     "linha": 150,
+     "nome": "CriticalBarrier.B2Deterministic.use_ess",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 12,
+     "nome": "CriticalBarrier.CriticalTail.l3_from_low_high",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 18,
+     "nome": "CriticalBarrier.CriticalTail.critical_tail_coercivity",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 36,
+     "nome": "CriticalBarrier.CriticalTail.shrinkingDefect_pos",
+     "status": "erro",
+     "axioms": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 39,
+     "nome": "CriticalBarrier.CriticalTail.growingCritical_ge_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 42,
+     "nome": "CriticalBarrier.CriticalTail.l2_l3_scaling_exponents",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
+     "linha": 50,
+     "nome": "CriticalBarrier.CriticalTail.endpoint_from_critical_tail",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "imports/final-proof/RIEMANN/ad3011f1/lean/MCore/K8.lean",
+     "linha": 15,
+     "nome": "MCore.rh_endpoint_of_adapter",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K7.olean' of module MCore.K7 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/RIEMANN/ad3011f1/lean/MCore/K8.lean",
+     "linha": 19,
+     "nome": "MCore.k8_preserves_k7_firewall",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K7.olean' of module MCore.K7 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/RIEMANN/ad3011f1/lean/MCore/K8.lean",
+     "linha": 25,
+     "nome": "MCore.k8_k7_target_open",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K7.olean' of module MCore.K7 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/RIEMANN/ad3011f1/lean/MCore/RH/NB/ZeroLimitFrontier.lean",
+     "linha": 11,
+     "nome": "MCore.RH.NB.NBHilbertData.DNToZero_iff_DNLimit_eq_zero",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/RH/NB/Limit.olean' of module MCore.RH.NB.Limit does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/RIEMANN/ad3011f1/lean/MCore/RH/NB/ZeroLimitFrontier.lean",
+     "linha": 22,
+     "nome": "MCore.RH.NB.NBHilbertData.DNToZero_of_le_zero",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/RH/NB/Limit.olean' of module MCore.RH.NB.Limit does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/K13.lean",
+     "linha": 10,
+     "nome": "MCore.k13_hilbert_scope",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K12.olean' of module MCore.K12 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/K13.lean",
+     "linha": 13,
+     "nome": "MCore.k13_gap_still_separate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K12.olean' of module MCore.K12 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/K13.lean",
+     "linha": 16,
+     "nome": "MCore.k13_target_still_open",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K12.olean' of module MCore.K12 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/K13.lean",
+     "linha": 18,
+     "nome": "MCore.k13_no_promotion",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K12.olean' of module MCore.K12 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/K14.lean",
+     "linha": 90,
+     "nome": "MCore.k14_conditional_mass_gap",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K13.olean' of module MCore.K13 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/K14.lean",
+     "linha": 101,
+     "nome": "MCore.k14_target_still_open",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K13.olean' of module MCore.K13 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/K14.lean",
+     "linha": 105,
+     "nome": "MCore.k14_no_promotion",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K13.olean' of module MCore.K13 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/PhysicalGapScaling.lean",
+     "linha": 27,
+     "nome": "MCore.physical_mass_bound_iterates",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/SpectralExclusion.olean' of module MCore.SpectralExclusion does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/PhysicalGapScaling.lean",
+     "linha": 44,
+     "nome": "MCore.finite_volume_gap_not_uniform",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/SpectralExclusion.olean' of module MCore.SpectralExclusion does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/PhysicalGapScaling.lean",
+     "linha": 52,
+     "nome": "MCore.positive_cutoff_gap_not_physical_uniform",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/SpectralExclusion.olean' of module MCore.SpectralExclusion does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/YangMills/A1/B60ConcretePhysicalAdapter.lean",
+     "linha": 82,
+     "nome": "MCore.YangMills.A1.b60_adapter_closes_conditional_chain",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/YangMills/A1/FrontierDecompositionV2.olean' of module MCore.YangMills.A1.FrontierDecompositionV2 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/YangMills/A1/B60ConcretePhysicalAdapter.lean",
+     "linha": 109,
+     "nome": "MCore.YangMills.A1.b60_legacy_endpoint_contains_only_B1_B2",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/YangMills/A1/FrontierDecompositionV2.olean' of module MCore.YangMills.A1.FrontierDecompositionV2 does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/YangMills/A1/FrontierDecomposition.lean",
+     "linha": 64,
+     "nome": "MCore.YangMills.A1.a1_decomposition_count",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/YangMills/A1/FrontierDecomposition.lean",
+     "linha": 66,
+     "nome": "MCore.YangMills.A1.a1_exactly_one_blocking_node",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/YangMills/A1/FrontierDecomposition.lean",
+     "linha": 75,
+     "nome": "MCore.YangMills.A1.a1_blocking_node_is_uniformity",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/YangMills/A1/FrontierDecompositionV2.lean",
+     "linha": 70,
+     "nome": "MCore.YangMills.A1.a1_v2_has_six_nodes",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/YangMills/A1/PhantomBridgeTriviality.olean' of module MCore.YangMills.A1.PhantomBridgeTriviality does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/YangMills/A1/FrontierDecompositionV2.lean",
+     "linha": 73,
+     "nome": "MCore.YangMills.A1.a1_v2_invalidates_exactly_three_legacy_interfaces",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/YangMills/A1/PhantomBridgeTriviality.olean' of module MCore.YangMills.A1.PhantomBridgeTriviality does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/YangMills/A1/FrontierDecompositionV2.lean",
+     "linha": 80,
+     "nome": "MCore.YangMills.A1.a1_v2_has_exactly_one_blocking_node",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/YangMills/A1/PhantomBridgeTriviality.olean' of module MCore.YangMills.A1.PhantomBridgeTriviality does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/YangMills/A1/FrontierDecompositionV2.lean",
+     "linha": 87,
+     "nome": "MCore.YangMills.A1.a1_v2_blocking_node_is_k20_k30",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/YangMills/A1/PhantomBridgeTriviality.olean' of module MCore.YangMills.A1.PhantomBridgeTriviality does not exist"
+    },
+    {
+     "arquivo": "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/YangMills/A1/FrontierDecompositionV2.lean",
+     "linha": 93,
+     "nome": "MCore.YangMills.A1.legacy_a1_endpoint_reduces_to_B1_B2",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/YangMills/A1/PhantomBridgeTriviality.olean' of module MCore.YangMills.A1.PhantomBridgeTriviality does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 33,
+     "nome": "MCore.Real.P02BoundedComputationClose.stateVar_lt_headBase_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 57,
+     "nome": "MCore.Real.P02BoundedComputationClose.headVar_ge_headBase",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 63,
+     "nome": "MCore.Real.P02BoundedComputationClose.headVar_lt_leftBase_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 72,
+     "nome": "MCore.Real.P02BoundedComputationClose.leftVar_ge_leftBase",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 79,
+     "nome": "MCore.Real.P02BoundedComputationClose.leftVar_lt_rightBase_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 117,
+     "nome": "MCore.Real.P02BoundedComputationClose.rightVar_ge_rightBase",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 124,
+     "nome": "MCore.Real.P02BoundedComputationClose.tableauSlot_injective_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 157,
+     "nome": "MCore.Real.P02BoundedComputationClose.stateVar_injective_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 197,
+     "nome": "MCore.Real.P02BoundedComputationClose.headVar_injective_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 215,
+     "nome": "MCore.Real.P02BoundedComputationClose.leftVar_injective_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 253,
+     "nome": "MCore.Real.P02BoundedComputationClose.rightVar_injective_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 291,
+     "nome": "MCore.Real.P02BoundedComputationClose.headBase_le_leftBase",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 298,
+     "nome": "MCore.Real.P02BoundedComputationClose.leftBase_le_rightBase",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 304,
+     "nome": "MCore.Real.P02BoundedComputationClose.stateVar_ne_headVar_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 314,
+     "nome": "MCore.Real.P02BoundedComputationClose.stateVar_ne_leftVar_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 325,
+     "nome": "MCore.Real.P02BoundedComputationClose.stateVar_ne_rightVar_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 337,
+     "nome": "MCore.Real.P02BoundedComputationClose.headVar_ne_leftVar_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 347,
+     "nome": "MCore.Real.P02BoundedComputationClose.headVar_ne_rightVar_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 358,
+     "nome": "MCore.Real.P02BoundedComputationClose.leftVar_ne_rightVar_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 368,
+     "nome": "MCore.Real.P02BoundedComputationClose.headVar_ne_stateVar_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 375,
+     "nome": "MCore.Real.P02BoundedComputationClose.leftVar_ne_stateVar_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 382,
+     "nome": "MCore.Real.P02BoundedComputationClose.rightVar_ne_stateVar_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 389,
+     "nome": "MCore.Real.P02BoundedComputationClose.leftVar_ne_headVar_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 396,
+     "nome": "MCore.Real.P02BoundedComputationClose.rightVar_ne_headVar_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 403,
+     "nome": "MCore.Real.P02BoundedComputationClose.rightVar_ne_leftVar_valid",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 434,
+     "nome": "MCore.Real.P02BoundedComputationClose.executionAssignment_stateVar",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 519,
+     "nome": "MCore.Real.P02BoundedComputationClose.executionAssignment_headVar",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 603,
+     "nome": "MCore.Real.P02BoundedComputationClose.executionAssignment_leftVar",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 691,
+     "nome": "MCore.Real.P02BoundedComputationClose.executionAssignment_rightVar",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 779,
+     "nome": "MCore.Real.P02BoundedComputationClose.executionAssignment_snapshot_matches",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 796,
+     "nome": "MCore.Real.P02BoundedComputationClose.setStateClauses_satisfied_of_assignment",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 817,
+     "nome": "MCore.Real.P02BoundedComputationClose.setSymbolClauses_satisfied_of_assignment",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 837,
+     "nome": "MCore.Real.P02BoundedComputationClose.evalCNF_append_eq",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 847,
+     "nome": "MCore.Real.P02BoundedComputationClose.executionAssignment_initialCNF",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 930,
+     "nome": "MCore.Real.P02BoundedComputationClose.evalClause_true_of_member_true",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 946,
+     "nome": "MCore.Real.P02BoundedComputationClose.acceptingStateLiteral_mem",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 957,
+     "nome": "MCore.Real.P02BoundedComputationClose.executionAssignment_finalAcceptanceCNF",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 982,
+     "nome": "MCore.Real.P02BoundedComputationClose.transitionCaseCNF_mem_transitionsCNF",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 1010,
+     "nome": "MCore.Real.P02BoundedComputationClose.active_transition_case_true",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 1031,
+     "nome": "MCore.Real.P02BoundedComputationClose.stay_case_preserves_snapshot",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 1127,
+     "nome": "MCore.Real.P02BoundedComputationClose.halting_case_preserves_snapshot",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 1214,
+     "nome": "MCore.Real.P02BoundedComputationClose.left_case_preserves_snapshot",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 1397,
+     "nome": "MCore.Real.P02BoundedComputationClose.right_case_preserves_snapshot",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 1644,
+     "nome": "MCore.Real.P02BoundedComputationClose.snapshots_all",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 1663,
+     "nome": "MCore.Real.P02BoundedComputationClose.tableau_sound",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 1680,
+     "nome": "MCore.Real.P02BoundedComputationClose.tableau_complete",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean",
+     "linha": 1692,
+     "nome": "MCore.Real.P02BoundedComputationClose.certificates_close_boundedExecCorrectness",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02BoundedComputationSoundness.olean' of module MCore.Real.P02BoundedComputationSoundness does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01ConstructionClose.lean",
+     "linha": 32,
+     "nome": "MCore.Real.P01ConstructionClose.integrated_construction_closes_T1",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01VerifierComposition.olean' of module MCore.Real.P01VerifierComposition does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01ConstructionClose.lean",
+     "linha": 38,
+     "nome": "MCore.Real.P01ConstructionClose.integrated_construction_gives_sat_in_np",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01VerifierComposition.olean' of module MCore.Real.P01VerifierComposition does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean",
+     "linha": 27,
+     "nome": "MCore.Real.P01FullVerifierPhysical.preparedTape_witness_region",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01FullVerifierTraversal.olean' of module MCore.Real.P01FullVerifierTraversal does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean",
+     "linha": 32,
+     "nome": "MCore.Real.P01FullVerifierPhysical.readWitnessIndexed_correct",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01FullVerifierTraversal.olean' of module MCore.Real.P01FullVerifierTraversal does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean",
+     "linha": 39,
+     "nome": "MCore.Real.P01FullVerifierPhysical.source_end_preserves_witness_and_source",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01FullVerifierTraversal.olean' of module MCore.Real.P01FullVerifierTraversal does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean",
+     "linha": 72,
+     "nome": "MCore.Real.P01FullVerifierPhysical.stackPush_preserves_prefix",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01FullVerifierTraversal.olean' of module MCore.Real.P01FullVerifierTraversal does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean",
+     "linha": 77,
+     "nome": "MCore.Real.P01FullVerifierPhysical.stackPop_preserves_prefix",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01FullVerifierTraversal.olean' of module MCore.Real.P01FullVerifierTraversal does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean",
+     "linha": 84,
+     "nome": "MCore.Real.P01FullVerifierPhysical.stackPop_push_inverse",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01FullVerifierTraversal.olean' of module MCore.Real.P01FullVerifierTraversal does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean",
+     "linha": 99,
+     "nome": "MCore.Real.P01FullVerifierPhysical.physicalStackRep_empty",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01FullVerifierTraversal.olean' of module MCore.Real.P01FullVerifierTraversal does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean",
+     "linha": 104,
+     "nome": "MCore.Real.P01FullVerifierPhysical.physicalStackRep_push",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01FullVerifierTraversal.olean' of module MCore.Real.P01FullVerifierTraversal does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean",
+     "linha": 115,
+     "nome": "MCore.Real.P01FullVerifierPhysical.physicalStackRep_pop",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01FullVerifierTraversal.olean' of module MCore.Real.P01FullVerifierTraversal does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean",
+     "linha": 123,
+     "nome": "MCore.Real.P01FullVerifierPhysical.physicalStackRep_preserves_prefix",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01FullVerifierTraversal.olean' of module MCore.Real.P01FullVerifierTraversal does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean",
+     "linha": 174,
+     "nome": "MCore.Real.P01FullVerifierPhysical.physical_realization_closes_full_verifier",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01FullVerifierTraversal.olean' of module MCore.Real.P01FullVerifierTraversal does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01IntegratedMachine.lean",
+     "linha": 35,
+     "nome": "MCore.Real.P01IntegratedMachine.parserState_injective",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/CanonicalSATParserNTM.olean' of module MCore.Real.CanonicalSATParserNTM does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01IntegratedMachine.lean",
+     "linha": 41,
+     "nome": "MCore.Real.P01IntegratedMachine.witnessState_injective",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/CanonicalSATParserNTM.olean' of module MCore.Real.CanonicalSATParserNTM does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01IntegratedMachine.lean",
+     "linha": 49,
+     "nome": "MCore.Real.P01IntegratedMachine.verifierState_injective",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/CanonicalSATParserNTM.olean' of module MCore.Real.CanonicalSATParserNTM does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01IntegratedMachine.lean",
+     "linha": 57,
+     "nome": "MCore.Real.P01IntegratedMachine.parser_witness_disjoint",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/CanonicalSATParserNTM.olean' of module MCore.Real.CanonicalSATParserNTM does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01IntegratedMachine.lean",
+     "linha": 65,
+     "nome": "MCore.Real.P01IntegratedMachine.parser_verifier_disjoint",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/CanonicalSATParserNTM.olean' of module MCore.Real.CanonicalSATParserNTM does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01IntegratedMachine.lean",
+     "linha": 73,
+     "nome": "MCore.Real.P01IntegratedMachine.witness_verifier_disjoint",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/CanonicalSATParserNTM.olean' of module MCore.Real.CanonicalSATParserNTM does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01IntegratedMachine.lean",
+     "linha": 81,
+     "nome": "MCore.Real.P01IntegratedMachine.parser_not_accept",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/CanonicalSATParserNTM.olean' of module MCore.Real.CanonicalSATParserNTM does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01IntegratedMachine.lean",
+     "linha": 88,
+     "nome": "MCore.Real.P01IntegratedMachine.witness_not_accept",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/CanonicalSATParserNTM.olean' of module MCore.Real.CanonicalSATParserNTM does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01IntegratedMachine.lean",
+     "linha": 95,
+     "nome": "MCore.Real.P01IntegratedMachine.verifier_not_accept",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/CanonicalSATParserNTM.olean' of module MCore.Real.CanonicalSATParserNTM does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/44e3327a/lean/MCore/Real/P01IntegratedMachine.lean",
+     "linha": 102,
+     "nome": "MCore.Real.P01IntegratedMachine.accept_ne_reject",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/CanonicalSATParserNTM.olean' of module MCore.Real.CanonicalSATParserNTM does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/85d1031d/lean/MCore/Real/P01VerifierComposition.lean",
+     "linha": 13,
+     "nome": "MCore.Real.P01VerifierComposition.verifier_correct",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01ParserWitnessComposition.olean' of module MCore.Real.P01ParserWitnessComposition does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/85d1031d/lean/MCore/Real/P01VerifierComposition.lean",
+     "linha": 20,
+     "nome": "MCore.Real.P01VerifierComposition.verifier_cost_linear",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01ParserWitnessComposition.olean' of module MCore.Real.P01ParserWitnessComposition does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/85d1031d/lean/MCore/Real/P01VerifierComposition.lean",
+     "linha": 27,
+     "nome": "MCore.Real.P01VerifierComposition.decode_verify_iff_satBits",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01ParserWitnessComposition.olean' of module MCore.Real.P01ParserWitnessComposition does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/a5635895/lean/MCore/Real/P02CandidateCodingFrontier.lean",
+     "linha": 20,
+     "nome": "MCore.Real.P02CandidateCodingFrontier.encode_injective",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02UniversalFailureAlgebra.olean' of module MCore.Real.P02UniversalFailureAlgebra does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/b406b806/lean/MCore/Real/FinalExternalTwoGap.lean",
+     "linha": 27,
+     "nome": "MCore.Real.FinalExternalTwoGap.final_external_gap_of_two_gap",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01FinalCertificate.olean' of module MCore.Real.P01FinalCertificate does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/b406b806/lean/MCore/Real/FinalExternalTwoGap.lean",
+     "linha": 44,
+     "nome": "MCore.Real.FinalExternalTwoGap.final_external_two_gap_closes",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01FinalCertificate.olean' of module MCore.Real.P01FinalCertificate does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/c102d9d4/lean/MCore/Real/FinalExternalCertificate.lean",
+     "linha": 42,
+     "nome": "MCore.Real.FinalExternalCertificate.final_external_certificate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/CanonicalSATBoundary.olean' of module MCore.Real.CanonicalSATBoundary does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/c102d9d4/lean/MCore/Real/FinalExternalCertificate.lean",
+     "linha": 50,
+     "nome": "MCore.Real.FinalExternalCertificate.final_external_gap_closes",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/CanonicalSATBoundary.olean' of module MCore.Real.CanonicalSATBoundary does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/c102d9d4/lean/MCore/Real/P02G21G22Attack.lean",
+     "linha": 30,
+     "nome": "MCore.Real.P02G21G22Attack.g21_pointwise_iff_p02_target",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02TerminalFrontier.olean' of module MCore.Real.P02TerminalFrontier does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/c102d9d4/lean/MCore/Real/P02G21G22Attack.lean",
+     "linha": 37,
+     "nome": "MCore.Real.P02G21G22Attack.g22_contradiction_iff_not_in_p",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02TerminalFrontier.olean' of module MCore.Real.P02TerminalFrontier does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/c102d9d4/lean/MCore/Real/P02G21G22Attack.lean",
+     "linha": 48,
+     "nome": "MCore.Real.P02G21G22Attack.g21_implies_g22",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02TerminalFrontier.olean' of module MCore.Real.P02TerminalFrontier does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/c102d9d4/lean/MCore/Real/P02G21G22Attack.lean",
+     "linha": 57,
+     "nome": "MCore.Real.P02G21G22Attack.g22_implies_g21",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02TerminalFrontier.olean' of module MCore.Real.P02TerminalFrontier does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/c102d9d4/lean/MCore/Real/P02G21G22Attack.lean",
+     "linha": 66,
+     "nome": "MCore.Real.P02G21G22Attack.g21_iff_g22",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02TerminalFrontier.olean' of module MCore.Real.P02TerminalFrontier does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/c102d9d4/lean/MCore/Real/P02G21G22Attack.lean",
+     "linha": 70,
+     "nome": "MCore.Real.P02G21G22Attack.p01_g21_closes_internal",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02TerminalFrontier.olean' of module MCore.Real.P02TerminalFrontier does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/d0353f8a/lean/MCore/Real/P01ParserWitnessComposition.lean",
+     "linha": 23,
+     "nome": "MCore.Real.P01ParserWitnessComposition.witness_guess_phase_polynomial",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01GlobalParserBound.olean' of module MCore.Real.P01GlobalParserBound does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/d0353f8a/lean/MCore/Real/P01ParserWitnessComposition.lean",
+     "linha": 28,
+     "nome": "MCore.Real.P01ParserWitnessComposition.parsed_sat_iff_short_verified_witness",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P01GlobalParserBound.olean' of module MCore.Real.P01GlobalParserBound does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/f3dc5354/lean/MCore/Real/P02SemanticMismatchAlgebra.lean",
+     "linha": 12,
+     "nome": "MCore.Real.P02SemanticMismatchAlgebra.semanticMismatch_iff_not_match",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02UniversalFailureAlgebra.olean' of module MCore.Real.P02UniversalFailureAlgebra does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/f3dc5354/lean/MCore/Real/P02SemanticMismatchAlgebra.lean",
+     "linha": 17,
+     "nome": "MCore.Real.P02SemanticMismatchAlgebra.semanticMismatch_iff_xor",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02UniversalFailureAlgebra.olean' of module MCore.Real.P02UniversalFailureAlgebra does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/f3dc5354/lean/MCore/Real/P02SemanticMismatchAlgebra.lean",
+     "linha": 24,
+     "nome": "MCore.Real.P02SemanticMismatchAlgebra.no_semanticMismatch_iff_match",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02UniversalFailureAlgebra.olean' of module MCore.Real.P02UniversalFailureAlgebra does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/f3dc5354/lean/MCore/Real/P02SemanticMismatchAlgebra.lean",
+     "linha": 35,
+     "nome": "MCore.Real.P02SemanticMismatchAlgebra.declaredSATCorrect_iff_no_semanticMismatch",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02UniversalFailureAlgebra.olean' of module MCore.Real.P02UniversalFailureAlgebra does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/f3dc5354/lean/MCore/Real/P02SemanticMismatchAlgebra.lean",
+     "linha": 46,
+     "nome": "MCore.Real.P02SemanticMismatchAlgebra.total_and_semantically_correct_iff_correct_everywhere",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Real/P02UniversalFailureAlgebra.olean' of module MCore.Real.P02UniversalFailureAlgebra does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/EndpointCompression.lean",
+     "linha": 74,
+     "nome": "MCore.BackwardCompression.fixed_witness_implies_final",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/EndpointCompression.lean",
+     "linha": 92,
+     "nome": "MCore.BackwardCompression.endpoint_compression",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/EndpointCompression.lean",
+     "linha": 105,
+     "nome": "MCore.BackwardCompression.endpoint_from_c12_open_bridge",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/FinalEndpoint.lean",
+     "linha": 27,
+     "nome": "MCore.BackwardAudit.equality_final_unfold",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K9.olean' of module MCore.K9 does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/FinalEndpoint.lean",
+     "linha": 32,
+     "nome": "MCore.BackwardAudit.separation_final_unfold",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K9.olean' of module MCore.K9 does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/FinalEndpoint.lean",
+     "linha": 37,
+     "nome": "MCore.BackwardAudit.final_statement_unfold",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/K9.olean' of module MCore.K9 does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 61,
+     "nome": "MCore.ThreeTracks.e0_unfold",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 64,
+     "nome": "MCore.ThreeTracks.ef_unfold",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 67,
+     "nome": "MCore.ThreeTracks.s0_unfold",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 70,
+     "nome": "MCore.ThreeTracks.sf_unfold",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 73,
+     "nome": "MCore.ThreeTracks.a0_unfold",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 76,
+     "nome": "MCore.ThreeTracks.af_unfold",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 79,
+     "nome": "MCore.ThreeTracks.equality_start_to_final",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 92,
+     "nome": "MCore.ThreeTracks.equality_final_to_start",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 101,
+     "nome": "MCore.ThreeTracks.equality_start_final_equiv",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 110,
+     "nome": "MCore.ThreeTracks.separation_start_to_final",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 120,
+     "nome": "MCore.ThreeTracks.separation_final_to_start",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 137,
+     "nome": "MCore.ThreeTracks.separation_start_final_equiv",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 146,
+     "nome": "MCore.ThreeTracks.approximation_end_to_classical_final",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 158,
+     "nome": "MCore.ThreeTracks.approximation_route",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+     "linha": 169,
+     "nome": "MCore.ThreeTracks.separation_final_is_not_equality",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/C12/Families.olean' of module MCore.C12.Families does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/lean/MCore/BackwardAudit/FinalToMiddle.lean",
+     "linha": 5,
+     "nome": "MCore.ClosedDiscriminant.test_equality_final_to_middle",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/BackwardAudit/ClosedDiscriminant.olean' of module MCore.BackwardAudit.ClosedDiscriminant does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/lean/MCore/BackwardAudit/FinalToMiddle.lean",
+     "linha": 11,
+     "nome": "MCore.ClosedDiscriminant.test_separation_final_to_middle",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/BackwardAudit/ClosedDiscriminant.olean' of module MCore.BackwardAudit.ClosedDiscriminant does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/lean/MCore/BackwardAudit/FinalToMiddle.lean",
+     "linha": 18,
+     "nome": "MCore.ClosedDiscriminant.test_final_envelope_to_middle",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/BackwardAudit/ClosedDiscriminant.olean' of module MCore.BackwardAudit.ClosedDiscriminant does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/lean/MCore/BackwardAudit/FinalToMiddle.lean",
+     "linha": 25,
+     "nome": "MCore.ClosedDiscriminant.test_bidirectional_same_discriminant",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/BackwardAudit/ClosedDiscriminant.olean' of module MCore.BackwardAudit.ClosedDiscriminant does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/lean/MCore/BackwardAudit/FinalToMiddle.lean",
+     "linha": 32,
+     "nome": "MCore.ClosedDiscriminant.test_inconsistency_detector",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/BackwardAudit/ClosedDiscriminant.olean' of module MCore.BackwardAudit.ClosedDiscriminant does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/lean/MCore/BackwardAudit/StartToMiddle.lean",
+     "linha": 11,
+     "nome": "MCore.ClosedDiscriminant.test_start_to_middle",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/BackwardAudit/ClosedDiscriminant.olean' of module MCore.BackwardAudit.ClosedDiscriminant does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/lean/MCore/BackwardAudit/StartToMiddle.lean",
+     "linha": 17,
+     "nome": "MCore.ClosedDiscriminant.test_start_to_final_envelope",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/BackwardAudit/ClosedDiscriminant.olean' of module MCore.BackwardAudit.ClosedDiscriminant does not exist"
+    },
+    {
+     "arquivo": "imports/pnp/recovery/7abed945/lean/MCore/BackwardAudit/StartToMiddle.lean",
+     "linha": 23,
+     "nome": "MCore.ClosedDiscriminant.collect_start_result",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/BackwardAudit/ClosedDiscriminant.olean' of module MCore.BackwardAudit.ClosedDiscriminant does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/ATK/StructuralDefect.lean",
+     "linha": 41,
+     "nome": "MCore.ATK.StructuralDefect.StructuralCore.zero_after_steps",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/ATK/StructuralDefect.lean",
+     "linha": 68,
+     "nome": "MCore.ATK.StructuralDefect.StructuralCore.intrinsic_vanishing",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/ATK/StructuralDefect.lean",
+     "linha": 90,
+     "nome": "MCore.ATK.StructuralDefect.structural_number_closure",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/ATK/StructuralDefect.lean",
+     "linha": 106,
+     "nome": "MCore.ATK.StructuralDefect.same_structure_not_same_object",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/BSDLogicOpenMath.lean",
+     "linha": 39,
+     "nome": "MCore.BSDLogic.collision_refutes_complete_representation",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/IBoundaryProvenance.olean' of module MCore.IBoundaryProvenance does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/BSDLogicOpenMath.lean",
+     "linha": 59,
+     "nome": "MCore.BSDLogic.BSDClosureLogicRefutation",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/IBoundaryProvenance.olean' of module MCore.IBoundaryProvenance does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/BSDLogicOpenMath.lean",
+     "linha": 71,
+     "nome": "MCore.BSDLogic.certificate_ready_implies_logic_refutation",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/IBoundaryProvenance.olean' of module MCore.IBoundaryProvenance does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/AcceptedInhabitants.lean",
+     "linha": 148,
+     "nome": "MCore.FinalFail.acceptedHypothesisSlots_eq_seven",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/ExactGapLedger.olean' of module MCore.FinalFail.ExactGapLedger does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 22,
+     "nome": "MCore.FinalFail.advance_start_middle",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 25,
+     "nome": "MCore.FinalFail.advance_middle_finish",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 28,
+     "nome": "MCore.FinalFail.return_finish_middle",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 31,
+     "nome": "MCore.FinalFail.return_middle_start",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 42,
+     "nome": "MCore.FinalFail.middle_has_two_admissible_branches",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 47,
+     "nome": "MCore.FinalFail.start_and_finish_meet_at_middle",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 61,
+     "nome": "MCore.FinalFail.closed_transition_preserves_closed",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 89,
+     "nome": "MCore.FinalFail.ClosedCenterHard.start_iff_center",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 93,
+     "nome": "MCore.FinalFail.ClosedCenterHard.center_iff_finish",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 97,
+     "nome": "MCore.FinalFail.ClosedCenterHard.start_iff_finish",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 105,
+     "nome": "MCore.FinalFail.ClosedCenterHard.finish_of_start",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 110,
+     "nome": "MCore.FinalFail.ClosedCenterHard.start_of_finish",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 115,
+     "nome": "MCore.FinalFail.ClosedCenterHard.center_exposes_both",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ClosedCenterHard.lean",
+     "linha": 134,
+     "nome": "MCore.FinalFail.closed_center_terminal_chain_closure",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/TriadicObstructionCalculus.olean' of module MCore.FinalFail.TriadicObstructionCalculus does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/CoreIndeterminacyTests.lean",
+     "linha": 10,
+     "nome": "MCore.FinalFail.twoBranchResolution_is_indeterminate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/RelationalHardAtom.olean' of module MCore.FinalFail.RelationalHardAtom does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/CoreIndeterminacyTests.lean",
+     "linha": 22,
+     "nome": "MCore.FinalFail.singletonResolution_is_determined",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/RelationalHardAtom.olean' of module MCore.FinalFail.RelationalHardAtom does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/CoreIndeterminacyTests.lean",
+     "linha": 29,
+     "nome": "MCore.FinalFail.singletonResolution_not_indeterminate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/RelationalHardAtom.olean' of module MCore.FinalFail.RelationalHardAtom does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/CoreIndeterminacyTests.lean",
+     "linha": 45,
+     "nome": "MCore.FinalFail.toyHardAtom_center_is_fail",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/RelationalHardAtom.olean' of module MCore.FinalFail.RelationalHardAtom does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/CoreIndeterminacyTests.lean",
+     "linha": 51,
+     "nome": "MCore.FinalFail.toyHardAtom_left_loop_fixed",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/RelationalHardAtom.olean' of module MCore.FinalFail.RelationalHardAtom does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/EnabledInhabitants.lean",
+     "linha": 50,
+     "nome": "MCore.FinalFail.enabledCount_eq_seven",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/AcceptedInhabitants.olean' of module MCore.FinalFail.AcceptedInhabitants does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/EnabledInhabitants.lean",
+     "linha": 53,
+     "nome": "MCore.FinalFail.unconditionalCount_eq_zero",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/AcceptedInhabitants.olean' of module MCore.FinalFail.AcceptedInhabitants does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/EnabledInhabitants.lean",
+     "linha": 56,
+     "nome": "MCore.FinalFail.enableRiemann",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/AcceptedInhabitants.olean' of module MCore.FinalFail.AcceptedInhabitants does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/EnabledInhabitants.lean",
+     "linha": 63,
+     "nome": "MCore.FinalFail.enableNavierStokes",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/AcceptedInhabitants.olean' of module MCore.FinalFail.AcceptedInhabitants does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/EnabledInhabitants.lean",
+     "linha": 73,
+     "nome": "MCore.FinalFail.enableHodge",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/AcceptedInhabitants.olean' of module MCore.FinalFail.AcceptedInhabitants does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/EnabledInhabitants.lean",
+     "linha": 82,
+     "nome": "MCore.FinalFail.enablePvsNP",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/AcceptedInhabitants.olean' of module MCore.FinalFail.AcceptedInhabitants does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/EnabledInhabitants.lean",
+     "linha": 90,
+     "nome": "MCore.FinalFail.enableBSD",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/AcceptedInhabitants.olean' of module MCore.FinalFail.AcceptedInhabitants does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/EnabledInhabitants.lean",
+     "linha": 100,
+     "nome": "MCore.FinalFail.enableBeal",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/AcceptedInhabitants.olean' of module MCore.FinalFail.AcceptedInhabitants does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/EnabledInhabitants.lean",
+     "linha": 108,
+     "nome": "MCore.FinalFail.enableYangMills",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/AcceptedInhabitants.olean' of module MCore.FinalFail.AcceptedInhabitants does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/EnabledInhabitants.lean",
+     "linha": 119,
+     "nome": "MCore.FinalFail.activation_is_fail_closed",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/AcceptedInhabitants.olean' of module MCore.FinalFail.AcceptedInhabitants does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ExactGapLedger.lean",
+     "linha": 36,
+     "nome": "MCore.FinalFail.openFinalProblems_eq_seven",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/FundamentalIndeterminacy.lean",
+     "linha": 24,
+     "nome": "MCore.FinalFail.fundamental_indeterminacy_not_determined",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/ClosedCenterHard.olean' of module MCore.FinalFail.ClosedCenterHard does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/FundamentalIndeterminacy.lean",
+     "linha": 32,
+     "nome": "MCore.FinalFail.determined_not_fundamentally_indeterminate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/ClosedCenterHard.olean' of module MCore.FinalFail.ClosedCenterHard does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/FundamentalIndeterminacy.lean",
+     "linha": 50,
+     "nome": "MCore.FinalFail.fundamental_indeterminacy_forward_invariant",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/ClosedCenterHard.olean' of module MCore.FinalFail.ClosedCenterHard does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/FundamentalIndeterminacy.lean",
+     "linha": 74,
+     "nome": "MCore.FinalFail.reference_triad_is_not_exhaustive",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/ClosedCenterHard.olean' of module MCore.FinalFail.ClosedCenterHard does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/LocalRigidNucleus.lean",
+     "linha": 37,
+     "nome": "MCore.FinalFail.transport_core_elimination",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/LocalRigidNucleus.lean",
+     "linha": 69,
+     "nome": "MCore.FinalFail.family_endpoint_iff_local_obstruction_eliminated",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/Master.lean",
+     "linha": 19,
+     "nome": "MCore.FinalFail.master_open_count",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/ExactGapLedger.olean' of module MCore.FinalFail.ExactGapLedger does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/MinimalOpenBridge.lean",
+     "linha": 15,
+     "nome": "MCore.FinalFail.validEndpoint_iff_witnessFree_adequate",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/MinimalOpenBridge.lean",
+     "linha": 42,
+     "nome": "MCore.FinalFail.minimalOpenBridge_iff",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/MinimalOpenBridge.lean",
+     "linha": 53,
+     "nome": "MCore.FinalFail.closedPrefix_produces_bridge",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/MinimalOpenBridge.lean",
+     "linha": 57,
+     "nome": "MCore.FinalFail.terminal_chain_closure",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/MinimalOpenBridge.lean",
+     "linha": 69,
+     "nome": "MCore.FinalFail.audited_terminal_chain_closure",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/MinimalOpenBridge.lean",
+     "linha": 80,
+     "nome": "MCore.FinalFail.open_terminal_endpoint_iff_bridge",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/MinimalOpenBridge.lean",
+     "linha": 87,
+     "nome": "MCore.FinalFail.close_open_terminal_chain",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ProblemSignature.lean",
+     "linha": 23,
+     "nome": "MCore.FinalFail.behaviorEquivalent_refl",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ProblemSignature.lean",
+     "linha": 26,
+     "nome": "MCore.FinalFail.behaviorEquivalent_symm",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ProblemSignature.lean",
+     "linha": 30,
+     "nome": "MCore.FinalFail.behaviorEquivalent_trans",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ProblemSignature.lean",
+     "linha": 46,
+     "nome": "MCore.FinalFail.terminalDigit_bounds",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/ProblemSignature.lean",
+     "linha": 62,
+     "nome": "MCore.FinalFail.classified_preserves_twoSided",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/RecoveryFirewall.lean",
+     "linha": 30,
+     "nome": "MCore.FinalFail.endpoint_adapter_iff",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/ExactGapLedger.olean' of module MCore.FinalFail.ExactGapLedger does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/RelationalHardAtom.lean",
+     "linha": 41,
+     "nome": "MCore.FinalFail.RelationalHardAtom.failAt_not_determined",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/FundamentalIndeterminacy.olean' of module MCore.FinalFail.FundamentalIndeterminacy does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/RelationalHardAtom.lean",
+     "linha": 50,
+     "nome": "MCore.FinalFail.RelationalHardAtom.common_fixed_has_both_loops",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/FundamentalIndeterminacy.olean' of module MCore.FinalFail.FundamentalIndeterminacy does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/SevenProblemSignatures.lean",
+     "linha": 35,
+     "nome": "MCore.FinalFail.signature_obstruction_matches",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/ProblemSignature.olean' of module MCore.FinalFail.ProblemSignature does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/SevenProblemSignatures.lean",
+     "linha": 47,
+     "nome": "MCore.FinalFail.signature_assignment_injective",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/FinalFail/ProblemSignature.olean' of module MCore.FinalFail.ProblemSignature does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TopologyOperatorCore.lean",
+     "linha": 35,
+     "nome": "MCore.FinalFail.Triad.minus_retraction_implies_fixed",
+     "status": "fechado",
+     "axioms": [
+      "propext"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TopologyOperatorCore.lean",
+     "linha": 60,
+     "nome": "MCore.FinalFail.real_imaginary_ext",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TriadicObstructionCalculus.lean",
+     "linha": 29,
+     "nome": "MCore.FinalFail.ClosedTriad.compression_meets_at_middle",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TriadicObstructionCalculus.lean",
+     "linha": 35,
+     "nome": "MCore.FinalFail.ClosedTriad.compression_idempotent",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TriadicObstructionCalculus.lean",
+     "linha": 49,
+     "nome": "MCore.FinalFail.ClosedTriad.middle_is_compression_fixed_and_retraction_branch",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TriadicObstructionCalculus.lean",
+     "linha": 66,
+     "nome": "MCore.FinalFail.endpoint_of_closed_obstruction",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TriadicObstructionCalculus.lean",
+     "linha": 71,
+     "nome": "MCore.FinalFail.closed_obstruction_of_endpoint",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TypedCompressionCore.lean",
+     "linha": 34,
+     "nome": "MCore.FinalFail.Compression.kernelEq_refl",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TypedCompressionCore.lean",
+     "linha": 36,
+     "nome": "MCore.FinalFail.Compression.kernelEq_symm",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TypedCompressionCore.lean",
+     "linha": 39,
+     "nome": "MCore.FinalFail.Compression.kernelEq_trans",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TypedCompressionCore.lean",
+     "linha": 43,
+     "nome": "MCore.FinalFail.Compression.mem_fiber_self",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TypedCompressionCore.lean",
+     "linha": 46,
+     "nome": "MCore.FinalFail.Compression.same_fiber_iff_kernelEq",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TypedCompressionCore.lean",
+     "linha": 59,
+     "nome": "MCore.FinalFail.Compression.section_fiber_nonempty",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TypedCompressionCore.lean",
+     "linha": 63,
+     "nome": "MCore.FinalFail.Compression.bilateral_inverse_implies_injective",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/FinalFail/TypedCompressionCore.lean",
+     "linha": 76,
+     "nome": "MCore.FinalFail.Compression.collision_blocks_bilateral_inverse",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 71,
+     "nome": "MCore.IBoundary.singularity_kinds_pairwise_distinct",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 80,
+     "nome": "MCore.IBoundary.canonical_states_pairwise_distinct",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 85,
+     "nome": "MCore.IBoundary.canonical_states_boundary_equivalent",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 99,
+     "nome": "MCore.IBoundary.approach_orientation_distinct",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 103,
+     "nome": "MCore.IBoundary.approach_states_distinct",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 109,
+     "nome": "MCore.IBoundary.negative_terminal_limit",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 115,
+     "nome": "MCore.IBoundary.positive_terminal_limit",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 121,
+     "nome": "MCore.IBoundary.two_sided_terminal_distance",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 145,
+     "nome": "MCore.IBoundary.same_terminal_different_nature",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 152,
+     "nome": "MCore.IBoundary.same_boundary_different_orientation",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 160,
+     "nome": "MCore.IBoundary.collapse_preserves_terminal",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 168,
+     "nome": "MCore.IBoundary.negative_approach_has_residue",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 172,
+     "nome": "MCore.IBoundary.positive_approach_has_residue",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 176,
+     "nome": "MCore.IBoundary.terminal_projection_not_injective",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/IBoundaryProvenance.lean",
+     "linha": 184,
+     "nome": "MCore.IBoundary.StructuralBoundaryInformationLoss",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real.olean' of module Mathlib.Topology.Instances.Real does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/I3Tristable.lean",
+     "linha": 23,
+     "nome": "MCore.OpenMath.I3.next_three",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/I3Tristable.lean",
+     "linha": 26,
+     "nome": "MCore.OpenMath.I3.states_pairwise_distinct",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/I3Tristable.lean",
+     "linha": 36,
+     "nome": "MCore.OpenMath.I3.sqrt_three_sq",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/I3Tristable.lean",
+     "linha": 39,
+     "nome": "MCore.OpenMath.I3.omega_sq",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/I3Tristable.lean",
+     "linha": 45,
+     "nome": "MCore.OpenMath.I3.omega_equilibrium",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/I3Tristable.lean",
+     "linha": 49,
+     "nome": "MCore.OpenMath.I3.omega_cube",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/I3Tristable.lean",
+     "linha": 65,
+     "nome": "MCore.OpenMath.I3.omega_ne_one",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/I3Tristable.lean",
+     "linha": 77,
+     "nome": "MCore.OpenMath.I3.i3_final_theorem",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/IEnriched.lean",
+     "linha": 30,
+     "nome": "MCore.OpenMath.IEnriched.resolve_ofLimit",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/IEnriched.lean",
+     "linha": 33,
+     "nome": "MCore.OpenMath.IEnriched.limit_resolution_compatible",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/IEnriched.lean",
+     "linha": 48,
+     "nome": "MCore.OpenMath.IEnriched.lHospital_resolution_bridge",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/IEnriched.lean",
+     "linha": 64,
+     "nome": "MCore.OpenMath.IEnriched.observables_complete",
+     "status": "fechado",
+     "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/IRegime.lean",
+     "linha": 15,
+     "nome": "MCore.OpenMath.I.I3_is_finite",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/IRegime.lean",
+     "linha": 17,
+     "nome": "MCore.OpenMath.I.I10_is_finite",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/IRegime.lean",
+     "linha": 18,
+     "nome": "MCore.OpenMath.I.IInfinite_is_infinite",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/IRegime.lean",
+     "linha": 19,
+     "nome": "MCore.OpenMath.I.IZeroDivZero_is_indeterminate",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/OpenMath/IRegime.lean",
+     "linha": 20,
+     "nome": "MCore.OpenMath.I.regimes_distinct",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/BridgeFirewall.lean",
+     "linha": 27,
+     "nome": "MCore.Research.UserProgram.firewall_has_six_entries",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/LocalGlobal.olean' of module MCore.Research.UserProgram.LocalGlobal does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Action.lean",
+     "linha": 10,
+     "nome": "MCore.Research.UserProgram.I3State.index_injective",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/IRegime.olean' of module MCore.Research.UserProgram.IRegime does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Action.lean",
+     "linha": 14,
+     "nome": "MCore.Research.UserProgram.I3State.index_next",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/IRegime.olean' of module MCore.Research.UserProgram.IRegime does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Action.lean",
+     "linha": 24,
+     "nome": "MCore.Research.UserProgram.rotate3_zero",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/IRegime.olean' of module MCore.Research.UserProgram.IRegime does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Action.lean",
+     "linha": 27,
+     "nome": "MCore.Research.UserProgram.rotate3_one",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/IRegime.olean' of module MCore.Research.UserProgram.IRegime does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Fourier.lean",
+     "linha": 29,
+     "nome": "MCore.Research.UserProgram.ComplexThreeChannel.fourier_inversion",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3Geometry.olean' of module MCore.Research.UserProgram.I3Geometry does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Fourier.lean",
+     "linha": 40,
+     "nome": "MCore.Research.UserProgram.ComplexThreeChannel.fourier0_rotate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3Geometry.olean' of module MCore.Research.UserProgram.I3Geometry does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Fourier.lean",
+     "linha": 45,
+     "nome": "MCore.Research.UserProgram.ComplexThreeChannel.fourier1_rotate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3Geometry.olean' of module MCore.Research.UserProgram.I3Geometry does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Fourier.lean",
+     "linha": 54,
+     "nome": "MCore.Research.UserProgram.ComplexThreeChannel.fourier2_rotate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3Geometry.olean' of module MCore.Research.UserProgram.I3Geometry does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Intertwiner.lean",
+     "linha": 19,
+     "nome": "MCore.Research.UserProgram.commutes_iff_pointwise",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Fourier.olean' of module MCore.Research.UserProgram.C3Fourier does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Intertwiner.lean",
+     "linha": 33,
+     "nome": "MCore.Research.UserProgram.commutatorDefect_zero_of_commutes",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Fourier.olean' of module MCore.Research.UserProgram.C3Fourier does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Intertwiner.lean",
+     "linha": 44,
+     "nome": "MCore.Research.UserProgram.meanPart_constant",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Fourier.olean' of module MCore.Research.UserProgram.C3Fourier does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Intertwiner.lean",
+     "linha": 51,
+     "nome": "MCore.Research.UserProgram.commutes_preserves_rotation_fixed",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Fourier.olean' of module MCore.Research.UserProgram.C3Fourier does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Intertwiner.lean",
+     "linha": 58,
+     "nome": "MCore.Research.UserProgram.constant_iff_rotation_fixed",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Fourier.olean' of module MCore.Research.UserProgram.C3Fourier does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3Intertwiner.lean",
+     "linha": 69,
+     "nome": "MCore.Research.UserProgram.commutes_preserves_constant_sector",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Fourier.olean' of module MCore.Research.UserProgram.C3Fourier does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3LinearSectors.lean",
+     "linha": 22,
+     "nome": "MCore.Research.UserProgram.rotate_smul",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Intertwiner.olean' of module MCore.Research.UserProgram.C3Intertwiner does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3LinearSectors.lean",
+     "linha": 26,
+     "nome": "MCore.Research.UserProgram.LinearC3Operator.map_smul_channel",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Intertwiner.olean' of module MCore.Research.UserProgram.C3Intertwiner does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3LinearSectors.lean",
+     "linha": 32,
+     "nome": "MCore.Research.UserProgram.LinearC3Operator.preserves_rotation_eigenspace",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Intertwiner.olean' of module MCore.Research.UserProgram.C3Intertwiner does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3LinearSectors.lean",
+     "linha": 46,
+     "nome": "MCore.Research.UserProgram.LinearC3Operator.preserves_sector0",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Intertwiner.olean' of module MCore.Research.UserProgram.C3Intertwiner does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3LinearSectors.lean",
+     "linha": 52,
+     "nome": "MCore.Research.UserProgram.LinearC3Operator.preserves_sector1",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Intertwiner.olean' of module MCore.Research.UserProgram.C3Intertwiner does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/C3LinearSectors.lean",
+     "linha": 58,
+     "nome": "MCore.Research.UserProgram.LinearC3Operator.preserves_sector2",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Intertwiner.olean' of module MCore.Research.UserProgram.C3Intertwiner does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 17,
+     "nome": "MCore.Research.UserProgram.opT_three",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 21,
+     "nome": "MCore.Research.UserProgram.opS_eq_T_sq",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 23,
+     "nome": "MCore.Research.UserProgram.opT_opS",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 27,
+     "nome": "MCore.Research.UserProgram.opS_opT",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 31,
+     "nome": "MCore.Research.UserProgram.opE_identity",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 33,
+     "nome": "MCore.Research.UserProgram.opDelta_apply",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 36,
+     "nome": "MCore.Research.UserProgram.opDelta_zero_of_fixed",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 40,
+     "nome": "MCore.Research.UserProgram.opGamma_rotate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 45,
+     "nome": "MCore.Research.UserProgram.opGamma_fixed",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 50,
+     "nome": "MCore.Research.UserProgram.opC_fixed",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 54,
+     "nome": "MCore.Research.UserProgram.opC_idempotent",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 59,
+     "nome": "MCore.Research.UserProgram.opQ_rotate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 63,
+     "nome": "MCore.Research.UserProgram.opT_sum",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ConcreteOperators.lean",
+     "linha": 66,
+     "nome": "MCore.Research.UserProgram.opS_sum",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/CrossOperatorLaws.lean",
+     "linha": 7,
+     "nome": "MCore.Research.UserProgram.opGamma_eq_three_C",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/CrossOperatorLaws.lean",
+     "linha": 12,
+     "nome": "MCore.Research.UserProgram.opC_delta_zero",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/CrossOperatorLaws.lean",
+     "linha": 17,
+     "nome": "MCore.Research.UserProgram.opDelta_C_zero",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/CrossOperatorLaws.lean",
+     "linha": 22,
+     "nome": "MCore.Research.UserProgram.delta_cycle_telescopes",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/CrossOperatorLaws.lean",
+     "linha": 30,
+     "nome": "MCore.Research.UserProgram.oscillatoryPart_sum_zero",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/CrossOperatorLaws.lean",
+     "linha": 35,
+     "nome": "MCore.Research.UserProgram.reconstruct_C_osc",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/CrossOperatorLaws.lean",
+     "linha": 40,
+     "nome": "MCore.Research.UserProgram.opC_oscillatory_zero",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/CyclicInvariant.lean",
+     "linha": 7,
+     "nome": "MCore.Research.UserProgram.cyclicInvariant_constant",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Action.olean' of module MCore.Research.UserProgram.C3Action does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/CyclicInvariant.lean",
+     "linha": 12,
+     "nome": "MCore.Research.UserProgram.cyclicInvariant_all_equal",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Action.olean' of module MCore.Research.UserProgram.C3Action does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/CyclicInvariant.lean",
+     "linha": 20,
+     "nome": "MCore.Research.UserProgram.cyclicInvariant_eq_manifesto",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Action.olean' of module MCore.Research.UserProgram.C3Action does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/FlowSemantics.lean",
+     "linha": 10,
+     "nome": "MCore.Research.UserProgram.orbit3_eq_initial",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/FlowSemantics.lean",
+     "linha": 16,
+     "nome": "MCore.Research.UserProgram.conservedSum_orbit1",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/FlowSemantics.lean",
+     "linha": 20,
+     "nome": "MCore.Research.UserProgram.conservedSum_orbit2",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/FlowSemantics.lean",
+     "linha": 24,
+     "nome": "MCore.Research.UserProgram.conservedSum_orbit3",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/FlowSemantics.lean",
+     "linha": 29,
+     "nome": "MCore.Research.UserProgram.opC_orbit1",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/FlowSemantics.lean",
+     "linha": 33,
+     "nome": "MCore.Research.UserProgram.opC_orbit2",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/FlowSemantics.lean",
+     "linha": 40,
+     "nome": "MCore.Research.UserProgram.cycleDefect_zero",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/GlobalCertificate.lean",
+     "linha": 24,
+     "nome": "MCore.Research.UserProgram.I3KernelInhabitant_sound",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/FlowSemantics.olean' of module MCore.Research.UserProgram.FlowSemantics does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/GlobalCertificate.lean",
+     "linha": 59,
+     "nome": "MCore.Research.UserProgram.i3Provenance_nonempty",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/FlowSemantics.olean' of module MCore.Research.UserProgram.FlowSemantics does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3Geometry.lean",
+     "linha": 8,
+     "nome": "MCore.Research.UserProgram.sqrt_three_sq",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ThreeChannel.olean' of module MCore.Research.UserProgram.ThreeChannel does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3Geometry.lean",
+     "linha": 11,
+     "nome": "MCore.Research.UserProgram.omega3_sq_add_omega3_add_one",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ThreeChannel.olean' of module MCore.Research.UserProgram.ThreeChannel does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3Geometry.lean",
+     "linha": 18,
+     "nome": "MCore.Research.UserProgram.omega3_cube",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ThreeChannel.olean' of module MCore.Research.UserProgram.ThreeChannel does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3Geometry.lean",
+     "linha": 30,
+     "nome": "MCore.Research.UserProgram.phase_sum_zero",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ThreeChannel.olean' of module MCore.Research.UserProgram.ThreeChannel does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3Geometry.lean",
+     "linha": 37,
+     "nome": "MCore.Research.UserProgram.phase_next",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ThreeChannel.olean' of module MCore.Research.UserProgram.ThreeChannel does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3Geometry.lean",
+     "linha": 57,
+     "nome": "MCore.Research.UserProgram.ComplexThreeChannel.centered_sum_zero",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ThreeChannel.olean' of module MCore.Research.UserProgram.ThreeChannel does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3VectorAlgebra.lean",
+     "linha": 19,
+     "nome": "MCore.Research.UserProgram.I3Vector.ext",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3VectorAlgebra.lean",
+     "linha": 27,
+     "nome": "MCore.Research.UserProgram.I3Vector.add_assoc",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3VectorAlgebra.lean",
+     "linha": 31,
+     "nome": "MCore.Research.UserProgram.I3Vector.add_zero",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3VectorAlgebra.lean",
+     "linha": 34,
+     "nome": "MCore.Research.UserProgram.I3Vector.add_neg",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3VectorAlgebra.lean",
+     "linha": 37,
+     "nome": "MCore.Research.UserProgram.I3Vector.smul_add",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3VectorAlgebra.lean",
+     "linha": 41,
+     "nome": "MCore.Research.UserProgram.I3Vector.add_smul",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3VectorAlgebra.lean",
+     "linha": 45,
+     "nome": "MCore.Research.UserProgram.I3Vector.mul_smul",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3VectorAlgebra.lean",
+     "linha": 52,
+     "nome": "MCore.Research.UserProgram.I3Vector.rotate_three",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3VectorAlgebra.lean",
+     "linha": 59,
+     "nome": "MCore.Research.UserProgram.I3Vector.sum_rotate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/I3VectorAlgebra.lean",
+     "linha": 66,
+     "nome": "MCore.Research.UserProgram.I3Vector.zeroSum_rotate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/IRegime.lean",
+     "linha": 12,
+     "nome": "MCore.Research.UserProgram.I3_ne_infinite",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/IRegime.lean",
+     "linha": 14,
+     "nome": "MCore.Research.UserProgram.I3_ne_indeterminate",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/IRegime.lean",
+     "linha": 26,
+     "nome": "MCore.Research.UserProgram.I3State.next_three",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/IRegime.lean",
+     "linha": 30,
+     "nome": "MCore.Research.UserProgram.I3State.next_ne_self",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/LocalGlobal.lean",
+     "linha": 19,
+     "nome": "MCore.Research.UserProgram.gap_iff_no_reconstruction",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/LocalGlobal.lean",
+     "linha": 23,
+     "nome": "MCore.Research.UserProgram.hasBridge_not_gap",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ModeDecomposition.lean",
+     "linha": 18,
+     "nome": "MCore.Research.UserProgram.ComplexThreeChannel.ext",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3Geometry.olean' of module MCore.Research.UserProgram.I3Geometry does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ModeDecomposition.lean",
+     "linha": 27,
+     "nome": "MCore.Research.UserProgram.ComplexThreeChannel.mean_meanPart",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3Geometry.olean' of module MCore.Research.UserProgram.I3Geometry does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ModeDecomposition.lean",
+     "linha": 32,
+     "nome": "MCore.Research.UserProgram.ComplexThreeChannel.mean_oscPart",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3Geometry.olean' of module MCore.Research.UserProgram.I3Geometry does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ModeDecomposition.lean",
+     "linha": 38,
+     "nome": "MCore.Research.UserProgram.ComplexThreeChannel.meanPart_idempotent",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3Geometry.olean' of module MCore.Research.UserProgram.I3Geometry does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ModeDecomposition.lean",
+     "linha": 43,
+     "nome": "MCore.Research.UserProgram.ComplexThreeChannel.oscPart_idempotent",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3Geometry.olean' of module MCore.Research.UserProgram.I3Geometry does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ModeDecomposition.lean",
+     "linha": 49,
+     "nome": "MCore.Research.UserProgram.ComplexThreeChannel.meanPart_oscPart",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3Geometry.olean' of module MCore.Research.UserProgram.I3Geometry does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ModeDecomposition.lean",
+     "linha": 55,
+     "nome": "MCore.Research.UserProgram.ComplexThreeChannel.reconstruct",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3Geometry.olean' of module MCore.Research.UserProgram.I3Geometry does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/OperatorLaws.lean",
+     "linha": 13,
+     "nome": "MCore.Research.UserProgram.commute_refl",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/Operators.olean' of module MCore.Research.UserProgram.Operators does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/OperatorLaws.lean",
+     "linha": 16,
+     "nome": "MCore.Research.UserProgram.commute_symm",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/Operators.olean' of module MCore.Research.UserProgram.Operators does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/OperatorLaws.lean",
+     "linha": 21,
+     "nome": "MCore.Research.UserProgram.involution_idempotent_iff_id",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/Operators.olean' of module MCore.Research.UserProgram.Operators does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/Operators.lean",
+     "linha": 12,
+     "nome": "MCore.Research.UserProgram.Operator.comp_assoc",
+     "status": "fechado",
+     "axioms": []
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/Operators.lean",
+     "linha": 18,
+     "nome": "MCore.Research.UserProgram.Operator.id_comp",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/Operators.lean",
+     "linha": 23,
+     "nome": "MCore.Research.UserProgram.Operator.comp_id",
+     "status": "erro",
+     "axioms": [
+      "sorryAx"
+     ]
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/SemanticProofCore.lean",
+     "linha": 32,
+     "nome": "MCore.Research.UserProgram.SemanticMap.comp_apply",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3LinearSectors.olean' of module MCore.Research.UserProgram.C3LinearSectors does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/SemanticProofCore.lean",
+     "linha": 49,
+     "nome": "MCore.Research.UserProgram.Inhabitant.sound",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3LinearSectors.olean' of module MCore.Research.UserProgram.C3LinearSectors does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/SemanticProofCore.lean",
+     "linha": 52,
+     "nome": "MCore.Research.UserProgram.Inhabitant.nonempty_iff",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3LinearSectors.olean' of module MCore.Research.UserProgram.C3LinearSectors does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/SemanticProofCore.lean",
+     "linha": 77,
+     "nome": "MCore.Research.UserProgram.rotationGlobalInhabitant_sound",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3LinearSectors.olean' of module MCore.Research.UserProgram.C3LinearSectors does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/SemanticProofCore.lean",
+     "linha": 92,
+     "nome": "MCore.Research.UserProgram.I3Flow_three",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3LinearSectors.olean' of module MCore.Research.UserProgram.C3LinearSectors does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ThreeChannel.lean",
+     "linha": 18,
+     "nome": "MCore.Research.UserProgram.ThreeChannel.rotate_three",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CyclicInvariant.olean' of module MCore.Research.UserProgram.CyclicInvariant does not exist"
+    },
+    {
+     "arquivo": "lean/MCore/Research/UserProgram/ThreeChannel.lean",
+     "linha": 23,
+     "nome": "MCore.Research.UserProgram.ThreeChannel.total_rotate",
+     "status": "nao_alcancado",
+     "axioms": [],
+     "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CyclicInvariant.olean' of module MCore.Research.UserProgram.CyclicInvariant does not exist"
+    }
+   ],
+   "preenchimento": [],
    "summary": {
     "fechado": 245,
     "aberto-sorry": 0,
