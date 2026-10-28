@@ -1,0 +1,3308 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/cook-levin-janela-20261014",
+ "branch_state": "em andamento",
+ "head_commit": "c196c649b3ffa7299297d2efc061b4427af03f90",
+ "head_commit_date": "2026-10-14T20:50:54+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "c196c649b3ffa7299297d2efc061b4427af03f90",
+   "date": "2026-10-14T20:50:54+01:00",
+   "subject": "docstrings: B4 provada (ModeloPNP, CookLevinReducao, Conditional/PvsNP)"
+  },
+  {
+   "commit": "4ef10801c8c46a20b458b17cfaa10bdda43ca1ee",
+   "date": "2026-10-14T20:50:54+01:00",
+   "subject": "ATK.lean: importa CookLevinMolde, CookLevinPrograma, CookLevinFinal"
+  },
+  {
+   "commit": "f332a905e9fd28f09356d1c128f1658ef2127970",
+   "date": "2026-10-14T20:50:54+01:00",
+   "subject": "atk-kernel: CL5 — Cook–Levin no modelo genuíno (ponte B4 provada no kernel)"
+  },
+  {
+   "commit": "5bcf5605739cbb936a4bc0c4b3b3899836fef44f",
+   "date": "2026-10-14T20:50:54+01:00",
+   "subject": "atk-kernel: CookLevinMolde — registro das 95 declarações (range'_pre → rangeL_pre)"
+  },
+  {
+   "commit": "d2d68d0d52382c4b80807b686acab43022d89820",
+   "date": "2026-10-14T20:50:54+01:00",
+   "subject": "atk-kernel: CookLevinMolde — registro das declarações (T1' → TS)"
+  },
+  {
+   "commit": "052825953bf0555976b026d583f1e4243e3806eb",
+   "date": "2026-10-14T20:50:54+01:00",
+   "subject": "atk-kernel: CL4b-4c — o molde da fórmula de Cook–Levin"
+  },
+  {
+   "commit": "90cf60542dc985d516fd1cd17e989157282beea5",
+   "date": "2026-10-14T20:50:45+01:00",
+   "subject": "atk-kernel: CL4b-4b — aritmética unária nos contadores (avaliação de polinômios)"
+  },
+  {
+   "commit": "72867344231aedbc475e201493c9a93faa603df8",
+   "date": "2026-10-14T20:50:45+01:00",
+   "subject": "CookLevinVerificador.Scel: (T+1)·pushMax em vez de T·pushMax (caso T = 0)"
+  },
+  {
+   "commit": "a8b681c56e595feeb4858c119bb7fda7d495fc4f",
+   "date": "2026-10-14T19:34:59+01:00",
+   "subject": "atk-kernel: CL4b-4a — moldes de fórmula compilados para laços, com custo"
+  },
+  {
+   "commit": "88dd7e573e72aa1b37ce053f5cc35d944af0239a",
+   "date": "2026-10-14T19:29:07+01:00",
+   "subject": "atk-kernel: CL4b-3 — todo programa de laços de custo polinomial é TM2 polinomial"
+  },
+  {
+   "commit": "fe9763c924f322773aa2af49ec8a18842cdce192",
+   "date": "2026-10-14T19:21:52+01:00",
+   "subject": "atk-kernel: CL4b-1/2 — linguagem de laços e compilador verificado para TM2"
+  },
+  {
+   "commit": "d8cb761abcf8f7159a32c50f0765533b373211b1",
+   "date": "2026-10-14T18:58:55+01:00",
+   "subject": "PONTE_B4: estado da NP-dificuldade (CL1–CL4a no kernel; falta CL4b)"
+  },
+  {
+   "commit": "f44aa158bf50083ef38cb7b2c805f15f1c7c32f0",
+   "date": "2026-10-14T18:50:19+01:00",
+   "subject": "atk-kernel: Cook–Levin CL4a — a redução como função e B4 módulo a máquina"
+  },
+  {
+   "commit": "9e4a056ed47eede692a168fe0b989a36ce3c2065",
+   "date": "2026-10-14T18:46:37+01:00",
+   "subject": "obligations: B4 — progresso da NP-dificuldade (CL1–CL3 no kernel; falta CL4)"
+  },
+  {
+   "commit": "8b1e931bd7788c437580a8d9d93a34ae603d82fc",
+   "date": "2026-10-14T18:46:18+01:00",
+   "subject": "atk-kernel: Cook–Levin CL3c–CL3d — a fórmula de um verificador NP é fiel"
+  },
+  {
+   "commit": "ee97c2075b478fe2a4919fae6a4c0898505165f0",
+   "date": "2026-10-14T18:40:24+01:00",
+   "subject": "atk-kernel: Cook–Levin CL3b — restrição a alfabetos finitos"
+  },
+  {
+   "commit": "f7b8bdd8c094d10e3dc2f3a648ccd3a77e44a579",
+   "date": "2026-10-14T18:37:29+01:00",
+   "subject": "atk-kernel: Cook–Levin CL2–CL3 — o tableau CNF e a sua correção"
+  },
+  {
+   "commit": "01c8b5c31469241460d8d71bd08238ad4a19ebaa",
+   "date": "2026-10-14T18:20:12+01:00",
+   "subject": "atk-kernel: Cook–Levin CL1 — um passo de FinTM2 é local (a janela)"
+  },
+  {
+   "commit": "9d387b4a3028db352c48a227f6d6f641bb32eb61",
+   "date": "2026-10-14T17:48:28+01:00",
+   "subject": "atk-kernel: SAT ∈ NP sobre Turing.FinTM2 (metade da ponte B4, Cook–Levin)"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.CookLevinFinal.eval_EcostP",
+   "file": "atk-kernel/ATK/CookLevinFinal.lean",
+   "line": 128,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (cs : List ℕ) (B : ℕ), Polynomial.eval B (ATK.CookLevinFinal.EcostP cs) = ATK.CookLevinPrograma.Ecost cs B"
+  },
+  {
+   "name": "ATK.CookLevinFinal.eval_K1P",
+   "file": "atk-kernel/ATK/CookLevinFinal.lean",
+   "line": 132,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {χ : ATK.LigacaoPNP.Palavra → Bool} (V : Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod Computability.encodeBool χ)   (q : Polynomial ℕ) (B : ℕ), Polynomial.eval B (ATK.CookLevinFinal.K1P V q) = ATK.CookLevinFinal.K1 V q B"
+  },
+  {
+   "name": "ATK.CookLevinFinal.eval_VnP",
+   "file": "atk-kernel/ATK/CookLevinFinal.lean",
+   "line": 135,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {χ : ATK.LigacaoPNP.Palavra → Bool} (V : Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod Computability.encodeBool χ)   (q : Polynomial ℕ) (n : ℕ), Polynomial.eval n (ATK.CookLevinFinal.VnP V q) = ATK.CookLevinFinal.Vn V q n"
+  },
+  {
+   "name": "ATK.CookLevinFinal.fCL_computavel",
+   "file": "atk-kernel/ATK/CookLevinFinal.lean",
+   "line": 138,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {χ : ATK.LigacaoPNP.Palavra → Bool} (V : Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod Computability.encodeBool χ)   (q : Polynomial ℕ),   Nonempty (Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod ATK.LigacaoPNP.cod (ATK.CookLevinReducao.fCL V q))"
+  },
+  {
+   "name": "ATK.CookLevinFinal.pre_length",
+   "file": "atk-kernel/ATK/CookLevinFinal.lean",
+   "line": 47,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (w : ATK.LigacaoPNP.Palavra), (ATK.CookLevinVerificador.pre w).length = 2 * List.length w + 2"
+  },
+  {
+   "name": "ATK.CookLevinFinal.progCL_custo",
+   "file": "atk-kernel/ATK/CookLevinFinal.lean",
+   "line": 97,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {χ : ATK.LigacaoPNP.Palavra → Bool} (V : Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod Computability.encodeBool χ)   (q : Polynomial ℕ) (w : ATK.LigacaoPNP.Palavra),   ATK.Gerador.cost w (ATK.CookLevinFinal.progCL V q) ATK.Gerador.s0 ≤     ATK.CookLevinFinal.K1 V q (ATK.CookLevinFinal.Vn V q (List.length w))"
+  },
+  {
+   "name": "ATK.CookLevinFinal.progCL_out",
+   "file": "atk-kernel/ATK/CookLevinFinal.lean",
+   "line": 63,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {χ : ATK.LigacaoPNP.Palavra → Bool} (V : Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod Computability.encodeBool χ)   (q : Polynomial ℕ) (w : ATK.LigacaoPNP.Palavra),   (ATK.Gerador.run w (ATK.CookLevinFinal.progCL V q) ATK.Gerador.s0).out = ATK.CookLevinReducao.fCL V q w"
+  },
+  {
+   "name": "ATK.CookLevinFinal.regOK",
+   "file": "atk-kernel/ATK/CookLevinFinal.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {χ : ATK.LigacaoPNP.Palavra → Bool} (V : Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod Computability.encodeBool χ)   (q : Polynomial ℕ) (w : ATK.LigacaoPNP.Palavra),   ATK.CookLevinMolde.RegOK (ATK.CookLevinFinal.Mv V) w     (ATK.Gerador.run w         (ATK.CookLevinPrograma.aritP (ATK.Gerador.coefs q) (ATK.Gerador.coefs V.time) (ATK.CookLevinFinal.Pv V)           (ATK.CookLevinFinal.Dv V))"
+  },
+  {
+   "name": "ATK.CookLevinInicio.cfgIni_k₀",
+   "file": "atk-kernel/ATK/CookLevinInicio.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [Fintype K] {Γ : K → Type} [(k : K) → Fintype (Γ k)] [(k : K) → DecidableEq (Γ k)]   {Λ : Type} [Fintype Λ] [DecidableEq Λ] {σ : Type} [Fintype σ] [DecidableEq σ] {k₀ : K} {E : List (Γ k₀)}   {g : Bool → Γ k₀} {main : Λ} {s₀ : σ} (c : List Bool),   (ATK.CookLevinInicio.cfgIni k₀ E g main s₀ c).stk k₀ = E ++ List.map g c"
+  },
+  {
+   "name": "ATK.CookLevinInicio.cfgIni_ne",
+   "file": "atk-kernel/ATK/CookLevinInicio.lean",
+   "line": 58,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [Fintype K] {Γ : K → Type} [(k : K) → Fintype (Γ k)] [(k : K) → DecidableEq (Γ k)]   {Λ : Type} [Fintype Λ] [DecidableEq Λ] {σ : Type} [Fintype σ] [DecidableEq σ] {k₀ : K} {E : List (Γ k₀)}   {g : Bool → Γ k₀} {main : Λ} {s₀ : σ} {k : K},   k ≠ k₀ → ∀ (c : List Bool), (ATK.CookLevinInicio.cfgIni k₀ E g main s₀ c).stk k = []"
+  },
+  {
+   "name": "ATK.CookLevinInicio.dec_get",
+   "file": "atk-kernel/ATK/CookLevinInicio.lean",
+   "line": 154,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] {Γ : K → Type} {Λ σ : Type} {k₀ : K} {E : List (Γ k₀)} {g : Bool → Γ k₀} {m : ℕ}   (τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool),   (∀ i < m,       τ (ATK.CookLevinTableau.Var.cel 0 k₀ (E.length + i) none) = true →         τ (ATK.CookLevinTableau.Var.cel 0 k₀ (E.length + i + 1) none) = true) →     ∀ (n i : ℕ),       i + n ≤ m →         ∀ j < n,           (ATK.CookLevin"
+  },
+  {
+   "name": "ATK.CookLevinInicio.dec_length",
+   "file": "atk-kernel/ATK/CookLevinInicio.lean",
+   "line": 144,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] {Γ : K → Type} {Λ σ : Type} {k₀ : K} {E : List (Γ k₀)} {g : Bool → Γ k₀}   (τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool) (n i : ℕ), (ATK.CookLevinInicio.dec τ n i).length ≤ n"
+  },
+  {
+   "name": "ATK.CookLevinInicio.ini_dec",
+   "file": "atk-kernel/ATK/CookLevinInicio.lean",
+   "line": 180,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} [inst_2 : (k : K) → Fintype (Γ k)]   [inst_3 : (k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_4 : Fintype Λ] [inst_5 : DecidableEq Λ] {σ : Type}   [inst_6 : Fintype σ] [inst_7 : DecidableEq σ] {k₀ : K} {E : List (Γ k₀)} {g : Bool → Γ k₀} {m : ℕ} {main : Λ} {s₀ : σ}   {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {S : ℕ},   E.le"
+  },
+  {
+   "name": "ATK.CookLevinInicio.ini_sat",
+   "file": "atk-kernel/ATK/CookLevinInicio.lean",
+   "line": 102,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} [(k : K) → Fintype (Γ k)]   [inst_3 : (k : K) → DecidableEq (Γ k)] {Λ : Type} [Fintype Λ] [inst_5 : DecidableEq Λ] {σ : Type} [Fintype σ]   [inst_7 : DecidableEq σ] {k₀ : K} {E : List (Γ k₀)} {g : Bool → Γ k₀} {m : ℕ} {main : Λ} {s₀ : σ}   {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {S : ℕ} {c : List Bool},   c.length ≤ m →"
+  },
+  {
+   "name": "ATK.CookLevinInicio.sat_iniF",
+   "file": "atk-kernel/ATK/CookLevinInicio.lean",
+   "line": 62,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} [(k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [Fintype Λ] [DecidableEq Λ] {σ : Type} [Fintype σ] [DecidableEq σ] {k₀ : K}   {E : List (Γ k₀)} {g : Bool → Γ k₀} {m : ℕ} {main : Λ} {s₀ : σ} {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {S : ℕ},   ATK.CookLevinTableau.Sat τ (ATK.CookLevinInicio.iniF k₀ E g"
+  },
+  {
+   "name": "ATK.CookLevinJanela.drop_eq_drop_take_append",
+   "file": "atk-kernel/ATK/CookLevinJanela.lean",
+   "line": 59,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_5} (l : List α) {n d : ℕ}, n ≤ d → List.drop n l = List.drop n (List.take d l) ++ List.drop d l"
+  },
+  {
+   "name": "ATK.CookLevinJanela.drop_tail",
+   "file": "atk-kernel/ATK/CookLevinJanela.lean",
+   "line": 56,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_5} (l : List α) (n : ℕ), List.drop n l.tail = List.drop (n + 1) l"
+  },
+  {
+   "name": "ATK.CookLevinJanela.head_eq",
+   "file": "atk-kernel/ATK/CookLevinJanela.lean",
+   "line": 50,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_5} {l l' : List α}, List.take 1 l = List.take 1 l' → l.head? = l'.head?"
+  },
+  {
+   "name": "ATK.CookLevinJanela.prof_le_profMax",
+   "file": "atk-kernel/ATK/CookLevinJanela.lean",
+   "line": 195,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type u_1} {Γ : K → Type u_2} {Λ : Type u_3} {σ : Type u_4} [inst : Fintype Λ] (M : Λ → Turing.TM2.Stmt Γ Λ σ)   (l : Λ), ATK.CookLevinJanela.prof (M l) ≤ ATK.CookLevinJanela.profMax M"
+  },
+  {
+   "name": "ATK.CookLevinJanela.stepAux_concorda",
+   "file": "atk-kernel/ATK/CookLevinJanela.lean",
+   "line": 68,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type u_1} [inst : DecidableEq K] {Γ : K → Type u_2} {Λ : Type u_3} {σ : Type u_4} (q : Turing.TM2.Stmt Γ Λ σ)   (v : σ) (S S' : (k : K) → List (Γ k)),   (∀ (k : K), List.take (ATK.CookLevinJanela.prof q) (S k) = List.take (ATK.CookLevinJanela.prof q) (S' k)) →     (Turing.TM2.stepAux q v S).l = (Turing.TM2.stepAux q v S').l ∧       (Turing.TM2.stepAux q v S).var = (Turing.TM2.stepAux q v S'"
+  },
+  {
+   "name": "ATK.CookLevinJanela.stepAux_janela",
+   "file": "atk-kernel/ATK/CookLevinJanela.lean",
+   "line": 181,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type u_1} [inst : DecidableEq K] {Γ : K → Type u_2} {Λ : Type u_3} {σ : Type u_4} (q : Turing.TM2.Stmt Γ Λ σ)   (v : σ) (S : (k : K) → List (Γ k)),   Turing.TM2.stepAux q v S =     { l := (Turing.TM2.stepAux q v (ATK.CookLevinJanela.jan (ATK.CookLevinJanela.prof q) S)).l,       var := (Turing.TM2.stepAux q v (ATK.CookLevinJanela.jan (ATK.CookLevinJanela.prof q) S)).var,       stk := fun k ="
+  },
+  {
+   "name": "ATK.CookLevinJanela.stepAux_janela_de",
+   "file": "atk-kernel/ATK/CookLevinJanela.lean",
+   "line": 161,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type u_1} [inst : DecidableEq K] {Γ : K → Type u_2} {Λ : Type u_3} {σ : Type u_4} (q : Turing.TM2.Stmt Γ Λ σ)   (v : σ) (S : (k : K) → List (Γ k)) {d : ℕ},   ATK.CookLevinJanela.prof q ≤ d →     Turing.TM2.stepAux q v S =       { l := (Turing.TM2.stepAux q v (ATK.CookLevinJanela.jan d S)).l,         var := (Turing.TM2.stepAux q v (ATK.CookLevinJanela.jan d S)).var,         stk := fun k => ("
+  },
+  {
+   "name": "ATK.CookLevinJanela.step_janela",
+   "file": "atk-kernel/ATK/CookLevinJanela.lean",
+   "line": 198,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type u_1} [inst : DecidableEq K] {Γ : K → Type u_2} {Λ : Type u_3} {σ : Type u_4} [inst_1 : Fintype Λ]   (M : Λ → Turing.TM2.Stmt Γ Λ σ) (l : Λ) (v : σ) (S : (k : K) → List (Γ k)),   Turing.TM2.step M { l := some l, var := v, stk := S } =     some       { l := (Turing.TM2.stepAux (M l) v (ATK.CookLevinJanela.jan (ATK.CookLevinJanela.profMax M) S)).l,         var := (Turing.TM2.stepAux (M l)"
+  },
+  {
+   "name": "ATK.CookLevinJanela.step_parada",
+   "file": "atk-kernel/ATK/CookLevinJanela.lean",
+   "line": 210,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type u_1} [inst : DecidableEq K] {Γ : K → Type u_2} {Λ : Type u_3} {σ : Type u_4} (M : Λ → Turing.TM2.Stmt Γ Λ σ)   (v : σ) (S : (k : K) → List (Γ k)), Turing.TM2.step M { l := none, var := v, stk := S } = none"
+  },
+  {
+   "name": "ATK.CookLevinJanela.tail_take_succ",
+   "file": "atk-kernel/ATK/CookLevinJanela.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_5} (l : List α) (n : ℕ), List.take n l.tail = (List.take (n + 1) l).tail"
+  },
+  {
+   "name": "ATK.CookLevinJanela.take_cons_succ",
+   "file": "atk-kernel/ATK/CookLevinJanela.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_5} (a : α) (l : List α) (d : ℕ), List.take (d + 1) (a :: l) = a :: List.take d l"
+  },
+  {
+   "name": "ATK.CookLevinJanela.take_of_take",
+   "file": "atk-kernel/ATK/CookLevinJanela.lean",
+   "line": 45,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_5} {l l' : List α} {n m : ℕ}, List.take m l = List.take m l' → n ≤ m → List.take n l = List.take n l'"
+  },
+  {
+   "name": "ATK.CookLevinMolde.Epre_length",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 466,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [Fintype K] {Γ : K → Type} [(k : K) → Fintype (Γ k)] [(k : K) → DecidableEq (Γ k)] (k₀ : K)   (g : Bool → Γ k₀) (w : List Bool), (ATK.CookLevinMolde.Epre k₀ g w).length = 2 * w.length + 2"
+  },
+  {
+   "name": "ATK.CookLevinMolde.SmOK_upd",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 410,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} {g : ATK.CookLevinMolde.Rg C → ℕ},   ATK.CookLevinMolde.SmOK g →     ∀ (r : ATK.CookLevinMolde.Rg C),       r = ATK.CookLevinMolde.Rg.t ∨ r = ATK.CookLevinMolde.Rg.j ∨ r = ATK.CookLevinMolde.Rg.i →         ∀ (n : ℕ), ATK.CookLevinMolde.SmOK (Function.update g r n)"
+  },
+  {
+   "name": "ATK.CookLevinMolde.dobro_get",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 446,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (v : List Bool),   ∀ i < v.length,     (List.flatMap (fun b => [b, b]) v)[2 * i]? = v[i]? ∧ (List.flatMap (fun b => [b, b]) v)[2 * i + 1]? = v[i]?"
+  },
+  {
+   "name": "ATK.CookLevinMolde.dobro_length",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 458,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (v : List Bool), (List.flatMap (fun b => [b, b]) v).length = 2 * v.length"
+  },
+  {
+   "name": "ATK.CookLevinMolde.flatMap_single",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 208,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_1} {β : Type u_2} (l : List α) (f : α → β), List.flatMap (fun a => [f a]) l = List.map f l"
+  },
+  {
+   "name": "ATK.CookLevinMolde.fmOutV_cod3",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 132,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] (φ : ATK.CookLevinTableau.Fm (ATK.CookLevinTableau.Var K Γ Λ σ)),   ATK.Gerador.fmOutV ATK.CookLevinMolde.cod3 φ =     ATK.ModeloPNP.codCNF (ATK.CookLevinReducao.mapF ATK.C"
+  },
+  {
+   "name": "ATK.CookLevinMolde.litCel_ok",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 105,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] {C : ℕ} {sc : ATK.CookLevinMolde.Rg C → Prop} (b : Bool) (k : K) (a : Option (Γ k))   (tt pt : ATK.Gerador.UT (ATK.CookLevinMolde.Rg C)),   (∀ r ∈ tt.1 ++ pt.1, ¬sc r) → AT"
+  },
+  {
+   "name": "ATK.CookLevinMolde.litLab_ok",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 93,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] {C : ℕ} {sc : ATK.CookLevinMolde.Rg C → Prop} (b : Bool) (o : Option Λ)   (tt : ATK.Gerador.UT (ATK.CookLevinMolde.Rg C)),   (∀ r ∈ tt.1, ¬sc r) → ATK.CookLevinMolde.LitOK"
+  },
+  {
+   "name": "ATK.CookLevinMolde.litOutV_cod3",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 127,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] (ℓ : ATK.CookLevinTableau.Var K Γ Λ σ × Bool),   ATK.Gerador.litOutV ATK.CookLevinMolde.cod3 ℓ = ATK.ModeloPNP.codLiteral (ATK.CookLevinReducao.enc ℓ.1, ℓ.2)"
+  },
+  {
+   "name": "ATK.CookLevinMolde.litSt_ok",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 99,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] {C : ℕ} {sc : ATK.CookLevinMolde.Rg C → Prop} (b : Bool) (v : σ)   (tt : ATK.Gerador.UT (ATK.CookLevinMolde.Rg C)),   (∀ r ∈ tt.1, ¬sc r) → ATK.CookLevinMolde.LitOK sc (ATK"
+  },
+  {
+   "name": "ATK.CookLevinMolde.premT_ok",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 703,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] {C : ℕ} (M : Λ → Turing.TM2.Stmt Γ Λ σ) (sc : ATK.CookLevinMolde.Rg C → Prop),   ¬sc ATK.CookLevinMolde.Rg.t →     ∀ (c : ATK.CookLevinTableau.Caso M), ∀ l ∈ ATK.CookLevinM"
+  },
+  {
+   "name": "ATK.CookLevinMolde.premT_v",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 312,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] {C : ℕ} (M : Λ → Turing.TM2.Stmt Γ Λ σ) (c : ATK.CookLevinTableau.Caso M)   (g : ATK.CookLevinMolde.Rg C → ℕ),   List.map (fun l => (l.v g, l.b)) (ATK.CookLevinMolde.premT"
+  },
+  {
+   "name": "ATK.CookLevinMolde.rangeL_pre",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 475,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [Fintype K] {Γ : K → Type} [(k : K) → Fintype (Γ k)] [(k : K) → DecidableEq (Γ k)]   {Λ : Type} [Fintype Λ] [DecidableEq Λ] {σ : Type} [Fintype σ] [DecidableEq σ] (k₀ : K) (g : Bool → Γ k₀)   (w v : List Bool) (n : ℕ),   (∀ i < v.length,       (ATK.CookLevinMolde.Epre k₀ g w)[2 * (n + i)]? = some (g v[i]!) ∧         (ATK.CookLevinMolde.Epre k₀ g w)[2 * (n + i) + 1]? ="
+  },
+  {
+   "name": "ATK.CookLevinMolde.range_zonas",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 264,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {β : Type} (S L D : ℕ),   L ≤ S →     D ≤ S →       ∀ (A B Cn : ℕ → List β),         List.flatMap (fun p => if p < L then A p else if p - L + D < S then B p else Cn p) (List.range S) =           List.flatMap A (List.range L) ++ List.flatMap (fun j => B (j + L)) (List.range (S - max L D)) ++             List.flatMap (fun i => Cn (S - (max L D - L) + i)) (List.range (max L D - L))"
+  },
+  {
+   "name": "ATK.CookLevinMolde.res_len_le",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 341,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [Fintype K] {Γ : K → Type} [(k : K) → Fintype (Γ k)] [(k : K) → DecidableEq (Γ k)]   {Λ : Type} [inst_4 : Fintype Λ] [DecidableEq Λ] {σ : Type} [Fintype σ] [DecidableEq σ] (M : Λ → Turing.TM2.Stmt Γ Λ σ)   (c : ATK.CookLevinTableau.Caso M) (k : K),   ((ATK.CookLevinTableau.res M c).stk k).length ≤ ATK.CookLevinJanela.profMax M + ATK.CookLevinTableau.pushMax M"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_aceitaT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 437,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] {C : ℕ} (w : List Bool) (g : ATK.CookLevinMolde.Rg C → ℕ) (k₁ : K) (y : Γ k₁),   ATK.Gerador.sem w (ATK.CookLevinMolde.aceitaT k₁ y) g = ATK.CookLevinTableau.aceita (g ATK."
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_casoT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 356,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} [inst_2 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_4 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_6 : Fintype σ]   [DecidableEq σ] {C : ℕ} (M : Λ → Turing.TM2.Stmt Γ Λ σ) (w : List Bool) (g : ATK.CookLevinMolde.Rg C → ℕ),   ATK.CookLevinJanela.profMax M + ATK.CookLevinTableau.pushMax M < C →"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_cat",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 148,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {V R : Type} [inst : DecidableEq R] (w : List Bool) (a b : ATK.Gerador.FT V R) (g : R → ℕ),   ATK.Gerador.sem w (a.cat b) g = ATK.Gerador.sem w a g ++ ATK.Gerador.sem w b g"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_estruturaT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 419,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} [inst_2 : (k : K) → Fintype (Γ k)]   [inst_3 : (k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_4 : Fintype Λ] [inst_5 : DecidableEq Λ] {σ : Type}   [inst_6 : Fintype σ] [inst_7 : DecidableEq σ] {C : ℕ} (M : Λ → Turing.TM2.Stmt Γ Λ σ) (w : List Bool)   (g : ATK.CookLevinMolde.Rg C → ℕ),   ATK.CookLevinJanela.profMax M + ATK.CookL"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_formulaT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 638,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} [inst_2 : (k : K) → Fintype (Γ k)]   [inst_3 : (k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_4 : Fintype Λ] [inst_5 : DecidableEq Λ] {σ : Type}   [inst_6 : Fintype σ] [inst_7 : DecidableEq σ] {C : ℕ} (M : Λ → Turing.TM2.Stmt Γ Λ σ) (k₀ k₁ : K) (g : Bool → Γ k₀)   (y : Γ k₁) (main : Λ) (s₀ : σ) (w : List Bool) (gr : ATK.CookLev"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_iniT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 563,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} [inst_2 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_4 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_6 : Fintype σ]   [DecidableEq σ] {C : ℕ} (k₀ : K) (g : Bool → Γ k₀) (main : Λ) (s₀ : σ) (w : List Bool)   (gr : ATK.CookLevinMolde.Rg C → ℕ),   gr ATK.CookLevinMolde.Rg.N = w.length →     gr ATK.C"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_linhaT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 231,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [inst_2 : (k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [inst_4 : DecidableEq Λ] {σ : Type}   [inst_5 : Fintype σ] [inst_6 : DecidableEq σ] {C : ℕ} (w : List Bool) (g : ATK.CookLevinMolde.Rg C → ℕ),   ATK.Gerador.sem w ATK.CookLevinMolde.linhaT g =     ATK.CookLevinTableau.clsLinha (g"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_manyF",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 156,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {V R : Type} [inst : DecidableEq R] (w : List Bool) (xs : List (ATK.Gerador.FT V R)) (g : R → ℕ),   ATK.Gerador.sem w (ATK.CookLevinMolde.manyF xs) g = List.flatMap (fun x => ATK.Gerador.sem w x g) xs"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_manyF_cl",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 198,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {V R α : Type} [inst : DecidableEq R] (w : List Bool) (xs : List α) (L : α → List (ATK.Gerador.LT V R)) (g : R → ℕ),   ATK.Gerador.sem w (ATK.CookLevinMolde.manyF (List.map (fun x => ATK.Gerador.FT.cl (L x)) xs)) g =     List.map (fun x => List.map (fun l => (l.v g, l.b)) (L x)) xs"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_paraT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 258,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] {C : ℕ} (w : List Bool) (g : ATK.CookLevinMolde.Rg C → ℕ),   ATK.Gerador.sem w ATK.CookLevinMolde.paraT g =     ATK.CookLevinTableau.clsPara (g ATK.CookLevinMolde.Rg.t) (g"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_preT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 533,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] {C : ℕ} (k₀ : K) (g : Bool → Γ k₀) (w : List Bool) (gr : ATK.CookLevinMolde.Rg C → ℕ),   gr ATK.CookLevinMolde.Rg.N = w.length →     ATK.Gerador.sem w (ATK.CookLevinMolde.p"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_pre_range",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 496,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [Fintype K] {Γ : K → Type} [(k : K) → Fintype (Γ k)] [(k : K) → DecidableEq (Γ k)]   {Λ : Type} [Fintype Λ] [DecidableEq Λ] {σ : Type} [Fintype σ] [DecidableEq σ] (k₀ : K) (g : Bool → Γ k₀)   (w : List Bool),   List.map (ATK.CookLevinMolde.celPre k₀ g w) (List.range (ATK.CookLevinMolde.Epre k₀ g w).length) =     List.flatMap         (fun x =>           [[(ATK.CookLevin"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_transT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 397,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} [inst_2 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_4 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_6 : Fintype σ]   [DecidableEq σ] {C : ℕ} (M : Λ → Turing.TM2.Stmt Γ Λ σ) (w : List Bool) (g : ATK.CookLevinMolde.Rg C → ℕ),   ATK.CookLevinJanela.profMax M + ATK.CookLevinTableau.pushMax M < C →"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sem_umDeT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 178,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [Fintype K] {Γ : K → Type} [(k : K) → Fintype (Γ k)] [(k : K) → DecidableEq (Γ k)]   {Λ : Type} [Fintype Λ] [DecidableEq Λ] {σ : Type} [Fintype σ] [DecidableEq σ] {C : ℕ} {α : Type} [inst : Fintype α]   [inst_1 : DecidableEq α] (w : List Bool)   (mk : α → Bool → ATK.Gerador.LT (ATK.CookLevinTableau.Var K Γ Λ σ) (ATK.CookLevinMolde.Rg C))   (f : (ATK.CookLevinMolde.Rg C"
+  },
+  {
+   "name": "ATK.CookLevinMolde.sm_not_idx",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 648,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (c : ℕ), ¬ATK.CookLevinMolde.idxR (ATK.CookLevinMolde.Rg.sm c)"
+  },
+  {
+   "name": "ATK.CookLevinMolde.unS_eq",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 114,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (n : ℕ), List.flatMap ATK.ModeloPNP.simb (ATK.CookLevinReducao.u n) = ATK.Gerador.unS n"
+  },
+  {
+   "name": "ATK.CookLevinMolde.val_c",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 216,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (g : ATK.CookLevinMolde.Rg C → ℕ) (c : ℕ), ATK.Gerador.val ([], c) g = c"
+  },
+  {
+   "name": "ATK.CookLevinMolde.val_insens",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 87,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} {sc : ATK.CookLevinMolde.Rg C → Prop} {u : ATK.Gerador.UT (ATK.CookLevinMolde.Rg C)},   (∀ r ∈ u.1, ¬sc r) → ATK.Gerador.Insens sc (ATK.Gerador.val u)"
+  },
+  {
+   "name": "ATK.CookLevinMolde.val_r",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 215,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (r : ATK.CookLevinMolde.Rg C) (g : ATK.CookLevinMolde.Rg C → ℕ) (c : ℕ), ATK.Gerador.val ([r], c) g = g r + c"
+  },
+  {
+   "name": "ATK.CookLevinMolde.val_t",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 213,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (g : ATK.CookLevinMolde.Rg C → ℕ) (c : ℕ),   ATK.Gerador.val ([ATK.CookLevinMolde.Rg.t], c) g = g ATK.CookLevinMolde.Rg.t + c"
+  },
+  {
+   "name": "ATK.CookLevinMolde.wf_aceitaT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 789,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] {C : ℕ} (k₁ : K) (y : Γ k₁),   ATK.Gerador.WF ATK.CookLevinMolde.cod3 (ATK.CookLevinMolde.aceitaT k₁ y) ATK.CookLevinMolde.idxR"
+  },
+  {
+   "name": "ATK.CookLevinMolde.wf_casoT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 712,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} [inst_2 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_4 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_6 : Fintype σ]   [DecidableEq σ] {C : ℕ} (M : Λ → Turing.TM2.Stmt Γ Λ σ) (c : ATK.CookLevinTableau.Caso M),   ATK.Gerador.WF ATK.CookLevinMolde.cod3 (ATK.CookLevinMolde.casoT M c) ATK.CookLevinMol"
+  },
+  {
+   "name": "ATK.CookLevinMolde.wf_cl",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 168,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] {C : ℕ} (sc : ATK.CookLevinMolde.Rg C → Prop)   (lits : List (ATK.Gerador.LT (ATK.CookLevinTableau.Var K Γ Λ σ) (ATK.CookLevinMolde.Rg C))),   (∀ l ∈ lits, ATK.CookLevinMol"
+  },
+  {
+   "name": "ATK.CookLevinMolde.wf_estruturaT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 759,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} [inst_2 : (k : K) → Fintype (Γ k)]   [inst_3 : (k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_4 : Fintype Λ] [inst_5 : DecidableEq Λ] {σ : Type}   [inst_6 : Fintype σ] [inst_7 : DecidableEq σ] {C : ℕ} (M : Λ → Turing.TM2.Stmt Γ Λ σ),   ATK.Gerador.WF ATK.CookLevinMolde.cod3 (ATK.CookLevinMolde.estruturaT M) ATK.CookLevinMolde.i"
+  },
+  {
+   "name": "ATK.CookLevinMolde.wf_formulaT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 796,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} [inst_2 : (k : K) → Fintype (Γ k)]   [inst_3 : (k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_4 : Fintype Λ] [inst_5 : DecidableEq Λ] {σ : Type}   [inst_6 : Fintype σ] [inst_7 : DecidableEq σ] {C : ℕ} (M : Λ → Turing.TM2.Stmt Γ Λ σ) (k₀ k₁ : K) (g : Bool → Γ k₀)   (y : Γ k₁) (main : Λ) (s₀ : σ),   ATK.Gerador.WF ATK.CookLevinMo"
+  },
+  {
+   "name": "ATK.CookLevinMolde.wf_iniT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 762,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} [inst_2 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_4 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_6 : Fintype σ]   [DecidableEq σ] {C : ℕ} (k₀ : K) (g : Bool → Γ k₀) (main : Λ) (s₀ : σ),   ATK.Gerador.WF ATK.CookLevinMolde.cod3 (ATK.CookLevinMolde.iniT k₀ g main s₀) ATK.CookLevinMolde.idxR"
+  },
+  {
+   "name": "ATK.CookLevinMolde.wf_linhaT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 673,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [inst_2 : (k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [inst_4 : DecidableEq Λ] {σ : Type}   [inst_5 : Fintype σ] [inst_6 : DecidableEq σ] {C : ℕ},   ATK.Gerador.WF ATK.CookLevinMolde.cod3 ATK.CookLevinMolde.linhaT ATK.CookLevinMolde.sc1"
+  },
+  {
+   "name": "ATK.CookLevinMolde.wf_manyF",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 161,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {V R : Type} [DecidableEq R] (c3 : V → ℕ × ℕ × ℕ) (xs : List (ATK.Gerador.FT V R)) (sc : R → Prop),   (∀ x ∈ xs, ATK.Gerador.WF c3 x sc) → ATK.Gerador.WF c3 (ATK.CookLevinMolde.manyF xs) sc"
+  },
+  {
+   "name": "ATK.CookLevinMolde.wf_paraT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 681,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] {C : ℕ}, ATK.Gerador.WF ATK.CookLevinMolde.cod3 ATK.CookLevinMolde.paraT ATK.CookLevinMolde.sc1"
+  },
+  {
+   "name": "ATK.CookLevinMolde.wf_transT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 754,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} [inst_2 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_4 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_6 : Fintype σ]   [DecidableEq σ] {C : ℕ} (M : Λ → Turing.TM2.Stmt Γ Λ σ),   ATK.Gerador.WF ATK.CookLevinMolde.cod3 (ATK.CookLevinMolde.transT M) ATK.CookLevinMolde.sc1"
+  },
+  {
+   "name": "ATK.CookLevinMolde.wf_umDeT",
+   "file": "atk-kernel/ATK/CookLevinMolde.lean",
+   "line": 654,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] {Λ : Type} [inst_3 : Fintype Λ] [DecidableEq Λ] {σ : Type} [inst_5 : Fintype σ]   [DecidableEq σ] {C : ℕ} {α : Type} [inst_7 : Fintype α] [inst_8 : DecidableEq α] (sc : ATK.CookLevinMolde.Rg C → Prop)   (mk : α → Bool → ATK.Gerador.LT (ATK.CookLevinTableau.Var K Γ Λ σ)"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.cost_aritA",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 286,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (qc tc : List ℕ) (P D V : ℕ),   2 * w.length + 2 + ATK.Gerador.horn w.length qc +             (P * (ATK.Gerador.horn (2 * w.length + 2 + ATK.Gerador.horn w.length qc) tc + 1) + (D + 1)) +           ATK.Gerador.horn (2 * w.length + 2 + ATK.Gerador.horn w.length qc) tc +         1 ≤       V →     ATK.Gerador.cost w (ATK.CookLevinPrograma.aritA qc tc P D) ATK.Gerador.s0 ≤"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.cost_aritP",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 377,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (qc tc : List ℕ) (P D V : ℕ),   2 * w.length + 2 + ATK.Gerador.horn w.length qc +             (P * (ATK.Gerador.horn (2 * w.length + 2 + ATK.Gerador.horn w.length qc) tc + 1) + (D + 1)) +           ATK.Gerador.horn (2 * w.length + 2 + ATK.Gerador.horn w.length qc) tc +         1 ≤       V →     ATK.Gerador.cost w (ATK.CookLevinPrograma.aritP qc tc P D) ATK.Gerador.s0 ≤"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.cost_conta",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 90,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (r : ATK.CookLevinMolde.Rg C) (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),   ATK.Gerador.cost w ((ATK.Gerador.Prog.inc r).forIn (ATK.Gerador.Prog.inc r)) s = 5 * w.length + 3"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.cost_decs",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 62,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (r : ATK.CookLevinMolde.Rg C) (k : ℕ) (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),   ATK.Gerador.cost w (ATK.CookLevinPrograma.decs k r) s = k"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.cost_evalP_le",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 265,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) {x acc : ATK.CookLevinMolde.Rg C},   x ≠ acc →     x ≠ ATK.CookLevinMolde.Rg.pw →       x ≠ ATK.CookLevinMolde.Rg.tm →         acc ≠ ATK.CookLevinMolde.Rg.pw →           acc ≠ ATK.CookLevinMolde.Rg.tm →             ∀ (cs : List ℕ) (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)) (V : ℕ),               s.regs acc = 0 →                 s.regs ATK.CookLevinMolde.Rg.pw = 0 →"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.cost_incs",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (r : ATK.CookLevinMolde.Rg C) (k : ℕ) (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),   ATK.Gerador.cost w (ATK.CookLevinPrograma.incs k r) s = k"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.cost_seqP",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 281,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (p q : ATK.Gerador.Prog (ATK.CookLevinMolde.Rg C))   (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),   ATK.Gerador.cost w (p.seq q) s = ATK.Gerador.cost w p s + ATK.Gerador.cost w q (ATK.Gerador.run w p s)"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.cost_seqs_cons",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 171,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (p : ATK.Gerador.Prog (ATK.CookLevinMolde.Rg C))   (ps : List (ATK.Gerador.Prog (ATK.CookLevinMolde.Rg C))) (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),   ATK.Gerador.cost w (ATK.Gerador.seqs (p :: ps)) s =     ATK.Gerador.cost w p s + ATK.Gerador.cost w (ATK.Gerador.seqs ps) (ATK.Gerador.run w p s)"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.cost_smL",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 236,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (B : ℕ) (l : List ℕ),   (∀ c ∈ l, c < C) →     ∀ (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),       s.regs ATK.CookLevinMolde.Rg.SS ≤ B →         ATK.Gerador.cost w             (ATK.Gerador.seqs               (List.map                 (fun c =>                   (ATK.Gerador.addTo ATK.CookLevinMolde.Rg.SS (ATK.CookLevinMolde.Rg.sm c)).seq                     (ATK.CookL"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.regs_le_V",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 417,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (qc tc : List ℕ) (P D V : ℕ),   2 * w.length + 2 + ATK.Gerador.horn w.length qc +             (P * (ATK.Gerador.horn (2 * w.length + 2 + ATK.Gerador.horn w.length qc) tc + 1) + (D + 1)) +           ATK.Gerador.horn (2 * w.length + 2 + ATK.Gerador.horn w.length qc) tc +         1 ≤       V →     ∀ (r : ATK.CookLevinMolde.Rg C),       (ATK.Gerador.run w (ATK.CookLevinProgra"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.run_aritA",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 148,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (qc tc : List ℕ) (P D : ℕ),   (ATK.Gerador.run w (ATK.CookLevinPrograma.aritA qc tc P D) ATK.Gerador.s0).out = [] ∧     ATK.CookLevinPrograma.Vals C w.length (ATK.Gerador.horn w.length qc)         (ATK.Gerador.horn (2 * w.length + 2 + ATK.Gerador.horn w.length qc) tc) P D         (ATK.Gerador.run w (ATK.CookLevinPrograma.aritA qc tc P D) ATK.Gerador.s0).regs ∧       ∀ (c"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.run_aritP",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 392,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (qc tc : List ℕ) (P D : ℕ),   (ATK.Gerador.run w (ATK.CookLevinPrograma.aritP qc tc P D) ATK.Gerador.s0).out = [] ∧     ATK.CookLevinPrograma.Vals C w.length (ATK.Gerador.horn w.length qc)         (ATK.Gerador.horn (2 * w.length + 2 + ATK.Gerador.horn w.length qc) tc) P D         (ATK.Gerador.run w (ATK.CookLevinPrograma.aritP qc tc P D) ATK.Gerador.s0).regs ∧       ATK.C"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.run_conta",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 72,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (r : ATK.CookLevinMolde.Rg C) (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),   ATK.Gerador.run w ((ATK.Gerador.Prog.inc r).forIn (ATK.Gerador.Prog.inc r)) s =     { regs := Function.update s.regs r (s.regs r + w.length), out := s.out }"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.run_decs",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (r : ATK.CookLevinMolde.Rg C) (k : ℕ) (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),   ATK.Gerador.run w (ATK.CookLevinPrograma.decs k r) s =     { regs := Function.update s.regs r (s.regs r - k), out := s.out }"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.run_incP",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 145,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (r : ATK.CookLevinMolde.Rg C) (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),   ATK.Gerador.run w (ATK.Gerador.Prog.inc r) s = { regs := Function.update s.regs r (s.regs r + 1), out := s.out }"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.run_incs",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (r : ATK.CookLevinMolde.Rg C) (k : ℕ) (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),   ATK.Gerador.run w (ATK.CookLevinPrograma.incs k r) s =     { regs := Function.update s.regs r (s.regs r + k), out := s.out }"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.run_seqP",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 142,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (p q : ATK.Gerador.Prog (ATK.CookLevinMolde.Rg C))   (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),   ATK.Gerador.run w (p.seq q) s = ATK.Gerador.run w q (ATK.Gerador.run w p s)"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.run_seqs_cons",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 168,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (p : ATK.Gerador.Prog (ATK.CookLevinMolde.Rg C))   (ps : List (ATK.Gerador.Prog (ATK.CookLevinMolde.Rg C))) (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),   ATK.Gerador.run w (ATK.Gerador.seqs (p :: ps)) s = ATK.Gerador.run w (ATK.Gerador.seqs ps) (ATK.Gerador.run w p s)"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.run_smL",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 192,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (l : List ℕ),   (∀ c ∈ l, c < C) →     l.Nodup →       ∀ (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),         (∀ c ∈ l, s.regs (ATK.CookLevinMolde.Rg.sm c) = 0) →           (ATK.Gerador.run w                   (ATK.Gerador.seqs                     (List.map                       (fun c =>                         (ATK.Gerador.addTo ATK.CookLevinMolde.Rg.SS (ATK.CookLevi"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.run_smP",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 226,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),   (∀ (c : Fin C), s.regs (Sum.inr c) = 0) →     (ATK.Gerador.run w (ATK.CookLevinPrograma.smP C) s).out = s.out ∧       (∀ (a : Fin 13), (ATK.Gerador.run w (ATK.CookLevinPrograma.smP C) s).regs (Sum.inl a) = s.regs (Sum.inl a)) ∧         ∀ c < C,           (ATK.Gerador.run w (ATK.CookLevinPrograma.smP C) s).regs (ATK.CookLev"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.run_smStep",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 185,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (w : List Bool) {c : ℕ},   c < C →     ∀ (s : ATK.Gerador.St (ATK.CookLevinMolde.Rg C)),       ATK.Gerador.run w           ((ATK.Gerador.addTo ATK.CookLevinMolde.Rg.SS (ATK.CookLevinMolde.Rg.sm c)).seq             (ATK.CookLevinPrograma.decs c (ATK.CookLevinMolde.Rg.sm c)))           s =         {           regs :=             Function.update s.regs (ATK.CookLevinMolde.Rg.sm c)"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.s0_regs",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 140,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : ℕ} (r : ATK.CookLevinMolde.Rg C), ATK.Gerador.s0.regs r = 0"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.sm_inj",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 180,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C c c' : ℕ}, c < C → c' < C → ATK.CookLevinMolde.Rg.sm c = ATK.CookLevinMolde.Rg.sm c' → c = c'"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.sm_lt",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 174,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C c : ℕ} (hc : c < C), ATK.CookLevinMolde.Rg.sm c = Sum.inr ⟨c, hc⟩"
+  },
+  {
+   "name": "ATK.CookLevinPrograma.sm_ne_SS",
+   "file": "atk-kernel/ATK/CookLevinPrograma.lean",
+   "line": 177,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C c : ℕ}, c < C → ATK.CookLevinMolde.Rg.sm c ≠ ATK.CookLevinMolde.Rg.SS"
+  },
+  {
+   "name": "ATK.CookLevinReducao.bits_enc",
+   "file": "atk-kernel/ATK/CookLevinReducao.lean",
+   "line": 100,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)] {Λ : Type}   [inst_2 : Fintype Λ] {σ : Type} [inst_3 : Fintype σ] (v : ATK.CookLevinTableau.Var K Γ Λ σ),   (ATK.CookLevinReducao.enc v).bits = ATK.CookLevinReducao.code v"
+  },
+  {
+   "name": "ATK.CookLevinReducao.code_canon",
+   "file": "atk-kernel/ATK/CookLevinReducao.lean",
+   "line": 94,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)] {Λ : Type}   [inst_2 : Fintype Λ] {σ : Type} [inst_3 : Fintype σ] (v : ATK.CookLevinTableau.Var K Γ Λ σ),   ATK.SatNPSemantica.Canon (ATK.CookLevinReducao.code v)"
+  },
+  {
+   "name": "ATK.CookLevinReducao.code_injective",
+   "file": "atk-kernel/ATK/CookLevinReducao.lean",
+   "line": 103,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)] {Λ : Type}   [inst_2 : Fintype Λ] {σ : Type} [inst_3 : Fintype σ], Function.Injective ATK.CookLevinReducao.code"
+  },
+  {
+   "name": "ATK.CookLevinReducao.cookLevin_de_computavel",
+   "file": "atk-kernel/ATK/CookLevinReducao.lean",
+   "line": 178,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(∀ (χ : ATK.LigacaoPNP.Palavra → Bool)     (V : Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod Computability.encodeBool χ) (q : Polynomial ℕ),     Nonempty (Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod ATK.LigacaoPNP.cod (ATK.CookLevinReducao.fCL V q))) →   ATK.Conditional.PvsNP.CookLevin ATK.ModeloPNP.modeloPNP ATK.ModeloPNP.SAT"
+  },
+  {
+   "name": "ATK.CookLevinReducao.enc_injective",
+   "file": "atk-kernel/ATK/CookLevinReducao.lean",
+   "line": 113,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [inst : Fintype K] {Γ : K → Type} [inst_1 : (k : K) → Fintype (Γ k)] {Λ : Type}   [inst_2 : Fintype Λ] {σ : Type} [inst_3 : Fintype σ], Function.Injective ATK.CookLevinReducao.enc"
+  },
+  {
+   "name": "ATK.CookLevinReducao.fCL_correta",
+   "file": "atk-kernel/ATK/CookLevinReducao.lean",
+   "line": 164,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {χ : ATK.LigacaoPNP.Palavra → Bool} (V : Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod Computability.encodeBool χ)   (q : Polynomial ℕ) {L : ATK.LigacaoPNP.Linguagem},   (∀ (w : ATK.LigacaoPNP.Palavra),       w ∈ L ↔ ∃ c, List.length c ≤ Polynomial.eval (List.length w) q ∧ χ (ATK.LigacaoPNP.par w c) = true) →     ∀ (w : ATK.LigacaoPNP.Palavra), w ∈ L ↔ ATK.CookLevinReducao.fCL V q w ∈ ATK.Mo"
+  },
+  {
+   "name": "ATK.CookLevinReducao.mem_SAT_codCNF",
+   "file": "atk-kernel/ATK/CookLevinReducao.lean",
+   "line": 141,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (ψ : ATK.ModeloPNP.CNF), ATK.ModeloPNP.codCNF ψ ∈ ATK.ModeloPNP.SAT ↔ ATK.ModeloPNP.Satisfativel ψ"
+  },
+  {
+   "name": "ATK.CookLevinReducao.red_de_computavel",
+   "file": "atk-kernel/ATK/CookLevinReducao.lean",
+   "line": 170,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {χ : ATK.LigacaoPNP.Palavra → Bool} (V : Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod Computability.encodeBool χ)   (q : Polynomial ℕ) {L : ATK.LigacaoPNP.Linguagem},   (∀ (w : ATK.LigacaoPNP.Palavra),       w ∈ L ↔ ∃ c, List.length c ≤ Polynomial.eval (List.length w) q ∧ χ (ATK.LigacaoPNP.par w c) = true) →     Nonempty (Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod ATK.LigacaoPNP.cod"
+  },
+  {
+   "name": "ATK.CookLevinReducao.satisfativel_mapF",
+   "file": "atk-kernel/ATK/CookLevinReducao.lean",
+   "line": 123,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {V : Type u_1} {e : V → ℕ},   Function.Injective e →     ∀ (φ : ATK.CookLevinTableau.Fm V),       ATK.ModeloPNP.Satisfativel (ATK.CookLevinReducao.mapF e φ) ↔ ∃ τ, ATK.CookLevinTableau.Sat τ φ"
+  },
+  {
+   "name": "ATK.CookLevinReducao.u_append_inj",
+   "file": "atk-kernel/ATK/CookLevinReducao.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {a b : ℕ} {l l' : List Bool}, ATK.CookLevinReducao.u a ++ l = ATK.CookLevinReducao.u b ++ l' → a = b ∧ l = l'"
+  },
+  {
+   "name": "ATK.CookLevinReducao.var_ext",
+   "file": "atk-kernel/ATK/CookLevinReducao.lean",
+   "line": 65,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [Fintype K] {Γ : K → Type} [(k : K) → Fintype (Γ k)] {Λ : Type} [Fintype Λ] {σ : Type}   [Fintype σ] {v v' : ATK.CookLevinTableau.Var K Γ Λ σ},   ATK.CookLevinReducao.dado v = ATK.CookLevinReducao.dado v' →     ATK.CookLevinReducao.inst v = ATK.CookLevinReducao.inst v' →       ATK.CookLevinReducao.celula v = ATK.CookLevinReducao.celula v' → v = v'"
+  },
+  {
+   "name": "ATK.CookLevinRestricao.passo_restr",
+   "file": "atk-kernel/ATK/CookLevinRestricao.lean",
+   "line": 121,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} {R : (k : K) → Set (Γ k)}   (M : Λ → Turing.TM2.Stmt Γ Λ σ) (hR : ∀ (l : Λ) (k : K), ATK.CookLevinRestricao.pushSet (M l) k ⊆ R k)   (c : Turing.TM2.Cfg (fun k => ↑(R k)) Λ σ),   ATK.CookLevinRestricao.valC (ATK.CookLevinTableau.passo (ATK.CookLevinRestricao.restr M hR) c) =     ATK.CookLevinTableau.passo M (ATK.CookLevinRestricao.val"
+  },
+  {
+   "name": "ATK.CookLevinRestricao.pushSet_finite",
+   "file": "atk-kernel/ATK/CookLevinRestricao.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] {Γ : K → Type} {Λ σ : Type} [Finite σ] (q : Turing.TM2.Stmt Γ Λ σ) (k : K),   (ATK.CookLevinRestricao.pushSet q k).Finite"
+  },
+  {
+   "name": "ATK.CookLevinRestricao.run_restr",
+   "file": "atk-kernel/ATK/CookLevinRestricao.lean",
+   "line": 137,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} {R : (k : K) → Set (Γ k)}   (M : Λ → Turing.TM2.Stmt Γ Λ σ) (hR : ∀ (l : Λ) (k : K), ATK.CookLevinRestricao.pushSet (M l) k ⊆ R k)   (c : Turing.TM2.Cfg (fun k => ↑(R k)) Λ σ) (t : ℕ),   ATK.CookLevinRestricao.valC (ATK.CookLevinTableau.run (ATK.CookLevinRestricao.restr M hR) c t) =     ATK.CookLevinTableau.run M (ATK.CookLevinRestric"
+  },
+  {
+   "name": "ATK.CookLevinRestricao.stepAux_tr",
+   "file": "atk-kernel/ATK/CookLevinRestricao.lean",
+   "line": 83,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} {R : (k : K) → Set (Γ k)} (q : Turing.TM2.Stmt Γ Λ σ)   (h : ∀ (k : K), ATK.CookLevinRestricao.pushSet q k ⊆ R k) (v : σ) (S : (k : K) → List ↑(R k)),   ATK.CookLevinRestricao.valC (Turing.TM2.stepAux (ATK.CookLevinRestricao.tr R q h) v S) =     Turing.TM2.stepAux q v (ATK.CookLevinRestricao.valS S)"
+  },
+  {
+   "name": "ATK.CookLevinRestricao.step_restr",
+   "file": "atk-kernel/ATK/CookLevinRestricao.lean",
+   "line": 113,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} {R : (k : K) → Set (Γ k)}   (M : Λ → Turing.TM2.Stmt Γ Λ σ) (hR : ∀ (l : Λ) (k : K), ATK.CookLevinRestricao.pushSet (M l) k ⊆ R k)   (c : Turing.TM2.Cfg (fun k => ↑(R k)) Λ σ),   Option.map ATK.CookLevinRestricao.valC (Turing.TM2.step (ATK.CookLevinRestricao.restr M hR) c) =     Turing.TM2.step M (ATK.CookLevinRestricao.valC c)"
+  },
+  {
+   "name": "ATK.CookLevinRestricao.valS_update",
+   "file": "atk-kernel/ATK/CookLevinRestricao.lean",
+   "line": 76,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {R : (k : K) → Set (Γ k)} (S : (k : K) → List ↑(R k)) (k : K)   (L : List ↑(R k)),   ATK.CookLevinRestricao.valS (Function.update S k L) =     Function.update (ATK.CookLevinRestricao.valS S) k (List.map Subtype.val L)"
+  },
+  {
+   "name": "ATK.CookLevinTableau.Linha.de",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 355,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst : Fintype K] [inst_1 : (k : K) → Fintype (Γ k)]   [inst_2 : (k : K) → DecidableEq (Γ k)] [inst_3 : Fintype Λ] [inst_4 : DecidableEq Λ] [inst_5 : Fintype σ]   [inst_6 : DecidableEq σ] {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {t S : ℕ} {C : Turing.TM2.Cfg Γ Λ σ},   ATK.CookLevinTableau.Sat τ (ATK.CookLevinTableau.clsLinha t S) →"
+  },
+  {
+   "name": "ATK.CookLevinTableau.Linha.sat",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 339,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst : Fintype K] [inst_1 : (k : K) → Fintype (Γ k)]   [inst_2 : (k : K) → DecidableEq (Γ k)] [inst_3 : Fintype Λ] [inst_4 : DecidableEq Λ] [inst_5 : Fintype σ]   [inst_6 : DecidableEq σ] {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {t S : ℕ} {C : Turing.TM2.Cfg Γ Λ σ},   ATK.CookLevinTableau.Linha τ t S C → ATK.CookLevinTableau.Sat τ (ATK"
+  },
+  {
+   "name": "ATK.CookLevinTableau.cl_imp",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 80,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {V : Type u_1} {τ : V → Bool} {P : List V} {ℓ : V × Bool},   (∃ m ∈ ATK.CookLevinTableau.imp P ℓ, τ m.1 = m.2) ↔ (∀ x ∈ P, τ x = true) → τ ℓ.1 = ℓ.2"
+  },
+  {
+   "name": "ATK.CookLevinTableau.clsCaso_guarda",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 434,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst_1 : Fintype K] [inst_2 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] [inst_4 : Fintype Λ] [DecidableEq Λ] [Fintype σ] [DecidableEq σ]   {M : Λ → Turing.TM2.Stmt Γ Λ σ} {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {t S : ℕ}   {c : ATK.CookLevinTableau.Caso M},   (¬∀ x ∈ ATK.CookLevinTableau.prem M t c, τ x = true) →"
+  },
+  {
+   "name": "ATK.CookLevinTableau.filterMap_ofFn_getElem_opt",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 169,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_2} (D : ℕ) (l : List α), List.filterMap id (List.ofFn fun i => l[↑i]?) = List.take D l"
+  },
+  {
+   "name": "ATK.CookLevinTableau.getElem_opt_append_drop",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 197,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_2} (r s : List α) (D p : ℕ),   (r ++ List.drop D s)[p]? = if p < r.length then r[p]? else s[p - r.length + D]?"
+  },
+  {
+   "name": "ATK.CookLevinTableau.janC_winOf",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 183,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] {Γ : K → Type} (D : ℕ) (S : (k : K) → List (Γ k)),   ATK.CookLevinTableau.janC (ATK.CookLevinTableau.winOf D S) = ATK.CookLevinJanela.jan D S"
+  },
+  {
+   "name": "ATK.CookLevinTableau.linha_gen",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 369,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] {Γ : K → Type} {Λ σ : Type} [Fintype K] [(k : K) → Fintype (Γ k)]   [inst : (k : K) → DecidableEq (Γ k)] [Fintype Λ] [inst_2 : DecidableEq Λ] [Fintype σ] [inst_4 : DecidableEq σ]   (r : ℕ → Turing.TM2.Cfg Γ Λ σ) (t S : ℕ), ATK.CookLevinTableau.Linha (ATK.CookLevinTableau.gen r) t S (r t)"
+  },
+  {
+   "name": "ATK.CookLevinTableau.mem_todos",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 100,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_2} [inst : Fintype α] (x : α), x ∈ ATK.CookLevinTableau.todos α"
+  },
+  {
+   "name": "ATK.CookLevinTableau.passo_cel",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 372,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} [Fintype K] [(k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] [inst_4 : Fintype Λ] [DecidableEq Λ] [Fintype σ] [DecidableEq σ]   {M : Λ → Turing.TM2.Stmt Γ Λ σ} (l : Λ) (v : σ) (Stk : (k : K) → List (Γ k)),   (ATK.CookLevinTableau.passo M { l := some l, var := v, stk := Stk }).l =       (ATK.CookLevinTableau.res M (l, v, ATK.C"
+  },
+  {
+   "name": "ATK.CookLevinTableau.passo_len",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 251,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst_1 : Fintype Λ] (M : Λ → Turing.TM2.Stmt Γ Λ σ)   (C : Turing.TM2.Cfg Γ Λ σ) (k : K),   ((ATK.CookLevinTableau.passo M C).stk k).length ≤ (C.stk k).length + ATK.CookLevinTableau.pushMax M"
+  },
+  {
+   "name": "ATK.CookLevinTableau.passo_none",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 158,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} (M : Λ → Turing.TM2.Stmt Γ Λ σ) (v : σ)   (S : (k : K) → List (Γ k)),   ATK.CookLevinTableau.passo M { l := none, var := v, stk := S } = { l := none, var := v, stk := S }"
+  },
+  {
+   "name": "ATK.CookLevinTableau.passo_some",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 187,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst_1 : Fintype Λ] (M : Λ → Turing.TM2.Stmt Γ Λ σ)   (l : Λ) (v : σ) (S : (k : K) → List (Γ k)),   ATK.CookLevinTableau.passo M { l := some l, var := v, stk := S } =     {       l :=         (Turing.TM2.stepAux (M l) v             (ATK.CookLevinTableau.janC (ATK.CookLevinTableau.winOf (ATK.CookLevinJanela.profMax M) S))).l,       va"
+  },
+  {
+   "name": "ATK.CookLevinTableau.prem_caso",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 394,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst : Fintype K] [(k : K) → Fintype (Γ k)]   [inst_2 : (k : K) → DecidableEq (Γ k)] [inst_3 : Fintype Λ] [inst_4 : DecidableEq Λ] [Fintype σ]   [inst_6 : DecidableEq σ] {M : Λ → Turing.TM2.Stmt Γ Λ σ} {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {t S : ℕ}   {C : Turing.TM2.Cfg Γ Λ σ},   ATK.CookLevinTableau.Linha τ t S C →     ATK.CookLev"
+  },
+  {
+   "name": "ATK.CookLevinTableau.prem_verdadeira",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 384,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst : Fintype K] [(k : K) → Fintype (Γ k)]   [inst_2 : (k : K) → DecidableEq (Γ k)] [inst_3 : Fintype Λ] [inst_4 : DecidableEq Λ] [Fintype σ]   [inst_6 : DecidableEq σ] {M : Λ → Turing.TM2.Stmt Γ Λ σ} {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {t S : ℕ}   {C : Turing.TM2.Cfg Γ Λ σ},   ATK.CookLevinTableau.Linha τ t S C →     ATK.CookLev"
+  },
+  {
+   "name": "ATK.CookLevinTableau.run_len",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 261,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst_1 : Fintype Λ] (M : Λ → Turing.TM2.Stmt Γ Λ σ)   (C : Turing.TM2.Cfg Γ Λ σ) (k : K) (t : ℕ),   ((ATK.CookLevinTableau.run M C t).stk k).length ≤ (C.stk k).length + t * ATK.CookLevinTableau.pushMax M"
+  },
+  {
+   "name": "ATK.CookLevinTableau.run_succ",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 154,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} (M : Λ → Turing.TM2.Stmt Γ Λ σ)   (C : Turing.TM2.Cfg Γ Λ σ) (t : ℕ),   ATK.CookLevinTableau.run M C (t + 1) = ATK.CookLevinTableau.passo M (ATK.CookLevinTableau.run M C t)"
+  },
+  {
+   "name": "ATK.CookLevinTableau.sat_aceita",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 551,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] {Γ : K → Type} {Λ σ : Type} [Fintype K] [(k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] [Fintype Λ] [DecidableEq Λ] [Fintype σ] [DecidableEq σ]   {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {T : ℕ} {k₁ : K} {y : Γ k₁},   ATK.CookLevinTableau.Sat τ (ATK.CookLevinTableau.aceita T k₁ y) ↔     τ (ATK.CookLevinTableau.Var.lab T none) = true ∧ τ (ATK.CookLevinTab"
+  },
+  {
+   "name": "ATK.CookLevinTableau.sat_clsLinha",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 346,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst : Fintype K] [inst_1 : (k : K) → Fintype (Γ k)]   [inst_2 : (k : K) → DecidableEq (Γ k)] [inst_3 : Fintype Λ] [inst_4 : DecidableEq Λ] [inst_5 : Fintype σ]   [inst_6 : DecidableEq σ] {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {t S : ℕ},   ATK.CookLevinTableau.Sat τ (ATK.CookLevinTableau.clsLinha t S) ↔     ATK.CookLevinTableau.Sat τ"
+  },
+  {
+   "name": "ATK.CookLevinTableau.sat_clsPara",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 418,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst : Fintype K] [inst_1 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] [Fintype Λ] [DecidableEq Λ] [inst_5 : Fintype σ] [DecidableEq σ]   {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {t S : ℕ},   ATK.CookLevinTableau.Sat τ (ATK.CookLevinTableau.clsPara t S) ↔     τ (ATK.CookLevinTableau.Var.lab t none) = true →       τ (ATK.C"
+  },
+  {
+   "name": "ATK.CookLevinTableau.sat_clsTrans",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 410,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst_1 : Fintype K] [inst_2 : (k : K) → Fintype (Γ k)]   [(k : K) → DecidableEq (Γ k)] [inst_4 : Fintype Λ] [DecidableEq Λ] [inst_6 : Fintype σ] [DecidableEq σ]   {M : Λ → Turing.TM2.Stmt Γ Λ σ} {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {t S : ℕ},   ATK.CookLevinTableau.Sat τ (ATK.CookLevinTableau.clsTrans M t S) ↔     ATK.CookLe"
+  },
+  {
+   "name": "ATK.CookLevinTableau.sat_cons",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 56,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {V : Type u_1} {τ : V → Bool} {C : ATK.CookLevinTableau.Cl V} {φ : ATK.CookLevinTableau.Fm V},   ATK.CookLevinTableau.Sat τ (C :: φ) ↔ (∃ ℓ ∈ C, τ ℓ.1 = ℓ.2) ∧ ATK.CookLevinTableau.Sat τ φ"
+  },
+  {
+   "name": "ATK.CookLevinTableau.sat_estrutura",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 543,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst_1 : Fintype K] [inst_2 : (k : K) → Fintype (Γ k)]   [inst_3 : (k : K) → DecidableEq (Γ k)] [inst_4 : Fintype Λ] [inst_5 : DecidableEq Λ] [inst_6 : Fintype σ]   [inst_7 : DecidableEq σ] {M : Λ → Turing.TM2.Stmt Γ Λ σ} {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {T S : ℕ},   ATK.CookLevinTableau.Sat τ (ATK.CookLevinTableau.estru"
+  },
+  {
+   "name": "ATK.CookLevinTableau.sat_map",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 67,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {V : Type u_1} {α : Type u_2} {τ : V → Bool} {l : List α} {f : α → ATK.CookLevinTableau.Cl V},   ATK.CookLevinTableau.Sat τ (List.map f l) ↔ ∀ x ∈ l, ∃ ℓ ∈ f x, τ ℓ.1 = ℓ.2"
+  },
+  {
+   "name": "ATK.CookLevinTableau.sat_nil",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {V : Type u_1} (τ : V → Bool), ATK.CookLevinTableau.Sat τ []"
+  },
+  {
+   "name": "ATK.CookLevinTableau.sat_umDe",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 108,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {V : Type u_1} {α : Type u_2} [inst : Fintype α] [inst_1 : DecidableEq α] {τ : V → Bool} {f : α → V},   ATK.CookLevinTableau.Sat τ (ATK.CookLevinTableau.umDe f) ↔ ∃ x, ∀ (y : α), τ (f y) = decide (y = x)"
+  },
+  {
+   "name": "ATK.CookLevinTableau.stepAux_len",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 217,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} (q : Turing.TM2.Stmt Γ Λ σ) (v : σ)   (S : (k : K) → List (Γ k)) (k : K),   ((Turing.TM2.stepAux q v S).stk k).length ≤ (S k).length + ATK.CookLevinTableau.npush q"
+  },
+  {
+   "name": "ATK.CookLevinTableau.tableau_correto",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 555,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst_1 : Fintype K] [inst_2 : (k : K) → Fintype (Γ k)]   [inst_3 : (k : K) → DecidableEq (Γ k)] [inst_4 : Fintype Λ] [inst_5 : DecidableEq Λ] [inst_6 : Fintype σ]   [inst_7 : DecidableEq σ] {M : Λ → Turing.TM2.Stmt Γ Λ σ} {T S : ℕ}   {ini : ATK.CookLevinTableau.Fm (ATK.CookLevinTableau.Var K Γ Λ σ)} {k₁ : K} {y : Γ k₁}   {I : Set (Tu"
+  },
+  {
+   "name": "ATK.CookLevinTableau.trans_det",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 503,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst_1 : Fintype K] [inst_2 : (k : K) → Fintype (Γ k)]   [inst_3 : (k : K) → DecidableEq (Γ k)] [inst_4 : Fintype Λ] [inst_5 : DecidableEq Λ] [inst_6 : Fintype σ]   [inst_7 : DecidableEq σ] {M : Λ → Turing.TM2.Stmt Γ Λ σ} {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {t S : ℕ}   {C : Turing.TM2.Cfg Γ Λ σ},   ATK.CookLevinTableau.Linh"
+  },
+  {
+   "name": "ATK.CookLevinTableau.trans_sat",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 448,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} [inst_1 : Fintype K] [inst_2 : (k : K) → Fintype (Γ k)]   [inst_3 : (k : K) → DecidableEq (Γ k)] [inst_4 : Fintype Λ] [inst_5 : DecidableEq Λ] [inst_6 : Fintype σ]   [inst_7 : DecidableEq σ] {M : Λ → Turing.TM2.Stmt Γ Λ σ} {τ : ATK.CookLevinTableau.Var K Γ Λ σ → Bool} {t S : ℕ}   {C : Turing.TM2.Cfg Γ Λ σ},   ATK.CookLevinTableau.Linh"
+  },
+  {
+   "name": "ATK.CookLevinTableau.umDe_det",
+   "file": "atk-kernel/ATK/CookLevinTableau.lean",
+   "line": 129,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {V : Type u_1} {α : Type u_2} [inst : Fintype α] [inst_1 : DecidableEq α] {τ : V → Bool} {f : α → V},   ATK.CookLevinTableau.Sat τ (ATK.CookLevinTableau.umDe f) →     ∀ {x : α}, τ (f x) = true → ∀ (y : α), τ (f y) = decide (y = x)"
+  },
+  {
+   "name": "ATK.CookLevinVerificador.R_finite",
+   "file": "atk-kernel/ATK/CookLevinVerificador.lean",
+   "line": 44,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [Fintype K] {Γ : K → Type} {Λ : Type} [Fintype Λ] {σ : Type} [Fintype σ]   (M : Λ → Turing.TM2.Stmt Γ Λ σ) (k₀ k₁ : K) [Finite (Γ k₀)] [Finite (Γ k₁)] (k : K),   (ATK.CookLevinVerificador.R M k₀ k₁ k).Finite"
+  },
+  {
+   "name": "ATK.CookLevinVerificador.formulaV_correta",
+   "file": "atk-kernel/ATK/CookLevinVerificador.lean",
+   "line": 92,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [inst_1 : Fintype K] {Γ : K → Type} {Λ : Type} [inst_2 : Fintype Λ] {σ : Type}   [inst_3 : Fintype σ] (M : Λ → Turing.TM2.Stmt Γ Λ σ) (k₀ k₁ : K) [inst_4 : Finite (Γ k₀)] [inst_5 : Finite (Γ k₁)]   (g : Bool → Γ k₀) (y : Γ k₁) (pre : List Bool) (m T : ℕ) (main : Λ) (s₀ : σ),   (∃ τ, ATK.CookLevinTableau.Sat τ (ATK.CookLevinVerificador.formulaV M k₀ k₁ g y pre m"
+  },
+  {
+   "name": "ATK.CookLevinVerificador.initList_eq",
+   "file": "atk-kernel/ATK/CookLevinVerificador.lean",
+   "line": 220,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {χ : ATK.LigacaoPNP.Palavra → Bool} (V : Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod Computability.encodeBool χ)   (w c : ATK.LigacaoPNP.Palavra),   Turing.initList V.tm (List.map V.inputAlphabet.invFun (ATK.LigacaoPNP.par w c)) =     ATK.CookLevinInicio.cfgIni V.tm.k₀ (List.map (⇑V.inputAlphabet.symm) (ATK.CookLevinVerificador.pre w))       (⇑V.inputAlphabet.symm) V.tm.main V.tm.initialSt"
+  },
+  {
+   "name": "ATK.CookLevinVerificador.iter_none",
+   "file": "atk-kernel/ATK/CookLevinVerificador.lean",
+   "line": 155,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} (M : Λ → Turing.TM2.Stmt Γ Λ σ) (n : ℕ),   (flip bind (Turing.TM2.step M))^[n] none = none"
+  },
+  {
+   "name": "ATK.CookLevinVerificador.par_eq",
+   "file": "atk-kernel/ATK/CookLevinVerificador.lean",
+   "line": 208,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (w c : ATK.LigacaoPNP.Palavra), ATK.LigacaoPNP.par w c = ATK.CookLevinVerificador.pre w ++ c"
+  },
+  {
+   "name": "ATK.CookLevinVerificador.pushSet_R",
+   "file": "atk-kernel/ATK/CookLevinVerificador.lean",
+   "line": 57,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [DecidableEq K] [Fintype K] {Γ : K → Type} {Λ : Type} [Fintype Λ] {σ : Type} [Fintype σ]   (M : Λ → Turing.TM2.Stmt Γ Λ σ) (k₀ k₁ : K) [Finite (Γ k₀)] [Finite (Γ k₁)] (l : Λ) (k : K),   ATK.CookLevinRestricao.pushSet (M l) k ⊆ ATK.CookLevinVerificador.R M k₀ k₁ k"
+  },
+  {
+   "name": "ATK.CookLevinVerificador.run_de_evals",
+   "file": "atk-kernel/ATK/CookLevinVerificador.lean",
+   "line": 184,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} (M : Λ → Turing.TM2.Stmt Γ Λ σ)   {a b : Turing.TM2.Cfg Γ Λ σ} {n T : ℕ},   (flip bind (Turing.TM2.step M))^[n] (some a) = some b → b.l = none → n ≤ T → ATK.CookLevinTableau.run M a T = b"
+  },
+  {
+   "name": "ATK.CookLevinVerificador.run_de_iter",
+   "file": "atk-kernel/ATK/CookLevinVerificador.lean",
+   "line": 160,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} (M : Λ → Turing.TM2.Stmt Γ Λ σ) (n : ℕ)   (a b : Turing.TM2.Cfg Γ Λ σ),   (flip bind (Turing.TM2.step M))^[n] (some a) = some b → ATK.CookLevinTableau.run M a n = b"
+  },
+  {
+   "name": "ATK.CookLevinVerificador.run_parada",
+   "file": "atk-kernel/ATK/CookLevinVerificador.lean",
+   "line": 176,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] {Γ : K → Type} {Λ σ : Type} (M : Λ → Turing.TM2.Stmt Γ Λ σ)   (b : Turing.TM2.Cfg Γ Λ σ), b.l = none → ∀ (t : ℕ), ATK.CookLevinTableau.run M b t = b"
+  },
+  {
+   "name": "ATK.CookLevinVerificador.valC_cfgR",
+   "file": "atk-kernel/ATK/CookLevinVerificador.lean",
+   "line": 82,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type} [inst : DecidableEq K] [Fintype K] {Γ : K → Type} {Λ : Type} [Fintype Λ] {σ : Type} [Fintype σ]   (M : Λ → Turing.TM2.Stmt Γ Λ σ) (k₀ k₁ : K) [Finite (Γ k₀)] [Finite (Γ k₁)] (g : Bool → Γ k₀) (pre : List Bool)   (main : Λ) (s₀ : σ) (c : List Bool),   ATK.CookLevinRestricao.valC (ATK.CookLevinVerificador.cfgR M k₀ k₁ g pre main s₀ c) =     ATK.CookLevinInicio.cfgIni k₀ (List.map g pre)"
+  },
+  {
+   "name": "ATK.CookLevinVerificador.verificador_tableau",
+   "file": "atk-kernel/ATK/CookLevinVerificador.lean",
+   "line": 231,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {χ : ATK.LigacaoPNP.Palavra → Bool} (V : Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod Computability.encodeBool χ)   (m : ℕ) (w : ATK.LigacaoPNP.Palavra),   (∃ τ, ATK.CookLevinTableau.Sat τ (ATK.CookLevinVerificador.formulaW V m w)) ↔     ∃ c, List.length c ≤ m ∧ χ (ATK.LigacaoPNP.par w c) = true"
+  },
+  {
+   "name": "ATK.Gerador.Loc.at",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 484,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a : ℕ} {P : List (ATK.Gerador.Ins κ)},   ATK.Gerador.Loc code a P → ∀ {i : ℕ} (hi : i < P.length), code[a + i]? = some P[i]"
+  },
+  {
+   "name": "ATK.Gerador.Loc.atE",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 487,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a : ℕ} {P : List (ATK.Gerador.Ins κ)},   ATK.Gerador.Loc code a P → ∀ {i b : ℕ} (hi : i < P.length), a + i = b → code[b]? = some P[i]"
+  },
+  {
+   "name": "ATK.Gerador.Loc.left",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 473,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a : ℕ} {P Q : List (ATK.Gerador.Ins κ)},   ATK.Gerador.Loc code a (P ++ Q) → ATK.Gerador.Loc code a P"
+  },
+  {
+   "name": "ATK.Gerador.Loc.right",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 478,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a : ℕ} {P Q : List (ATK.Gerador.Ins κ)},   ATK.Gerador.Loc code a (P ++ Q) → ATK.Gerador.Loc code (a + P.length) Q"
+  },
+  {
+   "name": "ATK.Gerador.Loc.self",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 139,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} (code : List (ATK.Gerador.Ins κ)), ATK.Gerador.Loc code 0 code"
+  },
+  {
+   "name": "ATK.Gerador.Loc.shift",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 490,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a b : ℕ} {P : List (ATK.Gerador.Ins κ)},   ATK.Gerador.Loc code a P → a = b → ATK.Gerador.Loc code b P"
+  },
+  {
+   "name": "ATK.Gerador.Reach.cons",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 227,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_1} {f : α → Option α} {c c' c'' : α} {n : ℕ},   f c = some c' → ATK.Gerador.Reach f c' c'' n → ATK.Gerador.Reach f c c'' (n + 1)"
+  },
+  {
+   "name": "ATK.Gerador.Reach.mono",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 216,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_1} {f : α → Option α} {c c' : α} {n m : ℕ},   ATK.Gerador.Reach f c c' n → n ≤ m → ATK.Gerador.Reach f c c' m"
+  },
+  {
+   "name": "ATK.Gerador.Reach.one",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 225,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_1} {f : α → Option α} {c c' : α}, f c = some c' → ATK.Gerador.Reach f c c' 1"
+  },
+  {
+   "name": "ATK.Gerador.Reach.refl",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 214,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_1} {f : α → Option α} (c : α), ATK.Gerador.Reach f c c 0"
+  },
+  {
+   "name": "ATK.Gerador.Reach.trans",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 219,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_1} {f : α → Option α} {c c' c'' : α} {n m : ℕ},   ATK.Gerador.Reach f c c' n → ATK.Gerador.Reach f c' c'' m → ATK.Gerador.Reach f c c'' (n + m)"
+  },
+  {
+   "name": "ATK.Gerador.asm_ok",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 527,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {D : ℕ} (code : List (ATK.Gerador.Ins (ATK.Gerador.Pk R D))) (w : List Bool)   (p : ATK.Gerador.Prog R) (a ℓ : ℕ) (S : ATK.Gerador.Pk R D → List Bool) (v : Bool),   ATK.Gerador.Loc code a (ATK.Gerador.asm D p a ℓ) →     ℓ + ATK.Gerador.depth p ≤ D →       ATK.Gerador.Inv ℓ w S →         ∃ v',           ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog code))"
+  },
+  {
+   "name": "ATK.Gerador.clr_ok",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 261,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [inst : DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a : ℕ} {k : κ},   code[a]? = some (ATK.Gerador.Ins.clr k) →     ∀ (l : List Bool) (v : Bool) (S : κ → List Bool),       S k = l →         ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog code)) (ATK.Gerador.cfg code a v S)           (ATK.Gerador.cfg code (a + 1) false (Function.update S k [])) (l.length + 1)"
+  },
+  {
+   "name": "ATK.Gerador.clrs_ok",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 147,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] [Fintype R] {D : ℕ} {code : List (ATK.Gerador.Ins (ATK.Gerador.Pk R D))}   (rs : List R) (a : ℕ) (S : ATK.Gerador.Pk R D → List Bool) (v : Bool),   (∀ (i : ℕ) (h : i < rs.length), code[a + i]? = some (ATK.Gerador.Ins.clr (ATK.Gerador.Pk.reg rs[i]))) →     ∃ v',       ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog code)) (ATK.Gerador.cfg code a v S)"
+  },
+  {
+   "name": "ATK.Gerador.comp_cost",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 435,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {V : Type} (cod3 : V → ℕ × ℕ × ℕ) (w : List Bool) (B : ℕ),   w.length ≤ B →     ∀ (ft : ATK.Gerador.FT V R) (sc : R → Prop),       ATK.Gerador.WF cod3 ft sc →         ∀ (s : ATK.Gerador.St R),           (∀ (r : R), s.regs r ≤ B) →             ATK.Gerador.cost w (ATK.Gerador.comp ft) s ≤ ATK.Gerador.cb ft B ∧               ∀ (r : R), (ATK.Gerador.run w (ATK.Gerad"
+  },
+  {
+   "name": "ATK.Gerador.comp_ok",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 219,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {V : Type} (cod3 : V → ℕ × ℕ × ℕ) (w : List Bool) (ft : ATK.Gerador.FT V R)   (sc : R → Prop),   ATK.Gerador.WF cod3 ft sc →     ∀ (s : ATK.Gerador.St R),       (ATK.Gerador.run w (ATK.Gerador.comp ft) s).out = s.out ++ ATK.Gerador.fmOutV cod3 (ATK.Gerador.sem w ft s.regs) ∧         ∀ (r : R), ¬sc r → (ATK.Gerador.run w (ATK.Gerador.comp ft) s).regs r = s.regs r"
+  },
+  {
+   "name": "ATK.Gerador.computavel_nonempty",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 328,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] [Fintype R] (p : ATK.Gerador.Prog R) (B : Polynomial ℕ),   (∀ (w : List Bool), ATK.Gerador.cost w p ATK.Gerador.s0 ≤ Polynomial.eval w.length B) →     Nonempty (Turing.TM2ComputableInPolyTime id id fun w => (ATK.Gerador.run w p ATK.Gerador.s0).out)"
+  },
+  {
+   "name": "ATK.Gerador.costIn_cons",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 357,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type} (c₀ c₁ : α → ℕ) (f₀ f₁ : α → α) (b : Bool) (bs : List Bool) (x : α),   ATK.Gerador.costIn c₀ c₁ f₀ f₁ (b :: bs) x =     (if b = true then c₁ x else c₀ x) + 2 + ATK.Gerador.costIn c₀ c₁ f₀ f₁ bs (if b = true then f₁ x else f₀ x)"
+  },
+  {
+   "name": "ATK.Gerador.costIt_const",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 370,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type} (c : α → ℕ) (f : α → α) (k : ℕ),   (∀ (x : α), c x = k) → ∀ (n : ℕ) (x : α), ATK.Gerador.costIt c f n x = n * (k + 2)"
+  },
+  {
+   "name": "ATK.Gerador.costIt_succ",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 355,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type} (c : α → ℕ) (f : α → α) (n : ℕ) (x : α),   ATK.Gerador.costIt c f (n + 1) x = c x + 2 + ATK.Gerador.costIt c f n (f x)"
+  },
+  {
+   "name": "ATK.Gerador.cost_addMul",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 103,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) {pow acc : R},   pow ≠ acc →     ∀ (c : ℕ) (s : ATK.Gerador.St R), ATK.Gerador.cost w (ATK.Gerador.addMul c pow acc) s = c * (5 * s.regs pow + 3)"
+  },
+  {
+   "name": "ATK.Gerador.cost_addTo",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) (a b : R) (s : ATK.Gerador.St R),   ATK.Gerador.cost w (ATK.Gerador.addTo a b) s = 5 * s.regs a + 3"
+  },
+  {
+   "name": "ATK.Gerador.cost_clr",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 353,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) (r : R) (s : ATK.Gerador.St R),   ATK.Gerador.cost w (ATK.Gerador.Prog.clr r) s = s.regs r + 1"
+  },
+  {
+   "name": "ATK.Gerador.cost_dup",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 377,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) (r : R) (s : ATK.Gerador.St R),   ATK.Gerador.cost w (ATK.Gerador.dup r) s = 6 * s.regs r + 3"
+  },
+  {
+   "name": "ATK.Gerador.cost_emitU_le",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 395,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) (u : ATK.Gerador.UT R) (s : ATK.Gerador.St R) (B : ℕ),   (∀ (r : R), s.regs r ≤ B) → ATK.Gerador.cost w (ATK.Gerador.emitU u) s ≤ u.1.length * (6 * B + 3) + 2 * u.2 + 2"
+  },
+  {
+   "name": "ATK.Gerador.cost_evalP",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 293,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {x acc pow tmp : R},   x ≠ acc →     x ≠ pow →       x ≠ tmp →         acc ≠ pow →           acc ≠ tmp →             pow ≠ tmp →               ∀ (w : List Bool) (cs : List ℕ) (s : ATK.Gerador.St R),                 ATK.Gerador.cost w (ATK.Gerador.evalP cs x acc pow tmp) s ≤                   s.regs acc + s.regs pow + s.regs tmp + 5 +                       cs.len"
+  },
+  {
+   "name": "ATK.Gerador.cost_forIn",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 350,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) (p₀ p₁ : ATK.Gerador.Prog R) (s : ATK.Gerador.St R),   ATK.Gerador.cost w (p₀.forIn p₁) s =     2 * (w.length + 1) + 1 +       ATK.Gerador.costIn (ATK.Gerador.cost w p₀) (ATK.Gerador.cost w p₁) (ATK.Gerador.run w p₀) (ATK.Gerador.run w p₁) w         s"
+  },
+  {
+   "name": "ATK.Gerador.cost_inc",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 354,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) (r : R) (s : ATK.Gerador.St R),   ATK.Gerador.cost w (ATK.Gerador.Prog.inc r) s = 1"
+  },
+  {
+   "name": "ATK.Gerador.cost_litP_le",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 411,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {V : Type} (w : List Bool) (l : ATK.Gerador.LT V R) (s : ATK.Gerador.St R) (B : ℕ),   (∀ (r : R), s.regs r ≤ B) → ATK.Gerador.cost w (ATK.Gerador.litP l) s ≤ ATK.Gerador.litC l B"
+  },
+  {
+   "name": "ATK.Gerador.cost_loop",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 348,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) (r : R) (p : ATK.Gerador.Prog R) (s : ATK.Gerador.St R),   ATK.Gerador.cost w (ATK.Gerador.Prog.loop r p) s =     2 * (s.regs r + 1) + 1 + ATK.Gerador.costIt (ATK.Gerador.cost w p) (ATK.Gerador.run w p) (s.regs r) s"
+  },
+  {
+   "name": "ATK.Gerador.cost_mulP",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 134,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) {x pow tmp : R},   x ≠ pow →     x ≠ tmp →       pow ≠ tmp →         ∀ (s : ATK.Gerador.St R),           ATK.Gerador.cost w (ATK.Gerador.mulP x pow tmp) s =             11 * s.regs pow * s.regs x + 8 * s.regs pow + s.regs tmp + 9"
+  },
+  {
+   "name": "ATK.Gerador.cost_mulTo",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 70,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) {a x b : R},   a ≠ b →     x ≠ b →       ∀ (s : ATK.Gerador.St R),         ATK.Gerador.cost w (ATK.Gerador.mulTo a x b) s = 5 * s.regs a * s.regs x + 7 * s.regs a + 3"
+  },
+  {
+   "name": "ATK.Gerador.cost_outs",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 360,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w l : List Bool) (s : ATK.Gerador.St R),   ATK.Gerador.cost w (ATK.Gerador.outs l) s = l.length"
+  },
+  {
+   "name": "ATK.Gerador.cost_passos",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 216,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {x acc pow tmp : R},   x ≠ acc →     x ≠ pow →       x ≠ tmp →         acc ≠ pow →           acc ≠ tmp →             pow ≠ tmp →               ∀ (w : List Bool) (Y : ℕ) (cs : List ℕ) (s : ATK.Gerador.St R),                 s.regs tmp = 0 →                   s.regs pow * (s.regs x + 1) ^ cs.length ≤ Y →                     ATK.Gerador.cost w (ATK.Gerador.seqs (Li"
+  },
+  {
+   "name": "ATK.Gerador.cost_seq",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 343,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) (p q : ATK.Gerador.Prog R) (s : ATK.Gerador.St R),   ATK.Gerador.cost w (p.seq q) s = ATK.Gerador.cost w p s + ATK.Gerador.cost w q (ATK.Gerador.run w p s)"
+  },
+  {
+   "name": "ATK.Gerador.cost_seqs_le",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 382,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {α : Type} (w : List Bool) (f : α → (R → ℕ) → List Bool)   (P : α → ATK.Gerador.Prog R),   (∀ (x : α) (s : ATK.Gerador.St R), ATK.Gerador.run w (P x) s = { regs := s.regs, out := s.out ++ f x s.regs }) →     ∀ (c : α → ℕ) (xs : List α) (s : ATK.Gerador.St R),       (∀ x ∈ xs, ∀ (s' : ATK.Gerador.St R), s'.regs = s.regs → ATK.Gerador.cost w (P x) s' ≤ c x) →"
+  },
+  {
+   "name": "ATK.Gerador.depth_le_left",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 521,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [DecidableEq R] {D ℓ : ℕ} {p q : ATK.Gerador.Prog R},   ℓ + ATK.Gerador.depth (p.seq q) ≤ D → ℓ + ATK.Gerador.depth p ≤ D"
+  },
+  {
+   "name": "ATK.Gerador.depth_le_right",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 524,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [DecidableEq R] {D ℓ : ℕ} {p q : ATK.Gerador.Prog R},   ℓ + ATK.Gerador.depth (p.seq q) ≤ D → ℓ + ATK.Gerador.depth q ≤ D"
+  },
+  {
+   "name": "ATK.Gerador.eval_cbP",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 590,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [DecidableEq R] {V : Type} (B : ℕ) (ft : ATK.Gerador.FT V R),   Polynomial.eval B (ATK.Gerador.cbP ft) = ATK.Gerador.cb ft B"
+  },
+  {
+   "name": "ATK.Gerador.eval_litCP",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 585,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [DecidableEq R] {V : Type} (l : ATK.Gerador.LT V R) (B : ℕ),   Polynomial.eval B (ATK.Gerador.litCP l) = ATK.Gerador.litC l B"
+  },
+  {
+   "name": "ATK.Gerador.flatMap_rep",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 91,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [DecidableEq R] (g : R → ℕ) (rs : List R),   List.flatMap (fun r => List.replicate (2 * g r) false) rs = List.replicate (2 * (List.map g rs).sum) false"
+  },
+  {
+   "name": "ATK.Gerador.fmOutV_append",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 177,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {V : Type} (cod3 : V → ℕ × ℕ × ℕ) (φ ψ : List (List (V × Bool))),   ATK.Gerador.fmOutV cod3 (φ ++ ψ) = ATK.Gerador.fmOutV cod3 φ ++ ATK.Gerador.fmOutV cod3 ψ"
+  },
+  {
+   "name": "ATK.Gerador.haltList_maq",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 293,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] [inst_1 : Fintype R] (p : ATK.Gerador.Prog R) (l : List Bool),   Turing.haltList (ATK.Gerador.maq p) l =     { l := none, var := false, stk := Function.update (fun x => []) ATK.Gerador.Pk.outp l }"
+  },
+  {
+   "name": "ATK.Gerador.halt_ok",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 142,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [inst : DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a : ℕ},   code[a]? = some ATK.Gerador.Ins.halt →     ∀ (v : Bool) (S : κ → List Bool),       ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog code)) (ATK.Gerador.cfg code a v S)         { l := none, var := false, stk := S } 1"
+  },
+  {
+   "name": "ATK.Gerador.horn_coefs",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 316,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (q : Polynomial ℕ) (x : ℕ), ATK.Gerador.horn x (ATK.Gerador.coefs q) = Polynomial.eval x q"
+  },
+  {
+   "name": "ATK.Gerador.horn_range",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 156,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ℕ) (f : ℕ → ℕ) (n : ℕ), ATK.Gerador.horn x (List.map f (List.range n)) = ∑ i ∈ Finset.range n, f i * x ^ i"
+  },
+  {
+   "name": "ATK.Gerador.ihead_cons",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 368,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [inst : DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a a₁ e : ℕ} {hk : κ},   code[a]? = some (ATK.Gerador.Ins.ihead hk a₁ e) →     ∀ (v : Bool) (S : κ → List Bool) (b : Bool) (l : List Bool),       S hk = b :: l →         ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog code)) (ATK.Gerador.cfg code a v S)           (ATK.Gerador.cfg code (if b = true then a₁ else a + 1) b (Fun"
+  },
+  {
+   "name": "ATK.Gerador.ihead_nil",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 363,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [inst : DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a a₁ e : ℕ} {hk : κ},   code[a]? = some (ATK.Gerador.Ins.ihead hk a₁ e) →     ∀ (v : Bool) (S : κ → List Bool),       S hk = [] →         ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog code)) (ATK.Gerador.cfg code a v S)           (ATK.Gerador.cfg code e false S) 1"
+  },
+  {
+   "name": "ATK.Gerador.initList_maq",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 284,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] [inst_1 : Fintype R] (p : ATK.Gerador.Prog R) (w : List Bool),   Turing.initList (ATK.Gerador.maq p) w =     ATK.Gerador.cfg (ATK.Gerador.codigo p) 0 false (ATK.Gerador.S0 (ATK.Gerador.depth p) w)"
+  },
+  {
+   "name": "ATK.Gerador.inv_S0",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 208,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] [Fintype R] (D : ℕ) (w : List Bool), ATK.Gerador.Inv 0 w (ATK.Gerador.S0 D w)"
+  },
+  {
+   "name": "ATK.Gerador.inv_put",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 421,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [DecidableEq R] {D ℓ : ℕ} {w : List Bool} {S : ATK.Gerador.Pk R D → List Bool},   ATK.Gerador.Inv ℓ w S → ∀ (s : ATK.Gerador.St R), ATK.Gerador.Inv ℓ w (ATK.Gerador.put S s)"
+  },
+  {
+   "name": "ATK.Gerador.inv_upd_hb",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 462,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {D ℓ : ℕ} {w : List Bool} {S : ATK.Gerador.Pk R D → List Bool},   ATK.Gerador.Inv ℓ w S →     ∀ (i : Fin (D + 1)),       ↑i = ℓ → ∀ (l : List Bool), ATK.Gerador.Inv (ℓ + 1) w (Function.update S (ATK.Gerador.Pk.hb i) l)"
+  },
+  {
+   "name": "ATK.Gerador.inv_upd_hu",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 455,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {D ℓ : ℕ} {w : List Bool} {S : ATK.Gerador.Pk R D → List Bool},   ATK.Gerador.Inv ℓ w S →     ∀ (i : Fin (D + 1)),       ↑i = ℓ → ∀ (l : List Bool), ATK.Gerador.Inv (ℓ + 1) w (Function.update S (ATK.Gerador.Pk.hu i) l)"
+  },
+  {
+   "name": "ATK.Gerador.jmp_ok",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 257,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [inst : DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a t : ℕ},   code[a]? = some (ATK.Gerador.Ins.jmp t) →     ∀ (v : Bool) (S : κ → List Bool),       ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog code)) (ATK.Gerador.cfg code a v S)         (ATK.Gerador.cfg code t v S) 1"
+  },
+  {
+   "name": "ATK.Gerador.lab_val",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 237,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {N a : ℕ}, a ≤ N → ↑(ATK.Gerador.lab N a) = a"
+  },
+  {
+   "name": "ATK.Gerador.length_asm",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 158,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} (D : ℕ) (p : ATK.Gerador.Prog R) (a ℓ : ℕ), (ATK.Gerador.asm D p a ℓ).length = ATK.Gerador.size p"
+  },
+  {
+   "name": "ATK.Gerador.length_regsL",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 119,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [DecidableEq R] [inst : Fintype R], (ATK.Gerador.regsL R).length = Fintype.card R"
+  },
+  {
+   "name": "ATK.Gerador.lhead_cons",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 358,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [inst : DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a e : ℕ} {hk : κ},   code[a]? = some (ATK.Gerador.Ins.lhead hk e) →     ∀ (v : Bool) (S : κ → List Bool) (x : Bool) (l : List Bool),       S hk = x :: l →         ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog code)) (ATK.Gerador.cfg code a v S)           (ATK.Gerador.cfg code (a + 1) true (Function.update S hk l)) 1"
+  },
+  {
+   "name": "ATK.Gerador.lhead_nil",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 353,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [inst : DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a e : ℕ} {hk : κ},   code[a]? = some (ATK.Gerador.Ins.lhead hk e) →     ∀ (v : Bool) (S : κ → List Bool),       S hk = [] →         ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog code)) (ATK.Gerador.cfg code a v S)           (ATK.Gerador.cfg code e false S) 1"
+  },
+  {
+   "name": "ATK.Gerador.mem_regsL",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 215,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [DecidableEq R] [inst : Fintype R] (r : R), r ∈ ATK.Gerador.regsL R"
+  },
+  {
+   "name": "ATK.Gerador.mv2_ok",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 307,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [inst : DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a : ℕ} {s d₁ d₂ : κ},   s ≠ d₁ →     s ≠ d₂ →       d₁ ≠ d₂ →         code[a]? = some (ATK.Gerador.Ins.mv2 s d₁ d₂) →           ∀ (l : List Bool) (v : Bool) (S : κ → List Bool),             S s = l →               ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog code)) (ATK.Gerador.cfg code a v S)                 (ATK.Gerad"
+  },
+  {
+   "name": "ATK.Gerador.mv_ok",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 276,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [inst : DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a : ℕ} {s d : κ},   s ≠ d →     code[a]? = some (ATK.Gerador.Ins.mv s d) →       ∀ (l : List Bool) (v : Bool) (S : κ → List Bool),         S s = l →           ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog code)) (ATK.Gerador.cfg code a v S)             (ATK.Gerador.cfg code (a + 1) false (Function.update (Function.update"
+  },
+  {
+   "name": "ATK.Gerador.out_le",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 102,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) (p : ATK.Gerador.Prog R),   (ATK.Gerador.run w p ATK.Gerador.s0).out.length ≤ ATK.Gerador.cost w p ATK.Gerador.s0"
+  },
+  {
+   "name": "ATK.Gerador.pop1_ok",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 252,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [inst : DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a : ℕ} {k : κ},   code[a]? = some (ATK.Gerador.Ins.pop1 k) →     ∀ (v : Bool) (S : κ → List Bool),       ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog code)) (ATK.Gerador.cfg code a v S)         (ATK.Gerador.cfg code (a + 1) v (Function.update S k (S k).tail)) 1"
+  },
+  {
+   "name": "ATK.Gerador.push_ok",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 247,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [inst : DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a : ℕ} {k : κ} {b : Bool},   code[a]? = some (ATK.Gerador.Ins.push k b) →     ∀ (v : Bool) (S : κ → List Bool),       ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog code)) (ATK.Gerador.cfg code a v S)         (ATK.Gerador.cfg code (a + 1) v (Function.update S k (b :: S k))) 1"
+  },
+  {
+   "name": "ATK.Gerador.put_out",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 493,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {D ℓ : ℕ} {w : List Bool} {S : ATK.Gerador.Pk R D → List Bool},   ATK.Gerador.Inv ℓ w S →     ∀ (b : Bool),       ATK.Gerador.put S { regs := (ATK.Gerador.stOf S).regs, out := (ATK.Gerador.stOf S).out ++ [b] } =         Function.update S ATK.Gerador.Pk.wrk (b :: S ATK.Gerador.Pk.wrk)"
+  },
+  {
+   "name": "ATK.Gerador.put_put",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 413,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [DecidableEq R] {D : ℕ} (S : ATK.Gerador.Pk R D → List Bool) (s s' : ATK.Gerador.St R),   ATK.Gerador.put (ATK.Gerador.put S s) s' = ATK.Gerador.put S s'"
+  },
+  {
+   "name": "ATK.Gerador.put_reg",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 502,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {D ℓ : ℕ} {w : List Bool} {S : ATK.Gerador.Pk R D → List Bool},   ATK.Gerador.Inv ℓ w S →     ∀ (r : R) (m : ℕ),       ATK.Gerador.put S { regs := Function.update (ATK.Gerador.stOf S).regs r m, out := (ATK.Gerador.stOf S).out } =         Function.update S (ATK.Gerador.Pk.reg r) (List.replicate m true)"
+  },
+  {
+   "name": "ATK.Gerador.put_stOf",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 401,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [DecidableEq R] {D ℓ : ℕ} {w : List Bool} {S : ATK.Gerador.Pk R D → List Bool},   ATK.Gerador.Inv ℓ w S → ATK.Gerador.put S (ATK.Gerador.stOf S) = S"
+  },
+  {
+   "name": "ATK.Gerador.put_upd_hb",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 436,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {D : ℕ} (S : ATK.Gerador.Pk R D → List Bool) (s : ATK.Gerador.St R)   (i : Fin (D + 1)) (l : List Bool),   ATK.Gerador.put (Function.update S (ATK.Gerador.Pk.hb i) l) s =     Function.update (ATK.Gerador.put S s) (ATK.Gerador.Pk.hb i) l"
+  },
+  {
+   "name": "ATK.Gerador.put_upd_hu",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 425,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {D : ℕ} (S : ATK.Gerador.Pk R D → List Bool) (s : ATK.Gerador.St R)   (i : Fin (D + 1)) (l : List Bool),   ATK.Gerador.put (Function.update S (ATK.Gerador.Pk.hu i) l) s =     Function.update (ATK.Gerador.put S s) (ATK.Gerador.Pk.hu i) l"
+  },
+  {
+   "name": "ATK.Gerador.regs_le",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 106,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) (p : ATK.Gerador.Prog R) (r : R),   (ATK.Gerador.run w p ATK.Gerador.s0).regs r ≤ ATK.Gerador.cost w p ATK.Gerador.s0"
+  },
+  {
+   "name": "ATK.Gerador.roda",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 277,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] [inst_1 : Fintype R] (p : ATK.Gerador.Prog R) (w : List Bool),   ATK.Gerador.Reach (Turing.TM2.step (ATK.Gerador.prog (ATK.Gerador.codigo p)))     (ATK.Gerador.cfg (ATK.Gerador.codigo p) 0 false (ATK.Gerador.S0 (ATK.Gerador.depth p) w))     { l := none, var := false,       stk := Function.update (fun x => []) ATK.Gerador.Pk.outp (ATK.Gerador.run w p ATK.Gerador."
+  },
+  {
+   "name": "ATK.Gerador.roda_gen",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 217,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] [inst_1 : Fintype R] (p : ATK.Gerador.Prog R) (w : List Bool)   (code : List (ATK.Gerador.Ins (ATK.Gerador.Pk R (ATK.Gerador.depth p)))),   ATK.Gerador.Loc code 0       (ATK.Gerador.asm (ATK.Gerador.depth p) p 0 0 ++ [ATK.Gerador.Ins.mv ATK.Gerador.Pk.wrk ATK.Gerador.Pk.outp] ++           List.map (fun r => ATK.Gerador.Ins.clr (ATK.Gerador.Pk.reg r)) (ATK.Gerado"
+  },
+  {
+   "name": "ATK.Gerador.run_addMul",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 88,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) {pow acc : R},   pow ≠ acc →     ∀ (c : ℕ) (s : ATK.Gerador.St R),       ATK.Gerador.run w (ATK.Gerador.addMul c pow acc) s =         { regs := Function.update s.regs acc (s.regs acc + c * s.regs pow), out := s.out }"
+  },
+  {
+   "name": "ATK.Gerador.run_addTo",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 26,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) {a b : R},   a ≠ b →     ∀ (s : ATK.Gerador.St R),       ATK.Gerador.run w (ATK.Gerador.addTo a b) s =         { regs := Function.update s.regs b (s.regs b + s.regs a), out := s.out }"
+  },
+  {
+   "name": "ATK.Gerador.run_dup",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 71,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) (r : R) (s : ATK.Gerador.St R),   ATK.Gerador.run w (ATK.Gerador.dup r) s = { regs := s.regs, out := s.out ++ List.replicate (2 * s.regs r) false }"
+  },
+  {
+   "name": "ATK.Gerador.run_emitU",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 98,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) (u : ATK.Gerador.UT R) (s : ATK.Gerador.St R),   ATK.Gerador.run w (ATK.Gerador.emitU u) s =     { regs := s.regs, out := s.out ++ ATK.Gerador.unS (ATK.Gerador.val u s.regs) }"
+  },
+  {
+   "name": "ATK.Gerador.run_evalP",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 275,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {x acc pow tmp : R},   x ≠ acc →     x ≠ pow →       x ≠ tmp →         acc ≠ pow →           acc ≠ tmp →             pow ≠ tmp →               ∀ (w : List Bool) (cs : List ℕ) (s : ATK.Gerador.St R),                 ATK.Gerador.run w (ATK.Gerador.evalP cs x acc pow tmp) s =                   {                     regs :=                       Function.update"
+  },
+  {
+   "name": "ATK.Gerador.run_le",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 35,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) (o : Option R) (p : ATK.Gerador.Prog R) (s : ATK.Gerador.St R),   ATK.Gerador.mu o (ATK.Gerador.run w p s) ≤ ATK.Gerador.mu o s + ATK.Gerador.cost w p s"
+  },
+  {
+   "name": "ATK.Gerador.run_litP",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 122,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {V : Type} (w : List Bool) (l : ATK.Gerador.LT V R) (s : ATK.Gerador.St R),   ATK.Gerador.run w (ATK.Gerador.litP l) s =     { regs := s.regs,       out := s.out ++ ATK.Gerador.litOut l.b l.a (ATK.Gerador.val l.tt s.regs) (ATK.Gerador.val l.pt s.regs) }"
+  },
+  {
+   "name": "ATK.Gerador.run_mulP",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 118,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) {x pow tmp : R},   x ≠ pow →     x ≠ tmp →       pow ≠ tmp →         ∀ (s : ATK.Gerador.St R),           ATK.Gerador.run w (ATK.Gerador.mulP x pow tmp) s =             { regs := Function.update (Function.update s.regs pow (s.regs pow * s.regs x)) tmp 0, out := s.out }"
+  },
+  {
+   "name": "ATK.Gerador.run_mulTo",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w : List Bool) {a x b : R},   a ≠ b →     x ≠ b →       ∀ (s : ATK.Gerador.St R),         ATK.Gerador.run w (ATK.Gerador.mulTo a x b) s =           { regs := Function.update s.regs b (s.regs b + s.regs a * s.regs x), out := s.out }"
+  },
+  {
+   "name": "ATK.Gerador.run_outs",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 33,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] (w l : List Bool) (s : ATK.Gerador.St R),   ATK.Gerador.run w (ATK.Gerador.outs l) s = { regs := s.regs, out := s.out ++ l }"
+  },
+  {
+   "name": "ATK.Gerador.run_passos",
+   "file": "atk-kernel/ATK/GeradorArit.lean",
+   "line": 180,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {x acc pow tmp : R},   x ≠ acc →     x ≠ pow →       x ≠ tmp →         acc ≠ pow →           acc ≠ tmp →             pow ≠ tmp →               ∀ (w : List Bool) (cs : List ℕ) (s : ATK.Gerador.St R),                 s.regs tmp = 0 →                   ATK.Gerador.run w (ATK.Gerador.seqs (List.map (fun c => ATK.Gerador.passoP c x acc pow tmp) cs)) s ="
+  },
+  {
+   "name": "ATK.Gerador.run_seqs_puro",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 45,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {α : Type} (w : List Bool) (f : α → (R → ℕ) → List Bool)   (P : α → ATK.Gerador.Prog R),   (∀ (x : α) (s : ATK.Gerador.St R), ATK.Gerador.run w (P x) s = { regs := s.regs, out := s.out ++ f x s.regs }) →     ∀ (xs : List α) (s : ATK.Gerador.St R),       ATK.Gerador.run w (ATK.Gerador.seqs (List.map P xs)) s =         { regs := s.regs, out := s.out ++ List.flatMa"
+  },
+  {
+   "name": "ATK.Gerador.sem_insens",
+   "file": "atk-kernel/ATK/GeradorForm.lean",
+   "line": 181,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {V : Type} (cod3 : V → ℕ × ℕ × ℕ) (w : List Bool) (ft : ATK.Gerador.FT V R)   (sc : R → Prop), ATK.Gerador.WF cod3 ft sc → ATK.Gerador.Insens sc (ATK.Gerador.sem w ft)"
+  },
+  {
+   "name": "ATK.Gerador.stOf_S0",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 212,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] [Fintype R] (D : ℕ) (w : List Bool),   ATK.Gerador.stOf (ATK.Gerador.S0 D w) = ATK.Gerador.s0"
+  },
+  {
+   "name": "ATK.Gerador.stOf_put",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 410,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [DecidableEq R] {D : ℕ} (S : ATK.Gerador.Pk R D → List Bool) (s : ATK.Gerador.St R),   ATK.Gerador.stOf (ATK.Gerador.put S s) = s"
+  },
+  {
+   "name": "ATK.Gerador.stOf_upd_hb",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 451,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {D : ℕ} (S : ATK.Gerador.Pk R D → List Bool) (i : Fin (D + 1)) (l : List Bool),   ATK.Gerador.stOf (Function.update S (ATK.Gerador.Pk.hb i) l) = ATK.Gerador.stOf S"
+  },
+  {
+   "name": "ATK.Gerador.stOf_upd_hu",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 447,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] {D : ℕ} (S : ATK.Gerador.Pk R D → List Bool) (i : Fin (D + 1)) (l : List Bool),   ATK.Gerador.stOf (Function.update S (ATK.Gerador.Pk.hu i) l) = ATK.Gerador.stOf S"
+  },
+  {
+   "name": "ATK.Gerador.step_at",
+   "file": "atk-kernel/ATK/Gerador.lean",
+   "line": 239,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {κ : Type} [inst : DecidableEq κ] {code : List (ATK.Gerador.Ins κ)} {a : ℕ} {i : ATK.Gerador.Ins κ},   code[a]? = some i →     ∀ (v : Bool) (S : κ → List Bool),       Turing.TM2.step (ATK.Gerador.prog code) (ATK.Gerador.cfg code a v S) =         some (Turing.TM2.stepAux (ATK.Gerador.stmt code.length a i) v S)"
+  },
+  {
+   "name": "ATK.Gerador.sum_le_card",
+   "file": "atk-kernel/ATK/GeradorTM.lean",
+   "line": 194,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type} [inst : DecidableEq R] [inst_1 : Fintype R] (w : List Bool) (p : ATK.Gerador.Prog R)   (S : ATK.Gerador.Pk R (ATK.Gerador.depth p) → List Bool),   (∀ (r : R), (S (ATK.Gerador.Pk.reg r)).length ≤ ATK.Gerador.cost w p ATK.Gerador.s0) →     (List.map (fun r => (S (ATK.Gerador.Pk.reg r)).length + 1) (ATK.Gerador.regsL R)).sum ≤       Fintype.card R * (ATK.Gerador.cost w p ATK.Gerador.s0 +"
+  },
+  {
+   "name": "ATK.SatNPMaquina.Q_ge",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 876,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (M : ℕ), 3 * M + 6 ≤ ATK.SatNPMaquina.Q M"
+  },
+  {
+   "name": "ATK.SatNPMaquina.Reach.cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 565,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {c c' c'' : ATK.SatNPMaquina.Cfg} {n : ℕ},   ATK.SatNPMaquina.step c = some c' → ATK.SatNPMaquina.Reach c' c'' n → ATK.SatNPMaquina.Reach c c'' (n + 1)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.Reach.mono",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 554,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {c c' : ATK.SatNPMaquina.Cfg} {n m : ℕ}, ATK.SatNPMaquina.Reach c c' n → n ≤ m → ATK.SatNPMaquina.Reach c c' m"
+  },
+  {
+   "name": "ATK.SatNPMaquina.Reach.one",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 563,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {c c' : ATK.SatNPMaquina.Cfg}, ATK.SatNPMaquina.step c = some c' → ATK.SatNPMaquina.Reach c c' 1"
+  },
+  {
+   "name": "ATK.SatNPMaquina.Reach.refl",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 552,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c : ATK.SatNPMaquina.Cfg), ATK.SatNPMaquina.Reach c c 0"
+  },
+  {
+   "name": "ATK.SatNPMaquina.Reach.trans",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 557,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {c c' c'' : ATK.SatNPMaquina.Cfg} {n m : ℕ},   ATK.SatNPMaquina.Reach c c' n → ATK.SatNPMaquina.Reach c' c'' m → ATK.SatNPMaquina.Reach c c'' (n + m)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.ci_cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 492,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (u : ATK.SatNPSemantica.Sym)   (I : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.ci (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := C, D := D, I := u :: I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina"
+  },
+  {
+   "name": "ATK.SatNPMaquina.ci_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 496,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.ci (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := C, D := D, I := [], J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rd (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T"
+  },
+  {
+   "name": "ATK.SatNPMaquina.cj_cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 485,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (u : ATK.SatNPSemantica.Sym)   (J : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cj (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := C, D := D, I := I, J := u :: J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina"
+  },
+  {
+   "name": "ATK.SatNPMaquina.cj_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 489,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cj (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := C, D := D, I := I, J := [] }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.ci (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T"
+  },
+  {
+   "name": "ATK.SatNPMaquina.cm_nil_cheio",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 439,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (u : ATK.SatNPSemantica.Sym)   (I : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cm (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := [], D := D, I := u :: I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina."
+  },
+  {
+   "name": "ATK.SatNPMaquina.cm_nil_vazio",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 436,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cm (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := [], D := D, I := [], J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cj (ATK.SatNPMaquina.E fr cs al p v v)         { inp := inp, T :="
+  },
+  {
+   "name": "ATK.SatNPMaquina.cm_sL_cheio",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 447,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (C : List ATK.SatNPSemantica.Sym)   (u : ATK.SatNPSemantica.Sym) (I : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cm (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := ATK.SatNPSemantica.sL :: C, D := D, I := u :: I, J := J }"
+  },
+  {
+   "name": "ATK.SatNPMaquina.cm_sL_vazio",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 443,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (C : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cm (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := ATK.SatNPSemantica.sL :: C, D := D, I := [], J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cj (ATK"
+  },
+  {
+   "name": "ATK.SatNPMaquina.cm_sym_dif",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 461,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (t u : ATK.SatNPSemantica.Sym)   (C I : List ATK.SatNPSemantica.Sym),   t ≠ ATK.SatNPSemantica.sL →     u ≠ t →       ATK.SatNPMaquina.step           (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cm (ATK.SatNPMaquina.E fr cs al p v res)             { inp := inp, T := T, X := X, C := t :: C, D := D, I := u :: I, J :="
+  },
+  {
+   "name": "ATK.SatNPMaquina.cm_sym_igual",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 456,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (t : ATK.SatNPSemantica.Sym)   (C I : List ATK.SatNPSemantica.Sym),   t ≠ ATK.SatNPSemantica.sL →     ATK.SatNPMaquina.step         (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cm (ATK.SatNPMaquina.E fr cs al p v res)           { inp := inp, T := T, X := X, C := t :: C, D := D, I := t :: I, J := J }) =       some"
+  },
+  {
+   "name": "ATK.SatNPMaquina.cm_sym_vazio",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 451,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (t : ATK.SatNPSemantica.Sym)   (C : List ATK.SatNPSemantica.Sym),   t ≠ ATK.SatNPSemantica.sL →     ATK.SatNPMaquina.step         (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cm (ATK.SatNPMaquina.E fr cs al p v res)           { inp := inp, T := T, X := X, C := t :: C, D := D, I := [], J := J }) =       some"
+  },
+  {
+   "name": "ATK.SatNPMaquina.dc_cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 526,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I J : List ATK.SatNPSemantica.Sym) (t : ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dc ATK.SatNPMaquina.init         { inp := inp, T := T, X := X, C := t :: C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dc ATK.SatNPMaquina.init         { inp := inp, T := T, X := X, C := C,"
+  },
+  {
+   "name": "ATK.SatNPMaquina.dc_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 529,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.SatNPMaquina.step     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dc ATK.SatNPMaquina.init       { inp := [], T := [], X := [], C := [], D := [], I := [], J := [] }) =   some (ATK.SatNPMaquina.fim false)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.decC_length_le",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 964,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (y : List Bool), (ATK.SatNPSemantica.decC y).length ≤ y.length"
+  },
+  {
+   "name": "ATK.SatNPMaquina.di_cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 520,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I J : List ATK.SatNPSemantica.Sym) (t : ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.di ATK.SatNPMaquina.init         { inp := inp, T := T, X := X, C := C, D := D, I := t :: I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.di ATK.SatNPMaquina.init         { inp := inp, T := T, X := X, C := C,"
+  },
+  {
+   "name": "ATK.SatNPMaquina.di_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 523,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D J : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.di ATK.SatNPMaquina.init         { inp := inp, T := T, X := X, C := C, D := D, I := [], J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dc ATK.SatNPMaquina.init         { inp := inp, T := T, X := X, C := C, D := D, I := [], J := J })"
+  },
+  {
+   "name": "ATK.SatNPMaquina.dk_cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 532,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T X C D I J : List ATK.SatNPSemantica.Sym) (a : Bool) (r : List Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dk ATK.SatNPMaquina.init         { inp := a :: r, T := T, X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dk ATK.SatNPMaquina.init         { inp := r, T := T, X := X, C := C, D := D, I := I, J := J }"
+  },
+  {
+   "name": "ATK.SatNPMaquina.dk_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 535,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T X C D I J : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dk ATK.SatNPMaquina.init         { inp := [], T := T, X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dt ATK.SatNPMaquina.init         { inp := [], T := T, X := X, C := C, D := D, I := I, J := J })"
+  },
+  {
+   "name": "ATK.SatNPMaquina.dt_cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 538,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I J : List ATK.SatNPSemantica.Sym) (t : ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dt ATK.SatNPMaquina.init         { inp := inp, T := t :: T, X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dt ATK.SatNPMaquina.init         { inp := inp, T := T, X := X, C := C,"
+  },
+  {
+   "name": "ATK.SatNPMaquina.dt_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 541,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.SatNPMaquina.step     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dt ATK.SatNPMaquina.init       { inp := [], T := [], X := [], C := [], D := [], I := [], J := [] }) =   some (ATK.SatNPMaquina.fim false)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.dx_cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 514,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I J : List ATK.SatNPSemantica.Sym) (t : ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dx ATK.SatNPMaquina.init         { inp := inp, T := T, X := t :: X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dx ATK.SatNPMaquina.init         { inp := inp, T := T, X := X, C := C,"
+  },
+  {
+   "name": "ATK.SatNPMaquina.dx_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 517,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T C D I J : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dx ATK.SatNPMaquina.init         { inp := inp, T := T, X := [], C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.di ATK.SatNPMaquina.init         { inp := inp, T := T, X := [], C := C, D := D, I := I, J := J })"
+  },
+  {
+   "name": "ATK.SatNPMaquina.en_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 420,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.en (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := [], D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cj (ATK.SatNPMaquina.E fr cs al p v false)         { inp := inp,"
+  },
+  {
+   "name": "ATK.SatNPMaquina.en_sL_cheio",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 427,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (C : List ATK.SatNPSemantica.Sym)   (u : ATK.SatNPSemantica.Sym) (I : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.en (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := ATK.SatNPSemantica.sL :: C, D := D, I := u :: I, J := J }"
+  },
+  {
+   "name": "ATK.SatNPMaquina.en_sL_vazio",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 423,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (C : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.en (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := ATK.SatNPSemantica.sL :: C, D := D, I := [], J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cj (ATK"
+  },
+  {
+   "name": "ATK.SatNPMaquina.en_sym",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 431,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (s : ATK.SatNPSemantica.Sym)   (C : List ATK.SatNPSemantica.Sym),   s ≠ ATK.SatNPSemantica.sL →     ATK.SatNPMaquina.step         (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.en (ATK.SatNPMaquina.E fr cs al p v res)           { inp := inp, T := T, X := X, C := s :: C, D := D, I := I, J := J }) =       some"
+  },
+  {
+   "name": "ATK.SatNPMaquina.haltList_v",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 987,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (b : Bool), Turing.haltList ATK.SatNPMaquina.verifTM [b] = ATK.SatNPMaquina.fim b"
+  },
+  {
+   "name": "ATK.SatNPMaquina.initList_v",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 981,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (y : List Bool),   Turing.initList ATK.SatNPMaquina.verifTM y =     ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rx (ATK.SatNPMaquina.S0 none)       { inp := y, T := [], X := [], C := [], D := [], I := [], J := [] }"
+  },
+  {
+   "name": "ATK.SatNPMaquina.ix_bit",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 416,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res b : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.ix (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := (false, b) :: X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.ix (ATK.SatNPMaquina.E fr cs al p false false)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.ix_fim_bad",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 411,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool),   Option.all (fun x => decide (x = (false, true))) I.head? = false →     ATK.SatNPMaquina.step         (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.ix (ATK.SatNPMaquina.E fr cs al p v res)           { inp := inp, T := T, X := ATK.SatNPSemantica.sL :: X, C := C, D := D, I := I, J := J }) =       some         (A"
+  },
+  {
+   "name": "ATK.SatNPMaquina.ix_fim_ok",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 406,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool),   Option.all (fun x => decide (x = (false, true))) I.head? = true →     ATK.SatNPMaquina.step         (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.ix (ATK.SatNPMaquina.E fr cs al p v res)           { inp := inp, T := T, X := ATK.SatNPSemantica.sL :: X, C := C, D := D, I := I, J := J }) =       some         (AT"
+  },
+  {
+   "name": "ATK.SatNPMaquina.ix_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 400,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T C D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.ix (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := [], C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dx ATK.SatNPMaquina.init         { inp := inp, T := T, X := [],"
+  },
+  {
+   "name": "ATK.SatNPMaquina.ix_sC",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 403,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.ix (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := ATK.SatNPSemantica.sC :: X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dx ATK.SatNPMaquina.init         { inp"
+  },
+  {
+   "name": "ATK.SatNPMaquina.oc_cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 507,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (t : ATK.SatNPSemantica.Sym)   (C : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.oc (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := t :: C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina"
+  },
+  {
+   "name": "ATK.SatNPMaquina.oc_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 511,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (fr cs al p v res : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.oc (ATK.SatNPMaquina.E fr cs al p v res)         { inp := [], T := [], X := [], C := [], D := [], I := [], J := [] }) =     some (ATK.SatNPMaquina.fim res)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.rc_cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 364,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T X C D I J : List ATK.SatNPSemantica.Sym) (a b : Bool) (r : List Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rc ATK.SatNPMaquina.init         { inp := a :: b :: r, T := T, X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rc ATK.SatNPMaquina.init         { inp := r, T := (a, b) :: T, X := X, C := C, D := D,"
+  },
+  {
+   "name": "ATK.SatNPMaquina.rc_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 358,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T X C D I J : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rc ATK.SatNPMaquina.init         { inp := [], T := T, X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.tc ATK.SatNPMaquina.init         { inp := [], T := T, X := X, C := C, D := D, I := I, J := J })"
+  },
+  {
+   "name": "ATK.SatNPMaquina.rc_one",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 361,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T X C D I J : List ATK.SatNPSemantica.Sym) (a : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rc ATK.SatNPMaquina.init         { inp := [a], T := T, X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.tc ATK.SatNPMaquina.init         { inp := [], T := T, X := X, C := C, D := D, I := I, J := J })"
+  },
+  {
+   "name": "ATK.SatNPMaquina.rd_cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 499,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (d : ATK.SatNPSemantica.Sym)   (D : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rd (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := C, D := d :: D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina"
+  },
+  {
+   "name": "ATK.SatNPMaquina.rd_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 503,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rd (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := C, D := [], I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.st (ATK.SatNPMaquina.E false (cs || res == p) al false false fal"
+  },
+  {
+   "name": "ATK.SatNPMaquina.rj_cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 478,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (u : ATK.SatNPSemantica.Sym)   (J : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rj (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := C, D := D, I := I, J := u :: J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina"
+  },
+  {
+   "name": "ATK.SatNPMaquina.rj_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 482,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rj (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := C, D := D, I := I, J := [] }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.en (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_ci",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 839,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X : List ATK.SatNPSemantica.Sym) (fr cs al p : Bool) (C D : List ATK.SatNPSemantica.Sym) (v res : Bool)   (I : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.ci (ATK.SatNPMaquina.E fr cs al p v res)       { inp := [], T := [], X := X, C := C, D := D, I := I, J := [] })     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rd (ATK.SatNPMaquina.E fr"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_cj",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 833,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X : List ATK.SatNPSemantica.Sym) (fr cs al p : Bool) (C D I : List ATK.SatNPSemantica.Sym) (v res : Bool)   (J : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cj (ATK.SatNPMaquina.E fr cs al p v res)       { inp := [], T := [], X := X, C := C, D := D, I := I, J := J })     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.ci (ATK.SatNPMaquina.E f"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_cm_dif",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 720,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (C D I J : List ATK.SatNPSemantica.Sym),   (ATK.SatNPSemantica.seg C).1 ≠ I →     ∃ D',       D'.reverse ++ (ATK.SatNPSemantica.seg C).2 = D.reverse ++ C ∧         ATK.SatNPMaquina.Reach           (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cm (ATK.SatNPMaquina.E fr cs al p v res)             { inp := [], T := [], X := X, C := C, D := D,"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_cm_igual",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 699,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (C D I J : List ATK.SatNPSemantica.Sym),   (ATK.SatNPSemantica.seg C).1 = I →     ∃ D' J',       D'.reverse ++ (ATK.SatNPSemantica.seg C).2 = D.reverse ++ C ∧         J'.length = J.length + I.length ∧           ATK.SatNPMaquina.Reach             (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.cm (ATK.SatNPMaquina.E fr cs al p v res)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_dc",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 655,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dc ATK.SatNPMaquina.init       { inp := [], T := [], X := [], C := C, D := [], I := [], J := [] })     (ATK.SatNPMaquina.fim false) (C.length + 1)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_di",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 650,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C I : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.di ATK.SatNPMaquina.init       { inp := [], T := [], X := [], C := C, D := [], I := I, J := [] })     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dc ATK.SatNPMaquina.init       { inp := [], T := [], X := [], C := C, D := [], I := [], J := [] })     (I.length + 1)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_dk",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 634,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T X C D I J : List ATK.SatNPSemantica.Sym) (r : List Bool),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dk ATK.SatNPMaquina.init       { inp := r, T := T, X := X, C := C, D := D, I := I, J := J })     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dt ATK.SatNPMaquina.init       { inp := [], T := T, X := X, C := C, D := D, I := I, J := J })     (r.length + 1)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_dt",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 641,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dt ATK.SatNPMaquina.init       { inp := [], T := T, X := [], C := [], D := [], I := [], J := [] })     (ATK.SatNPMaquina.fim false) (T.length + 1)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_dx",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 645,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C I X : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dx ATK.SatNPMaquina.init       { inp := [], T := [], X := X, C := C, D := [], I := I, J := [] })     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.di ATK.SatNPMaquina.init       { inp := [], T := [], X := [], C := C, D := [], I := I, J := [] })     (X.length + 1)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_en",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 773,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X : List ATK.SatNPSemantica.Sym) (fr cs al p : Bool) (n : ℕ) (C D I : List ATK.SatNPSemantica.Sym) (v res : Bool),   C.length ≤ n →     ∃ C' D' I' J' v',       D'.reverse ++ C' = D.reverse ++ C ∧         I'.length + J'.length = I.length ∧           ATK.SatNPMaquina.Reach             (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.en (ATK.SatNPMaquina.E fr cs al p v res)               { inp := [], T"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_fase1",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 878,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C : List ATK.SatNPSemantica.Sym) (M : ℕ),   C.length ≤ M →     ∀ (X : List ATK.SatNPSemantica.Sym),       (∀ (fr cs al : Bool),           X.length ≤ M →             ATK.SatNPMaquina.Reach               (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.st (ATK.SatNPMaquina.E fr cs al false false false)                 { inp := [], T := [], X := X, C := C, D := [], I := [], J := [] })               (ATK"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_lit",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 853,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X : List ATK.SatNPSemantica.Sym) (fr cs al p : Bool) (C I : List ATK.SatNPSemantica.Sym) (v res : Bool),   Option.all (fun x => decide (x = (false, true))) I.head? = true →     ATK.SatNPMaquina.Reach       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.ix (ATK.SatNPMaquina.E fr cs al p v res)         { inp := [], T := [], X := ATK.SatNPSemantica.sL :: X, C := C, D := [], I := I, J := [] })       (A"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_oc",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 664,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (fr cs al p v res : Bool) (C : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.oc (ATK.SatNPMaquina.E fr cs al p v res)       { inp := [], T := [], X := [], C := C, D := [], I := [], J := [] })     (ATK.SatNPMaquina.fim res) (C.length + 1)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_rc",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 615,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X C D I J : List ATK.SatNPSemantica.Sym) (y : List Bool) (T : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rc ATK.SatNPMaquina.init       { inp := y, T := T, X := X, C := C, D := D, I := I, J := J })     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.tc ATK.SatNPMaquina.init       { inp := [], T := (ATK.SatNPSemantica.syms y).reverse ++ T, X"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_rd",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 845,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (D C : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rd (ATK.SatNPMaquina.E fr cs al p v res)       { inp := [], T := [], X := X, C := C, D := D, I := [], J := [] })     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.st (ATK.SatNPMaquina.E false (cs || res == p) al false false false)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_rejeita",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 659,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X C I : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.dx ATK.SatNPMaquina.init       { inp := [], T := [], X := X, C := C, D := [], I := I, J := [] })     (ATK.SatNPMaquina.fim false) (X.length + I.length + C.length + 3)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_rj",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 676,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (C D J I : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rj (ATK.SatNPMaquina.E fr cs al p v res)       { inp := [], T := [], X := X, C := C, D := D, I := I, J := J })     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.en (ATK.SatNPMaquina.E fr cs al p v res)       { inp := [], T := []"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_rx",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 569,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X C D I J : List ATK.SatNPSemantica.Sym) (y : List Bool) (q : Option Bool) (T : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rx (ATK.SatNPMaquina.S0 q)       { inp := y, T := T, X := X, C := C, D := D, I := I, J := J })     (ATK.SatNPMaquina.cfg       (if (q.toList ++ ATK.ModeloPNP.dec y).length % 2 = 0 then ATK.SatNPMaquina.Lab.tx else A"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_sk",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 683,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (I J C D : List ATK.SatNPSemantica.Sym),   ∃ D',     D'.reverse ++ (ATK.SatNPSemantica.seg C).2 = D.reverse ++ C ∧       ATK.SatNPMaquina.Reach         (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.sk (ATK.SatNPMaquina.E fr cs al p v res)           { inp := [], T := [], X := X, C := C, D := D, I := I, J := J })         (ATK.SatNPMaquina.cf"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_tc",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 625,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X D I J T C : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.tc ATK.SatNPMaquina.init       { inp := [], T := T, X := X, C := C, D := D, I := I, J := J })     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.st (ATK.SatNPMaquina.E true false true false false false)       { inp := [], T := [], X := X, C := T.reverse ++ C, D := D, I := I, J := J })"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_total",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 993,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (y : List Bool),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rx (ATK.SatNPMaquina.S0 none)       { inp := y, T := [], X := [], C := [], D := [], I := [], J := [] })     (ATK.SatNPMaquina.fim (ATK.SatNPSemantica.verif y)) (2 * (y.length + 2) ^ 3)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.run_tx",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 608,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (C D I J T X : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.Reach     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.tx ATK.SatNPMaquina.init       { inp := inp, T := T, X := X, C := C, D := D, I := I, J := J })     (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rc ATK.SatNPMaquina.init       { inp := inp, T := [], X := T.reverse ++ X, C := C, D := D, I := I, J := J })     (T.lengt"
+  },
+  {
+   "name": "ATK.SatNPMaquina.rx_eq_none",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 338,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T X C D I J : List ATK.SatNPSemantica.Sym) (a : Bool) (r : List Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rx (ATK.SatNPMaquina.S0 none)         { inp := a :: a :: r, T := T, X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rx (ATK.SatNPMaquina.S0 (some a))         { inp := r, T := T, X := X, C := C, D :="
+  },
+  {
+   "name": "ATK.SatNPMaquina.rx_eq_some",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 342,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T X C D I J : List ATK.SatNPSemantica.Sym) (q a : Bool) (r : List Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rx (ATK.SatNPMaquina.S0 (some q))         { inp := a :: a :: r, T := T, X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rx (ATK.SatNPMaquina.S0 none)         { inp := r, T := (q, a) :: T, X := X, C"
+  },
+  {
+   "name": "ATK.SatNPMaquina.rx_neq",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 346,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T X C D I J : List ATK.SatNPSemantica.Sym) (q : Option Bool) (a b : Bool) (r : List Bool),   a ≠ b →     ATK.SatNPMaquina.step         (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rx (ATK.SatNPMaquina.S0 q)           { inp := a :: b :: r, T := T, X := X, C := C, D := D, I := I, J := J }) =       some         (ATK.SatNPMaquina.cfg (if q.isSome = true then ATK.SatNPMaquina.Lab.dk else ATK.SatNPMaqu"
+  },
+  {
+   "name": "ATK.SatNPMaquina.rx_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 326,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T X C D I J : List ATK.SatNPSemantica.Sym) (q : Option Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rx (ATK.SatNPMaquina.S0 q)         { inp := [], T := T, X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg (if q.isSome = true then ATK.SatNPMaquina.Lab.dk else ATK.SatNPMaquina.Lab.tx)         ATK.SatNPMaquina.init { inp := [], T :"
+  },
+  {
+   "name": "ATK.SatNPMaquina.rx_one",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 333,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T X C D I J : List ATK.SatNPSemantica.Sym) (q : Option Bool) (a : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rx (ATK.SatNPMaquina.S0 q)         { inp := [a], T := T, X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg (if q.isSome = true then ATK.SatNPMaquina.Lab.dk else ATK.SatNPMaquina.Lab.tx)         ATK.SatNPMaquina.init { in"
+  },
+  {
+   "name": "ATK.SatNPMaquina.sat_em_NP",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 1051,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.ModeloPNP.SAT ∈ ATK.LigacaoPNP.classeNP"
+  },
+  {
+   "name": "ATK.SatNPMaquina.sk_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 467,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.sk (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := [], D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rj (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T"
+  },
+  {
+   "name": "ATK.SatNPMaquina.sk_sL",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 470,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool)   (C : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.sk (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := X, C := ATK.SatNPSemantica.sL :: C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rj ("
+  },
+  {
+   "name": "ATK.SatNPMaquina.sk_sym",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 473,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (t : ATK.SatNPSemantica.Sym)   (C : List ATK.SatNPSemantica.Sym),   t ≠ ATK.SatNPSemantica.sL →     ATK.SatNPMaquina.step         (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.sk (ATK.SatNPMaquina.E fr cs al p v res)           { inp := inp, T := T, X := X, C := t :: C, D := D, I := I, J := J }) =       some"
+  },
+  {
+   "name": "ATK.SatNPMaquina.st_bad",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 389,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool) (s : ATK.SatNPSemantica.Sym),   s ≠ ATK.SatNPSemantica.sC →     s.1 = true →       ATK.SatNPMaquina.step           (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.st (ATK.SatNPMaquina.E fr cs al p v res)             { inp := inp, T := T, X := s :: X, C := C, D := D, I := I, J := J }) =         some           (ATK."
+  },
+  {
+   "name": "ATK.SatNPMaquina.st_lit",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 396,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res b : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.st (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := (false, b) :: X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.ix (ATK.SatNPMaquina.E fr cs al b false false)"
+  },
+  {
+   "name": "ATK.SatNPMaquina.st_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 383,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T C D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.st (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := [], C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.oc (ATK.SatNPMaquina.E fr cs al false false (fr && al))"
+  },
+  {
+   "name": "ATK.SatNPMaquina.st_sC",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 386,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I J : List ATK.SatNPSemantica.Sym) (fr cs al p v res : Bool),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.st (ATK.SatNPMaquina.E fr cs al p v res)         { inp := inp, T := T, X := ATK.SatNPSemantica.sC :: X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.st (ATK.SatNPMaquina.E true false (al"
+  },
+  {
+   "name": "ATK.SatNPMaquina.stk_C",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 289,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil), ATK.SatNPMaquina.stk P ATK.SatNPMaquina.K.C = P.C"
+  },
+  {
+   "name": "ATK.SatNPMaquina.stk_D",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 290,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil), ATK.SatNPMaquina.stk P ATK.SatNPMaquina.K.D = P.D"
+  },
+  {
+   "name": "ATK.SatNPMaquina.stk_I",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 291,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil), ATK.SatNPMaquina.stk P ATK.SatNPMaquina.K.I = P.I"
+  },
+  {
+   "name": "ATK.SatNPMaquina.stk_J",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 292,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil), ATK.SatNPMaquina.stk P ATK.SatNPMaquina.K.J = P.J"
+  },
+  {
+   "name": "ATK.SatNPMaquina.stk_T",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 287,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil), ATK.SatNPMaquina.stk P ATK.SatNPMaquina.K.T = P.T"
+  },
+  {
+   "name": "ATK.SatNPMaquina.stk_X",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 288,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil), ATK.SatNPMaquina.stk P ATK.SatNPMaquina.K.X = P.X"
+  },
+  {
+   "name": "ATK.SatNPMaquina.stk_inp",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 285,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil), ATK.SatNPMaquina.stk P ATK.SatNPMaquina.K.inp = P.inp"
+  },
+  {
+   "name": "ATK.SatNPMaquina.syms_length_le",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 976,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (l : List Bool), (ATK.SatNPSemantica.syms l).length ≤ l.length"
+  },
+  {
+   "name": "ATK.SatNPMaquina.tc_cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 368,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I J : List ATK.SatNPSemantica.Sym) (t : ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.tc ATK.SatNPMaquina.init         { inp := inp, T := t :: T, X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.tc ATK.SatNPMaquina.init         { inp := inp, T := T, X := X, C := t :"
+  },
+  {
+   "name": "ATK.SatNPMaquina.tc_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 372,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (X C D I J : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.tc ATK.SatNPMaquina.init         { inp := inp, T := [], X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.st (ATK.SatNPMaquina.E true false true false false false)         { inp := inp, T := [], X := X, C := C, D"
+  },
+  {
+   "name": "ATK.SatNPMaquina.tx_cons",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 351,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (T X C D I J : List ATK.SatNPSemantica.Sym) (t : ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.tx ATK.SatNPMaquina.init         { inp := inp, T := t :: T, X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.tx ATK.SatNPMaquina.init         { inp := inp, T := T, X := t :: X, C :"
+  },
+  {
+   "name": "ATK.SatNPMaquina.tx_nil",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 355,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (inp : List Bool) (X C D I J : List ATK.SatNPSemantica.Sym),   ATK.SatNPMaquina.step       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.tx ATK.SatNPMaquina.init         { inp := inp, T := [], X := X, C := C, D := D, I := I, J := J }) =     some       (ATK.SatNPMaquina.cfg ATK.SatNPMaquina.Lab.rc ATK.SatNPMaquina.init         { inp := inp, T := [], X := X, C := C, D := D, I := I, J := J })"
+  },
+  {
+   "name": "ATK.SatNPMaquina.upd_C",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 301,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil) (l : List ATK.SatNPSemantica.Sym),   Function.update (ATK.SatNPMaquina.stk P) ATK.SatNPMaquina.K.C l =     ATK.SatNPMaquina.stk { inp := P.inp, T := P.T, X := P.X, C := l, D := P.D, I := P.I, J := P.J }"
+  },
+  {
+   "name": "ATK.SatNPMaquina.upd_D",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 303,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil) (l : List ATK.SatNPSemantica.Sym),   Function.update (ATK.SatNPMaquina.stk P) ATK.SatNPMaquina.K.D l =     ATK.SatNPMaquina.stk { inp := P.inp, T := P.T, X := P.X, C := P.C, D := l, I := P.I, J := P.J }"
+  },
+  {
+   "name": "ATK.SatNPMaquina.upd_I",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 305,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil) (l : List ATK.SatNPSemantica.Sym),   Function.update (ATK.SatNPMaquina.stk P) ATK.SatNPMaquina.K.I l =     ATK.SatNPMaquina.stk { inp := P.inp, T := P.T, X := P.X, C := P.C, D := P.D, I := l, J := P.J }"
+  },
+  {
+   "name": "ATK.SatNPMaquina.upd_J",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 307,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil) (l : List ATK.SatNPSemantica.Sym),   Function.update (ATK.SatNPMaquina.stk P) ATK.SatNPMaquina.K.J l =     ATK.SatNPMaquina.stk { inp := P.inp, T := P.T, X := P.X, C := P.C, D := P.D, I := P.I, J := l }"
+  },
+  {
+   "name": "ATK.SatNPMaquina.upd_T",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 297,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil) (l : List ATK.SatNPSemantica.Sym),   Function.update (ATK.SatNPMaquina.stk P) ATK.SatNPMaquina.K.T l =     ATK.SatNPMaquina.stk { inp := P.inp, T := l, X := P.X, C := P.C, D := P.D, I := P.I, J := P.J }"
+  },
+  {
+   "name": "ATK.SatNPMaquina.upd_X",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 299,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil) (l : List ATK.SatNPSemantica.Sym),   Function.update (ATK.SatNPMaquina.stk P) ATK.SatNPMaquina.K.X l =     ATK.SatNPMaquina.stk { inp := P.inp, T := P.T, X := l, C := P.C, D := P.D, I := P.I, J := P.J }"
+  },
+  {
+   "name": "ATK.SatNPMaquina.upd_inp",
+   "file": "atk-kernel/ATK/SatNPMaquina.lean",
+   "line": 293,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : ATK.SatNPMaquina.Pil) (l : List Bool),   Function.update (ATK.SatNPMaquina.stk P) ATK.SatNPMaquina.K.inp l =     ATK.SatNPMaquina.stk { inp := l, T := P.T, X := P.X, C := P.C, D := P.D, I := P.I, J := P.J }"
+  },
+  {
+   "name": "ATK.SatNPSemantica.decC_par",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (w c : ATK.LigacaoPNP.Palavra), ATK.SatNPSemantica.decC (ATK.LigacaoPNP.par w c) = c"
+  },
+  {
+   "name": "ATK.SatNPSemantica.seg_snd_length_le",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 60,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C : List ATK.SatNPSemantica.Sym), (ATK.SatNPSemantica.seg C).2.length ≤ C.length"
+  },
+  {
+   "name": "ATK.SatNPSemantica.seg_snd_length_lt",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 68,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (s : ATK.SatNPSemantica.Sym) (r : List ATK.SatNPSemantica.Sym),   (ATK.SatNPSemantica.seg (s :: r)).2.length < (s :: r).length"
+  },
+  {
+   "name": "bitsSym_reverse_head",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 286,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (i : ℕ), Option.all (fun x => decide (x = (false, true))) (ATK.SatNPSemantica.bitsSym i).reverse.head? = true"
+  },
+  {
+   "name": "bits_canon",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 203,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (n : ℕ), ATK.SatNPSemantica.Canon n.bits"
+  },
+  {
+   "name": "bits_injective",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 197,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Function.Injective Nat.bits"
+  },
+  {
+   "name": "bits_ofBits",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 224,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (l : List Bool), ATK.SatNPSemantica.Canon l → (ATK.SatNPSemantica.ofBits l).bits = l"
+  },
+  {
+   "name": "canon_of_head",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 354,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (l : List Bool),   Option.all (fun x => decide (x = (false, true))) ((List.map (fun b => (false, b)) l).reverse ++ []).head? = true →     ATK.SatNPSemantica.Canon l"
+  },
+  {
+   "name": "cert_length",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 523,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (τ : ℕ → Bool) (φ : ATK.ModeloPNP.CNF), (ATK.SatNPSemantica.cert τ φ).length ≤ (ATK.ModeloPNP.codCNF φ).length"
+  },
+  {
+   "name": "codCNF_length_even",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 157,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (φ : ATK.ModeloPNP.CNF), (ATK.ModeloPNP.codCNF φ).length % 2 = 0"
+  },
+  {
+   "name": "codSeg_length",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 519,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (τ : ℕ → Bool) (ℓ : ATK.ModeloPNP.Literal),   (ATK.SatNPSemantica.codSeg τ ℓ.1).length = (ATK.ModeloPNP.codLiteral ℓ).length"
+  },
+  {
+   "name": "cookLevin",
+   "file": "atk-kernel/ATK/CookLevinFinal.lean",
+   "line": 148,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {M : ATK.ClosedMath.Models}, ATK.BridgeReduction.PontesRestantes M → ATK.Conditional.PvsNP.CookLevin M.cx M.sat"
+  },
+  {
+   "name": "evalIdx_bits",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 268,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C : List ATK.SatNPSemantica.Sym) (p : Bool) (X : List ATK.SatNPSemantica.Sym) (l : List Bool)   (I : List ATK.SatNPSemantica.Sym) (cs all : Bool),   ATK.SatNPSemantica.evalIdx C p I cs all (List.map (fun b => (false, b)) l ++ ATK.SatNPSemantica.sL :: X) =     if         Option.all (fun x => decide (x = (false, true))) ((List.map (fun b => (false, b)) l).reverse ++ I).head? =           true then"
+  },
+  {
+   "name": "evalStart_encCNF",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 315,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C : List ATK.SatNPSemantica.Sym) (φ : ATK.ModeloPNP.CNF) (all : Bool),   ATK.SatNPSemantica.evalStart C true false all (ATK.SatNPSemantica.encCNF φ) =     (all && List.all φ (ATK.SatNPSemantica.clauseVal C))"
+  },
+  {
+   "name": "evalStart_encClause",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 303,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C : List ATK.SatNPSemantica.Sym) (all : Bool) (X : List ATK.SatNPSemantica.Sym) (K : ATK.ModeloPNP.Clausula)   (fresh cs : Bool),   ATK.SatNPSemantica.evalStart C fresh cs all (ATK.SatNPSemantica.encClause K ++ X) =     ATK.SatNPSemantica.evalStart C true false (all && (cs || ATK.SatNPSemantica.clauseVal C K)) X"
+  },
+  {
+   "name": "evalStart_encLit",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 291,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C : List ATK.SatNPSemantica.Sym) (ℓ : ATK.ModeloPNP.Literal) (fresh cs all : Bool) (X : List ATK.SatNPSemantica.Sym),   ATK.SatNPSemantica.evalStart C fresh cs all (ATK.SatNPSemantica.encLit ℓ ++ X) =     ATK.SatNPSemantica.evalStart C false (cs || ATK.SatNPSemantica.lookup (ATK.SatNPSemantica.idxSym ℓ.1) C == ℓ.2) all       X"
+  },
+  {
+   "name": "evalStart_sC",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 262,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C : List ATK.SatNPSemantica.Sym) (fresh cs all : Bool) (X : List ATK.SatNPSemantica.Sym),   ATK.SatNPSemantica.evalStart C fresh cs all (ATK.SatNPSemantica.sC :: X) =     ATK.SatNPSemantica.evalStart C true false (all && cs) X"
+  },
+  {
+   "name": "eval_all_false",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 327,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C X : List ATK.SatNPSemantica.Sym),   (∀ (fresh cs : Bool), ATK.SatNPSemantica.evalStart C fresh cs false X = false) ∧     ∀ (p : Bool) (I : List ATK.SatNPSemantica.Sym) (cs : Bool), ATK.SatNPSemantica.evalIdx C p I cs false X = false"
+  },
+  {
+   "name": "eval_sound",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 361,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C X : List ATK.SatNPSemantica.Sym),   (∀ (all : Bool),       ATK.SatNPSemantica.evalStart C true false all X = true →         ∃ φ, X = ATK.SatNPSemantica.encCNF φ ∧ all = true ∧ List.all φ (ATK.SatNPSemantica.clauseVal C) = true) ∧     (∀ (cs all : Bool),         ATK.SatNPSemantica.evalStart C false cs all X = true →           ∃ K φ,             X = List.flatMap ATK.SatNPSemantica.encLit K ++ A"
+  },
+  {
+   "name": "idxSym_injective",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 486,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Function.Injective ATK.SatNPSemantica.idxSym"
+  },
+  {
+   "name": "lookup_encSegs",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 491,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (τ : ℕ → Bool) (L : List ATK.ModeloPNP.Literal),   ∀ i ∈ List.map Prod.fst L,     ATK.SatNPSemantica.lookup (ATK.SatNPSemantica.idxSym i)         (List.flatMap (fun ℓ => ATK.SatNPSemantica.encSeg τ ℓ.1) L) =       τ i"
+  },
+  {
+   "name": "ofBits_bits",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 182,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (n : ℕ), ATK.SatNPSemantica.ofBits n.bits = n"
+  },
+  {
+   "name": "sat_em_NP_de",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 552,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (M : Turing.TM2ComputableInPolyTime ATK.LigacaoPNP.cod Computability.encodeBool ATK.SatNPSemantica.verif),   ATK.ModeloPNP.SAT ∈ ATK.LigacaoPNP.classeNP"
+  },
+  {
+   "name": "sat_iff_verif",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 535,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ATK.LigacaoPNP.Palavra),   x ∈ ATK.ModeloPNP.SAT ↔ ∃ c, List.length c ≤ List.length x ∧ ATK.SatNPSemantica.verif (ATK.LigacaoPNP.par x c) = true"
+  },
+  {
+   "name": "satisfaz_iff",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 258,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C : List ATK.SatNPSemantica.Sym) (φ : ATK.ModeloPNP.CNF),   ATK.ModeloPNP.Satisfaz (ATK.SatNPSemantica.tau C) φ ↔ List.all φ (ATK.SatNPSemantica.clauseVal C) = true"
+  },
+  {
+   "name": "seg_append",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 477,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (r l : List ATK.SatNPSemantica.Sym),   (∀ s ∈ l, s.1 = false) → ATK.SatNPSemantica.seg (l ++ ATK.SatNPSemantica.sL :: r) = (l, r)"
+  },
+  {
+   "name": "sym_eq_of_fst",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 348,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (s : ATK.SatNPSemantica.Sym), s.1 = false → s = (false, s.2)"
+  },
+  {
+   "name": "sym_eq_sL",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 351,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (s : ATK.SatNPSemantica.Sym), s ≠ ATK.SatNPSemantica.sC → s.1 = true → s = ATK.SatNPSemantica.sL"
+  },
+  {
+   "name": "syms_cert",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 468,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (τ : ℕ → Bool) (φ : ATK.ModeloPNP.CNF),   ATK.SatNPSemantica.syms (ATK.SatNPSemantica.cert τ φ) =     List.flatMap (fun ℓ => ATK.SatNPSemantica.encSeg τ ℓ.1) (List.flatten φ)"
+  },
+  {
+   "name": "syms_codCNF",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 149,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (φ : ATK.ModeloPNP.CNF), ATK.SatNPSemantica.syms (ATK.ModeloPNP.codCNF φ) = ATK.SatNPSemantica.encCNF φ"
+  },
+  {
+   "name": "syms_codClausula",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 140,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (K : ATK.ModeloPNP.Clausula) (r : List Bool),   ATK.SatNPSemantica.syms (ATK.ModeloPNP.codClausula K ++ r) =     ATK.SatNPSemantica.encClause K ++ ATK.SatNPSemantica.syms r"
+  },
+  {
+   "name": "syms_codLiteral",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 134,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (ℓ : ATK.ModeloPNP.Literal) (r : List Bool),   ATK.SatNPSemantica.syms (ATK.ModeloPNP.codLiteral ℓ ++ r) = ATK.SatNPSemantica.encLit ℓ ++ ATK.SatNPSemantica.syms r"
+  },
+  {
+   "name": "syms_codSeg",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 462,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (τ : ℕ → Bool) (i : ℕ) (r : List Bool),   ATK.SatNPSemantica.syms (ATK.SatNPSemantica.codSeg τ i ++ r) =     ATK.SatNPSemantica.encSeg τ i ++ ATK.SatNPSemantica.syms r"
+  },
+  {
+   "name": "syms_cons_cons",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 123,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (a b : Bool) (r : List Bool), ATK.SatNPSemantica.syms (a :: b :: r) = (a, b) :: ATK.SatNPSemantica.syms r"
+  },
+  {
+   "name": "syms_flatMap_simb",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 125,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (l r : List Bool),   ATK.SatNPSemantica.syms (List.flatMap ATK.ModeloPNP.simb l ++ r) =     List.map (fun b => (false, b)) l ++ ATK.SatNPSemantica.syms r"
+  },
+  {
+   "name": "syms_inj",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 437,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {x y : List Bool}, x.length % 2 = 0 → y.length % 2 = 0 → ATK.SatNPSemantica.syms x = ATK.SatNPSemantica.syms y → x = y"
+  },
+  {
+   "name": "unsyms_syms",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 429,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : List Bool), x.length % 2 = 0 → ATK.SatNPSemantica.unsyms (ATK.SatNPSemantica.syms x) = x"
+  },
+  {
+   "name": "verif_codCNF",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 323,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (φ : ATK.ModeloPNP.CNF) (c : List Bool),   ATK.SatNPSemantica.verif (ATK.LigacaoPNP.par (ATK.ModeloPNP.codCNF φ) c) =     List.all φ (ATK.SatNPSemantica.clauseVal (ATK.SatNPSemantica.syms c))"
+  },
+  {
+   "name": "verif_par_sound",
+   "file": "atk-kernel/ATK/SatNPSemantica.lean",
+   "line": 441,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x c : ATK.LigacaoPNP.Palavra),   ATK.SatNPSemantica.verif (ATK.LigacaoPNP.par x c) = true →     ∃ φ, x = ATK.ModeloPNP.codCNF φ ∧ ATK.ModeloPNP.Satisfaz (ATK.SatNPSemantica.tau (ATK.SatNPSemantica.syms c)) φ"
+  }
+ ],
+ "closed": 391,
+ "files_sha256": {
+  "atk-kernel/ATK/AlgebraTerminal.lean": "ab045c0a40a165fbe781e2c2e58eee54e1b79e6164a635016bf98a4959b2823b",
+  "atk-kernel/ATK/BaezDuarteBridge.lean": "6cb5d5346a77a4bb236de5c8dd10bfa1753492dc43016a87424d69c148f355a7",
+  "atk-kernel/ATK/BealCompleto.lean": "6fa288b32dd05fbffbeaf3b5d802ecf7fea25e5ec49bb4eb704ea2f3401cb7ed",
+  "atk-kernel/ATK/BealDarmonMerel.lean": "ead6713ed0f643ce828121f0c63b240feec2ebbe0d0a269c3a86c97012161ab6",
+  "atk-kernel/ATK/BealFermatDescent.lean": "2ae030020dfaf3520e61a81afe2c18a689e11ba7a81a0ca31d0878e6476bbdcd",
+  "atk-kernel/ATK/BealFourFourTwo.lean": "07b323e543eee66a877ebaa9514fc3582b6f8bbdf108f6c1054a325535f1b406",
+  "atk-kernel/ATK/BealPartial.lean": "1e6c661b835a86ef19e36b46e5af356cd60d873e2d4b784134bbe6983bda05fb",
+  "atk-kernel/ATK/BealReduction.lean": "61bf2d4278f511b479e77cda7535fae804f00526fbede8b804ba898edcca0875",
+  "atk-kernel/ATK/BealResidual.lean": "4e79676f5e996b3f1c5202998a7cff418a419617f741dcf6a1c02bd11cb3addd",
+  "atk-kernel/ATK/ClosedMath.lean": "599b1dcc83d768fdcda5b35c6ae69a1b6a5f22bcfe44f785d354fb8ed844fb95",
+  "atk-kernel/ATK/ComposicaoTM2.lean": "afd2dad6b7a9cc250a1cd1e74609030e25bfbda5a1220f1e97842dfe1f685df6",
+  "atk-kernel/ATK/Conditional.lean": "b257632b3dee16101bf7bca086307e43b951dde4c7de29dff2286a92d9b8261d",
+  "atk-kernel/ATK/Conditional/BSD.lean": "39138cc722f5edef5db0cdaf0b99a75f571b6d32cbc7eb1e8ac228d864b89f65",
+  "atk-kernel/ATK/Conditional/Beal.lean": "f62f97d014fa5b1302be281194be525590400869280ae94f135ac2dcf1385152",
+  "atk-kernel/ATK/Conditional/Hodge.lean": "aa3719783ab8e671bb21431f2cfa2530482fe5a3b8a32158aefd9e9844c72698",
+  "atk-kernel/ATK/Conditional/NavierStokes.lean": "332fc2e50242c07cfee0b40cf545bbbd2dac0ae4d860c4e21ac2f639ca04a531",
+  "atk-kernel/ATK/Conditional/PvsNP.lean": "57c95a8fb0848643045b0de56f99444f5761c18b75a97e78aec43c604c143619",
+  "atk-kernel/ATK/Conditional/Riemann.lean": "4c1dc437747de9c70341bdca01a0c9fef299a9b6d9b30413a75fc005d3631382",
+  "atk-kernel/ATK/Conditional/YangMills.lean": "2d84f374b93e2bd4557098f86e205ba6a5c4141da7dc8453589a31e1b4aaf5a5",
+  "atk-kernel/ATK/ContracaoDN.lean": "d7d2a018cc9fd69d8ca99c8e260b2a4b34681e050683861b91ebf5cfd289e8ec",
+  "atk-kernel/ATK/CookLevinFinal.lean": "db5dad7af6fefd44407cbdb9ed39cf6fa02b85eabc650a25197d3a7dbe0524ac",
+  "atk-kernel/ATK/CookLevinInicio.lean": "567ba9b19e23e76235cc41d2c658f0af000aa8bc234fe5b85c543028a3315bc7",
+  "atk-kernel/ATK/CookLevinJanela.lean": "76d3583932b96e47da02c4d4e5d223cad3e49415a02c2fb1066001f873d2f35b",
+  "atk-kernel/ATK/CookLevinMolde.lean": "c0dfb0001b41dd4a23373a8e8d2ca84a8633bd5a539f33aa19300a216a1ed743",
+  "atk-kernel/ATK/CookLevinPrograma.lean": "d9bd52074d6f760e26bf4cca8ae30dc96a8a7bd9204788b121cce48bb2854954",
+  "atk-kernel/ATK/CookLevinReducao.lean": "a64c5a860114aebb35232f5b12ea513f441147cd9e03805eb3b16b7374ff3c5b",
+  "atk-kernel/ATK/CookLevinRestricao.lean": "9e2f56d53d971679726f59c6af5bd313be49d2fa9e2ebbc4b920c20d84e0c0e4",
+  "atk-kernel/ATK/CookLevinTableau.lean": "007847de0a82ef413332d4745ca784b76ec4fb413e3dc518f7f6078735ec0980",
+  "atk-kernel/ATK/CookLevinVerificador.lean": "b72a969518de24c0ef65ba137958bb77f63b82bc79269e00ab08fa6d965746ca",
+  "atk-kernel/ATK/FermatRightTriangle.lean": "b31212601d3712ea6f226ab20e78e26e11ce1e86d82197307f746ea2c301e5cd",
+  "atk-kernel/ATK/FinalRoot.lean": "800ebc823c6c797a4f1f1249ea333bf44445d6f9db942046ab9f37d2995eebad",
+  "atk-kernel/ATK/ForaDaLinha.lean": "5a7baee5430fd146ebc24bef636b934ab56105f8744a68364fbc194876cd2919",
+  "atk-kernel/ATK/Gerador.lean": "e879fa7609be61749d3591597ad18b847961ed65879571accd8e7f01527f9a5f",
+  "atk-kernel/ATK/GeradorArit.lean": "75d8bffa185020a5d04e9d0a49b4d3882d1ec1f5965765176970ca32d57573da",
+  "atk-kernel/ATK/GeradorForm.lean": "e57329d4d8cde2541580679bae4f4c8d87e28b303917c0684bd9a2d8636e14b2",
+  "atk-kernel/ATK/GeradorTM.lean": "426fab6f27b58d8348ac727b514b97217c97c741bec858881e61047b454fd367",
+  "atk-kernel/ATK/Indeterminacy.lean": "9fc0a38993d4846610033b2a38e63894b463a738633a142520561e209bd88f57",
+  "atk-kernel/ATK/IndeterminacyStates.lean": "1a4c9ee6bd9b773c76e53ba812e1c920a6ecb2c4616f0a96179f6af279bc8a8e",
+  "atk-kernel/ATK/LigacaoNS.lean": "3f3783fc28394feb2d42b2bc6a0b8960ccf9b72217ed4e23560578be20bddf76",
+  "atk-kernel/ATK/LigacaoPNP.lean": "a677ff4783b1f6a638a95fb4e2dbd29bcdf5dd98c905a971d3ca3fc6740e8cdf",
+  "atk-kernel/ATK/MellinRho.lean": "d37a84591f1594e64f5b0a7d4eb4018bafe5cef503c954a41306c4daffb02771",
+  "atk-kernel/ATK/ModeloPNP.lean": "23c788d8e338474cb11ae139d1f76f627361bb7535c5e20f4a028130150f1cbb",
+  "atk-kernel/ATK/RiemannConcrete.lean": "47f40910773da5d00ee472e91e00bcbaaf3c91114b4f37d751a73c5249ce263d",
+  "atk-kernel/ATK/RiemannFaithful.lean": "269bfe14fa25f1d369c074c2bcb3416e1fd4b1df63a0c23d0773e3d691322c11",
+  "atk-kernel/ATK/RiemannStates.lean": "007cae414504383e41b72abe530d7794b8be7449c8762a2dedc399b9997cd77b",
+  "atk-kernel/ATK/SatNPMaquina.lean": "12b152f7de3f5560dddaa564d20ba51180599b2ec21404184b2b10e773bad584",
+  "atk-kernel/ATK/SatNPSemantica.lean": "e29aafd67b58f31d2a033694d059928d3e7ad0b307363ff1aede328b61539ac5",
+  "atk-kernel/ATK/Termos.lean": "d4a745d8eb63b2687f4d5b30eace0552902fe2e79f99650b6d9c221f7b443bcb",
+  "atk-kernel/ATK/ZetaRegiao.lean": "0d0368a0cf8b92fd96ee68258c373590f2906b7d1e47d036de2a59fab3ee9bc0",
+  "atk-kernel/ATK/ZetaRetangulo.lean": "db4894dc82d4e302b9260e188f37bf79c2c1bf82999f6380e39228e7bcc160a4",
+  "atk-kernel/ATK/ZetaSimetria.lean": "b69eed771ea2e61c424ff33f5891ee595a05d3c8a2857a5bec11060f876d4acf",
+  "atk-kernel/ATK/ZetaStrip.lean": "202994e0bf413c54bf1d4eedd1448e5777732bbd4d15df40ac24f9377074624e",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-28T19:19:18Z",
+ "certificate_sha256": "c55ebd971a8b6cc3fb9bb08b6f1a946a3308fd3146e33ce4e3c2c5a59a180969"
+}

@@ -1,0 +1,248 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/proof-engine-rncb",
+ "branch_state": "parada",
+ "head_commit": "348d3577de39cfa3688332699256a9f0c4e97ba9",
+ "head_commit_date": "2026-09-26T09:29:57+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "348d3577de39cfa3688332699256a9f0c4e97ba9",
+   "date": "2026-09-26T09:29:57+01:00",
+   "subject": "ProofEngine: fix Lean structure syntax"
+  },
+  {
+   "commit": "be2715548a60fc0282af6310eaa7a717fe5d03af",
+   "date": "2026-09-26T09:29:54+01:00",
+   "subject": "ProofEngine: fix Lean structure syntax"
+  },
+  {
+   "commit": "2ef8c1eda68b23185c235eab8c30f67a6a755fc2",
+   "date": "2026-09-26T09:29:50+01:00",
+   "subject": "ProofEngine: fix Lean structure syntax"
+  },
+  {
+   "commit": "69cb1090da84c13e3a29eeac452ab0b42d7928b3",
+   "date": "2026-09-26T08:46:30+01:00",
+   "subject": "ProofEngine: repair Promotion.lean compile gate"
+  },
+  {
+   "commit": "f91ca3937ccac28ff1ea4e45bd7ac0d545cf7f01",
+   "date": "2026-09-26T08:46:28+01:00",
+   "subject": "ProofEngine: repair ScientificBoundary.lean compile gate"
+  },
+  {
+   "commit": "cb5134b09f63168648f277d2b46a597f0bf44d54",
+   "date": "2026-09-26T08:46:06+01:00",
+   "subject": "ProofEngine: add empirical cost history"
+  },
+  {
+   "commit": "584d962656a7327721052b469ce95936561969dc",
+   "date": "2026-09-26T08:46:04+01:00",
+   "subject": "ProofEngine: add canonical empty graph"
+  },
+  {
+   "commit": "33f9536cd51eca2986222d78aab91eebdbce5f5f",
+   "date": "2026-09-26T08:45:59+01:00",
+   "subject": "ProofEngine: wire ATL v3 canonical core into aggregate"
+  },
+  {
+   "commit": "d2e1e1609f4ba4d68ae5a2dd2273bbeca56d9b06",
+   "date": "2026-09-26T08:45:53+01:00",
+   "subject": "ProofEngine: add Swarm"
+  },
+  {
+   "commit": "f5fe86654f36d768bb8dc650e8f1b52917240845",
+   "date": "2026-09-26T08:45:51+01:00",
+   "subject": "ProofEngine: add Firewall"
+  },
+  {
+   "commit": "2223deb0d91ec85f65fb99b02957e6f77e4c142b",
+   "date": "2026-09-26T08:45:49+01:00",
+   "subject": "ProofEngine: add ReuseBounded"
+  },
+  {
+   "commit": "b3e96eb94c1c508d60c708cb347921cccdce38f7",
+   "date": "2026-09-26T08:45:46+01:00",
+   "subject": "ProofEngine: add MinCut"
+  },
+  {
+   "commit": "ad9ed2d167677316728fbf91970b80be872251a3",
+   "date": "2026-09-26T08:45:44+01:00",
+   "subject": "ProofEngine: add Retry"
+  },
+  {
+   "commit": "21e2f2f5ba81103aa64fb5abba0d34a6050126ec",
+   "date": "2026-09-26T08:45:30+01:00",
+   "subject": "ProofEngine: add CanonicalNode"
+  },
+  {
+   "commit": "4ffe5ee797ad8affa1ec8bfea6844b1caa527f23",
+   "date": "2026-09-26T08:06:10+01:00",
+   "subject": "ProofEngine: make negative instantiation target parameters explicit"
+  },
+  {
+   "commit": "8952de51fbd1957f41eb8e17d424151129c08800",
+   "date": "2026-09-26T08:05:54+01:00",
+   "subject": "ProofEngine: wire ATL v3 canonical foundation"
+  },
+  {
+   "commit": "4c7f45a7aaf6ec722c4014092e8223c59c836503",
+   "date": "2026-09-26T08:05:49+01:00",
+   "subject": "ProofEngine: add empirical cut cost model"
+  },
+  {
+   "commit": "06f7df6fab94d352784dccd1f1471c78a941e32f",
+   "date": "2026-09-26T08:05:37+01:00",
+   "subject": "ProofEngine: add typed promotion and five-firewall contract"
+  },
+  {
+   "commit": "31b6917ead87052c5289a65dd1e5ad817a5134d7",
+   "date": "2026-09-26T08:05:30+01:00",
+   "subject": "ProofEngine: add canonical ATL v3 graph schema"
+  },
+  {
+   "commit": "dbc1ffaa4055f0ddb307de57036cfaadff6d86fa",
+   "date": "2026-09-26T01:41:43+01:00",
+   "subject": "ProofEngine: fix Producer identity name collision"
+  },
+  {
+   "commit": "6dee67503830f8a84e01c068ea9849b81255bd7e",
+   "date": "2026-09-26T01:41:25+01:00",
+   "subject": "ProofEngine: wire negative engine into aggregate"
+  },
+  {
+   "commit": "8f4e064523385ece6506f6fc050d00cae20d612e",
+   "date": "2026-09-26T01:41:20+01:00",
+   "subject": "ProofEngine: add fail-closed negative producer matcher"
+  },
+  {
+   "commit": "de82f01990e543cbb82d3040aaed99318c766261",
+   "date": "2026-09-26T00:44:08+01:00",
+   "subject": "CI: add aggregate RNCB ProofEngine gate"
+  },
+  {
+   "commit": "04d5a6747b87ca71e73357d7e3e2cd7ab39bc26c",
+   "date": "2026-09-26T00:43:59+01:00",
+   "subject": "ProofEngine: add ProofEngine core"
+  },
+  {
+   "commit": "2f15a8ec246f8493efa0f6ecf8bffb9890c730ea",
+   "date": "2026-09-26T00:43:57+01:00",
+   "subject": "ProofEngine: add ScientificBoundary core"
+  },
+  {
+   "commit": "716ae632d0d590ddb86c7de9fc1d82b872c03c27",
+   "date": "2026-09-26T00:43:56+01:00",
+   "subject": "ProofEngine: add Registry core"
+  },
+  {
+   "commit": "853174af0242947a38dc05f8afd9761461c8d228",
+   "date": "2026-09-26T00:43:54+01:00",
+   "subject": "ProofEngine: add Composition core"
+  },
+  {
+   "commit": "3e4373b35a33597ef56e830ac6fe4932236919f6",
+   "date": "2026-09-26T00:43:52+01:00",
+   "subject": "ProofEngine: add Obligation core"
+  },
+  {
+   "commit": "e4fd5bb52710588d166d5e8eec3de0007025a7e6",
+   "date": "2026-09-26T00:43:50+01:00",
+   "subject": "ProofEngine: add Pattern core"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.ProofEngine.Producer.comp_apply",
+   "file": "lean/MCore/ProofEngine/Composition.lean",
+   "line": 17,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {P Q R : Prop} (g : MCore.ProofEngine.Producer Q R) (f : MCore.ProofEngine.Producer P Q) (h : P), ⋯ = ⋯"
+  },
+  {
+   "name": "MCore.ProofEngine.Producer.id_run",
+   "file": "lean/MCore/ProofEngine/Composition.lean",
+   "line": 14,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : Prop) (h : P), ⋯ = h"
+  },
+  {
+   "name": "MCore.ProofEngine.conflict_cannot_issue",
+   "file": "lean/MCore/ProofEngine/ScientificBoundary.lean",
+   "line": 18,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {S : Prop} (hS : S) (hnS : ¬S), ¬MCore.ProofEngine.CanIssue (MCore.ProofEngine.ScientificEvidence.conflict hS hnS)"
+  },
+  {
+   "name": "MCore.ProofEngine.conflict_not_claimable",
+   "file": "lean/MCore/ProofEngine/Obligation.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (o : MCore.ProofEngine.Obligation),   o.state = MCore.ProofEngine.EvidenceState.conflict → ¬MCore.ProofEngine.Claimable o"
+  },
+  {
+   "name": "MCore.ProofEngine.fourth_attempt_escalates",
+   "file": "lean/MCore/ProofEngine/Retry.lean",
+   "line": 5,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.ProofEngine.retryDecision 3 = MCore.ProofEngine.RetryDecision.escalateAttackable"
+  },
+  {
+   "name": "MCore.ProofEngine.no_layer_skip",
+   "file": "lean/MCore/ProofEngine/Promotion.lean",
+   "line": 25,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (src dst : MCore.ProofEngine.PromotionLayer), MCore.ProofEngine.legalPromotion src dst → dst.rank = src.rank + 1"
+  },
+  {
+   "name": "MCore.ProofEngine.unknown_cannot_issue",
+   "file": "lean/MCore/ProofEngine/ScientificBoundary.lean",
+   "line": 14,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (S : Prop), ¬MCore.ProofEngine.CanIssue MCore.ProofEngine.ScientificEvidence.unknown"
+  },
+  {
+   "name": "MCore.ProofEngine.unknown_not_claimable",
+   "file": "lean/MCore/ProofEngine/Obligation.lean",
+   "line": 23,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (o : MCore.ProofEngine.Obligation), o.state = MCore.ProofEngine.EvidenceState.unknown → ¬MCore.ProofEngine.Claimable o"
+  }
+ ],
+ "closed": 8,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/ProofEngine/CanonicalNode.lean": "52e9b82ec5357f1aedb98c53fb8fb3f6ebeb6f9ade9fee2f6115d6291554005f",
+  "lean/MCore/ProofEngine/Composition.lean": "bd3fb624b08e2dda066afae2f81d62eb37de70dfcc0fcf5cb94f18c7ce87b7a0",
+  "lean/MCore/ProofEngine/Obligation.lean": "ce4e0cc41cdcb52af0fd71abbce90efad414630e3ac4805a5a325ff83a052f02",
+  "lean/MCore/ProofEngine/Pattern.lean": "46098e06dfa153f4e8620be5a196a0a7186f5f0a71b93688534e284ab5bf7e8d",
+  "lean/MCore/ProofEngine/Promotion.lean": "5ac08815370ad94c33901d884daa8e064ee3eb04834d10d5248ce860e56962b2",
+  "lean/MCore/ProofEngine/Registry.lean": "3d88b1590273159807d4f0cca4a2e7b415fcfc4bf46764ac62328417caf001a5",
+  "lean/MCore/ProofEngine/Retry.lean": "9d1d6911a83f23fd6443cc5184e042b622f75a67232ed97df7a4f0dfdc6d7db6",
+  "lean/MCore/ProofEngine/ScientificBoundary.lean": "f53de1658e56b2099bf030c8be49890748bcdacab0e1a2aecf2153cba8ba6a46"
+ },
+ "published_at": "2026-10-28T19:19:21Z",
+ "certificate_sha256": "2820e2d7a4a6f4647b5a993dec8d8f409720ff33bbf2128f06e814ebd102ee6a"
+}

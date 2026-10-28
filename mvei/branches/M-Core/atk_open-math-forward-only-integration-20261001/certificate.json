@@ -1,0 +1,1570 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/open-math-forward-only-integration-20261001",
+ "branch_state": "parada",
+ "head_commit": "d4cc8e5b79b9f3978d4ef5789da227ced0613488",
+ "head_commit_date": "2026-10-01T20:20:56+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "d4cc8e5b79b9f3978d4ef5789da227ced0613488",
+   "date": "2026-10-01T20:20:56+02:00",
+   "subject": "audit: record Denes/Darmon-Merel reduction and external theorem port"
+  },
+  {
+   "commit": "5f8d179d690d9c920c95e6702bce684cdb37b981",
+   "date": "2026-10-01T20:13:46+02:00",
+   "subject": "audit: record quartic perfect-power bridge and bilateral semantics"
+  },
+  {
+   "commit": "cacfd670d1852da9d34a5c27f791dbc0c67e3b6b",
+   "date": "2026-10-01T19:35:09+02:00",
+   "subject": "audit: record complete unconditional quartic odd-support min-cut"
+  },
+  {
+   "commit": "cc4851b4e713d2c2a9ca926f2651ce5e58f12f60",
+   "date": "2026-10-01T19:34:19+02:00",
+   "subject": "audit: prohibit open-math endpoints and equivalents as producer arguments"
+  },
+  {
+   "commit": "679364605979e139107f923300dcd32d1ac30833",
+   "date": "2026-10-01T19:29:48+02:00",
+   "subject": "audit: record V2 global material theorem constants torsion and bilateral logic"
+  },
+  {
+   "commit": "9204f0a08f6461051fd5db20dbede4838c18adc1",
+   "date": "2026-10-01T19:29:34+02:00",
+   "subject": "build: include V2 global material theorem"
+  },
+  {
+   "commit": "64d6bbe9e20f9f3aaddc50d94c5899a92a421cdb",
+   "date": "2026-10-01T19:29:28+02:00",
+   "subject": "formal: assemble V2 global material certificate with torsion and bilateral resolution"
+  },
+  {
+   "commit": "a2e48b1770bee86080f13d9847e45a3f3a09716e",
+   "date": "2026-10-01T19:29:02+02:00",
+   "subject": "research: consolidate global material theorem constants laws classes and open-math protocol"
+  },
+  {
+   "commit": "b23a25129efc89f677e0342e31095fc48f2c9044",
+   "date": "2026-10-01T19:27:45+02:00",
+   "subject": "build: include global material theorem open-math logic and torsion law"
+  },
+  {
+   "commit": "782265b6a55f44bc4d0663e910754b6a4a98616c",
+   "date": "2026-10-01T19:27:43+02:00",
+   "subject": "docs: correct normalization wording for torsion bound"
+  },
+  {
+   "commit": "ac9d43631fb4029f0cd15668bcac8afc72984683",
+   "date": "2026-10-01T19:27:25+02:00",
+   "subject": "formal: prove exact torsion-energy Lagrange identity for tri-cyclic kernel"
+  },
+  {
+   "commit": "13d927ad195abfc535de1b57c6bb41451a1a39e8",
+   "date": "2026-10-01T19:26:39+02:00",
+   "subject": "formal: add bilateral open-math protocol behavior classes and closure audit"
+  },
+  {
+   "commit": "c6c6d8728d80291d65cd8324facbc5e5cb666a1b",
+   "date": "2026-10-01T19:25:58+02:00",
+   "subject": "formal: consolidate canonical constants operators and global material kernel theorem"
+  },
+  {
+   "commit": "531a3aac3aa0582975cc93a6022c30700c2e69f5",
+   "date": "2026-10-01T19:21:57+02:00",
+   "subject": "audit: record quartic factorization and odd-prime support frontier"
+  },
+  {
+   "commit": "f645ac37b5f657e2e5cd546b1920c7ccecdb025a",
+   "date": "2026-10-01T19:13:11+02:00",
+   "subject": "audit: record sharp mod-16 Beal residual frontier"
+  },
+  {
+   "commit": "47941ee9b1188ec2579bd0bc729ef3d8daa5b037",
+   "date": "2026-10-01T19:10:39+02:00",
+   "subject": "audit: record Beal residual mod-8/mod-16 attack"
+  },
+  {
+   "commit": "6414b615e1eea07b9a5baf7db7cf0c246d28df67",
+   "date": "2026-10-01T18:20:33+02:00",
+   "subject": "audit: adopt two-sided material resolution and pin RH/Beal routes"
+  },
+  {
+   "commit": "9db29bf732015cfed29004f52bdc81d1bc8fe5bc",
+   "date": "2026-10-01T18:18:22+02:00",
+   "subject": "build: include two-sided material resolution kernel"
+  },
+  {
+   "commit": "41cb453fa7c8dec5f43f026a1840ac9011a1bd96",
+   "date": "2026-10-01T18:17:40+02:00",
+   "subject": "formal: add fail-closed two-sided material resolution kernel"
+  },
+  {
+   "commit": "45b5aebeb6d64ce2cdff6021ab8ea9412ea77e22",
+   "date": "2026-10-01T18:09:27+02:00",
+   "subject": "audit: pin RH coefficient Pythagoras and Gram-energy attack"
+  },
+  {
+   "commit": "28860aff43fbab67fd8ae4f5e405a54c8f9775ef",
+   "date": "2026-10-01T17:54:26+02:00",
+   "subject": "audit: record evidence-driven RH and Beal attack frontiers"
+  },
+  {
+   "commit": "c104d97848f4661d0db1a1689546bd18f6b25d95",
+   "date": "2026-10-01T17:53:25+02:00",
+   "subject": "build: include arbitrary transverse decay profile theorem"
+  },
+  {
+   "commit": "64e09529708f409cf47145b4da8c946ddecc202e",
+   "date": "2026-10-01T17:53:17+02:00",
+   "subject": "formal: generalize tri-state F1 decay to arbitrary vanishing profiles"
+  },
+  {
+   "commit": "ce912e5f43d889c03062bc3a7f47fc735bbd4df0",
+   "date": "2026-10-01T17:48:50+02:00",
+   "subject": "audit: record tri-cyclic contraction theorem and scalar-defect embedding"
+  },
+  {
+   "commit": "f1dc2482e903359550d0aef32905d10b37a104e2",
+   "date": "2026-10-01T17:48:29+02:00",
+   "subject": "build: include scalar defect embedding theorem"
+  },
+  {
+   "commit": "010be73a2670d47ce013b64f2490723d6c193a85",
+   "date": "2026-10-01T17:48:06+02:00",
+   "subject": "formal: keep scalar defect embedding on robust exact identities"
+  },
+  {
+   "commit": "103fde2894552a19d3e52327b6fece3f82fd7a8f",
+   "date": "2026-10-01T17:47:41+02:00",
+   "subject": "formal: embed scalar defects faithfully into tri-state phase energy"
+  },
+  {
+   "commit": "370bd5e7edc82fbe01dacfea074c1d7a595b2f86",
+   "date": "2026-10-01T17:47:02+02:00",
+   "subject": "research: state tri-cyclic material principle with exact seven-lane adapters"
+  },
+  {
+   "commit": "a4164561fa32e7c48ba2ffdd32ec12ab4628d37f",
+   "date": "2026-10-01T17:46:28+02:00",
+   "subject": "build: include transverse contraction theorem"
+  },
+  {
+   "commit": "bc7c8327950e272673cb477c45fba77e3ec2cb41",
+   "date": "2026-10-01T17:46:15+02:00",
+   "subject": "formal: prove exact tri-cyclic transverse contraction and F1/F2 kernel"
+  },
+  {
+   "commit": "74e94ab5c27d4855e7e8f9ddabaff38ea9b18cf6",
+   "date": "2026-10-01T16:50:01+02:00",
+   "subject": "audit: pin RH multistate decay firewall and hardened convergence"
+  },
+  {
+   "commit": "17b8ee635495839d2a712876ef1c39147602c59f",
+   "date": "2026-10-01T16:15:26+02:00",
+   "subject": "audit: pin NS external port and P02 Kleene firewall"
+  },
+  {
+   "commit": "2fa0d92e4d2a62a7279eec658483ff9645d32e8b",
+   "date": "2026-10-01T16:09:23+02:00",
+   "subject": "audit: update NS convergence with 2026 formal breakdown route"
+  },
+  {
+   "commit": "5bc811494ed57cc0e80f7827036ffd9a116bd61b",
+   "date": "2026-10-01T16:09:06+02:00",
+   "subject": "audit: register external formal Navier-Stokes breakdown closure candidate"
+  },
+  {
+   "commit": "ba9f4517a31dc2ad1ca0f03f38fa00e8cacdb5e1",
+   "date": "2026-10-01T16:08:14+02:00",
+   "subject": "formal: add fail-closed Navier-Stokes breakdown resolution target"
+  },
+  {
+   "commit": "706b833c0511ee23a6fcbc0fce3b2414205962e7",
+   "date": "2026-10-01T16:00:22+02:00",
+   "subject": "build: include tri-state terminal closure in root module"
+  },
+  {
+   "commit": "4cfcb6e757f8c983ffc8860f17aa663aaed3f76c",
+   "date": "2026-10-01T16:00:13+02:00",
+   "subject": "audit: add exact proved-refuted-open convergence master"
+  },
+  {
+   "commit": "7d5ba943a182635f1acc5a2df90575e7849bad25",
+   "date": "2026-10-01T15:59:06+02:00",
+   "subject": "formal: bind tri-state kernel to exact seven terminal adapters"
+  },
+  {
+   "commit": "19c18777cfe2cbab09578a848c162ec04e422569",
+   "date": "2026-10-01T15:57:58+02:00",
+   "subject": "audit: pin strongest reusable frontiers and forbid duplicate attacks"
+  },
+  {
+   "commit": "c45ea6790dfe5ff99aa7b610624c8d69ef7066db",
+   "date": "2026-10-01T15:42:09+02:00",
+   "subject": "audit: make P-vs-NP frontier forward-only at P02"
+  },
+  {
+   "commit": "b1e7381a055645ab739983b5cb7cecbdf94fe309",
+   "date": "2026-10-01T15:41:58+02:00",
+   "subject": "audit: promote frozen certified P01 and pin P02 frontier"
+  },
+  {
+   "commit": "f4c7e846ec198abd0ee2bb8a361f6217e8ff5cca",
+   "date": "2026-10-01T13:29:30+02:00",
+   "subject": "rerun material kernel after section-scope fixes"
+  },
+  {
+   "commit": "3765fd482ae2e84765448524d9d6c2b3eb484c22",
+   "date": "2026-10-01T13:29:05+02:00",
+   "subject": "close noncomputable section in TriCyclicSpectral.lean"
+  },
+  {
+   "commit": "71f771d2470f821c549e6756077ee414b34f19eb",
+   "date": "2026-10-01T13:29:02+02:00",
+   "subject": "close noncomputable section in TriCyclicGeometry.lean"
+  },
+  {
+   "commit": "d68c7073d4fe6427339127b176eaa6499ed4a1dd",
+   "date": "2026-10-01T13:23:25+02:00",
+   "subject": "rerun material kernel after decomposition fix"
+  },
+  {
+   "commit": "ade285328fe67c85a1f4c36afc86b0a248915cf1",
+   "date": "2026-10-01T13:22:50+02:00",
+   "subject": "close mean projection identity and remove redundant tactic"
+  },
+  {
+   "commit": "889a82165e139238b93e559d9eb31a2220acd78f",
+   "date": "2026-10-01T13:17:49+02:00",
+   "subject": "trigger final material mathematics kernel validation"
+  },
+  {
+   "commit": "a226d21f0d91ab45f1d1bdb07194b90dc0137269",
+   "date": "2026-10-01T13:17:45+02:00",
+   "subject": "prepare final validation for unified material mathematics kernel"
+  },
+  {
+   "commit": "dbe158141c034c79abec37adddcc5d39b35c277a",
+   "date": "2026-10-01T13:17:20+02:00",
+   "subject": "add unified import root for material mathematics kernel"
+  },
+  {
+   "commit": "ae777ec7e85223dde1e9e3454d0e0496096d9ffc",
+   "date": "2026-10-01T13:16:27+02:00",
+   "subject": "mark real material spectral layer noncomputable explicitly"
+  },
+  {
+   "commit": "83ff9ce14332d60d2be2abbb4729c912b72abc52",
+   "date": "2026-10-01T13:16:22+02:00",
+   "subject": "mark real material geometry noncomputable explicitly"
+  },
+  {
+   "commit": "6f325a72f652f2fac2ab1fb3d16c56ed0b416aa6",
+   "date": "2026-10-01T13:15:41+02:00",
+   "subject": "stabilize noncomputable real decomposition and prove uniqueness by coordinates"
+  },
+  {
+   "commit": "3e4917e27bdc386b7866f27c21ea40d6bd0e5827",
+   "date": "2026-10-01T13:09:35+02:00",
+   "subject": "trigger material mathematics validation retry 6"
+  },
+  {
+   "commit": "466471cb71305975b9431d9f1bc12a9d16ca6009",
+   "date": "2026-10-01T13:09:30+02:00",
+   "subject": "include tri-cyclic topology in material mathematics validation"
+  },
+  {
+   "commit": "e9ff85a383a4949df1d758e9d61cf711a1dd00ca",
+   "date": "2026-10-01T13:09:01+02:00",
+   "subject": "prove balanced Laplacian over noncommutative rings via two_mul"
+  },
+  {
+   "commit": "7c8965ba738463a7bd31e18ac53ea140dae5f4e0",
+   "date": "2026-10-01T13:07:55+02:00",
+   "subject": "formalize tri-number homeomorphism with product topology"
+  },
+  {
+   "commit": "5c9538d62bf3a9a0fe958cf6e8bbdc4f43a57616",
+   "date": "2026-10-01T13:04:52+02:00",
+   "subject": "trigger material mathematics validation retry 5"
+  },
+  {
+   "commit": "d737fe9ddd28459f7e7f5e6c3639b25f9e6a6226",
+   "date": "2026-10-01T13:04:48+02:00",
+   "subject": "validate spectral layer in full material mathematics stack"
+  },
+  {
+   "commit": "d4da5f54316df8f4cfc6090987b8313f93e952ed",
+   "date": "2026-10-01T13:04:33+02:00",
+   "subject": "close balanced Laplacian identity by ring normalization"
+  },
+  {
+   "commit": "bc7582ff4b0b55dfa74d51d3e8c51b31bf4cc563",
+   "date": "2026-10-01T13:03:24+02:00",
+   "subject": "derive exact tri-cyclic spectral gap and operator polynomial laws"
+  },
+  {
+   "commit": "b123e7a26bdde909c1b5546bfdcb901e412231c2",
+   "date": "2026-10-01T13:01:08+02:00",
+   "subject": "map tri-cyclic material laws to exact terminal producer obligations"
+  },
+  {
+   "commit": "3d90f108625507a26ba5d6f7966590d711ab7f8a",
+   "date": "2026-10-01T12:59:53+02:00",
+   "subject": "trigger material mathematics validation retry 4"
+  },
+  {
+   "commit": "4a4e92b0a52c4f5e20976f1ba1f76d1a7f0c8a75",
+   "date": "2026-10-01T12:59:49+02:00",
+   "subject": "validate full five-layer material mathematics stack"
+  },
+  {
+   "commit": "1346788c4660e16816c347c1bcd1b205c6150ba0",
+   "date": "2026-10-01T12:59:28+02:00",
+   "subject": "harden geometry balanced-mode proof"
+  },
+  {
+   "commit": "ab2b6fa73e77db99a652fef1582de363c32e7fa1",
+   "date": "2026-10-01T12:59:17+02:00",
+   "subject": "harden balanced fixed-point proof"
+  },
+  {
+   "commit": "a723eab2664cf1a1565362747d9c2f5893b8fd0b",
+   "date": "2026-10-01T12:59:03+02:00",
+   "subject": "harden decomposition structure-field proofs"
+  },
+  {
+   "commit": "89e2c3a5520086b2c3a22a51fd57b01e9811e1be",
+   "date": "2026-10-01T12:58:54+02:00",
+   "subject": "harden calculus structure-field proofs"
+  },
+  {
+   "commit": "ae10f6fe3a9b8f04fcdfa16a7f184c8fa843e853",
+   "date": "2026-10-01T12:57:11+02:00",
+   "subject": "add quadratic geometry and torsion laws for tri-cyclic material states"
+  },
+  {
+   "commit": "f9e89f81411d5d48db9120611fc786770bfadeb7",
+   "date": "2026-10-01T12:54:39+02:00",
+   "subject": "trigger full material mathematics validation retry 3"
+  },
+  {
+   "commit": "b23bf8d48c1674b2f528a856850895fa4074e7f0",
+   "date": "2026-10-01T12:54:31+02:00",
+   "subject": "extend material validator to decomposition and singular fiber"
+  },
+  {
+   "commit": "8f93d42885f046fc4e56b79e29a3c358d973fa25",
+   "date": "2026-10-01T12:53:57+02:00",
+   "subject": "add explicit tri-number extensionality theorem"
+  },
+  {
+   "commit": "5a8daf8f09ae803b4a66c9f68fdd0180a40eebcd",
+   "date": "2026-10-01T12:53:04+02:00",
+   "subject": "prove direct-sum uniqueness for balanced and zero-sum modes"
+  },
+  {
+   "commit": "cf23ff065556eb15069265410de9db3e20345156",
+   "date": "2026-10-01T12:51:12+02:00",
+   "subject": "add mean/transverse decomposition and singular-resolution fiber"
+  },
+  {
+   "commit": "11141272a7dc8e59abd53294a4d22c0446fe42cc",
+   "date": "2026-10-01T12:50:13+02:00",
+   "subject": "trigger full material mathematics stack validation"
+  },
+  {
+   "commit": "7f0917327297f404b393aea2254c501f999fef90",
+   "date": "2026-10-01T12:50:10+02:00",
+   "subject": "validate full tri-cyclic material mathematics stack"
+  },
+  {
+   "commit": "18b411152fb43946cdd30720b29e6927f05d2cf3",
+   "date": "2026-10-01T12:49:51+02:00",
+   "subject": "fix tri-cyclic structure equality proofs with extensionality"
+  },
+  {
+   "commit": "5c72433330dd3e811eb198d2f00725ffe11e3cdc",
+   "date": "2026-10-01T12:49:07+02:00",
+   "subject": "fix universes and harden terminal material operator laws"
+  },
+  {
+   "commit": "4186b7ee63b5c99f15dec9eade4689d06c8f4d48",
+   "date": "2026-10-01T12:48:19+02:00",
+   "subject": "formalize F1-F8 material operator laws and terminal adapter interface"
+  },
+  {
+   "commit": "b89ddebb42b850a3692c53d47932a0fa0ed41448",
+   "date": "2026-10-01T12:47:19+02:00",
+   "subject": "harden real spread zero proof against mathlib API drift"
+  },
+  {
+   "commit": "359ea05c81e166e3c03ce77029033ab296783b6c",
+   "date": "2026-10-01T12:46:48+02:00",
+   "subject": "add tri-cyclic phase calculus, Laplacian and energy laws"
+  },
+  {
+   "commit": "0aefdfd455803894e75d81dd05f76755d64aa700",
+   "date": "2026-10-01T12:45:58+02:00",
+   "subject": "trigger material mathematics kernel validation"
+  },
+  {
+   "commit": "3ed4b6faadd5ff9328e7edd6e236a0dbdf6955ab",
+   "date": "2026-10-01T12:45:54+02:00",
+   "subject": "add one-shot validator for material mathematics kernel"
+  },
+  {
+   "commit": "65a364dc8cec15483448a4d2e466f454d87b1ce9",
+   "date": "2026-10-01T12:45:20+02:00",
+   "subject": "formalize tri-stable cyclic algebra, invariants and formal singular ratio"
+  },
+  {
+   "commit": "2166870fe91a0be5e5484b19c4b525be73edfbd2",
+   "date": "2026-10-01T12:25:27+02:00",
+   "subject": "remove strict one-shot validator after GREEN"
+  },
+  {
+   "commit": "da0df2348597c9573ce6c2ab59075efb3957f525",
+   "date": "2026-10-01T12:25:24+02:00",
+   "subject": "remove strict one-shot validator after GREEN"
+  },
+  {
+   "commit": "9dc4db35c141cdd9f57eeeeb9c2247478bc00aa9",
+   "date": "2026-10-01T12:20:25+02:00",
+   "subject": "trigger strict global material module validation"
+  },
+  {
+   "commit": "1beb8726d0ee5415922e548995b1a52e80dc8e6a",
+   "date": "2026-10-01T12:20:18+02:00",
+   "subject": "add strict one-shot validator for global material module"
+  },
+  {
+   "commit": "c2388accc5147f8e56699019686ee5110f581449",
+   "date": "2026-10-01T12:18:59+02:00",
+   "subject": "complete semantic orientations for all seven lanes"
+  },
+  {
+   "commit": "351e774c652c597e878480cee9d366d19d80d556",
+   "date": "2026-10-01T12:18:16+02:00",
+   "subject": "formalize mixed-orientation RH firewall"
+  },
+  {
+   "commit": "cd74b0150cb88edc4b615903a4545ca521ef9ade",
+   "date": "2026-10-01T12:18:10+02:00",
+   "subject": "make semantic lane orientation explicit"
+  },
+  {
+   "commit": "a324bc56e9f200e62a0abfdc1d6910738c35ea6c",
+   "date": "2026-10-01T12:16:42+02:00",
+   "subject": "harden source hygiene audit against Lean comments and false positives"
+  },
+  {
+   "commit": "46864f6f2b89bf94141a9d7ef40ab17a1a493e8c",
+   "date": "2026-10-01T12:15:50+02:00",
+   "subject": "add fail-closed reusable validator for global positive frontier"
+  },
+  {
+   "commit": "5b15c68c3b807056a9fd903d0419b6ed62fbf80e",
+   "date": "2026-10-01T12:00:06+02:00",
+   "subject": "remove one-shot global positive frontier trigger after GREEN"
+  },
+  {
+   "commit": "34ad4a71374897ef6706f5fefd368c4406a8d089",
+   "date": "2026-10-01T12:00:02+02:00",
+   "subject": "remove one-shot global positive frontier trigger after GREEN"
+  },
+  {
+   "commit": "519bd9fb2328867e706b586942324576ccac6e40",
+   "date": "2026-10-01T11:57:02+02:00",
+   "subject": "add comprehensive global material proof/refutation master"
+  },
+  {
+   "commit": "548d1c5c7904d8a6d413b4a58a655325bc7941b9",
+   "date": "2026-10-01T11:54:45+02:00",
+   "subject": "trigger final global positive frontier validation"
+  },
+  {
+   "commit": "9da5de491d316b5b3c344349d57841aa96d103cf",
+   "date": "2026-10-01T11:54:38+02:00",
+   "subject": "audit exact global positive frontier law"
+  },
+  {
+   "commit": "028e998362eaef8bd1c583c2fe90ce8177a6ea8d",
+   "date": "2026-10-01T11:54:27+02:00",
+   "subject": "add exact global positive frontier iff law"
+  },
+  {
+   "commit": "050b7913c0bd9b51c9ecf08367bfa4da1e720fd6",
+   "date": "2026-10-01T11:53:54+02:00",
+   "subject": "rerun latest global positive material frontier"
+  },
+  {
+   "commit": "4c37d0b94860d218b3086ded0982047c55b717d7",
+   "date": "2026-10-01T11:53:43+02:00",
+   "subject": "add global orientation firewall between positive and negative roots"
+  },
+  {
+   "commit": "954a2a66cb42ff304d56d824274bb51a188c3d93",
+   "date": "2026-10-01T11:51:17+02:00",
+   "subject": "trigger global positive material frontier one-shot"
+  },
+  {
+   "commit": "8933d1192e29fdf6362c123fca9b543d278d35e0",
+   "date": "2026-10-01T11:51:10+02:00",
+   "subject": "add one-shot validator for global positive material frontier"
+  },
+  {
+   "commit": "cca4831e017a0f802244a66dcaf96c27b1a19e93",
+   "date": "2026-10-01T11:50:54+02:00",
+   "subject": "add global proof/refutation/inhabitant evidence ledger"
+  },
+  {
+   "commit": "73bb2b4ab8a45ecd534a072a3497632daef757bf",
+   "date": "2026-10-01T11:50:23+02:00",
+   "subject": "formalize positive seven-lane material frontier and exact semantic laws"
+  },
+  {
+   "commit": "703001b23e5ee61ba1c9841be5cc741d1d2a4fb3",
+   "date": "2026-10-01T11:37:41+02:00",
+   "subject": "remove one-shot global conditional validator after GREEN"
+  },
+  {
+   "commit": "17e32b9bd995768daf5e700c3089d5cfdf74b948",
+   "date": "2026-10-01T11:37:37+02:00",
+   "subject": "remove one-shot global conditional validator after GREEN"
+  },
+  {
+   "commit": "70b46f20a36699b3dd1b738778c0ece63fef338a",
+   "date": "2026-10-01T11:32:25+02:00",
+   "subject": "rerun global conditional final one-shot"
+  },
+  {
+   "commit": "a565b6e59d0a99e079fdc68b912ba8f476924fd7",
+   "date": "2026-10-01T11:32:15+02:00",
+   "subject": "fix global conditional validator bootstrap"
+  },
+  {
+   "commit": "5fd5dc14edec4b19592fd22cd5732af745abdc0b",
+   "date": "2026-10-01T11:31:22+02:00",
+   "subject": "trigger global conditional final one-shot"
+  },
+  {
+   "commit": "409a7885c1a1984165d20035cdeac57b0b0a8217",
+   "date": "2026-10-01T11:31:16+02:00",
+   "subject": "add one-shot global conditional final validator"
+  },
+  {
+   "commit": "783bac2ef71218e0a5ae66b71515fc2b2facb492",
+   "date": "2026-10-01T10:16:23+02:00",
+   "subject": "record exact hypotheses for global conditional final"
+  },
+  {
+   "commit": "bd4923a22f296a323148c317138396135639013d",
+   "date": "2026-10-01T10:16:08+02:00",
+   "subject": "densify seven accepted hypotheses into global conditional final theorem"
+  },
+  {
+   "commit": "839ba15f95ee8df1d2d0a8cd6262e16a4326325e",
+   "date": "2026-10-01T01:45:34+02:00",
+   "subject": "fix(atk): repair producer normalizer recursion and induction reduction"
+  },
+  {
+   "commit": "cc7590f3861f1409a26d4afec8437d04267ab4b8",
+   "date": "2026-10-01T01:42:46+02:00",
+   "subject": "ci(atk): audit explicit seven-lane universal specialization"
+  },
+  {
+   "commit": "06057f82f04b43197e4558b60c2bded7245e6c49",
+   "date": "2026-10-01T01:42:35+02:00",
+   "subject": "formal(atk): specialize universal producer to explicit seven-lane bundles"
+  },
+  {
+   "commit": "93bf8bbb09a09350dcb58c0172070b23697eae56",
+   "date": "2026-10-01T01:27:34+02:00",
+   "subject": "fix(atk): make constructive normalizer recursion explicit"
+  },
+  {
+   "commit": "ae379bfe8a6b15cb9172d301f48477816f588da4",
+   "date": "2026-10-01T01:26:44+02:00",
+   "subject": "ci(atk): audit fixed-target universal resolution theorem"
+  },
+  {
+   "commit": "7567b552d03a4f4436cc0dc28c9d116b4afc4b7b",
+   "date": "2026-10-01T01:26:34+02:00",
+   "subject": "harden(atk): fix terminal types before universal materialization"
+  },
+  {
+   "commit": "cf17c7415666370d7f73526c9a4eb68698c3c5f7",
+   "date": "2026-10-01T01:24:58+02:00",
+   "subject": "ci(atk): audit split universal materialization theorem"
+  },
+  {
+   "commit": "9ec65fbd31c8e10a34bb0c6f62b6ef3522b602f6",
+   "date": "2026-10-01T01:24:49+02:00",
+   "subject": "feat(atk): separate universal structural reduction from material extraction"
+  },
+  {
+   "commit": "e0293cbca5f91f9d77912914b6c484f2a03f20e3",
+   "date": "2026-10-01T01:17:49+02:00",
+   "subject": "feat(atk): make universal producer constructive through final root"
+  },
+  {
+   "commit": "509d6f1fd841e0fd6fc6f91750070777958b93fd",
+   "date": "2026-10-01T01:16:56+02:00",
+   "subject": "ci(atk): audit materialization firewall theorem"
+  },
+  {
+   "commit": "a46d31bfc39866e81775295a170ec703f0e7ce4a",
+   "date": "2026-10-01T01:16:48+02:00",
+   "subject": "feat(atk): prove materialization firewall for universal structure"
+  },
+  {
+   "commit": "5e053b0b3ec580b37f9e34b14b831aa4d7c8b112",
+   "date": "2026-10-01T01:14:12+02:00",
+   "subject": "ci(atk): kernel-check universal producer theorem"
+  },
+  {
+   "commit": "bb3fe8df8347b40582f95a346a6fa50f040a6be8",
+   "date": "2026-10-01T01:13:58+02:00",
+   "subject": "feat(atk): formalize universal producer theorem and no-loop law"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.FinalFail.Semantic.ns_resolution_of_breakdown",
+   "file": "lean/MCore/FinalFail/Semantic/NavierStokes.lean",
+   "line": 67,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{Flow : Type u} {Stabilizer : Type v} {ActualNS : Flow → Prop} {Stabilizes : Stabilizer → Flow → Prop} {Data : Type u} {Force : Type v} {Solution : Type*} {AdmissibleData : Data → Prop} {AdmissibleForce : Force → Prop} {GlobalSmoothSolution : Data → Force → Solution → Prop} (h : NavierStokesBreakdownTarget Data Force Solution AdmissibleData AdmissibleForce GlobalSmoothSolution) : NavierStokesResol"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.ns_resolution_of_stabilization",
+   "file": "lean/MCore/FinalFail/Semantic/NavierStokes.lean",
+   "line": 55,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{Flow : Type u} {Stabilizer : Type v} {ActualNS : Flow → Prop} {Stabilizes : Stabilizer → Flow → Prop} {Data : Type u} {Force : Type v} {Solution : Type*} {AdmissibleData : Data → Prop} {AdmissibleForce : Force → Prop} {GlobalSmoothSolution : Data → Force → Solution → Prop} (h : NavierStokesStabilizationTarget Flow Stabilizer ActualNS Stabilizes) : NavierStokesResolutionTarget Flow Stabilizer Actu"
+  },
+  {
+   "name": "MCore.MaterialMath.BilateralOpenMathProblem.both_is_inconsistent",
+   "file": "lean/MCore/MaterialMath/GlobalOpenMathLogic.lean",
+   "line": 80,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(B : BilateralOpenMathProblem PositiveProducer NegativeProducer) (hp : Nonempty PositiveProducer) (hn : Nonempty NegativeProducer) : False"
+  },
+  {
+   "name": "MCore.MaterialMath.BilateralOpenMathProblem.negative_outcome",
+   "file": "lean/MCore/MaterialMath/GlobalOpenMathLogic.lean",
+   "line": 74,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(B : BilateralOpenMathProblem PositiveProducer NegativeProducer) (h : Nonempty NegativeProducer) : ¬ B.endpoint"
+  },
+  {
+   "name": "MCore.MaterialMath.BilateralOpenMathProblem.positive_outcome",
+   "file": "lean/MCore/MaterialMath/GlobalOpenMathLogic.lean",
+   "line": 68,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(B : BilateralOpenMathProblem PositiveProducer NegativeProducer) (h : Nonempty PositiveProducer) : B.endpoint"
+  },
+  {
+   "name": "MCore.MaterialMath.FormalRatio.zeroOverZero_not_evaluable",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 231,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[Zero α] : ¬ evaluable (zeroOverZero : FormalRatio α)"
+  },
+  {
+   "name": "MCore.MaterialMath.SingularResolution.rotate_three",
+   "file": "lean/MCore/MaterialMath/TriCyclicDecomposition.lean",
+   "line": 162,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(r : SingularResolution) : rotate (rotate (rotate r)) = r"
+  },
+  {
+   "name": "MCore.MaterialMath.TerminalMaterialAdapters.toGlobalPositiveRoot",
+   "file": "lean/MCore/MaterialMath/OperatorLaws.lean",
+   "line": 226,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{K : Type*} {Language : Type uL} {InP InNP : Language → Prop} {SAT : Language} {Flow : Type uF} {Stabilizer : Type uS} {ActualNS : Flow → Prop} {Stabilizes : Stabilizer → Flow → Prop} {Variety : Type uV} {Class : Variety → Type uC} {Cycle : Variety → Type uZ} {SmoothProjective : Variety → Prop} {RationalHodge : {X : Variety} → Class X → Prop} {Realizes : {X : Variety} → Cycle X → Class X → Prop} {"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.D_cubic_polynomial",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 81,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : add (D (D (D x))) (add (smul (3 : ℝ) (D (D x))) (smul (3 : ℝ) (D x))) = { manifest"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.L_polynomial_in_D",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 91,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : L x = add (D (D x)) (smul (3 : ℝ) (D x))"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.L_sector_law",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 96,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : L x = smul (-3 : ℝ) (Ptr x)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.Peq_add_Ptr",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 63,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : add (Peq x) (Ptr x) = x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.Peq_idempotent",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 48,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : Peq (Peq x) = Peq x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.Ptr_idempotent",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 55,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : Ptr (Ptr x) = Ptr x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.R_cubic_identity",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 76,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : R (R (R x)) = x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.balancedProjection_is_balanced",
+   "file": "lean/MCore/MaterialMath/TriCyclicDecomposition.lean",
+   "line": 22,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : Balanced (balancedProjection x)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.balancedProjection_rotate",
+   "file": "lean/MCore/MaterialMath/TriCyclicDecomposition.lean",
+   "line": 73,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : balancedProjection (rotate x) = rotate (balancedProjection x)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.balanced_add_fluctuation",
+   "file": "lean/MCore/MaterialMath/TriCyclicDecomposition.lean",
+   "line": 36,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : add (balancedProjection x) (fluctuation x) = x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.balanced_and_zeroSum_eq_zero",
+   "file": "lean/MCore/MaterialMath/TriCyclicDecomposition.lean",
+   "line": 85,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (hb : Balanced x) (hz : ZeroSum x) : x = { manifest"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.balanced_rotate_iff",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 171,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber α) : Balanced (rotate x) ↔ Balanced x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.balanced_transverse_decomposition_unique",
+   "file": "lean/MCore/MaterialMath/TriCyclicDecomposition.lean",
+   "line": 103,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x b t : TriNumber ℝ) (hb : Balanced b) (ht : ZeroSum t) (hdecomp : add b t = x) : b = balancedProjection x ∧ t = fluctuation x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.basis_cycle",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 196,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[Zero α] [One α] : rotate seedBasis = (manifestBasis : TriNumber α)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.canonicalMaterialConstants_values",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 27,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalMaterialConstants.rotationOrder = 3 ∧ canonicalMaterialConstants.transverseLaplacianMagnitude = 3 ∧ canonicalMaterialConstants.normalizedLaplacianEnergy = 9 ∧ canonicalMaterialConstants.spreadRadiusFactor = 3 ∧ canonicalMaterialConstants.scalarDefectEnergyFactor = 6"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.continuous_fromProduct",
+   "file": "lean/MCore/MaterialMath/TriCyclicTopology.lean",
+   "line": 36,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "[TopologicalSpace α] : Continuous (fromProduct : α × α × α → TriNumber α)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.continuous_toProduct",
+   "file": "lean/MCore/MaterialMath/TriCyclicTopology.lean",
+   "line": 31,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "[TopologicalSpace α] : Continuous (toProduct : TriNumber α → α × α × α)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.cyclicMul_add_left",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 103,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[CommSemiring α] (x y z : TriNumber α) : cyclicMul (add x y) z = add (cyclicMul x z) (cyclicMul y z)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.cyclicMul_assoc",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 99,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[CommSemiring α] (x y z : TriNumber α) : cyclicMul (cyclicMul x y) z = cyclicMul x (cyclicMul y z)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.cyclicMul_comm",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 95,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[CommSemiring α] (x y : TriNumber α) : cyclicMul x y = cyclicMul y x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.cyclicMul_one",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 85,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[CommSemiring α] (x : TriNumber α) : cyclicMul x cyclicOne = x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.equilibrium_transverse_intersection_zero",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 68,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (heq : Balanced x) (htr : ZeroSum x) : x = { manifest"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.euclideanSquare_nonneg",
+   "file": "lean/MCore/MaterialMath/TriCyclicGeometry.lean",
+   "line": 29,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : 0 ≤ euclideanSquare x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.euclideanSquare_smul_neg_three",
+   "file": "lean/MCore/MaterialMath/TriCyclicSpectral.lean",
+   "line": 62,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : euclideanSquare (smul (-3 : ℝ) x) = 9 * euclideanSquare x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.ext",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 23,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{x y : TriNumber α} (hManifest : x.manifest = y.manifest) (hCrossing : x.crossing = y.crossing) (hSeed : x.seed = y.seed) : x = y"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.fluctuation_eq_zero_iff_balanced",
+   "file": "lean/MCore/MaterialMath/TriCyclicDecomposition.lean",
+   "line": 52,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : fluctuation x = { manifest"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.fluctuation_rotate",
+   "file": "lean/MCore/MaterialMath/TriCyclicDecomposition.lean",
+   "line": 79,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : fluctuation (rotate x) = rotate (fluctuation x)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.fluctuation_zeroSum",
+   "file": "lean/MCore/MaterialMath/TriCyclicDecomposition.lean",
+   "line": 31,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : ZeroSum (fluctuation x)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.fromProduct_toProduct",
+   "file": "lean/MCore/MaterialMath/TriCyclicTopology.lean",
+   "line": 14,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber α) : fromProduct (toProduct x) = x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.geometricTransverseTrajectory_balancedProjection",
+   "file": "lean/MCore/MaterialMath/TransverseContraction.lean",
+   "line": 19,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (q : ℝ) (n : Nat) : balancedProjection (geometricTransverseTrajectory x q n) = balancedProjection x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.global_kernel_rejects_both",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheoremV2.lean",
+   "line": 82,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{PositiveProducer NegativeProducer : Type*} (B : BilateralOpenMathProblem PositiveProducer NegativeProducer) (hp : Nonempty PositiveProducer) (hn : Nonempty NegativeProducer) : False"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.global_kernel_with_bilateral_negative",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheoremV2.lean",
+   "line": 75,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{PositiveProducer NegativeProducer : Type*} (B : BilateralOpenMathProblem PositiveProducer NegativeProducer) (hn : Nonempty NegativeProducer) : ¬ B.endpoint"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.global_kernel_with_bilateral_positive",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheoremV2.lean",
+   "line": 64,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{PositiveProducer NegativeProducer : Type*} (B : BilateralOpenMathProblem PositiveProducer NegativeProducer) (hp : Nonempty PositiveProducer) : B.endpoint"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.global_normalized_gap_constant",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 108,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (htr : ZeroSum x) (hn : euclideanSquare x = 1) : phaseLaplacianEnergy x = 9"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.global_profile_energy_law",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 134,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (a : Nat → ℝ) (n : Nat) : phaseEnergy (profiledTransverseTrajectory x a n) = (a n)^2 * phaseEnergy x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.global_scalar_defect_energy",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 116,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : ℝ) : phaseEnergy (scalarDefectEmbedding d) = 6 * d^2"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.global_scalar_vanishing_transport",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 122,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : Nat → ℝ) (hd : Filter.Tendsto d Filter.atTop (nhds 0)) : Filter.Tendsto (fun n => phaseEnergy (scalarDefectEmbedding (d n))) Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.global_spread_radius_law",
+   "file": "lean/MCore/MaterialMath/GlobalMaterialTheorem.lean",
+   "line": 102,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : phaseEnergy x = 3 * transverseRadiusSq x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.normalized_transverse_energy",
+   "file": "lean/MCore/MaterialMath/TriCyclicSpectral.lean",
+   "line": 79,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (hz : ZeroSum x) (hn : euclideanSquare x = 1) : phaseLaplacianEnergy x = 9"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.one_cyclicMul",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 90,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[CommSemiring α] (x : TriNumber α) : cyclicMul cyclicOne x = x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseDerivative_cubic_closure",
+   "file": "lean/MCore/MaterialMath/TriCyclicSpectral.lean",
+   "line": 113,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : add (phaseDerivative (phaseDerivative (phaseDerivative x))) (add (smul (3 : ℝ) (phaseDerivative (phaseDerivative x))) (smul (3 : ℝ) (phaseDerivative x))) = { manifest"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseDerivative_eq_zero_iff_balanced",
+   "file": "lean/MCore/MaterialMath/TriCyclicCalculus.lean",
+   "line": 41,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "[AddGroup α] (x : TriNumber α) : phaseDerivative x = { manifest"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseDerivative_rotate",
+   "file": "lean/MCore/MaterialMath/TriCyclicCalculus.lean",
+   "line": 20,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "[AddGroup α] (x : TriNumber α) : phaseDerivative (rotate x) = rotate (phaseDerivative x)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseEnergy_geometricTransverseTrajectory",
+   "file": "lean/MCore/MaterialMath/TransverseContraction.lean",
+   "line": 52,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (q : ℝ) (n : Nat) : phaseEnergy (geometricTransverseTrajectory x q n) = (q^2)^n * phaseEnergy x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseEnergy_geometricTransverseTrajectory_tendsto_zero",
+   "file": "lean/MCore/MaterialMath/TransverseContraction.lean",
+   "line": 69,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (q : ℝ) (hq0 : 0 ≤ q) (hq1 : q < 1) : Filter.Tendsto (fun n => phaseEnergy (geometricTransverseTrajectory x q n)) Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseEnergy_profiledTransverseTrajectory",
+   "file": "lean/MCore/MaterialMath/ProfiledTransverseDecay.lean",
+   "line": 20,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (a : Nat → ℝ) (n : Nat) : phaseEnergy (profiledTransverseTrajectory x a n) = (a n)^2 * phaseEnergy x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseEnergy_profiledTransverseTrajectory_tendsto_zero",
+   "file": "lean/MCore/MaterialMath/ProfiledTransverseDecay.lean",
+   "line": 35,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (a : Nat → ℝ) (ha : Filter.Tendsto a Filter.atTop (nhds 0)) : Filter.Tendsto (fun n => phaseEnergy (profiledTransverseTrajectory x a n)) Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseEnergy_rotate",
+   "file": "lean/MCore/MaterialMath/TriCyclicCalculus.lean",
+   "line": 116,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : phaseEnergy (rotate x) = phaseEnergy x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseEnergy_scalarDefectEmbedding",
+   "file": "lean/MCore/MaterialMath/ScalarDefectEmbedding.lean",
+   "line": 21,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : ℝ) : phaseEnergy (scalarDefectEmbedding d) = 6 * d^2"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseEnergy_scalarDefectEmbedding_eq_zero_iff",
+   "file": "lean/MCore/MaterialMath/ScalarDefectEmbedding.lean",
+   "line": 64,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : ℝ) : phaseEnergy (scalarDefectEmbedding d) = 0 ↔ d = 0"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseEnergy_scalarDefectEmbedding_tendsto_zero",
+   "file": "lean/MCore/MaterialMath/ScalarDefectEmbedding.lean",
+   "line": 42,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : Nat → ℝ) (hd : Filter.Tendsto d Filter.atTop (nhds 0)) : Filter.Tendsto (fun n => phaseEnergy (scalarDefectEmbedding (d n))) Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseLaplacianEnergy_of_zeroSum",
+   "file": "lean/MCore/MaterialMath/TriCyclicSpectral.lean",
+   "line": 70,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (h : ZeroSum x) : phaseLaplacianEnergy x = 9 * euclideanSquare x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseLaplacian_eq_neg_three_fluctuation",
+   "file": "lean/MCore/MaterialMath/TriCyclicSpectral.lean",
+   "line": 27,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : phaseLaplacian x = smul (-3 : ℝ) (fluctuation x)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseLaplacian_eq_secondDerivative_plus_three_first",
+   "file": "lean/MCore/MaterialMath/TriCyclicSpectral.lean",
+   "line": 102,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : phaseLaplacian x = add (phaseDerivative (phaseDerivative x)) (smul (3 : ℝ) (phaseDerivative x))"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseLaplacian_eq_zero_iff_balanced",
+   "file": "lean/MCore/MaterialMath/TriCyclicSpectral.lean",
+   "line": 35,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : phaseLaplacian x = { manifest"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseLaplacian_of_balanced",
+   "file": "lean/MCore/MaterialMath/TriCyclicCalculus.lean",
+   "line": 56,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "[Ring α] {x : TriNumber α} (h : Balanced x) : phaseLaplacian x = { manifest"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseLaplacian_rotate",
+   "file": "lean/MCore/MaterialMath/TriCyclicCalculus.lean",
+   "line": 25,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "[Ring α] (x : TriNumber α) : phaseLaplacian (rotate x) = rotate (phaseLaplacian x)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseLaplacian_zeroSum_eigen",
+   "file": "lean/MCore/MaterialMath/TriCyclicSpectral.lean",
+   "line": 16,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (h : ZeroSum x) : phaseLaplacian x = smul (-3 : ℝ) x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.phaseSpectralGap_pos",
+   "file": "lean/MCore/MaterialMath/TriCyclicSpectral.lean",
+   "line": 12,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": 0 < phaseSpectralGap"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.positive_spread_implies_not_balanced",
+   "file": "lean/MCore/MaterialMath/TriCyclicCalculus.lean",
+   "line": 104,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (h : 0 < spread x) : ¬ Balanced x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.rotate_cyclicMul",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 107,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[CommSemiring α] (x y : TriNumber α) : rotate (cyclicMul x y) = cyclicMul (rotate x) y"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.scalarDefectEmbedding_balanced_iff",
+   "file": "lean/MCore/MaterialMath/ScalarDefectEmbedding.lean",
+   "line": 30,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : ℝ) : Balanced (scalarDefectEmbedding d) ↔ d = 0"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.scalarDefectEmbedding_zeroSum",
+   "file": "lean/MCore/MaterialMath/ScalarDefectEmbedding.lean",
+   "line": 17,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : ℝ) : ZeroSum (scalarDefectEmbedding d)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.spread_add_balanced_left",
+   "file": "lean/MCore/MaterialMath/TransverseContraction.lean",
+   "line": 37,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(b t : TriNumber ℝ) (hb : Balanced b) : spread (add b t) = spread t"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.spread_balancedProjection",
+   "file": "lean/MCore/MaterialMath/TriCyclicDecomposition.lean",
+   "line": 46,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : spread (balancedProjection x) = 0"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.spread_eq_three_transverseRadiusSq",
+   "file": "lean/MCore/MaterialMath/TriCyclicGeometry.lean",
+   "line": 79,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : spread x = 3 * transverseRadiusSq x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.spread_eq_zero_iff_balanced",
+   "file": "lean/MCore/MaterialMath/TriCyclicCalculus.lean",
+   "line": 74,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : spread x = 0 ↔ Balanced x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.spread_fluctuation",
+   "file": "lean/MCore/MaterialMath/TriCyclicDecomposition.lean",
+   "line": 41,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : spread (fluctuation x) = spread x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.spread_identity",
+   "file": "lean/MCore/MaterialMath/TriCyclicGeometry.lean",
+   "line": 12,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : spread x = 3 * euclideanSquare x - (total x)^2"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.spread_nonneg",
+   "file": "lean/MCore/MaterialMath/TriCyclicCalculus.lean",
+   "line": 68,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : 0 ≤ spread x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.spread_of_zeroSum",
+   "file": "lean/MCore/MaterialMath/TriCyclicGeometry.lean",
+   "line": 19,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (h : ZeroSum x) : spread x = 3 * euclideanSquare x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.spread_product_eq_torsion_plus_transverseInner",
+   "file": "lean/MCore/MaterialMath/TorsionEnergyLaw.lean",
+   "line": 14,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x y : TriNumber ℝ) : spread x * spread y = 3 * (torsion x y)^2 + 9 * (transverseInner x y)^2"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.spread_rotate",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 161,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[CommRing α] (x : TriNumber α) : spread (rotate x) = spread x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.spread_smul",
+   "file": "lean/MCore/MaterialMath/TransverseContraction.lean",
+   "line": 29,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(a : ℝ) (x : TriNumber ℝ) : spread (smul a x) = a^2 * spread x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.three_torsion_sq_eq_spread_product_iff",
+   "file": "lean/MCore/MaterialMath/TorsionEnergyLaw.lean",
+   "line": 37,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x y : TriNumber ℝ) : 3 * (torsion x y)^2 = spread x * spread y ↔ transverseInner x y = 0"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.three_torsion_sq_le_spread_product",
+   "file": "lean/MCore/MaterialMath/TorsionEnergyLaw.lean",
+   "line": 30,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x y : TriNumber ℝ) : 3 * (torsion x y)^2 ≤ spread x * spread y"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.toProduct_fromProduct",
+   "file": "lean/MCore/MaterialMath/TriCyclicTopology.lean",
+   "line": 19,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : α × α × α) : toProduct (fromProduct p) = p"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.torsion_balanced_left",
+   "file": "lean/MCore/MaterialMath/TriCyclicGeometry.lean",
+   "line": 45,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x y : TriNumber ℝ) (hx : Balanced x) : torsion x y = 0"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.torsion_balanced_right",
+   "file": "lean/MCore/MaterialMath/TriCyclicGeometry.lean",
+   "line": 59,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x y : TriNumber ℝ) (hy : Balanced y) : torsion x y = 0"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.torsion_fluctuation",
+   "file": "lean/MCore/MaterialMath/TriCyclicGeometry.lean",
+   "line": 68,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x y : TriNumber ℝ) : torsion (fluctuation x) (fluctuation y) = torsion x y"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.torsion_rotate_both",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 148,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[CommRing α] (x y : TriNumber α) : torsion (rotate x) (rotate y) = torsion x y"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.torsion_self",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 138,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[CommRing α] (x : TriNumber α) : torsion x x = 0"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.torsion_skew",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 143,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[CommRing α] (x y : TriNumber α) : torsion x y = - torsion y x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.torsion_sq_le_one_of_spread_three",
+   "file": "lean/MCore/MaterialMath/TorsionEnergyLaw.lean",
+   "line": 54,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x y : TriNumber ℝ) (hx : spread x = 3) (hy : spread y = 3) : (torsion x y)^2 ≤ 3"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.total_balancedProjection",
+   "file": "lean/MCore/MaterialMath/TriCyclicDecomposition.lean",
+   "line": 26,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : total (balancedProjection x) = total x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.total_phaseDerivative",
+   "file": "lean/MCore/MaterialMath/TriCyclicCalculus.lean",
+   "line": 30,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "[AddCommGroup α] (x : TriNumber α) : total (phaseDerivative x) = 0"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.total_phaseLaplacian",
+   "file": "lean/MCore/MaterialMath/TriCyclicCalculus.lean",
+   "line": 35,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "[CommRing α] (x : TriNumber α) : total (phaseLaplacian x) = 0"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.total_rotate",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 115,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[AddCommSemigroup α] (x : TriNumber α) : total (rotate x) = total x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.transverseRadiusSq_rotate",
+   "file": "lean/MCore/MaterialMath/TriCyclicGeometry.lean",
+   "line": 86,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : transverseRadiusSq (rotate x) = transverseRadiusSq x"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.triCyclic_F1_F2_kernel",
+   "file": "lean/MCore/MaterialMath/TransverseContraction.lean",
+   "line": 109,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": (∃ x : TriNumber ℝ, ∃ q : ℝ, 0 ≤ q ∧ q < 1 ∧ Nonempty (VanishingLaw (fun n => phaseEnergy (geometricTransverseTrajectory x q n)))) ∧ Nonempty (GapLaw (TriNumber ℝ) (fun x => ZeroSum x ∧ euclideanSquare x = 1) phaseLaplacianEnergy)"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.zeroSum_and_zeroSpread_eq_zero",
+   "file": "lean/MCore/MaterialMath/TriCyclicGeometry.lean",
+   "line": 35,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) (hz : ZeroSum x) (hs : spread x = 0) : x = { manifest"
+  },
+  {
+   "name": "MCore.MaterialMath.TriNumber.zeroSum_rotate_iff",
+   "file": "lean/MCore/MaterialMath/TriCyclicAlgebra.lean",
+   "line": 181,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "[AddCommMonoid α] (x : TriNumber α) : ZeroSum (rotate x) ↔ ZeroSum x"
+  },
+  {
+   "name": "MCore.MaterialMath.TwoSidedMaterialResolution.both_material_routes_contradict",
+   "file": "lean/MCore/MaterialMath/TwoSidedMaterialResolution.lean",
+   "line": 52,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(R : TwoSidedMaterialResolution P PositiveProducer NegativeProducer) (hp : Nonempty PositiveProducer) (hn : Nonempty NegativeProducer) : False"
+  },
+  {
+   "name": "MCore.MaterialMath.TwoSidedMaterialResolution.close_negative",
+   "file": "lean/MCore/MaterialMath/TwoSidedMaterialResolution.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(R : TwoSidedMaterialResolution P PositiveProducer NegativeProducer) (h : Nonempty NegativeProducer) : ¬ P"
+  },
+  {
+   "name": "MCore.MaterialMath.TwoSidedMaterialResolution.close_positive",
+   "file": "lean/MCore/MaterialMath/TwoSidedMaterialResolution.lean",
+   "line": 19,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(R : TwoSidedMaterialResolution P PositiveProducer NegativeProducer) (h : Nonempty PositiveProducer) : P"
+  },
+  {
+   "name": "MCore.MaterialMath.TwoSidedMaterialResolution.materiallyResolved_elim",
+   "file": "lean/MCore/MaterialMath/TwoSidedMaterialResolution.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(R : TwoSidedMaterialResolution P PositiveProducer NegativeProducer) (h : R.MateriallyResolved) : P ∨ ¬ P"
+  },
+  {
+   "name": "MCore.MaterialMath.balanced_fixed_by_rotate",
+   "file": "lean/MCore/MaterialMath/OperatorLaws.lean",
+   "line": 78,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{x : TriNumber α} (h : TriNumber.Balanced x) : FixedPoint TriNumber.rotate x"
+  },
+  {
+   "name": "MCore.MaterialMath.canonicalGlobalQuestionProtocol_complete",
+   "file": "lean/MCore/MaterialMath/GlobalOpenMathLogic.lean",
+   "line": 149,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": canonicalGlobalQuestionProtocol.askPositiveProducer ∧ canonicalGlobalQuestionProtocol.askNegativeProducer ∧ canonicalGlobalQuestionProtocol.askCanonicalObservable ∧ canonicalGlobalQuestionProtocol.askExactTransport ∧ canonicalGlobalQuestionProtocol.askCountermodelFirewall"
+  },
+  {
+   "name": "MCore.MaterialMath.close_from_material_audit",
+   "file": "lean/MCore/MaterialMath/GlobalOpenMathLogic.lean",
+   "line": 118,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{Producer Observable : Type*} {Endpoint : Prop} (A : ClosureAudit Producer Observable Endpoint) (p : Producer) : Endpoint"
+  },
+  {
+   "name": "MCore.MaterialMath.materialKernelVersion_eq_one",
+   "file": "lean/MCore/MaterialMath/MaterialKernel.lean",
+   "line": 23,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": materialKernelVersion = 1"
+  },
+  {
+   "name": "MCore.MaterialMath.rotate_energy_preserving",
+   "file": "lean/MCore/MaterialMath/OperatorLaws.lean",
+   "line": 72,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": EnergyPreserving (TriNumber.rotate : MaterialOperator ℝ)"
+  },
+  {
+   "name": "MCore.MaterialMath.rotate_fixed_iff_balanced",
+   "file": "lean/MCore/MaterialMath/OperatorLaws.lean",
+   "line": 90,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber α) : FixedPoint TriNumber.rotate x ↔ TriNumber.Balanced x"
+  },
+  {
+   "name": "MCore.MaterialMath.rotate_periodic3",
+   "file": "lean/MCore/MaterialMath/OperatorLaws.lean",
+   "line": 66,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": Periodic3 (TriNumber.rotate : MaterialOperator α)"
+  },
+  {
+   "name": "MCore.MaterialMath.triState_closes_global_root",
+   "file": "lean/MCore/MaterialMath/TriStateTerminalClosure.lean",
+   "line": 40,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{Language : Type uL} {InP InNP : Language → Prop} {SAT : Language} {Flow : Type uF} {Stabilizer : Type uS} {ActualNS : Flow → Prop} {Stabilizes : Stabilizer → Flow → Prop} {Variety : Type uV} {Class : Variety → Type uC} {Cycle : Variety → Type uZ} {SmoothProjective : Variety → Prop} {RationalHodge : {X : Variety} → Class X → Prop} {Realizes : {X : Variety} → Cycle X → Class X → Prop} {Curve : Type"
+  },
+  {
+   "name": "MCore.MaterialMath.triState_fixed_iff_balanced",
+   "file": "lean/MCore/MaterialMath/TriStateTerminalClosure.lean",
+   "line": 91,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : FixedPoint TriNumber.rotate x ↔ TriNumber.Balanced x"
+  },
+  {
+   "name": "MCore.MaterialMath.triState_three_phase_orbit",
+   "file": "lean/MCore/MaterialMath/TriStateTerminalClosure.lean",
+   "line": 82,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : TriNumber ℝ) : TriNumber.rotate (TriNumber.rotate (TriNumber.rotate x)) = x"
+  }
+ ],
+ "closed": 20,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/MaterialMath/TriCyclicAlgebra.lean": "18b9fda9338cd5f1ec4e8537f4bcd47b4a2b99a3c20dd31f503764bdf847bf0d",
+  "lean/MCore/MaterialMath/TwoSidedMaterialResolution.lean": "75a23758b105ca6d072f59d193a1f0d2c52ee130cfee4f4c84e9a94a1cbfeab5"
+ },
+ "published_at": "2026-10-28T19:19:18Z",
+ "certificate_sha256": "b7de937a1b087a4235820b02bf0c6b6f28631d91d8c506489ed1d802fe66c6df"
+}

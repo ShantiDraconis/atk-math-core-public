@@ -1,0 +1,340 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/two-sided-material-closure-20261001",
+ "branch_state": "parada",
+ "head_commit": "03ce184a5d724242c9db4e3a1d54d12d007b843e",
+ "head_commit_date": "2026-10-01T20:24:31+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "03ce184a5d724242c9db4e3a1d54d12d007b843e",
+   "date": "2026-10-01T20:24:31+02:00",
+   "subject": "audit: consolidate seven-lane true-false material decision status"
+  },
+  {
+   "commit": "20f99eb4d5a866e9bb8c8716640740648c951665",
+   "date": "2026-10-01T20:18:47+02:00",
+   "subject": "atk: add seven-lane material true-false decision bundle"
+  },
+  {
+   "commit": "415dd6ad63669a8370d1567bf0ccc3fdad778588",
+   "date": "2026-10-01T20:17:49+02:00",
+   "subject": "atk: add material true-false-both decision architecture without conjecture hypotheses"
+  },
+  {
+   "commit": "ce5326b9468b77e3cbdca3f00082e986dc55198c",
+   "date": "2026-10-01T20:15:24+02:00",
+   "subject": "audit: register two-sided attack semantics and self-target firewall"
+  },
+  {
+   "commit": "1caad2bb740b14851f543d74f5dd08fc9892e766",
+   "date": "2026-10-01T20:14:46+02:00",
+   "subject": "atk: formalize honest two-sided material closure and self-target firewall"
+  },
+  {
+   "commit": "167da9f5cd661650c30d524da784bdbd2fac408f",
+   "date": "2026-10-01T20:10:38+02:00",
+   "subject": "audit: register primitive Beal local support and P02 finite semantics"
+  },
+  {
+   "commit": "7751c81cb9ad1cbedec722b367cd6e3f4af82790",
+   "date": "2026-10-01T19:35:11+02:00",
+   "subject": "audit: enforce primitive-observable or concrete-countermodel rule"
+  },
+  {
+   "commit": "c50d81716fb08f4685ac2ada808355eca7bb7164",
+   "date": "2026-10-01T19:27:46+02:00",
+   "subject": "audit: register newly closed RH Hodge NS and Beal bridges"
+  },
+  {
+   "commit": "fa599955b421b91c16095a7ea9b65d91b8068ecf",
+   "date": "2026-10-01T19:17:17+02:00",
+   "subject": "audit: register RH BCF three-term materializer"
+  },
+  {
+   "commit": "2653e3b30fec39e036cf075f9dac6eafca102892",
+   "date": "2026-10-01T19:12:53+02:00",
+   "subject": "audit: advance Beal partition and Hodge hard-core/minimal geometric residues"
+  },
+  {
+   "commit": "2ed5d615a65bd411b8d4e397fe37dc47fa1d68be",
+   "date": "2026-10-01T18:22:08+02:00",
+   "subject": "audit: record NS direction-only coherence countermodel"
+  },
+  {
+   "commit": "04abf68cb682b2f49ad732124065c1e4273c08af",
+   "date": "2026-10-01T18:21:19+02:00",
+   "subject": "audit: classify exact materializer mining across seven lanes"
+  },
+  {
+   "commit": "d6fd0c9b001a7e1cf696accbbc6050c7a068dca4",
+   "date": "2026-10-01T18:05:50+02:00",
+   "subject": "audit: register material multistate closure algebra"
+  },
+  {
+   "commit": "f96373a0c4259dcc2e4362d48793aac87f552b15",
+   "date": "2026-10-01T17:50:59+02:00",
+   "subject": "audit: align global material frontier to unified and hardened lanes"
+  },
+  {
+   "commit": "b606788de929c509bdbdc093613960cb750298fe",
+   "date": "2026-10-01T17:50:32+02:00",
+   "subject": "atk: align NS and Hodge registry to unified material producers"
+  },
+  {
+   "commit": "34216b533a02a934aa1d9c8bd49fe7f23d637908",
+   "date": "2026-10-01T17:49:02+02:00",
+   "subject": "audit: expand new material mathematics laws operators and exact gaps"
+  },
+  {
+   "commit": "996a5e36d21843d14148386aca60c70f542e9eb5",
+   "date": "2026-10-01T17:47:15+02:00",
+   "subject": "audit: record P02 falsified routes and harden YM producer index"
+  },
+  {
+   "commit": "25e01ea402eb6a9f451ff26f4ee59bf9cae9620b",
+   "date": "2026-10-01T17:46:39+02:00",
+   "subject": "atk: register nonvacuous YM material terminal"
+  },
+  {
+   "commit": "7b21e617bc92a4bf8fe7760e944b5c83cdb8a010",
+   "date": "2026-10-01T17:46:30+02:00",
+   "subject": "atk: replace vacuous YM B60 cut with material hardening v3"
+  },
+  {
+   "commit": "6e8ee647ae206423f849671fc1cd45cb8b521a1e",
+   "date": "2026-10-01T17:32:49+02:00",
+   "subject": "audit: index exact material producers operators and residues"
+  },
+  {
+   "commit": "a42a30acdac09e95b05792adc968cb2ceafdfabd",
+   "date": "2026-10-01T17:30:54+02:00",
+   "subject": "audit: map external evidence to exact material producers"
+  },
+  {
+   "commit": "7bc65661e74f6642eaee47b0201970c4621e8db1",
+   "date": "2026-10-01T17:30:14+02:00",
+   "subject": "audit: register NS G1 to canonical signed-gain adapter"
+  },
+  {
+   "commit": "7b0457cac24d21877de70fa75caba3efdefe19cf",
+   "date": "2026-10-01T17:05:16+02:00",
+   "subject": "audit: consolidate deepest material residues across all seven lanes"
+  },
+  {
+   "commit": "62a8ebc0e3c79839f63ddcdc97f6cabc935d7e6b",
+   "date": "2026-10-01T17:01:40+02:00",
+   "subject": "atk: register deepest material frontiers for RH NS BSD YM"
+  },
+  {
+   "commit": "705f1a2974df9cd98e6b84ec17f1cf0d097646ac",
+   "date": "2026-10-01T17:01:23+02:00",
+   "subject": "atk: compress RH NS BSD YM to deepest material residues"
+  },
+  {
+   "commit": "2b2f7dec605f90990ba0f082f920ca9f0b841b56",
+   "date": "2026-10-01T16:49:37+02:00",
+   "subject": "audit: harden Hodge target and record BSD residual precisely"
+  },
+  {
+   "commit": "96ac6edfe69e27fb8e9d6fa7afd2e9569c46a873",
+   "date": "2026-10-01T16:48:47+02:00",
+   "subject": "atk: register nonvacuous Hodge terminal target"
+  },
+  {
+   "commit": "44f452590c0f3d8bef7d4d915b6a560f228c6534",
+   "date": "2026-10-01T16:48:44+02:00",
+   "subject": "atk: harden Hodge material cut against vacuous model"
+  },
+  {
+   "commit": "4ef56b9a9110ed0f88a0c31a18200fabd8a1170d",
+   "date": "2026-10-01T16:10:25+02:00",
+   "subject": "audit: record exact post-P01 material frontier and tri-state hardening"
+  },
+  {
+   "commit": "c9f6461c6732510e5205edbda12e661b66abe934",
+   "date": "2026-10-01T16:07:33+02:00",
+   "subject": "atk: register post-P01 and Gram-scalar terminal frontiers"
+  },
+  {
+   "commit": "7ab7edf8f0bbe143d3f602d20f5a2819a409cbd9",
+   "date": "2026-10-01T16:07:30+02:00",
+   "subject": "atk: align material cuts after P01 closure and RH Gram reduction"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.ATK.MaterialDecision.both_objects_detect_inconsistency",
+   "file": "lean/MCore/ATK/MaterialDecisionClosure.lean",
+   "line": 104,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} {A B : Type} (S : MaterialDecisionSystem P A B) (a : A) (b : B) : False"
+  },
+  {
+   "name": "MCore.ATK.MaterialDecision.decisionBundle_has_both_decisions",
+   "file": "lean/MCore/ATK/MaterialDecisionClosure.lean",
+   "line": 207,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P Q : Prop} (B : DecisionBundle P Q) : Nonempty (Decided P) ∧ Nonempty (Decided Q)"
+  },
+  {
+   "name": "MCore.ATK.MaterialDecision.inconsistent_gives_false",
+   "file": "lean/MCore/ATK/MaterialDecisionClosure.lean",
+   "line": 43,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} (hp : P) (hn : ¬ P) : False"
+  },
+  {
+   "name": "MCore.ATK.MaterialDecision.torsion_preserves_open_defect",
+   "file": "lean/MCore/ATK/MaterialDecisionClosure.lean",
+   "line": 191,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : Type} (D : MaterialDynamics S) (s : S) (hpos : 0 < D.defect s) : 0 < D.defect (D.torsion s)"
+  },
+  {
+   "name": "MCore.ATK.SevenMaterialDecisions.global_projects_beal",
+   "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
+   "line": 107,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .beal).statement)"
+  },
+  {
+   "name": "MCore.ATK.SevenMaterialDecisions.global_projects_bsd",
+   "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
+   "line": 95,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .bsd).statement)"
+  },
+  {
+   "name": "MCore.ATK.SevenMaterialDecisions.global_projects_hodge",
+   "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
+   "line": 101,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .hodge).statement)"
+  },
+  {
+   "name": "MCore.ATK.SevenMaterialDecisions.global_projects_navierStokes",
+   "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
+   "line": 89,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .navierStokes).statement)"
+  },
+  {
+   "name": "MCore.ATK.SevenMaterialDecisions.global_projects_pnp",
+   "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
+   "line": 77,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .pnp).statement)"
+  },
+  {
+   "name": "MCore.ATK.SevenMaterialDecisions.global_projects_riemann",
+   "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
+   "line": 70,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .riemann).statement)"
+  },
+  {
+   "name": "MCore.ATK.SevenMaterialDecisions.global_projects_yangMills",
+   "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
+   "line": 83,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .yangMills).statement)"
+  },
+  {
+   "name": "MCore.ATK.TwoSidedMaterial.TwoBranchDefectClosure.close",
+   "file": "lean/MCore/ATK/TwoSidedMaterialClosure.lean",
+   "line": 99,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} {D : DefectTarget} (M : TwoBranchDefectClosure P D) : ∃ s : D.State, D.Terminal s"
+  },
+  {
+   "name": "MCore.ATK.TwoSidedMaterial.TwoBranchMaterializer.close",
+   "file": "lean/MCore/ATK/TwoSidedMaterialClosure.lean",
+   "line": 72,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P Q : Prop} {A B : Type} (M : TwoBranchMaterializer P A B Q) : Q"
+  },
+  {
+   "name": "MCore.ATK.TwoSidedMaterial.TwoSidedClosure.close",
+   "file": "lean/MCore/ATK/TwoSidedMaterialClosure.lean",
+   "line": 14,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{P Q : Prop} (W : TwoSidedClosure P Q) : Q"
+  },
+  {
+   "name": "MCore.ATK.TwoSidedMaterial.both_implies_false",
+   "file": "lean/MCore/ATK/TwoSidedMaterialClosure.lean",
+   "line": 32,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} (hp : P) (hn : ¬ P) : False"
+  },
+  {
+   "name": "MCore.ATK.TwoSidedMaterial.combine_closed_iff",
+   "file": "lean/MCore/ATK/TwoSidedMaterialClosure.lean",
+   "line": 146,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(a b : Gate) : combine a b = .closed ↔ a = .closed ∧ b = .closed"
+  },
+  {
+   "name": "MCore.ATK.TwoSidedMaterial.torsion_is_not_strict_progress",
+   "file": "lean/MCore/ATK/TwoSidedMaterialClosure.lean",
+   "line": 128,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : Type} (D : BranchDynamics S) (s : S) (hpos : 0 < D.defect s) : ¬ D.defect (D.torsion s) < D.defect s"
+  },
+  {
+   "name": "MCore.ATK.TwoSidedMaterial.twoSided_neg_self_iff",
+   "file": "lean/MCore/ATK/TwoSidedMaterialClosure.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(P : Prop) : Nonempty (TwoSidedClosure P (¬ P)) ↔ ¬ P"
+  },
+  {
+   "name": "MCore.ATK.TwoSidedMaterial.twoSided_self_iff",
+   "file": "lean/MCore/ATK/TwoSidedMaterialClosure.lean",
+   "line": 39,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(P : Prop) : Nonempty (TwoSidedClosure P P) ↔ P"
+  }
+ ],
+ "closed": 10,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/ATK/MaterialDecisionClosure.lean": "385d87358b1123d1a1c30ad53db2b5ff8c8353b5cb292b38a58295668e9098a0",
+  "lean/MCore/ATK/TwoSidedMaterialClosure.lean": "e891df3899cd8a4e428988f842b3e63205dbbc6e98c80a2ad17179a937f4cac4"
+ },
+ "published_at": "2026-10-28T19:19:21Z",
+ "certificate_sha256": "e26e63694fb85bc9991170a7798ede000de7f1af51a01ddf6cfc7209e5dff058"
+}

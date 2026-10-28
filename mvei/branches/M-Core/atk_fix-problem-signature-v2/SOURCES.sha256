@@ -1,0 +1,10 @@
+b32a0f59f0ac9408fa55d483e9c6c32ca4a6acdc41282f361044f79f51e56dfc  branches/M-Core/atk_fix-problem-signature-v2/lake-manifest.json
+be179f118a9a7f81d4a3405624b89bb16b02b60179ded818f9cebdbeca476500  branches/M-Core/atk_fix-problem-signature-v2/lakefile.lean
+55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea  branches/M-Core/atk_fix-problem-signature-v2/lean-toolchain
+8cf937c40341793b7a5d9b6ec6ee909e9211603cfd6861ef889a38e809022292  branches/M-Core/atk_fix-problem-signature-v2/lean/MCore/FinalFail/ClosedCenterHard.lean
+5a0940bac03613dc11086cf991d224518697a1fd2974a7216d50613042f999c8  branches/M-Core/atk_fix-problem-signature-v2/lean/MCore/FinalFail/FundamentalIndeterminacy.lean
+69cb24fc52a0bfb5850c5ecb880d5200cbe5d12e5b144e2bd77e8dd9bed02727  branches/M-Core/atk_fix-problem-signature-v2/lean/MCore/FinalFail/MinimalOpenBridge.lean
+6b644db6befaa08d62fd93442dc63a831a39f489da62ce0b7b6fa33e9398ff5b  branches/M-Core/atk_fix-problem-signature-v2/lean/MCore/FinalFail/RelationalCenterBridge.lean
+58b80c088c4f55b90f442963b57e511e451122ca2e619bf23fb218aede208cde  branches/M-Core/atk_fix-problem-signature-v2/lean/MCore/FinalFail/RelationalClosedCenterBridge.lean
+40fd0423c86833fcf60dc6116735584dcb75239ca396af6a0373604dd23e33bf  branches/M-Core/atk_fix-problem-signature-v2/lean/MCore/FinalFail/RelationalHardAtom.lean
+83f31dfc0e5d1282b54b2e1a8fe332e45177b069a533cb51cbee6287414af5e8  branches/M-Core/atk_fix-problem-signature-v2/lean/MCore/FinalFail/TriadicObstructionCalculus.lean

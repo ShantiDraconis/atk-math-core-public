@@ -1,0 +1,277 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/mathlib-provenance-20261014",
+ "branch_state": "em andamento",
+ "head_commit": "b443d4d1c8a30edf40d650c10254ebfdd88e4bb4",
+ "head_commit_date": "2026-10-15T03:21:13+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "b443d4d1c8a30edf40d650c10254ebfdd88e4bb4",
+   "date": "2026-10-15T03:21:13+01:00",
+   "subject": "upstream: candidato 02 revisado (instância no quociente, prova curta) + DEFESA.md"
+  },
+  {
+   "commit": "c4fd40de2d35fca4b6fb05d7dca10060b8dac594",
+   "date": "2026-10-15T00:03:10+01:00",
+   "subject": "upstream: candidato 02 — freeRank = finrank ℤ (patch para a Mathlib e STATUS)"
+  },
+  {
+   "commit": "08af9526c7c44b925a3adba77563d650ba1a0b5b",
+   "date": "2026-10-14T19:53:55+01:00",
+   "subject": "upstream: Mathlib-style Fermat right triangle file, patch and check log"
+  },
+  {
+   "commit": "da0b571c8676913379a48a9ac13f4bedbe648ed7",
+   "date": "2026-10-14T20:08:49+02:00",
+   "subject": "audit: register I-Mathematics certificates and reusable theorem candidates"
+  },
+  {
+   "commit": "d6f90a44d9cb26681e34fe4f319a5f1fa834eeb3",
+   "date": "2026-10-14T20:00:36+02:00",
+   "subject": "feat: extract conditional logarithmic residual convergence lemma"
+  },
+  {
+   "commit": "b7a3afbc7a7eaa21f9cdfd6d363020d322322f66",
+   "date": "2026-10-14T20:00:28+02:00",
+   "subject": "feat: preserve conditional Beal exponent gcd lemma with explicit FLT premise"
+  },
+  {
+   "commit": "5fabab7be27f70fcbbf22ac48b100e0947be135b",
+   "date": "2026-10-14T20:00:08+02:00",
+   "subject": "feat: extract two provenance-preserving Gram matrix lemmas"
+  },
+  {
+   "commit": "a237e6ca5bfde4eeda33d9c61e11ed45cb1f0b27",
+   "date": "2026-10-14T18:17:13+01:00",
+   "subject": "docs: register kernel-certified Mathlib candidates with overlap check against master"
+  },
+  {
+   "commit": "3af25349a2ceea5ecd49435e4ff6bbf6005b77a8",
+   "date": "2026-10-14T19:09:39+02:00",
+   "subject": "docs: record five inspected theorem declarations and extraction gates"
+  },
+  {
+   "commit": "49eaa75b2b71a513c4da454f3a72a592325207ae",
+   "date": "2026-10-14T19:09:24+02:00",
+   "subject": "feat: extract provenance-tagged residual inequality Mathlib candidate"
+  },
+  {
+   "commit": "811a1ca6c0181e202b1f24f3f34bda0119716c5f",
+   "date": "2026-10-14T19:02:28+02:00",
+   "subject": "docs: establish ATK Mathlib provenance and certification gates"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.MathlibCandidates.exponent_gcd_le_two",
+   "file": "MATHLIB_CONTRIBUTION/Lean/ConditionalExponentGCD.lean",
+   "line": 14,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(hFLT : FermatLastTheorem) {A B C x y z : ℕ} (hA : A ≠ 0) (hB : B ≠ 0) (hC : C ≠ 0) (hEq : A ^ x + B ^ y = C ^ z) : Nat.gcd x (Nat.gcd y z) ≤ 2"
+  },
+  {
+   "name": "ATK.MathlibCandidates.gram_complete_square",
+   "file": "MATHLIB_CONTRIBUTION/Lean/GramQuadratic.lean",
+   "line": 19,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{n : Type*} [Fintype n] [DecidableEq n] (G : Matrix n n ℝ) (hG : G.IsSymm) (hdet : IsUnit G.det) (b c : n → ℝ) : 1 - 2 * (b ⬝ᵥ c) + c ⬝ᵥ (G *ᵥ c) = (1 - b ⬝ᵥ (G⁻¹ *ᵥ b)) + (c - G⁻¹ *ᵥ b) ⬝ᵥ (G *ᵥ (c - G⁻¹ *ᵥ b))"
+  },
+  {
+   "name": "ATK.MathlibCandidates.gram_residual_le",
+   "file": "MATHLIB_CONTRIBUTION/Lean/GramQuadratic.lean",
+   "line": 34,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{n : Type*} [Fintype n] [DecidableEq n] (G : Matrix n n ℝ) (hPSD : G.PosSemidef) (hG : G.IsSymm) (hdet : IsUnit G.det) (b c : n → ℝ) : 1 - b ⬝ᵥ (G⁻¹ *ᵥ b) ≤ 1 - 2 * (b ⬝ᵥ c) + c ⬝ᵥ (G *ᵥ c)"
+  },
+  {
+   "name": "ATK.MathlibCandidates.residual_sub_square_div_le",
+   "file": "MATHLIB_CONTRIBUTION/Lean/ResidualInequalities.lean",
+   "line": 18,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(residual correction denominator : ℝ) (hdenominator : 0 < denominator) : residual - correction ^ 2 / denominator ≤ residual"
+  },
+  {
+   "name": "ATK.MathlibCandidates.residual_tendsto_zero",
+   "file": "MATHLIB_CONTRIBUTION/Lean/LogResidualConvergence.lean",
+   "line": 14,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{D : ℕ → ℝ} {K : ℝ} (h0 : ∀ N, 0 ≤ D N) (hK : ∀ N, D N ≤ K / Real.log ((N : ℝ) + 2)) : Tendsto D atTop (𝓝 0)"
+  },
+  {
+   "name": "FermatRightTriangle.coprime_of_minimal",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 85,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b c : ℤ} (h : Minimal a b c) : IsCoprime a b"
+  },
+  {
+   "name": "FermatRightTriangle.exists_minimal",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 75,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b c : ℤ} (h : FermatRightTriangle a b c) : ∃ a₀ b₀ c₀, Minimal a₀ b₀ c₀"
+  },
+  {
+   "name": "FermatRightTriangle.exists_param_of_odd",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 202,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a m n : ℤ} (ha : 0 < a) (hmn : 0 < m * n) (hcop : Int.gcd n m = 1) (hn2 : n % 2 = 1) (h₃ : a ^ 2 = n ^ 2 + m ^ 2) (hn : 0 < n) : ∃ r s : ℤ, 0 < r ∧ 0 < s ∧ 0 < r ^ 2 - s ^ 2 ∧ Int.gcd r s = 1 ∧ a = r ^ 2 + s ^ 2 ∧ m * n = 2 * (r * s) * (r ^ 2 - s ^ 2)"
+  },
+  {
+   "name": "FermatRightTriangle.exists_pos_minimal",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 102,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b c : ℤ} (h : FermatRightTriangle a b c) : ∃ a₀ b₀ c₀, Minimal a₀ b₀ c₀ ∧ 0 < a₀"
+  },
+  {
+   "name": "FermatRightTriangle.exists_smaller_of_even",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 224,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b c : ℤ} (ha : 0 < a) (hb : b ≠ 0) (heq : a ^ 4 - b ^ 4 = c ^ 2) (hcop : IsCoprime (b ^ 2) c) (hbeven : b % 2 = 0) : ∃ a₁ b₁ c₁, FermatRightTriangle a₁ b₁ c₁ ∧ a₁.natAbs < a.natAbs"
+  },
+  {
+   "name": "FermatRightTriangle.exists_smaller_of_mul_eq_sq",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 147,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b' r s : ℤ} (hr : 0 < r) (hs : 0 < s) (hd : 0 < r ^ 2 - s ^ 2) (hrs : Int.gcd r s = 1) (ha : a = r ^ 2 + s ^ 2) (hb' : r * s * (r ^ 2 - s ^ 2) = b' ^ 2) : ∃ a₁ b₁ c₁, FermatRightTriangle a₁ b₁ c₁ ∧ a₁.natAbs < a.natAbs"
+  },
+  {
+   "name": "FermatRightTriangle.exists_smaller_of_odd",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 123,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b c : ℤ} (ha : 0 < a) (hb : b ≠ 0) (hc : c ≠ 0) (heq : a ^ 4 - b ^ 4 = c ^ 2) (hcop : IsCoprime (b ^ 2) c) (hbodd : b % 2 = 1) : ∃ a₁ b₁ c₁, FermatRightTriangle a₁ b₁ c₁ ∧ a₁.natAbs < a.natAbs"
+  },
+  {
+   "name": "FermatRightTriangle.isCoprime_sq_sub_sq_mul",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 113,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{r s : ℤ} (h : IsCoprime r s) : IsCoprime (r ^ 2 - s ^ 2) (r * s)"
+  },
+  {
+   "name": "FermatRightTriangle.ne_zero",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 53,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b c : ℤ} (h : FermatRightTriangle a b c) : a ≠ 0"
+  },
+  {
+   "name": "FermatRightTriangle.neg",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 59,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b c : ℤ} (h : FermatRightTriangle a b c) : FermatRightTriangle (-a) b c"
+  },
+  {
+   "name": "FermatRightTriangle.not_minimal",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 269,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b c : ℤ} (h : Minimal a b c) (ha : 0 < a) : False"
+  },
+  {
+   "name": "FermatRightTriangle.of_mul",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 63,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b c k : ℤ} (hk : k ≠ 0) (h : FermatRightTriangle (k * a) (k * b) (k ^ 2 * c)) : FermatRightTriangle a b c"
+  },
+  {
+   "name": "Int.fourth_pow_add_sq_ne_fourth_pow",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 295,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b c : ℤ} (ha : a ≠ 0) (hb : b ≠ 0) : a ^ 4 + b ^ 2 ≠ c ^ 4"
+  },
+  {
+   "name": "Int.fourth_pow_sub_fourth_pow_ne_sq",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 288,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b c : ℤ} (hb : b ≠ 0) (hc : c ≠ 0) : a ^ 4 - b ^ 4 ≠ c ^ 2"
+  },
+  {
+   "name": "Int.not_isSquare_sq_add_sq_and_sq_sub_sq",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 322,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b : ℤ} (hb : b ≠ 0) : ¬ (IsSquare (a ^ 2 + b ^ 2) ∧ IsSquare (a ^ 2 - b ^ 2))"
+  },
+  {
+   "name": "Int.sq_ne_two_mul_sq",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 301,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a : ℤ} (d : ℤ) (ha : a ≠ 0) : a ^ 2 ≠ 2 * d ^ 2"
+  },
+  {
+   "name": "PythagoreanTriple.mul_ne_two_mul_sq",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 340,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b c : ℤ} (h : PythagoreanTriple a b c) (ha : a ≠ 0) (hb : b ≠ 0) (d : ℤ) : a * b ≠ 2 * d ^ 2"
+  },
+  {
+   "name": "Rat.mul_ne_two_of_sq_add_sq_eq_sq",
+   "file": "MATHLIB_CONTRIBUTION/upstream/01-fermat-right-triangle/FermatRightTriangle.lean",
+   "line": 365,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{a b c : ℚ} (h : a ^ 2 + b ^ 2 = c ^ 2) : a * b ≠ 2"
+  }
+ ],
+ "closed": 4,
+ "files_sha256": {
+  "MATHLIB_CONTRIBUTION/Lean/ConditionalExponentGCD.lean": "38d84067b347da9af0e2608ef6eabee4b3986b4c57cd4bff700ddf77e6277428",
+  "MATHLIB_CONTRIBUTION/Lean/GramQuadratic.lean": "d01b7dc5e84cccc5493a04c966372cc49bd487e905a3b6e889f49581fa44643e",
+  "MATHLIB_CONTRIBUTION/Lean/LogResidualConvergence.lean": "ef8ac850223c73b0687652aa996877ae83eef5a534d47ba3a9c3f5722a24f994",
+  "MATHLIB_CONTRIBUTION/Lean/ResidualInequalities.lean": "59444207b8d505571e5acc3d7c2af11c2e7aa71b515eceffb9e2657a487e4e1b",
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+ },
+ "published_at": "2026-10-28T19:19:21Z",
+ "certificate_sha256": "38c958336ed504a0ef0d6bf9a0922affaefd5408af5018eaf60e0217314973d9"
+}

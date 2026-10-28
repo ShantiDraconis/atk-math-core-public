@@ -1,0 +1,349 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/universal-terminal-closure-20260930",
+ "branch_state": "parada",
+ "head_commit": "d0ce322c47c96990a90596501bed86699dbbfe95",
+ "head_commit_date": "2026-10-01T01:46:59+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "d0ce322c47c96990a90596501bed86699dbbfe95",
+   "date": "2026-10-01T01:46:59+02:00",
+   "subject": "master: index terminal-named branches fail-closed"
+  },
+  {
+   "commit": "119c588a44916456782736fa6f333d23432bb560",
+   "date": "2026-10-01T01:45:18+02:00",
+   "subject": "master: classify direct terminal branches and P01 material candidate"
+  },
+  {
+   "commit": "efa2ad8bec9cc68001d5f7cde94bfd40e6da0fc2",
+   "date": "2026-10-01T01:44:17+02:00",
+   "subject": "master: register no-premise P01 inhabitant candidate pending audit"
+  },
+  {
+   "commit": "ae08a7526d286331588c3452f8d20eca8cb66e9d",
+   "date": "2026-10-01T01:42:15+02:00",
+   "subject": "master: record fail-closed external certificate status"
+  },
+  {
+   "commit": "637e74d57b618a9f9df9fa8be274ad15de308e3a",
+   "date": "2026-10-01T01:42:03+02:00",
+   "subject": "formal: prove conditional constructors cannot count as terminal inhabitants"
+  },
+  {
+   "commit": "5ca632ce309085e3d8c87aad705b8284b54f525a",
+   "date": "2026-10-01T01:41:25+02:00",
+   "subject": "master: align manifest with current live terminal frontiers"
+  },
+  {
+   "commit": "8e760064083aa95e2c41ec1389e162264a12135e",
+   "date": "2026-10-01T01:40:22+02:00",
+   "subject": "ci: validate active terminal formal object index"
+  },
+  {
+   "commit": "ea29f66517d89658ba575d3f8653195cb87477bc",
+   "date": "2026-10-01T01:40:15+02:00",
+   "subject": "master: index active terminal structures lemmas and operators"
+  },
+  {
+   "commit": "54850561bcc56fa2314a99326135aff3b1b82d6a",
+   "date": "2026-10-01T01:39:40+02:00",
+   "subject": "ci: validate forward-only seven-lane closure graph"
+  },
+  {
+   "commit": "de2c491b897c13d86b680ecaead17c5556c5b51c",
+   "date": "2026-10-01T01:39:30+02:00",
+   "subject": "master: add forward-only closure graph audit"
+  },
+  {
+   "commit": "1de90e63d7b6533f0f7de01913cb9d371cb5980d",
+   "date": "2026-10-01T01:39:13+02:00",
+   "subject": "master: add forward-only seven-lane closure graph"
+  },
+  {
+   "commit": "555086ef9e5153c8c439df99b66f567f06dcbc18",
+   "date": "2026-10-01T01:37:47+02:00",
+   "subject": "master: register G21 universal-theorem firewall and live target"
+  },
+  {
+   "commit": "792afd6827b8cc4823d79f9ba6a3eb4e28c62378",
+   "date": "2026-10-01T01:36:19+02:00",
+   "subject": "ci: audit producer calculus with universal closure"
+  },
+  {
+   "commit": "525e5e3da2b95b7ef7e1c0819fb4b6014779b952",
+   "date": "2026-10-01T01:36:09+02:00",
+   "subject": "formal: add producer reduction calculus and wrapper conservation laws"
+  },
+  {
+   "commit": "42ea94939dad4f2cd351fe1bf40a4e46d8ea9f9b",
+   "date": "2026-10-01T01:32:14+02:00",
+   "subject": "master: classify auto-compose final wrappers without terminal credit"
+  },
+  {
+   "commit": "0f6dac3b4a2e676cff0e13a267200d07dd195f2c",
+   "date": "2026-10-01T01:29:03+02:00",
+   "subject": "ci: enforce fail-closed external certificate issuance"
+  },
+  {
+   "commit": "f4e6b118d429e03375d97e55566870e7230ff98a",
+   "date": "2026-10-01T01:28:56+02:00",
+   "subject": "master: add fail-closed external certificate issuer"
+  },
+  {
+   "commit": "9cea7b17388161384b6a0cfee25ee28e517a76de",
+   "date": "2026-10-01T01:28:16+02:00",
+   "subject": "master: align seven-lane registry to material frontiers"
+  },
+  {
+   "commit": "523c1fc13cf30812379448b472378be426f2ccaa",
+   "date": "2026-10-01T01:27:47+02:00",
+   "subject": "master: bind Navier-Stokes exact G5 producer equivalence"
+  },
+  {
+   "commit": "ee9538d4193697ec8ba64a5a03c600e70d8d3903",
+   "date": "2026-10-01T01:27:08+02:00",
+   "subject": "ci: validate no-wrapper terminal registry"
+  },
+  {
+   "commit": "554247da6b137d45fab743c4e7bd2d125729959c",
+   "date": "2026-10-01T01:27:00+02:00",
+   "subject": "master: add fail-closed wrapper equivalence audit"
+  },
+  {
+   "commit": "b81245c4562351c0fec617528fccf82f0298b72a",
+   "date": "2026-10-01T01:26:45+02:00",
+   "subject": "master: register equivalent wrappers and rejected substitutes"
+  },
+  {
+   "commit": "3bb0aa02808e4da3952b3a6e8b89465aa1f0849b",
+   "date": "2026-10-01T01:25:45+02:00",
+   "subject": "ci: audit universal terminal closure theorem"
+  },
+  {
+   "commit": "86dcc193772456d5a2a7fc495f02b0b396fb82ef",
+   "date": "2026-10-01T01:25:26+02:00",
+   "subject": "formal: add universal producer-first terminal closure theorem"
+  },
+  {
+   "commit": "7fee3b4276af4d87665971bfa8c871532e593b88",
+   "date": "2026-09-30T11:47:37+02:00",
+   "subject": "master: record repaired RH Gram prefix without terminal promotion"
+  },
+  {
+   "commit": "a77fa20695ef89599b62997e91520acd0fe16654",
+   "date": "2026-09-30T11:46:32+02:00",
+   "subject": "master: record repaired PNP verifier prefix without terminal promotion"
+  },
+  {
+   "commit": "2376a72a3ee2d0a18ab10486e086d7716075aea6",
+   "date": "2026-09-30T10:33:08+02:00",
+   "subject": "ci: add master terminal manifest audit"
+  },
+  {
+   "commit": "907fb1fd92e9f2c011e61a8619994655aa918997",
+   "date": "2026-09-30T10:32:37+02:00",
+   "subject": "master: add fail-closed terminal manifest validator"
+  },
+  {
+   "commit": "e4d90b1b483c8f4589d97599899dfcb888268c36",
+   "date": "2026-09-30T10:31:17+02:00",
+   "subject": "master: add seven-lane terminal closure manifest"
+  },
+  {
+   "commit": "4c382a1a855ce0b72ad1c69f483ed290b4bae20c",
+   "date": "2026-09-30T10:30:15+02:00",
+   "subject": "master: inventory all owned repositories fail-closed"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.FinalProof.ProducerMap.target_of_inhabited",
+   "file": "lean/MCore/UniversalTerminalClosure.lean",
+   "line": 106,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} (M : ProducerMap P) (h : M.Inhabited) : P"
+  },
+  {
+   "name": "MCore.FinalProof.ProducerReduction.comp_map",
+   "file": "lean/MCore/ProducerCalculus.lean",
+   "line": 28,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{A : Type u} {B : Type v} {C : Type w} (g : ProducerReduction B C) (f : ProducerReduction A B) (a : A) : (comp g f).map a = g.map (f.map a)"
+  },
+  {
+   "name": "MCore.FinalProof.ProducerReduction.id_map",
+   "file": "lean/MCore/ProducerCalculus.lean",
+   "line": 25,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(A : Type u) (a : A) : (id A).map a = a"
+  },
+  {
+   "name": "MCore.FinalProof.ProducerReduction.nonempty_forward",
+   "file": "lean/MCore/ProducerCalculus.lean",
+   "line": 34,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{A : Type u} {B : Type v} (f : ProducerReduction A B) (h : Nonempty A) : Nonempty B"
+  },
+  {
+   "name": "MCore.FinalProof.TerminalLane.closed_of_upstream",
+   "file": "lean/MCore/ProducerCalculus.lean",
+   "line": 89,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(L : TerminalLane) {A : Type u} (r : ProducerReduction A L.Producer) (hA : Nonempty A) : L.Closed"
+  },
+  {
+   "name": "MCore.FinalProof.TerminalLane.target_of_closed",
+   "file": "lean/MCore/UniversalTerminalClosure.lean",
+   "line": 23,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(L : TerminalLane) (h : L.Closed) : L.Target"
+  },
+  {
+   "name": "MCore.FinalProof.TerminalLane.target_of_reduction_chain",
+   "file": "lean/MCore/ProducerCalculus.lean",
+   "line": 98,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(L : TerminalLane) {A : Type u} {B : Type v} (ab : ProducerReduction A B) (bp : ProducerReduction B L.Producer) (hA : Nonempty A) : L.Target"
+  },
+  {
+   "name": "MCore.FinalProof.conditional_constructor_closes",
+   "file": "lean/MCore/ProducerCalculus.lean",
+   "line": 139,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{A : Type u} {P : Prop} (f : A → P) (hA : Nonempty A) : P"
+  },
+  {
+   "name": "MCore.FinalProof.equivalentWrapper_nonempty_iff",
+   "file": "lean/MCore/UniversalTerminalClosure.lean",
+   "line": 68,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(P : Prop) : Nonempty (EquivalentWrapper P) ↔ P"
+  },
+  {
+   "name": "MCore.FinalProof.hypothesisWrapper_nonempty_implies_target",
+   "file": "lean/MCore/UniversalTerminalClosure.lean",
+   "line": 86,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(P Q : Prop) (h : Nonempty (HypothesisWrapper P Q)) : P"
+  },
+  {
+   "name": "MCore.FinalProof.neutralWrapper_nonempty_iff",
+   "file": "lean/MCore/ProducerCalculus.lean",
+   "line": 63,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{A : Type u} {W : Type v} (N : NeutralWrapper A W) : Nonempty W ↔ Nonempty A"
+  },
+  {
+   "name": "MCore.FinalProof.no_universal_conditional_promotion",
+   "file": "lean/MCore/ProducerCalculus.lean",
+   "line": 127,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ (∀ (A : Type) (P : Prop), Nonempty (A → P) → P)"
+  },
+  {
+   "name": "MCore.FinalProof.producerEquiv_nonempty_iff",
+   "file": "lean/MCore/ProducerCalculus.lean",
+   "line": 48,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{A : Type u} {B : Type v} (e : ProducerEquiv A B) : Nonempty A ↔ Nonempty B"
+  },
+  {
+   "name": "MCore.FinalProof.product_nonempty_iff",
+   "file": "lean/MCore/ProducerCalculus.lean",
+   "line": 81,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{A : Type u} {B : Type v} : Nonempty (A × B) ↔ Nonempty A ∧ Nonempty B"
+  },
+  {
+   "name": "MCore.FinalProof.proposition_equivalence_conserves_wrapper",
+   "file": "lean/MCore/ProducerCalculus.lean",
+   "line": 148,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(P Q : Prop) (e : P ↔ Q) : Nonempty (EquivalentWrapper P) ↔ Nonempty (EquivalentWrapper Q)"
+  },
+  {
+   "name": "MCore.FinalProof.universal_closure_from_reductions",
+   "file": "lean/MCore/ProducerCalculus.lean",
+   "line": 112,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(S : SevenLaneSystem) (Upstream : Fin 7 → Type u) (reduce : ∀ i : Fin 7, ProducerReduction (Upstream i) (S.lane i).Producer) (inhabited : ∀ i : Fin 7, Nonempty (Upstream i)) : S.FinalRoot"
+  },
+  {
+   "name": "MCore.FinalProof.universal_producer_first_closure",
+   "file": "lean/MCore/UniversalTerminalClosure.lean",
+   "line": 131,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(S : SevenProducerMaps) (h : S.AllInhabited) : S.FinalRoot"
+  },
+  {
+   "name": "MCore.FinalProof.universal_terminal_closure",
+   "file": "lean/MCore/UniversalTerminalClosure.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(S : SevenLaneSystem) (h : S.AllClosed) : S.FinalRoot"
+  },
+  {
+   "name": "MCore.FinalProof.wrapper_conserves_terminal_difficulty",
+   "file": "lean/MCore/UniversalTerminalClosure.lean",
+   "line": 138,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(P : Prop) : P ↔ Nonempty (EquivalentWrapper P)"
+  }
+ ],
+ "closed": 7,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/FinalFail/AcceptedSemanticActivation.lean": "6c8d3bff0bad718c736ecfbde2bc92937dfddc95de68ce0c17d5b539420de653",
+  "lean/MCore/FinalFail/BSDConcreteDomain.lean": "b7b1e5764451649e092acaa42c2a992386940c7a18eb80cc7e94a7d545f5345c",
+  "lean/MCore/FinalFail/BoundaryAtoms.lean": "54deb42c3e0d344359ecab23e499cb0e60114146b007003b540c2d564a36024f",
+  "lean/MCore/FinalFail/DirectProducerCuts.lean": "b27b04e428487207400cc56d0b06a45b6377290f8340e1dd2083210324bb00ed",
+  "lean/MCore/FinalFail/Semantic/BSD.lean": "be66d8c211db7a78d648b1d4be0a27f54fdd969e305640e8a401abb80c507668",
+  "lean/MCore/FinalFail/Semantic/Beal.lean": "7461d91a196c5d7a61ba7f3fabce0947d529902426ec1e96cab2994b97f787a0",
+  "lean/MCore/FinalFail/Semantic/Hodge.lean": "c82ec2d0082ec5c801c4f2937246e831021f00ef8dec5cc7059628a9df7b4d03",
+  "lean/MCore/FinalFail/Semantic/NavierStokes.lean": "d5cb2e2d3bf4e3be8816d020852bed1bca3920e9365bc37246b84421824f2905",
+  "lean/MCore/FinalFail/Semantic/PvsNP.lean": "d9e1c3abda3fa56fc38b15a4d79b925e274bdc8bd4a5a0db10156208bfbe656b",
+  "lean/MCore/FinalFail/Semantic/Riemann.lean": "3e27a82494ef344bf6017275345cd6d8af1e2f2ab3c34f7d684d5c6dfc26370e",
+  "lean/MCore/FinalFail/Semantic/YangMills.lean": "46576c47f06fef4d4fe52a6812097bf72a3127d18af23effc2107da7615e301c",
+  "lean/MCore/FinalFail/SemanticParallel.lean": "3fcf6ca711dd35f2f46235df26768b752042787b5f7bed7d92b3293f39a283bd",
+  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d",
+  "lean/MCore/FinalProofFirewall.lean": "8cf5f5e22b5267c18c9ffc4ad3c89f5c0eba66546c046b207849b052d0f15f8f",
+  "lean/MCore/FinalProofRegistry.lean": "e26a7bdfd809f8e4c7e95ebef0da17c5a7f238287eadc1088cbdaada2a048c43",
+  "lean/MCore/UniversalTerminalClosure.lean": "d3b880f903a9958342387d9bf7a4d96af623d769cfd1f3a0eaff63d5ac42dbfb"
+ },
+ "published_at": "2026-10-28T19:19:21Z",
+ "certificate_sha256": "2a4ed77d1648f0d6e990b71b0997d67dca7f610d34a5aa557a5dbc3a97890e9c"
+}

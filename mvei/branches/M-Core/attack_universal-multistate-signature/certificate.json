@@ -1,0 +1,211 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "attack/universal-multistate-signature",
+ "branch_state": "parada",
+ "head_commit": "94d327e0b5462c708e652b3b9ecd3827f1a0eda0",
+ "head_commit_date": "2026-09-27T00:04:15+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "94d327e0b5462c708e652b3b9ecd3827f1a0eda0",
+   "date": "2026-09-27T00:04:15+01:00",
+   "subject": "CI: rerun multistate core gate after compatibility fix"
+  },
+  {
+   "commit": "ffee86e00585ec9113da278567f0b96f2ed9d4d9",
+   "date": "2026-09-27T00:03:57+01:00",
+   "subject": "Fix ProblemSignature field name for Lean 4.19"
+  },
+  {
+   "commit": "7c3eb7de4a10f123bf2d492f71ee88b9a4d77988",
+   "date": "2026-09-27T00:00:59+01:00",
+   "subject": "CI: add seven mathematical Core schemas"
+  },
+  {
+   "commit": "55d9d0f4ecb7cd9dfae126fa5a0e1e3c54c55a3b",
+   "date": "2026-09-27T00:00:49+01:00",
+   "subject": "ATK: construct exact seven mathematical Core schemas"
+  },
+  {
+   "commit": "d3fb92fca6f25990c4cdbd5cdde4aab05b1ab38d",
+   "date": "2026-09-26T23:58:30+01:00",
+   "subject": "CI: include unified open-math closure theorem"
+  },
+  {
+   "commit": "9a6e8679f11894413cb7dad3f70ddb8974ec11b8",
+   "date": "2026-09-26T23:58:21+01:00",
+   "subject": "ATK: formalize unified multistate open-math closure theorem"
+  },
+  {
+   "commit": "46c8aa7586e886edf5dcd9cfe551e8e48516bc75",
+   "date": "2026-09-26T23:54:11+01:00",
+   "subject": "CI: fix multistate gate dependency resolution"
+  },
+  {
+   "commit": "6b4323ecdc6b4bfcdda4698cf1a4be8254f424c1",
+   "date": "2026-09-26T23:49:02+01:00",
+   "subject": "CI: gate universal multistate signature theorem"
+  },
+  {
+   "commit": "8de1b0ece722fc768732321ae666453444f8d6d0",
+   "date": "2026-09-26T23:48:49+01:00",
+   "subject": "ATK: distinguish per-problem multistate objects from common signature"
+  },
+  {
+   "commit": "9909f0ca64b8b72b4347912c1c6e810e839b6516",
+   "date": "2026-09-26T23:47:36+01:00",
+   "subject": "ATK: formalize universal multistate 0-1-2 problem signature"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.FinalFail.SevenCoreStatements.all_cores_elim",
+   "file": "lean/MCore/FinalFail/SevenMathematicalCores.lean",
+   "line": 112,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (S : MCore.FinalFail.SevenCoreStatements), S.AllCores → ∀ (p : MCore.FinalFail.ProblemId), S.core p"
+  },
+  {
+   "name": "MCore.FinalFail.endpoint_of_problem_witness",
+   "file": "lean/MCore/FinalFail/UnifiedOpenMathClosure.lean",
+   "line": 51,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{p : ProblemId} (W : ProblemMultistateClosureWitness p) : W.evidence.nucleus.Endpoint"
+  },
+  {
+   "name": "MCore.FinalFail.every_manifestation_has_common_shape",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 54,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(F : CrossProblemMultiStateFamily) (p : ProblemId) : (F.manifestation p).shape = canonical012Shape"
+  },
+  {
+   "name": "MCore.FinalFail.every_manifestation_preserves_problem_signature",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 64,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(F : CrossProblemMultiStateFamily) (p : ProblemId) : (F.manifestation p).signature = signatureOf p"
+  },
+  {
+   "name": "MCore.FinalFail.exists_common_signature_from_problem_manifestations",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 74,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(H : ∀ p : ProblemId, Nonempty (ProblemMultiStateManifestation p)) : ∃ F : CrossProblemMultiStateFamily, ∀ p : ProblemId, (F.manifestation p).shape = canonical012Shape ∧ (F.manifestation p).signature = signatureOf p"
+  },
+  {
+   "name": "MCore.FinalFail.problem_specific_signatures_remain_distinct",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 97,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": Function.Injective signatureOf"
+  },
+  {
+   "name": "MCore.FinalFail.problem_specific_terminal_slots_remain_distinct",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 105,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": Function.Injective slotOf"
+  },
+  {
+   "name": "MCore.FinalFail.seven_core_schemas_constructed",
+   "file": "lean/MCore/FinalFail/SevenMathematicalCores.lean",
+   "line": 121,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.FinalFail.sevenCoreSchemasConstructed = true"
+  },
+  {
+   "name": "MCore.FinalFail.structural_signature_injective",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 119,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": Function.Injective structuralSignature"
+  },
+  {
+   "name": "MCore.FinalFail.unified_master_theorem_closed",
+   "file": "lean/MCore/FinalFail/UnifiedOpenMathClosure.lean",
+   "line": 98,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": unifiedMasterTheoremClosed = true"
+  },
+  {
+   "name": "MCore.FinalFail.unified_multistate_evidence_closes_all",
+   "file": "lean/MCore/FinalFail/UnifiedOpenMathClosure.lean",
+   "line": 60,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(H : UnifiedOpenMathWitness) : ∀ p : ProblemId, (H.witness p).evidence.nucleus.Endpoint"
+  },
+  {
+   "name": "MCore.FinalFail.unified_open_math_iff_nonempty_witness",
+   "file": "lean/MCore/FinalFail/UnifiedOpenMathClosure.lean",
+   "line": 84,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": UnifiedOpenMathProducer ↔ Nonempty UnifiedOpenMathWitness"
+  },
+  {
+   "name": "MCore.FinalFail.unified_open_math_producer_closes_all",
+   "file": "lean/MCore/FinalFail/UnifiedOpenMathClosure.lean",
+   "line": 77,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(H : UnifiedOpenMathProducer) : ∃ W : UnifiedOpenMathWitness, ∀ p : ProblemId, (W.witness p).evidence.nucleus.Endpoint"
+  },
+  {
+   "name": "MCore.FinalFail.unified_witness_preserves_common_shape",
+   "file": "lean/MCore/FinalFail/UnifiedOpenMathClosure.lean",
+   "line": 33,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(H : UnifiedOpenMathWitness) (p : ProblemId) : (H.witness p).nature.manifestation.shape = canonical012Shape"
+  },
+  {
+   "name": "MCore.FinalFail.unified_witness_preserves_local_signature",
+   "file": "lean/MCore/FinalFail/UnifiedOpenMathClosure.lean",
+   "line": 42,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(H : UnifiedOpenMathWitness) (p : ProblemId) : (H.witness p).nature.manifestation.signature = signatureOf p"
+  },
+  {
+   "name": "MCore.FinalFail.universal_multistate_structure_theorem_closed",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 132,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": universalMultiStateStructureTheoremClosed = true"
+  }
+ ],
+ "closed": 2,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "50df3ee014e1d7c0800d1fadb89cb8b25235cd4666eca5a6a3f7d03b79ce2e01",
+  "lean/MCore/FinalFail/SevenMathematicalCores.lean": "7f6e6710e45a7df1da884bb066d0a6fd41b87e4a9e41c6de1a2fdfade6c76c70"
+ },
+ "published_at": "2026-10-28T19:19:21Z",
+ "certificate_sha256": "646b4019c4120cf2fdeac880f7bd4efda46a93207c118703b3e338af2ec9c8b4"
+}

@@ -1,11 +1,11 @@
-MVEI — log consolidado da verificação (2026-10-28T16:41:02+00:00)
+MVEI — log consolidado da verificação (2026-10-28T19:11:15+00:00)
 Os logs completos de cada compilação no GitHub ficam na página da execução do workflow (Actions).
 
 == M-Core/.  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
    teoremas: fechados 245, condicionais 0, abertos 0; axiomas declarados 0
-   correções do MVEI: imports-no-topo
-   nota: CORRIGIDO PELO MVEI (imports-no-topo): imports movidos para o início (antes de comentários de módulo ou de documentação) em 24 arquivo(s).
+   correções do MVEI: imports-no-topo, renomear-imports-mathlib
+   nota: CORRIGIDO PELO MVEI (imports-no-topo, renomear-imports-mathlib): imports movidos para o início (antes de comentários de módulo ou de documentação) em 1 arquivo(s); 2 import(s) trocados pelo nome do módulo na versão do Mathlib do projeto, em 2 arquivo(s).
 
 == M-Core/atk-kernel  [leanprover/lean4:v4.34.1 -> leanprover/lean4:v4.34.1]  OK
-   teoremas: fechados 10324, condicionais 0, abertos 0; axiomas declarados 0
+   teoremas: fechados 11236, condicionais 0, abertos 0; axiomas declarados 0
 

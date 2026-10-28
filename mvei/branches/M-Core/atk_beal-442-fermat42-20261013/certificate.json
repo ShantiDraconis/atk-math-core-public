@@ -1,0 +1,264 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/beal-442-fermat42-20261013",
+ "branch_state": "em andamento",
+ "head_commit": "1efb6280f1f9793546d2b65d7a72f2729628de2f",
+ "head_commit_date": "2026-10-14T02:07:44+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "1efb6280f1f9793546d2b65d7a72f2729628de2f",
+   "date": "2026-10-14T02:07:44+01:00",
+   "subject": "atk-kernel: FreyBeal importa EllipticCurve.Affine.Basic (toAffine/Equation)"
+  },
+  {
+   "commit": "c26487bd27b7303a3755c44e02718bf8b85df2a3",
+   "date": "2026-10-14T01:32:09+01:00",
+   "subject": "atk-kernel: Teorema Global reduzido, ZetaSimetria, FreyBeal, Teoria I, curva congruente"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.CurvaCongruente.pontos_racionais",
+   "file": "atk-kernel/ATK/CurvaCongruente.lean",
+   "line": 22,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {x y : ℚ}, y ^ 2 = x ^ 3 - x → y = 0 ∧ (x = 0 ∨ x = 1 ∨ x = -1)"
+  },
+  {
+   "name": "ATK.CurvaCongruente.pontos_racionais_iff",
+   "file": "atk-kernel/ATK/CurvaCongruente.lean",
+   "line": 41,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {x y : ℚ}, y ^ 2 = x ^ 3 - x ↔ y = 0 ∧ (x = 0 ∨ x = 1 ∨ x = -1)"
+  },
+  {
+   "name": "ATK.FermatAux.divisor_comum_fatores",
+   "file": "atk-kernel/ATK/FermatAux.lean",
+   "line": 44,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {a b d : ℤ}, IsCoprime a b → d ∣ a ^ 2 - b ^ 2 → d ∣ a ^ 2 + b ^ 2 → d ∣ 2"
+  },
+  {
+   "name": "ATK.FermatAux.fatoracao_quarta",
+   "file": "atk-kernel/ATK/FermatAux.lean",
+   "line": 40,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (a b : ℤ), a ^ 4 - b ^ 4 = (a - b) * (a + b) * (a ^ 2 + b ^ 2)"
+  },
+  {
+   "name": "ATK.FermatAux.quarta_mod16",
+   "file": "atk-kernel/ATK/FermatAux.lean",
+   "line": 22,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ℤ), x ^ 4 % 16 = 0 ∨ x ^ 4 % 16 = 1"
+  },
+  {
+   "name": "ATK.FermatAux.quarta_mod16_zmod",
+   "file": "atk-kernel/ATK/FermatAux.lean",
+   "line": 16,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (y : ZMod 16), y ^ 4 = 0 ∨ y ^ 4 = 1"
+  },
+  {
+   "name": "ATK.FermatAux.quarta_mod5",
+   "file": "atk-kernel/ATK/FermatAux.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ℤ), x ^ 4 % 5 = 0 ∨ x ^ 4 % 5 = 1"
+  },
+  {
+   "name": "ATK.FermatAux.quarta_mod5_zmod",
+   "file": "atk-kernel/ATK/FermatAux.lean",
+   "line": 19,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (y : ZMod 5), y ^ 4 = 0 ∨ y ^ 4 = 1"
+  },
+  {
+   "name": "ATK.FreyBeal.freyCurve_c₄",
+   "file": "atk-kernel/ATK/FreyBeal.lean",
+   "line": 59,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (A B : ℚ), (ATK.FreyBeal.freyCurve A B).c₄ = 16 * (A ^ 2 + A * B + B ^ 2)"
+  },
+  {
+   "name": "ATK.FreyBeal.freyCurve_equation",
+   "file": "atk-kernel/ATK/FreyBeal.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (A B X Y : ℚ), (ATK.FreyBeal.freyCurve A B).toAffine.Equation X Y ↔ Y ^ 2 = X * (X - A) * (X + B)"
+  },
+  {
+   "name": "ATK.FreyBeal.freyCurve_Δ",
+   "file": "atk-kernel/ATK/FreyBeal.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (A B : ℚ), (ATK.FreyBeal.freyCurve A B).Δ = 16 * (A * B * (A + B)) ^ 2"
+  },
+  {
+   "name": "ATK.TeoriaI.absorvente_eq_zero",
+   "file": "atk-kernel/ATK/TeoriaI.lean",
+   "line": 32,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type u_1} [inst : MulZeroClass R] {e : R}, (∀ (x : R), x * e = e) → e = 0"
+  },
+  {
+   "name": "ATK.TeoriaI.convencao_mathlib",
+   "file": "atk-kernel/ATK/TeoriaI.lean",
+   "line": 62,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "0 / 0 = 0"
+  },
+  {
+   "name": "ATK.TeoriaI.divisao_total_colapsa",
+   "file": "atk-kernel/ATK/TeoriaI.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type u_1} [inst : MulZeroClass R] (div : R → R → R), (∀ (x : R), div x 0 * 0 = x) → ∀ (x : R), x = 0"
+  },
+  {
+   "name": "ATK.TeoriaI.falhaAbsorcao_falsa_em_R",
+   "file": "atk-kernel/ATK/TeoriaI.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∃ e, ∀ (x : ℝ), x * e = e"
+  },
+  {
+   "name": "ATK.TeoriaI.sem_absorvente_nao_nulo",
+   "file": "atk-kernel/ATK/TeoriaI.lean",
+   "line": 40,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type u_1} [inst : MulZeroClass R], ¬∃ e, e ≠ 0 ∧ ∀ (x : R), x * e = e"
+  },
+  {
+   "name": "ATK.TeoriaI.valoresZeroSobreZero_eq_univ",
+   "file": "atk-kernel/ATK/TeoriaI.lean",
+   "line": 72,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.TeoriaI.valoresZeroSobreZero = Set.univ"
+  },
+  {
+   "name": "ATK.TeoriaI.zeroSobreZero_nao_unico",
+   "file": "atk-kernel/ATK/TeoriaI.lean",
+   "line": 86,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (L : ℝ), ∃ L', L' ≠ L ∧ L' ∈ ATK.TeoriaI.valoresZeroSobreZero"
+  },
+  {
+   "name": "ATK.TeoriaI.zero_sem_inverso",
+   "file": "atk-kernel/ATK/TeoriaI.lean",
+   "line": 50,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {R : Type u_1} [inst : MulZeroOneClass R] [Nontrivial R] (z : R), 0 * z ≠ 1"
+  },
+  {
+   "name": "ATK.ZetaSimetria.orbita_distinta",
+   "file": "atk-kernel/ATK/ZetaSimetria.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {s : ℂ},   s.re ≠ 1 / 2 →     s.im ≠ 0 →       s ≠ 1 - s ∧         s ≠ (starRingEnd ℂ) s ∧           s ≠ 1 - (starRingEnd ℂ) s ∧             1 - s ≠ (starRingEnd ℂ) s ∧ 1 - s ≠ 1 - (starRingEnd ℂ) s ∧ (starRingEnd ℂ) s ≠ 1 - (starRingEnd ℂ) s"
+  },
+  {
+   "name": "ATK.ZetaSimetria.orbita_zeros",
+   "file": "atk-kernel/ATK/ZetaSimetria.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {s : ℂ},   0 < s.re →     s.re < 1 →       riemannZeta s = 0 →         riemannZeta (1 - s) = 0 ∧ riemannZeta ((starRingEnd ℂ) s) = 0 ∧ riemannZeta (1 - (starRingEnd ℂ) s) = 0"
+  },
+  {
+   "name": "ATK.ZetaSimetria.rh_iff_faixa",
+   "file": "atk-kernel/ATK/ZetaSimetria.lean",
+   "line": 80,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "RiemannHypothesis ↔ ∀ (s : ℂ), 1 / 2 < s.re → s.re < 1 → riemannZeta s ≠ 0"
+  },
+  {
+   "name": "ATK.ZetaSimetria.zero_conj",
+   "file": "atk-kernel/ATK/ZetaSimetria.lean",
+   "line": 24,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {s : ℂ}, riemannZeta s = 0 → riemannZeta ((starRingEnd ℂ) s) = 0"
+  },
+  {
+   "name": "ATK.ZetaSimetria.zero_fora_da_reta_tem_par_a_direita",
+   "file": "atk-kernel/ATK/ZetaSimetria.lean",
+   "line": 72,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {s : ℂ}, 0 < s.re → s.re < 1 → riemannZeta s = 0 → s.re ≠ 1 / 2 → ∃ w, riemannZeta w = 0 ∧ 1 / 2 < w.re ∧ w.re < 1"
+  },
+  {
+   "name": "ATK.ZetaSimetria.zero_one_sub",
+   "file": "atk-kernel/ATK/ZetaSimetria.lean",
+   "line": 28,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {s : ℂ}, 0 < s.re → s.re < 1 → riemannZeta s = 0 → riemannZeta (1 - s) = 0"
+  }
+ ],
+ "closed": 25,
+ "files_sha256": {
+  "atk-kernel/ATK/BaezDuarteBridge.lean": "6cb5d5346a77a4bb236de5c8dd10bfa1753492dc43016a87424d69c148f355a7",
+  "atk-kernel/ATK/BealFermatDescent.lean": "2ae030020dfaf3520e61a81afe2c18a689e11ba7a81a0ca31d0878e6476bbdcd",
+  "atk-kernel/ATK/BealFourFourTwo.lean": "07b323e543eee66a877ebaa9514fc3582b6f8bbdf108f6c1054a325535f1b406",
+  "atk-kernel/ATK/BealPartial.lean": "1e6c661b835a86ef19e36b46e5af356cd60d873e2d4b784134bbe6983bda05fb",
+  "atk-kernel/ATK/BealReduction.lean": "61bf2d4278f511b479e77cda7535fae804f00526fbede8b804ba898edcca0875",
+  "atk-kernel/ATK/BealResidual.lean": "4e79676f5e996b3f1c5202998a7cff418a419617f741dcf6a1c02bd11cb3addd",
+  "atk-kernel/ATK/Conditional/Beal.lean": "f62f97d014fa5b1302be281194be525590400869280ae94f135ac2dcf1385152",
+  "atk-kernel/ATK/Conditional/Riemann.lean": "4c1dc437747de9c70341bdca01a0c9fef299a9b6d9b30413a75fc005d3631382",
+  "atk-kernel/ATK/CurvaCongruente.lean": "7763fb1e69144be40e45099a8d6f832b54fb1bd6679430c6a705e0a7c494282d",
+  "atk-kernel/ATK/FermatAux.lean": "9acdcf4944e3a352f52543e96fe7f76611976328920e6dfcd31be1f2039bb6b3",
+  "atk-kernel/ATK/FermatRightTriangle.lean": "b31212601d3712ea6f226ab20e78e26e11ce1e86d82197307f746ea2c301e5cd",
+  "atk-kernel/ATK/FreyBeal.lean": "20d840602366107e88a5a567e7ee119f52bc7d2a3f1212e4f2526c4351b69d84",
+  "atk-kernel/ATK/Indeterminacy.lean": "9fc0a38993d4846610033b2a38e63894b463a738633a142520561e209bd88f57",
+  "atk-kernel/ATK/IndeterminacyStates.lean": "1a4c9ee6bd9b773c76e53ba812e1c920a6ecb2c4616f0a96179f6af279bc8a8e",
+  "atk-kernel/ATK/MellinRho.lean": "d37a84591f1594e64f5b0a7d4eb4018bafe5cef503c954a41306c4daffb02771",
+  "atk-kernel/ATK/RiemannConcrete.lean": "47f40910773da5d00ee472e91e00bcbaaf3c91114b4f37d751a73c5249ce263d",
+  "atk-kernel/ATK/RiemannFaithful.lean": "269bfe14fa25f1d369c074c2bcb3416e1fd4b1df63a0c23d0773e3d691322c11",
+  "atk-kernel/ATK/RiemannStates.lean": "007cae414504383e41b72abe530d7794b8be7449c8762a2dedc399b9997cd77b",
+  "atk-kernel/ATK/TeoriaI.lean": "25736cef8481ad8381780b8bcb74affaad69f7fe13d603c118146ea9a09a5165",
+  "atk-kernel/ATK/ZetaSimetria.lean": "b921a19a3d6dde28d568b7e3c34b929c09c3f0a3dcf19a804e46db0201c61081",
+  "atk-kernel/ATK/ZetaStrip.lean": "202994e0bf413c54bf1d4eedd1448e5777732bbd4d15df40ac24f9377074624e",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-28T19:19:21Z",
+ "certificate_sha256": "4f3d941b6f838dce0afbdd69cf6a4e57383cdc8fda23c13a4988ba58c62a2f93"
+}

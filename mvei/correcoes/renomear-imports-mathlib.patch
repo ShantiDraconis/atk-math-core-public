@@ -1,0 +1,20 @@
+--- a/MCore/IBoundaryProvenance.lean
++++ b/MCore/IBoundaryProvenance.lean
+@@ -1,6 +1,6 @@
+ import Mathlib.Data.Real.Basic
+ import Mathlib.Order.Filter.Basic
+-import Mathlib.Topology.Instances.Real
++import Mathlib.Topology.Instances.Real.Lemmas
+ 
+ /-!
+ # I-Boundary Provenance
+--- a/lean/MCore/IBoundaryProvenance.lean
++++ b/lean/MCore/IBoundaryProvenance.lean
+@@ -1,6 +1,6 @@
+ import Mathlib.Data.Real.Basic
+ import Mathlib.Order.Filter.Basic
+-import Mathlib.Topology.Instances.Real
++import Mathlib.Topology.Instances.Real.Lemmas
+ 
+ /-!
+ # I-Boundary Provenance

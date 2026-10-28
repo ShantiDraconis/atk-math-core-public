@@ -1,0 +1,158 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/beal-flt-regular-20261014",
+ "branch_state": "em andamento",
+ "head_commit": "0cf2eaf44cccabb1959e0ae2dd656e65850ecac5",
+ "head_commit_date": "2026-10-14T22:33:05+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "0cf2eaf44cccabb1959e0ae2dd656e65850ecac5",
+   "date": "2026-10-14T22:33:05+01:00",
+   "subject": "Merge remote-tracking branch 'origin/conditional' into atk/beal-flt-regular-20261014"
+  },
+  {
+   "commit": "34731ea41406753420af96d448ddc028ad93d62d",
+   "date": "2026-10-14T22:33:03+01:00",
+   "subject": "obligations: nota de progresso em B2 (FLT para primos regulares no atk-flt)"
+  },
+  {
+   "commit": "4d776d6ca1f9b3d29220b879169274e31dff1267",
+   "date": "2026-10-14T22:25:39+01:00",
+   "subject": "ci(atk-flt): informar se o flt-regular foi compilado do codigo-fonte"
+  },
+  {
+   "commit": "e6142b038ca9f6adfad875ad35528288707aafb7",
+   "date": "2026-10-14T22:09:50+01:00",
+   "subject": "atk-flt: Beal quando um primo regular divide o mdc dos expoentes (via flt-regular)"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1",
+   "leanprover/lean4:v4.35.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.BealRegular.beal_de_flt_mdc",
+   "file": "atk-flt/AtkFlt/BealRegular.lean",
+   "line": 65,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {d x y z : ℕ}, FermatLastTheoremFor d → d ∣ x.gcd (y.gcd z) → ATK.BealRegular.BealFor x y z"
+  },
+  {
+   "name": "ATK.BealRegular.beal_de_primo_regular",
+   "file": "atk-flt/AtkFlt/BealRegular.lean",
+   "line": 86,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {p x y z : ℕ}, Nat.Prime p → IsRegularPrime p → p ≠ 2 → p ∣ x.gcd (y.gcd z) → ATK.BealRegular.BealFor x y z"
+  },
+  {
+   "name": "ATK.BealRegular.beal_iff_forall_bealFor",
+   "file": "atk-flt/AtkFlt/BealRegular.lean",
+   "line": 92,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.BealRegular.BealConjecture ↔ ∀ (x y z : ℕ), 2 < x → 2 < y → 2 < z → ATK.BealRegular.BealFor x y z"
+  },
+  {
+   "name": "ATK.BealRegular.beal_iff_residual3457",
+   "file": "atk-flt/AtkFlt/BealRegular.lean",
+   "line": 104,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.BealRegular.BealConjecture ↔ ATK.BealRegular.ExclusaoResidual3457"
+  },
+  {
+   "name": "ATK.BealRegular.beal_iff_residualRegular",
+   "file": "atk-flt/AtkFlt/BealRegular.lean",
+   "line": 128,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.BealRegular.BealConjecture ↔ ATK.BealRegular.ExclusaoResidualRegular"
+  },
+  {
+   "name": "ATK.BealRegular.beal_mdc_cinco",
+   "file": "atk-flt/AtkFlt/BealRegular.lean",
+   "line": 78,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {x y z : ℕ}, 5 ∣ x.gcd (y.gcd z) → ATK.BealRegular.BealFor x y z"
+  },
+  {
+   "name": "ATK.BealRegular.beal_mdc_quatro",
+   "file": "atk-flt/AtkFlt/BealRegular.lean",
+   "line": 74,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {x y z : ℕ}, 4 ∣ x.gcd (y.gcd z) → ATK.BealRegular.BealFor x y z"
+  },
+  {
+   "name": "ATK.BealRegular.beal_mdc_sete",
+   "file": "atk-flt/AtkFlt/BealRegular.lean",
+   "line": 82,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {x y z : ℕ}, 7 ∣ x.gcd (y.gcd z) → ATK.BealRegular.BealFor x y z"
+  },
+  {
+   "name": "ATK.BealRegular.beal_mdc_tres",
+   "file": "atk-flt/AtkFlt/BealRegular.lean",
+   "line": 70,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {x y z : ℕ}, 3 ∣ x.gcd (y.gcd z) → ATK.BealRegular.BealFor x y z"
+  },
+  {
+   "name": "ATK.BealRegular.exemplos",
+   "file": "atk-flt/AtkFlt/BealRegular.lean",
+   "line": 144,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.BealRegular.BealFor 5 10 15 ∧   ATK.BealRegular.BealFor 10 15 20 ∧ ATK.BealRegular.BealFor 7 14 21 ∧ ATK.BealRegular.BealFor 35 70 14"
+  },
+  {
+   "name": "ATK.BealRegular.exemplos_novos",
+   "file": "atk-flt/AtkFlt/BealRegular.lean",
+   "line": 150,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬3 ∣ Nat.gcd 5 (Nat.gcd 10 15) ∧   ¬4 ∣ Nat.gcd 5 (Nat.gcd 10 15) ∧     ¬3 ∣ Nat.gcd 10 (Nat.gcd 15 20) ∧       ¬4 ∣ Nat.gcd 10 (Nat.gcd 15 20) ∧         ¬3 ∣ Nat.gcd 7 (Nat.gcd 14 21) ∧           ¬4 ∣ Nat.gcd 7 (Nat.gcd 14 21) ∧ ¬3 ∣ Nat.gcd 35 (Nat.gcd 70 14) ∧ ¬4 ∣ Nat.gcd 35 (Nat.gcd 70 14)"
+  },
+  {
+   "name": "ATK.BealRegular.sem_solucao_de_flt_divisor",
+   "file": "atk-flt/AtkFlt/BealRegular.lean",
+   "line": 44,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {d a b c x y z : ℕ}, FermatLastTheoremFor d → d ∣ x → d ∣ y → d ∣ z → 0 < a → 0 < b → 0 < c → a ^ x + b ^ y ≠ c ^ z"
+  },
+  {
+   "name": "ATK.BealRegular.sem_solucao_mdc",
+   "file": "atk-flt/AtkFlt/BealRegular.lean",
+   "line": 57,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {d a b c x y z : ℕ}, FermatLastTheoremFor d → d ∣ x.gcd (y.gcd z) → 0 < a → 0 < b → 0 < c → a ^ x + b ^ y ≠ c ^ z"
+  }
+ ],
+ "closed": 13,
+ "files_sha256": {
+  "atk-flt/AtkFlt/BealRegular.lean": "804732585b70059621c13b7bd6209643ed44e250f7c7d5348918fa4bdc25fff0",
+  "atk-flt/lakefile.toml": "6e5a3a9cf734f3325144ae17c9c5d3174467618cdc613dd34401138623cb9181",
+  "atk-flt/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+ },
+ "published_at": "2026-10-28T19:19:21Z",
+ "certificate_sha256": "20e06152a106ad7a8fd84c97880d6e534f360fa85a773d430418946c29086dd9"
+}

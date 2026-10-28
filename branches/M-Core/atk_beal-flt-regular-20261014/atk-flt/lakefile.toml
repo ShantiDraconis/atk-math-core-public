@@ -1,0 +1,16 @@
+name = "AtkFlt"
+defaultTargets = ["AtkFlt"]
+
+# Mesma Mathlib fixada pelo flt-regular (para o cache oficial servir a Mathlib já compilada).
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "089be84e24e41b7a26860084d1747195cf9299f3"
+
+[[require]]
+name = "flt-regular"
+git = "https://github.com/leanprover-community/flt-regular"
+rev = "b8a5f23ab44a7be9fd49f6e3c831da54573c3c89"
+
+[[lean_lib]]
+name = "AtkFlt"

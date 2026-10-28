@@ -1,0 +1,217 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/global-audit-20261008",
+ "branch_state": "parada",
+ "head_commit": "a5c41a27fc705f68e5757c882d3b4f18fa942517",
+ "head_commit_date": "2026-10-11T16:28:00+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "a5c41a27fc705f68e5757c882d3b4f18fa942517",
+   "date": "2026-10-11T16:28:00+01:00",
+   "subject": "MASTER_INDEX: P vs NP line points to FINAL_EXTERNAL v4"
+  },
+  {
+   "commit": "dd281d8694828192a5ff682e6ddd0980304a5e8c",
+   "date": "2026-10-09T12:14:28+01:00",
+   "subject": "FINAL_EXTERNAL v4 (preparatory, SUPERSEDES v3): crypto gate closed by Sigstore"
+  },
+  {
+   "commit": "798be087267d8cd493292dd79f2001abcd5090eb",
+   "date": "2026-10-09T12:11:23+01:00",
+   "subject": "Signing workflow: allow push to sign/final-external-<version> as the trigger"
+  },
+  {
+   "commit": "c10e8bd1ef5248e053aa965262e1b3a1a3c8e800",
+   "date": "2026-10-09T12:10:52+01:00",
+   "subject": "Signing workflow: refuse to sign unless the regenerated payload equals the commit"
+  },
+  {
+   "commit": "bbcb146bb2a20f979cb4a576dfd82504852735f0",
+   "date": "2026-10-09T11:10:09+01:00",
+   "subject": "FINAL_GLOBAL v2: P01 (SAT ∈ NP) recorded as CLOSED_MATH; erratum for v1"
+  },
+  {
+   "commit": "33983a4cc7d1fa4869f08e453f39fc51f3d1b7f4",
+   "date": "2026-10-09T10:56:50+01:00",
+   "subject": "FINAL_EXTERNAL v3 (preparatory, SUPERSEDES v2): P01 closed; registry note"
+  },
+  {
+   "commit": "e1a3b4ab33549cc8ea6972c6d74e635081ece0db",
+   "date": "2026-10-09T10:38:12+01:00",
+   "subject": "Merge main (01d8d76) into atk/global-audit-20261008"
+  },
+  {
+   "commit": "1e3c63ee5f2907947e3f11d7e73b1c81b36ff0e7",
+   "date": "2026-10-09T10:38:11+01:00",
+   "subject": "CI: run every certs/final_global/v*/verify.sh"
+  },
+  {
+   "commit": "ae70fb74d413385beb22a85c418c9096b6ee5a8d",
+   "date": "2026-10-08T23:04:09+01:00",
+   "subject": "FINAL_EXTERNAL v2 (preparatory, SUPERSEDES v1); signing workflow prepared"
+  },
+  {
+   "commit": "ecb5f51370c10f9436c9abbd9991c3476ce9e921",
+   "date": "2026-10-08T22:31:43+01:00",
+   "subject": "Registry: correct two pins, add frozen-branch provenance, binding firewall; dual Riemann lane with exact boundary; official NS Clay statements"
+  },
+  {
+   "commit": "4077527949cdff1f326b7796ebb5f837f680fa40",
+   "date": "2026-10-08T19:45:47+01:00",
+   "subject": "Issue FINAL_GLOBAL v1 integration-state package; FINAL_EXTERNAL not issued"
+  },
+  {
+   "commit": "9a7f1f04b718dfbe931e07599ab1d34272804fcd",
+   "date": "2026-10-08T19:35:17+01:00",
+   "subject": "Repair provenance file MCore/A4Scale.lean (λ is a reserved token)"
+  },
+  {
+   "commit": "5cb7cd7c85836eaf19ab9511cd040bb826f2eb0a",
+   "date": "2026-10-08T19:27:54+01:00",
+   "subject": "CI: fix provenance LEAN_PATH order; fetch Mathlib cache in Final Proof Miner"
+  },
+  {
+   "commit": "8b7099e7bb86bd305812ad57503469d5c1c027f3",
+   "date": "2026-10-08T18:51:31+01:00",
+   "subject": "Repair five Lean modules that did not elaborate; add global kernel audit"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.FinalFail.Semantic.NavierStokesClay.zero_datum_has_zero_solution",
+   "file": "lean/MCore/FinalFail/Semantic/NavierStokesClay.lean",
+   "line": 120,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (ν : ℝ),   MCore.FinalFail.Semantic.NavierStokesClay.IsSolution ν (fun x x => 0)     MCore.FinalFail.Semantic.NavierStokesClay.zeroDatum.u0 (fun x x => 0) fun x x => 0"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.RiemannOffCriticalZero.re_pos",
+   "file": "lean/MCore/FinalFail/Semantic/RiemannDual.lean",
+   "line": 145,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (w : MCore.FinalFail.Semantic.RiemannOffCriticalZero), 0 < w.s.re"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.RiemannOffCriticalZero.reflect_re",
+   "file": "lean/MCore/FinalFail/Semantic/RiemannDual.lean",
+   "line": 175,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (w : MCore.FinalFail.Semantic.RiemannOffCriticalZero), w.reflect.s.re = 1 - w.s.re"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.nontrivial_zero_re_pos",
+   "file": "lean/MCore/FinalFail/Semantic/RiemannDual.lean",
+   "line": 75,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {s : ℂ}, riemannZeta s = 0 → (¬∃ n, s = -2 * (↑n + 1)) → 0 < s.re"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.riemannZeta_one_sub_eq_zero",
+   "file": "lean/MCore/FinalFail/Semantic/RiemannDual.lean",
+   "line": 61,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {s : ℂ}, 0 < s.re → s.re < 1 → riemannZeta s = 0 → riemannZeta (1 - s) = 0"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.riemann_dual_frame",
+   "file": "lean/MCore/FinalFail/Semantic/RiemannDual.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.FinalFail.RPA.RPAFrame MCore.FinalFail.Semantic.RiemannProveTarget ¬MCore.FinalFail.Semantic.RiemannRefuteTarget"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.riemann_not_both",
+   "file": "lean/MCore/FinalFail/Semantic/RiemannDual.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬(MCore.FinalFail.Semantic.RiemannProveTarget ∧ MCore.FinalFail.Semantic.RiemannRefuteTarget)"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.riemann_prove_iff_no_zero_in_right_strip",
+   "file": "lean/MCore/FinalFail/Semantic/RiemannDual.lean",
+   "line": 207,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.FinalFail.Semantic.RiemannProveTarget ↔ ∀ (s : ℂ), riemannZeta s = 0 → 1 / 2 < s.re → 1 ≤ s.re"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.riemann_prove_iff_not_refute",
+   "file": "lean/MCore/FinalFail/Semantic/RiemannDual.lean",
+   "line": 41,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.FinalFail.Semantic.RiemannProveTarget ↔ ¬MCore.FinalFail.Semantic.RiemannRefuteTarget"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.riemann_refute_iff_zero_in_right_strip",
+   "file": "lean/MCore/FinalFail/Semantic/RiemannDual.lean",
+   "line": 180,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.FinalFail.Semantic.RiemannRefuteTarget ↔ ∃ s, riemannZeta s = 0 ∧ 1 / 2 < s.re ∧ s.re < 1"
+  },
+  {
+   "name": "MCore.FinalProof.parametric_lanes",
+   "file": "lean/MCore/FinalProofRegistry.lean",
+   "line": 154,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(List.filter (fun r => !(MCore.FinalProof.bindingOf r.slot).admitsPromotion) MCore.FinalProof.registry).length = 3"
+  },
+  {
+   "name": "MCore.FinalProof.registry_binding_firewall",
+   "file": "lean/MCore/FinalProofRegistry.lean",
+   "line": 148,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(MCore.FinalProof.registry.all fun r =>     r.state != MCore.FinalProof.SlotState.proved || (MCore.FinalProof.bindingOf r.slot).admitsPromotion) =   true"
+  }
+ ],
+ "closed": 12,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/FinalFail/AcceptedSemanticActivation.lean": "6c8d3bff0bad718c736ecfbde2bc92937dfddc95de68ce0c17d5b539420de653",
+  "lean/MCore/FinalFail/BSDConcreteDomain.lean": "b7b1e5764451649e092acaa42c2a992386940c7a18eb80cc7e94a7d545f5345c",
+  "lean/MCore/FinalFail/BoundaryAtoms.lean": "54deb42c3e0d344359ecab23e499cb0e60114146b007003b540c2d564a36024f",
+  "lean/MCore/FinalFail/DirectProducerCuts.lean": "7441cfa7bed39df4bf1a4c1f2d6fd44b7e815cf84c72177fd49ec63e19c7cbee",
+  "lean/MCore/FinalFail/RPAConfirmation.lean": "e3af2cab368c46d23c6f34634adf58978370b3f044decdbcd5025d2f3592a16c",
+  "lean/MCore/FinalFail/RPALattice.lean": "bd7cde1fa7546f244a2b9731a96079c6a7fc269bf71f737edaf704c13cf04885",
+  "lean/MCore/FinalFail/RPALatticeCube3.lean": "2d437dc2806e3c645f4be9268aec4a9186fd03523a2aa54ed31a308da9217562",
+  "lean/MCore/FinalFail/Semantic/BSD.lean": "be66d8c211db7a78d648b1d4be0a27f54fdd969e305640e8a401abb80c507668",
+  "lean/MCore/FinalFail/Semantic/Beal.lean": "7461d91a196c5d7a61ba7f3fabce0947d529902426ec1e96cab2994b97f787a0",
+  "lean/MCore/FinalFail/Semantic/Hodge.lean": "c82ec2d0082ec5c801c4f2937246e831021f00ef8dec5cc7059628a9df7b4d03",
+  "lean/MCore/FinalFail/Semantic/NavierStokes.lean": "d5cb2e2d3bf4e3be8816d020852bed1bca3920e9365bc37246b84421824f2905",
+  "lean/MCore/FinalFail/Semantic/NavierStokesClay.lean": "2c9906b7e045d5cb7d52bcbbcd244ec54ff418350918f970c2a7a1395d53fbef",
+  "lean/MCore/FinalFail/Semantic/PvsNP.lean": "d9e1c3abda3fa56fc38b15a4d79b925e274bdc8bd4a5a0db10156208bfbe656b",
+  "lean/MCore/FinalFail/Semantic/Riemann.lean": "3e27a82494ef344bf6017275345cd6d8af1e2f2ab3c34f7d684d5c6dfc26370e",
+  "lean/MCore/FinalFail/Semantic/RiemannDual.lean": "eef1d5409beca4fc4fc371023fa50a8098d187fdef44f7989f601bc4fb61fbe8",
+  "lean/MCore/FinalFail/Semantic/YangMills.lean": "46576c47f06fef4d4fe52a6812097bf72a3127d18af23effc2107da7615e301c",
+  "lean/MCore/FinalFail/SemanticParallel.lean": "3fcf6ca711dd35f2f46235df26768b752042787b5f7bed7d92b3293f39a283bd",
+  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d",
+  "lean/MCore/FinalFail/UniversalTerminalClosure.lean": "fb3ff48d134a3b80d70f1923cc58e8339d3f7b2211b1c9214085ac79389f8170",
+  "lean/MCore/FinalProofRegistry.lean": "32d0b9ebf6da92f94d5eb204c54f67219b0470fed0d7434010a458e9e8f356fb"
+ },
+ "published_at": "2026-10-28T19:19:21Z",
+ "certificate_sha256": "1326c44c557eb6a4b845deb025c639ffce829d22ddcdca653c8414233a17837b"
+}

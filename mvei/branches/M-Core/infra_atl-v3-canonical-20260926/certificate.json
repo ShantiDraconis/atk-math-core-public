@@ -1,0 +1,178 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "infra/atl-v3-canonical-20260926",
+ "branch_state": "parada",
+ "head_commit": "e543c3c607acdf86497accc66708160ba03249e9",
+ "head_commit_date": "2026-09-26T11:03:43+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "e543c3c607acdf86497accc66708160ba03249e9",
+   "date": "2026-09-26T11:03:43+01:00",
+   "subject": "ATL v3: fix reserved Edge field names"
+  },
+  {
+   "commit": "d9a9af37fa1eeee72882101171cee582bfc03ccd",
+   "date": "2026-09-26T08:54:00+01:00",
+   "subject": "ATL v3: bootstrap Lean without lean-action manifest precondition"
+  },
+  {
+   "commit": "cafcb8f414004e103eb34ad22b1e300f8d88aceb",
+   "date": "2026-09-26T08:21:13+01:00",
+   "subject": "ATL v3: fix CI bootstrap before canonical gate"
+  },
+  {
+   "commit": "db0012df88b735c68ac147bede70517b39c28991",
+   "date": "2026-09-26T08:06:34+01:00",
+   "subject": "ATL v3: add canonical CI gate"
+  },
+  {
+   "commit": "a70b0a9c8075180444422986f947deb42498cb26",
+   "date": "2026-09-26T08:06:13+01:00",
+   "subject": "ATL v3 kernel: add lean/MCore/ATL/V3/Master.lean"
+  },
+  {
+   "commit": "16cfd8ca4bb0867cbd9f802ffd5b59f15ded6639",
+   "date": "2026-09-26T08:06:10+01:00",
+   "subject": "ATL v3 kernel: add lean/MCore/ATL/V3/Certificate.lean"
+  },
+  {
+   "commit": "af8e87e14dd74bb08cc08dc3fb9a032c5b86240a",
+   "date": "2026-09-26T08:06:08+01:00",
+   "subject": "ATL v3 kernel: add lean/MCore/ATL/V3/Mining.lean"
+  },
+  {
+   "commit": "33818222e8fd1d103206ae1be92c49f288871568",
+   "date": "2026-09-26T08:06:06+01:00",
+   "subject": "ATL v3 kernel: add lean/MCore/ATL/V3/Promotion.lean"
+  },
+  {
+   "commit": "efa4311e9ae6ba56e217e5a88c0496a48806facf",
+   "date": "2026-09-26T08:06:04+01:00",
+   "subject": "ATL v3 kernel: add lean/MCore/ATL/V3/Core.lean"
+  },
+  {
+   "commit": "d2615759ec089403dff1a49c6242d1ebd7a3d280",
+   "date": "2026-09-26T08:05:25+01:00",
+   "subject": "ATL v3: add atl/v3/README.md"
+  },
+  {
+   "commit": "0571e6b89095a8e0805eccfd76aa024e6a331c4a",
+   "date": "2026-09-26T08:05:23+01:00",
+   "subject": "ATL v3: add atl/v3/mining.json"
+  },
+  {
+   "commit": "e13f9caf82f500650693510552061f2381ccc895",
+   "date": "2026-09-26T08:05:21+01:00",
+   "subject": "ATL v3: add atl/v3/gate_batch.py"
+  },
+  {
+   "commit": "9248a5d3d762b924b012c2e19d4b0c0345ad86b3",
+   "date": "2026-09-26T08:05:20+01:00",
+   "subject": "ATL v3: add atl/v3/firewall.py"
+  },
+  {
+   "commit": "a19cd175103e8010e851860a5dae3e32165b61a0",
+   "date": "2026-09-26T08:05:18+01:00",
+   "subject": "ATL v3: add atl/v3/router.py"
+  },
+  {
+   "commit": "a710407711047298a1941b3cdb74d1b005bdbf35",
+   "date": "2026-09-26T08:05:16+01:00",
+   "subject": "ATL v3: add atl/v3/cost_history.json"
+  },
+  {
+   "commit": "6ef95a144d0ac27dcf9b627d639f77aa1294ba53",
+   "date": "2026-09-26T08:05:14+01:00",
+   "subject": "ATL v3: add atl/v3/graph.json"
+  },
+  {
+   "commit": "1b988f7419548ef1745bc0acc56fadc3d03887fa",
+   "date": "2026-09-26T08:05:12+01:00",
+   "subject": "ATL v3: add atl/v3/schema/atl_graph.schema.json"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.ATL.V3.external_not_attackable",
+   "file": "lean/MCore/ATL/V3/Core.lean",
+   "line": 73,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (n : MCore.ATL.V3.PrimitiveNode) (d : MCore.ATL.V3.DerivedNode),   d.openClass = MCore.ATL.V3.OpenClass.external → MCore.ATL.V3.isAttackable n d = false"
+  },
+  {
+   "name": "MCore.ATL.V3.fail_closed_without_term",
+   "file": "lean/MCore/ATL/V3/Master.lean",
+   "line": 7,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(c : ExternalCertificate) (hk : c.kind = .theorem) (ht : c.termHash = none) : c.status ≠ .proved"
+  },
+  {
+   "name": "MCore.ATL.V3.research_not_attackable",
+   "file": "lean/MCore/ATL/V3/Core.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (n : MCore.ATL.V3.PrimitiveNode) (d : MCore.ATL.V3.DerivedNode),   d.openClass = MCore.ATL.V3.OpenClass.research → MCore.ATL.V3.isAttackable n d = false"
+  },
+  {
+   "name": "MCore.ATL.V3.scientific_implies_semantic",
+   "file": "lean/MCore/ATL/V3/Promotion.lean",
+   "line": 37,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(e : PromotionEvidence) (h : mayReach e .scientific = true) : mayReach e .semantic = true"
+  },
+  {
+   "name": "MCore.ATL.V3.semantic_implies_kernel",
+   "file": "lean/MCore/ATL/V3/Promotion.lean",
+   "line": 42,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(e : PromotionEvidence) (h : mayReach e .semantic = true) : mayReach e .kernel = true"
+  },
+  {
+   "name": "MCore.ATL.V3.theorem_without_term_not_proved",
+   "file": "lean/MCore/ATL/V3/Certificate.lean",
+   "line": 39,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(c : ExternalCertificate) (hk : c.kind = .theorem) (ht : c.termHash = none) : c.status ≠ .proved"
+  },
+  {
+   "name": "MCore.ATL.V3.unaudited_mining_not_emittable",
+   "file": "lean/MCore/ATL/V3/Mining.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (e : MCore.ATL.V3.MinedEvidence), e.kernelAudited = false → e.emittable = false"
+  }
+ ],
+ "closed": 3,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/ATL/V3/Core.lean": "2144edd58558c6a00eea0f1e4c3a2deb83c24e4cb80dd980802c4c8306daa155",
+  "lean/MCore/ATL/V3/Mining.lean": "0bb4020e1823153f757184ddc3f416baad3ba56152802e1b53d01c0186d28969"
+ },
+ "published_at": "2026-10-28T19:19:21Z",
+ "certificate_sha256": "9fb023e445e43321f06486c9c00636e61775b86a7d0056dd7caa477509d4fd28"
+}

@@ -1,0 +1,1090 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "research/pure-math-final-proof-v1",
+ "branch_state": "parada",
+ "head_commit": "ef31a391b2127be4a51fdf0aa51ccb51a5670cd5",
+ "head_commit_date": "2026-09-20T11:02:20+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "ef31a391b2127be4a51fdf0aa51ccb51a5670cd5",
+   "date": "2026-09-20T11:02:20+01:00",
+   "subject": "fix(V22): repair residual irreflexivity recursion"
+  },
+  {
+   "commit": "bfa03da90ff5dbf77540dfd00fb50e881cbac1f2",
+   "date": "2026-09-20T09:28:17+01:00",
+   "subject": "audit: intake historical reformulation and error-coordinate hypotheses"
+  },
+  {
+   "commit": "c1454aae9135a9c8c34723fc0955a4060c7f69b8",
+   "date": "2026-09-20T08:42:25+01:00",
+   "subject": "audit: record observed state-2 behavioral signature"
+  },
+  {
+   "commit": "e35b25a611f9a9170dab6b5c7d2980fe802baaaa",
+   "date": "2026-09-20T08:38:26+01:00",
+   "subject": "audit: install behavioral signature calculator protocol"
+  },
+  {
+   "commit": "4d032dc29f376c648107c2ac35d1341d0761b83d",
+   "date": "2026-09-20T04:05:57+01:00",
+   "subject": "audit: install behavioral signature calculator contract"
+  },
+  {
+   "commit": "e2f919052cb92a051f84ced4130ebd73cc623b04",
+   "date": "2026-09-20T03:23:42+01:00",
+   "subject": "pass ResidualSystem positionally to Acc helper"
+  },
+  {
+   "commit": "40e2479cff0a6617b56d42e030d09641d1679b97",
+   "date": "2026-09-20T03:18:48+01:00",
+   "subject": "pass ResidualSystem as explicit named parameter to Acc lemma"
+  },
+  {
+   "commit": "70dacab62acead9e7eb00015322d1ca7d17b94d4",
+   "date": "2026-09-20T03:11:36+01:00",
+   "subject": "recurse explicitly through Acc witness in irreflexivity lemma"
+  },
+  {
+   "commit": "116385b70c6d26770304798276a15f649c4ff746",
+   "date": "2026-09-20T03:07:14+01:00",
+   "subject": "factor typed Acc irreflexivity lemma for residual descent"
+  },
+  {
+   "commit": "367e4e50d183f75d620909d1b809c181b67446e4",
+   "date": "2026-09-20T03:01:00+01:00",
+   "subject": "eliminate local recursive identifier from Acc irreflexivity proof"
+  },
+  {
+   "commit": "43c004236bd4545c2c34cfcc053d36f761a5ad45",
+   "date": "2026-09-20T02:56:42+01:00",
+   "subject": "make residual self-loop contradiction recurse on Acc witness"
+  },
+  {
+   "commit": "f91299e8af871f0f1e635907a2fb3f9459447ad8",
+   "date": "2026-09-20T02:51:40+01:00",
+   "subject": "derive residual irreflexivity by explicit Acc descent"
+  },
+  {
+   "commit": "fd3b973b123682dfe6834a7919c0a37d1bf0827b",
+   "date": "2026-09-20T02:47:12+01:00",
+   "subject": "fix Acc induction proof of residual irreflexivity"
+  },
+  {
+   "commit": "faaa8c031c216e2761579557049730e7342184d0",
+   "date": "2026-09-20T02:41:12+01:00",
+   "subject": "prove residual step irreflexivity from Acc induction"
+  },
+  {
+   "commit": "3a6ca4c4a2cbca15fb28b4c5ca189328c8583f57",
+   "date": "2026-09-20T02:36:05+01:00",
+   "subject": "use well-founded irreflexivity for residual step"
+  },
+  {
+   "commit": "70c934f8c3ad8586df6cd8ac9f666806073a4a54",
+   "date": "2026-09-20T02:30:53+01:00",
+   "subject": "derive residual irreflexivity directly from Acc"
+  },
+  {
+   "commit": "204a07438d35e88b0ed289f3f5987651aba00686",
+   "date": "2026-09-20T02:30:44+01:00",
+   "subject": "simplify exact blocker existence from registry"
+  },
+  {
+   "commit": "636e80f1d6ebe5693fd820b7321688bc351672cd",
+   "date": "2026-09-20T02:24:46+01:00",
+   "subject": "fix well-founded asymmetry application"
+  },
+  {
+   "commit": "9ea4c1d681077bfba1bd66ebeafb89568515345e",
+   "date": "2026-09-20T02:24:37+01:00",
+   "subject": "fix nested blocker witness syntax"
+  },
+  {
+   "commit": "f1e5c478e5c00fd994bf366c0c86c36100540587",
+   "date": "2026-09-20T02:08:15+01:00",
+   "subject": "use explicit exact blocker witnesses"
+  },
+  {
+   "commit": "5c169905072750da579b537c3e25656c0f5dbb04",
+   "date": "2026-09-20T02:08:02+01:00",
+   "subject": "fix residual irreflexivity via well-founded asymmetry"
+  },
+  {
+   "commit": "7d033fba469145e386343800be5274a457cc3309",
+   "date": "2026-09-20T01:54:59+01:00",
+   "subject": "prove residual step irrefl from accessibility"
+  },
+  {
+   "commit": "40ad491a248cf0c160ee6d075403b47c7ba68b16",
+   "date": "2026-09-20T01:54:51+01:00",
+   "subject": "fix blocker witnesses through membership theorem"
+  },
+  {
+   "commit": "28b2ef13ca7cac7e312756a45d9dafccb7b08e95",
+   "date": "2026-09-20T01:31:27+01:00",
+   "subject": "fix V22 well-founded residual irrefl proof"
+  },
+  {
+   "commit": "e9c82ebd0a10f0e8ab6fea7e591aab4d295e3016",
+   "date": "2026-09-20T01:31:22+01:00",
+   "subject": "fix V22 exact blocker witness elaboration"
+  },
+  {
+   "commit": "17b2861b3b3d0a9667ac95c36968f28bd1d07ed4",
+   "date": "2026-09-20T01:25:54+01:00",
+   "subject": "ci: certify V22 research closure chain"
+  },
+  {
+   "commit": "a385ce133679f50bfa6272ec56a2084ee80819fe",
+   "date": "2026-09-20T00:40:21+01:00",
+   "subject": "research: add concrete problem instance interface"
+  },
+  {
+   "commit": "4374cbd0d58f9de53f42a114e7593c80b994d724",
+   "date": "2026-09-20T00:40:15+01:00",
+   "subject": "research: formalize exact generic closure criterion"
+  },
+  {
+   "commit": "3722af90e10c49d75f31ae208391bb34c3b17c14",
+   "date": "2026-09-20T00:38:28+01:00",
+   "subject": "research: formalize exact recursive frontier decomposition"
+  },
+  {
+   "commit": "7d282beb80256e2c8d5afd94b1f6197d1778c875",
+   "date": "2026-09-20T00:37:48+01:00",
+   "subject": "research: add well-founded residual calculus and closure certificate"
+  },
+  {
+   "commit": "9b26bab33b44f3a26dd0708283a2baf9cde6a6b4",
+   "date": "2026-09-20T00:37:11+01:00",
+   "subject": "research: formalize exact blocker necessity layer"
+  },
+  {
+   "commit": "a43b8ba5a89d1d7415b7c34acd3a7368dc8d864d",
+   "date": "2026-09-20T00:30:52+01:00",
+   "subject": "research: formalize bidirectional closure state space"
+  },
+  {
+   "commit": "be075ec9674b8bc0038da273d1bba7524359e954",
+   "date": "2026-09-19T23:41:04+01:00",
+   "subject": "ci: certify ExactBlockers by Lean exit status"
+  },
+  {
+   "commit": "e09763f44ae213b7bcd571c24f594620a44c36e8",
+   "date": "2026-09-19T23:23:22+01:00",
+   "subject": "ci: certify NodeLocator by Lean exit status"
+  },
+  {
+   "commit": "cad3224d0755c4759599d7ea5e41cda8348a3198",
+   "date": "2026-09-19T23:19:23+01:00",
+   "subject": "ci: make NodeLocator reproduction match Lean output"
+  },
+  {
+   "commit": "ae3627a2ddd6eb6d11ad4d11b46401d5156616db",
+   "date": "2026-09-19T12:31:49+01:00",
+   "subject": "ci: certify ten exact mathematical blockers"
+  },
+  {
+   "commit": "e79f49fa9f8dfc60e84d541fbb5550cede1f6809",
+   "date": "2026-09-19T12:31:46+01:00",
+   "subject": "v2.2: wire exact mathematical blocker registry"
+  },
+  {
+   "commit": "baba98b8c2a9c402aed75688f5c271d71a684f0c",
+   "date": "2026-09-19T12:31:38+01:00",
+   "subject": "v2.2: enumerate ten exact mathematical blockers"
+  },
+  {
+   "commit": "7d0cfb131a270f63c56bb20b64cd6e9e32dc1d7f",
+   "date": "2026-09-19T12:30:40+01:00",
+   "subject": "ci: certify exact blocking-node localization"
+  },
+  {
+   "commit": "4a2663d7c62e5d7bbe78926e9e43121168cef216",
+   "date": "2026-09-19T12:30:37+01:00",
+   "subject": "v2.2: wire exact node locator"
+  },
+  {
+   "commit": "9875873db0f30f5ce4f550eb450192a3a97fb0dd",
+   "date": "2026-09-19T12:30:11+01:00",
+   "subject": "v2.2: locate exact blocking nodes and frontier subnodes"
+  },
+  {
+   "commit": "437970d0650c5a85f7fbf5aa2b6d0fc5e85ff2d9",
+   "date": "2026-09-19T10:54:56+00:00",
+   "subject": "fix(frontier): rename VerificationState.partial, a reserved keyword"
+  },
+  {
+   "commit": "ba10af654c4f9d56846ae37d5ab1cfc30b465b4d",
+   "date": "2026-09-19T10:50:15+00:00",
+   "subject": "merge: reconcile with candidate-branch provenance schema"
+  },
+  {
+   "commit": "d1f05dc005ffb174485448937194aa1738e5334a",
+   "date": "2026-09-19T10:48:52+00:00",
+   "subject": "audit(frontier): sync Yang-Mills sourceRevision to hardened A1 branch"
+  },
+  {
+   "commit": "06bbb8f9bfdba6f141f9afa9bbbfa41583926366",
+   "date": "2026-09-19T11:37:37+01:00",
+   "subject": "audit: fail closed on candidate branch as main certificate"
+  },
+  {
+   "commit": "c9f7d9cf8c275ec3d8b253445f4ba325ce040d32",
+   "date": "2026-09-19T11:37:09+01:00",
+   "subject": "audit: record candidate-vs-main provenance correction"
+  },
+  {
+   "commit": "7f8993439364f678d2ff774c2bd74da9fd0571e1",
+   "date": "2026-09-19T11:36:52+01:00",
+   "subject": "audit: separate main provenance from candidate-branch evidence"
+  },
+  {
+   "commit": "ef3a2b3dbb5f828e5d9314d2b9ac16ea240c5ac9",
+   "date": "2026-09-19T11:25:37+02:00",
+   "subject": "ci: fail closed on frontier certificate metadata"
+  },
+  {
+   "commit": "e0084b574a087c06eb946225a673e0ccf41133b6",
+   "date": "2026-09-19T11:25:34+02:00",
+   "subject": "cert: add cross-repository frontier certificate index"
+  },
+  {
+   "commit": "d93a9b4ab63cbca8a3f08423af39399a8b6927ae",
+   "date": "2026-09-19T11:24:58+02:00",
+   "subject": "cert: record green frontier certificate 2026-09-19"
+  },
+  {
+   "commit": "ef87c371f8cbe617fe19f073a3d7f78ee9021c5a",
+   "date": "2026-09-19T10:53:35+02:00",
+   "subject": "ci: certify common frontier kernel"
+  },
+  {
+   "commit": "5dd56abe8fb6d895e6ccac6b7e433273a362ed53",
+   "date": "2026-09-19T10:53:32+02:00",
+   "subject": "v2.2: wire common frontier kernel"
+  },
+  {
+   "commit": "cafc41bd55cc93caaa861d7cee4c12556ab9fbb8",
+   "date": "2026-09-19T10:53:25+02:00",
+   "subject": "v2.2: formalize common witness-constructor frontier kernel"
+  },
+  {
+   "commit": "d1ea52c4bbd6fd42a842842f6e6c2e2dc8a5191f",
+   "date": "2026-09-19T10:50:42+02:00",
+   "subject": "ci: replace M-Core umbrella build with targeted V2 gates"
+  },
+  {
+   "commit": "afdcdd023978f8251be545832a32f630b9b47d7f",
+   "date": "2026-09-19T10:50:03+02:00",
+   "subject": "v2.2: wire primary frontier registry into hub"
+  },
+  {
+   "commit": "ff1e912dbde133fef7c5532d99d47b7630f33f11",
+   "date": "2026-09-19T10:49:57+02:00",
+   "subject": "v2.2: register current primary mathematical frontiers"
+  },
+  {
+   "commit": "bc0187797c7f87f4e1c99e970e74e9623fa94d05",
+   "date": "2026-09-19T10:48:18+02:00",
+   "subject": "v2.2: disambiguate proof-debt labels from Lean placeholders"
+  },
+  {
+   "commit": "9947895225d2920d6fac53c6c9d2a6f8c16c99ac",
+   "date": "2026-09-18T19:09:36+02:00",
+   "subject": "ci: extend closed-system gate to V2.2 matrix"
+  },
+  {
+   "commit": "9db1d008e67544e635c16d902a71cf5533362b48",
+   "date": "2026-09-18T19:08:37+02:00",
+   "subject": "v2.2: wire 13-problem matrix and proof-debt engine"
+  },
+  {
+   "commit": "97973a8ad940576f95f51e29c08859b319581084",
+   "date": "2026-09-18T19:08:29+02:00",
+   "subject": "v2.2: add matrix and state regression tests"
+  },
+  {
+   "commit": "fb0d4d030dfc8d35feb6933b32cb6f945319d83c",
+   "date": "2026-09-18T19:08:23+02:00",
+   "subject": "v2.2: formalize operator shapes and certified transfers"
+  },
+  {
+   "commit": "623b4556a649a63cfc5fa62cea5357c30a60bc10",
+   "date": "2026-09-18T19:08:15+02:00",
+   "subject": "v2.2: normalize Lean Coq Isabelle Agda proof debt"
+  },
+  {
+   "commit": "e1df54bf2496830ea920a0fb2b05fd9b605b892f",
+   "date": "2026-09-18T19:08:07+02:00",
+   "subject": "v2.2: formalize 39x39 global relation matrix"
+  },
+  {
+   "commit": "2096926e2672e4c91047b7968425ee1fea578c85",
+   "date": "2026-09-18T19:07:58+02:00",
+   "subject": "v2.2: separate proof state pair state and polarity"
+  },
+  {
+   "commit": "ea3d795d165c774cb5e6ea05351c9a2355abdcc3",
+   "date": "2026-09-18T19:07:50+02:00",
+   "subject": "v2.2: define 13-problem 39-node universe"
+  },
+  {
+   "commit": "ac524f1c33276eed95ab5fb771b4798ea8a99295",
+   "date": "2026-09-18T18:19:09+02:00",
+   "subject": "docs: add closed cores research program"
+  },
+  {
+   "commit": "a2fa745c25222a5d8f095d52dd406904804034af",
+   "date": "2026-09-18T15:21:16+02:00",
+   "subject": "v2.1: test closed core identity and interior problem absorption"
+  },
+  {
+   "commit": "c9835dc6daa2e9db5c15cd720e5b6fcc7b7560b3",
+   "date": "2026-09-18T15:21:07+02:00",
+   "subject": "v2.1: wire closed core identity and problem embeddings"
+  },
+  {
+   "commit": "00d70c51761418d6d900bdd45bb199d3f971c0d7",
+   "date": "2026-09-18T15:21:00+02:00",
+   "subject": "v2.1: register problem closures at core interior or boundaries"
+  },
+  {
+   "commit": "6364bab430ed2e1b809863ba308f5f1142f93e8c",
+   "date": "2026-09-18T15:20:51+02:00",
+   "subject": "v2.1: formalize closed M-Core identity and closure locus"
+  },
+  {
+   "commit": "f6e38b487fdd53be13b39a965c01872115acc919",
+   "date": "2026-09-18T12:16:42+02:00",
+   "subject": "ci: account for Lean foundational propext axiom explicitly"
+  },
+  {
+   "commit": "c86f0179623025423d77a5c593f4705c9e6cebac",
+   "date": "2026-09-18T12:16:33+02:00",
+   "subject": "fix: repair Lean 4.19 scaling binder in legacy A4 gate"
+  },
+  {
+   "commit": "33585e1f5290f8656edd4dd0847f96ce542dccec",
+   "date": "2026-09-18T12:13:35+02:00",
+   "subject": "ci: bootstrap Lake manifest before V2.1 build"
+  },
+  {
+   "commit": "ddebb939ab018529de8b276b964a7ce49ce98f22",
+   "date": "2026-09-18T12:12:42+02:00",
+   "subject": "ci: avoid false positives in declaration-level axiom scan"
+  },
+  {
+   "commit": "9200b6e81f1dd1164adcf9cecf190960845eed62",
+   "date": "2026-09-18T12:11:41+02:00",
+   "subject": "ci: add V2.1 closed-chain fail-closed gate"
+  },
+  {
+   "commit": "5f7f843732943d69e46110bc840500b27fccea7f",
+   "date": "2026-09-18T12:11:19+02:00",
+   "subject": "v2.1: wire closed-chain verifier into M-Core"
+  },
+  {
+   "commit": "87bceb13ec6b8688908de2d40defa2717cc5b28f",
+   "date": "2026-09-18T12:11:12+02:00",
+   "subject": "v2.1: add fail-closed certificate tests"
+  },
+  {
+   "commit": "1811e46a6f0a4ab91881ddc22394c560a0111231",
+   "date": "2026-09-18T12:10:20+02:00",
+   "subject": "v2.1: add closure quantifier and scaling forms"
+  },
+  {
+   "commit": "5ef789b1e8b6f791a15d47c14cce16df0756d4e0",
+   "date": "2026-09-18T12:10:00+02:00",
+   "subject": "v2.1: formalize cross-repository operator templates"
+  },
+  {
+   "commit": "5fa1422042fabd88c329d9a15ec6232ce23e2102",
+   "date": "2026-09-18T12:09:50+02:00",
+   "subject": "v2.1: add fail-closed residue classifier"
+  },
+  {
+   "commit": "2fa769906a69d24cc14634458d556703eac813e2",
+   "date": "2026-09-18T12:09:44+02:00",
+   "subject": "v2.1: define fully closed and conditional chain types"
+  },
+  {
+   "commit": "13475ad67733dbc8d0962885ed521964f7af55b5",
+   "date": "2026-09-18T12:09:36+02:00",
+   "subject": "v2.1: formalize eight closed-chain control locks"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.V21.CertificateTests.badHead_fails_closed",
+   "file": "MCore/V21/CertificateTests.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬MCore.V21.CertificateTests.badHeadControls.Closed"
+  },
+  {
+   "name": "MCore.V21.CertificateTests.blockingResidue_fails_closed",
+   "file": "MCore/V21/CertificateTests.lean",
+   "line": 64,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬MCore.V21.CertificateTests.blockingResidueControls.Closed"
+  },
+  {
+   "name": "MCore.V21.CertificateTests.demo_chain_closes",
+   "file": "MCore/V21/CertificateTests.lean",
+   "line": 75,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "True → True"
+  },
+  {
+   "name": "MCore.V21.CertificateTests.greenControls_closed",
+   "file": "MCore/V21/CertificateTests.lean",
+   "line": 37,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V21.CertificateTests.greenControls.Closed"
+  },
+  {
+   "name": "MCore.V21.CertificateTests.packed_demo_endpoint",
+   "file": "MCore/V21/CertificateTests.lean",
+   "line": 90,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V21.CertificateTests.packedDemo.Start → MCore.V21.CertificateTests.packedDemo.Final"
+  },
+  {
+   "name": "MCore.V21.CertificateTests.packed_demo_identity",
+   "file": "MCore/V21/CertificateTests.lean",
+   "line": 87,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V21.coreIdentity MCore.V21.CertificateTests.packedDemo = MCore.V21.CertificateTests.packedDemo"
+  },
+  {
+   "name": "MCore.V21.CertificateTests.placebo_fails_closed",
+   "file": "MCore/V21/CertificateTests.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬MCore.V21.CertificateTests.placeboControls.Closed"
+  },
+  {
+   "name": "MCore.V21.ClosedChain.closes",
+   "file": "MCore/V21/ClosedChain.lean",
+   "line": 13,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {Start Middle Final : Prop}, MCore.V21.ClosedChain Start Middle Final → Start → Final"
+  },
+  {
+   "name": "MCore.V21.ConditionalChain.closes_under",
+   "file": "MCore/V21/ClosedChain.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {Hyp Start Middle Final : Prop}, MCore.V21.ConditionalChain Hyp Start Middle Final → Hyp → Start → Final"
+  },
+  {
+   "name": "MCore.V21.Examples.logical_two_edge_close",
+   "file": "MCore/V21/Examples.lean",
+   "line": 5,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (Start Middle Final : Prop), (Start → Middle) → (Middle → Final) → Start → Final"
+  },
+  {
+   "name": "MCore.V21.PackedClosure.endpoint",
+   "file": "MCore/V21/CoreIdentity.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c : MCore.V21.PackedClosure), c.Start → c.Final"
+  },
+  {
+   "name": "MCore.V21.TargetCertificate.endpoint",
+   "file": "MCore/V21/ClosedChain.lean",
+   "line": 24,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {Start Middle Final : Prop}, MCore.V21.TargetCertificate Start Middle Final → Start → Final"
+  },
+  {
+   "name": "MCore.V21.classify_target_iff",
+   "file": "MCore/V21/ResidueClassifier.lean",
+   "line": 28,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c : MCore.V21.ControlPack) [inst : Decidable c.Closed],   MCore.V21.classify c = MCore.V21.CertificateDisposition.targetCertificate ↔ c.Closed"
+  },
+  {
+   "name": "MCore.V21.closed_locus_stable",
+   "file": "MCore/V21/CoreIdentity.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c : MCore.V21.CoreClosedLocus), c.Start → c.Final"
+  },
+  {
+   "name": "MCore.V21.coreIdentity_fixed",
+   "file": "MCore/V21/CoreIdentity.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c : MCore.V21.CoreClosedLocus), MCore.V21.coreIdentity c = c"
+  },
+  {
+   "name": "MCore.V21.registered_endpoint",
+   "file": "MCore/V21/ProblemEmbedding.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (E : MCore.V21.ProblemEmbedding) {Start Middle Final : Prop} (cert : MCore.V21.TargetCertificate Start Middle Final),   (E.register cert).Start → (E.register cert).Final"
+  },
+  {
+   "name": "MCore.V22.ExactDecomposition.asIff",
+   "file": "MCore/V22/RecursiveDecomposition.lean",
+   "line": 12,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : ExactDecomposition A B) : A ↔ B"
+  },
+  {
+   "name": "MCore.V22.ExactDecomposition.child_proof_closes_parent",
+   "file": "MCore/V22/RecursiveDecomposition.lean",
+   "line": 24,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(d : ExactDecomposition A B) (hB : B) : A"
+  },
+  {
+   "name": "MCore.V22.ProblemInstance.promotion_requires_goal",
+   "file": "MCore/V22/ProblemInstance.lean",
+   "line": 19,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : ProblemInstance) (h : p.ReadyForPromotion) : p.Goal"
+  },
+  {
+   "name": "MCore.V22.ResidualSystem.acc_irrefl",
+   "file": "MCore/V22/ResidualCalculus.lean",
+   "line": 24,
+   "state": "nao_checado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : S.Residual) (hx : Acc S.smaller x) : ¬ S.smaller x x"
+  },
+  {
+   "name": "MCore.V22.ResidualSystem.no_step_from_closed",
+   "file": "MCore/V22/ResidualCalculus.lean",
+   "line": 38,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{r : S.Residual} (h : Closed S r) : ¬ ∃ r', Step S r r'"
+  },
+  {
+   "name": "MCore.V22.ResidualSystem.step_irrefl",
+   "file": "MCore/V22/ResidualCalculus.lean",
+   "line": 33,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{r : S.Residual} : ¬ Step S r r"
+  },
+  {
+   "name": "MCore.V22.Tests.closed_open_classifies",
+   "file": "MCore/V22/Tests.lean",
+   "line": 11,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.classifyPair MCore.V22.ProofState.provedTrue MCore.V22.ProofState.open = MCore.V22.PairState.mixed"
+  },
+  {
+   "name": "MCore.V22.Tests.false_true_is_both_closed",
+   "file": "MCore/V22/Tests.lean",
+   "line": 13,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.classifyPair MCore.V22.ProofState.provedFalse MCore.V22.ProofState.provedTrue = MCore.V22.PairState.bothClosed"
+  },
+  {
+   "name": "MCore.V22.Tests.indeterminate_absorbs_left",
+   "file": "MCore/V22/Tests.lean",
+   "line": 15,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.classifyPair MCore.V22.ProofState.indeterminate MCore.V22.ProofState.provedTrue =   MCore.V22.PairState.indeterminateCollision"
+  },
+  {
+   "name": "MCore.V22.Tests.indeterminate_absorbs_right",
+   "file": "MCore/V22/Tests.lean",
+   "line": 17,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.classifyPair MCore.V22.ProofState.open MCore.V22.ProofState.indeterminate =   MCore.V22.PairState.indeterminateCollision"
+  },
+  {
+   "name": "MCore.V22.Tests.node_count_is_39",
+   "file": "MCore/V22/Tests.lean",
+   "line": 4,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "MCore.V22.allNodes.length = 39"
+  },
+  {
+   "name": "MCore.V22.Tests.open_open_classifies",
+   "file": "MCore/V22/Tests.lean",
+   "line": 9,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.classifyPair MCore.V22.ProofState.open MCore.V22.ProofState.open = MCore.V22.PairState.bothOpen"
+  },
+  {
+   "name": "MCore.V22.Tests.relation_count_is_1521",
+   "file": "MCore/V22/Tests.lean",
+   "line": 6,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "MCore.V22.allDirectedNodePairs.length = 1521"
+  },
+  {
+   "name": "MCore.V22.allDirectedNodePairs_count",
+   "file": "MCore/V22/Matrix.lean",
+   "line": 17,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "MCore.V22.allDirectedNodePairs.length = 1521"
+  },
+  {
+   "name": "MCore.V22.allNodes_count",
+   "file": "MCore/V22/Universe.lean",
+   "line": 44,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "MCore.V22.allNodes.length = 39"
+  },
+  {
+   "name": "MCore.V22.allProblems_count",
+   "file": "MCore/V22/Universe.lean",
+   "line": 24,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.allProblems.length = 13"
+  },
+  {
+   "name": "MCore.V22.allStages_count",
+   "file": "MCore/V22/Universe.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.allStages.length = 3"
+  },
+  {
+   "name": "MCore.V22.beal_blocker_is_middle",
+   "file": "MCore/V22/NodeLocator.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.nodeAuditState { problem := MCore.V22.ProblemId.beal, stage := MCore.V22.Stage.middle } =   MCore.V22.NodeAuditState.blockingFrontier"
+  },
+  {
+   "name": "MCore.V22.beal_has_exact_blocker",
+   "file": "MCore/V22/ExactBlockerNecessity.lean",
+   "line": 29,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": HasExactBlocker .beal"
+  },
+  {
+   "name": "MCore.V22.beal_has_one_exact_blocker",
+   "file": "MCore/V22/ExactBlockers.lean",
+   "line": 105,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "(MCore.V22.blockersFor MCore.V22.ProblemId.beal).length = 1"
+  },
+  {
+   "name": "MCore.V22.blocker_mem_implies_hasExactBlocker",
+   "file": "MCore/V22/ExactBlockerNecessity.lean",
+   "line": 15,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{b : ExactBlocker} (hb : b ∈ exactMathematicalBlockers) : HasExactBlocker b.problem"
+  },
+  {
+   "name": "MCore.V22.blocking_nodes_count",
+   "file": "MCore/V22/NodeLocator.lean",
+   "line": 39,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "MCore.V22.blockingNodes.length = 7"
+  },
+  {
+   "name": "MCore.V22.bsd_blocker_is_middle",
+   "file": "MCore/V22/NodeLocator.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.nodeAuditState { problem := MCore.V22.ProblemId.bsd, stage := MCore.V22.Stage.middle } =   MCore.V22.NodeAuditState.blockingFrontier"
+  },
+  {
+   "name": "MCore.V22.bsd_has_exact_blocker",
+   "file": "MCore/V22/ExactBlockerNecessity.lean",
+   "line": 25,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": HasExactBlocker .bsd"
+  },
+  {
+   "name": "MCore.V22.bsd_has_one_exact_blocker",
+   "file": "MCore/V22/ExactBlockers.lean",
+   "line": 101,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "(MCore.V22.blockersFor MCore.V22.ProblemId.bsd).length = 1"
+  },
+  {
+   "name": "MCore.V22.candidate_record_not_mainCertified",
+   "file": "MCore/V22/FrontierRegistry.lean",
+   "line": 59,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (r : MCore.V22.FrontierRecord), r.evidenceScope = MCore.V22.EvidenceScope.candidateBranch → ¬r.MainCertified"
+  },
+  {
+   "name": "MCore.V22.candidate_scope_not_main",
+   "file": "MCore/V22/FrontierRegistry.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.EvidenceScope.candidateBranch ≠ MCore.V22.EvidenceScope.mainVerified"
+  },
+  {
+   "name": "MCore.V22.certificate_implies_final",
+   "file": "MCore/V22/ResidualCalculus.lean",
+   "line": 68,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{Final : Prop} (c : ClosureCertificate Final) : Final"
+  },
+  {
+   "name": "MCore.V22.certificate_to_certifiedClosed",
+   "file": "MCore/V22/ClosureCriterion.lean",
+   "line": 27,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{Goal : Prop} (c : ClosureCertificate Goal) : CertifiedClosed Goal { statementMatch"
+  },
+  {
+   "name": "MCore.V22.certifiedClosed_implies_goal",
+   "file": "MCore/V22/ClosureCriterion.lean",
+   "line": 22,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{Goal : Prop} {a : ClosureAudit} (h : CertifiedClosed Goal a) : Goal"
+  },
+  {
+   "name": "MCore.V22.certifiedClosed_to_certificate",
+   "file": "MCore/V22/ClosureCriterion.lean",
+   "line": 38,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{Goal : Prop} {a : ClosureAudit} (h : CertifiedClosed Goal a) : ClosureCertificate Goal where finalProof"
+  },
+  {
+   "name": "MCore.V22.closedDirections_start_iff_final",
+   "file": "MCore/V22/RecursiveDecomposition.lean",
+   "line": 41,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(o : ResearchObligation) (h : ClosedDirections o) : o.Start ↔ o.Final"
+  },
+  {
+   "name": "MCore.V22.closure_state_count",
+   "file": "MCore/V22/BidirectionalClosure.lean",
+   "line": 35,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": allClosureStates.length = 8"
+  },
+  {
+   "name": "MCore.V22.constructor_blocker_count",
+   "file": "MCore/V22/NodeLocator.lean",
+   "line": 115,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "MCore.V22.constructorBlockers.length = 7"
+  },
+  {
+   "name": "MCore.V22.constructor_closes_frontier",
+   "file": "MCore/V22/FrontierKernel.lean",
+   "line": 22,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : MCore.V22.FrontierKernel}, MCore.V22.FrontierConstructor K → K.GloballyClosed"
+  },
+  {
+   "name": "MCore.V22.exact_mathematical_blocker_count",
+   "file": "MCore/V22/ExactBlockers.lean",
+   "line": 78,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.exactMathematicalBlockers.length = 10"
+  },
+  {
+   "name": "MCore.V22.frontier_constructor_iff_global",
+   "file": "MCore/V22/FrontierKernel.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : MCore.V22.FrontierKernel}, Nonempty (MCore.V22.FrontierConstructor K) ↔ K.GloballyClosed"
+  },
+  {
+   "name": "MCore.V22.frontier_subnode_count",
+   "file": "MCore/V22/NodeLocator.lean",
+   "line": 93,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "MCore.V22.allFrontierSubnodes.length = 28"
+  },
+  {
+   "name": "MCore.V22.hodge_blocker_is_middle",
+   "file": "MCore/V22/NodeLocator.lean",
+   "line": 45,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.nodeAuditState { problem := MCore.V22.ProblemId.hodge, stage := MCore.V22.Stage.middle } =   MCore.V22.NodeAuditState.blockingFrontier"
+  },
+  {
+   "name": "MCore.V22.hodge_has_exact_blocker",
+   "file": "MCore/V22/ExactBlockerNecessity.lean",
+   "line": 21,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": HasExactBlocker .hodge"
+  },
+  {
+   "name": "MCore.V22.hodge_has_one_exact_blocker",
+   "file": "MCore/V22/ExactBlockers.lean",
+   "line": 97,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "(MCore.V22.blockersFor MCore.V22.ProblemId.hodge).length = 1"
+  },
+  {
+   "name": "MCore.V22.kernel_unassigned_nodes_count",
+   "file": "MCore/V22/NodeLocator.lean",
+   "line": 42,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "MCore.V22.unassignedNodes.length = 15"
+  },
+  {
+   "name": "MCore.V22.navierStokes_has_exact_blocker",
+   "file": "MCore/V22/ExactBlockerNecessity.lean",
+   "line": 45,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": HasExactBlocker .navierStokes"
+  },
+  {
+   "name": "MCore.V22.ns_blocker_is_middle",
+   "file": "MCore/V22/NodeLocator.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.nodeAuditState { problem := MCore.V22.ProblemId.navierStokes, stage := MCore.V22.Stage.middle } =   MCore.V22.NodeAuditState.blockingFrontier"
+  },
+  {
+   "name": "MCore.V22.ns_has_two_exact_blockers",
+   "file": "MCore/V22/ExactBlockers.lean",
+   "line": 93,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "(MCore.V22.blockersFor MCore.V22.ProblemId.navierStokes).length = 2"
+  },
+  {
+   "name": "MCore.V22.open_problem_has_registered_exact_blocker",
+   "file": "MCore/V22/ExactBlockerNecessity.lean",
+   "line": 53,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{p : ProblemId} (hp : OpenResearchProblem p) : HasExactBlocker p"
+  },
+  {
+   "name": "MCore.V22.pnp_blocker_is_middle",
+   "file": "MCore/V22/NodeLocator.lean",
+   "line": 57,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.nodeAuditState { problem := MCore.V22.ProblemId.pVsNP, stage := MCore.V22.Stage.middle } =   MCore.V22.NodeAuditState.blockingFrontier"
+  },
+  {
+   "name": "MCore.V22.pnp_has_exact_blocker",
+   "file": "MCore/V22/ExactBlockerNecessity.lean",
+   "line": 33,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": HasExactBlocker .pVsNP"
+  },
+  {
+   "name": "MCore.V22.pnp_has_one_exact_blocker",
+   "file": "MCore/V22/ExactBlockers.lean",
+   "line": 109,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "(MCore.V22.blockersFor MCore.V22.ProblemId.pVsNP).length = 1"
+  },
+  {
+   "name": "MCore.V22.primary_frontier_count",
+   "file": "MCore/V22/FrontierRegistry.lean",
+   "line": 170,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.primaryFrontiers.length = 8"
+  },
+  {
+   "name": "MCore.V22.recursive_frontier_exact",
+   "file": "MCore/V22/RecursiveDecomposition.lean",
+   "line": 54,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{Parent : Prop} (r : RecursiveFrontier Parent) : Parent ↔ r.Child"
+  },
+  {
+   "name": "MCore.V22.research_direction_count",
+   "file": "MCore/V22/BidirectionalClosure.lean",
+   "line": 89,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": allResearchDirections.length = 4"
+  },
+  {
+   "name": "MCore.V22.rh_blocker_is_middle",
+   "file": "MCore/V22/NodeLocator.lean",
+   "line": 61,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.nodeAuditState { problem := MCore.V22.ProblemId.riemann, stage := MCore.V22.Stage.middle } =   MCore.V22.NodeAuditState.blockingFrontier"
+  },
+  {
+   "name": "MCore.V22.rh_has_two_exact_blockers",
+   "file": "MCore/V22/ExactBlockers.lean",
+   "line": 85,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "(MCore.V22.blockersFor MCore.V22.ProblemId.riemann).length = 2"
+  },
+  {
+   "name": "MCore.V22.riemann_has_exact_blocker",
+   "file": "MCore/V22/ExactBlockerNecessity.lean",
+   "line": 37,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": HasExactBlocker .riemann"
+  },
+  {
+   "name": "MCore.V22.witness_incompatibility",
+   "file": "MCore/V22/BidirectionalClosure.lean",
+   "line": 97,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{Wpos Wneg : Type} {ValidPos : Wpos → Prop} {ValidNeg : Wneg → Prop} (hDisjoint : ∀ wp wn, ValidPos wp → ValidNeg wn → False) (wp : Wpos) (wn : Wneg) (hp : ValidPos wp) : ¬ ValidNeg wn"
+  },
+  {
+   "name": "MCore.V22.yangMills_has_exact_blocker",
+   "file": "MCore/V22/ExactBlockerNecessity.lean",
+   "line": 41,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": HasExactBlocker .yangMills"
+  },
+  {
+   "name": "MCore.V22.ym_blocker_is_middle",
+   "file": "MCore/V22/NodeLocator.lean",
+   "line": 65,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.V22.nodeAuditState { problem := MCore.V22.ProblemId.yangMills, stage := MCore.V22.Stage.middle } =   MCore.V22.NodeAuditState.blockingFrontier"
+  },
+  {
+   "name": "MCore.V22.ym_has_two_exact_blockers",
+   "file": "MCore/V22/ExactBlockers.lean",
+   "line": 89,
+   "state": "condicional",
+   "axioms_beyond_standard": [
+    "Lean.ofReduceBool"
+   ],
+   "statement": "(MCore.V22.blockersFor MCore.V22.ProblemId.yangMills).length = 2"
+  }
+ ],
+ "closed": 39,
+ "files_sha256": {
+  "MCore/V21/CertificateTests.lean": "0018d1e58d8e2d359ad299d9acf163fb2102df7bd1a98b615caeac0c82cbff6c",
+  "MCore/V21/ClosedChain.lean": "b14ba00bde851fd1dbd82fd4e9150f2f7680d3ca9b76793d2f61a59692a24633",
+  "MCore/V21/Control.lean": "a030efb8e8aa737bef429674d73f2bad48b02c9cc178d2d60204bc347f04bfdb",
+  "MCore/V21/CoreIdentity.lean": "b7124e8c0055ca6d08831b5a3d5985234e0e8c7a2e8b55c5d9b3d93e0fe59edf",
+  "MCore/V21/CrossRepo.lean": "d344ba54dcebaab0c3db252f477507e25070f1cb2d9540b5d8965c1034ecb7d5",
+  "MCore/V21/Examples.lean": "1cf40ca65d20c73998a926c09191cf2c56815c8eff4a2c5735d34b94b40afdb7",
+  "MCore/V21/ProblemEmbedding.lean": "12d50e7cb370d81aaa289cac4d4be2cbfac4c02e18531e2376058b48dfb13372",
+  "MCore/V21/ResidueClassifier.lean": "b20db6957fd7bb1b62b76c6a9df77776de287892eee548a167dc2a2ebca80896",
+  "MCore/V22/BidirectionalClosure.lean": "a22d35ccf61828fd7e5c57623f66c8dc012cdc62a1e69d14ce375e6c4adf5977",
+  "MCore/V22/ExactBlockers.lean": "ab87af7a7741c8f7a04166378db27e16de030629c2022de59d71d6b9ae87b916",
+  "MCore/V22/FrontierKernel.lean": "78b4faf7e81c82b03704068c7a1ea416f3658a63b0a3bf91a54b161ea011fac9",
+  "MCore/V22/FrontierRegistry.lean": "b70ad42368bb77de5954237681aed3d31410c138135be25d85a3df8a1dc74368",
+  "MCore/V22/Matrix.lean": "ee2d9b8278f90c458f2d02a554043de625a4614265d3e2b9ef0a36ea0d3fb9ac",
+  "MCore/V22/NodeLocator.lean": "b7550967ab58f1f912293b3ce6c07f3a25a89b7e5d51934d8692dcffbe937280",
+  "MCore/V22/Operators.lean": "b95431e37b96b95b72b6f6641b5275a1da994bf71f8a9d6bf188b5d059300fcc",
+  "MCore/V22/ProofDebt.lean": "1f52539bb7603554f2dfcf7dee97e1a1a41198c4f3e7fcaa0a70d61ecb6a74e8",
+  "MCore/V22/State.lean": "4f547faa7f3ebf206fbea3493193167e96a2e5ef7964a3c6d624da55fb4664e3",
+  "MCore/V22/Tests.lean": "fa4d8a5737fef4f6577d2f34f26ab57d9f287e729c7088b4fdcdc194917598ce",
+  "MCore/V22/Universe.lean": "d43407f47c4d648c5b6f7f0cba60b94b833d08c07ea52bf7dae96851d57a6fba",
+  "lakefile.lean": "f53cac7f442d9cb312870f171649382381e313931ad59cfc8d0799f52df430ac",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+ },
+ "published_at": "2026-10-28T19:19:18Z",
+ "certificate_sha256": "c926e78fd29eaf096926a7725b426dbeec69dd34994e380ad6e8d411965c1c69"
+}

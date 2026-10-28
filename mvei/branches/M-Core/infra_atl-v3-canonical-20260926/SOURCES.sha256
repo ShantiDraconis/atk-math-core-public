@@ -1,0 +1,4 @@
+d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e  branches/M-Core/infra_atl-v3-canonical-20260926/lakefile.lean
+55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea  branches/M-Core/infra_atl-v3-canonical-20260926/lean-toolchain
+2144edd58558c6a00eea0f1e4c3a2deb83c24e4cb80dd980802c4c8306daa155  branches/M-Core/infra_atl-v3-canonical-20260926/lean/MCore/ATL/V3/Core.lean
+0bb4020e1823153f757184ddc3f416baad3ba56152802e1b53d01c0186d28969  branches/M-Core/infra_atl-v3-canonical-20260926/lean/MCore/ATL/V3/Mining.lean

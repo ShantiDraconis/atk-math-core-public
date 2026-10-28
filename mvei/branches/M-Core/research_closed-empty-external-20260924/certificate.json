@@ -1,0 +1,192 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "research/closed-empty-external-20260924",
+ "branch_state": "parada",
+ "head_commit": "4d224f1dc036ec2c617af3b88be0083fee884cbc",
+ "head_commit_date": "2026-09-24T08:39:27+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "4d224f1dc036ec2c617af3b88be0083fee884cbc",
+   "date": "2026-09-24T08:39:27+01:00",
+   "subject": "ci: bootstrap Lean before kernel gate"
+  },
+  {
+   "commit": "c05dd4a812841409cebbbad7f1a54a6e62bb2aab",
+   "date": "2026-09-24T08:38:34+01:00",
+   "subject": "ci: kernel-check closed-empty resolution producer"
+  },
+  {
+   "commit": "cacc211898b7690e429455bcb3259b8bf8bd4e87",
+   "date": "2026-09-24T08:38:20+01:00",
+   "subject": "research: construct explicit evidence-gated producer witness"
+  },
+  {
+   "commit": "c9d5ee79e3c6e3ab5f960c8fea2fb9122ac3990e",
+   "date": "2026-09-24T08:38:18+01:00",
+   "subject": "research: define concrete resolution endpoint criterion"
+  },
+  {
+   "commit": "a1117d36859554f74346fc7d611c2cba6bcc51b4",
+   "date": "2026-09-24T08:35:41+01:00",
+   "subject": "research: add fail-closed external certificate chain"
+  },
+  {
+   "commit": "c23cc83e80c6923061fd405098dee98df365674b",
+   "date": "2026-09-24T08:35:38+01:00",
+   "subject": "research: add minimal evidence-gated real producer"
+  },
+  {
+   "commit": "3ca7483e0bbc53c6aee998f4fe071f4834cbc759",
+   "date": "2026-09-24T08:35:35+01:00",
+   "subject": "research: formalize evidence-gated resolution states"
+  },
+  {
+   "commit": "dcced119480cff11245dfe24594a882b2e69db5d",
+   "date": "2026-09-24T08:33:36+01:00",
+   "subject": "research: define fail-closed indeterminate-to-real transition"
+  },
+  {
+   "commit": "9a23dad70847c1f3600cb1690f2dcc650a8a7304",
+   "date": "2026-09-24T08:31:47+01:00",
+   "subject": "research: generate fail-closed external certificate record"
+  },
+  {
+   "commit": "b840a9f69665e1961ad8f679083c333defcdff83",
+   "date": "2026-09-24T08:30:19+01:00",
+   "subject": "research: add triadic operation payload and dominant-pole dynamics"
+  },
+  {
+   "commit": "b7b14c91c09b54b53d5a3990a12d1f158da1e442",
+   "date": "2026-09-24T08:28:24+01:00",
+   "subject": "research: derive canonical structure from single transition law"
+  },
+  {
+   "commit": "f189f5ddc6fd06811e333ace63d21f760864b539",
+   "date": "2026-09-24T08:12:49+01:00",
+   "subject": "research: add minimal fail-closed final-root chain"
+  },
+  {
+   "commit": "d0cdc8061993adb2463f12d7c361091bc9b7f814",
+   "date": "2026-09-24T08:12:46+01:00",
+   "subject": "research: add minimal fail-closed producer chain"
+  },
+  {
+   "commit": "c0f1d047d9a1661f08da7dc21fb976efaeae9d37",
+   "date": "2026-09-24T08:07:14+01:00",
+   "subject": "research: add minimal final root envelope"
+  },
+  {
+   "commit": "caa9c497e816b99d118997da475cfbf71a500458",
+   "date": "2026-09-24T08:06:17+01:00",
+   "subject": "research: add minimal external certificate envelope"
+  },
+  {
+   "commit": "8575376f0b8e77bec5221e7368a414c676cfdaaa",
+   "date": "2026-09-24T08:04:22+01:00",
+   "subject": "research: define minimal I three-state open-math closure"
+  },
+  {
+   "commit": "9f62edc8bec7d92869509e1c73112f0c6ade6629",
+   "date": "2026-09-24T07:50:38+01:00",
+   "subject": "research: minimal closed-empty structure (.github/workflows/research-final-external-minimal.yml)"
+  },
+  {
+   "commit": "6aebeb42a07242045d8b21149d2153cfb8259255",
+   "date": "2026-09-24T07:50:34+01:00",
+   "subject": "research: minimal closed-empty structure (research/final-external/status.json)"
+  },
+  {
+   "commit": "bd63c298377dcb119a218b218aeeb7a094235b78",
+   "date": "2026-09-24T07:50:30+01:00",
+   "subject": "research: minimal closed-empty structure (research/final-external/manifest.json)"
+  },
+  {
+   "commit": "73f21ee31ca8c4164e5833bc333462137670f719",
+   "date": "2026-09-24T07:50:26+01:00",
+   "subject": "research: minimal closed-empty structure (lean/MCore/Research/FinalExternalBranch.lean)"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.Real.E_one",
+   "file": "lean/MCore/Real/E.lean",
+   "line": 9,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.Real.E 1"
+  },
+  {
+   "name": "MCore.Real.RealProducer.closed",
+   "file": "lean/MCore/Real/RealProducer.lean",
+   "line": 11,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : MCore.Real.ResolutionEvidence} (P : MCore.Real.RealProducer E),   MCore.Real.indeterminacy (MCore.Real.ResolutionState.resolved P.endpoint) = 0"
+  },
+  {
+   "name": "MCore.Real.RealProducer.hasEvidence",
+   "file": "lean/MCore/Real/RealProducer.lean",
+   "line": 17,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : MCore.Real.ResolutionEvidence}, MCore.Real.RealProducer E → ∃ r, E r"
+  },
+  {
+   "name": "MCore.Real.half_bounds",
+   "file": "lean/MCore/Real/RealProducerWitness.lean",
+   "line": 7,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": ": 0 < half ∧ half < 1"
+  },
+  {
+   "name": "MCore.Real.indeterminacy_resolved",
+   "file": "lean/MCore/Real/Resolution.lean",
+   "line": 44,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (r : ℝ), MCore.Real.indeterminacy (MCore.Real.ResolutionState.resolved r) = 0"
+  },
+  {
+   "name": "MCore.Research.closed_empty_shape",
+   "file": "lean/MCore/Research/FinalExternalBranch.lean",
+   "line": 29,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": branchState.producerCount = 0 ∧ branchState.requiredProducers = 0"
+  },
+  {
+   "name": "MCore.Research.endpoint_does_not_issue",
+   "file": "lean/MCore/Research/FinalExternalBranch.lean",
+   "line": 34,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": branchState.finalRoot = none ∧ branchState.issued = false"
+  }
+ ],
+ "closed": 4,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/Real/E.lean": "a7ef2ab6b4292d218d30455af00bcfab7d3deec591fab4853defd3ec3d4ab3d0",
+  "lean/MCore/Real/RealProducer.lean": "48093c08ddcd27480b3c92b3003162527510787aafd1fe2d863852a2dcd2520c",
+  "lean/MCore/Real/Resolution.lean": "539e92bfed16e0e29a9edfb6c61ec93cf079da8501e8fae5b4b13e2abd66e2c1"
+ },
+ "published_at": "2026-10-28T19:19:21Z",
+ "certificate_sha256": "dc86328d002e119216f64cd86ef9aac12a6fffdd6106a530342ac1866b7c9894"
+}

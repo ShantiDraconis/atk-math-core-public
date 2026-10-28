@@ -1,0 +1,4 @@
+d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e  branches/M-Core/atk_open-math-forward-only-integration-20261001/lakefile.lean
+55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea  branches/M-Core/atk_open-math-forward-only-integration-20261001/lean-toolchain
+18b9fda9338cd5f1ec4e8537f4bcd47b4a2b99a3c20dd31f503764bdf847bf0d  branches/M-Core/atk_open-math-forward-only-integration-20261001/lean/MCore/MaterialMath/TriCyclicAlgebra.lean
+75a23758b105ca6d072f59d193a1f0d2c52ee130cfee4f4c84e9a94a1cbfeab5  branches/M-Core/atk_open-math-forward-only-integration-20261001/lean/MCore/MaterialMath/TwoSidedMaterialResolution.lean

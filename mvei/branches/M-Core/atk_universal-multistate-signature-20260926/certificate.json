@@ -1,0 +1,363 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/universal-multistate-signature-20260926",
+ "branch_state": "parada",
+ "head_commit": "e6b79d13c0173980e29c69274ab3e7c72d31c283",
+ "head_commit_date": "2026-09-27T00:49:43+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "e6b79d13c0173980e29c69274ab3e7c72d31c283",
+   "date": "2026-09-27T00:49:43+01:00",
+   "subject": "freeze(atk): pin canonical Navier-Stokes ActualNS-to-G1 closure delta"
+  },
+  {
+   "commit": "76289970db0b34cdd04e5d8eaf325ab842a94eb1",
+   "date": "2026-09-27T00:47:43+01:00",
+   "subject": "freeze(atk): pin canonical Yang-Mills B6 physical spectral delta"
+  },
+  {
+   "commit": "64251512dea9a66a2acaa8fc7beff07f3b3905b5",
+   "date": "2026-09-27T00:46:56+01:00",
+   "subject": "freeze(atk): pin canonical Hodge algebraicity-surjectivity delta"
+  },
+  {
+   "commit": "b2cc5c3c463ea55a53ef03abbbbfada7e18a6a1c",
+   "date": "2026-09-27T00:43:49+01:00",
+   "subject": "freeze(atk): pin canonical BSD rank and refined leading-coefficient deltas"
+  },
+  {
+   "commit": "68ffb1487af1807bd5009fbc0baa95854159f832",
+   "date": "2026-09-27T00:42:05+01:00",
+   "subject": "freeze(atk): pin canonical P-vs-NP fixed-model not-in-P delta"
+  },
+  {
+   "commit": "454a6e608db51f29d4e8bfc433d60a11244a9313",
+   "date": "2026-09-27T00:38:58+01:00",
+   "subject": "freeze(atk): pin canonical Beal triple-gcd terminal delta"
+  },
+  {
+   "commit": "96d743d091568e837446ad98affd7f3b13e348b8",
+   "date": "2026-09-27T00:37:28+01:00",
+   "subject": "freeze(atk): pin canonical Riemann zero-residue terminal delta"
+  },
+  {
+   "commit": "e2fac710feaae625abc4c1f2e95ce2d5cbed2006",
+   "date": "2026-09-27T00:29:58+01:00",
+   "subject": "ci(atk): validate terminal certificate reconciliation"
+  },
+  {
+   "commit": "555dd242ecc3d3a0f19ec43d112c85f4a296c20b",
+   "date": "2026-09-27T00:29:49+01:00",
+   "subject": "feat(atk): reconcile located certificates with exact terminal producers"
+  },
+  {
+   "commit": "f3a17bce9c826f9677771fb2e8eb71f090321db1",
+   "date": "2026-09-27T00:22:01+01:00",
+   "subject": "ci(atk): validate structural completeness certificate"
+  },
+  {
+   "commit": "87d9a7413f3b9f827e197c2f7b14efe9e46eaeff",
+   "date": "2026-09-27T00:21:51+01:00",
+   "subject": "feat(atk): certify structural completeness of exact-gap ledger"
+  },
+  {
+   "commit": "f6fdc849b601b715be758ec5c1acf3f0cbfbd276",
+   "date": "2026-09-27T00:13:03+01:00",
+   "subject": "ci: certify ATK structural logic layer"
+  },
+  {
+   "commit": "913548b02ae13ade815ee68823c5b01ee4db4cc3",
+   "date": "2026-09-27T00:12:56+01:00",
+   "subject": "formal: certify ATK structural logic and endpoint formulation gaps"
+  },
+  {
+   "commit": "ed222521b9924afd92ea6ff427d9d65f994ef839",
+   "date": "2026-09-26T23:58:24+01:00",
+   "subject": "ci(atk): audit master multistate manifestation theorem"
+  },
+  {
+   "commit": "5052c8fe70a3df6e33a4ae62f697ce8364e21170",
+   "date": "2026-09-26T23:58:13+01:00",
+   "subject": "feat(atk): consolidate master multistate manifestation theorem"
+  },
+  {
+   "commit": "4b912df569b37d8d17e6395bff775ad6860c1d68",
+   "date": "2026-09-26T23:50:11+01:00",
+   "subject": "ci: audit structural multistate theorem explicitly"
+  },
+  {
+   "commit": "81461b3058e80a9b383373235af3d490e17001ca",
+   "date": "2026-09-26T23:50:02+01:00",
+   "subject": "formal: separate universal multistate structure from problem-specific values"
+  },
+  {
+   "commit": "cc0b38af7f77beb6c11a2130eb40466c56351b90",
+   "date": "2026-09-26T23:49:13+01:00",
+   "subject": "ci(atk): audit structural multistate theorem"
+  },
+  {
+   "commit": "6209cdd43043b2babac0a1c17c18beedf61a4d2f",
+   "date": "2026-09-26T23:49:05+01:00",
+   "subject": "fix(atk): model distinct problem objects with shared tri-state structure"
+  },
+  {
+   "commit": "1ec2ebd1ed2db9baabbee90be49ed246521fdc11",
+   "date": "2026-09-26T23:47:42+01:00",
+   "subject": "ci(atk): validate universal multistate signature"
+  },
+  {
+   "commit": "738d1aa18ab6947ed6079ae568621fa79a0523f1",
+   "date": "2026-09-26T23:47:29+01:00",
+   "subject": "feat(atk): formalize universal 0-1-2 multistate signature"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.ATK.every_resolution_fills_same_structural_slot",
+   "file": "lean/MCore/ATK/StructuralCompleteness.lean",
+   "line": 26,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(r : ResolutionShape) : terminalRoleOfResolution r = .terminalOfZero"
+  },
+  {
+   "name": "MCore.ATK.exact_gap_ledger_has_eight_lanes",
+   "file": "lean/MCore/ATK/StructuralCompleteness.lean",
+   "line": 56,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": exactGaps.length = 8"
+  },
+  {
+   "name": "MCore.ATK.exact_gap_ledger_structurally_complete",
+   "file": "lean/MCore/ATK/StructuralCompleteness.lean",
+   "line": 47,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": ∀ g ∈ exactGaps, (schemaOfExactGap g).terminalRole = .terminalOfZero"
+  },
+  {
+   "name": "MCore.ATK.locatedInfrastructureOnlyCount_eq_seven",
+   "file": "lean/MCore/ATK/TerminalCertificateReconciliation.lean",
+   "line": 64,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.ATK.locatedInfrastructureOnlyCount = 7"
+  },
+  {
+   "name": "MCore.ATK.locatedTerminalProducerCount_eq_zero",
+   "file": "lean/MCore/ATK/TerminalCertificateReconciliation.lean",
+   "line": 56,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.ATK.locatedTerminalProducerCount = 0"
+  },
+  {
+   "name": "MCore.ATK.mathematicalOpenGaps_eq_seven",
+   "file": "lean/MCore/ATK/StructuralCompleteness.lean",
+   "line": 81,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": mathematicalOpenGaps = 7"
+  },
+  {
+   "name": "MCore.ATK.structuralOpenGaps_eq_zero",
+   "file": "lean/MCore/ATK/StructuralCompleteness.lean",
+   "line": 71,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": structuralOpenGaps = 0"
+  },
+  {
+   "name": "MCore.ATK.structural_closed_mathematical_open",
+   "file": "lean/MCore/ATK/StructuralCompleteness.lean",
+   "line": 85,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": structuralOpenGaps = 0 ∧ mathematicalOpenGaps = 7"
+  },
+  {
+   "name": "MCore.ATK.terminal_reconciliation_firewall",
+   "file": "lean/MCore/ATK/TerminalCertificateReconciliation.lean",
+   "line": 68,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.ATK.locatedTerminalProducerCount = 0 ∧ MCore.ATK.locatedInfrastructureOnlyCount = 7"
+  },
+  {
+   "name": "MCore.FinalFail.atk_multistate_manifestation_theorem",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 132,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(A : ATKManifestation) : (∃ code : ATKTriState → Nat, Function.Injective code ∧ (∀ s, code s < 3)) ∧ A.gapShape = gapShapeOfATKProblem A.problem ∧ (∀ B : ATKManifestation, StructurallyEquivalent A B)"
+  },
+  {
+   "name": "MCore.FinalFail.atk_structural_logic_certifiable",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 245,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : ATKProblem) (R : ATKRouteFormulation) (hshape : R.gapShape = gapShapeOfATKProblem p) : Nonempty ATKFormulationGapCertificate"
+  },
+  {
+   "name": "MCore.FinalFail.beal_signature",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 278,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": gapShapeOfATKProblem (.active .beal) = .F6_exclusion"
+  },
+  {
+   "name": "MCore.FinalFail.bsd_signature",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 294,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": gapShapeOfATKProblem (.active .bsd) = .F5_equalityDefect"
+  },
+  {
+   "name": "MCore.FinalFail.hodge_signature",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 291,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": gapShapeOfATKProblem (.active .hodge) = .F4_realization"
+  },
+  {
+   "name": "MCore.FinalFail.manifestation_evidence_from_structure",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 147,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(A : ATKManifestation) : ATKManifestationEvidence"
+  },
+  {
+   "name": "MCore.FinalFail.manifestation_gap_shape",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 118,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(A : ATKManifestation) : A.gapShape = gapShapeOfATKProblem A.problem"
+  },
+  {
+   "name": "MCore.FinalFail.manifestations_structurally_equivalent",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 90,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(A B : ATKManifestation) : StructurallyEquivalent A B"
+  },
+  {
+   "name": "MCore.FinalFail.navierStokes_signature",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 297,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": gapShapeOfATKProblem (.active .navierStokes) = .F7_limitCompactness"
+  },
+  {
+   "name": "MCore.FinalFail.pVsNP_signature",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 288,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": gapShapeOfATKProblem (.active .pVsNP) = .F2_positiveGapOrSeparation"
+  },
+  {
+   "name": "MCore.FinalFail.poincare_signature",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 300,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": gapShapeOfATKProblem .poincare = .F8_fixedPointClassification"
+  },
+  {
+   "name": "MCore.FinalFail.riemann_signature",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 282,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": gapShapeOfATKProblem (.active .riemann) = .F1_vanishing"
+  },
+  {
+   "name": "MCore.FinalFail.structural_logic_is_not_terminal_claim",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 265,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": ATKClaimLayer.structuralLogic ≠ ATKClaimLayer.terminalMathematics"
+  },
+  {
+   "name": "MCore.FinalFail.structural_theorem_firewall",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 274,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": StructuralTheoremDoesNotCloseTerminalClaims"
+  },
+  {
+   "name": "MCore.FinalFail.triStateCode_injective",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 36,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": Function.Injective triStateCode"
+  },
+  {
+   "name": "MCore.FinalFail.triStateCode_range",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 32,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(s : ATKTriState) : triStateCode s < 3"
+  },
+  {
+   "name": "MCore.FinalFail.tristate_code_hits_zero_one_two",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 101,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": (∃ s, triStateCode s = 0) ∧ (∃ s, triStateCode s = 1) ∧ (∃ s, triStateCode s = 2)"
+  },
+  {
+   "name": "MCore.FinalFail.universal_multistate_structure_exists",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 110,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": ∃ code : ATKTriState → Nat, Function.Injective code ∧ (∀ s, code s < 3)"
+  },
+  {
+   "name": "MCore.FinalFail.yangMills_signature",
+   "file": "lean/MCore/FinalFail/UniversalMultistateSignature.lean",
+   "line": 285,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": gapShapeOfATKProblem (.active .yangMills) = .F2_positiveGapOrSeparation"
+  }
+ ],
+ "closed": 3,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/ATK/TerminalCertificateReconciliation.lean": "67afb116daca4ac5676f595168ff12e63c487b8fcfdd42ede5060970f221f199",
+  "lean/MCore/FinalFail/ExactGapLedger.lean": "e3f1fce7f53c274cdde3b7c12f0c7ae0b25f949307234cc7eae8f84fc0255605",
+  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "50df3ee014e1d7c0800d1fadb89cb8b25235cd4666eca5a6a3f7d03b79ce2e01"
+ },
+ "published_at": "2026-10-28T19:19:21Z",
+ "certificate_sha256": "ea17fcf43778c91b5667bc2a2cc3ed65afadee2bfc37d0c8458f25bbdf7cc76d"
+}

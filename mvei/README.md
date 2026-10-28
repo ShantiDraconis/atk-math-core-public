@@ -11,41 +11,52 @@ This folder records what the Lean 4 kernel said about the Lean sources of the pr
 
 ## What the kernel said
 
-MVEI verification of 2026-10-28T16:41:02+00:00, on commit `390e3781109fa42e977d143caa9204ed94166a7b`. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
+MVEI verification of 2026-10-28T19:11:15+00:00, on commit `390e3781109fa42e977d143caa9204ed94166a7b`. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
 
 | Lean project | Lean version | Build | Closed | Conditional | Open (`sorry`) | Checked file by file: closed / conditional / open / proof error / not reached |
 |---|---|---|---:|---:|---:|---|
-| `.` | v4.19.0 | OK | 245 | 0 | 0 | 102 / 0 / 1 / 16 / 370 |
-| `atk-kernel` | v4.34.1 | OK | 10 324 | 0 | 0 | — |
+| `.` | v4.19.0 | OK | 245 | 0 | 0 | 110 / 3 / 8 / 32 / 336 |
+| `atk-kernel` | v4.34.1 | OK | 11 236 | 0 | 0 | 36 / 0 / 0 / 0 / 3 |
 
 | Closed theorems in this repository | |
 |---|---:|
-| Counting each project | 10 671 |
-| Unique (name + statement) | 10 671 |
-| Unique, without the lemmas Lean generates itself (`eq_1`, `mk.inj`, `sizeOf_spec`, `deriving`) | 8 740 |
+| Counting each project | 11 627 |
+| Unique (name + statement) | 11 623 |
+| Unique, without the lemmas Lean generates itself (`eq_1`, `mk.inj`, `sizeOf_spec`, `deriving`) | 9 658 |
 
 *Closed* means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`. It says that the statement as written in the file is proved; it does not say that an open problem is solved. Every statement is in `VERIFICACAO.json`. *Conditional* means the proof also uses axioms declared in the repository; *open* means it uses `sorry`. *Checked file by file* covers the files that no build reached: each one went through Lean whole, with a `#print axioms` for each theorem.
 
 | Theorem | Project | State | Axioms beyond the standard three |
 |---|---|---|---|
+| `ATK.Experimento.rh_e_beal_postulados` | `. (file by file)` | conditional | `ATK.Experimento.S`, `ATK.Experimento.W`, `ATK.Experimento.hS` |
+| `ATK.Experimento.rh_e_nao_rh` | `. (file by file)` | conditional | `ATK.Experimento.Wc` |
+| `ATK.Experimento.falso` | `. (file by file)` | conditional | `ATK.Experimento.Wc` |
+| `ATK.Experimento.rh_por_sorry` | `. (file by file)` | open | `sorryAx` |
 | `MCore.Poincare.promote_to_kernel_endpoint` | `. (file by file)` | open | `sorryAx` |
+| `MCore.IBoundary.approach_states_distinct` | `. (file by file)` | open | `sorryAx` |
+| `MCore.IBoundary.terminal_projection_not_injective` | `. (file by file)` | open | `sorryAx` |
+| `MCore.IBoundary.StructuralBoundaryInformationLoss` | `. (file by file)` | open | `sorryAx` |
+| `MCore.IBoundary.approach_states_distinct` | `. (file by file)` | open | `sorryAx` |
+| `MCore.IBoundary.terminal_projection_not_injective` | `. (file by file)` | open | `sorryAx` |
+| `MCore.IBoundary.StructuralBoundaryInformationLoss` | `. (file by file)` | open | `sorryAx` |
 
 ### Declared theorems
 
-The `.lean` files of the verified commit declare 9 572 `theorem`/`lemma` (counting copies). The kernel checked 8 267 of them (8 267 closed, 0 conditional, 0 open). The closed count in the table above is larger: it also counts the theorems Lean generates by itself (equation lemmas, structure fields, `deriving`), which are not written in the text. For 1 305 the kernel has no result:
+The `.lean` files of the verified commit declare 9 572 `theorem`/`lemma` (counting copies). The kernel checked 9 195 of them (9 189 closed, 0 conditional, 6 open). The closed count in the table above is larger: it also counts the theorems Lean generates by itself (equation lemmas, structure fields, `deriving`), which are not written in the text. For 377 the kernel has no result:
 
 | Reason | Theorems |
 |---|---:|
-| the project built, but the file is not part of the lakefile target | 921 |
-| checked file by file: Lean did not reach the theorem (missing import, syntax error or timeout) | 366 |
-| checked file by file: the written proof does not pass the kernel | 16 |
+| checked file by file: Lean did not reach the theorem (missing import, syntax error or timeout) | 339 |
+| checked file by file: the written proof does not pass the kernel | 32 |
+| the project built, but the file is not part of the lakefile target | 4 |
 | the file compiled, but the name did not appear in the kernel (private, mutual or macro-generated) | 2 |
 
 A new kernel run for this repository is in progress in the MVEI pipeline; this folder will be updated with its result.
 
 ### MVEI corrections
 
-* `correcoes/imports-no-topo.patch` (import fora do início do arquivo, 1 file(s)): applies to the published sources: `git apply -p1 --directory=imports/M-Core mvei/correcoes/imports-no-topo.patch`
+* `correcoes/imports-no-topo.patch` (import fora do início do arquivo, 1 file(s)): applies to the published sources: `git apply -p1 --directory=imports/M-Core mvei/correcoes/imports-no-topo.patch` (in order, after the ones above)
+* `correcoes/renomear-imports-mathlib.patch` (import de módulo que não existe na versão do Mathlib do projeto (renomeado ou dividido), 2 file(s)): applies to the published sources: `git apply -p1 --directory=imports/M-Core mvei/correcoes/renomear-imports-mathlib.patch` (in order, after the ones above)
 
 ## Files in this folder
 

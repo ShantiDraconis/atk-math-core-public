@@ -1,0 +1,576 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "work/kernel-truncation-closure-20261005",
+ "branch_state": "parada",
+ "head_commit": "a3c0a60083a01e6d2ecf93a87b68763f0c7f47cd",
+ "head_commit_date": "2026-10-05T16:03:28+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "a3c0a60083a01e6d2ecf93a87b68763f0c7f47cd",
+   "date": "2026-10-05T16:03:28+02:00",
+   "subject": "fix: simplify truncation certificate typing"
+  },
+  {
+   "commit": "4a5e9e2ee7f32f87f9e4017eb14e50e8f7a2d3cd",
+   "date": "2026-10-05T15:59:18+02:00",
+   "subject": "ci: build canonical three-rule closure"
+  },
+  {
+   "commit": "9d690c3933134242bb5690655a14aae7e687dd47",
+   "date": "2026-10-05T15:58:48+02:00",
+   "subject": "ci: kernel check canonical three-rule closure law"
+  },
+  {
+   "commit": "b793a7f4029339896f0ab1db0711fa93529f80b8",
+   "date": "2026-10-05T15:58:40+02:00",
+   "subject": "formalize canonical three-rule ATK closure without truncation axiom"
+  },
+  {
+   "commit": "77b491f529d59ba25745c27ace3f87e00eb1ff19",
+   "date": "2026-10-05T15:58:32+02:00",
+   "subject": "formalize canonical FOUND EXHAUSTED LOOP closure law"
+  },
+  {
+   "commit": "f522c9c8ae10e84ede43a219a028e7ca75710698",
+   "date": "2026-10-05T15:43:40+02:00",
+   "subject": "ci: enforce final root and final proof claim gate"
+  },
+  {
+   "commit": "8cfb1dd95437567a18bf9032b6f5f1991fce6527",
+   "date": "2026-10-05T15:43:28+02:00",
+   "subject": "fix final claim gate output path"
+  },
+  {
+   "commit": "1bc6f8266ccf19c9d429886cfa8804ee4fe4fac4",
+   "date": "2026-10-05T15:42:59+02:00",
+   "subject": "add fail closed final root and final proof claim gate"
+  },
+  {
+   "commit": "4e33dc6368ac9df5a10a257c808f97459f77390d",
+   "date": "2026-10-05T15:39:09+02:00",
+   "subject": "ci: enforce external material-only promotion policy"
+  },
+  {
+   "commit": "33b5fa8f1571435d733b212d296451b6dd97d5a4",
+   "date": "2026-10-05T15:38:58+02:00",
+   "subject": "add strict external material proof promotion gate"
+  },
+  {
+   "commit": "5c5aac03c20027d8682d8ace49292ab64afe9312",
+   "date": "2026-10-05T15:38:24+02:00",
+   "subject": "guard external promotion behind material producer certificate"
+  },
+  {
+   "commit": "f0b8c24bafe675a8363bb22633a90a44ae96c209",
+   "date": "2026-10-05T15:21:21+02:00",
+   "subject": "chore: trigger truncation-law kernel audit"
+  },
+  {
+   "commit": "3261d6a8745704ba73fa34e6585a3d072c07541d",
+   "date": "2026-10-05T15:20:50+02:00",
+   "subject": "ci: kernel-check minimal blocker truncation law"
+  },
+  {
+   "commit": "76b6f4fbb0e7f60be4711b3afe78cb17cb07dfd9",
+   "date": "2026-10-05T15:20:15+02:00",
+   "subject": "formalize minimal blocker truncation as terminal kernel search law"
+  },
+  {
+   "commit": "e0b2eddfcaf067b182c4f2ffe1ed9a5fca1a8226",
+   "date": "2026-10-05T12:45:21+02:00",
+   "subject": "master inventory: close registry wiring"
+  },
+  {
+   "commit": "a59a7dc7678268544a49a3e5b468fe6f33a40f5f",
+   "date": "2026-10-05T12:45:11+02:00",
+   "subject": "master inventory: add .github/workflows/master-claim-inventory-audit.yml"
+  },
+  {
+   "commit": "6a9d9fcbf4599320f4a138ec07b334a4da98eae8",
+   "date": "2026-10-05T12:45:08+02:00",
+   "subject": "master inventory: add scripts/audit-master-inventory.sh"
+  },
+  {
+   "commit": "ddecb9ff130a91e1bd11d3e384f81077ab21e9e6",
+   "date": "2026-10-05T12:44:51+02:00",
+   "subject": "master inventory: add lean/MCore/Audit/StatusSummary.lean"
+  },
+  {
+   "commit": "cb79baa375138b1d3a239038dd25805a95a531d4",
+   "date": "2026-10-05T12:44:49+02:00",
+   "subject": "master inventory: add lean/MCore/OpenMath/All.lean"
+  },
+  {
+   "commit": "6546e792b32458e87cf81fa0a0c59d92532e041f",
+   "date": "2026-10-05T12:44:47+02:00",
+   "subject": "master inventory: add lean/MCore/Problems/Registry.lean"
+  },
+  {
+   "commit": "c86c6c4026aea90be31909dc1976e2de4547036d",
+   "date": "2026-10-05T12:44:35+02:00",
+   "subject": "master inventory: derive BEq for canonical states"
+  },
+  {
+   "commit": "4deb08aff46cbf8a12e811ad08a119c8c1b99f4a",
+   "date": "2026-10-05T12:44:05+02:00",
+   "subject": "master inventory: wire audit structure into root build"
+  },
+  {
+   "commit": "4d3bb6ce1b8d6848e994a73ec995894e16addcd0",
+   "date": "2026-10-05T12:43:53+02:00",
+   "subject": "master inventory: add MASTER_CLAIM_INVENTORY.md"
+  },
+  {
+   "commit": "db068a9947a7ec916b269472710890ae81e1336c",
+   "date": "2026-10-05T12:43:51+02:00",
+   "subject": "master inventory: add lean/MCore/Audit/MasterCertificate.lean"
+  },
+  {
+   "commit": "95f6afbe29c95248325e0fefa72639aec0fa21ac",
+   "date": "2026-10-05T12:43:49+02:00",
+   "subject": "master inventory: add lean/MCore/Audit/WorkQueue.lean"
+  },
+  {
+   "commit": "f2c899cc1e19ccc08c680103c0c9bf7ba12c3ba3",
+   "date": "2026-10-05T12:43:47+02:00",
+   "subject": "master inventory: add lean/MCore/Audit/MasterDependencies.lean"
+  },
+  {
+   "commit": "5c73e065e37f8b9e1442aa52cb8ee90cbf2b2714",
+   "date": "2026-10-05T12:43:45+02:00",
+   "subject": "master inventory: add lean/MCore/Audit/MasterClaims.lean"
+  },
+  {
+   "commit": "765ff65f6dc4596463ca293bea59b4e485c60986",
+   "date": "2026-10-05T12:43:43+02:00",
+   "subject": "master inventory: add lean/MCore/Audit/HistoricalClaims.lean"
+  },
+  {
+   "commit": "e34a561d4a3bfa0312c90b1f2b8f67f58372a9e6",
+   "date": "2026-10-05T12:43:09+02:00",
+   "subject": "master inventory: add lean/MCore/OpenMath/Beal.lean"
+  },
+  {
+   "commit": "edee086537adde9cda683e1c28c81b60e307cfe1",
+   "date": "2026-10-05T12:43:07+02:00",
+   "subject": "master inventory: add lean/MCore/OpenMath/YM.lean"
+  },
+  {
+   "commit": "770702fb827c878f2325c9d28af757a79942f0b7",
+   "date": "2026-10-05T12:43:05+02:00",
+   "subject": "master inventory: add lean/MCore/OpenMath/Hodge.lean"
+  },
+  {
+   "commit": "9ddfec5087192d152277dfd2086b7125436ff185",
+   "date": "2026-10-05T12:43:03+02:00",
+   "subject": "master inventory: add lean/MCore/OpenMath/BSD.lean"
+  },
+  {
+   "commit": "4febfada24c3d7ca09d90d02719d8eec1e486424",
+   "date": "2026-10-05T12:43:00+02:00",
+   "subject": "master inventory: add lean/MCore/OpenMath/NS.lean"
+  },
+  {
+   "commit": "eeb526d3a72f63e6ea7342ed4b48554d2d420b43",
+   "date": "2026-10-05T12:42:58+02:00",
+   "subject": "master inventory: add lean/MCore/OpenMath/PNP.lean"
+  },
+  {
+   "commit": "7e4f7db5059dffd8657654403c4e5f208dc759ae",
+   "date": "2026-10-05T12:42:55+02:00",
+   "subject": "master inventory: add lean/MCore/OpenMath/RH.lean"
+  },
+  {
+   "commit": "3cc4a73e9025649da536cb364d7e391cbe4a63dd",
+   "date": "2026-10-05T12:42:53+02:00",
+   "subject": "master inventory: add lean/MCore/Problems/Lane.lean"
+  },
+  {
+   "commit": "d306fd3803b32cce3169ca6464dc24c2a1baa164",
+   "date": "2026-10-05T12:42:25+02:00",
+   "subject": "master inventory: add lean/MCore/Reuse/Registry.lean"
+  },
+  {
+   "commit": "c8d285e169a11df022070b3de113d27142544b91",
+   "date": "2026-10-05T12:42:23+02:00",
+   "subject": "master inventory: add lean/MCore/Reuse/Transport.lean"
+  },
+  {
+   "commit": "9ad5926bee2ab083c77b0555b967f394cc37f766",
+   "date": "2026-10-05T12:42:21+02:00",
+   "subject": "master inventory: add lean/MCore/Canonical/Rules.lean"
+  },
+  {
+   "commit": "f9e09672265cb83eb5ec82999b91cf57cbcff981",
+   "date": "2026-10-05T12:42:18+02:00",
+   "subject": "master inventory: add lean/MCore/Canonical/Claim.lean"
+  },
+  {
+   "commit": "14a58f3dd213e9539f564ffbbd0d930d04db88e2",
+   "date": "2026-10-05T12:42:16+02:00",
+   "subject": "master inventory: add lean/MCore/Canonical/ClaimState.lean"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.ATKThreeRuleClosure.closureWitness_proves_target",
+   "file": "lean/MCore/ATKThreeRuleClosure.lean",
+   "line": 138,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : Type u} {Target : Prop} (W : ConcreteClosureWitness S Target) : Target"
+  },
+  {
+   "name": "MCore.ATKThreeRuleClosure.exhausted_closes",
+   "file": "lean/MCore/ATKThreeRuleClosure.lean",
+   "line": 105,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{α S : Type u} {Target : Prop} {space : CompleteSearchSpace α} {blocking : DecidableBlocking α} {M : LoopMeasure S} (h : ∀ c ∈ space.domain, ¬ blocking.isBlocking c) (P : CertifiedMaterialProducer S Target) : (SearchResult.exhausted (space"
+  },
+  {
+   "name": "MCore.ATKThreeRuleClosure.found_closes",
+   "file": "lean/MCore/ATKThreeRuleClosure.lean",
+   "line": 94,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{α S : Type u} {Target : Prop} {space : CompleteSearchSpace α} {blocking : DecidableBlocking α} {M : LoopMeasure S} (P : CertifiedMaterialProducer S Target) : (SearchResult.found (space"
+  },
+  {
+   "name": "MCore.ATKThreeRuleClosure.loopMeasure_wellFounded",
+   "file": "lean/MCore/ATKThreeRuleClosure.lean",
+   "line": 28,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : Type u} (M : LoopMeasure S) : WellFounded (fun b a => M.LoopEdge a b)"
+  },
+  {
+   "name": "MCore.ATKThreeRuleClosure.loop_detected_closes",
+   "file": "lean/MCore/ATKThreeRuleClosure.lean",
+   "line": 117,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{α S : Type u} {Target : Prop} {space : CompleteSearchSpace α} {blocking : DecidableBlocking α} {M : LoopMeasure S} (L : LoopInvariant S Target M) : (SearchResult.loopDetected (space"
+  },
+  {
+   "name": "MCore.ATKThreeRuleClosure.materialProducer_proves_target",
+   "file": "lean/MCore/ATKThreeRuleClosure.lean",
+   "line": 145,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : Type u} {Target : Prop} (P : CertifiedMaterialProducer S Target) : Target"
+  },
+  {
+   "name": "MCore.ATKThreeRuleClosure.open_does_not_close",
+   "file": "lean/MCore/ATKThreeRuleClosure.lean",
+   "line": 128,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{α S : Type u} {Target : Prop} {space : CompleteSearchSpace α} {blocking : DecidableBlocking α} {M : LoopMeasure S} : (SearchResult.open : SearchResult α S Target space blocking M).close? = none"
+  },
+  {
+   "name": "MCore.Audit.green_action",
+   "file": "lean/MCore/Audit/WorkQueue.lean",
+   "line": 30,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.Audit.actionForState MCore.Canonical.ClaimState.green = MCore.Audit.WorkAction.freeze"
+  },
+  {
+   "name": "MCore.Audit.historicalClaims_length",
+   "file": "lean/MCore/Audit/HistoricalClaims.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.Audit.historicalClaims.length = 6"
+  },
+  {
+   "name": "MCore.Audit.initialSummary_openMath",
+   "file": "lean/MCore/Audit/StatusSummary.lean",
+   "line": 28,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.Audit.initialSummary.openMathByThisInventory = 8"
+  },
+  {
+   "name": "MCore.Audit.initialSummary_terminalSlots",
+   "file": "lean/MCore/Audit/StatusSummary.lean",
+   "line": 24,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.Audit.initialSummary.terminalSlots = 8"
+  },
+  {
+   "name": "MCore.Audit.initial_terminal_states_are_open",
+   "file": "lean/MCore/Audit/MasterCertificate.lean",
+   "line": 24,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": terminalStates = expectedOpenStates"
+  },
+  {
+   "name": "MCore.Audit.openMath_action",
+   "file": "lean/MCore/Audit/WorkQueue.lean",
+   "line": 26,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.Audit.actionForState MCore.Canonical.ClaimState.openMath = MCore.Audit.WorkAction.produceMath"
+  },
+  {
+   "name": "MCore.Audit.open_math_registry_tracks_eight_frontiers",
+   "file": "lean/MCore/Audit/MasterCertificate.lean",
+   "line": 32,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": ": MCore.OpenMath.allTerminalFrontiers.length = 8"
+  },
+  {
+   "name": "MCore.Audit.problem_registry_tracks_eight_slots",
+   "file": "lean/MCore/Audit/MasterCertificate.lean",
+   "line": 28,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": MCore.Problems.totalOpenTerminalSlots = 8"
+  },
+  {
+   "name": "MCore.Audit.terminalClaims_length",
+   "file": "lean/MCore/Audit/MasterClaims.lean",
+   "line": 22,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.Audit.terminalClaims.length = 8"
+  },
+  {
+   "name": "MCore.Audit.tracks_eight_terminal_producer_slots",
+   "file": "lean/MCore/Audit/MasterCertificate.lean",
+   "line": 10,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": terminalClaims.length = 8"
+  },
+  {
+   "name": "MCore.Canonical.certified_is_closed",
+   "file": "lean/MCore/Canonical/Rules.lean",
+   "line": 14,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.Canonical.ClaimState.certified.isClosed = true"
+  },
+  {
+   "name": "MCore.Canonical.frozen_is_closed",
+   "file": "lean/MCore/Canonical/Rules.lean",
+   "line": 17,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.Canonical.ClaimState.frozen.isClosed = true"
+  },
+  {
+   "name": "MCore.Canonical.openMath_requires_material_producer",
+   "file": "lean/MCore/Canonical/Rules.lean",
+   "line": 20,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.Canonical.ClaimState.openMath.needsMaterialProducer = true"
+  },
+  {
+   "name": "MCore.CanonicalClosure.atk_closedSearch_does_not_imply_external",
+   "file": "lean/MCore/CanonicalClosureLaw.lean",
+   "line": 146,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{T : Prop} (_h : ATKClaimStatus = ATKClaimStatus) : True"
+  },
+  {
+   "name": "MCore.CanonicalClosure.exhausted_closes_material",
+   "file": "lean/MCore/CanonicalClosureLaw.lean",
+   "line": 111,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{T : Prop} {Path State : Type} (E : ExhaustionProducesMaterial T Path) (h : ExhaustedCertificate Path) : T"
+  },
+  {
+   "name": "MCore.CanonicalClosure.found_closes_material",
+   "file": "lean/MCore/CanonicalClosureLaw.lean",
+   "line": 106,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{T : Prop} {Path State : Type} (h : FoundCertificate T) : T"
+  },
+  {
+   "name": "MCore.CanonicalClosure.loopMeasure_wellFounded",
+   "file": "lean/MCore/CanonicalClosureLaw.lean",
+   "line": 40,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{State : Type} (M : LoopMeasure State) : WellFounded (fun b a => M.edge a b)"
+  },
+  {
+   "name": "MCore.CanonicalClosure.loop_closes_material",
+   "file": "lean/MCore/CanonicalClosureLaw.lean",
+   "line": 117,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{T : Prop} {Path State : Type} (L : LoopProducesMaterial T State) (h : LoopDetectedCertificate State) : T"
+  },
+  {
+   "name": "MCore.ExternalPromotion.atk_status_alone_does_not_produce_external",
+   "file": "lean/MCore/ExternalPromotionGuard.lean",
+   "line": 97,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{T : Prop} (E : LaneExport T) (hvalid : E.validExternal) (hatk : E.atkStatus = .provedMaterial) (hno : E.materialCertificate = none) : E.externalStatus ≠ .proved"
+  },
+  {
+   "name": "MCore.ExternalPromotion.external_certificate_gives_target",
+   "file": "lean/MCore/ExternalPromotionGuard.lean",
+   "line": 109,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{T : Prop} (C : ExternalCertificate T) : T"
+  },
+  {
+   "name": "MCore.ExternalPromotion.external_proved_requires_material",
+   "file": "lean/MCore/ExternalPromotionGuard.lean",
+   "line": 77,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{T : Prop} (E : LaneExport T) (hvalid : E.validExternal) (hproved : E.externalStatus = .proved) : E.searchStatus = .closedByMaterialProducer ∧ E.externalCertified = true ∧ ∃ C, E.materialCertificate = some C"
+  },
+  {
+   "name": "MCore.ExternalPromotion.truncation_cannot_be_external_proved",
+   "file": "lean/MCore/ExternalPromotionGuard.lean",
+   "line": 87,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{T : Prop} (E : LaneExport T) (hvalid : E.validExternal) (htrunc : E.searchStatus = .closedByTruncation) : E.externalStatus ≠ .proved"
+  },
+  {
+   "name": "MCore.KernelTruncation.target_closed_of_truncation_and_extractor",
+   "file": "lean/MCore/KernelTruncationLaw.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{smaller : StrictlySmaller} {n : SearchNode} (E : MaterialExtractor smaller n) (h : SearchFixedPoint smaller n) : n.target"
+  },
+  {
+   "name": "MCore.KernelTruncation.truncateAtMinimalBlocker_is_closed",
+   "file": "lean/MCore/KernelTruncationLaw.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{smaller : StrictlySmaller} {n : SearchNode} (h : SearchFixedPoint smaller n) : truncateAtMinimalBlocker h = .closedByTruncation"
+  },
+  {
+   "name": "MCore.KernelTruncation.truncated_certificate_terminal",
+   "file": "lean/MCore/KernelTruncationLaw.lean",
+   "line": 61,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{smaller : StrictlySmaller} {n : SearchNode} (C : TruncatedCertificate smaller n) : truncateAtMinimalBlocker C.fixedPoint = .closedByTruncation"
+  },
+  {
+   "name": "MCore.KernelTruncation.truncation_claim_is_exactly_an_extractor",
+   "file": "lean/MCore/KernelTruncationLaw.lean",
+   "line": 74,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{smaller : StrictlySmaller} {n : SearchNode} (C : TruncationClaimsTarget smaller n) : MaterialExtractor smaller n"
+  },
+  {
+   "name": "MCore.OpenMath.allTerminalFrontiers_length",
+   "file": "lean/MCore/OpenMath/All.lean",
+   "line": 21,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.OpenMath.allTerminalFrontiers.length = 8"
+  },
+  {
+   "name": "MCore.Problems.totalOpenTerminalSlots_eq_eight",
+   "file": "lean/MCore/Problems/Registry.lean",
+   "line": 25,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.Problems.totalOpenTerminalSlots = 8"
+  },
+  {
+   "name": "MCore.Reuse.iff_backward",
+   "file": "lean/MCore/Reuse/Transport.lean",
+   "line": 16,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P Q : Prop} (h : P ↔ Q) : Q → P"
+  },
+  {
+   "name": "MCore.Reuse.iff_forward",
+   "file": "lean/MCore/Reuse/Transport.lean",
+   "line": 13,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P Q : Prop} (h : P ↔ Q) : P → Q"
+  },
+  {
+   "name": "MCore.Reuse.implication_comp",
+   "file": "lean/MCore/Reuse/Transport.lean",
+   "line": 8,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P Q R : Prop} (hPQ : P → Q) (hQR : Q → R) : P → R"
+  },
+  {
+   "name": "MCore.Reuse.nonempty_map",
+   "file": "lean/MCore/Reuse/Transport.lean",
+   "line": 2,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{α β : Sort _} (f : α → β) : Nonempty α → Nonempty β"
+  }
+ ],
+ "closed": 29,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/Audit/HistoricalClaims.lean": "3f1c56ac09c1a462f9a4895f09342be3fafbcc80d77642be8bb592a46fadb267",
+  "lean/MCore/Audit/MasterCertificate.lean": "723ea9df61cc35a845dbae2206bd253b36e7c6595788ef39dc03b44a2159a35b",
+  "lean/MCore/Audit/MasterClaims.lean": "7490a96a2faf6f4d0f72735b7b98423bc63377e208e26e4a03473b3ccab7f0e6",
+  "lean/MCore/Audit/MasterDependencies.lean": "9cd82de9f3dc64679e420926e586a37afbae1105447396f784a12a95b72d06fd",
+  "lean/MCore/Audit/StatusSummary.lean": "c4ad44d33f3064272c51815e8a3baa60642abbaafc0655128b2e564734d9807a",
+  "lean/MCore/Audit/WorkQueue.lean": "3cc86a10d146bffe6d5ab94d2defc7c399bf3a7d8a0d95fc3144ac720f67ca0d",
+  "lean/MCore/Canonical/Claim.lean": "77f76c5f23d8049de391b1b1507592c22a2d30ee36e3a99989512ebb8b7517ae",
+  "lean/MCore/Canonical/ClaimState.lean": "be04f89a355d52bea41c5e0d9f8c9e6b4d4a15d06376a0de84dd62a50b46a96c",
+  "lean/MCore/Canonical/Rules.lean": "bb62e568ef9d7e58d0e0cef9876421daaa0ad2a015451a798e58b1e6e4cead0b",
+  "lean/MCore/CanonicalClosureLaw.lean": "82d7b10b6e2778c4ef74297f39c4af9bfa7964d5f6b9abbc8a64c92fea1a0237",
+  "lean/MCore/ExternalPromotionGuard.lean": "90e72e482d5c46c58473bd9940a5d0bf5e1c59d178f43f99be4bf6a97b08810e",
+  "lean/MCore/KernelTruncationLaw.lean": "a6f17d904900a20c4726558d74350d8797e3d432c03c228b565aed7ddf85ecf2",
+  "lean/MCore/OpenMath/All.lean": "c44bda5f0be007586ea46852fec26ea1d217591ef810082f26f1ab920b683e7d",
+  "lean/MCore/OpenMath/BSD.lean": "9cbe726b33f08dbce236239fe7efa8b4a0ff2d4eb13c560eb1968b4270439a93",
+  "lean/MCore/OpenMath/Beal.lean": "0929ca209db5ee812f86d3274f8a2dd0c82dfd9d43f53032885d997c566d6956",
+  "lean/MCore/OpenMath/Hodge.lean": "b11f3becde29974ac885ff82213401516d857aac8b9c7cfbd0225af4aad1b916",
+  "lean/MCore/OpenMath/NS.lean": "0b56460c1732b2e52b684aa5d63ee29a85c25968e09c0428a1c374746e3b8ce4",
+  "lean/MCore/OpenMath/PNP.lean": "1e1279b5aec69695f8404fee96149656c01d3d600e474bcb9cf5ea1196d7ba8a",
+  "lean/MCore/OpenMath/RH.lean": "5f0d659c7ac152f226d33083bcdf7037429db5733fcc752580e0cfdab6beb417",
+  "lean/MCore/OpenMath/YM.lean": "252c65aca51c11bc5fd12fe2e9e00a8baafab79a5153ff83adf8681139e6eacc",
+  "lean/MCore/Problems/Lane.lean": "892a106321e3ce8dd4ee45e64a9ff0ae821a92570595c59bd51c8e2e513fd9dd",
+  "lean/MCore/Problems/Registry.lean": "e7756ddd4b341da315ad942ff5454ba2794b5eb5b286da4c82544f23f0986b81",
+  "lean/MCore/Reuse/Registry.lean": "06d6831e907b1a6e184ed5d9aa70259b3016effcc2095e5de5357286fe788fdb",
+  "lean/MCore/Reuse/Transport.lean": "ef97f97a8059ad41fc0e898480f8427668b78dc344c16b7427f7fdaa7e6135c2"
+ },
+ "published_at": "2026-10-28T19:19:18Z",
+ "certificate_sha256": "bda88bd84050040b3532238ad6ecfe8ce940fc96898abeab634926ac38cf6394"
+}

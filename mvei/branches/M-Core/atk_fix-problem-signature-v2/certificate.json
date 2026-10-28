@@ -1,0 +1,184 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/fix-problem-signature-v2",
+ "branch_state": "parada",
+ "head_commit": "03cf316766c7105d498aa72fe234c8d198f1896d",
+ "head_commit_date": "2026-10-11T17:39:33+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "03cf316766c7105d498aa72fe234c8d198f1896d",
+   "date": "2026-10-11T17:39:33+01:00",
+   "subject": "SevenProblemSignatures: state injectivity without Mathlib; regenerate inventory"
+  },
+  {
+   "commit": "4c17486d8db07384f030aeb01f8d0e3f81fd684e",
+   "date": "2026-10-11T17:34:46+01:00",
+   "subject": "ProblemSignature: rename the field named with the keyword `class`"
+  },
+  {
+   "commit": "993469ce840f3b3a64e4e62f00c9e151878b1a89",
+   "date": "2026-10-11T18:21:09+02:00",
+   "subject": "Merge pull request #18 from ShantiDraconis/atk/inventory-workflow-no-mathlib"
+  },
+  {
+   "commit": "ee5f960c3b6a52421dc42f300c1def8f88df3c2d",
+   "date": "2026-10-11T17:21:00+01:00",
+   "subject": "proof-inventory workflow: fetch the Mathlib cache only when required"
+  },
+  {
+   "commit": "886d94b940a582af11d529f8aeadd280297c2899",
+   "date": "2026-10-11T18:11:03+02:00",
+   "subject": "Merge PR #17: Fix A4Scale"
+  },
+  {
+   "commit": "34f978384e386b01d2821081637dda0fd1004bb8",
+   "date": "2026-10-11T15:27:49+00:00",
+   "subject": "Record kernel-derived inventory for 2b464157 [skip ci]"
+  },
+  {
+   "commit": "2b4641576738f1a0ab991077980d130bea31cee2",
+   "date": "2026-10-11T16:25:04+01:00",
+   "subject": "A4Scale: rename the binder that used the keyword lambda"
+  },
+  {
+   "commit": "df73dc3756cd5d78bd4cca08bd31e0d25a1d4c66",
+   "date": "2026-10-09T17:17:57+01:00",
+   "subject": "proof_inventory.py: report errors for default-build failures"
+  },
+  {
+   "commit": "55b456ceef3bdb6b791066aaf9157cae57be0ac2",
+   "date": "2026-10-09T12:12:17+01:00",
+   "subject": "Run the kernel-derived proof inventory on attack/mcore-formulation-v2-clean-20260921 at 53cab040"
+  },
+  {
+   "commit": "fcdaaab2093afa5e0c973057a00a610039d5ff0f",
+   "date": "2026-09-22T00:39:59+01:00",
+   "subject": "fix(ci): load closed-center bridge in axiom audit"
+  },
+  {
+   "commit": "f5ef87516b316d195d774223cb1812a8b98c75d7",
+   "date": "2026-09-22T00:39:15+01:00",
+   "subject": "fix(ci): audit the complete relational formulation module"
+  },
+  {
+   "commit": "104bb075c15f0c97b38611155fb195e054ff3c9d",
+   "date": "2026-09-22T00:38:30+01:00",
+   "subject": "fix(core): remove unavailable injective alias from local nuclei"
+  },
+  {
+   "commit": "8fbbeb4c0119a4abe417f5d3801b4fa3ba90dd77",
+   "date": "2026-09-22T00:37:32+01:00",
+   "subject": "fix(ci): pin empty self-contained lake manifest"
+  },
+  {
+   "commit": "58c6b6d06ed332c2a30969b79d7d66c5c84c38f5",
+   "date": "2026-09-22T00:37:25+01:00",
+   "subject": "fix(ci): make M-Core a self-contained Lean package"
+  },
+  {
+   "commit": "8569dcc52d02d73a146860cfbb5df4557d6f5cc1",
+   "date": "2026-09-22T00:34:22+01:00",
+   "subject": "fix(ci): repair formulation workflow path syntax"
+  },
+  {
+   "commit": "53cab04081827f792c6f55f7dc5d1eb232155134",
+   "date": "2026-09-21T23:31:58+01:00",
+   "subject": "ci: build and audit relational closed-center bridge"
+  },
+  {
+   "commit": "47994f3243487a0d66f94f05052ed4407ceea7e1",
+   "date": "2026-09-21T23:31:55+01:00",
+   "subject": "mcore: activate relational closed-center bridge"
+  },
+  {
+   "commit": "79ba23b0a0c30e2f72a2a08594bc4ab1746418f1",
+   "date": "2026-09-21T23:31:43+01:00",
+   "subject": "mcore: derive closed-center existence maps from relational totality"
+  },
+  {
+   "commit": "0d999a1d2580adac0c59688d8d38c01c82838a3c",
+   "date": "2026-09-21T22:51:01+01:00",
+   "subject": "ci: add fail-closed M-Core formulation v2 gate"
+  },
+  {
+   "commit": "249029c516136ecc3bade78873742aa67b83fb33",
+   "date": "2026-09-21T22:50:54+01:00",
+   "subject": "mcore: advance core formulation and remove dangling BrainKernel import"
+  },
+  {
+   "commit": "88a355d855f483c1da4b679e6d5128f81f9525d9",
+   "date": "2026-09-21T22:50:50+01:00",
+   "subject": "mcore: unify relational center with fundamental indeterminacy"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T19:11:15+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.FinalFail.RelationalHardAtom.determinedAt_iff_centerDetermined",
+   "file": "lean/MCore/FinalFail/RelationalCenterBridge.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (H : MCore.FinalFail.RelationalHardAtom) (c : H.Center) (hIdentity : H.branchAt c H.identityBranch),   H.DeterminedAt c ↔ MCore.FinalFail.CenterDetermined (H.centerResolution c hIdentity)"
+  },
+  {
+   "name": "MCore.FinalFail.RelationalHardAtom.determinedAt_not_failAt",
+   "file": "lean/MCore/FinalFail/RelationalCenterBridge.lean",
+   "line": 54,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (H : MCore.FinalFail.RelationalHardAtom) (c : H.Center),   H.branchAt c H.identityBranch → H.DeterminedAt c → ¬H.FailAt c"
+  },
+  {
+   "name": "MCore.FinalFail.RelationalHardAtom.failAt_iff_IFail",
+   "file": "lean/MCore/FinalFail/RelationalCenterBridge.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (H : MCore.FinalFail.RelationalHardAtom) (c : H.Center) (hIdentity : H.branchAt c H.identityBranch),   H.FailAt c ↔ MCore.FinalFail.IFail (H.centerResolution c hIdentity)"
+  },
+  {
+   "name": "MCore.FinalFail.RelationalHardAtom.failAt_iff_fundamentalIndeterminacy",
+   "file": "lean/MCore/FinalFail/RelationalCenterBridge.lean",
+   "line": 19,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (H : MCore.FinalFail.RelationalHardAtom) (c : H.Center) (hIdentity : H.branchAt c H.identityBranch),   H.FailAt c ↔ MCore.FinalFail.FundamentalIndeterminacy (H.centerResolution c hIdentity)"
+  },
+  {
+   "name": "MCore.FinalFail.RelationalTotality.closedCenterHard_coexists_with_failAt",
+   "file": "lean/MCore/FinalFail/RelationalClosedCenterBridge.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {H : MCore.FinalFail.RelationalHardAtom},   MCore.FinalFail.RelationalTotality H →     ∀ (c : H.Center),       H.FailAt c →         Nonempty (MCore.FinalFail.ClosedCenterHard (Nonempty H.Start) (Nonempty H.Center) (Nonempty H.Finish)) ∧           H.FailAt c"
+  }
+ ],
+ "closed": 5,
+ "files_sha256": {
+  "lake-manifest.json": "b32a0f59f0ac9408fa55d483e9c6c32ca4a6acdc41282f361044f79f51e56dfc",
+  "lakefile.lean": "be179f118a9a7f81d4a3405624b89bb16b02b60179ded818f9cebdbeca476500",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/FinalFail/ClosedCenterHard.lean": "8cf937c40341793b7a5d9b6ec6ee909e9211603cfd6861ef889a38e809022292",
+  "lean/MCore/FinalFail/FundamentalIndeterminacy.lean": "5a0940bac03613dc11086cf991d224518697a1fd2974a7216d50613042f999c8",
+  "lean/MCore/FinalFail/MinimalOpenBridge.lean": "69cb24fc52a0bfb5850c5ecb880d5200cbe5d12e5b144e2bd77e8dd9bed02727",
+  "lean/MCore/FinalFail/RelationalCenterBridge.lean": "6b644db6befaa08d62fd93442dc63a831a39f489da62ce0b7b6fa33e9398ff5b",
+  "lean/MCore/FinalFail/RelationalClosedCenterBridge.lean": "58b80c088c4f55b90f442963b57e511e451122ca2e619bf23fb218aede208cde",
+  "lean/MCore/FinalFail/RelationalHardAtom.lean": "40fd0423c86833fcf60dc6116735584dcb75239ca396af6a0373604dd23e33bf",
+  "lean/MCore/FinalFail/TriadicObstructionCalculus.lean": "83f31dfc0e5d1282b54b2e1a8fe332e45177b069a533cb51cbee6287414af5e8"
+ },
+ "published_at": "2026-10-28T19:19:21Z",
+ "certificate_sha256": "c6d065f6e85bb98828173ac21e1cefdd105c552f20d5dadd151b1edfa19754a4"
+}
