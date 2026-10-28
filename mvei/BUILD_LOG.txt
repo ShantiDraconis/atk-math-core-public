@@ -1,0 +1,9 @@
+MVEI — log consolidado da verificação (2026-10-28T13:47:17+00:00)
+Os logs completos de cada compilação no GitHub ficam na página da execução do workflow (Actions).
+
+== M-Core/.  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 245, condicionais 0, abertos 0; axiomas declarados 0
+
+== M-Core/atk-kernel  [leanprover/lean4:v4.34.1 -> leanprover/lean4:v4.34.1]  OK
+   teoremas: fechados 10324, condicionais 0, abertos 0; axiomas declarados 0
+

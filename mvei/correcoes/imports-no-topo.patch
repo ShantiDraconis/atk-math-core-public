@@ -1,0 +1,16 @@
+--- a/imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean
++++ b/imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean
+@@ -1,3 +1,5 @@
++import Mathlib
++
+ /-!
+ # G1_KAdmissible_to_SignedDepletion
+ 
+@@ -13,7 +15,6 @@
+ There is no axiom, `sorry`, `admit`, or unconditional global-regularity theorem.
+ -/
+ 
+-import Mathlib
+ 
+ noncomputable section
+ 
