@@ -5,7 +5,7 @@ Lean sources from the branch `work/kernel-truncation-closure-20261005` of the pr
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 39 — closed 29, conditional 0, open 0, proof error 3, not reached 7, no result 0.
 * History: 41 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `86a9aa46c06e1859d29cbfec1b324985bafb7988bfa9532a4927ed4a683d717a`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/work_kernel-truncation-closure-20261005/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `017dc036c997ad4da4a4c60dee70085bdb51dd5973ec819e34b2efa3903b5b5b`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/work_kernel-truncation-closure-20261005/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

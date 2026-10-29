@@ -633,7 +633,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-28T23:56:08+00:00",
+  "generated_at": "2026-10-29T05:36:17+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -1565,6 +1565,6 @@
   "lean/MCore/MaterialMath/TriCyclicAlgebra.lean": "18b9fda9338cd5f1ec4e8537f4bcd47b4a2b99a3c20dd31f503764bdf847bf0d",
   "lean/MCore/MaterialMath/TwoSidedMaterialResolution.lean": "75a23758b105ca6d072f59d193a1f0d2c52ee130cfee4f4c84e9a94a1cbfeab5"
  },
- "published_at": "2026-10-29T02:47:03Z",
- "certificate_sha256": "2f216944fd4b2391f8d8fd872595ce0122f044b6ad1ce4a1dd81f54acf9c2919"
+ "published_at": "2026-10-29T06:27:17Z",
+ "certificate_sha256": "6cf01a34461ae4b0ae264b9a38cb6371ad428797ef1ed29e8be51de977c9c700"
 }

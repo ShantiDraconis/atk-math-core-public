@@ -5,7 +5,7 @@ Lean sources from the branch `atk/ym-wilson-loop-area-law-20261019` of the priva
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 2 — closed 2, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 1 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `adccbf1a8623436dbf82ce305d9b840877476f104a9958012af67a48bbed42fa`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_ym-wilson-loop-area-law-20261019/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `5435fa7b382a1371d96bc3c8fb6d605b980e89fd554229dd3870edca031084fa`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_ym-wilson-loop-area-law-20261019/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

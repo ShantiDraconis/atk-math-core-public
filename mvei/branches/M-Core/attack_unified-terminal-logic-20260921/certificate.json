@@ -178,7 +178,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-28T23:56:08+00:00",
+  "generated_at": "2026-10-29T05:36:17+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -316,6 +316,6 @@
   "lean/MCore/TopologyLimitClosed.lean": "95b4790d7a4281800858aaef0b87dd50d885341eda798a2f8d7d7cdb7a3f9e65",
   "lean/MCore/UnifiedTerminalLogic.lean": "bb855b28a7d5c0851570aa639c321f7fef818aba62fc69ccac055735018b4917"
  },
- "published_at": "2026-10-29T02:47:07Z",
- "certificate_sha256": "7d87b654cfef2d7c8e8a48f32386f4c1297f14b3d863ee84b74cd878dd70e72d"
+ "published_at": "2026-10-29T06:27:25Z",
+ "certificate_sha256": "c8fca3968bbd1a988ac941cf2c52fb124ad2d425e53683c302ff2476856cdd3c"
 }

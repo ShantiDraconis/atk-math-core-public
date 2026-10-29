@@ -5,7 +5,7 @@ Lean sources from the branch `atk/universal-terminal-closure-20260930` of the pr
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 19 — closed 7, conditional 0, open 0, proof error 0, not reached 12, no result 0.
 * History: 30 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `d8a6c38e7b4a5db1dc4cc3de4c1b75ec6fc5a4e8b10cd6b57d56a23a1ac84d3b`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_universal-terminal-closure-20260930/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `1f91ad532765e37d857e9589b49afd706c04c421fb0b439bbbfae3336354d070`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_universal-terminal-closure-20260930/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

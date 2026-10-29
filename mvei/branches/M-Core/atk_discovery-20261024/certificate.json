@@ -1,0 +1,1276 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/discovery-20261024",
+ "branch_state": "em andamento",
+ "head_commit": "2a6dba0a04ca99d3b265a786e71e9448c640e49a",
+ "head_commit_date": "2026-10-25T01:30:17+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "2a6dba0a04ca99d3b265a786e71e9448c640e49a",
+   "date": "2026-10-25T01:30:17+01:00",
+   "subject": "ATK/Discovery: operadores, leis infinitesimais e produtores de RH (72 teoremas)"
+  },
+  {
+   "commit": "a2dbac6b421e77935beb4eb85c3bd86b4242a9d3",
+   "date": "2026-10-25T01:29:38+01:00",
+   "subject": "ATK/Discovery: truncamento e cauda, habitante, infinitesimal, melhoria ortogonal e E₁ = 1 − log 2 (68 teoremas)"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-29T05:36:17+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.Discovery.Cauda.cauda_deTruncamento_nonneg",
+   "file": "atk-kernel/ATK/Discovery/Habitante.lean",
+   "line": 93,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ), 0 ≤ (ATK.Discovery.Cauda.deTruncamento N x).cauda"
+  },
+  {
+   "name": "ATK.Discovery.Cauda.comparacao_iff",
+   "file": "atk-kernel/ATK/Discovery/Habitante.lean",
+   "line": 57,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_1} [inst : AddCommGroup α] [inst_1 : LinearOrder α] [inst_2 : IsOrderedAddMonoid α]   (a b : ATK.Discovery.Cauda.Habitante α), ATK.Discovery.Cauda.Comparacao a b ↔ a.valor < b.valor"
+  },
+  {
+   "name": "ATK.Discovery.Cauda.equivObs_nao_implica_valor",
+   "file": "atk-kernel/ATK/Discovery/Habitante.lean",
+   "line": 150,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬∀ (X Y : ATK.Discovery.Cauda.Estruturado), ATK.Discovery.Cauda.equivObs X Y → X.valor = Y.valor"
+  },
+  {
+   "name": "ATK.Discovery.Cauda.lt_iff_de_cabecas_iguais",
+   "file": "atk-kernel/ATK/Discovery/Habitante.lean",
+   "line": 64,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_1} [inst : AddCommGroup α] [inst_1 : LinearOrder α] [inst_2 : IsOrderedAddMonoid α]   {a b : ATK.Discovery.Cauda.Habitante α}, a.cabeca = b.cabeca → (a.valor < b.valor ↔ a.cauda < b.cauda)"
+  },
+  {
+   "name": "ATK.Discovery.Cauda.lt_of_comparacao",
+   "file": "atk-kernel/ATK/Discovery/Habitante.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_1} [inst : AddCommGroup α] [inst_1 : LinearOrder α] [inst_2 : IsOrderedAddMonoid α]   {a b : ATK.Discovery.Cauda.Habitante α}, ATK.Discovery.Cauda.Comparacao a b → a.valor < b.valor"
+  },
+  {
+   "name": "ATK.Discovery.Cauda.observa_zero_valor_nao",
+   "file": "atk-kernel/ATK/Discovery/Habitante.lean",
+   "line": 128,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ),   have A := { real := 0, imag := 2, frac := 0, cauda := 0 };   have B := { real := 0, imag := 0, frac := 1 / 2, cauda := 0 };   have C := { real := 0, imag := 0, frac := 0, cauda := 1 / (2 * 10 ^ N) };   A.observa = 0 ∧ B.observa = 0 ∧ C.observa = 0 ∧ A.valor ≠ 0 ∧ B.valor ≠ 0 ∧ C.valor ≠ 0"
+  },
+  {
+   "name": "ATK.Discovery.Cauda.observacao_nao_injetiva",
+   "file": "atk-kernel/ATK/Discovery/Habitante.lean",
+   "line": 120,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∃ X Y, X.observa = Y.observa ∧ X.valor ≠ Y.valor"
+  },
+  {
+   "name": "ATK.Discovery.Cauda.p01_sem_certificado",
+   "file": "atk-kernel/ATK/Discovery/Habitante.lean",
+   "line": 96,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ),   (ATK.Discovery.Cauda.deTruncamento N 1).cauda = 0 ∧     ¬ATK.Discovery.Cauda.Comparacao (ATK.Discovery.Cauda.deTruncamento N 1) (ATK.Discovery.Cauda.deTruncamento N 1)"
+  },
+  {
+   "name": "ATK.Discovery.Cauda.sem_comparacao_consigo",
+   "file": "atk-kernel/ATK/Discovery/Habitante.lean",
+   "line": 70,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type u_1} [inst : AddCommGroup α] [inst_1 : LinearOrder α] [inst_2 : IsOrderedAddMonoid α]   (a : ATK.Discovery.Cauda.Habitante α), ¬ATK.Discovery.Cauda.Comparacao a a"
+  },
+  {
+   "name": "ATK.Discovery.Contracao.cota_cinco_meios",
+   "file": "atk-kernel/ATK/Discovery/Contracao.lean",
+   "line": 52,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {D : ℕ → ℝ}, D 2 = 5 / 6 → (∀ n ≥ 2, D (n + 1) ≤ (↑n + 1) / (↑n + 2) * D n) → ∀ N ≥ 2, D N ≤ 5 / (2 * (↑N + 1))"
+  },
+  {
+   "name": "ATK.Discovery.Contracao.cota_exp",
+   "file": "atk-kernel/ATK/Discovery/Contracao.lean",
+   "line": 25,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {D α : ℕ → ℝ},   (∀ (n : ℕ), 0 ≤ D n) →     (∀ (n : ℕ), α n ≤ 1) →       (∀ (n : ℕ), D (n + 1) ≤ (1 - α n) * D n) → ∀ (N : ℕ), D N ≤ D 0 * Real.exp (-∑ n ∈ Finset.range N, α n)"
+  },
+  {
+   "name": "ATK.Discovery.Contracao.mesmo_inicio_limites_distintos",
+   "file": "atk-kernel/ATK/Discovery/Contracao.lean",
+   "line": 82,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "have A := fun N => 5 / (2 * (↑N + 1)); have B := fun N => 1 / 2 + 1 / (↑N + 1); A 2 = 5 / 6 ∧   B 2 = 5 / 6 ∧     Antitone A ∧ Antitone B ∧ Filter.Tendsto A Filter.atTop (nhds 0) ∧ Filter.Tendsto B Filter.atTop (nhds (1 / 2))"
+  },
+  {
+   "name": "ATK.Discovery.Contracao.tende_zero_cinco_meios",
+   "file": "atk-kernel/ATK/Discovery/Contracao.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {D : ℕ → ℝ},   (∀ (n : ℕ), 0 ≤ D n) →     D 2 = 5 / 6 → (∀ n ≥ 2, D (n + 1) ≤ (↑n + 1) / (↑n + 2) * D n) → Filter.Tendsto D Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "ATK.Discovery.Contracao.tende_zero_de_contracao",
+   "file": "atk-kernel/ATK/Discovery/Contracao.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {D α : ℕ → ℝ},   (∀ (n : ℕ), 0 ≤ D n) →     (∀ (n : ℕ), α n ≤ 1) →       (∀ (n : ℕ), D (n + 1) ≤ (1 - α n) * D n) →         Filter.Tendsto (fun N => ∑ n ∈ Finset.range N, α n) Filter.atTop Filter.atTop →           Filter.Tendsto D Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "ATK.Discovery.Contracao.tende_zero_iff_precisoes",
+   "file": "atk-kernel/ATK/Discovery/Contracao.lean",
+   "line": 109,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {D : ℕ → ℝ},   Antitone D → (∀ (n : ℕ), 0 ≤ D n) → (Filter.Tendsto D Filter.atTop (nhds 0) ↔ ∀ (m : ℕ), ∃ N, D N < (1 / 10) ^ m)"
+  },
+  {
+   "name": "ATK.Discovery.Hilbert.contraexemplo_correlacao",
+   "file": "atk-kernel/ATK/Discovery/Hilbert.lean",
+   "line": 109,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "have v := EuclideanSpace.single 2 1; have e := EuclideanSpace.single 1 1; have K := ℝ ∙ EuclideanSpace.single 0 1; ATK.Discovery.Hilbert.defeito K v = 1 ∧   inner ℝ (v - 0) e = 0 ∧     ATK.Discovery.Hilbert.defeito (K ⊔ ℝ ∙ e) v = 1 ∧ ¬ATK.Discovery.Hilbert.defeito K v / 3 ≤ inner ℝ (v - 0) e ^ 2"
+  },
+  {
+   "name": "ATK.Discovery.Hilbert.defeito_bdd",
+   "file": "atk-kernel/ATK/Discovery/Hilbert.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] (K : Submodule ℝ E) (v : E),   BddBelow (Set.range fun q => ‖v - ↑q‖ ^ 2)"
+  },
+  {
+   "name": "ATK.Discovery.Hilbert.defeito_eq_of_orth",
+   "file": "atk-kernel/ATK/Discovery/Hilbert.lean",
+   "line": 64,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {K : Submodule ℝ E} {v p : E},   p ∈ K → (∀ q ∈ K, inner ℝ (v - p) q = 0) → ATK.Discovery.Hilbert.defeito K v = ‖v - p‖ ^ 2"
+  },
+  {
+   "name": "ATK.Discovery.Hilbert.defeito_le",
+   "file": "atk-kernel/ATK/Discovery/Hilbert.lean",
+   "line": 56,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {K : Submodule ℝ E} (v : E) {q : E},   q ∈ K → ATK.Discovery.Hilbert.defeito K v ≤ ‖v - q‖ ^ 2"
+  },
+  {
+   "name": "ATK.Discovery.Hilbert.defeito_mono",
+   "file": "atk-kernel/ATK/Discovery/Hilbert.lean",
+   "line": 60,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {K K' : Submodule ℝ E},   K ≤ K' → ∀ (v : E), ATK.Discovery.Hilbert.defeito K' v ≤ ATK.Discovery.Hilbert.defeito K v"
+  },
+  {
+   "name": "ATK.Discovery.Hilbert.defeito_nonneg",
+   "file": "atk-kernel/ATK/Discovery/Hilbert.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] (K : Submodule ℝ E) (v : E),   0 ≤ ATK.Discovery.Hilbert.defeito K v"
+  },
+  {
+   "name": "ATK.Discovery.Hilbert.melhor_coef",
+   "file": "atk-kernel/ATK/Discovery/Hilbert.lean",
+   "line": 35,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] (r e : E),   ‖e‖ = 1 → ‖r - inner ℝ r e • e‖ ^ 2 = ‖r‖ ^ 2 - inner ℝ r e ^ 2"
+  },
+  {
+   "name": "ATK.Discovery.Hilbert.melhor_coef_minimo",
+   "file": "atk-kernel/ATK/Discovery/Hilbert.lean",
+   "line": 40,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] (r e : E),   ‖e‖ = 1 → ∀ (c : ℝ), ‖r‖ ^ 2 - inner ℝ r e ^ 2 ≤ ‖r - c • e‖ ^ 2"
+  },
+  {
+   "name": "ATK.Discovery.Hilbert.melhoria_exata",
+   "file": "atk-kernel/ATK/Discovery/Hilbert.lean",
+   "line": 83,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {K : Submodule ℝ E} {v p e : E},   p ∈ K →     (∀ q ∈ K, inner ℝ (v - p) q = 0) →       ‖e‖ = 1 →         (∀ q ∈ K, inner ℝ e q = 0) →           ATK.Discovery.Hilbert.defeito (K ⊔ ℝ ∙ e) v = ATK.Discovery.Hilbert.defeito K v - inner ℝ (v - p) e ^ 2"
+  },
+  {
+   "name": "ATK.Discovery.Hilbert.melhoria_le",
+   "file": "atk-kernel/ATK/Discovery/Hilbert.lean",
+   "line": 73,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {K K' : Submodule ℝ E},   K ≤ K' →     ∀ {v p e : E}, p ∈ K → e ∈ K' → ‖e‖ = 1 → ATK.Discovery.Hilbert.defeito K' v ≤ ‖v - p‖ ^ 2 - inner ℝ (v - p) e ^ 2"
+  },
+  {
+   "name": "ATK.Discovery.Hilbert.norm_sub_smul_sq",
+   "file": "atk-kernel/ATK/Discovery/Hilbert.lean",
+   "line": 29,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] (r e : E),   ‖e‖ = 1 → ∀ (c : ℝ), ‖r - c • e‖ ^ 2 = ‖r‖ ^ 2 - 2 * c * inner ℝ r e + c ^ 2"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.cauda_nao_decide",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 85,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ArchimedeanClass.stdPart ATK.TerceiroTemplo.dezMenosH = 0 ∧   ArchimedeanClass.stdPart (↑(1 / 4) + ATK.TerceiroTemplo.dezMenosH) = 1 / 4"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.classe_do_zero",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 76,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "0 < ATK.TerceiroTemplo.dezMenosH ∧   ATK.TerceiroTemplo.dezMenosH < 2 * ATK.TerceiroTemplo.dezMenosH ∧     ArchimedeanClass.stdPart 0 = 0 ∧       ArchimedeanClass.stdPart ATK.TerceiroTemplo.dezMenosH = 0 ∧         ArchimedeanClass.stdPart (2 * ATK.TerceiroTemplo.dezMenosH) = 0"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.eps_lt_dez_pot",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (n : ℕ), 0 < ATK.TerceiroTemplo.dezMenosH ∧ ATK.TerceiroTemplo.dezMenosH < ↑((1 / 10) ^ n)"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.eps_lt_real",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {r : ℝ}, 0 < r → ATK.TerceiroTemplo.dezMenosH < ↑r"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.eps_pos",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 38,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "0 < ATK.TerceiroTemplo.dezMenosH"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.eps_tendsto",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 29,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Filter.Germ.Tendsto ATK.TerceiroTemplo.dezMenosH (nhds 0)"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.estrita_nao_passa_ao_limite",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 98,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(∀ (N : ℕ), 1 - (1 / 10) ^ N < 1) ∧ Filter.Tendsto (fun N => 1 - (1 / 10) ^ N) Filter.atTop (nhds 1) ∧ ¬1 < 1"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.mesma_parte_padrao",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 70,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Infinitesimal.umMenos < 1 ∧   1 < ATK.Discovery.Infinitesimal.umMais ∧     ArchimedeanClass.stdPart ATK.Discovery.Infinitesimal.umMenos = 1 ∧       ArchimedeanClass.stdPart 1 = 1 ∧ ArchimedeanClass.stdPart ATK.Discovery.Infinitesimal.umMais = 1"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.mk_eps_pos",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 35,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "0 < ArchimedeanClass.mk ATK.TerceiroTemplo.dezMenosH"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.real_sem_infinitesimal",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 92,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬∃ x, 0 < x ∧ ∀ (n : ℕ), x < (1 / 10) ^ n"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.stdPart_eps",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 40,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ArchimedeanClass.stdPart ATK.TerceiroTemplo.dezMenosH = 0"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.stdPart_umMais",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 62,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ArchimedeanClass.stdPart ATK.Discovery.Infinitesimal.umMais = 1"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.stdPart_umMenos",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 66,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ArchimedeanClass.stdPart ATK.Discovery.Infinitesimal.umMenos = 1"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.umMenos_lt_um",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 59,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Infinitesimal.umMenos < 1"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.um_lt_umMais",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 56,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "1 < ATK.Discovery.Infinitesimal.umMais"
+  },
+  {
+   "name": "ATK.Discovery.Infinitesimal.unidade_estendida",
+   "file": "atk-kernel/ATK/Discovery/Infinitesimal.lean",
+   "line": 111,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {K : Type u_1} [inst : Field K] [inst_1 : LinearOrder K] [IsStrictOrderedRing K] {ε : K},   0 < ε → 1 - ε < 1 ∧ 1 < 1 + ε ∧ 1 + ε ≠ 1 ∧ 1 + ε - 1 = ε"
+  },
+  {
+   "name": "ATK.Discovery.Leis.dois_H",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 83,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(((ATK.Discovery.Leis.eps fun n => n + 1) * ATK.Discovery.Leis.eps fun n => n + 1) =     ATK.Discovery.Leis.eps fun n => 2 * (n + 1)) ∧   (ATK.Discovery.Leis.eps fun n => 2 * (n + 1)) < ATK.Discovery.Leis.eps fun n => n + 1"
+  },
+  {
+   "name": "ATK.Discovery.Leis.eps_id",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Leis.eps id = ATK.TerceiroTemplo.dezMenosH"
+  },
+  {
+   "name": "ATK.Discovery.Leis.eps_lt_of_lt",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f g : ℕ → ℕ}, (∀ (n : ℕ), f n < g n) → ATK.Discovery.Leis.eps g < ATK.Discovery.Leis.eps f"
+  },
+  {
+   "name": "ATK.Discovery.Leis.eps_lt_pot",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 64,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : ℕ → ℕ}, Filter.Tendsto f Filter.atTop Filter.atTop → ∀ (n : ℕ), ATK.Discovery.Leis.eps f < ↑((1 / 10) ^ n)"
+  },
+  {
+   "name": "ATK.Discovery.Leis.eps_lt_real",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 59,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : ℕ → ℕ}, Filter.Tendsto f Filter.atTop Filter.atTop → ∀ {r : ℝ}, 0 < r → ATK.Discovery.Leis.eps f < ↑r"
+  },
+  {
+   "name": "ATK.Discovery.Leis.eps_mul",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 75,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (f g : ℕ → ℕ), ATK.Discovery.Leis.eps f * ATK.Discovery.Leis.eps g = ATK.Discovery.Leis.eps (f + g)"
+  },
+  {
+   "name": "ATK.Discovery.Leis.eps_pos",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (f : ℕ → ℕ), 0 < ATK.Discovery.Leis.eps f"
+  },
+  {
+   "name": "ATK.Discovery.Leis.germe_tende",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 26,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {u : ℕ → ℝ} {r : ℝ}, Filter.Tendsto u Filter.atTop (nhds r) → Filter.Germ.Tendsto (Hyperreal.ofSeq u) (nhds r)"
+  },
+  {
+   "name": "ATK.Discovery.Leis.lei_produto",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 131,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f g : ℕ → ℕ},   Filter.Tendsto f Filter.atTop Filter.atTop →     Filter.Tendsto g Filter.atTop Filter.atTop →       (1 + ATK.Discovery.Leis.eps f) * (1 + ATK.Discovery.Leis.eps g) =           1 + ATK.Discovery.Leis.eps f + ATK.Discovery.Leis.eps g + ATK.Discovery.Leis.eps (f + g) ∧         1 < (1 + ATK.Discovery.Leis.eps f) * (1 + ATK.Discovery.Leis.eps g) ∧           ArchimedeanClass.stdPart ("
+  },
+  {
+   "name": "ATK.Discovery.Leis.lei_soma",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 117,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f g : ℕ → ℕ},   Filter.Tendsto f Filter.atTop Filter.atTop →     Filter.Tendsto g Filter.atTop Filter.atTop →       2 < 1 + ATK.Discovery.Leis.eps f + (1 + ATK.Discovery.Leis.eps g) ∧         ArchimedeanClass.stdPart (1 + ATK.Discovery.Leis.eps f + (1 + ATK.Discovery.Leis.eps g)) = 2"
+  },
+  {
+   "name": "ATK.Discovery.Leis.mesma_classe_ordem_estrita",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 149,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f g : ℕ → ℕ},   Filter.Tendsto f Filter.atTop Filter.atTop →     Filter.Tendsto g Filter.atTop Filter.atTop →       (∀ (n : ℕ), f n < g n) →         0 < ATK.Discovery.Leis.eps g ∧           ATK.Discovery.Leis.eps g < ATK.Discovery.Leis.eps f ∧             ArchimedeanClass.stdPart 0 = 0 ∧               ArchimedeanClass.stdPart (ATK.Discovery.Leis.eps g) = 0 ∧                 ArchimedeanClass.std"
+  },
+  {
+   "name": "ATK.Discovery.Leis.mk_eps_pos",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 56,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : ℕ → ℕ}, Filter.Tendsto f Filter.atTop Filter.atTop → 0 < ArchimedeanClass.mk (ATK.Discovery.Leis.eps f)"
+  },
+  {
+   "name": "ATK.Discovery.Leis.mk_pos_ofSeq",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 35,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {u : ℕ → ℝ}, Filter.Tendsto u Filter.atTop (nhds 0) → 0 < ArchimedeanClass.mk (Hyperreal.ofSeq u)"
+  },
+  {
+   "name": "ATK.Discovery.Leis.stdPart_eps",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : ℕ → ℕ}, Filter.Tendsto f Filter.atTop Filter.atTop → ArchimedeanClass.stdPart (ATK.Discovery.Leis.eps f) = 0"
+  },
+  {
+   "name": "ATK.Discovery.Leis.stdPart_ofSeq",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {u : ℕ → ℝ} {r : ℝ}, Filter.Tendsto u Filter.atTop (nhds r) → ArchimedeanClass.stdPart (Hyperreal.ofSeq u) = r"
+  },
+  {
+   "name": "ATK.Discovery.Leis.stdPart_um_mais",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 98,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : ℕ → ℕ}, Filter.Tendsto f Filter.atTop Filter.atTop → ArchimedeanClass.stdPart (1 + ATK.Discovery.Leis.eps f) = 1"
+  },
+  {
+   "name": "ATK.Discovery.Leis.stdPart_um_menos",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 104,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : ℕ → ℕ}, Filter.Tendsto f Filter.atTop Filter.atTop → ArchimedeanClass.stdPart (1 - ATK.Discovery.Leis.eps f) = 1"
+  },
+  {
+   "name": "ATK.Discovery.Leis.tende_pot",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 44,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : ℕ → ℕ},   Filter.Tendsto f Filter.atTop Filter.atTop → Filter.Tendsto (fun n => (1 / 10) ^ f n) Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "ATK.Discovery.Leis.um_mais_eq",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 94,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (f : ℕ → ℕ), 1 + ATK.Discovery.Leis.eps f = Hyperreal.ofSeq fun n => 1 + (1 / 10) ^ f n"
+  },
+  {
+   "name": "ATK.Discovery.Leis.um_menos_eq",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 96,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (f : ℕ → ℕ), 1 - ATK.Discovery.Leis.eps f = Hyperreal.ofSeq fun n => 1 - (1 / 10) ^ f n"
+  },
+  {
+   "name": "ATK.Discovery.Leis.unidade_em_posicao",
+   "file": "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean",
+   "line": 110,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : ℕ → ℕ},   Filter.Tendsto f Filter.atTop Filter.atTop →     1 - ATK.Discovery.Leis.eps f < 1 ∧       1 < 1 + ATK.Discovery.Leis.eps f ∧         ArchimedeanClass.stdPart (1 - ATK.Discovery.Leis.eps f) = 1 ∧           ArchimedeanClass.stdPart (1 + ATK.Discovery.Leis.eps f) = 1"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.P_add",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 187,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (a b : ℝ),   ATK.Discovery.Truncamento.P N (a + b) =     ATK.Discovery.Truncamento.P N a + ATK.Discovery.Truncamento.P N b + ↑(ATK.Discovery.Operadores.vaiUm N a b) / 10 ^ N"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.P_eq_zero_iff",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 129,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ), ATK.Discovery.Truncamento.P N x = 0 ↔ 0 ≤ x ∧ x < 1 / 10 ^ N"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.P_succ",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 63,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ),   ATK.Discovery.Truncamento.P (N + 1) x =     ATK.Discovery.Truncamento.P N x + ↑(ATK.Discovery.Operadores.digito N x) / 10 ^ (N + 1)"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.P_transl",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 156,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ) (m : ℤ),   ATK.Discovery.Truncamento.P N (x + ↑m / 10 ^ N) = ATK.Discovery.Truncamento.P N x + ↑m / 10 ^ N"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.T_add",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 197,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (a b : ℝ),   ATK.Discovery.Truncamento.T N (a + b) =     ATK.Discovery.Truncamento.T N a + ATK.Discovery.Truncamento.T N b - ↑(ATK.Discovery.Operadores.vaiUm N a b) / 10 ^ N"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.T_succ",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 74,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ),   ATK.Discovery.Truncamento.T N x =     ↑(ATK.Discovery.Operadores.digito N x) / 10 ^ (N + 1) + ATK.Discovery.Truncamento.T (N + 1) x"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.T_transl",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 168,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ) (m : ℤ), ATK.Discovery.Truncamento.T N (x + ↑m / 10 ^ N) = ATK.Discovery.Truncamento.T N x"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.digito_eq_emod",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ), ATK.Discovery.Operadores.digito N x = ⌊10 ^ (N + 1) * x⌋ % 10"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.digito_le_nove",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 45,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ), ATK.Discovery.Operadores.digito N x ≤ 9"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.digito_nonneg",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ), 0 ≤ ATK.Discovery.Operadores.digito N x"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.floor_eq_of_P_eq",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 89,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {N : ℕ} {a b : ℝ}, ATK.Discovery.Truncamento.P N a = ATK.Discovery.Truncamento.P N b → ⌊10 ^ N * a⌋ = ⌊10 ^ N * b⌋"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.indist_depois_dist",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 108,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ),   ATK.Discovery.Operadores.indist N 0 (1 / 10 ^ (N + 1)) ∧ ¬ATK.Discovery.Operadores.indist (N + 1) 0 (1 / 10 ^ (N + 1))"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.indist_equivalence",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 86,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ), Equivalence (ATK.Discovery.Operadores.indist N)"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.indist_mono",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 98,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {N : ℕ} {a b : ℝ}, ATK.Discovery.Operadores.indist (N + 1) a b → ATK.Discovery.Operadores.indist N a b"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.pos_de_cauda",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 151,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {N : ℕ} {X : ℝ}, ATK.Discovery.Truncamento.P N X = 0 → 0 < ATK.Discovery.Truncamento.T N X → 0 < X"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.pot_succ_mul",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 29,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ), 10 ^ (N + 1) * x = 10 * (10 ^ N * x)"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.vaiUm_eq_one_iff",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 204,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (a b : ℝ),   ATK.Discovery.Operadores.vaiUm N a b = 1 ↔     1 / 10 ^ N ≤ ATK.Discovery.Truncamento.T N a + ATK.Discovery.Truncamento.T N b"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.vaiUm_le_one",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 182,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (a b : ℝ), ATK.Discovery.Operadores.vaiUm N a b ≤ 1"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.vaiUm_nonneg",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 177,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (a b : ℝ), 0 ≤ ATK.Discovery.Operadores.vaiUm N a b"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.valor_123",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 226,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Truncamento.P 2 (123456789 / 100000000) = 123 / 100 ∧   ATK.Discovery.Truncamento.T 2 (123456789 / 100000000) = 456789 / 100000000"
+  },
+  {
+   "name": "ATK.Discovery.Operadores.valor_A_B",
+   "file": "atk-kernel/ATK/Discovery/Operadores.lean",
+   "line": 241,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Truncamento.P 0 1 = 1 ∧   ATK.Discovery.Truncamento.P 0 (27 / 25) = 1 ∧     ATK.Discovery.Truncamento.T 0 1 = 0 ∧ ATK.Discovery.Truncamento.T 0 (27 / 25) = 2 / 25 ∧ 1 < 27 / 25"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.D_antitone",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Antitone ATK.Discovery.Produtores.D"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.D_nonneg",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 40,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ), 0 ≤ ATK.Discovery.Produtores.D N"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.D_zero",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 44,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Produtores.D 0 = 1"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.HabitanteContracao.rh",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 203,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : ATK.Discovery.Produtores.HabitanteContracao), RiemannHypothesis"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.HabitanteCotaLog.rh",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 200,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (h : ATK.Discovery.Produtores.HabitanteCotaLog), RiemannHypothesis"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.dInf_zero_iff_precisoes",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 73,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "⨅ N, ATK.Discovery.Produtores.D N = 0 ↔ ATK.Discovery.Produtores.ProdutorPrecisoes"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.diverge_quarto",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 115,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Filter.Tendsto (fun N => ∑ k ∈ Finset.range N, 1 / (↑k + 4)) Filter.atTop Filter.atTop"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.habitante_contracao_iff",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 209,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Nonempty ATK.Discovery.Produtores.HabitanteContracao ↔ ATK.Discovery.Produtores.ProdutorContracao"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.habitante_contracao_vazio",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 217,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬RiemannHypothesis → IsEmpty ATK.Discovery.Produtores.HabitanteContracao"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.habitante_cotaLog_iff",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 206,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Nonempty ATK.Discovery.Produtores.HabitanteCotaLog ↔ ATK.Discovery.Produtores.ProdutorCotaLog"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.habitante_cotaLog_vazio",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 213,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬RiemannHypothesis → IsEmpty ATK.Discovery.Produtores.HabitanteCotaLog"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.infinitesimal_iff_precisoes",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 150,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Produtores.ProdutorInfinitesimal ↔ ATK.Discovery.Produtores.ProdutorPrecisoes"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.precisoes_de_contracao",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 106,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Produtores.ProdutorContracao → ATK.Discovery.Produtores.ProdutorPrecisoes"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.precisoes_de_cotaLog",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 92,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Produtores.ProdutorCotaLog → ATK.Discovery.Produtores.ProdutorPrecisoes"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.precisoes_de_ganho",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 144,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Produtores.ProdutorGanho → ATK.Discovery.Produtores.ProdutorPrecisoes"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.produtor_generico_vacuo",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 221,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (m : ℕ), ∃ N, (fun x => 0) N < (1 / 10) ^ m"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.rh_de_contracao",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 112,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Produtores.ProdutorContracao → RiemannHypothesis"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.rh_de_cotaLog",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 103,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Produtores.ProdutorCotaLog → RiemannHypothesis"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.rh_de_ganho",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 147,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Produtores.ProdutorGanho → RiemannHypothesis"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.rh_de_infinitesimal",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 162,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Produtores.ProdutorInfinitesimal → RiemannHypothesis"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.rh_de_precisoes",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 89,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Produtores.ProdutorPrecisoes → RiemannHypothesis"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.sem_rh_contracao",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 173,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬RiemannHypothesis → ¬ATK.Discovery.Produtores.ProdutorContracao"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.sem_rh_cotaLog",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 170,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬RiemannHypothesis → ¬ATK.Discovery.Produtores.ProdutorCotaLog"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.sem_rh_defeito_positivo",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 182,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬RiemannHypothesis → 0 < ⨅ N, ATK.Discovery.Produtores.D N"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.sem_rh_ganho",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 176,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬RiemannHypothesis → ¬ATK.Discovery.Produtores.ProdutorGanho"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.sem_rh_infinitesimal",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 179,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬RiemannHypothesis → ¬ATK.Discovery.Produtores.ProdutorInfinitesimal"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.sem_rh_precisoes",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 165,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬RiemannHypothesis → ¬ATK.Discovery.Produtores.ProdutorPrecisoes"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.tende_zero_de_ganho",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 126,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Produtores.ProdutorGanho → Filter.Tendsto ATK.Discovery.Produtores.D Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.tende_zero_iff_precisoes",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 86,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Filter.Tendsto ATK.Discovery.Produtores.D Filter.atTop (nhds 0) ↔ ATK.Discovery.Produtores.ProdutorPrecisoes"
+  },
+  {
+   "name": "ATK.Discovery.Produtores.vacuo_excluido",
+   "file": "atk-kernel/ATK/Discovery/Produtores.lean",
+   "line": 47,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.Produtores.D ≠ fun x => 0"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.abs_rhoMeio_le",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ℝ), |ATK.Discovery.RhoMeio.rhoMeio x| ≤ 1"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.c_sq",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 87,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (n : ℕ), ATK.Discovery.RhoMeio.c n ^ 2 = ATK.Discovery.RhoMeio.c n / 2"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.erro_em_dois",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 251,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Discovery.RhoMeio.erro 2 = 1 - Real.log 2"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.erro_eq",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 217,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (a : ℝ), ATK.Discovery.RhoMeio.erro a = 1 - a * Real.log 2 + a ^ 2 * (Real.log 2 / 4)"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.erro_minimo",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 245,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (a : ℝ), 1 - Real.log 2 ≤ ATK.Discovery.RhoMeio.erro a"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.erro_minimo_iff",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 257,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (a : ℝ), ATK.Discovery.RhoMeio.erro a = 1 - Real.log 2 ↔ a = 2"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.erro_sub",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 241,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (a : ℝ), ATK.Discovery.RhoMeio.erro a - (1 - Real.log 2) = Real.log 2 / 4 * (a - 2) ^ 2"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.erro_um_pos",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 277,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "0 < 1 - Real.log 2"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.iInf_erro",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 271,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "⨅ a, ATK.Discovery.RhoMeio.erro a = 1 - Real.log 2"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.integrableOn_rhoMeio",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 107,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (s : Set ℝ),   MeasureTheory.volume s ≠ ⊤ → MeasureTheory.IntegrableOn ATK.Discovery.RhoMeio.rhoMeio s MeasureTheory.volume"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.integral_faixa",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 115,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (n : ℕ),   ∫ (x : ℝ) in 1 / (↑n + 2)..1 / (↑n + 1), ATK.Discovery.RhoMeio.rhoMeio x =     ATK.Discovery.RhoMeio.c n * (1 / (↑n + 1) - 1 / (↑n + 2))"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.integral_parcial",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 126,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (M : ℕ),   ∫ (x : ℝ) in 1 / (↑M + 1)..1, ATK.Discovery.RhoMeio.rhoMeio x =     ∑ n ∈ Finset.range M, ATK.Discovery.RhoMeio.c n * (1 / (↑n + 1) - 1 / (↑n + 2))"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.integral_rhoMeio",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 174,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∫ (x : ℝ) in Set.Ioc 0 1, ATK.Discovery.RhoMeio.rhoMeio x = Real.log 2 / 2"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.integral_rhoMeio_sq",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 208,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∫ (x : ℝ) in Set.Ioc 0 1, ATK.Discovery.RhoMeio.rhoMeio x ^ 2 = Real.log 2 / 4"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.intervalIntegrable_rhoMeio",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 111,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (a b : ℝ), IntervalIntegrable ATK.Discovery.RhoMeio.rhoMeio MeasureTheory.volume a b"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.measurable_rhoMeio",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 38,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Measurable ATK.Discovery.RhoMeio.rhoMeio"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.rhoMeio_degrau",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (n : ℕ) {x : ℝ},   x ∈ Set.Ioc (1 / (↑n + 2)) (1 / (↑n + 1)) → ATK.Discovery.RhoMeio.rhoMeio x = ATK.Discovery.RhoMeio.c n"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.rhoMeio_sq",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 91,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {x : ℝ}, x ∈ Set.Ioc 0 1 → ATK.Discovery.RhoMeio.rhoMeio x ^ 2 = ATK.Discovery.RhoMeio.rhoMeio x / 2"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.soma_faixas",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 138,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (K : ℕ),   ∑ n ∈ Finset.range (2 * K), ATK.Discovery.RhoMeio.c n * (1 / (↑n + 1) - 1 / (↑n + 2)) =     (↑(harmonic (2 * K)) - ↑(harmonic K)) / 2"
+  },
+  {
+   "name": "ATK.Discovery.RhoMeio.tendsto_harmonic_dobro",
+   "file": "atk-kernel/ATK/Discovery/RhoMeio.lean",
+   "line": 157,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Filter.Tendsto (fun K => ↑(harmonic (2 * K)) - ↑(harmonic K)) Filter.atTop (nhds (Real.log 2))"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.P_le",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 40,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ), ATK.Discovery.Truncamento.P N x ≤ x"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.P_mono",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 118,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ), ATK.Discovery.Truncamento.P N x ≤ ATK.Discovery.Truncamento.P (N + 1) x"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.cauda_lt",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ), ATK.Discovery.Truncamento.T N x < 1 / 10 ^ N"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.cauda_nonneg",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 45,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ), 0 ≤ ATK.Discovery.Truncamento.T N x"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.cauda_some_valor_nao",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 157,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ), 1 ≤ N → ATK.Discovery.Truncamento.T N (1 / 2) = 0"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.dez_pow_pos",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ), 0 < 10 ^ N"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.fechamento_duas_componentes",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 169,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {D Pn Tn : ℕ → ℝ},   (∀ (n : ℕ), D n = Pn n + Tn n) →     Filter.Tendsto Pn Filter.atTop (nhds 0) →       Filter.Tendsto Tn Filter.atTop (nhds 0) → Filter.Tendsto D Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.lt_iff_cauda",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 88,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (a b : ℝ),   a < b ↔     ATK.Discovery.Truncamento.P N a - ATK.Discovery.Truncamento.P N b <       ATK.Discovery.Truncamento.T N b - ATK.Discovery.Truncamento.T N a"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.lt_iff_cauda_de_P_eq",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 94,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {N : ℕ} {a b : ℝ},   ATK.Discovery.Truncamento.P N a = ATK.Discovery.Truncamento.P N b →     (a < b ↔ ATK.Discovery.Truncamento.T N a < ATK.Discovery.Truncamento.T N b)"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.natural_sem_cauda",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 99,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N n : ℕ), ATK.Discovery.Truncamento.P N ↑n = ↑n ∧ ATK.Discovery.Truncamento.T N ↑n = 0"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.p01_sem_cauda",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 110,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ),   ATK.Discovery.Truncamento.P N 1 = ATK.Discovery.Truncamento.P N 1 ∧ ATK.Discovery.Truncamento.T N 1 = 0 ∧ ¬1 < 1"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.projecao_nao_injetiva",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 72,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ),   have a := 1 / (4 * 10 ^ N);   have b := 1 / (2 * 10 ^ N);   ATK.Discovery.Truncamento.P N a = ATK.Discovery.Truncamento.P N b ∧ a < b"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.projecao_zero_nao_basta",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 146,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(∀ (_n : ℕ), ATK.Discovery.Truncamento.P 0 (1 / 2) = 0) ∧ ¬Filter.Tendsto (fun x => 1 / 2) Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.reconstrucao",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ) (x : ℝ), x = ATK.Discovery.Truncamento.P N x + ATK.Discovery.Truncamento.T N x"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.tendsto_P",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 139,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ℝ), Filter.Tendsto (fun N => ATK.Discovery.Truncamento.P N x) Filter.atTop (nhds x)"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.tendsto_cauda",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 132,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ℝ), Filter.Tendsto (fun N => ATK.Discovery.Truncamento.T N x) Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "ATK.Discovery.Truncamento.zero_observado_esconde",
+   "file": "atk-kernel/ATK/Discovery/Truncamento.lean",
+   "line": 57,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ), ATK.Discovery.Truncamento.P N (1 / (2 * 10 ^ N)) = 0 ∧ 0 < ATK.Discovery.Truncamento.T N (1 / (2 * 10 ^ N))"
+  }
+ ],
+ "closed": 151,
+ "files_sha256": {
+  "atk-kernel/ATK/ATKI.lean": "25b2cc254f3718260080f8924f72a82d4592a379bf4923a087099af5afab39b5",
+  "atk-kernel/ATK/ATKIAlgebra.lean": "2075cec2b384028e9aca99d9a57ae05cdfb26d2ead2be12b07a48a88d3176ae3",
+  "atk-kernel/ATK/ATKIAplicacoes.lean": "4b5fab484aab672f49d9c49b33959b75284f7931d19137b1b5cba6727c3e84a3",
+  "atk-kernel/ATK/ATKIBagchi.lean": "d95c01955fe4da7236116086f27de5cf3c0ebf3bcdbb23ac2c668baff87ab5d9",
+  "atk-kernel/ATK/ATKINormal.lean": "7e54451d123179292134e8c12f30a32e93e7a34b478dcb9df26cae5cfd00f0cb",
+  "atk-kernel/ATK/BaezDuarteBridge.lean": "6cb5d5346a77a4bb236de5c8dd10bfa1753492dc43016a87424d69c148f355a7",
+  "atk-kernel/ATK/Conditional/Riemann.lean": "4c1dc437747de9c70341bdca01a0c9fef299a9b6d9b30413a75fc005d3631382",
+  "atk-kernel/ATK/Discovery/Contracao.lean": "6f715e59441accbe93de70a76f24acbf20033855841b75cfdf7405496eb12b67",
+  "atk-kernel/ATK/Discovery/Habitante.lean": "7c8331617413149b60cff7c90e52f78fc47ba229122391f3b9185d0e4ed60856",
+  "atk-kernel/ATK/Discovery/Hilbert.lean": "b55b1d9f996535aa27cc36fec7b43ccb54e2a8a48dcdfec806b659c3490e63e1",
+  "atk-kernel/ATK/Discovery/Infinitesimal.lean": "b4c609563fb75167c98f02320384ed50c8e166e3ebb3383c10a4e67f2fbdff17",
+  "atk-kernel/ATK/Discovery/LeisInfinitesimais.lean": "8027b419c07de5c18986103eafe51c47d940e057ac81fedf8d4aa7ece19b3c9c",
+  "atk-kernel/ATK/Discovery/Operadores.lean": "aa9a0351fbc8e70da7b489323ef13d6455f9bba3001bbc98c54b7a0b154a76e9",
+  "atk-kernel/ATK/Discovery/Produtores.lean": "71b43d69d844b43afafcdac8daab53e0dd4e7d6a1e839b5c46ef9747b79aed60",
+  "atk-kernel/ATK/Discovery/RhoMeio.lean": "24bd2728d9aeaca15a2a58cc0b78432195d16c311026bf398926f87daca570c7",
+  "atk-kernel/ATK/Discovery/Truncamento.lean": "feffd208e1bd930ecb3b696af5429b7e44a36138fbbe2dd7c28b817c6c1f56ed",
+  "atk-kernel/ATK/IGeometria.lean": "9f2d5eca9a7f61dd0fefb90b7794d8cc261c3e97db799fca2807bfe43aa40ab3",
+  "atk-kernel/ATK/Indeterminacy.lean": "9fc0a38993d4846610033b2a38e63894b463a738633a142520561e209bd88f57",
+  "atk-kernel/ATK/IndeterminacyStates.lean": "1a4c9ee6bd9b773c76e53ba812e1c920a6ecb2c4616f0a96179f6af279bc8a8e",
+  "atk-kernel/ATK/MellinRho.lean": "d37a84591f1594e64f5b0a7d4eb4018bafe5cef503c954a41306c4daffb02771",
+  "atk-kernel/ATK/RiemannConcrete.lean": "47f40910773da5d00ee472e91e00bcbaaf3c91114b4f37d751a73c5249ce263d",
+  "atk-kernel/ATK/RiemannFaithful.lean": "269bfe14fa25f1d369c074c2bcb3416e1fd4b1df63a0c23d0773e3d691322c11",
+  "atk-kernel/ATK/RiemannStates.lean": "007cae414504383e41b72abe530d7794b8be7449c8762a2dedc399b9997cd77b",
+  "atk-kernel/ATK/TerceiroTemplo.lean": "fba69f2f93190d66079b292ff862e95553c94c73945695723893475ff0667293",
+  "atk-kernel/ATK/ZetaStrip.lean": "202994e0bf413c54bf1d4eedd1448e5777732bbd4d15df40ac24f9377074624e",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-29T06:27:17Z",
+ "certificate_sha256": "5b23bf47bc5afeb101a4dd12d64551fea51ed2feb6901cc36dade7eb3c30866f"
+}

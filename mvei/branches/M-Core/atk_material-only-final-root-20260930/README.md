@@ -5,7 +5,7 @@ Lean sources from the branch `atk/material-only-final-root-20260930` of the priv
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 19 — closed 5, conditional 0, open 0, proof error 0, not reached 14, no result 0.
 * History: 56 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `63329a31e2a533b5560374a9b6f72738f27b14a4d39fe3c0d8b1076948cd1ada`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_material-only-final-root-20260930/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `0ede200f6a8e8bb8bdfa78198d95230572c109a5f763aa30ac9d7b91062da8bf`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_material-only-final-root-20260930/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

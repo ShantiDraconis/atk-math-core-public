@@ -1,0 +1,6 @@
+name = "atk_certification_pipeline"
+version = "0.1.0"
+defaultTargets = ["ATK"]
+
+[[lean_lib]]
+name = "ATK"

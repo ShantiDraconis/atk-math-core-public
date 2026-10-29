@@ -5,7 +5,7 @@ Lean sources from the branch `atk/research-program-parameters-20261019` of the p
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 6 — closed 6, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 2 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `934584764745124be2a39745022c5f08520dbe6c9a9f8e716e132849ad8b7bf1`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_research-program-parameters-20261019/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `79812bf05b152c9cc8d3f79f927cf150b49460ba2bc1dde21d23b1bdb392acca`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_research-program-parameters-20261019/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

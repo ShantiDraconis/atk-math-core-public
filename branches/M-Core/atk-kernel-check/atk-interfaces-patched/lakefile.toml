@@ -1,0 +1,13 @@
+# Projeto para compilar, sem alterar, os arquivos Lean da sessão de 12/10 (sem lakefile próprio).
+name = "atk_interfaces_patched"
+defaultTargets = ["ATK"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.34.1"
+
+[[lean_lib]]
+name = "ATK"
+srcDir = "lean"
+globs = ["ATK.+"]

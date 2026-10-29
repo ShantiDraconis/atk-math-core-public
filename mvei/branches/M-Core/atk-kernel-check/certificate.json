@@ -1,0 +1,2005 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk-kernel-check",
+ "branch_state": "em andamento",
+ "head_commit": "0572b8b344d2d8a4e6fc6c29df8dc9bee810e532",
+ "head_commit_date": "2026-10-13T02:35:23+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "0572b8b344d2d8a4e6fc6c29df8dc9bee810e532",
+   "date": "2026-10-13T02:35:23+01:00",
+   "subject": "Enstrophy: hipóteses ≠ 0 explícitas para field_simp"
+  },
+  {
+   "commit": "2da287789e0c7b64454140985ef8092f911f4b85",
+   "date": "2026-10-13T02:35:10+01:00",
+   "subject": "Enstrophy: ycrit_optimal sem reescrita ambígua"
+  },
+  {
+   "commit": "0e537601dc579de132e02eb4b6458cce55f2e77d",
+   "date": "2026-10-13T02:26:49+01:00",
+   "subject": "numerics: família de Nyman–Beurling restrita (f_q = rho_q - rho_1/q) até N=1000 por Vasyunin; confere os 13 valores da outra sessão; modelo de potência refutado"
+  },
+  {
+   "commit": "1d09943a7c5900ad60707e0d6495e1f6620f2c4b",
+   "date": "2026-10-13T02:25:21+01:00",
+   "subject": "atk-kernel: Enstrophy (álgebra da dedução NS de 13/10: Young, θ*=3/4, y_crit, linha cúbica) + NSLaminar (escoamento laminar certificado como solução de NS, convecção nula, periódico) + nb_constrained."
+  },
+  {
+   "commit": "e11f459feec5556b9c31990636506e535fcc8486",
+   "date": "2026-10-13T01:54:17+01:00",
+   "subject": "atk-kernel README: 139 teoremas, Transition, NSBridge, NS condicional"
+  },
+  {
+   "commit": "553d7d7b629fabc6f854c2a20d4ee88795b7e197",
+   "date": "2026-10-13T01:44:25+01:00",
+   "subject": "Transition: construtor anônimo em pipeline_iff; workflow manual do certificado externo NS (C)"
+  },
+  {
+   "commit": "1f600f01ad4060751963bf58d7bbd3ef21c441a1",
+   "date": "2026-10-13T01:32:52+01:00",
+   "subject": "atk-kernel: Transition (operadores, lei do pipeline, linha crítica dentro/sobre/além) + ponte NS (C) OpenAI/FC ⇒ ATK.Exact.ClayC"
+  },
+  {
+   "commit": "e292ae6046bd8de27d63eadfdd3868f88960282c",
+   "date": "2026-10-13T01:09:37+01:00",
+   "subject": "atk-kernel README: Closure, portão OPEN_MATH e contagem 110"
+  },
+  {
+   "commit": "175d7ec86ad12c4f2db6c3a2002829d73a86d275",
+   "date": "2026-10-13T01:01:45+01:00",
+   "subject": "closure_gate: publicar estado de OPEN_MATH e controles como anotações do CI"
+  },
+  {
+   "commit": "c7d86d89cf32532446e9ea00be5c8610c9992219",
+   "date": "2026-10-13T00:52:52+01:00",
+   "subject": "atk-kernel: Closure — fechamento como decisão (meta), falsificadores exatos, (A)∨(C) de NS é teorema, leis AGOT e portão OPEN_MATH"
+  },
+  {
+   "commit": "b81095d0b78c2d1db5702c1b223b837f65bad0e7",
+   "date": "2026-10-12T21:14:36+01:00",
+   "subject": "atk-ficha: FICHA de matemática nova formalizada (ISK refinado, leis de escala, portões por problema) + propostas de 12/10 avaliadas"
+  },
+  {
+   "commit": "613b4ddfe4855b5145166bcce54f8462863805b9",
+   "date": "2026-10-12T18:53:35+01:00",
+   "subject": "atk-kernel: Horizon §4 — fator do primo no infinito em ζ (Γ_ℝ) e equação funcional"
+  },
+  {
+   "commit": "8381ebd5a7624f331cf77ae7181e78ebc8855132",
+   "date": "2026-10-12T18:51:46+01:00",
+   "subject": "atk-kernel: Horizon — ajuste de coerção |x| (ℚ → ℝ)"
+  },
+  {
+   "commit": "b45ea76e38c891e9f339900a70647363ed5f182e",
+   "date": "2026-10-12T18:45:05+01:00",
+   "subject": "atk-kernel: ATK/Horizon.lean — o que o 'horizon prime' pode significar e ser provado (primo no infinito, fórmula do produto, primo hiperfinito, transferência)"
+  },
+  {
+   "commit": "272d5fc686014cbf0c779ed37e5bbfcbbaabe8d2",
+   "date": "2026-10-12T17:47:49+01:00",
+   "subject": "PARAMETROS_72: NS 19–21 e 52 refutados por escala; 23 partes abertas (8 enunciados)"
+  },
+  {
+   "commit": "60ffb18da1b06407e6eef4917bab89bc3a4e306e",
+   "date": "2026-10-12T15:39:53+01:00",
+   "subject": "PARAMETROS_72: contagem de soluções de Beal por faixa"
+  },
+  {
+   "commit": "4d0b63fe3da53485a14794f68bb4106dcb375715",
+   "date": "2026-10-12T15:39:42+01:00",
+   "subject": "PARAMETROS_72: preenche os 39 parâmetros sem valor (BSD 64687 curvas, Beal busca, NS, P/NP no kernel, literatura) e corrige as linhas 24–28"
+  },
+  {
+   "commit": "4e825de38e45edd875b2fc53e9c000f6087dea98",
+   "date": "2026-10-12T09:18:58+01:00",
+   "subject": "ATK_AGENDA: alvos exatos (RH, NS A–D, Beal, P≠NP) e o que falta na Mathlib para BSD, YM e Hodge"
+  },
+  {
+   "commit": "f7271512cfe11099a2cb1d1c3245579bde0d4d2d",
+   "date": "2026-10-12T09:12:10+01:00",
+   "subject": "atk-kernel: ATK/Exact.lean (módulo = namespace), prova do campo nulo com lemas auxiliares; erros de compilação nas anotações"
+  },
+  {
+   "commit": "ede5000224888659b9c965ca248f70d547af8ec2",
+   "date": "2026-10-12T09:04:38+01:00",
+   "subject": "atk-kernel: ExactTargets — enunciados oficiais (RH, Navier–Stokes A–D, Beal, P≠NP) sem Prop livre + testes de sanidade"
+  },
+  {
+   "commit": "85719a6ab1a2a85e499ddf84a73ecb65972c7a16",
+   "date": "2026-10-12T02:29:28+01:00",
+   "subject": "atk-batch2: corrige nomes no apêndice de auditoria (Classical.ofNonempty) e a prova de no_natural_descent na cópia corrigida"
+  },
+  {
+   "commit": "9af32fe74bec0e81db1be9ded76f6156f8308197",
+   "date": "2026-10-12T02:21:21+01:00",
+   "subject": "atk-batch2: kernel dos pacotes TERMINAL_CERTIFICATES, EXACT_GATE, FORMAL_OPERATORS e MATERIAL_MATH (originais intactos + cópias corrigidas + auditoria)"
+  },
+  {
+   "commit": "901161afef0280758d3ba0299f2e9edaf6eabc52",
+   "date": "2026-10-12T01:59:16+01:00",
+   "subject": "atk-interfaces-patched: cópia com as 2 provas de descida corrigidas (originais preservados)"
+  },
+  {
+   "commit": "0c9ce2979e422538a4214927316f21223cd2f423",
+   "date": "2026-10-12T01:54:05+01:00",
+   "subject": "atk-interfaces: compila no kernel os arquivos Lean da sessão de 12/10 (sem alterá-los) + auditoria"
+  },
+  {
+   "commit": "200f3fe64e14698c3a666c90569e5dba3330d9a5",
+   "date": "2026-10-12T01:47:01+01:00",
+   "subject": "ATK_AGENDA: agenda de pesquisa formalizada após a auditoria lógica"
+  },
+  {
+   "commit": "49a9af8db3e2f7d189e03b52d0127f7408acf78a",
+   "date": "2026-10-12T01:46:16+01:00",
+   "subject": "atk-kernel: certificado v2 (63/64) do commit cfa675c"
+  },
+  {
+   "commit": "cfa675c8239340f38bafb11eab2bcc292ffe4195",
+   "date": "2026-10-12T01:39:27+01:00",
+   "subject": "atk-kernel: anotações agrupadas (verificado 48/48 no M-Core)"
+  },
+  {
+   "commit": "1bf3183c6a872e1f2b071db4862a54ea65c1a43f",
+   "date": "2026-10-12T01:32:36+01:00",
+   "subject": "atk-kernel: agenda — convergência de D_N, descida de Beal bem fundada, controle de energia NS"
+  },
+  {
+   "commit": "6e69855e5a29e42813153237e28dd29951fcdd53",
+   "date": "2026-10-12T01:23:14+01:00",
+   "subject": "atk-kernel: auditoria adversarial — produtores terminais são satisfeitos trivialmente"
+  },
+  {
+   "commit": "f1f101205337578a3c8e1e34c563ae80ea343a28",
+   "date": "2026-10-12T00:52:11+01:00",
+   "subject": "atk-kernel: certificado v1 (41/42) do commit 97ddae7, congelado na tag atk-kernel-cert-v1"
+  },
+  {
+   "commit": "97ddae72520d9f10a5472cf6d373a601c09f6ce4",
+   "date": "2026-10-12T00:47:11+01:00",
+   "subject": "atk-legacy: cópia corrigida de hodge_linear_realization (original preservado)"
+  },
+  {
+   "commit": "1037295d249795e2846a44830ec2c5fce6ab80a8",
+   "date": "2026-10-12T00:43:45+01:00",
+   "subject": "atk-legacy: compila no kernel os arquivos Lean originais (v4.21.0), sem alterá-los"
+  },
+  {
+   "commit": "2c900c18e60d64fc1c4bd4ee854948ec5516ace3",
+   "date": "2026-10-12T01:38:35+02:00",
+   "subject": "ATK: registrar valores concretos e isolar 24 obrigações terminais"
+  },
+  {
+   "commit": "8d6bcb002041cd942932dcc62ffbd7c27752d29f",
+   "date": "2026-10-12T00:35:51+01:00",
+   "subject": "atk-kernel: +7 lemas (torção BSD, decaimento forçado NS, distância de Báez-Duarte RH)"
+  },
+  {
+   "commit": "e12b393b71b7ade939429cbbef4a8fa02122b1cb",
+   "date": "2026-10-12T00:22:51+01:00",
+   "subject": "atk-kernel: mapa dos 72 parâmetros com os valores reais calculados"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-29T05:36:17+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.21.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.Audit.Contracts.beal_producer_iff",
+   "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
+   "line": 53,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(T : Type) (Cx : T → Prop) : Nonempty (Beal.Producer T Cx) ↔ Beal.Target T Cx"
+  },
+  {
+   "name": "ATK.Audit.Contracts.bsd_producer_iff",
+   "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
+   "line": 33,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(C : Type) (Adm R F : C → Prop) : Nonempty (BSD.Producer C Adm R F) ↔ BSD.Target C Adm R F"
+  },
+  {
+   "name": "ATK.Audit.Contracts.hodge_producer_iff",
+   "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
+   "line": 38,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(V Cl Cy : Type) [Nonempty Cy] (SP : V → Prop) (HC : V → Cl → Prop) (Rep : V → Cy → Cl → Prop) : Nonempty (Hodge.Producer V Cl Cy SP HC Rep) ↔ Hodge.Target V Cl Cy SP HC Rep"
+  },
+  {
+   "name": "ATK.Audit.Contracts.ns_producer_iff",
+   "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
+   "line": 11,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(I S : Type) [Nonempty S] (Adm : I → Prop) (Sol : I → S → Prop) (Reg : S → Prop) : Nonempty (NS.Producer I S Adm Sol Reg) ↔ NS.Target I S Adm Sol Reg"
+  },
+  {
+   "name": "ATK.Audit.Contracts.pnp_producer_iff",
+   "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
+   "line": 57,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(M : Type) (D P : M → Prop) : Nonempty (PNP.Producer M D P) ↔ PNP.Target M D P"
+  },
+  {
+   "name": "ATK.Audit.Contracts.pnp_target_vacuous",
+   "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
+   "line": 61,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": ": PNP.Target Unit (fun _ => True) (fun _ => False)"
+  },
+  {
+   "name": "ATK.Audit.Contracts.rh_producer_vacuous",
+   "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
+   "line": 3,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": ": Nonempty (RH.Producer (fun n : Nat => (0 : Rat) / ((n : Rat) + 1)) (fun _ => True))"
+  },
+  {
+   "name": "ATK.Audit.Contracts.ym_producer_iff",
+   "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
+   "line": 28,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(T : Type) (Phys Gap : T → Prop) : Nonempty (YM.Producer T Phys Gap) ↔ YM.Target T Phys Gap"
+  },
+  {
+   "name": "ATK.Audit.certificate_iff",
+   "file": "atk-batch2/appendix/orig-tc/ATK/TerminalCertificate.lean",
+   "line": 2,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(P : Prop) : Nonempty (ATK.Certificate.ProofCertificate P) ↔ P"
+  },
+  {
+   "name": "ATK.Audit.gate_iff",
+   "file": "atk-batch2/appendix/orig-fo/ATK/KernelGates.lean",
+   "line": 2,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(C : Prop) : Nonempty (ATK.TerminalGate C) ↔ C"
+  },
+  {
+   "name": "ATK.Audit.lane_iff",
+   "file": "atk-batch2/appendix/orig-eg/ATKExactGate.lean",
+   "line": 2,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(P : Prop) : Nonempty (ATK.Lane P) ↔ P"
+  },
+  {
+   "name": "ATK.Audit.sevenGates_iff",
+   "file": "atk-batch2/appendix/orig-fo/ATK/TerminalTargets.lean",
+   "line": 2,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(t : ATK.SevenTargets) : Nonempty (ATK.SevenGates t) ↔ (t.RH ∧ t.NS ∧ t.YM ∧ t.BSD ∧ t.Hodge ∧ t.Beal ∧ t.PNP)"
+  },
+  {
+   "name": "ATK.AuditOfInterfaces.endpoint_vacuous",
+   "file": "atk-interfaces-patched/lean/ATK/AuditOfInterfaces.lean",
+   "line": 19,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∃ e, e.materialObligation ∧ e.concreteStatement"
+  },
+  {
+   "name": "ATK.AuditOfInterfaces.obligation_iff",
+   "file": "atk-interfaces-patched/lean/ATK/AuditOfInterfaces.lean",
+   "line": 16,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T : Prop), Nonempty (ATK.KernelInterfaces.Obligation T) ↔ T"
+  },
+  {
+   "name": "ATK.BSD.torsion_card_pos",
+   "file": "atk-kernel/ATK/BSD.lean",
+   "line": 47,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (W : WeierstrassCurve.Affine ℚ) [Finite ↥(AddCommGroup.torsion W.Point)], 0 < Nat.card ↥(AddCommGroup.torsion W.Point)"
+  },
+  {
+   "name": "ATK.BSD.torsion_contains_zero",
+   "file": "atk-kernel/ATK/BSD.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (W : WeierstrassCurve.Affine ℚ), 0 ∈ AddCommGroup.torsion W.Point"
+  },
+  {
+   "name": "ATK.BealDescent.beal_of_descent",
+   "file": "atk-kernel/ATK/BealDescent.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (d : ATK.BealDescent.WFDescent), ATK.BealDescent.BealStatement"
+  },
+  {
+   "name": "ATK.BealDescent.descent_iff_beal",
+   "file": "atk-kernel/ATK/BealDescent.lean",
+   "line": 71,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Nonempty ATK.BealDescent.WFDescent ↔ ATK.BealDescent.BealStatement"
+  },
+  {
+   "name": "ATK.BealDescent.descent_of_beal",
+   "file": "atk-kernel/ATK/BealDescent.lean",
+   "line": 63,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.BealDescent.BealStatement → Nonempty ATK.BealDescent.WFDescent"
+  },
+  {
+   "name": "ATK.BealDescent.no_primitive_of_descent",
+   "file": "atk-kernel/ATK/BealDescent.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (d : ATK.BealDescent.WFDescent) (s : ATK.BealDescent.PrimitiveSolution), False"
+  },
+  {
+   "name": "ATK.Certificate.seven_verify",
+   "file": "atk-batch2/originals/terminal-certificates/ATK/TerminalCertificate.lean",
+   "line": 13,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{R N Y B H E P : Prop} (r : ProofCertificate R) (n : ProofCertificate N) (y : ProofCertificate Y) (b : ProofCertificate B) (h : ProofCertificate H) (e : ProofCertificate E) (p : ProofCertificate P) : R ∧ N ∧ Y ∧ B ∧ H ∧ E ∧ P"
+  },
+  {
+   "name": "ATK.Certificate.verify",
+   "file": "atk-batch2/originals/terminal-certificates/ATK/TerminalCertificate.lean",
+   "line": 10,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{target : Prop} (c : ProofCertificate target) : target"
+  },
+  {
+   "name": "ATK.Closure.Ioc_not_compact",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 379,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬IsCompact (Set.Ioc 0 1)"
+  },
+  {
+   "name": "ATK.Closure.beal_false_iff",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 318,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬ATK.Exact.Beal ↔   ∃ A B C x y z, 0 < A ∧ 0 < B ∧ 0 < C ∧ 2 < x ∧ 2 < y ∧ 2 < z ∧ A ^ x + B ^ y = C ^ z ∧ A.gcd (B.gcd C) = 1"
+  },
+  {
+   "name": "ATK.Closure.beal_refuted_by_witness",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 333,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (A B C x y z : ℕ),   0 < A → 0 < B → 0 < C → 2 < x → 2 < y → 2 < z → A ^ x + B ^ y = C ^ z → A.gcd (B.gcd C) = 1 → ¬ATK.Exact.Beal"
+  },
+  {
+   "name": "ATK.Closure.clayA_false_iff",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 182,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬ATK.Exact.ClayA ↔   ∃ ν,     0 < ν ∧       ∃ u0,         ContDiff ℝ (↑⊤) u0 ∧           (∀ (x : ATK.Exact.R3), ATK.Exact.div3 u0 x = 0) ∧             ATK.Exact.RapidDecay u0 ∧               ¬∃ u p, ATK.Exact.NSClassical ν u0 (fun x x_1 => 0) u p ∧ ATK.Exact.BoundedEnergy u"
+  },
+  {
+   "name": "ATK.Closure.clayA_or_clayC",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 196,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Exact.ClayA ∨ ATK.Exact.ClayC"
+  },
+  {
+   "name": "ATK.Closure.conv3_smul",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 105,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c : ℝ) (v : ATK.Exact.R3 → ATK.Exact.R3) (x : ATK.Exact.R3),   ATK.Exact.conv3 (fun y => c • v y) x = (c * c) • ATK.Exact.conv3 v x"
+  },
+  {
+   "name": "ATK.Closure.derivWithin_rescale",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 113,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {a : ℝ},   0 < a →     ∀ (g : ℝ → ATK.Exact.R3) (t : ℝ),       derivWithin (fun s => a • g (a * s)) (Set.Ici 0) t = (a * a) • derivWithin g (Set.Ici 0) (a * t)"
+  },
+  {
+   "name": "ATK.Closure.div3_smul",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 93,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c : ℝ) (v : ATK.Exact.R3 → ATK.Exact.R3) (x : ATK.Exact.R3),   ATK.Exact.div3 (fun y => c • v y) x = c * ATK.Exact.div3 v x"
+  },
+  {
+   "name": "ATK.Closure.energy_rescale",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 147,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {a : ℝ},   0 < a →     ∀ {u : ℝ → ATK.Exact.R3 → ATK.Exact.R3},       ATK.Exact.BoundedEnergy u → ATK.Exact.BoundedEnergy fun t x => a • u (a * t) x"
+  },
+  {
+   "name": "ATK.Closure.exactCertificate_iff",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 226,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Exact.ExactCertificate ↔ ATK.Exact.RH ∧ ATK.Exact.Beal ∧ ATK.Exact.P_ne_NP"
+  },
+  {
+   "name": "ATK.Closure.extraction_fails_without_compactness",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 367,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(∀ x ∈ Set.Ioc 0 1, 0 ≤ x) ∧   ContinuousOn (fun x => x) (Set.Ioc 0 1) ∧ (∀ ε > 0, ∃ x ∈ Set.Ioc 0 1, x < ε) ∧ ¬∃ x ∈ Set.Ioc 0 1, x = 0"
+  },
+  {
+   "name": "ATK.Closure.extraction_fails_without_lsc",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 388,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "IsCompact (Set.Icc 0 1) ∧   (∀ x ∈ Set.Icc 0 1, 0 ≤ ATK.Closure.jumpDefect x) ∧     (∀ ε > 0, ∃ x ∈ Set.Icc 0 1, ATK.Closure.jumpDefect x < ε) ∧ ¬∃ x ∈ Set.Icc 0 1, ATK.Closure.jumpDefect x = 0"
+  },
+  {
+   "name": "ATK.Closure.extraction_law",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 352,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {X : Type u_1} [inst : TopologicalSpace X] {K : Set X} {D : X → ℝ},   IsCompact K →     K.Nonempty → LowerSemicontinuousOn D K → (∀ x ∈ K, 0 ≤ D x) → (∀ ε > 0, ∃ x ∈ K, D x < ε) → ∃ x ∈ K, D x = 0"
+  },
+  {
+   "name": "ATK.Closure.fermat_catalan_boundary",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 339,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(2 ^ 5 + 7 ^ 2 = 3 ^ 4 ∧ Nat.gcd 2 (Nat.gcd 7 3) = 1) ∧   (13 ^ 2 + 7 ^ 3 = 2 ^ 9 ∧ Nat.gcd 13 (Nat.gcd 7 2) = 1) ∧     (2 ^ 7 + 17 ^ 3 = 71 ^ 2 ∧ Nat.gcd 2 (Nat.gcd 17 71) = 1) ∧       (3 ^ 5 + 11 ^ 4 = 122 ^ 2 ∧ Nat.gcd 3 (Nat.gcd 11 122) = 1) ∧ ¬2 < 2"
+  },
+  {
+   "name": "ATK.Closure.forceDecay_zero",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 177,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Exact.ForceDecay fun x x_1 => 0"
+  },
+  {
+   "name": "ATK.Closure.grad3_mul",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 101,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c : ℝ) (q : ATK.Exact.R3 → ℝ) (x : ATK.Exact.R3), ATK.Exact.grad3 (fun y => c * q y) x = c • ATK.Exact.grad3 q x"
+  },
+  {
+   "name": "ATK.Closure.jumpDefect_not_lsc",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 408,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬LowerSemicontinuousOn ATK.Closure.jumpDefect (Set.Icc 0 1)"
+  },
+  {
+   "name": "ATK.Closure.lap3_smul",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 97,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c : ℝ) (v : ATK.Exact.R3 → ATK.Exact.R3) (x : ATK.Exact.R3),   ATK.Exact.lap3 (fun y => c • v y) x = c • ATK.Exact.lap3 v x"
+  },
+  {
+   "name": "ATK.Closure.navierStokes_disjunction",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 218,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Exact.NavierStokes"
+  },
+  {
+   "name": "ATK.Closure.ns_rescale",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 119,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {ν ν' a : ℝ},   0 < a →     ν' = a * ν →       ∀ {u0 w0 : ATK.Exact.R3 → ATK.Exact.R3},         (∀ (x : ATK.Exact.R3), w0 x = a • u0 x) →           ∀ {u : ℝ → ATK.Exact.R3 → ATK.Exact.R3} {p : ℝ → ATK.Exact.R3 → ℝ},             ATK.Exact.NSClassical ν u0 (fun x x_1 => 0) u p →               ATK.Exact.NSClassical ν' w0 (fun x x_1 => 0) (fun t x => a • u (a * t) x) fun t x => a * a * p (a * t) x"
+  },
+  {
+   "name": "ATK.Closure.openMath_prop_iff",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 231,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬ATK.Exact.ExactCertificate ↔ ¬ATK.Exact.RH ∨ ¬ATK.Exact.Beal ∨ ATK.Exact.P_eq_NP"
+  },
+  {
+   "name": "ATK.Closure.pd_mul",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 88,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (i : Fin 3) (c : ℝ) (q : ATK.Exact.R3 → ℝ), (ATK.Exact.pd i fun y => c * q y) = fun x => c * ATK.Exact.pd i q x"
+  },
+  {
+   "name": "ATK.Closure.pd_smul",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 78,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {F : Type u_1} [inst : NormedAddCommGroup F] [inst_1 : NormedSpace ℝ F] (i : Fin 3) (c : ℝ) (f : ATK.Exact.R3 → F),   (ATK.Exact.pd i fun y => c • f y) = fun x => c • ATK.Exact.pd i f x"
+  },
+  {
+   "name": "ATK.Closure.pnp_false_iff",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 348,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬ATK.Exact.P_ne_NP ↔ ATK.Exact.P_eq_NP"
+  },
+  {
+   "name": "ATK.Closure.rapidDecay_smul",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 160,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c : ℝ) {u0 : ATK.Exact.R3 → ATK.Exact.R3},   ContDiff ℝ (↑⊤) u0 → ATK.Exact.RapidDecay u0 → ATK.Exact.RapidDecay fun x => c • u0 x"
+  },
+  {
+   "name": "ATK.Closure.resolution_nonempty",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 71,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : Prop), Nonempty (ATK.Closure.Resolution P)"
+  },
+  {
+   "name": "ATK.Closure.rh_counterexample_in_open_strip",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 313,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {s : ℂ}, riemannZeta s = 0 → (¬∃ n, s = -2 * (↑n + 1)) → 0 < s.re ∧ s.re < 1"
+  },
+  {
+   "name": "ATK.Closure.rh_counterexample_re_lt_one",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 253,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {s : ℂ}, riemannZeta s = 0 → s.re < 1"
+  },
+  {
+   "name": "ATK.Closure.rh_counterexample_re_pos",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 258,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {s : ℂ}, riemannZeta s = 0 → (¬∃ n, s = -2 * (↑n + 1)) → 0 < s.re"
+  },
+  {
+   "name": "ATK.Closure.rh_false_iff",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 237,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬ATK.Exact.RH ↔ ∃ s, riemannZeta s = 0 ∧ (¬∃ n, s = -2 * (↑n + 1)) ∧ s ≠ 1 ∧ s.re ≠ 1 / 2"
+  },
+  {
+   "name": "ATK.Closure.smoothForce_zero",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 172,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Exact.SmoothForce fun x x_1 => 0"
+  },
+  {
+   "name": "ATK.Closure.transport_fails_nonuniform",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 425,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Filter.Tendsto (fun n => 1 / (↑n + 1)) Filter.atTop (nhds 0) ∧   (∀ (n : ℕ), (↑n + 1) * (1 / (↑n + 1)) = 1) ∧ ¬Filter.Tendsto (fun x => 1) Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "ATK.Closure.transport_law",
+   "file": "atk-kernel/ATK/Closure.lean",
+   "line": 414,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {ι : Type u_1} {X : Type u_2} {Y : Type u_3} {l : Filter ι} {T : X → Y} {DX : X → ℝ} {DY : Y → ℝ} {C : ℝ},   (∀ (x : X), DY (T x) ≤ C * DX x) →     (∀ (y : Y), 0 ≤ DY y) →       ∀ {xs : ι → X},         Filter.Tendsto (fun n => DX (xs n)) l (nhds 0) → Filter.Tendsto (fun n => DY (T (xs n))) l (nhds 0)"
+  },
+  {
+   "name": "ATK.ConcreteAnalytic.infimum_antitone",
+   "file": "atk-batch2/originals/material-math/ATK/ConcreteAnalytic.lean",
+   "line": 4,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{α : Type*} (cost : α → Real) (A B : Set α) (hAB : A ⊆ B) (hA : (cost '' A).BddBelow) (hAn : (cost '' A).Nonempty) : sInf (cost '' B) ≤ sInf (cost '' A)"
+  },
+  {
+   "name": "ATK.ConcreteArithmetic.common_prime_divides_third",
+   "file": "atk-batch2/originals/material-math/ATK/ConcreteArithmetic.lean",
+   "line": 21,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{a b c x y z : Nat} (hz : 0 < z) (heq : a ^ x + b ^ y = c ^ z) {p : Nat} (hp : Nat.Prime p) (hpa : p ∣ a) (hpb : p ∣ b) : p ∣ c"
+  },
+  {
+   "name": "ATK.ConcreteArithmetic.no_natural_descent",
+   "file": "atk-batch2/originals/material-math/ATK/ConcreteArithmetic.lean",
+   "line": 4,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "{C : Type*} (hC : Nonempty C) (measure : C → Nat) (step : C → C) (decreases : ∀ c, measure (step c) < measure c) : False"
+  },
+  {
+   "name": "ATK.ConcreteSemantics.eval_conj",
+   "file": "atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean",
+   "line": 17,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(a : Nat → Bool) (p q : BoolExpr) : eval a (.conj p q) = (eval a p && eval a q)"
+  },
+  {
+   "name": "ATK.ConcreteSemantics.eval_double_neg",
+   "file": "atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean",
+   "line": 21,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(a : Nat → Bool) (p : BoolExpr) : eval a (.neg (.neg p)) = eval a p"
+  },
+  {
+   "name": "ATK.ConcreteSemantics.verifies_conj",
+   "file": "atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean",
+   "line": 28,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(a : Nat → Bool) (p q : BoolExpr) : verifies a (.conj p q) ↔ verifies a p ∧ verifies a q"
+  },
+  {
+   "name": "ATK.Enstrophy.cubic_beyond_drift",
+   "file": "atk-kernel/ATK/Enstrophy.lean",
+   "line": 126,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {a A c : ℝ}, 0 < c → a < A * c ^ 2 → 0 < -a * c + A * c ^ 3"
+  },
+  {
+   "name": "ATK.Enstrophy.cubic_inside",
+   "file": "atk-kernel/ATK/Enstrophy.lean",
+   "line": 101,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {y y' : ℝ → ℝ} {a A T c : ℝ},   ContinuousOn y (Set.Icc 0 T) →     (∀ t ∈ Set.Ico 0 T, HasDerivWithinAt y (y' t) (Set.Ici t) t) →       (∀ t ∈ Set.Ico 0 T, y' t ≤ -a * y t + A * y t ^ 3) → y 0 ≤ c → 0 < c → A * c ^ 2 < a → ∀ t ∈ Set.Icc 0 T, y t ≤ c"
+  },
+  {
+   "name": "ATK.Enstrophy.cubic_on_line_equilibrium",
+   "file": "atk-kernel/ATK/Enstrophy.lean",
+   "line": 120,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {a A c : ℝ}, A * c ^ 2 = a → -a * c + A * c ^ 3 = 0"
+  },
+  {
+   "name": "ATK.Enstrophy.theta_optimal",
+   "file": "atk-kernel/ATK/Enstrophy.lean",
+   "line": 74,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (θ : ℝ), (1 - θ) * θ ^ 3 ≤ 27 / 256"
+  },
+  {
+   "name": "ATK.Enstrophy.theta_optimal_attained",
+   "file": "atk-kernel/ATK/Enstrophy.lean",
+   "line": 79,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(1 - 3 / 4) * (3 / 4) ^ 3 = 27 / 256"
+  },
+  {
+   "name": "ATK.Enstrophy.ycrit_optimal",
+   "file": "atk-kernel/ATK/Enstrophy.lean",
+   "line": 81,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C₀ ν l : ℝ},   0 < C₀ →     0 < ν →       0 ≤ l → 2 * (1 - 3 / 4) * ν * l / (27 * C₀ ^ 4 / (32 * (3 / 4) ^ 3 * ν ^ 3)) = (ν ^ 2 * √l / (2 * C₀ ^ 2)) ^ 2"
+  },
+  {
+   "name": "ATK.Enstrophy.ycrit_value",
+   "file": "atk-kernel/ATK/Enstrophy.lean",
+   "line": 96,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C₀ ν l : ℝ},   0 < C₀ →     0 < ν → 0 ≤ l → √(2 * (1 - 3 / 4) * ν * l / (27 * C₀ ^ 4 / (32 * (3 / 4) ^ 3 * ν ^ 3))) = ν ^ 2 * √l / (2 * C₀ ^ 2)"
+  },
+  {
+   "name": "ATK.Enstrophy.young_coefficient",
+   "file": "atk-kernel/ATK/Enstrophy.lean",
+   "line": 68,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (C₀ θ ν y : ℝ),   θ ≠ 0 → ν ≠ 0 → 27 * C₀ ^ 4 * (2 * y) ^ 3 / (256 * (θ * ν) ^ 3) = 27 * C₀ ^ 4 / (32 * θ ^ 3 * ν ^ 3) * y ^ 3"
+  },
+  {
+   "name": "ATK.Enstrophy.young_four",
+   "file": "atk-kernel/ATK/Enstrophy.lean",
+   "line": 39,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (μ : ℝ), 4 * μ ≤ 3 + μ ^ 4"
+  },
+  {
+   "name": "ATK.Enstrophy.young_scaled",
+   "file": "atk-kernel/ATK/Enstrophy.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {s X q : ℝ}, 0 < s → 0 ≤ X → 0 ≤ q → X * q ^ 3 ≤ s * q ^ 4 + 27 * X ^ 4 / (256 * s ^ 3)"
+  },
+  {
+   "name": "ATK.Exact.P_ne_NP_iff",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 273,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Exact.P_ne_NP ↔ ¬ATK.Exact.P_eq_NP"
+  },
+  {
+   "name": "ATK.Exact.RH_iff",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Exact.RH ↔ ∀ (s : ℂ), riemannZeta s = 0 → (¬∃ n, s = -2 * (↑n + 1)) → s ≠ 1 → s.re = 1 / 2"
+  },
+  {
+   "name": "ATK.Exact.beal_instance",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 215,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "2 ^ 3 + 2 ^ 3 = 2 ^ 4 ∧ 1 < Nat.gcd 2 (Nat.gcd 2 2)"
+  },
+  {
+   "name": "ATK.Exact.beal_needs_exponents_gt_two",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 219,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬∀ (A B C x y z : ℕ), 0 < A → 0 < B → 0 < C → 1 < x → 1 < y → 1 < z → A ^ x + B ^ y = C ^ z → 1 < A.gcd (B.gcd C)"
+  },
+  {
+   "name": "ATK.Exact.conv3_zero",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 168,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ATK.Exact.R3), ATK.Exact.conv3 (fun x => 0) x = 0"
+  },
+  {
+   "name": "ATK.Exact.div3_id",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 150,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ATK.Exact.R3), ATK.Exact.div3 (fun y => y) x = 3"
+  },
+  {
+   "name": "ATK.Exact.div3_zero",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 177,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ATK.Exact.R3), ATK.Exact.div3 (fun x => 0) x = 0"
+  },
+  {
+   "name": "ATK.Exact.flt_of_beal",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 228,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Exact.Beal → FermatLastTheorem"
+  },
+  {
+   "name": "ATK.Exact.grad3_zero",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 174,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ATK.Exact.R3), ATK.Exact.grad3 (fun x => 0) x = 0"
+  },
+  {
+   "name": "ATK.Exact.identity_field_not_solution",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 155,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (ν : ℝ) (u0 : ATK.Exact.R3 → ATK.Exact.R3) (f : ℝ → ATK.Exact.R3 → ATK.Exact.R3) (p : ℝ → ATK.Exact.R3 → ℝ),   ¬ATK.Exact.NSClassical ν u0 f (fun x y => y) p"
+  },
+  {
+   "name": "ATK.Exact.inP_bit_example",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 281,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Exact.InPOn (fun b => [b]) {true}"
+  },
+  {
+   "name": "ATK.Exact.lap3_zero",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 171,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ATK.Exact.R3), ATK.Exact.lap3 (fun x => 0) x = 0"
+  },
+  {
+   "name": "ATK.Exact.pd_coord",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 139,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (i j : Fin 3) (x : ATK.Exact.R3), ATK.Exact.pd i (fun y => y.ofLp j) x = if j = i then 1 else 0"
+  },
+  {
+   "name": "ATK.Exact.pd_zero",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 162,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {F : Type u_1} [inst : NormedAddCommGroup F] [inst_1 : NormedSpace ℝ F] (i : Fin 3),   (ATK.Exact.pd i fun x => 0) = fun x => 0"
+  },
+  {
+   "name": "ATK.Exact.zero_data_admissible",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 200,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(ContDiff ℝ ↑⊤ fun x => 0) ∧   (∀ (x : ATK.Exact.R3), ATK.Exact.div3 (fun x => 0) x = 0) ∧     (ATK.Exact.RapidDecay fun x => 0) ∧ ATK.Exact.PeriodicData fun x => 0"
+  },
+  {
+   "name": "ATK.Exact.zero_solution",
+   "file": "atk-kernel/ATK/Exact.lean",
+   "line": 180,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (ν : ℝ),   (ATK.Exact.NSClassical ν (fun x => 0) (fun x x_1 => 0) (fun x x_1 => 0) fun x x_1 => 0) ∧     (ATK.Exact.BoundedEnergy fun x x_1 => 0) ∧ ATK.Exact.SpacePeriodic (fun x x_1 => 0) fun x x_1 => 0"
+  },
+  {
+   "name": "ATK.FinalRoot.no_global_descent",
+   "file": "atk-interfaces-patched/lean/ATK/FinalRoot/MaterialLaws.lean",
+   "line": 16,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (S : Type u_1) (m : S → ℕ) (step : S → S), (∀ (s : S), m (step s) < m s) → IsEmpty S"
+  },
+  {
+   "name": "ATK.FinalRoot.schur_decrease",
+   "file": "atk-interfaces-patched/lean/ATK/FinalRoot/MaterialLaws.lean",
+   "line": 5,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(d u s : ℝ) (hs : 0 < s) : d - u ^ 2 / s ≤ d"
+  },
+  {
+   "name": "ATK.FinalRoot.terminal_from_independent_producer",
+   "file": "atk-interfaces-patched/lean/ATK/FinalRoot/MaterialLaws.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{M C : Prop} (material : M) (bridge : M → C) : C"
+  },
+  {
+   "name": "ATK.FinalRoot.torsion_card_positive",
+   "file": "atk-interfaces-patched/lean/ATK/FinalRoot/MaterialLaws.lean",
+   "line": 11,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(G : Type*) [Group G] [Fintype G] : 0 < Fintype.card G"
+  },
+  {
+   "name": "ATK.Formal.add_assoc_int",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 26,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x y z : Int), x + y + z = x + (y + z)"
+  },
+  {
+   "name": "ATK.Formal.add_comm_int",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 25,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x y : Int), x + y = y + x"
+  },
+  {
+   "name": "ATK.Formal.add_zero_int",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 22,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : Int), x + 0 = x"
+  },
+  {
+   "name": "ATK.Formal.compose_proofs",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 11,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P Q R : Prop} (pq : P → Q) (qr : Q → R) : P → R"
+  },
+  {
+   "name": "ATK.Formal.conjunction_commutes",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 13,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P Q : Prop} : P ∧ Q → Q ∧ P"
+  },
+  {
+   "name": "ATK.Formal.eval_conj",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 66,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(a b : Expr) : eval (.conj a b) = (eval a && eval b)"
+  },
+  {
+   "name": "ATK.Formal.eval_literal",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 64,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(b : Bool) : eval (.lit b) = b"
+  },
+  {
+   "name": "ATK.Formal.eval_neg",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 68,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(a : Expr) : eval (.neg a) = !(eval a)"
+  },
+  {
+   "name": "ATK.Formal.inhabited_to_exists",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 8,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{α : Sort u} (a : α) : Nonempty α"
+  },
+  {
+   "name": "ATK.Formal.no_decrease_at_zero",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 19,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(f : Nat → Nat) : ¬ (∀ n, f n < n)"
+  },
+  {
+   "name": "ATK.Formal.successor_strict",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 18,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(n : Nat) : n < n + 1"
+  },
+  {
+   "name": "ATK.Formal.terminal_application",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{Material Target : Prop} (inhabitant : Material) (bridge : Material → Target) : Target"
+  },
+  {
+   "name": "ATK.Formal.translate_comp",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 41,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p v w : Point2) : translate (translate p v) w = translate p (translate v w)"
+  },
+  {
+   "name": "ATK.Formal.translate_origin",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 37,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : Point2) : translate p origin = p"
+  },
+  {
+   "name": "ATK.Formal.zero_le_all",
+   "file": "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean",
+   "line": 15,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(n : Nat) : 0 ≤ n"
+  },
+  {
+   "name": "ATK.Horizon.completed_zeta_symmetric",
+   "file": "atk-kernel/ATK/Horizon.lean",
+   "line": 156,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (s : ℂ), completedRiemannZeta (1 - s) = completedRiemannZeta s"
+  },
+  {
+   "name": "ATK.Horizon.exactly_one_place_at_infinity",
+   "file": "atk-kernel/ATK/Horizon.lean",
+   "line": 74,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Nonempty (Unique (NumberField.InfinitePlace ℚ)) ∧ ∀ (v : NumberField.InfinitePlace ℚ) (x : ℚ), v x = |↑x|"
+  },
+  {
+   "name": "ATK.Horizon.finite_primes_alone",
+   "file": "atk-kernel/ATK/Horizon.lean",
+   "line": 93,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "padicNorm 2 6 * padicNorm 3 6 = 6⁻¹"
+  },
+  {
+   "name": "ATK.Horizon.hasHorizon_iff_finite",
+   "file": "atk-kernel/ATK/Horizon.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (Q : ℕ → Prop), ATK.Horizon.HasHorizon Q ↔ {p | Nat.Prime p ∧ ¬Q p}.Finite"
+  },
+  {
+   "name": "ATK.Horizon.horizonPrime_beyond",
+   "file": "atk-kernel/ATK/Horizon.lean",
+   "line": 124,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (m : ℕ), ↑m < ATK.Horizon.horizonPrime"
+  },
+  {
+   "name": "ATK.Horizon.horizonPrime_isPrime",
+   "file": "atk-kernel/ATK/Horizon.lean",
+   "line": 120,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Filter.Germ.LiftPred Nat.Prime ATK.Horizon.horizonPrime"
+  },
+  {
+   "name": "ATK.Horizon.horizon_transfer",
+   "file": "atk-kernel/ATK/Horizon.lean",
+   "line": 134,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (Q : ℕ → Prop), Filter.Germ.LiftPred Q ATK.Horizon.horizonPrime → {p | Nat.Prime p ∧ Q p}.Infinite"
+  },
+  {
+   "name": "ATK.Horizon.infinity_is_not_a_finite_prime",
+   "file": "atk-kernel/ATK/Horizon.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (p : ℕ) [inst : Fact (Nat.Prime p)], ¬Rat.AbsoluteValue.real.IsEquiv (Rat.AbsoluteValue.padic p)"
+  },
+  {
+   "name": "ATK.Horizon.no_last_prime",
+   "file": "atk-kernel/ATK/Horizon.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (n : ℕ), ∃ p, n ≤ p ∧ Nat.Prime p"
+  },
+  {
+   "name": "ATK.Horizon.normalization_example",
+   "file": "atk-kernel/ATK/Horizon.lean",
+   "line": 107,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "|6| * (padicNorm 2 6 * padicNorm 3 6) = 1"
+  },
+  {
+   "name": "ATK.Horizon.ostrowski",
+   "file": "atk-kernel/ATK/Horizon.lean",
+   "line": 62,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (f : AbsoluteValue ℚ ℝ),   f.IsNontrivial → f ≈ Rat.AbsoluteValue.real ∨ ∃! p, ∃ (x : Fact (Nat.Prime p)), f ≈ Rat.AbsoluteValue.padic p"
+  },
+  {
+   "name": "ATK.Horizon.product_formula_rat",
+   "file": "atk-kernel/ATK/Horizon.lean",
+   "line": 79,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ℚ), x ≠ 0 → |↑x| * ∏ᶠ (w : NumberField.FinitePlace ℚ), w x = 1"
+  },
+  {
+   "name": "ATK.Horizon.zeta_eq_completed_div_infinite_factor",
+   "file": "atk-kernel/ATK/Horizon.lean",
+   "line": 149,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {s : ℂ}, s ≠ 0 → riemannZeta s = completedRiemannZeta s / s.Gammaℝ"
+  },
+  {
+   "name": "ATK.KernelInterfaces.arbitrary_wrapper_is_inhabited",
+   "file": "atk-interfaces-patched/lean/ATK/KernelInterfaces.lean",
+   "line": 26,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∃ P, P"
+  },
+  {
+   "name": "ATK.KernelInterfaces.discharge",
+   "file": "atk-interfaces-patched/lean/ATK/KernelInterfaces.lean",
+   "line": 13,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {Target : Prop} (o : ATK.KernelInterfaces.Obligation Target), Target"
+  },
+  {
+   "name": "ATK.KernelInterfaces.finite_group_has_element",
+   "file": "atk-interfaces-patched/lean/ATK/KernelInterfaces.lean",
+   "line": 30,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (G : Type u_1) [Group G], Nonempty G"
+  },
+  {
+   "name": "ATK.KernelInterfaces.seven_targets",
+   "file": "atk-interfaces-patched/lean/ATK/KernelInterfaces.lean",
+   "line": 16,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {RH NS YM BSD Hodge Beal PNP : Prop} (rh : ATK.KernelInterfaces.Obligation RH)   (ns : ATK.KernelInterfaces.Obligation NS) (ym : ATK.KernelInterfaces.Obligation YM)   (bsd : ATK.KernelInterfaces.Obligation BSD) (hodge : ATK.KernelInterfaces.Obligation Hodge)   (beal : ATK.KernelInterfaces.Obligation Beal) (pnp : ATK.KernelInterfaces.Obligation PNP),   RH ∧ NS ∧ YM ∧ BSD ∧ Hodge ∧ Beal ∧ PNP"
+  },
+  {
+   "name": "ATK.NSBridge.clayC_of_fc",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 237,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.NSBridge.FCBreakdownR3 → ATK.Exact.ClayC"
+  },
+  {
+   "name": "ATK.NSBridge.contDiffOn_swap",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 119,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E₁ : Type u_1} {E₂ : Type u_2} {F : Type u_3} [inst : NormedAddCommGroup E₁] [inst_1 : NormedSpace ℝ E₁]   [inst_2 : NormedAddCommGroup E₂] [inst_3 : NormedSpace ℝ E₂] [inst_4 : NormedAddCommGroup F]   [inst_5 : NormedSpace ℝ F] {g : E₁ × E₂ → F} {s : Set E₁} {t : Set E₂},   ContDiffOn ℝ (↑⊤) g (s ×ˢ t) → ContDiffOn ℝ (↑⊤) (fun p => g (p.2, p.1)) (t ×ˢ s)"
+  },
+  {
+   "name": "ATK.NSBridge.conv3_eq",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (v : ATK.Exact.R3 → ATK.Exact.R3) (x : ATK.Exact.R3), ATK.Exact.conv3 v x = (fderiv ℝ v x) (v x)"
+  },
+  {
+   "name": "ATK.NSBridge.div3_eq",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 97,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (v : ATK.Exact.R3 → ATK.Exact.R3) (x : ATK.Exact.R3),   DifferentiableAt ℝ v x → ATK.Exact.div3 v x = NavierStokes.Comparator.divergence v x"
+  },
+  {
+   "name": "ATK.NSBridge.fderiv_apply_const",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 66,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {c : ATK.Exact.R3 → ATK.Exact.R3 →L[ℝ] ATK.Exact.R3} {x : ATK.Exact.R3},   DifferentiableAt ℝ c x → ∀ (w w' : ATK.Exact.R3), (fderiv ℝ (fun y => (c y) w) x) w' = ((fderiv ℝ c x) w') w"
+  },
+  {
+   "name": "ATK.NSBridge.fderiv_coord",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 84,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {v : ATK.Exact.R3 → ATK.Exact.R3} {x : ATK.Exact.R3},   DifferentiableAt ℝ v x →     ∀ (i : Fin 3) (w : ATK.Exact.R3), (fderiv ℝ (fun y => (v y).ofLp i) x) w = ((fderiv ℝ v x) w).ofLp i"
+  },
+  {
+   "name": "ATK.NSBridge.forceDecay_of_fc",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 147,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : ATK.Exact.R3 → ℝ → ATK.Exact.R3},   NavierStokes.Comparator.ForceConditionDecay f → ATK.Exact.ForceDecay fun t x => f x t"
+  },
+  {
+   "name": "ATK.NSBridge.grad3_eq",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 60,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (q : ATK.Exact.R3 → ℝ) (x : ATK.Exact.R3), ATK.Exact.grad3 q x = gradient q x"
+  },
+  {
+   "name": "ATK.NSBridge.lap3_eq",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 72,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (v : ATK.Exact.R3 → ATK.Exact.R3),   ContDiff ℝ (↑⊤) v → ∀ (x : ATK.Exact.R3), ATK.Exact.lap3 v x = Laplacian.laplacian v x"
+  },
+  {
+   "name": "ATK.NSBridge.navierStokes_of_fc",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 252,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.NSBridge.FCBreakdownR3 → ATK.Exact.NavierStokes"
+  },
+  {
+   "name": "ATK.NSBridge.rapidDecay_of_fc",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 126,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {u0 : ATK.Exact.R3 → ATK.Exact.R3},   (∀ (m : ℕ) (K : ℝ), ∃ C, ∀ (x : ATK.Exact.R3), ‖iteratedFDeriv ℝ m u0 x‖ ≤ C / (1 + ‖x‖) ^ K) →     ATK.Exact.RapidDecay u0"
+  },
+  {
+   "name": "ATK.NSBridge.slice_contDiff",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 108,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {F : Type u_1} [inst : NormedAddCommGroup F] [inst_1 : NormedSpace ℝ F] {u : ℝ → ATK.Exact.R3 → F},   ContDiffOn ℝ (↑⊤) (fun z => u z.1 z.2) (Set.Ici 0 ×ˢ Set.univ) → ∀ {t : ℝ}, 0 ≤ t → ContDiff ℝ (↑⊤) (u t)"
+  },
+  {
+   "name": "ATK.NSBridge.smoothForce_of_fc",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 142,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : ATK.Exact.R3 → ℝ → ATK.Exact.R3},   ContDiffOn ℝ (↑⊤) (↿f) (Set.univ ×ˢ Set.Ici 0) → ATK.Exact.SmoothForce fun t x => f x t"
+  },
+  {
+   "name": "ATK.NSBridge.solution_of_classical",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 184,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {ν : ℝ} {u0 : ATK.Exact.R3 → ATK.Exact.R3} {f : ATK.Exact.R3 → ℝ → ATK.Exact.R3} {u : ℝ → ATK.Exact.R3 → ATK.Exact.R3}   {p : ℝ → ATK.Exact.R3 → ℝ},   ATK.Exact.NSClassical ν u0 (fun t x => f x t) u p →     ATK.Exact.BoundedEnergy u →       NavierStokes.Comparator.NavierStokesExistenceAndSmoothnessRn ν u0 f (fun x t => u t x) fun x t => p t x"
+  },
+  {
+   "name": "ATK.NSBridge.sum_single",
+   "file": "atk-kernel/ATK/NSBridge.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (w : ATK.Exact.R3), ∑ j, w.ofLp j • ATK.Exact.e j = w"
+  },
+  {
+   "name": "ATK.NSControl.weighted_energy_control",
+   "file": "atk-kernel/ATK/NSControl.lean",
+   "line": 17,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E E' D : ℝ → ℝ} {C θ T : ℝ},   0 ≤ T →     (∀ (t : ℝ), HasDerivAt E (E' t) t) →       Continuous D →         (∀ t ∈ Set.Icc 0 T, E' t + (1 - θ) * D t ≤ C * E t) →           Real.exp (-C * T) * E T + (1 - θ) * ∫ (s : ℝ) in 0..T, Real.exp (-C * s) * D s ≤ E 0"
+  },
+  {
+   "name": "ATK.NSLaminar.conv3_shear",
+   "file": "atk-kernel/ATK/NSLaminar.lean",
+   "line": 57,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {g g' : ℝ → ℝ},   (∀ (s : ℝ), HasDerivAt g (g' s) s) → ∀ (x : ATK.Exact.R3), ATK.Exact.conv3 (ATK.NSLaminar.shear g) x = 0"
+  },
+  {
+   "name": "ATK.NSLaminar.coord_hasFDerivAt",
+   "file": "atk-kernel/ATK/NSLaminar.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ATK.Exact.R3), HasFDerivAt (fun y => y.ofLp 2) (EuclideanSpace.proj 2) x"
+  },
+  {
+   "name": "ATK.NSLaminar.div3_shear",
+   "file": "atk-kernel/ATK/NSLaminar.lean",
+   "line": 63,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {g g' : ℝ → ℝ},   (∀ (s : ℝ), HasDerivAt g (g' s) s) → ∀ (x : ATK.Exact.R3), ATK.Exact.div3 (ATK.NSLaminar.shear g) x = 0"
+  },
+  {
+   "name": "ATK.NSLaminar.hasFDerivAt_shear",
+   "file": "atk-kernel/ATK/NSLaminar.lean",
+   "line": 44,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {g g' : ℝ → ℝ},   (∀ (s : ℝ), HasDerivAt g (g' s) s) →     ∀ (x : ATK.Exact.R3),       HasFDerivAt (ATK.NSLaminar.shear g)         (ContinuousLinearMap.smulRight (g' (x.ofLp 2) • EuclideanSpace.proj 2) (ATK.Exact.e 0)) x"
+  },
+  {
+   "name": "ATK.NSLaminar.hcos",
+   "file": "atk-kernel/ATK/NSLaminar.lean",
+   "line": 98,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c k s : ℝ), HasDerivAt (fun s => c * (Real.cos (k * s) * k)) (c * (-Real.sin (k * s) * k * k)) s"
+  },
+  {
+   "name": "ATK.NSLaminar.hsin",
+   "file": "atk-kernel/ATK/NSLaminar.lean",
+   "line": 92,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (c k s : ℝ), HasDerivAt (fun s => c * Real.sin (k * s)) (c * (Real.cos (k * s) * k)) s"
+  },
+  {
+   "name": "ATK.NSLaminar.lam_eq_shear",
+   "file": "atk-kernel/ATK/NSLaminar.lean",
+   "line": 89,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (A k ν t : ℝ),   ATK.NSLaminar.lam A k ν t = ATK.NSLaminar.shear fun s => A * Real.exp (-(ν * k ^ 2) * t) * Real.sin (k * s)"
+  },
+  {
+   "name": "ATK.NSLaminar.laminar_no_convection",
+   "file": "atk-kernel/ATK/NSLaminar.lean",
+   "line": 104,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (A k ν t : ℝ) (x : ATK.Exact.R3), ATK.Exact.conv3 (ATK.NSLaminar.lam A k ν t) x = 0"
+  },
+  {
+   "name": "ATK.NSLaminar.laminar_periodic",
+   "file": "atk-kernel/ATK/NSLaminar.lean",
+   "line": 146,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (A ν : ℝ) (m : ℤ), ATK.Exact.SpacePeriodic (ATK.NSLaminar.lam A (2 * Real.pi * ↑m) ν) fun x x_1 => 0"
+  },
+  {
+   "name": "ATK.NSLaminar.laminar_solution",
+   "file": "atk-kernel/ATK/NSLaminar.lean",
+   "line": 109,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (A k ν : ℝ),   ATK.Exact.NSClassical ν (ATK.NSLaminar.lam A k ν 0) (fun x x_1 => 0) (ATK.NSLaminar.lam A k ν) fun x x_1 => 0"
+  },
+  {
+   "name": "ATK.NSLaminar.lap3_shear",
+   "file": "atk-kernel/ATK/NSLaminar.lean",
+   "line": 73,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {g g' g'' : ℝ → ℝ},   (∀ (s : ℝ), HasDerivAt g (g' s) s) →     (∀ (s : ℝ), HasDerivAt g' (g'' s) s) →       ∀ (x : ATK.Exact.R3), ATK.Exact.lap3 (ATK.NSLaminar.shear g) x = ATK.NSLaminar.shear g'' x"
+  },
+  {
+   "name": "ATK.NSLaminar.pd_shear",
+   "file": "atk-kernel/ATK/NSLaminar.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {g g' : ℝ → ℝ},   (∀ (s : ℝ), HasDerivAt g (g' s) s) →     ∀ (i : Fin 3), ATK.Exact.pd i (ATK.NSLaminar.shear g) = ATK.NSLaminar.shear fun s => g' s * (ATK.Exact.e i).ofLp 2"
+  },
+  {
+   "name": "ATK.NavierStokes.absorption_without_remainder_forces_decay",
+   "file": "atk-kernel/ATK/NavierStokes.lean",
+   "line": 84,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {ν z y' bulk tail cB δ : ℝ},   0 < ν → 0 < z → y' / 2 + ν * z = bulk + tail → bulk ≤ cB * ν * z → tail ≤ δ * ν * z → cB + δ < 1 → y' < 0"
+  },
+  {
+   "name": "ATK.RHConvergence.bdDistSq_antitone",
+   "file": "atk-kernel/ATK/RHConvergence.lean",
+   "line": 30,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Antitone ATK.Riemann.bdDistSq"
+  },
+  {
+   "name": "ATK.RHConvergence.bdDistSq_converges",
+   "file": "atk-kernel/ATK/RHConvergence.lean",
+   "line": 33,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "Filter.Tendsto ATK.Riemann.bdDistSq Filter.atTop (nhds (⨅ N, ATK.Riemann.bdDistSq N))"
+  },
+  {
+   "name": "ATK.RHConvergence.bdDistSq_limit_nonneg",
+   "file": "atk-kernel/ATK/RHConvergence.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "0 ≤ ⨅ N, ATK.Riemann.bdDistSq N"
+  },
+  {
+   "name": "ATK.RHConvergence.bdDistSq_succ_le",
+   "file": "atk-kernel/ATK/RHConvergence.lean",
+   "line": 18,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (n : ℕ), ATK.Riemann.bdDistSq (n + 1) ≤ ATK.Riemann.bdDistSq n"
+  },
+  {
+   "name": "ATK.RHConvergence.rh_iff_limit_zero_of_criterion",
+   "file": "atk-kernel/ATK/RHConvergence.lean",
+   "line": 39,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(Filter.Tendsto ATK.Riemann.bdDistSq Filter.atTop (nhds 0) ↔ RiemannHypothesis) →   (RiemannHypothesis ↔ ⨅ N, ATK.Riemann.bdDistSq N = 0)"
+  },
+  {
+   "name": "ATK.Refutations.common_prime_divides_third_as_written_false",
+   "file": "atk-batch2/patched/material-math/ATK/Refutations.lean",
+   "line": 12,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ (∀ {a b c x y z : ℕ}, 0 < z → a ^ x + b ^ y = c ^ z → ∀ {p : ℕ}, Nat.Prime p → p ∣ a → p ∣ b → p ∣ c)"
+  },
+  {
+   "name": "ATK.Refutations.infimum_antitone_as_written_false",
+   "file": "atk-batch2/patched/material-math/ATK/Refutations.lean",
+   "line": 22,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ (∀ (cost : ℝ → ℝ) (A B : Set ℝ), A ⊆ B → BddBelow (cost '' A) → (cost '' A).Nonempty → sInf (cost '' B) ≤ sInf (cost '' A))"
+  },
+  {
+   "name": "ATK.Riemann.abstract_bound_vacuous",
+   "file": "atk-kernel/ATK/Riemann.lean",
+   "line": 65,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∃ K, 0 ≤ K ∧ ∀ (N : ℕ), (fun x => 0) N ≤ K / Real.log (↑N + 2)"
+  },
+  {
+   "name": "ATK.Riemann.bdDistSq_nonneg",
+   "file": "atk-kernel/ATK/Riemann.lean",
+   "line": 88,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ), 0 ≤ ATK.Riemann.bdDistSq N"
+  },
+  {
+   "name": "ATK.Riemann.bd_bound_tendsto",
+   "file": "atk-kernel/ATK/Riemann.lean",
+   "line": 90,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Riemann.ConcreteBDUniformLogBound → Filter.Tendsto ATK.Riemann.bdDistSq Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "ATK.Riemann.rh_of_bd_bound",
+   "file": "atk-kernel/ATK/Riemann.lean",
+   "line": 95,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(Filter.Tendsto ATK.Riemann.bdDistSq Filter.atTop (nhds 0) → RiemannHypothesis) →   ATK.Riemann.ConcreteBDUniformLogBound → RiemannHypothesis"
+  },
+  {
+   "name": "ATK.Terminal.close",
+   "file": "atk-interfaces-patched/lean/ATK/Terminal/SevenEndpoints.lean",
+   "line": 9,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (e : ATK.Terminal.Endpoint), e.materialObligation → e.concreteStatement"
+  },
+  {
+   "name": "ATK.Terminal.finite_group_nonempty",
+   "file": "atk-interfaces-patched/lean/ATK/Terminal/IndependentCore.lean",
+   "line": 28,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(G : Type*) [Group G] [Fintype G] : 0 < Fintype.card G"
+  },
+  {
+   "name": "ATK.Terminal.independent_terminal",
+   "file": "atk-interfaces-patched/lean/ATK/Terminal/IndependentCore.lean",
+   "line": 33,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{Material Terminal : Prop} (material_proof : Material) (bridge_proof : Material → Terminal) : Terminal"
+  },
+  {
+   "name": "ATK.Terminal.no_inhabitant_of_strict_descent",
+   "file": "atk-interfaces-patched/lean/ATK/Terminal/IndependentCore.lean",
+   "line": 14,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (S : Type u_1) (m : S → ℕ) (step : S → S), (∀ (s : S), m (step s) < m s) → IsEmpty S"
+  },
+  {
+   "name": "ATK.Terminal.nonnegative_antitone_has_limit",
+   "file": "atk-interfaces-patched/lean/ATK/Terminal/IndependentCore.lean",
+   "line": 5,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(D : ℕ → ℝ) (h0 : ∀ n, 0 ≤ D n) (hmono : Antitone D) : ∃ l : ℝ, 0 ≤ l ∧ Filter.Tendsto D Filter.atTop (nhds l)"
+  },
+  {
+   "name": "ATK.Transition.Pipeline.closes",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 90,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {P : Prop} (π : ATK.Transition.Pipeline P), P"
+  },
+  {
+   "name": "ATK.Transition.absorption_inside",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 128,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E E' Z : ℝ → ℝ} {C ν T c : ℝ},   ContinuousOn E (Set.Icc 0 T) →     (∀ t ∈ Set.Ico 0 T, HasDerivWithinAt E (E' t) (Set.Ici t) t) →       (∀ t ∈ Set.Ico 0 T, E' t ≤ 2 * (C * √(E t) - ν) * Z t) →         (∀ t ∈ Set.Ico 0 T, 0 < E t → 0 < Z t) → E 0 ≤ c → 0 < c → C * √c < ν → ∀ t ∈ Set.Icc 0 T, E t ≤ c"
+  },
+  {
+   "name": "ATK.Transition.absorption_inside_initial",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 149,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E E' Z : ℝ → ℝ} {C ν T : ℝ},   ContinuousOn E (Set.Icc 0 T) →     (∀ t ∈ Set.Ico 0 T, HasDerivWithinAt E (E' t) (Set.Ici t) t) →       (∀ t ∈ Set.Ico 0 T, E' t ≤ 2 * (C * √(E t) - ν) * Z t) →         (∀ t ∈ Set.Ico 0 T, 0 < E t → 0 < Z t) → 0 < E 0 → C * √(E 0) < ν → ∀ t ∈ Set.Icc 0 T, E t ≤ E 0"
+  },
+  {
+   "name": "ATK.Transition.absorption_on_line",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 182,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E E' Z : ℝ → ℝ} {C ν T M : ℝ},   0 < C →     0 < ν →       0 ≤ M →         ContinuousOn E (Set.Icc 0 T) →           (∀ t ∈ Set.Ico 0 T, HasDerivWithinAt E (E' t) (Set.Ici t) t) →             (∀ t ∈ Set.Ico 0 T, E' t ≤ 2 * (C * √(E t) - ν) * Z t) →               (∀ t ∈ Set.Ico 0 T, 0 ≤ Z t) →                 (∀ t ∈ Set.Ico 0 T, Z t ≤ M) → E 0 ≤ (ν / C) ^ 2 → ∀ t ∈ Set.Icc 0 T, E t ≤ (ν / C) ^ 2"
+  },
+  {
+   "name": "ATK.Transition.beyond_line_growth",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 250,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(∀ (t : ℝ), HasDerivAt ATK.Transition.beyondE (2 * (2 + t)) t) ∧   (∀ (t : ℝ), 0 ≤ t → 2 * (2 + t) = 2 * (1 * √(ATK.Transition.beyondE t) - 1) * ATK.Transition.beyondZ t) ∧     (∀ (t : ℝ), 0 ≤ t → 0 < ATK.Transition.beyondZ t ∧ ATK.Transition.beyondZ t ≤ 2) ∧       1 * √(ATK.Transition.beyondE 0) > 1 ∧ ∀ (K : ℝ), ∃ t, 0 ≤ t ∧ K < ATK.Transition.beyondE t"
+  },
+  {
+   "name": "ATK.Transition.criticalNumber_invariant",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 121,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C E ν a : ℝ},   0 < a → ν ≠ 0 → ATK.Transition.criticalNumber C (a ^ 2 * E) (a * ν) = ATK.Transition.criticalNumber C E ν"
+  },
+  {
+   "name": "ATK.Transition.double_negation_no_progress",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 60,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : Prop), ¬¬P ↔ P"
+  },
+  {
+   "name": "ATK.Transition.flag_flip_never_settles",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 63,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (b : Bool), ¬∃ N, ∀ n ≥ N, not^[n] b = not^[N] b"
+  },
+  {
+   "name": "ATK.Transition.no_universal_flip",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬∀ (P : Prop), ¬P → P"
+  },
+  {
+   "name": "ATK.Transition.on_line_equilibrium",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 170,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C ν : ℝ}, 0 < C → 0 < ν → ∀ (Z : ℝ), 2 * (C * √((ν / C) ^ 2) - ν) * Z = 0"
+  },
+  {
+   "name": "ATK.Transition.pipeline_iff",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 95,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : Prop), Nonempty (ATK.Transition.Pipeline P) ↔ P"
+  },
+  {
+   "name": "ATK.Transition.sqrt_sub_le",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 175,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E s : ℝ}, 0 ≤ E → 0 < s → √E - s ≤ (E - s ^ 2) / (2 * s)"
+  },
+  {
+   "name": "ATK.Transition.tangent_escape",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 159,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(∀ (t : ℝ), HasDerivAt (fun s => s ^ 3) (3 * t ^ 2) t) ∧   (∀ t ∈ Set.Ico 0 1, t ^ 3 = 0 → 3 * t ^ 2 ≤ 0) ∧ 0 ^ 3 ≤ 0 ∧ ¬1 ^ 3 ≤ 0"
+  },
+  {
+   "name": "ATK.Transition.transport_comp",
+   "file": "atk-kernel/ATK/Transition.lean",
+   "line": 106,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {X : Type u_1} {Y : Type u_2} {W : Type u_3} {T₁ : X → Y} {T₂ : Y → W} {DX : X → ℝ} {DY : Y → ℝ} {DW : W → ℝ}   {C₁ C₂ : ℝ},   0 ≤ C₂ →     (∀ (x : X), DY (T₁ x) ≤ C₁ * DX x) → (∀ (y : Y), DW (T₂ y) ≤ C₂ * DY y) → ∀ (x : X), DW (T₂ (T₁ x)) ≤ C₂ * C₁ * DX x"
+  },
+  {
+   "name": "ATK.Universal.BSD.terminal",
+   "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : Producer Curve Admissible RankEquality RefinedFormula) : Target Curve Admissible RankEquality RefinedFormula"
+  },
+  {
+   "name": "ATK.Universal.Beal.terminal",
+   "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
+   "line": 84,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : Producer Triple Counterexample) : Target Triple Counterexample"
+  },
+  {
+   "name": "ATK.Universal.Hodge.terminal",
+   "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
+   "line": 72,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : Producer Variety Class Cycle SmoothProjective HodgeClass Represents) : Target Variety Class Cycle SmoothProjective HodgeClass Represents"
+  },
+  {
+   "name": "ATK.Universal.NS.terminal",
+   "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : Producer InitialData Solution Admissible Solves GlobalRegular) : Target InitialData Solution Admissible Solves GlobalRegular"
+  },
+  {
+   "name": "ATK.Universal.PNP.terminal",
+   "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
+   "line": 95,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : Producer Machine DecidesSAT PolynomialTime) : Target Machine DecidesSAT PolynomialTime"
+  },
+  {
+   "name": "ATK.Universal.RH.terminal",
+   "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
+   "line": 17,
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(p : Producer DN Converges) (b : SemanticBridge DN Converges RHStatement) : RHStatement"
+  },
+  {
+   "name": "ATK.Universal.YM.terminal",
+   "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
+   "line": 45,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : Producer Theory Physical MassGap) : Target Theory Physical MassGap"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.bsd_recover_h22",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 33,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(h11 h12 h22 R : ℝ) (h11ne : h11 ≠ 0) (hR : R = h11 * h22 - h12 ^ 2) : h22 = (R + h12 ^ 2) / h11"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.bsd_regulator_example",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 28,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": (2 : ℚ) * 3 - 1 ^ 2 = 5"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.bsd_regulator_identity",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(h11 h12 h22 : ℝ) : h11 * h22 - h12 ^ 2 = h11 * h22 - h12 * h12"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.hodge_linear_realization",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 38,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{n : ℕ} (A : Matrix (Fin n) (Fin n) ℚ) (b : Fin n → ℚ) [Invertible A] : ∃ q : Fin n → ℚ, A *ᵥ q = b"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.ns_budget_example",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 19,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": (1 : ℚ) / 4 + 1 / 3 = 7 / 12"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.ns_budget_identity",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 20,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(b t : ℝ) : (1 - b - t) + (b + t) = 1"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.ns_bulk_tail_bound",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 22,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(b t ν z B T : ℝ) (hB : B ≤ b * (ν * z)) (hT : T ≤ t * (ν * z)) : B + T ≤ (b + t) * (ν * z)"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.ns_margin_example",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 16,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": (1 : ℚ) - 1 / 4 - 1 / 3 = 5 / 12"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.ns_margin_positive",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 21,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(b t : ℝ) (h : b + t < 1) : 0 < 1 - b - t"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.rh_finite_decrement",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 5,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": (5 : ℚ) / 6 - 7 / 12 = 1 / 4"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.rh_ratio",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 8,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ((7 : ℚ) / 12) / (5 / 6) = 7 / 10"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.rh_relative_reduction",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 9,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": (1 : ℚ) - (7 / 10) = 3 / 10"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.rh_schur_antitone",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 12,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(d₀ d₁ r s : ℝ) (hs : 0 < s) (h : d₀ - d₁ = r ^ 2 / s) : d₁ ≤ d₀"
+  },
+  {
+   "name": "ATK.VerifiedAuxiliary.rh_schur_nonnegative",
+   "file": "atk-legacy/src/VerifiedAuxiliary.lean",
+   "line": 10,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(r s : ℝ) (hs : 0 < s) : 0 ≤ r ^ 2 / s"
+  },
+  {
+   "name": "ATK.close_seven",
+   "file": "atk-batch2/originals/formal-operators/ATK/KernelGates.lean",
+   "line": 10,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C1 C2 C3 C4 C5 C6 C7 : Prop} (g1 : ATK.TerminalGate C1) (g2 : ATK.TerminalGate C2) (g3 : ATK.TerminalGate C3)   (g4 : ATK.TerminalGate C4) (g5 : ATK.TerminalGate C5) (g6 : ATK.TerminalGate C6) (g7 : ATK.TerminalGate C7),   C1 ∧ C2 ∧ C3 ∧ C4 ∧ C5 ∧ C6 ∧ C7"
+  },
+  {
+   "name": "ATK.lane_closes",
+   "file": "atk-batch2/originals/exact-gate/ATKExactGate.lean",
+   "line": 7,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{P : Prop} (l : Lane P) : P"
+  },
+  {
+   "name": "ATK.natural_succ_positive",
+   "file": "atk-batch2/originals/formal-operators/ATK/MaterialExamples.lean",
+   "line": 6,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (n : Nat), 0 < n.succ"
+  },
+  {
+   "name": "ATK.natural_zero_inhabitant",
+   "file": "atk-batch2/originals/formal-operators/ATK/MaterialExamples.lean",
+   "line": 3,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∃ n, n = 0"
+  },
+  {
+   "name": "ATK.no_strict_decrease_from_zero",
+   "file": "atk-batch2/originals/formal-operators/ATK/MaterialExamples.lean",
+   "line": 9,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (f : Nat → Nat), f 0 < 0 → False"
+  },
+  {
+   "name": "ATK.seven_close",
+   "file": "atk-batch2/originals/exact-gate/ATKExactGate.lean",
+   "line": 9,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{R NS YM BSD H B PNP : Prop} (r : Lane R) (ns : Lane NS) (ym : Lane YM) (bsd : Lane BSD) (h : Lane H) (b : Lane B) (pnp : Lane PNP) : R ∧ NS ∧ YM ∧ BSD ∧ H ∧ B ∧ PNP"
+  },
+  {
+   "name": "ATK.weakClosure_inhabited",
+   "file": "atk-batch2/originals/exact-gate/ATKExactGate.lean",
+   "line": 23,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty WeakClosure"
+  },
+  {
+   "name": "ATKExactValues.absorption",
+   "file": "atk-legacy/src/ATK_ExactValues.lean",
+   "line": 13,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(bulk tail rem nu z y cB cT C : ℝ) (hb : bulk ≤ cB * nu * z) (ht : tail ≤ cT * nu * z) (hr : rem ≤ C * y ^ 2) : bulk + tail + rem ≤ (cB + cT) * nu * z + C * y ^ 2"
+  },
+  {
+   "name": "NavierStokes.Comparator.divergence_add",
+   "file": "atk-kernel/ATK/FCNavierStokes.lean",
+   "line": 85,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {n : ℕ} {v w : EuclideanSpace ℝ (Fin n) → EuclideanSpace ℝ (Fin n)} {x : EuclideanSpace ℝ (Fin n)},   DifferentiableAt ℝ v x →     DifferentiableAt ℝ w x →       NavierStokes.Comparator.divergence (fun y => v y + w y) x =         NavierStokes.Comparator.divergence v x + NavierStokes.Comparator.divergence w x"
+  },
+  {
+   "name": "NavierStokes.Comparator.divergence_const",
+   "file": "atk-kernel/ATK/FCNavierStokes.lean",
+   "line": 79,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {n : ℕ} (c x : EuclideanSpace ℝ (Fin n)), NavierStokes.Comparator.divergence (fun x => c) x = 0"
+  },
+  {
+   "name": "NavierStokes.Comparator.divergence_of_not_differentiableAt",
+   "file": "atk-kernel/ATK/FCNavierStokes.lean",
+   "line": 68,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {n : ℕ} {v : EuclideanSpace ℝ (Fin n) → EuclideanSpace ℝ (Fin n)} {x : EuclideanSpace ℝ (Fin n)},   ¬DifferentiableAt ℝ v x → NavierStokes.Comparator.divergence v x = 0"
+  },
+  {
+   "name": "NavierStokes.Comparator.divergence_smul",
+   "file": "atk-kernel/ATK/FCNavierStokes.lean",
+   "line": 92,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {n : ℕ} (c : ℝ) {v : EuclideanSpace ℝ (Fin n) → EuclideanSpace ℝ (Fin n)} {x : EuclideanSpace ℝ (Fin n)},   DifferentiableAt ℝ v x →     NavierStokes.Comparator.divergence (fun y => c • v y) x = c * NavierStokes.Comparator.divergence v x"
+  },
+  {
+   "name": "NavierStokes.Comparator.divergence_zero",
+   "file": "atk-kernel/ATK/FCNavierStokes.lean",
+   "line": 74,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {n : ℕ} (x : EuclideanSpace ℝ (Fin n)), NavierStokes.Comparator.divergence 0 x = 0"
+  }
+ ],
+ "closed": 196,
+ "files_sha256": {
+  "atk-batch2/appendix/orig-fo/ATK/KernelGates.lean": "e35aec6f3571c88d127490a4a8691423015346b20fdbe31f9158da0050be37e5",
+  "atk-batch2/originals/exact-gate/ATKExactGate.lean": "5cb667413b43a81ab76a42b13a383be382ba7cb7c6a687d9655114fd9740329f",
+  "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean": "e5608c279efe88ca17db017da75f66086fba254bf3530b74e122a030745ff6cf",
+  "atk-batch2/originals/formal-operators/ATK/KernelGates.lean": "180c7cd4c800d1eddeab0903520b5bc1659a7d3d9159c192632a6bfe505787a1",
+  "atk-batch2/originals/formal-operators/ATK/MaterialExamples.lean": "6bf6e181a93c17a6193944bddfdd4f073bbf5410801bfd16995a7ddaadc24169",
+  "atk-batch2/originals/formal-operators/lakefile.toml": "72b2d419f2e8d88c1e86ddb44c49ddd9e35e36ee5d6aa47c0900751c687e6ddd",
+  "atk-batch2/originals/formal-operators/lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
+  "atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean": "87b82ba44bbe0ade3ada08113ca9f986e141f42079de834ee9656151fa6e1c6b",
+  "atk-batch2/patched/material-math/ATK/Refutations.lean": "b9ae3219010f8bb50bffe092a16d973f02de3f7e610c652a4a4abc3887f461b5",
+  "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean": "e99e0cae8c4cf10fa7967f36f8efca8b9e57acbf05fe0275df11624b10304f32",
+  "atk-batch2/patched/terminal-certificates/lakefile.toml": "f4e8960f30bcc213078da8c130d237f58822d748b3b15fe636badddcd3879d95",
+  "atk-batch2/patched/terminal-certificates/lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
+  "atk-interfaces-patched/lakefile.toml": "8b2734be6b3685a61654729136aafb7fed0dc5b44197ebe799c4ebe5fdb6bd5b",
+  "atk-interfaces-patched/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+  "atk-interfaces-patched/lean/ATK/AuditOfInterfaces.lean": "d246108e3dd36cf3a6f6677c3147ef843d72de31b0ddc9cb34f9b77bc8d251ec",
+  "atk-interfaces-patched/lean/ATK/FinalRoot/MaterialLaws.lean": "808c9e0a499205eeacd25ad53b2c2f9337622cf66d5d6b36c8f171c0393b9b7a",
+  "atk-interfaces-patched/lean/ATK/KernelInterfaces.lean": "7d4cc015649788ad8d50ceb58036375c9c634692f01a1064484c41e9168f7ceb",
+  "atk-interfaces-patched/lean/ATK/Terminal/IndependentCore.lean": "b3333ed110f86fdf611e7db941d2afdba9bb751b868b9af41a90555d7f3f902f",
+  "atk-interfaces-patched/lean/ATK/Terminal/SevenEndpoints.lean": "0927530db409219c3f120b54880d327e8b12db9320d1d994696fbd9390729bc9",
+  "atk-kernel/ATK/BSD.lean": "a44134f53cf7360da2c520d46899561402d21e97b189f4b4f90ef1a509c82a73",
+  "atk-kernel/ATK/BealDescent.lean": "51441c96a437b2244178dd6d879ebdc48a8138ffcb1265a2efe920c8202f5eb5",
+  "atk-kernel/ATK/Closure.lean": "d17c30cfaf3632de769ddd60783e23ccb3bce742313a49c7377321ae85738637",
+  "atk-kernel/ATK/Enstrophy.lean": "a50276de9081a37799d3b33efc44589d26748629f52fbc114ef5ec4937ef0e13",
+  "atk-kernel/ATK/Exact.lean": "df748eea293393401e446393134ae14f103b351b00ddb21ca2e4db6504769de4",
+  "atk-kernel/ATK/FCNavierStokes.lean": "ea4426cf3eee0761226d1d711eb643e47da3f9397e755c92dea38491c7e1193a",
+  "atk-kernel/ATK/Horizon.lean": "3d7a9e704e48801905444f92ef96d4e41b7e8890aa14cf7a4990913d0eca32ae",
+  "atk-kernel/ATK/NSBridge.lean": "89ed95ea240807671d713840cf5173aed79c9b95f523e9a164691f47e6fef3fc",
+  "atk-kernel/ATK/NSControl.lean": "92d854c3f260ac63aa8f019ce5306bf5aa347fc3cdf4cc06cd03ee4dcaa8bdd1",
+  "atk-kernel/ATK/NSLaminar.lean": "fffd1f6f44e6b6aea9857c409b56630ce037cb45e8740878958424b91a4b7b2e",
+  "atk-kernel/ATK/NavierStokes.lean": "bd9195d209902297ec822ccd9e4a6adcf921f4e1fd4b95c1afc95aaa01ad5627",
+  "atk-kernel/ATK/RHConvergence.lean": "6fdbb416a0da44f1440215049f35040d8832fd4cde5daa7f9381070e49a73ab1",
+  "atk-kernel/ATK/Riemann.lean": "a19a276b551b6cb17598022d427dbb96466057148b27b1e66871728ac23a29d2",
+  "atk-kernel/ATK/Transition.lean": "4f06de37a30fad9503ada06137d9ccd746e1a1fb25695fdeb2b9d99ee8ed9a66",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+  "atk-legacy/lakefile.toml": "f83690fb736748ed641575b17b35759e7a74ff7931bbff2066c5298f3f177cea",
+  "atk-legacy/lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
+  "atk-legacy/src/ATK_ExactValues.lean": "87a5232d46bcf7126f3ae86a5e36aea1dfeae5741eaeafc1369ba2101346c502",
+  "atk-legacy/src/VerifiedAuxiliary.lean": "06a504f9a44b2eebcadfb4446482f2081d91b4f6ad79a9431a98f4035783e4cc",
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+ },
+ "published_at": "2026-10-29T06:27:17Z",
+ "certificate_sha256": "8a8cb7e53e6e1ef3e9994a79a826252d405c3b78ed15ca7ec32e8d1cf2526d3a"
+}

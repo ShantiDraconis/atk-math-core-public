@@ -5,7 +5,7 @@ Lean sources from the branch `fix/ns-scaling-false` of the private repository `S
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 8 — closed 8, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 26 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `0ffb4862bd590d0f96e4a5bcf2a4b940643cb1e43bb772cbb2eb20c7b27eb068`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/fix_ns-scaling-false/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `f63c0795bf1f2e897e67fb13d702a494f981ef4c2855a20c67951545aafb274d`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/fix_ns-scaling-false/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

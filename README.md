@@ -19,5 +19,5 @@ Do not add confidential data or third-party code without checking its license an
 <!-- mvei-branches:start -->
 ## Theorems found only on branches
 
-40 branch(es) with 824 theorems that exist only on branches and that the Lean kernel closed, each with a certificate (commit, date, history, SHA-256): [`branches/README.md`](branches/README.md).
+46 branch(es) with 2 402 theorems that exist only on branches and that the Lean kernel closed, each with a certificate (commit, date, history, SHA-256): [`branches/README.md`](branches/README.md).
 <!-- mvei-branches:end -->

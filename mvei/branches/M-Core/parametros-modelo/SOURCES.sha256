@@ -1,0 +1,5 @@
+8398862da40a20c26b87a7b2546c3ce404d83fff9c8c9ec51833db9a1019d217  branches/M-Core/parametros-modelo/atk-kernel/ATK/LaplacianoCiclo.lean
+73dd0a59c322353982a4ef924415f73c129b583e3d15f61b8b025c3a26be6174  branches/M-Core/parametros-modelo/atk-kernel/ATK/ParametrosModelo.lean
+e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8  branches/M-Core/parametros-modelo/atk-kernel/lake-manifest.json
+139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d  branches/M-Core/parametros-modelo/atk-kernel/lakefile.toml
+d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b  branches/M-Core/parametros-modelo/atk-kernel/lean-toolchain
