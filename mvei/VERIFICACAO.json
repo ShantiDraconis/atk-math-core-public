@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-29T05:36:17+00:00",
+ "generated_at": "2026-10-29T18:57:14+00:00",
  "standard_axioms": [
   "Classical.choice",
   "Quot.sound",
   "propext"
  ],
  "source_repository": "ShantiDraconis/M-Core",
- "verified_commit": "390e3781109fa42e977d143caa9204ed94166a7b",
+ "verified_commit": "390e378",
  "projects": [
   {
    "repo": "M-Core",

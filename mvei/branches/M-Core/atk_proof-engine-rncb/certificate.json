@@ -243,6 +243,6 @@
   "lean/MCore/ProofEngine/Retry.lean": "9d1d6911a83f23fd6443cc5184e042b622f75a67232ed97df7a4f0dfdc6d7db6",
   "lean/MCore/ProofEngine/ScientificBoundary.lean": "f53de1658e56b2099bf030c8be49890748bcdacab0e1a2aecf2153cba8ba6a46"
  },
- "published_at": "2026-10-29T06:27:25Z",
- "certificate_sha256": "2ac727f45edbec308c5d46135acc7f1bdc655c17b9ce06a7022e0375672ad470"
+ "published_at": "2026-10-29T20:16:09Z",
+ "certificate_sha256": "156ab8738c3adfbe207dd06d40a6cfe20cdd15b3346636419e92ab09085141e7"
 }

@@ -5,7 +5,7 @@ Lean sources from the branch `atk/rh-euler-audit-20261016` of the private reposi
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 18 — closed 15, conditional 0, open 0, proof error 3, not reached 0, no result 0.
 * History: 4 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `0b2fe071abde840024619e45425c693e84643888d2d4612ede36cfbf67f8b351`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_rh-euler-audit-20261016/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `c48b618d483efbfcd8e9b75218d2819d1d3724f7758d145327eb28426a6cf249`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_rh-euler-audit-20261016/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

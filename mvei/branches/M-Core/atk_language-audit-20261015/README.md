@@ -5,7 +5,7 @@ Lean sources from the branch `atk/language-audit-20261015` of the private reposi
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 4 — closed 4, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 19 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `6999553295002c90a17b0269203a91b1fd3909ceed9320946da79fcbaf728ddb`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_language-audit-20261015/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `dbf1ff1ea1dffdb7f29bfdd6b60736a45269f6067cfcc198b69559f50c683cbe`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_language-audit-20261015/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

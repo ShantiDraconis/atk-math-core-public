@@ -4,14 +4,14 @@ This folder records what the Lean 4 kernel said about the Lean sources of the pr
 
 ## What is published
 
-* Source: `ShantiDraconis/M-Core`, commit `390e3781109fa42e977d143caa9204ed94166a7b` (2026-10-27T20:01:22Z).
-* 589 files: 583 `.lean` files and the Lake files (`lakefile.*`, `lean-toolchain`, `lake-manifest.json`), plus 2 license or origin file(s) that third-party code requires (`atk-kernel/ATK/FltRegular/LICENSE`, `atk-kernel/ATK/FltRegular/ORIGEM.md`). Paths are the same as in the source repository.
+* Source: `ShantiDraconis/M-Core`, commit `60a04e720bb2352053d572dbfbc25445a4af5f6d` (2026-10-27T07:50:43Z).
+* 544 files: 538 `.lean` files and the Lake files (`lakefile.*`, `lean-toolchain`, `lake-manifest.json`), plus 2 license or origin file(s) that third-party code requires (`atk-kernel/ATK/FltRegular/LICENSE`, `atk-kernel/ATK/FltRegular/ORIGEM.md`). Paths are the same as in the source repository.
 * Nothing else from the private repository is published (documents, commercial license, prompts, storefront material). The `Contaminated/` folder, which the author quarantined and marked as never evidence, is left out too.
 * `SOURCES.sha256` lists every published file with its SHA-256. From the repository root: `sha256sum -c mvei/SOURCES.sha256`.
 
 ## What the kernel said
 
-MVEI verification of 2026-10-29T05:36:17+00:00, on commit `390e3781109fa42e977d143caa9204ed94166a7b`. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
+MVEI verification of 2026-10-29T18:57:14+00:00, on commit `390e378`. The published commit is newer: 0 `.lean` file(s) were added and 1 changed after the verified commit; they are listed at the end and are not in this run. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
 
 | Lean project | Lean version | Build | Closed | Conditional | Open (`sorry`) | Checked file by file: closed / conditional / open / proof error / not reached |
 |---|---|---|---:|---:|---:|---|
@@ -82,3 +82,7 @@ lake build
 ```
 
 Each project uses the Lean version in its own `lean-toolchain`, which elan installs. The MVEI pipeline that produced these results is in the author's repository and is not public.
+
+## `.lean` files newer than the verified commit
+
+* changed: `atk-kernel/ATK.lean`

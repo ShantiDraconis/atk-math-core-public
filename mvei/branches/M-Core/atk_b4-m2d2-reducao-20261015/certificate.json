@@ -696,6 +696,6 @@
   "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
   "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
  },
- "published_at": "2026-10-29T06:27:18Z",
- "certificate_sha256": "47dc3a12c355cd94822361bf06559ec4acfb19fe0130c1f0964a1346100d99c8"
+ "published_at": "2026-10-29T20:16:01Z",
+ "certificate_sha256": "be6088facefaf276c54f6ad1976a11e87d1e2656d2421e17f24da959e93c5cfc"
 }

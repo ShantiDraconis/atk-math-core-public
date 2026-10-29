@@ -5,7 +5,7 @@ Lean sources from the branch `parametros-modelo` of the private repository `Shan
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 57 — closed 57, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 3 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `4686709685732e1d429d29eadd0126991026432f21855cd6150ecf9dc5c0162a`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/parametros-modelo/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `27ffb02054c1a0db73836d0094fb45295ca0a29ea3427ac9e05da7c350da3651`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/parametros-modelo/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

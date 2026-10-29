@@ -5,7 +5,7 @@ Lean sources from the branch `certificates/rh-nb-projection-distance-green-30` o
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 29 — closed 28, conditional 0, open 0, proof error 1, not reached 0, no result 0.
 * History: 35 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `fc859840651c7fd5c9811c4db2dfa96d7bbf7c2bf1b076d90aba02d17b21f645`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/certificates_rh-nb-projection-distance-green-30/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `be68be165e73d8d7d17313e40e0008df8712f5d8fdad8dac5d19f3426c6a6c00`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/certificates_rh-nb-projection-distance-green-30/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

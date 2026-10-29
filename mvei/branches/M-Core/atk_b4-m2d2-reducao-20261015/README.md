@@ -5,7 +5,7 @@ Lean sources from the branch `atk/b4-m2d2-reducao-20261015` of the private repos
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 77 — closed 21, conditional 0, open 0, proof error 0, not reached 56, no result 0.
 * History: 2 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `47dc3a12c355cd94822361bf06559ec4acfb19fe0130c1f0964a1346100d99c8`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_b4-m2d2-reducao-20261015/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `be6088facefaf276c54f6ad1976a11e87d1e2656d2421e17f24da959e93c5cfc`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_b4-m2d2-reducao-20261015/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

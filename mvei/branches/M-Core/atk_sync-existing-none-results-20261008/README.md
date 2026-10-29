@@ -5,7 +5,7 @@ Lean sources from the branch `atk/sync-existing-none-results-20261008` of the pr
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 2 — closed 2, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 8 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `105f0f4178aabe6fe1903a968339f48b6a9f48ada8f33d00a410688a016b7b5a`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_sync-existing-none-results-20261008/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `cda1af25a2ca94d5833e8547b43a4510dff895a02a2a9b4da4a3b01b8d4233cc`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_sync-existing-none-results-20261008/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

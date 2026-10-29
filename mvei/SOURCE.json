@@ -1,13 +1,15 @@
 {
  "source_repository": "ShantiDraconis/M-Core",
- "source_commit": "390e3781109fa42e977d143caa9204ed94166a7b",
- "source_commit_date": "2026-10-27T20:01:22Z",
- "files": 589,
- "lean_files": 583,
- "verified_commit": "390e3781109fa42e977d143caa9204ed94166a7b",
- "verification_generated_at": "2026-10-29T05:36:17+00:00",
+ "source_commit": "60a04e720bb2352053d572dbfbc25445a4af5f6d",
+ "source_commit_date": "2026-10-27T07:50:43Z",
+ "files": 544,
+ "lean_files": 538,
+ "verified_commit": "390e378",
+ "verification_generated_at": "2026-10-29T18:57:14+00:00",
  "lean_files_added_after_verified_commit": [],
- "lean_files_changed_after_verified_commit": [],
- "published_at": "2026-10-29T06:26:06Z",
+ "lean_files_changed_after_verified_commit": [
+  "atk-kernel/ATK.lean"
+ ],
+ "published_at": "2026-10-29T20:15:25Z",
  "published_by": "MVEI tools/publicar_espelhos.py"
 }

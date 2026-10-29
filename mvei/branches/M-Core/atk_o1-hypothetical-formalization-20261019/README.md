@@ -5,7 +5,7 @@ Lean sources from the branch `atk/o1-hypothetical-formalization-20261019` of the
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 11 — closed 11, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 5 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `ee2f66a00b6e0614119d3a433143282c7cd90e9408cd1e6e9ec545b5d3a49469`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_o1-hypothetical-formalization-20261019/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `c48a3c885cb82f01e509cfbef03d9805b350d4f69c45bf0cfaae78eaa5bb8606`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_o1-hypothetical-formalization-20261019/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 
