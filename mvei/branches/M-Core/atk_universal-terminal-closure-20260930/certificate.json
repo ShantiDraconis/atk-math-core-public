@@ -344,6 +344,6 @@
   "lean/MCore/FinalProofRegistry.lean": "e26a7bdfd809f8e4c7e95ebef0da17c5a7f238287eadc1088cbdaada2a048c43",
   "lean/MCore/UniversalTerminalClosure.lean": "d3b880f903a9958342387d9bf7a4d96af623d769cfd1f3a0eaff63d5ac42dbfb"
  },
- "published_at": "2026-10-29T01:37:25Z",
- "certificate_sha256": "aa5826a1449cf9778d1c1885085e7a2979c24a0b18c55d76202ad87d07d88504"
+ "published_at": "2026-10-29T02:47:07Z",
+ "certificate_sha256": "d8a6c38e7b4a5db1dc4cc3de4c1b75ec6fc5a4e8b10cd6b57d56a23a1ac84d3b"
 }

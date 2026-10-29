@@ -212,6 +212,6 @@
   "lean/MCore/FinalFail/UniversalTerminalClosure.lean": "fb3ff48d134a3b80d70f1923cc58e8339d3f7b2211b1c9214085ac79389f8170",
   "lean/MCore/FinalProofRegistry.lean": "32d0b9ebf6da92f94d5eb204c54f67219b0470fed0d7434010a458e9e8f356fb"
  },
- "published_at": "2026-10-29T01:37:25Z",
- "certificate_sha256": "52f915714380f5817496d01797b9784993d07812b8c85976fa629574a03db3d8"
+ "published_at": "2026-10-29T02:47:07Z",
+ "certificate_sha256": "b640f33546339d8948b76c48d3f2dd17e4bf5861ba18d711e9793a2dd93ff358"
 }

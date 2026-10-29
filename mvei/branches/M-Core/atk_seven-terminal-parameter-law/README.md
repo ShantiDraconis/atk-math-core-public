@@ -5,7 +5,7 @@ Lean sources from the branch `atk/seven-terminal-parameter-law` of the private r
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 98 — closed 41, conditional 0, open 0, proof error 0, not reached 57, no result 0.
 * History: 18 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `ef93ba2f713d9efb235d8b32ca70655503a1c0eb846fff6636cc6956bc3a8a23`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_seven-terminal-parameter-law/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `a02ffbf2b721bae7e55f0de4afe8a1b71d831684964f6274a37a5abd1bedffbf`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_seven-terminal-parameter-law/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

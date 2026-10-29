@@ -5,7 +5,7 @@ Lean sources from the branch `atk/debug-beal-completo-tmp` of the private reposi
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 2 — closed 2, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 2 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `93b897ce19bc948fb14669d78769b2882877b5a165ad5ac2baff79bad424d585`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_debug-beal-completo-tmp/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `749074c5037a18b203a099955cb501000df3a9c96a58c8210b00887f82b1b8ae`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_debug-beal-completo-tmp/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

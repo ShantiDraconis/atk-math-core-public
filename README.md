@@ -13,7 +13,7 @@ Do not add confidential data or third-party code without checking its license an
 <!-- mvei:start -->
 ## Lean sources and kernel check (MVEI)
 
-[`imports/M-Core/`](imports/M-Core/) holds the Lean sources of `ShantiDraconis/M-Core` at commit `390e378` (2026-10-27): 589 files. In the MVEI verification the Lean kernel closed 11 634 theorems here (9 665 unique, without the lemmas Lean generates itself), with 3 conditional and 8 open (`sorry`). A closed theorem proves the statement written in the file; it is not a claim that an open problem is solved. Statements, axioms, the build log and how to reproduce: [`mvei/README.md`](mvei/README.md).
+[`imports/M-Core/`](imports/M-Core/) holds the Lean sources of `ShantiDraconis/M-Core` at commit `390e378` (2026-10-27): 589 files. In the MVEI verification the Lean kernel closed 11 717 theorems here (9 747 unique, without the lemmas Lean generates itself), with 5 conditional and 15 open (`sorry`). A closed theorem proves the statement written in the file; it is not a claim that an open problem is solved. Statements, axioms, the build log and how to reproduce: [`mvei/README.md`](mvei/README.md).
 <!-- mvei:end -->
 
 <!-- mvei-branches:start -->

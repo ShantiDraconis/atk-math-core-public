@@ -5,7 +5,7 @@ Lean sources from the branch `attack/universal-multistate-signature` of the priv
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 16 — closed 2, conditional 0, open 0, proof error 0, not reached 14, no result 0.
 * History: 10 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `6de6b3bdb73dcb6ae322442628b83acb4e7d8b9b1dd26a7bd2c277acc9042aa7`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/attack_universal-multistate-signature/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `6228758ac4cae0077fc3fb7be2c750a8b49eaf38af1b33db3325a2c84c18f7de`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/attack_universal-multistate-signature/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 
