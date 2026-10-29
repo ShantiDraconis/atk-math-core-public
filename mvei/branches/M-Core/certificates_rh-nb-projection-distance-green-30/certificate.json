@@ -1,0 +1,453 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "certificates/rh-nb-projection-distance-green-30",
+ "branch_state": "parada",
+ "head_commit": "74d3f261bf8d80d7bd8371841966b8f9f837c536",
+ "head_commit_date": "2026-09-16T12:10:52+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "74d3f261bf8d80d7bd8371841966b8f9f837c536",
+   "date": "2026-09-16T12:10:52+02:00",
+   "subject": "fix(rh-nb): use span_mono implication directly"
+  },
+  {
+   "commit": "68d515d6dcc92a11ad2f681334318240b51f6cb9",
+   "date": "2026-09-16T12:07:01+02:00",
+   "subject": "ci(rh-nb): compile direct projection distance gate"
+  },
+  {
+   "commit": "8f8fe06b2d5970b9e45a59e2bfeb3cdecd5a3495",
+   "date": "2026-09-16T11:56:23+02:00",
+   "subject": "rh(nb): stage direct projection distance and monotonicity offline"
+  },
+  {
+   "commit": "347842be05c90e597963ad643a358fb5e9a9193f",
+   "date": "2026-09-16T11:55:48+02:00",
+   "subject": "rh(nb): derive finite Gram determinant from trivial right kernel"
+  },
+  {
+   "commit": "24ad2d14c04e2392ad76d3dc07cf87904ea2752a",
+   "date": "2026-09-16T11:30:41+02:00",
+   "subject": "fix(rh-nb): use explicit mulVec in finite Gram kernel gate"
+  },
+  {
+   "commit": "3790d7b45c2dd9430ee51b724b2fb1c95fca8f43",
+   "date": "2026-09-16T11:20:02+02:00",
+   "subject": "rh(nb): include finite Gram kernel determinant gate in CI"
+  },
+  {
+   "commit": "10b1da1eb505fe5d720218214a3bf2f34ed1c9c5",
+   "date": "2026-09-16T11:19:44+02:00",
+   "subject": "rh(nb): derive finite Gram kernel and determinant from LI"
+  },
+  {
+   "commit": "784207439085953a98c8ddeb65243428b53fe621",
+   "date": "2026-09-16T11:09:44+02:00",
+   "subject": "fix(rh-nb): use Mathlib finite linear-combination injectivity interface"
+  },
+  {
+   "commit": "a7192f9887362c4117b9cef3448d95b23cb634ce",
+   "date": "2026-09-16T11:03:46+02:00",
+   "subject": "rh(nb): include finite Gram independence gate in CI"
+  },
+  {
+   "commit": "9b17d6fc58b59d647c587b5a648b79865a53975a",
+   "date": "2026-09-16T11:03:32+02:00",
+   "subject": "rh(nb): formalize finite Gram kernel from linear independence"
+  },
+  {
+   "commit": "a6ef920570e77a7afd799e7933a05869955653f8",
+   "date": "2026-09-16T10:59:21+02:00",
+   "subject": "rh(nb): wire closure obligations into root build"
+  },
+  {
+   "commit": "0de3d2d02678624b52e0713d500fbebe9ccfed7c",
+   "date": "2026-09-16T10:59:04+02:00",
+   "subject": "rh(nb): encode full closure obligations without promoting open bridge"
+  },
+  {
+   "commit": "848f6e6a48fe888d3a8a4df2708a2ecf3bb7da1f",
+   "date": "2026-09-16T10:55:49+02:00",
+   "subject": "fix(nb): use pinned Mathlib IsSymm.ext API"
+  },
+  {
+   "commit": "45ff9e835a9f3301b6ef1ae945f020a55c88891c",
+   "date": "2026-09-16T10:52:07+02:00",
+   "subject": "fix(nb): close finite Gram symmetry and quadratic normalization"
+  },
+  {
+   "commit": "e7e0ee13cb8cef4411d4188d3aabc70bce1c9cfd",
+   "date": "2026-09-16T10:40:13+02:00",
+   "subject": "fix(nb): use scoped inner-product notation for finite Gram layer"
+  },
+  {
+   "commit": "07a4d5b8baa90053b1df9322ac5aff97edf7cafb",
+   "date": "2026-09-16T10:32:31+02:00",
+   "subject": "fix(rh-gram): remove fragile inner notation and prove symmetry extensionally"
+  },
+  {
+   "commit": "c92f58d6fdec9f0860a42150a04eb6f32bbb402f",
+   "date": "2026-09-16T10:25:33+02:00",
+   "subject": "rh(gram): add typed finite Gram layer without invertibility assumptions"
+  },
+  {
+   "commit": "7b3b1862ac0c5cbadd525eacb7e6982373215a60",
+   "date": "2026-09-16T10:24:25+02:00",
+   "subject": "rh(nb): wire finite Gram layer into root build"
+  },
+  {
+   "commit": "7689f1a8f6ea4d01ec9d5e38fd355032ead18580",
+   "date": "2026-09-16T10:24:15+02:00",
+   "subject": "rh(nb): add finite Gram positivity certificate layer"
+  },
+  {
+   "commit": "3fcda30c087d54a5d58b9cba47c36c9af5b5619d",
+   "date": "2026-09-16T10:18:59+02:00",
+   "subject": "fix(nb): use datum nonnegativity and certified external admissibility"
+  },
+  {
+   "commit": "aa4c174b49910111a9cc02eeeb116caaaf74347b",
+   "date": "2026-09-16T10:13:16+02:00",
+   "subject": "fix(nb): satisfy approximation datum and filter squeeze obligations"
+  },
+  {
+   "commit": "4fb79f481492a7c93dbc37fc721f4ecd19beb1fc",
+   "date": "2026-09-16T10:08:28+02:00",
+   "subject": "fix(nb): use Mathlib umbrella import for distance convergence API"
+  },
+  {
+   "commit": "0da28cb6ea4d33d0185b985af709c42ee26e56c7",
+   "date": "2026-09-16T09:59:04+02:00",
+   "subject": "rh(nb): wire distance and estimate modules into formal root"
+  },
+  {
+   "commit": "77268b192da72f1c4e13fa1535c7b6f3d8e75455",
+   "date": "2026-09-16T09:58:50+02:00",
+   "subject": "rh(nb): decompose M-Core estimate and diagonal convergence bridge"
+  },
+  {
+   "commit": "a511d699f05ac6ae501c297b4df8973c8f3f9704",
+   "date": "2026-09-16T09:58:28+02:00",
+   "subject": "rh(nb): add certified majorant gate for D_N convergence"
+  },
+  {
+   "commit": "e4dfd6f49d553e939ea1b57b54231f5a9ead0631",
+   "date": "2026-09-16T09:57:33+02:00",
+   "subject": "rh(nb): formalize abstract distance and monotonic approximation core"
+  },
+  {
+   "commit": "e5b0773d6f17e27d5a6906a2abff73f42cd9563f",
+   "date": "2026-09-16T09:47:02+02:00",
+   "subject": "fix(rh): import Mathlib foundations for geometry types"
+  },
+  {
+   "commit": "7d3a4be26222349fdbba4b5df6ec5b001c033fb6",
+   "date": "2026-09-16T09:39:37+02:00",
+   "subject": "ci(rh): trigger and enforce RH certificate firewall"
+  },
+  {
+   "commit": "9e66a805dc42735ba95278ba176f3a89c4833f9b",
+   "date": "2026-09-16T09:30:26+02:00",
+   "subject": "rh: keep root imports limited to present modules"
+  },
+  {
+   "commit": "4382b3c88617691b5d6fdcc7298bd7cf239fb05a",
+   "date": "2026-09-16T09:30:12+02:00",
+   "subject": "rh: wire certificate research modules into root build"
+  },
+  {
+   "commit": "0d6408bf3c988490a0ac0e4a5eb84cd35e285299",
+   "date": "2026-09-16T09:29:58+02:00",
+   "subject": "rh: formalize REG TRANSFER criterion obligations"
+  },
+  {
+   "commit": "7242b3ec64e77a25ec5f9b3e97aa5efde1453e4c",
+   "date": "2026-09-16T09:29:38+02:00",
+   "subject": "rh: add gap-complete certificate ledger"
+  },
+  {
+   "commit": "5cbb6393918999f3a3b812cf44029bac558b5fde",
+   "date": "2026-09-16T09:27:37+02:00",
+   "subject": "rh: add REG TRANSFER CRITERION endpoint firewall"
+  },
+  {
+   "commit": "c4a46fc3abb324b5c76a2d51393eb0e998c1762e",
+   "date": "2026-09-16T09:27:22+02:00",
+   "subject": "rh: formalize dimension scale and time interfaces"
+  },
+  {
+   "commit": "7b1f869c1e1681b8411010960f05714128543721",
+   "date": "2026-09-16T09:27:06+02:00",
+   "subject": "rh: add non-circular certificate status kernel"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.RH.LCRH.FiniteGramData.energy_nonneg",
+   "file": "MCore/RH/LCRH/GramMatrix.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(G : FiniteGramData E n) (c : Fin n → ℝ) : 0 ≤ G.energy c"
+  },
+  {
+   "name": "MCore.RH.LCRH.FiniteGramData.matrix_symm",
+   "file": "MCore/RH/LCRH/GramMatrix.lean",
+   "line": 32,
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(G : FiniteGramData E n) (i j : Fin n) : G.matrix i j = G.matrix j i"
+  },
+  {
+   "name": "MCore.RH.NB.NestedApproximationSpaces.D_antitone",
+   "file": "MCore/RH/NB/ProjectionDistance.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E] (S : MCore.RH.NB.NestedApproximationSpaces E),   Antitone S.D"
+  },
+  {
+   "name": "MCore.RH.NB.NestedApproximationSpaces.D_nonneg",
+   "file": "MCore/RH/NB/ProjectionDistance.lean",
+   "line": 38,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E] (S : MCore.RH.NB.NestedApproximationSpaces E)   (N : ℕ), 0 ≤ S.D N"
+  },
+  {
+   "name": "MCore.RH.NB.NestedApproximationSpaces.D_succ_le",
+   "file": "MCore/RH/NB/ProjectionDistance.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E] (S : MCore.RH.NB.NestedApproximationSpaces E)   (N : ℕ), S.D (N + 1) ≤ S.D N"
+  },
+  {
+   "name": "MCore.RH.NB.NestedApproximationSpaces.V_mono",
+   "file": "MCore/RH/NB/ProjectionDistance.lean",
+   "line": 24,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E] (S : MCore.RH.NB.NestedApproximationSpaces E),   Monotone S.V"
+  },
+  {
+   "name": "MCore.RH.NB.convergence_of_central_bridge",
+   "file": "MCore/RH/NB/ClosureObligations.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (d : MCore.RH.ApproximationDatum), MCore.RH.NB.CentralBridgeCertificate d → MCore.RH.ApproximationConverges d"
+  },
+  {
+   "name": "MCore.RH.NB.converges_of_majorant",
+   "file": "MCore/RH/NB/Distance.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {X : Type} [inst : PseudoMetricSpace X] (F : MCore.RH.NB.ApproximationFamily X),   MCore.RH.NB.MajorantCertificate F → MCore.RH.NB.Converges F"
+  },
+  {
+   "name": "MCore.RH.NB.det_ne_zero_of_mulVec_kernel_trivial",
+   "file": "MCore/RH/NB/FiniteGramKernel.lean",
+   "line": 38,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {n : ℕ} (G : Matrix (Fin n) (Fin n) ℝ), (∀ (c : Fin n → ℝ), G.mulVec c = 0 → c = 0) → G.det ≠ 0"
+  },
+  {
+   "name": "MCore.RH.NB.distanceSq_nonneg",
+   "file": "MCore/RH/NB/Distance.lean",
+   "line": 17,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {X : Type} [inst : PseudoMetricSpace X] (F : MCore.RH.NB.ApproximationFamily X) (N : ℕ),   0 ≤ MCore.RH.NB.distanceSq F N"
+  },
+  {
+   "name": "MCore.RH.NB.estimate_implies_convergence",
+   "file": "MCore/RH/NB/MCoreNBEstimate.lean",
+   "line": 17,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (d : MCore.RH.ApproximationDatum), MCore.RH.NB.MCoreNBEstimate d → MCore.RH.ApproximationConverges d"
+  },
+  {
+   "name": "MCore.RH.NB.estimate_to_external_endpoint",
+   "file": "MCore/RH/NB/MCoreNBEstimate.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {RH : Prop} (d : MCore.RH.ApproximationDatum),   MCore.RH.NB.MCoreNBEstimate d →     ∀ (hAdm : MCore.RH.NB.CriterionAdmissibility d), (hAdm.admissible → MCore.RH.ApproximationConverges d → RH) → RH"
+  },
+  {
+   "name": "MCore.RH.NB.gramMatrix_symmetric",
+   "file": "MCore/RH/NB/FiniteGram.lean",
+   "line": 19,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {n : ℕ}   (S : MCore.RH.NB.FiniteApproximationSystem E n), (MCore.RH.NB.gramMatrix S).IsSymm"
+  },
+  {
+   "name": "MCore.RH.NB.gram_det_ne_zero_of_linearIndependent",
+   "file": "MCore/RH/NB/FiniteGramKernel.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {n : ℕ}   (S : MCore.RH.NB.FiniteApproximationSystem E n), LinearIndependent ℝ S.generator → (MCore.RH.NB.gramMatrix S).det ≠ 0"
+  },
+  {
+   "name": "MCore.RH.NB.gram_mulVec_eq_zero_imp_coeff_zero_of_linearIndependent",
+   "file": "MCore/RH/NB/FiniteGramKernel.lean",
+   "line": 7,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {n : ℕ}   (S : MCore.RH.NB.FiniteApproximationSystem E n),   LinearIndependent ℝ S.generator → ∀ (c : Fin n → ℝ), (MCore.RH.NB.gramMatrix S).mulVec c = 0 → c = 0"
+  },
+  {
+   "name": "MCore.RH.NB.gram_mulVec_kernel_trivial_of_linearIndependent",
+   "file": "MCore/RH/NB/FiniteGramKernel.lean",
+   "line": 29,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {n : ℕ}   (S : MCore.RH.NB.FiniteApproximationSystem E n),   LinearIndependent ℝ S.generator → ∀ (c : Fin n → ℝ), (MCore.RH.NB.gramMatrix S).mulVec c = 0 → c = 0"
+  },
+  {
+   "name": "MCore.RH.NB.gram_quadratic_eq_norm_sq",
+   "file": "MCore/RH/NB/FiniteGramIndependence.lean",
+   "line": 12,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {n : ℕ}   (S : MCore.RH.NB.FiniteApproximationSystem E n) (c : Fin n → ℝ),   ∑ i, ∑ j, c i * MCore.RH.NB.gramMatrix S i j * c j = ‖MCore.RH.NB.synthesis S c‖ ^ 2"
+  },
+  {
+   "name": "MCore.RH.NB.gram_quadratic_eq_zero_iff_of_linearIndependent",
+   "file": "MCore/RH/NB/FiniteGramIndependence.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {n : ℕ}   (S : MCore.RH.NB.FiniteApproximationSystem E n),   LinearIndependent ℝ S.generator → ∀ (c : Fin n → ℝ), ∑ i, ∑ j, c i * MCore.RH.NB.gramMatrix S i j * c j = 0 ↔ c = 0"
+  },
+  {
+   "name": "MCore.RH.NB.gram_quadratic_nonneg",
+   "file": "MCore/RH/NB/FiniteGram.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {n : ℕ}   (S : MCore.RH.NB.FiniteApproximationSystem E n) (c : Fin n → ℝ),   0 ≤ ∑ i, ∑ j, c i * MCore.RH.NB.gramMatrix S i j * c j"
+  },
+  {
+   "name": "MCore.RH.NB.projectionDistance_tendsto_zero_of_subsequence",
+   "file": "MCore/RH/NB/ProjectionDistance.lean",
+   "line": 89,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E] (S : MCore.RH.NB.NestedApproximationSpaces E)   (Nk : ℕ → ℕ),   Filter.Tendsto Nk Filter.atTop Filter.atTop →     Filter.Tendsto (S.D ∘ Nk) Filter.atTop (nhds 0) → Filter.Tendsto S.D Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "MCore.RH.NB.rh_endpoint_of_closed_bridge",
+   "file": "MCore/RH/NB/ClosureObligations.lean",
+   "line": 71,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {RH : Prop} (d : MCore.RH.ApproximationDatum),   MCore.RH.NB.CentralBridgeCertificate d →     ∀ (adm : MCore.RH.NB.CriterionAdmissibility d), (adm.admissible → MCore.RH.ApproximationConverges d → RH) → RH"
+  },
+  {
+   "name": "MCore.RH.NB.synthesis_eq_zero_iff_of_linearIndependent",
+   "file": "MCore/RH/NB/FiniteGramIndependence.lean",
+   "line": 33,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : Type} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℝ E] {n : ℕ}   (S : MCore.RH.NB.FiniteApproximationSystem E n),   LinearIndependent ℝ S.generator → ∀ (c : Fin n → ℝ), MCore.RH.NB.synthesis S c = 0 ↔ c = 0"
+  },
+  {
+   "name": "MCore.RH.NB.tendsto_zero_of_antitone_subsequence",
+   "file": "MCore/RH/NB/ProjectionDistance.lean",
+   "line": 62,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {D : ℕ → ℝ},   (∀ (n : ℕ), 0 ≤ D n) →     Antitone D →       ∀ (Nk : ℕ → ℕ),         Filter.Tendsto Nk Filter.atTop Filter.atTop →           Filter.Tendsto (D ∘ Nk) Filter.atTop (nhds 0) → Filter.Tendsto D Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "MCore.RH.criterion_composition",
+   "file": "MCore/RH/BridgeInterfaces.lean",
+   "line": 23,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {P Criterion RH : Prop}, (P → Criterion) → (Criterion → RH) → P → RH"
+  },
+  {
+   "name": "MCore.RH.rhCertificate_declares_no_hidden_gaps",
+   "file": "MCore/RH/Certificate.lean",
+   "line": 37,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.RH.rhCertificate.noHiddenGaps = true"
+  },
+  {
+   "name": "MCore.RH.rhCertificate_target_not_proved",
+   "file": "MCore/RH/Certificate.lean",
+   "line": 35,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.RH.rhCertificate.targetProved = false"
+  },
+  {
+   "name": "MCore.RH.rh_of_mcore_dbn",
+   "file": "MCore/RH/ResearchObligations.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {P LambdaNonpositive RH : Prop}, (P → LambdaNonpositive) → (LambdaNonpositive → RH) → P → RH"
+  },
+  {
+   "name": "MCore.RH.rh_of_mcore_nb",
+   "file": "MCore/RH/ResearchObligations.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {P NBCriterion RH : Prop}, (P → NBCriterion) → (NBCriterion → RH) → P → RH"
+  },
+  {
+   "name": "MCore.RH.rh_of_mcore_positivity",
+   "file": "MCore/RH/ResearchObligations.lean",
+   "line": 45,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {P Positivity RH : Prop}, (P → Positivity) → (Positivity → RH) → P → RH"
+  }
+ ],
+ "closed": 28,
+ "files_sha256": {
+  "MCore/RH/BridgeInterfaces.lean": "6b331e249f6f91fe2271dc01b2c46e846ec794fe3c19e43d9bd0f73054a2b8e8",
+  "MCore/RH/Certificate.lean": "33d934e79f98d07bcd49118ea249e9e74cf78c3dd01976c8e0513218c3e23c1e",
+  "MCore/RH/GeometryDynamics.lean": "3ad19b6a021a4b9595f217cabc16384232128abf1066bce933127770c345bf78",
+  "MCore/RH/LCRH/GramMatrix.lean": "42d96a35ead6e0826e7916c17c36e7a5217a681ba4f4f9c647cfd4f1b2352826",
+  "MCore/RH/NB/ClosureObligations.lean": "4993e60807d778af4025c0c8af87e8dba0cbb28140df5b0c8f94d0c0a88a5026",
+  "MCore/RH/NB/Distance.lean": "d954e4646b8e9babe0108b2fc0f4de93fba21d5f6146dbac597f1133c94badf5",
+  "MCore/RH/NB/FiniteGram.lean": "c30570606f0bcae0892ca8e8eb4efbf47e0a931abfa27ddecb2a1e38f49b1040",
+  "MCore/RH/NB/FiniteGramIndependence.lean": "1626b62a6c1dd0e896ac4b613e5bf41477ee904ab01d16e060371e75b62df64f",
+  "MCore/RH/NB/FiniteGramKernel.lean": "94ab774b43a850c6373c1f4806dd45b994a7dd420e8b58d982207e41940b15bb",
+  "MCore/RH/NB/MCoreNBEstimate.lean": "d5822500cec2f5983f6cca4a2ab51ec698c5f9a750c5f8bda3f04b0bf2ea7199",
+  "MCore/RH/NB/ProjectionDistance.lean": "c8d69a9700144612bca3bc01e1304fc54d0844e2dc550511607316c520215a3f",
+  "MCore/RH/ResearchObligations.lean": "013a7e11e4b56dcf0e3b36841fcada4684170e9f35eee045aad35d485cbf3cd4",
+  "MCore/RH/Status.lean": "e9194ec25859b2fae5f30b078052e68db9ec8fcfda435ad6cba5ea1bee5dfd8b",
+  "lakefile.lean": "f53cac7f442d9cb312870f171649382381e313931ad59cfc8d0799f52df430ac",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+ },
+ "published_at": "2026-10-29T01:37:24Z",
+ "certificate_sha256": "1dff2461a081da371349eabc04e55fe852ec014d6de9f76ed33db7f8de5ba26d"
+}

@@ -5,7 +5,7 @@ Lean sources from the branch `infra/atl-v3-canonical-20260926` of the private re
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 7 — closed 3, conditional 0, open 0, proof error 2, not reached 2, no result 0.
 * History: 17 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `9fb023e445e43321f06486c9c00636e61775b86a7d0056dd7caa477509d4fd28`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/infra_atl-v3-canonical-20260926/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `276f5d8b42b53b24602a4d3e8232f5ca7389f4a035ea9710c6cf1e695d999f8f`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/infra_atl-v3-canonical-20260926/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

@@ -1,0 +1,268 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "conditional",
+ "branch_state": "em andamento",
+ "head_commit": "3008dc6a2e457aab1bf7055b9149de608a5efd0f",
+ "head_commit_date": "2026-10-28T14:40:39+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "3008dc6a2e457aab1bf7055b9149de608a5efd0f",
+   "date": "2026-10-28T14:40:39+01:00",
+   "subject": "Merge pull request #43 from ShantiDraconis/atk/ns-clay-verificacao-20261014"
+  },
+  {
+   "commit": "aa551a00160aa024c9c326ce87eb8e74c09a3bd7",
+   "date": "2026-10-16T11:23:52+02:00",
+   "subject": "Merge pull request #52 from ShantiDraconis/atk/duas-faces-20261015"
+  },
+  {
+   "commit": "9c163952b94b1bf29d3ced1b0bcd362e056eb3ed",
+   "date": "2026-10-15T22:33:24+01:00",
+   "subject": "atk-kernel: operador `_` (DuasFaces, 14 teoremas) e scripts/verify.sh"
+  },
+  {
+   "commit": "41bdc1ae1199d2086b2a06113477e87e6cf02a81",
+   "date": "2026-10-15T05:55:59+01:00",
+   "subject": "atk-ns: README com o resultado do CI (11/11, 580 módulos compilados do código-fonte)"
+  },
+  {
+   "commit": "e731249eb9af006160ec0ea9cbd4aa7bcb917f15",
+   "date": "2026-10-15T04:24:28+01:00",
+   "subject": "atk-ns: grep sem resultado não derruba mais a auditoria"
+  },
+  {
+   "commit": "6c0bcbeade78127d6b3ee001bbea3a1771b923b2",
+   "date": "2026-10-15T02:44:23+01:00",
+   "subject": "atk-ns: libera espaço em disco no runner antes do build"
+  },
+  {
+   "commit": "af82d51122c7dc8c24eec7fe65fc89d0f72c5ec6",
+   "date": "2026-10-15T00:27:02+01:00",
+   "subject": "atk-ns: tira os atributos category/AMS que sobraram; erros do build viram anotações"
+  },
+  {
+   "commit": "2f39b602c5deafb3eed80815b61825c16100f5ac",
+   "date": "2026-10-14T23:37:42+01:00",
+   "subject": "ci(atk-ns): nome do workflow entre aspas (YAML)"
+  },
+  {
+   "commit": "4b566f304088b9cd93da182544b942f58cdc9c92",
+   "date": "2026-10-14T23:33:40+01:00",
+   "subject": "atk-ns: verificacao independente da prova da OpenAI de Navier–Stokes (Clay C e D)"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.0-rc2",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.ClayNS.clayC",
+   "file": "atk-ns/AtkNS/ClayNS.lean",
+   "line": 101,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.ClayNS.ClayC"
+  },
+  {
+   "name": "ATK.ClayNS.clayD",
+   "file": "atk-ns/AtkNS/ClayNS.lean",
+   "line": 109,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.ClayNS.ClayD"
+  },
+  {
+   "name": "ATK.ClayNS.clayNS",
+   "file": "atk-ns/AtkNS/ClayNS.lean",
+   "line": 115,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.ClayNS.ClayNS"
+  },
+  {
+   "name": "ATK.ClayNS.fcDecay",
+   "file": "atk-ns/AtkNS/ClayNS.lean",
+   "line": 77,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : EuclideanSpace ℝ (Fin 3) → ℝ → EuclideanSpace ℝ (Fin 3)},   NavierStokes.Comparator.ForceConditionDecay f → ATK.FC.NS.ForceConditionDecay f"
+  },
+  {
+   "name": "ATK.ClayNS.fcPeriodic",
+   "file": "atk-ns/AtkNS/ClayNS.lean",
+   "line": 80,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : EuclideanSpace ℝ (Fin 3) → ℝ → EuclideanSpace ℝ (Fin 3)},   NavierStokes.Comparator.ForceConditionPeriodic f → ATK.FC.NS.ForceConditionPeriodic f"
+  },
+  {
+   "name": "ATK.ClayNS.ivcDecay",
+   "file": "atk-ns/AtkNS/ClayNS.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {u₀ : EuclideanSpace ℝ (Fin 3) → EuclideanSpace ℝ (Fin 3)},   NavierStokes.Comparator.InitialVelocityConditionDecay u₀ → ATK.FC.NS.InitialVelocityConditionDecay u₀"
+  },
+  {
+   "name": "ATK.ClayNS.ivcPeriodic",
+   "file": "atk-ns/AtkNS/ClayNS.lean",
+   "line": 73,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {u₀ : EuclideanSpace ℝ (Fin 3) → EuclideanSpace ℝ (Fin 3)},   NavierStokes.Comparator.InitialVelocityConditionPeriodic u₀ → ATK.FC.NS.InitialVelocityConditionPeriodic u₀"
+  },
+  {
+   "name": "ATK.ClayNS.solPeriodic",
+   "file": "atk-ns/AtkNS/ClayNS.lean",
+   "line": 92,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {u₀ : EuclideanSpace ℝ (Fin 3) → EuclideanSpace ℝ (Fin 3)}   {f : EuclideanSpace ℝ (Fin 3) → ℝ → EuclideanSpace ℝ (Fin 3)} {nu : ℝ}   {v : EuclideanSpace ℝ (Fin 3) → ℝ → EuclideanSpace ℝ (Fin 3)} {p : EuclideanSpace ℝ (Fin 3) → ℝ → ℝ},   ATK.FC.NS.NavierStokesExistenceAndSmoothnessPeriodic nu u₀ f v p →     NavierStokes.Comparator.NavierStokesExistenceAndSmoothnessPeriodic nu u₀ f v p"
+  },
+  {
+   "name": "ATK.ClayNS.solRn",
+   "file": "atk-ns/AtkNS/ClayNS.lean",
+   "line": 84,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {u₀ : EuclideanSpace ℝ (Fin 3) → EuclideanSpace ℝ (Fin 3)}   {f : EuclideanSpace ℝ (Fin 3) → ℝ → EuclideanSpace ℝ (Fin 3)} {nu : ℝ}   {v : EuclideanSpace ℝ (Fin 3) → ℝ → EuclideanSpace ℝ (Fin 3)} {p : EuclideanSpace ℝ (Fin 3) → ℝ → ℝ},   ATK.FC.NS.NavierStokesExistenceAndSmoothnessRn nu u₀ f v p →     NavierStokes.Comparator.NavierStokesExistenceAndSmoothnessRn nu u₀ f v p"
+  },
+  {
+   "name": "ATK.DuasFaces.absorcao",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 105,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (X C cB cT : ℝ), X ≤ (cB + cT) * X + C → cB + cT < 1 → X ≤ C / (1 - cB - cT)"
+  },
+  {
+   "name": "ATK.DuasFaces.decaimento",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 123,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (D : ℕ → ℝ) (C : ℝ), (∀ (n : ℕ), 0 ≤ D n) → (∀ (n : ℕ), D n ≤ C / (↑n + 1)) → Filter.Tendsto D Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "ATK.DuasFaces.estrutura_nao_basta",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 129,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∃ D, (∀ (n : ℕ), 0 ≤ D n) ∧ Antitone D ∧ (∀ (n : ℕ), D n - D (n + 1) = 0) ∧ ¬Filter.Tendsto D Filter.atTop (nhds 0)"
+  },
+  {
+   "name": "ATK.DuasFaces.fechamento_condicional",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 139,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P K : Fin 7 → Prop), (∀ (i : Fin 7), K i) → (∀ (i : Fin 7), K i → P i) → ∀ (i : Fin 7), P i"
+  },
+  {
+   "name": "ATK.DuasFaces.igualdade_estrutural",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 47,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {A : Type u} {B : Type v} (a c : A) (b d : B), ATK.DuasFaces.ligar a b = ATK.DuasFaces.ligar c d ↔ a = c ∧ b = d"
+  },
+  {
+   "name": "ATK.DuasFaces.linhaEquivProd_ligar",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 59,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {A : Type u} {B : Type v} (a : A) (b : B), (ATK.DuasFaces.linhaEquivProd A B) (ATK.DuasFaces.ligar a b) = (a, b)"
+  },
+  {
+   "name": "ATK.DuasFaces.linha_zero_iff",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 80,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (a b : ℝ), (a, b) = 0 ↔ a = 0 ∧ b = 0"
+  },
+  {
+   "name": "ATK.DuasFaces.preserva_residuo",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 84,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T : ATK.DuasFaces.LinhaR →ₗ[ℝ] ATK.DuasFaces.LinhaR),   Function.Injective ⇑T →     ∀ (x y : ATK.DuasFaces.LinhaR), ATK.DuasFaces.residuo (T x) (T y) = 0 ↔ ATK.DuasFaces.residuo x y = 0"
+  },
+  {
+   "name": "ATK.DuasFaces.residuo_apply",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 70,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (a b c d : ℝ), ATK.DuasFaces.residuo (a, b) (c, d) = (a - c, b - d)"
+  },
+  {
+   "name": "ATK.DuasFaces.residuo_proprio",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 76,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x : ATK.DuasFaces.LinhaR), ATK.DuasFaces.residuo x x = 0"
+  },
+  {
+   "name": "ATK.DuasFaces.residuo_zero_iff",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 72,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (x y : ATK.DuasFaces.LinhaR), ATK.DuasFaces.residuo x y = 0 ↔ x = y"
+  },
+  {
+   "name": "ATK.DuasFaces.singular_anula",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 90,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∃ T x y, ATK.DuasFaces.residuo x y ≠ 0 ∧ ATK.DuasFaces.residuo (T x) (T y) = 0"
+  },
+  {
+   "name": "ATK.DuasFaces.telescopagem",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 114,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (D : ℕ → ℝ) (N : ℕ), ∑ n ∈ Finset.range N, (D n - D (n + 1)) = D 0 - D N"
+  },
+  {
+   "name": "ATK.DuasFaces.transporte",
+   "file": "atk-kernel/ATK/DuasFaces.lean",
+   "line": 100,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {A : Type u} (P : A → Prop) (T : A → A) (x : A), (∀ (y : A), P y ↔ P (T y)) → P (T x) → P x"
+  }
+ ],
+ "closed": 23,
+ "files_sha256": {
+  "atk-kernel/ATK/DuasFaces.lean": "2453bd9622fbf787e1c4aa9d1bc39fd11c70a62608bec6f26be4b14016957b5a",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+  "atk-ns/AtkNS/ClayNS.lean": "33a78d4af967082b3fabcf1b119d5ea14b12d053925194417a0833b06e28f6c3",
+  "atk-ns/AtkNS/FCDefinicoes.lean": "73436300e40d226b28ccb69db9a87d3ec07591d04e5347fd7356298c7574669f",
+  "atk-ns/lakefile.toml": "d85b5834fbba8008f31c199c1070ef381574e4f6c9640007cf081fa2f29154a3",
+  "atk-ns/lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88"
+ },
+ "published_at": "2026-10-29T01:37:24Z",
+ "certificate_sha256": "f1ac2d876ab39a9428c5a9f00253d1e8dfd64c6845ece73254d8c549abd9c382"
+}

@@ -5,7 +5,7 @@ Lean sources from the branch `atk/material-math-tristate-20261001` of the privat
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 420 — closed 22, conditional 0, open 0, proof error 0, not reached 398, no result 0.
 * History: 252 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `9cb0d80f1b816f5b7a88d3cacbf620442fa9df4c3066419c01ada2cf51969c10`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_material-math-tristate-20261001/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `3f2dcd7d93974faeb98a0ada0e5c410f11448136bf212c0c355f2a7225c3b244`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_material-math-tristate-20261001/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

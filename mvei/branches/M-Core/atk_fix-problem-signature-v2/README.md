@@ -5,7 +5,7 @@ Lean sources from the branch `atk/fix-problem-signature-v2` of the private repos
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 5 — closed 5, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 21 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `c6d065f6e85bb98828173ac21e1cefdd105c552f20d5dadd151b1edfa19754a4`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_fix-problem-signature-v2/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `d4ffa280438e6604b6c66451031c1ed1e67cac99d1dcd93b34abcd24e4bad7e0`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_fix-problem-signature-v2/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

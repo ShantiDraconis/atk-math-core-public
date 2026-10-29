@@ -5,7 +5,7 @@ Lean sources from the branch `atk/two-sided-material-closure-20261001` of the pr
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 19 — closed 10, conditional 0, open 0, proof error 2, not reached 7, no result 0.
 * History: 31 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `e26e63694fb85bc9991170a7798ede000de7f1af51a01ddf6cfc7209e5dff058`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_two-sided-material-closure-20261001/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `a2fb4d75333af05d5cdb758d40a84d88decb1077fffdb782f8a19345a7a07fef`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_two-sided-material-closure-20261001/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

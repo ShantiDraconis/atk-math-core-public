@@ -1,0 +1,228 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "fix/ns-scaling-false",
+ "branch_state": "parada",
+ "head_commit": "929580cd709345c24014ea5b52ffddf08655d376",
+ "head_commit_date": "2026-10-12T20:32:26+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "929580cd709345c24014ea5b52ffddf08655d376",
+   "date": "2026-10-12T20:32:26+01:00",
+   "subject": "atk-kernel/README: STATUS — rota G5 de NS falsa (19–21, 52); Clay (A)–(D) aberto; 72 parâmetros: 8 enunciados abertos"
+  },
+  {
+   "commit": "342d21760d10b3e00b1726c899f5a85f0a0fdaf5",
+   "date": "2026-10-12T19:19:09+01:00",
+   "subject": "fix(ns-scaling-false): itens 19–21 FALSE e 52 FAILED_DEPENDENCY provados no kernel; teste de escala no CI"
+  },
+  {
+   "commit": "613b4ddfe4855b5145166bcce54f8462863805b9",
+   "date": "2026-10-12T18:53:35+01:00",
+   "subject": "atk-kernel: Horizon §4 — fator do primo no infinito em ζ (Γ_ℝ) e equação funcional"
+  },
+  {
+   "commit": "8381ebd5a7624f331cf77ae7181e78ebc8855132",
+   "date": "2026-10-12T18:51:46+01:00",
+   "subject": "atk-kernel: Horizon — ajuste de coerção |x| (ℚ → ℝ)"
+  },
+  {
+   "commit": "b45ea76e38c891e9f339900a70647363ed5f182e",
+   "date": "2026-10-12T18:45:05+01:00",
+   "subject": "atk-kernel: ATK/Horizon.lean — o que o 'horizon prime' pode significar e ser provado (primo no infinito, fórmula do produto, primo hiperfinito, transferência)"
+  },
+  {
+   "commit": "272d5fc686014cbf0c779ed37e5bbfcbbaabe8d2",
+   "date": "2026-10-12T17:47:49+01:00",
+   "subject": "PARAMETROS_72: NS 19–21 e 52 refutados por escala; 23 partes abertas (8 enunciados)"
+  },
+  {
+   "commit": "60ffb18da1b06407e6eef4917bab89bc3a4e306e",
+   "date": "2026-10-12T15:39:53+01:00",
+   "subject": "PARAMETROS_72: contagem de soluções de Beal por faixa"
+  },
+  {
+   "commit": "4d0b63fe3da53485a14794f68bb4106dcb375715",
+   "date": "2026-10-12T15:39:42+01:00",
+   "subject": "PARAMETROS_72: preenche os 39 parâmetros sem valor (BSD 64687 curvas, Beal busca, NS, P/NP no kernel, literatura) e corrige as linhas 24–28"
+  },
+  {
+   "commit": "4e825de38e45edd875b2fc53e9c000f6087dea98",
+   "date": "2026-10-12T09:18:58+01:00",
+   "subject": "ATK_AGENDA: alvos exatos (RH, NS A–D, Beal, P≠NP) e o que falta na Mathlib para BSD, YM e Hodge"
+  },
+  {
+   "commit": "f7271512cfe11099a2cb1d1c3245579bde0d4d2d",
+   "date": "2026-10-12T09:12:10+01:00",
+   "subject": "atk-kernel: ATK/Exact.lean (módulo = namespace), prova do campo nulo com lemas auxiliares; erros de compilação nas anotações"
+  },
+  {
+   "commit": "ede5000224888659b9c965ca248f70d547af8ec2",
+   "date": "2026-10-12T09:04:38+01:00",
+   "subject": "atk-kernel: ExactTargets — enunciados oficiais (RH, Navier–Stokes A–D, Beal, P≠NP) sem Prop livre + testes de sanidade"
+  },
+  {
+   "commit": "85719a6ab1a2a85e499ddf84a73ecb65972c7a16",
+   "date": "2026-10-12T02:29:28+01:00",
+   "subject": "atk-batch2: corrige nomes no apêndice de auditoria (Classical.ofNonempty) e a prova de no_natural_descent na cópia corrigida"
+  },
+  {
+   "commit": "9af32fe74bec0e81db1be9ded76f6156f8308197",
+   "date": "2026-10-12T02:21:21+01:00",
+   "subject": "atk-batch2: kernel dos pacotes TERMINAL_CERTIFICATES, EXACT_GATE, FORMAL_OPERATORS e MATERIAL_MATH (originais intactos + cópias corrigidas + auditoria)"
+  },
+  {
+   "commit": "901161afef0280758d3ba0299f2e9edaf6eabc52",
+   "date": "2026-10-12T01:59:16+01:00",
+   "subject": "atk-interfaces-patched: cópia com as 2 provas de descida corrigidas (originais preservados)"
+  },
+  {
+   "commit": "0c9ce2979e422538a4214927316f21223cd2f423",
+   "date": "2026-10-12T01:54:05+01:00",
+   "subject": "atk-interfaces: compila no kernel os arquivos Lean da sessão de 12/10 (sem alterá-los) + auditoria"
+  },
+  {
+   "commit": "200f3fe64e14698c3a666c90569e5dba3330d9a5",
+   "date": "2026-10-12T01:47:01+01:00",
+   "subject": "ATK_AGENDA: agenda de pesquisa formalizada após a auditoria lógica"
+  },
+  {
+   "commit": "49a9af8db3e2f7d189e03b52d0127f7408acf78a",
+   "date": "2026-10-12T01:46:16+01:00",
+   "subject": "atk-kernel: certificado v2 (63/64) do commit cfa675c"
+  },
+  {
+   "commit": "cfa675c8239340f38bafb11eab2bcc292ffe4195",
+   "date": "2026-10-12T01:39:27+01:00",
+   "subject": "atk-kernel: anotações agrupadas (verificado 48/48 no M-Core)"
+  },
+  {
+   "commit": "1bf3183c6a872e1f2b071db4862a54ea65c1a43f",
+   "date": "2026-10-12T01:32:36+01:00",
+   "subject": "atk-kernel: agenda — convergência de D_N, descida de Beal bem fundada, controle de energia NS"
+  },
+  {
+   "commit": "6e69855e5a29e42813153237e28dd29951fcdd53",
+   "date": "2026-10-12T01:23:14+01:00",
+   "subject": "atk-kernel: auditoria adversarial — produtores terminais são satisfeitos trivialmente"
+  },
+  {
+   "commit": "f1f101205337578a3c8e1e34c563ae80ea343a28",
+   "date": "2026-10-12T00:52:11+01:00",
+   "subject": "atk-kernel: certificado v1 (41/42) do commit 97ddae7, congelado na tag atk-kernel-cert-v1"
+  },
+  {
+   "commit": "97ddae72520d9f10a5472cf6d373a601c09f6ce4",
+   "date": "2026-10-12T00:47:11+01:00",
+   "subject": "atk-legacy: cópia corrigida de hodge_linear_realization (original preservado)"
+  },
+  {
+   "commit": "1037295d249795e2846a44830ec2c5fce6ab80a8",
+   "date": "2026-10-12T00:43:45+01:00",
+   "subject": "atk-legacy: compila no kernel os arquivos Lean originais (v4.21.0), sem alterá-los"
+  },
+  {
+   "commit": "2c900c18e60d64fc1c4bd4ee854948ec5516ace3",
+   "date": "2026-10-12T01:38:35+02:00",
+   "subject": "ATK: registrar valores concretos e isolar 24 obrigações terminais"
+  },
+  {
+   "commit": "8d6bcb002041cd942932dcc62ffbd7c27752d29f",
+   "date": "2026-10-12T00:35:51+01:00",
+   "subject": "atk-kernel: +7 lemas (torção BSD, decaimento forçado NS, distância de Báez-Duarte RH)"
+  },
+  {
+   "commit": "e12b393b71b7ade939429cbbef4a8fa02122b1cb",
+   "date": "2026-10-12T00:22:51+01:00",
+   "subject": "atk-kernel: mapa dos 72 parâmetros com os valores reais calculados"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.21.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.Correcao_20261012.exists_supercritical",
+   "file": "atk-kernel/ATK/Correcao_20261012.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (M : ATK.Correcao_20261012.ScalingModel) {ν : ℝ},   0 < ν → ∀ (u₀ : M.State), 0 < M.S u₀ → 0 ≤ M.z u₀ → ∀ (θ : ℝ), ∃ u₁, 0 < M.S u₁ - θ * ν * M.z u₁"
+  },
+  {
+   "name": "ATK.Correcao_20261012.exponent_rigidity",
+   "file": "atk-kernel/ATK/Correcao_20261012.lean",
+   "line": 121,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {D K : ℝ} {p : ℕ}, 0 < D → (∀ (l : ℝ), 0 < l → l ^ 3 * D ≤ K * l ^ p) → p = 3"
+  },
+  {
+   "name": "ATK.Correcao_20261012.no_quadratic_absorption",
+   "file": "atk-kernel/ATK/Correcao_20261012.lean",
+   "line": 85,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {D K : ℝ}, 0 < D → (∀ (l : ℝ), 0 < l → l ^ 3 * D ≤ K * l ^ 2) → False"
+  },
+  {
+   "name": "ATK.Correcao_20261012.ns_19_false",
+   "file": "atk-kernel/ATK/Correcao_20261012.lean",
+   "line": 100,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (M : ATK.Correcao_20261012.ScalingModel) {ν θ : ℝ},   0 < ν → ∀ (u₀ : M.State), 0 < M.S u₀ → 0 ≤ M.z u₀ → ¬∃ C, ∀ (u : M.State), M.S u ≤ θ * ν * M.z u + C * M.y u ^ 2"
+  },
+  {
+   "name": "ATK.Correcao_20261012.ns_20_21_false",
+   "file": "atk-kernel/ATK/Correcao_20261012.lean",
+   "line": 67,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (M : ATK.Correcao_20261012.ScalingModel) {ν : ℝ},   0 < ν → ∀ (u₀ : M.State), 0 < M.S u₀ → 0 ≤ M.z u₀ → ¬∃ c, ∀ (u : M.State), M.S u ≤ c * ν * M.z u"
+  },
+  {
+   "name": "ATK.Correcao_20261012.ns_20_21_no_split",
+   "file": "atk-kernel/ATK/Correcao_20261012.lean",
+   "line": 75,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (M : ATK.Correcao_20261012.ScalingModel) {ν : ℝ},   0 < ν →     ∀ (u₀ : M.State),       0 < M.S u₀ →         0 ≤ M.z u₀ →           ¬∃ B T cB cT,               (∀ (u : M.State), B u + T u = M.S u) ∧                 (∀ (u : M.State), B u ≤ cB * ν * M.z u) ∧ ∀ (u : M.State), T u ≤ cT * ν * M.z u"
+  },
+  {
+   "name": "ATK.Correcao_20261012.ns_52_failed",
+   "file": "atk-kernel/ATK/Correcao_20261012.lean",
+   "line": 114,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (M : ATK.Correcao_20261012.ScalingModel) {ν : ℝ},   0 < ν →     ∀ (u₀ : M.State),       0 < M.S u₀ →         0 ≤ M.z u₀ →           ¬∃ B T R θ C,               (∀ (u : M.State), M.S u = B u + T u + R u) ∧                 (∀ (u : M.State), B u + T u ≤ θ * ν * M.z u) ∧ ∀ (u : M.State), R u ≤ C * M.y u ^ 2"
+  },
+  {
+   "name": "ATK.Correcao_20261012.only_cubic_survives",
+   "file": "atk-kernel/ATK/Correcao_20261012.lean",
+   "line": 163,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (M : ATK.Correcao_20261012.ScalingModel) {ν θ C : ℝ},   0 < ν →     ∀ (u₀ : M.State),       0 < M.S u₀ → 0 ≤ M.z u₀ → ∀ (p : ℕ), (∀ (u : M.State), M.S u ≤ θ * ν * M.z u + C * M.y u ^ p) → p = 3"
+  }
+ ],
+ "closed": 8,
+ "files_sha256": {
+  "atk-kernel/ATK/Correcao_20261012.lean": "f65fbe427ac2d3d8bca6b6804abc88287ae9abf1e69db1582038352762de43b6",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-29T01:37:25Z",
+ "certificate_sha256": "ed2a63463a8a10dde6c7ea90fbfd3bbd1a52ddfbf5b6e87c09e493331a14ac8b"
+}

@@ -1,0 +1,193 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/language-audit-20261015",
+ "branch_state": "em andamento",
+ "head_commit": "46f9a43bfa3e4bc6c04c3f71269361c9064040bc",
+ "head_commit_date": "2026-10-16T00:18:41+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "46f9a43bfa3e4bc6c04c3f71269361c9064040bc",
+   "date": "2026-10-16T00:18:41+02:00",
+   "subject": "audit: classify 21 terminal-language findings by semantic risk and deduplicate paths"
+  },
+  {
+   "commit": "f0fafd969b195f6081388ea8dad581f772e91fed",
+   "date": "2026-10-16T00:12:50+02:00",
+   "subject": "feat(lean): add explicit typed terminal certificate interface without assuming solved conjectures"
+  },
+  {
+   "commit": "611b550b637fd49a887c07fd7e3254e72306f7b7",
+   "date": "2026-10-16T00:05:02+02:00",
+   "subject": "audit: add explicit reviewed vs unreviewed language occurrence counts"
+  },
+  {
+   "commit": "21f9d3453a91f7eaa6b65e718656deae51aec579",
+   "date": "2026-10-15T23:59:16+02:00",
+   "subject": "docs: specify reproducible Lean kernel validation and terminal acceptance criteria"
+  },
+  {
+   "commit": "77e189af57c9f05d806e7236aac734e8425ea88a",
+   "date": "2026-10-15T23:58:06+02:00",
+   "subject": "audit: preserve historical Lean source verbatim for semantic review"
+  },
+  {
+   "commit": "ad18f9be50419f4cf56bdfd2dc3175b57894461e",
+   "date": "2026-10-15T23:56:13+02:00",
+   "subject": "audit(lean): preserve source with explicit scope and proof-status annotation"
+  },
+  {
+   "commit": "5fed32da781ce14ef5ca87fad2d958e0a669d57c",
+   "date": "2026-10-15T23:56:10+02:00",
+   "subject": "audit(lean): preserve source with explicit scope and proof-status annotation"
+  },
+  {
+   "commit": "03872232412f79913b1bc1ba16e511ea5165e4a1",
+   "date": "2026-10-15T23:54:35+02:00",
+   "subject": "docs(lean): clarify conditional theorem and model scope without changing proof terms"
+  },
+  {
+   "commit": "b06bcb233e58e34832e401c8f6c4128cdbd2b02c",
+   "date": "2026-10-15T23:54:32+02:00",
+   "subject": "docs(lean): clarify conditional theorem and model scope without changing proof terms"
+  },
+  {
+   "commit": "806e934cf98abe30a20549be5d76b84a6024a1e2",
+   "date": "2026-10-15T23:52:38+02:00",
+   "subject": "docs: document exact branch-specific mathematical language corrections"
+  },
+  {
+   "commit": "8ce7fa072f1f2552d14401288608f3ed5b3c499c",
+   "date": "2026-10-15T23:50:22+02:00",
+   "subject": "audit: publish scoped cross-branch file inventory and completion criteria"
+  },
+  {
+   "commit": "84739ce9868899e0614dbf48abec3afe67967b53",
+   "date": "2026-10-15T23:50:03+02:00",
+   "subject": "audit: seed per-branch per-file review from master inventory"
+  },
+  {
+   "commit": "cb4a0759a98edf13ab58478937633139be436ed7",
+   "date": "2026-10-15T23:46:28+02:00",
+   "subject": "tools: add read-only all-ref language occurrence scanner"
+  },
+  {
+   "commit": "56f64e1ecae53a58278a3a44fc2f0f307ff87ade",
+   "date": "2026-10-15T23:45:40+02:00",
+   "subject": "docs: add 28-category formal-language and proof-status standard"
+  },
+  {
+   "commit": "ebde4d6c1791826c5159bd76c2d5a032709b8b89",
+   "date": "2026-10-15T23:39:46+02:00",
+   "subject": "docs: correct proof semantics and distinguish conditional conclusions"
+  },
+  {
+   "commit": "ea63aad5f4d205c874dafa1f9ad706fbb927edc8",
+   "date": "2026-10-15T23:39:44+02:00",
+   "subject": "docs: correct proof semantics and distinguish conditional conclusions"
+  },
+  {
+   "commit": "f4fb58402e4a60e4405e5532094db3b52edd654b",
+   "date": "2026-10-15T23:39:33+02:00",
+   "subject": "docs: label universal green as an open obligation inventory"
+  },
+  {
+   "commit": "c3a930d1fca7e1d7a838e3c9f49de7c2987d0666",
+   "date": "2026-10-15T23:39:28+02:00",
+   "subject": "docs: clarify conditional nature of ClosedMath"
+  },
+  {
+   "commit": "fb512ef023896771f0f4600b5db6c165466a58d3",
+   "date": "2026-10-15T23:38:34+02:00",
+   "subject": "docs: clarify conditional status of final root"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.TerminalLanguage.certificate_requires_bridges",
+   "file": "atk-kernel/ATK/TerminalLanguage.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{M : Models} (h : ConditionalCertificate M) : PontesRestantes M"
+  },
+  {
+   "name": "ATK.TerminalLanguage.certificate_requires_producers",
+   "file": "atk-kernel/ATK/TerminalLanguage.lean",
+   "line": 36,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{M : Models} (h : ConditionalCertificate M) : Produtores M"
+  },
+  {
+   "name": "ATK.TerminalLanguage.faithful_pair_of_certificate",
+   "file": "atk-kernel/ATK/TerminalLanguage.lean",
+   "line": 30,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{M : Models} (h : ConditionalCertificate M) : VerdeFiel"
+  },
+  {
+   "name": "ATK.TerminalLanguage.parameterized_root_of_certificate",
+   "file": "atk-kernel/ATK/TerminalLanguage.lean",
+   "line": 24,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{M : Models} (h : ConditionalCertificate M) : Raiz M"
+  }
+ ],
+ "closed": 4,
+ "files_sha256": {
+  "atk-kernel/ATK/AlgebraTerminal.lean": "ab045c0a40a165fbe781e2c2e58eee54e1b79e6164a635016bf98a4959b2823b",
+  "atk-kernel/ATK/BaezDuarteBridge.lean": "6cb5d5346a77a4bb236de5c8dd10bfa1753492dc43016a87424d69c148f355a7",
+  "atk-kernel/ATK/BealCompleto.lean": "6fa288b32dd05fbffbeaf3b5d802ecf7fea25e5ec49bb4eb704ea2f3401cb7ed",
+  "atk-kernel/ATK/BealDarmonMerel.lean": "ead6713ed0f643ce828121f0c63b240feec2ebbe0d0a269c3a86c97012161ab6",
+  "atk-kernel/ATK/BealFermatDescent.lean": "2ae030020dfaf3520e61a81afe2c18a689e11ba7a81a0ca31d0878e6476bbdcd",
+  "atk-kernel/ATK/BealFourFourTwo.lean": "07b323e543eee66a877ebaa9514fc3582b6f8bbdf108f6c1054a325535f1b406",
+  "atk-kernel/ATK/BealPartial.lean": "1e6c661b835a86ef19e36b46e5af356cd60d873e2d4b784134bbe6983bda05fb",
+  "atk-kernel/ATK/BealReduction.lean": "61bf2d4278f511b479e77cda7535fae804f00526fbede8b804ba898edcca0875",
+  "atk-kernel/ATK/BealResidual.lean": "4e79676f5e996b3f1c5202998a7cff418a419617f741dcf6a1c02bd11cb3addd",
+  "atk-kernel/ATK/ClosedMath.lean": "38a1fc921212cfed0547a766f4914f6d2fff5a4601881ea404a38407dcad8b44",
+  "atk-kernel/ATK/Conditional.lean": "b257632b3dee16101bf7bca086307e43b951dde4c7de29dff2286a92d9b8261d",
+  "atk-kernel/ATK/Conditional/BSD.lean": "39138cc722f5edef5db0cdaf0b99a75f571b6d32cbc7eb1e8ac228d864b89f65",
+  "atk-kernel/ATK/Conditional/Beal.lean": "f62f97d014fa5b1302be281194be525590400869280ae94f135ac2dcf1385152",
+  "atk-kernel/ATK/Conditional/Hodge.lean": "aa3719783ab8e671bb21431f2cfa2530482fe5a3b8a32158aefd9e9844c72698",
+  "atk-kernel/ATK/Conditional/NavierStokes.lean": "332fc2e50242c07cfee0b40cf545bbbd2dac0ae4d860c4e21ac2f639ca04a531",
+  "atk-kernel/ATK/Conditional/PvsNP.lean": "e1731d6b484651a6f5bd16fe73687b1dd9ae0cbbfa36a6da9ab3b0882b926345",
+  "atk-kernel/ATK/Conditional/Riemann.lean": "4c1dc437747de9c70341bdca01a0c9fef299a9b6d9b30413a75fc005d3631382",
+  "atk-kernel/ATK/Conditional/YangMills.lean": "2d84f374b93e2bd4557098f86e205ba6a5c4141da7dc8453589a31e1b4aaf5a5",
+  "atk-kernel/ATK/ContracaoDN.lean": "d7d2a018cc9fd69d8ca99c8e260b2a4b34681e050683861b91ebf5cfd289e8ec",
+  "atk-kernel/ATK/FermatRightTriangle.lean": "b31212601d3712ea6f226ab20e78e26e11ce1e86d82197307f746ea2c301e5cd",
+  "atk-kernel/ATK/FinalRoot.lean": "f69bfe67abe1fe9a966c631187f368528306afde1c69c0d01bee5f6900732a94",
+  "atk-kernel/ATK/ForaDaLinha.lean": "5a7baee5430fd146ebc24bef636b934ab56105f8744a68364fbc194876cd2919",
+  "atk-kernel/ATK/Indeterminacy.lean": "9fc0a38993d4846610033b2a38e63894b463a738633a142520561e209bd88f57",
+  "atk-kernel/ATK/IndeterminacyStates.lean": "1a4c9ee6bd9b773c76e53ba812e1c920a6ecb2c4616f0a96179f6af279bc8a8e",
+  "atk-kernel/ATK/MellinRho.lean": "d37a84591f1594e64f5b0a7d4eb4018bafe5cef503c954a41306c4daffb02771",
+  "atk-kernel/ATK/RiemannConcrete.lean": "47f40910773da5d00ee472e91e00bcbaaf3c91114b4f37d751a73c5249ce263d",
+  "atk-kernel/ATK/RiemannFaithful.lean": "269bfe14fa25f1d369c074c2bcb3416e1fd4b1df63a0c23d0773e3d691322c11",
+  "atk-kernel/ATK/RiemannStates.lean": "007cae414504383e41b72abe530d7794b8be7449c8762a2dedc399b9997cd77b",
+  "atk-kernel/ATK/TerminalLanguage.lean": "3d46cfd3352307d1eae26cbb3e034397ef6b2028a7f516e63aeb9d08764fe98d",
+  "atk-kernel/ATK/ZetaRegiao.lean": "0d0368a0cf8b92fd96ee68258c373590f2906b7d1e47d036de2a59fab3ee9bc0",
+  "atk-kernel/ATK/ZetaRetangulo.lean": "db4894dc82d4e302b9260e188f37bf79c2c1bf82999f6380e39228e7bcc160a4",
+  "atk-kernel/ATK/ZetaSimetria.lean": "b69eed771ea2e61c424ff33f5891ee595a05d3c8a2857a5bec11060f876d4acf",
+  "atk-kernel/ATK/ZetaStrip.lean": "202994e0bf413c54bf1d4eedd1448e5777732bbd4d15df40ac24f9377074624e",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-29T01:37:31Z",
+ "certificate_sha256": "a1cb17af1d8e2a5f36e0b81f6d507825f92575dbbe221d3e063edc03fca24451"
+}

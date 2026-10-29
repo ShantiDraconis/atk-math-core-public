@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T19:11:15+00:00",
+ "generated_at": "2026-10-29T01:06:09+00:00",
  "standard_axioms": [
   "Classical.choice",
   "Quot.sound",
@@ -15,7 +15,7 @@
    "toolchain_used": "leanprover/lean4:v4.19.0",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 61.2,
+   "build_seconds": 54.1,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,
@@ -2165,7 +2165,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 84: tactic 'decide' failed for proposition I00 ≠ I10 ∧ I00 ≠ I0Inf ∧ I00 ≠ I1Inf ∧ I10 ≠ I0Inf ∧ I10 ≠ I1Inf ∧ I0Inf ≠ I1Inf since its 'Decidable' instance instDecidableAnd did not reduce to 'isTrue' or 'isFalse'. After unfolding the instances "
     },
     {
      "arquivo": "MCore/IBoundaryProvenance.lean",
@@ -2188,7 +2189,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 102: expected type must not contain free variables (approachNeg ε).orientation ≠ (approachPos ε).orientation Use the '+revert' option to automatically cleanup and revert free variables."
     },
     {
      "arquivo": "MCore/IBoundaryProvenance.lean",
@@ -2207,14 +2209,16 @@
      "linha": 109,
      "nome": "MCore.IBoundary.negative_terminal_limit",
      "status": "erro",
-     "axioms": []
+     "axioms": [],
+     "erro": "linha 111: function expected at Tendsto term has type ?m.4259"
     },
     {
      "arquivo": "MCore/IBoundaryProvenance.lean",
      "linha": 115,
      "nome": "MCore.IBoundary.positive_terminal_limit",
      "status": "erro",
-     "axioms": []
+     "axioms": [],
+     "erro": "linha 117: function expected at Tendsto term has type ?m.4330"
     },
     {
      "arquivo": "MCore/IBoundaryProvenance.lean",
@@ -2226,7 +2230,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 126: unsolved goals ε : ℝ hε : 0 ≤ ε ⊢ |-ε - ε| = 2 * ε"
     },
     {
      "arquivo": "MCore/IBoundaryProvenance.lean",
@@ -2249,7 +2254,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 155: expected type must not contain free variables provenanceCode (approachNeg ε) ≠ provenanceCode (approachPos ε) Use the '+revert' option to automatically cleanup and revert free variables."
     },
     {
      "arquivo": "MCore/IBoundaryProvenance.lean",
@@ -2272,7 +2278,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 171: expected type must not contain free variables ProvenanceResidue (approachNeg ε) Use the '+revert' option to automatically cleanup and revert free variables."
     },
     {
      "arquivo": "MCore/IBoundaryProvenance.lean",
@@ -2284,7 +2291,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 175: expected type must not contain free variables ProvenanceResidue (approachPos ε) Use the '+revert' option to automatically cleanup and revert free variables."
     },
     {
      "arquivo": "MCore/IBoundaryProvenance.lean",
@@ -2686,7 +2694,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 36: linarith failed to find a contradiction case a w ε : ℝ hε : 0 < ε a✝ : ε ^ 2 > w ^ 2 + √(ε ^ 2) ^ 2 ⊢ False failed"
     },
     {
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
@@ -2758,23 +2767,20 @@
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
      "linha": 121,
      "nome": "MillenniumAudit.G1KAdmissible.G1a5_expansive_mode_detected",
-     "status": "erro",
+     "status": "fechado",
      "axioms": [
       "propext",
       "Classical.choice",
       "Quot.sound"
-     ],
-     "preenchimento": {
-      "resultado": "demonstrável",
-      "tatica": "first | (rfl) | (decide) | (trivial) | (simp) | (omega) | (simp_all) | (exact fun _ => trivial) | (norm_num) | (linarith) | (positivity) | (ring) | (tauto) | (aesop) | (nlinarith)"
-     }
+     ]
     },
     {
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
      "linha": 139,
      "nome": "MillenniumAudit.G1KAdmissible.G1a2_joint_evolution",
      "status": "erro",
-     "axioms": []
+     "axioms": [],
+     "erro": "linha 143: invalid field notation, type is not of the form (C ...) where C is a constant h has type JointEvolutionCertificate"
     },
     {
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
@@ -2791,7 +2797,7 @@
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
      "linha": 196,
      "nome": "MillenniumAudit.G1KAdmissible.G1b2_total_absorption_budget",
-     "status": "erro",
+     "status": "fechado",
      "axioms": [
       "propext",
       "Classical.choice",
@@ -2805,7 +2811,8 @@
      "status": "erro",
      "axioms": [
       "sorryAx"
-     ]
+     ],
+     "erro": "linha 220: invalid field notation, type is not of the form (C ...) where C is a constant h has type LerayEnergyCertificate"
     },
     {
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
@@ -2833,7 +2840,7 @@
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
      "linha": 272,
      "nome": "MillenniumAudit.G1KAdmissible.G2b_uniform_enstrophy",
-     "status": "erro",
+     "status": "fechado",
      "axioms": [
       "propext",
       "Classical.choice",
@@ -2845,7 +2852,8 @@
      "linha": 291,
      "nome": "MillenniumAudit.G1KAdmissible.G3_critical_bound",
      "status": "erro",
-     "axioms": []
+     "axioms": [],
+     "erro": "linha 293: invalid field notation, type is not of the form (C ...) where C is a constant h has type CriticalReconstruction"
     },
     {
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean",
@@ -2953,7 +2961,7 @@
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
      "linha": 41,
      "nome": "CriticalBarrier.B28GapIsolation.proposed_strain_chain_exceeds_target",
-     "status": "erro",
+     "status": "fechado",
      "axioms": [
       "propext",
       "Classical.choice",
@@ -3008,7 +3016,7 @@
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean",
      "linha": 100,
      "nome": "CriticalBarrier.B28GapIsolation.traceless_and_concentrated_do_not_force_alignment_09",
-     "status": "erro",
+     "status": "fechado",
      "axioms": [
       "propext",
       "Classical.choice",
@@ -3025,7 +3033,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 123: invalid field 'signedFlux', the environment does not contain 'CriticalBarrier.B28GapIsolation.MissingDirectionalCertificate.signedFlux' C has type MissingDirectionalCertificate Pi R kappa err"
     },
     {
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
@@ -3037,7 +3046,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 67: linarith failed to find a contradiction case a p : Parameters s : Snapshot h : BalanceCertificates p s a✝ : s.dRdt > -(p.nu * p.Lambda ^ 2 - p.nu * p.Lambda ^ 2 / 4 - p.C_Bern * p.C_Sob / √p.Lambda) * s.R ⊢ False failed"
     },
     {
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
@@ -3065,7 +3075,7 @@
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean",
      "linha": 114,
      "nome": "CriticalBarrier.B2Deterministic.target_kappa",
-     "status": "erro",
+     "status": "fechado",
      "axioms": [
       "propext",
       "Classical.choice",
@@ -3116,7 +3126,7 @@
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
      "linha": 18,
      "nome": "CriticalBarrier.CriticalTail.critical_tail_coercivity",
-     "status": "erro",
+     "status": "fechado",
      "axioms": [
       "propext",
       "Classical.choice",
@@ -3133,7 +3143,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 37: unsolved goals n : ℕ ⊢ 0 < ↑n + 1"
     },
     {
      "arquivo": "imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/CriticalTailBridge.lean",
@@ -4931,7 +4942,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 84: tactic 'decide' failed for proposition I00 ≠ I10 ∧ I00 ≠ I0Inf ∧ I00 ≠ I1Inf ∧ I10 ≠ I0Inf ∧ I10 ≠ I1Inf ∧ I0Inf ≠ I1Inf since its 'Decidable' instance instDecidableAnd did not reduce to 'isTrue' or 'isFalse'. After unfolding the instances "
     },
     {
      "arquivo": "lean/MCore/IBoundaryProvenance.lean",
@@ -4954,7 +4966,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 102: expected type must not contain free variables (approachNeg ε).orientation ≠ (approachPos ε).orientation Use the '+revert' option to automatically cleanup and revert free variables."
     },
     {
      "arquivo": "lean/MCore/IBoundaryProvenance.lean",
@@ -4973,14 +4986,16 @@
      "linha": 109,
      "nome": "MCore.IBoundary.negative_terminal_limit",
      "status": "erro",
-     "axioms": []
+     "axioms": [],
+     "erro": "linha 111: function expected at Tendsto term has type ?m.4259"
     },
     {
      "arquivo": "lean/MCore/IBoundaryProvenance.lean",
      "linha": 115,
      "nome": "MCore.IBoundary.positive_terminal_limit",
      "status": "erro",
-     "axioms": []
+     "axioms": [],
+     "erro": "linha 117: function expected at Tendsto term has type ?m.4330"
     },
     {
      "arquivo": "lean/MCore/IBoundaryProvenance.lean",
@@ -4992,7 +5007,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 126: unsolved goals ε : ℝ hε : 0 ≤ ε ⊢ |-ε - ε| = 2 * ε"
     },
     {
      "arquivo": "lean/MCore/IBoundaryProvenance.lean",
@@ -5015,7 +5031,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 155: expected type must not contain free variables provenanceCode (approachNeg ε) ≠ provenanceCode (approachPos ε) Use the '+revert' option to automatically cleanup and revert free variables."
     },
     {
      "arquivo": "lean/MCore/IBoundaryProvenance.lean",
@@ -5038,7 +5055,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 171: expected type must not contain free variables ProvenanceResidue (approachNeg ε) Use the '+revert' option to automatically cleanup and revert free variables."
     },
     {
      "arquivo": "lean/MCore/IBoundaryProvenance.lean",
@@ -5050,7 +5068,8 @@
       "sorryAx",
       "Classical.choice",
       "Quot.sound"
-     ]
+     ],
+     "erro": "linha 175: expected type must not contain free variables ProvenanceResidue (approachPos ε) Use the '+revert' option to automatically cleanup and revert free variables."
     },
     {
      "arquivo": "lean/MCore/IBoundaryProvenance.lean",
@@ -5241,6 +5260,9 @@
      "nome": "MCore.Research.UserProgram.firewall_has_six_entries",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/LocalGlobal.olean' of module MCore.Research.UserProgram.LocalGlobal does not exist"
     },
     {
@@ -5313,6 +5335,9 @@
      "nome": "MCore.Research.UserProgram.commutes_iff_pointwise",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Fourier.olean' of module MCore.Research.UserProgram.C3Fourier does not exist"
     },
     {
@@ -5321,6 +5346,9 @@
      "nome": "MCore.Research.UserProgram.commutatorDefect_zero_of_commutes",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Fourier.olean' of module MCore.Research.UserProgram.C3Fourier does not exist"
     },
     {
@@ -5329,6 +5357,9 @@
      "nome": "MCore.Research.UserProgram.meanPart_constant",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Fourier.olean' of module MCore.Research.UserProgram.C3Fourier does not exist"
     },
     {
@@ -5337,6 +5368,9 @@
      "nome": "MCore.Research.UserProgram.commutes_preserves_rotation_fixed",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Fourier.olean' of module MCore.Research.UserProgram.C3Fourier does not exist"
     },
     {
@@ -5345,6 +5379,9 @@
      "nome": "MCore.Research.UserProgram.constant_iff_rotation_fixed",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Fourier.olean' of module MCore.Research.UserProgram.C3Fourier does not exist"
     },
     {
@@ -5353,6 +5390,9 @@
      "nome": "MCore.Research.UserProgram.commutes_preserves_constant_sector",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Fourier.olean' of module MCore.Research.UserProgram.C3Fourier does not exist"
     },
     {
@@ -5361,6 +5401,9 @@
      "nome": "MCore.Research.UserProgram.rotate_smul",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Intertwiner.olean' of module MCore.Research.UserProgram.C3Intertwiner does not exist"
     },
     {
@@ -5369,6 +5412,9 @@
      "nome": "MCore.Research.UserProgram.LinearC3Operator.map_smul_channel",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Intertwiner.olean' of module MCore.Research.UserProgram.C3Intertwiner does not exist"
     },
     {
@@ -5377,6 +5423,9 @@
      "nome": "MCore.Research.UserProgram.LinearC3Operator.preserves_rotation_eigenspace",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Intertwiner.olean' of module MCore.Research.UserProgram.C3Intertwiner does not exist"
     },
     {
@@ -5385,6 +5434,9 @@
      "nome": "MCore.Research.UserProgram.LinearC3Operator.preserves_sector0",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Intertwiner.olean' of module MCore.Research.UserProgram.C3Intertwiner does not exist"
     },
     {
@@ -5393,6 +5445,9 @@
      "nome": "MCore.Research.UserProgram.LinearC3Operator.preserves_sector1",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Intertwiner.olean' of module MCore.Research.UserProgram.C3Intertwiner does not exist"
     },
     {
@@ -5401,6 +5456,9 @@
      "nome": "MCore.Research.UserProgram.LinearC3Operator.preserves_sector2",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3Intertwiner.olean' of module MCore.Research.UserProgram.C3Intertwiner does not exist"
     },
     {
@@ -5409,6 +5467,9 @@
      "nome": "MCore.Research.UserProgram.opT_three",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5417,6 +5478,9 @@
      "nome": "MCore.Research.UserProgram.opS_eq_T_sq",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5425,6 +5489,9 @@
      "nome": "MCore.Research.UserProgram.opT_opS",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5433,6 +5500,9 @@
      "nome": "MCore.Research.UserProgram.opS_opT",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5441,6 +5511,9 @@
      "nome": "MCore.Research.UserProgram.opE_identity",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5449,6 +5522,9 @@
      "nome": "MCore.Research.UserProgram.opDelta_apply",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5457,6 +5533,9 @@
      "nome": "MCore.Research.UserProgram.opDelta_zero_of_fixed",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5465,6 +5544,9 @@
      "nome": "MCore.Research.UserProgram.opGamma_rotate",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5473,6 +5555,9 @@
      "nome": "MCore.Research.UserProgram.opGamma_fixed",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5481,6 +5566,9 @@
      "nome": "MCore.Research.UserProgram.opC_fixed",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5489,6 +5577,9 @@
      "nome": "MCore.Research.UserProgram.opC_idempotent",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5497,6 +5588,9 @@
      "nome": "MCore.Research.UserProgram.opQ_rotate",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5505,6 +5599,9 @@
      "nome": "MCore.Research.UserProgram.opT_sum",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5513,6 +5610,9 @@
      "nome": "MCore.Research.UserProgram.opS_sum",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/I3VectorAlgebra.olean' of module MCore.Research.UserProgram.I3VectorAlgebra does not exist"
     },
     {
@@ -5521,6 +5621,9 @@
      "nome": "MCore.Research.UserProgram.opGamma_eq_three_C",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
     },
     {
@@ -5529,6 +5632,9 @@
      "nome": "MCore.Research.UserProgram.opC_delta_zero",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
     },
     {
@@ -5537,6 +5643,9 @@
      "nome": "MCore.Research.UserProgram.opDelta_C_zero",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
     },
     {
@@ -5545,6 +5654,9 @@
      "nome": "MCore.Research.UserProgram.delta_cycle_telescopes",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
     },
     {
@@ -5553,6 +5665,9 @@
      "nome": "MCore.Research.UserProgram.oscillatoryPart_sum_zero",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
     },
     {
@@ -5561,6 +5676,9 @@
      "nome": "MCore.Research.UserProgram.reconstruct_C_osc",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
     },
     {
@@ -5569,6 +5687,9 @@
      "nome": "MCore.Research.UserProgram.opC_oscillatory_zero",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/ConcreteOperators.olean' of module MCore.Research.UserProgram.ConcreteOperators does not exist"
     },
     {
@@ -5601,6 +5722,9 @@
      "nome": "MCore.Research.UserProgram.orbit3_eq_initial",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
     },
     {
@@ -5609,6 +5733,9 @@
      "nome": "MCore.Research.UserProgram.conservedSum_orbit1",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
     },
     {
@@ -5617,6 +5744,9 @@
      "nome": "MCore.Research.UserProgram.conservedSum_orbit2",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
     },
     {
@@ -5625,6 +5755,9 @@
      "nome": "MCore.Research.UserProgram.conservedSum_orbit3",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
     },
     {
@@ -5633,6 +5766,9 @@
      "nome": "MCore.Research.UserProgram.opC_orbit1",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
     },
     {
@@ -5641,6 +5777,9 @@
      "nome": "MCore.Research.UserProgram.opC_orbit2",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
     },
     {
@@ -5649,6 +5788,9 @@
      "nome": "MCore.Research.UserProgram.cycleDefect_zero",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/CrossOperatorLaws.olean' of module MCore.Research.UserProgram.CrossOperatorLaws does not exist"
     },
     {
@@ -5657,6 +5799,9 @@
      "nome": "MCore.Research.UserProgram.I3KernelInhabitant_sound",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/FlowSemantics.olean' of module MCore.Research.UserProgram.FlowSemantics does not exist"
     },
     {
@@ -5665,6 +5810,9 @@
      "nome": "MCore.Research.UserProgram.i3Provenance_nonempty",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/FlowSemantics.olean' of module MCore.Research.UserProgram.FlowSemantics does not exist"
     },
     {
@@ -5721,6 +5869,9 @@
      "nome": "MCore.Research.UserProgram.I3Vector.ext",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
     },
     {
@@ -5729,6 +5880,9 @@
      "nome": "MCore.Research.UserProgram.I3Vector.add_assoc",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
     },
     {
@@ -5737,6 +5891,9 @@
      "nome": "MCore.Research.UserProgram.I3Vector.add_zero",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
     },
     {
@@ -5745,6 +5902,9 @@
      "nome": "MCore.Research.UserProgram.I3Vector.add_neg",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
     },
     {
@@ -5753,6 +5913,9 @@
      "nome": "MCore.Research.UserProgram.I3Vector.smul_add",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
     },
     {
@@ -5761,6 +5924,9 @@
      "nome": "MCore.Research.UserProgram.I3Vector.add_smul",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
     },
     {
@@ -5769,6 +5935,9 @@
      "nome": "MCore.Research.UserProgram.I3Vector.mul_smul",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
     },
     {
@@ -5777,6 +5946,9 @@
      "nome": "MCore.Research.UserProgram.I3Vector.rotate_three",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
     },
     {
@@ -5785,6 +5957,9 @@
      "nome": "MCore.Research.UserProgram.I3Vector.sum_rotate",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
     },
     {
@@ -5793,6 +5968,9 @@
      "nome": "MCore.Research.UserProgram.I3Vector.zeroSum_rotate",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/SemanticProofCore.olean' of module MCore.Research.UserProgram.SemanticProofCore does not exist"
     },
     {
@@ -5899,6 +6077,9 @@
      "nome": "MCore.Research.UserProgram.commute_refl",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/Operators.olean' of module MCore.Research.UserProgram.Operators does not exist"
     },
     {
@@ -5907,6 +6088,9 @@
      "nome": "MCore.Research.UserProgram.commute_symm",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/Operators.olean' of module MCore.Research.UserProgram.Operators does not exist"
     },
     {
@@ -5915,6 +6099,9 @@
      "nome": "MCore.Research.UserProgram.involution_idempotent_iff_id",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/Operators.olean' of module MCore.Research.UserProgram.Operators does not exist"
     },
     {
@@ -5931,7 +6118,8 @@
      "status": "erro",
      "axioms": [
       "sorryAx"
-     ]
+     ],
+     "erro": "linha 22: tactic 'rfl' failed, the left-hand side (id α).comp { run := run✝ } is not definitionally equal to the right-hand side { run := run✝ } case mk α : Type run✝ : α → α ⊢ (id α).comp { run := run✝ } = { run := run✝ }"
     },
     {
      "arquivo": "lean/MCore/Research/UserProgram/Operators.lean",
@@ -5940,7 +6128,8 @@
      "status": "erro",
      "axioms": [
       "sorryAx"
-     ]
+     ],
+     "erro": "linha 27: tactic 'rfl' failed, the left-hand side { run := run✝ }.comp (id α) is not definitionally equal to the right-hand side { run := run✝ } case mk α : Type run✝ : α → α ⊢ { run := run✝ }.comp (id α) = { run := run✝ }"
     },
     {
      "arquivo": "lean/MCore/Research/UserProgram/SemanticProofCore.lean",
@@ -5948,6 +6137,9 @@
      "nome": "MCore.Research.UserProgram.SemanticMap.comp_apply",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3LinearSectors.olean' of module MCore.Research.UserProgram.C3LinearSectors does not exist"
     },
     {
@@ -5956,6 +6148,9 @@
      "nome": "MCore.Research.UserProgram.Inhabitant.sound",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3LinearSectors.olean' of module MCore.Research.UserProgram.C3LinearSectors does not exist"
     },
     {
@@ -5964,6 +6159,9 @@
      "nome": "MCore.Research.UserProgram.Inhabitant.nonempty_iff",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3LinearSectors.olean' of module MCore.Research.UserProgram.C3LinearSectors does not exist"
     },
     {
@@ -5972,6 +6170,9 @@
      "nome": "MCore.Research.UserProgram.rotationGlobalInhabitant_sound",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3LinearSectors.olean' of module MCore.Research.UserProgram.C3LinearSectors does not exist"
     },
     {
@@ -5980,6 +6181,9 @@
      "nome": "MCore.Research.UserProgram.I3Flow_three",
      "status": "nao_alcancado",
      "axioms": [],
+     "dependencia_com_sorry": [
+      "MCore.Research.UserProgram.Operators"
+     ],
      "motivo": "object file '././.lake/build/lib/lean/MCore/Research/UserProgram/C3LinearSectors.olean' of module MCore.Research.UserProgram.C3LinearSectors does not exist"
     },
     {
@@ -6013,7 +6217,7 @@
    "toolchain_used": "leanprover/lean4:v4.34.1",
    "needs_mathlib": true,
    "build_ok": true,
-   "build_seconds": 4950.7,
+   "build_seconds": 3904.8,
    "build_error": "",
    "sorry_warnings": 0,
    "reconstructed": false,

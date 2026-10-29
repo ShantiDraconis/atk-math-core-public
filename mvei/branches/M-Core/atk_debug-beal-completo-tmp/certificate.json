@@ -1,0 +1,68 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/debug-beal-completo-tmp",
+ "branch_state": "em andamento",
+ "head_commit": "080100184fb609bb12319da90a7e7a7c38637c9f",
+ "head_commit_date": "2026-10-14T02:47:50+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "080100184fb609bb12319da90a7e7a7c38637c9f",
+   "date": "2026-10-14T02:47:50+01:00",
+   "subject": "tmp: variantes de decide"
+  },
+  {
+   "commit": "75777fae872832962ce827e635066ac129c32bb9",
+   "date": "2026-10-14T02:38:12+01:00",
+   "subject": "tmp: debug de BealCompleto (branch descartável)"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.BealCompleto.dbg_exemplos_explicit",
+   "file": "atk-kernel/ATK/BealCompleto.lean",
+   "line": 91,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": (2 < 3 ∧ 2 < 4 ∧ 2 < 5 ∧ Nat.gcd 3 (Nat.gcd 4 5) ≤ 2)"
+  },
+  {
+   "name": "ATK.BealCompleto.dbg_exemplos_simp",
+   "file": "atk-kernel/ATK/BealCompleto.lean",
+   "line": 86,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ResidualFinal 3 4 5 ∧ ¬ ResidualFinal 4 4 3"
+  }
+ ],
+ "closed": 2,
+ "files_sha256": {
+  "atk-kernel/ATK/BealCompleto.lean": "050e425c3cac8ba4c7235e08f4c5b3cc8b82c32f2d6bff2ae482f4a4033c937a",
+  "atk-kernel/ATK/BealDarmonMerel.lean": "ead6713ed0f643ce828121f0c63b240feec2ebbe0d0a269c3a86c97012161ab6",
+  "atk-kernel/ATK/BealFermatDescent.lean": "2ae030020dfaf3520e61a81afe2c18a689e11ba7a81a0ca31d0878e6476bbdcd",
+  "atk-kernel/ATK/BealFourFourTwo.lean": "07b323e543eee66a877ebaa9514fc3582b6f8bbdf108f6c1054a325535f1b406",
+  "atk-kernel/ATK/BealPartial.lean": "1e6c661b835a86ef19e36b46e5af356cd60d873e2d4b784134bbe6983bda05fb",
+  "atk-kernel/ATK/BealReduction.lean": "61bf2d4278f511b479e77cda7535fae804f00526fbede8b804ba898edcca0875",
+  "atk-kernel/ATK/BealResidual.lean": "4e79676f5e996b3f1c5202998a7cff418a419617f741dcf6a1c02bd11cb3addd",
+  "atk-kernel/ATK/Conditional/Beal.lean": "f62f97d014fa5b1302be281194be525590400869280ae94f135ac2dcf1385152",
+  "atk-kernel/ATK/FermatRightTriangle.lean": "b31212601d3712ea6f226ab20e78e26e11ce1e86d82197307f746ea2c301e5cd",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-29T01:37:32Z",
+ "certificate_sha256": "93b897ce19bc948fb14669d78769b2882877b5a165ad5ac2baff79bad424d585"
+}

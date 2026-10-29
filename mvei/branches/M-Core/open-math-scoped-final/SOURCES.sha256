@@ -1,0 +1,16 @@
+c1c88007b2989252e311dcf2a90590346f47dcdf2b09c03ee89a31ba874f91da  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/ad3011f1/lean/MCore/RH/NB/ZeroLimitFrontier.lean
+53ad638a3f7fa211c552a1dde876fa5275ebdfde5ddb2a8512c506a0279db5e8  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/Antitone.lean
+544b4690ae04a92636cf96abd1bc81520600292c656bb45e605c9c25bf166f7f  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/Distance.lean
+1eb366d74e7f2232ec962ca97d02d69c6eb75350ffdb576582e0c8da9f869bca  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/FiniteSpan.lean
+b124ed2ee7207e63e9b5312656f56676f0998b4fe3029ce9274e88cc169922ac  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/HilbertData.lean
+bd9a0a53602eba4d1f1645bb1551062fac4dad044cb3b87c72ef8ac608717c86  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/Limit.lean
+fecf092165ef7cea17175fa4e793e7a055d63c4e2a7e34fcf3e5b0e8f43f24b4  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/Nesting.lean
+f03d0a2978431f1758f9323f6a00df2a931773ce8048849b11990444b4728f3f  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/Projection.lean
+8c47cb29ff0d4c0e70c257f795fb256dd7c60e32825b00d5d6d476d948817aa5  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/QuantitativeUpperBound.lean
+9b06434ab8ac87f243115ccf701b2feb70ade53305c338eac733a055983ab58f  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/open-math-scoped-final/open-math/Riemann/frozen/vanishing_upper_bound_green_5c66f8dc.lean
+7557cd2dec8516db807dfd3b2bf25b16e8e6726fba3ad10a7d22fb06ce2ea9b6  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/open-math-scoped-final/open-math/Riemann/scoped/FinalClaim.lean
+53432096155b20202c7ed27a1c41b67cdf998b54bd53a5a5bafee31bafdaed38  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/open-math-scoped-final/open-math/Riemann/scoped/FinalProof.lean
+f2bf43785be91762d87439f663c4447a8eb1a8808bb4a21ab23959b77aef3477  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/open-math-scoped-final/open-math/lakefile.lean
+55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea  branches/M-Core/open-math-scoped-final/imports/final-proof/RIEMANN/open-math-scoped-final/open-math/lean-toolchain
+d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e  branches/M-Core/open-math-scoped-final/lakefile.lean
+55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea  branches/M-Core/open-math-scoped-final/lean-toolchain

@@ -1,0 +1,198 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/belnap-honest-status-20261020",
+ "branch_state": "em andamento",
+ "head_commit": "b3c96df219056cff15517abcace8e9a83125e65d",
+ "head_commit_date": "2026-10-20T08:04:40+00:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "b3c96df219056cff15517abcace8e9a83125e65d",
+   "date": "2026-10-20T08:04:40+00:00",
+   "subject": "ROADMAP_PREMIO.md: record CI evidence level for atk-kernel.yml"
+  },
+  {
+   "commit": "b2c0fe711499eaf5589799fee68c3c613a1743a9",
+   "date": "2026-10-20T03:46:05+00:00",
+   "subject": "ROADMAP_PREMIO.md: clarify funil vs genuine-partial-producer distinction"
+  },
+  {
+   "commit": "8edbcc5a40e97ad37dc165edb7cb3853a235b90a",
+   "date": "2026-10-20T03:33:59+00:00",
+   "subject": "ROADMAP_PREMIO.md: note that clarifying-prerequisite is doc-only pending Fase 0.2"
+  },
+  {
+   "commit": "bb86b4b86dc5ac436c55c70461318f82c6ae837d",
+   "date": "2026-10-20T03:31:53+00:00",
+   "subject": "ROADMAP_PREMIO.md: 5-category taxonomy, funnel column, FLT/B2 note"
+  },
+  {
+   "commit": "3e9debbd62c1da7b4f24d5214f0a74a37cdae046",
+   "date": "2026-10-20T01:20:00+00:00",
+   "subject": "Fix review findings: combinar cross-claim filter, toy-model ambos->falso, doc nits"
+  },
+  {
+   "commit": "3d63ceb7bf7f1ec1f64a990f99f95f9af8b33477",
+   "date": "2026-10-20T01:14:27+00:00",
+   "subject": "Add honest nenhum->verdadeiro roadmap (prose only, no new Lean)"
+  },
+  {
+   "commit": "4566235ea3d627fabb7a33c7ba8858a4b09aef2f",
+   "date": "2026-10-20T00:47:13+00:00",
+   "subject": "Add real per-claim Belnap audit over obligations.json; decline stipulated open/closed=ambos"
+  },
+  {
+   "commit": "3dbad0b718c4b5d68273911f463e020063db676d",
+   "date": "2026-10-20T00:41:44+00:00",
+   "subject": "Formalize refutation of Tri.tf and add Belnap-Dunn honest status tracking"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.AnaliseInversao.equacaoInversao_ambos",
+   "file": "atk-kernel/ATK/AnaliseInversao.lean",
+   "line": 32,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.AnaliseInversao.equacaoInversao ATK.StatusHonesto.ValorBelnap.ambos ATK.StatusHonesto.ValorBelnap.ambos"
+  },
+  {
+   "name": "ATK.AnaliseInversao.equacaoInversao_nenhum",
+   "file": "atk-kernel/ATK/AnaliseInversao.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.AnaliseInversao.equacaoInversao ATK.StatusHonesto.ValorBelnap.nenhum ATK.StatusHonesto.ValorBelnap.nenhum"
+  },
+  {
+   "name": "ATK.AnaliseInversao.fixo_e_ambos_ou_nenhum",
+   "file": "atk-kernel/ATK/AnaliseInversao.lean",
+   "line": 35,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (v : ATK.StatusHonesto.ValorBelnap),   ATK.AnaliseInversao.neg v = v → v = ATK.StatusHonesto.ValorBelnap.ambos ∨ v = ATK.StatusHonesto.ValorBelnap.nenhum"
+  },
+  {
+   "name": "ATK.AnaliseInversao.neg_ambos_fixo",
+   "file": "atk-kernel/ATK/AnaliseInversao.lean",
+   "line": 24,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.AnaliseInversao.neg ATK.StatusHonesto.ValorBelnap.ambos = ATK.StatusHonesto.ValorBelnap.ambos"
+  },
+  {
+   "name": "ATK.AnaliseInversao.neg_nenhum_fixo",
+   "file": "atk-kernel/ATK/AnaliseInversao.lean",
+   "line": 26,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.AnaliseInversao.neg ATK.StatusHonesto.ValorBelnap.nenhum = ATK.StatusHonesto.ValorBelnap.nenhum"
+  },
+  {
+   "name": "ATK.AuditoriaBelnapReal.b1_verdadeiro",
+   "file": "atk-kernel/ATK/AuditoriaBelnapReal.lean",
+   "line": 132,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.AuditoriaBelnapReal.b1.valor = ATK.StatusHonesto.ValorBelnap.verdadeiro"
+  },
+  {
+   "name": "ATK.AuditoriaBelnapReal.b4_verdadeiro",
+   "file": "atk-kernel/ATK/AuditoriaBelnapReal.lean",
+   "line": 136,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.AuditoriaBelnapReal.b4.valor = ATK.StatusHonesto.ValorBelnap.verdadeiro"
+  },
+  {
+   "name": "ATK.AuditoriaBelnapReal.esquemaSemLigacao_falso",
+   "file": "atk-kernel/ATK/AuditoriaBelnapReal.lean",
+   "line": 147,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.AuditoriaBelnapReal.esquemaNS_sem_ligacao.valor = ATK.StatusHonesto.ValorBelnap.falso ∧   ATK.AuditoriaBelnapReal.esquemaPNP_sem_ligacao.valor = ATK.StatusHonesto.ValorBelnap.falso"
+  },
+  {
+   "name": "ATK.AuditoriaBelnapReal.obrigacoesAbertas_nenhum",
+   "file": "atk-kernel/ATK/AuditoriaBelnapReal.lean",
+   "line": 142,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.AuditoriaBelnapReal.o1.valor = ATK.StatusHonesto.ValorBelnap.nenhum ∧   ATK.AuditoriaBelnapReal.o2.valor = ATK.StatusHonesto.ValorBelnap.nenhum ∧     ATK.AuditoriaBelnapReal.o3.valor = ATK.StatusHonesto.ValorBelnap.nenhum ∧       ATK.AuditoriaBelnapReal.o4.valor = ATK.StatusHonesto.ValorBelnap.nenhum ∧         ATK.AuditoriaBelnapReal.o5.valor = ATK.StatusHonesto.ValorBelnap.nenhum ∧"
+  },
+  {
+   "name": "ATK.AuditoriaBelnapReal.pontesNaoProvadas_nenhum",
+   "file": "atk-kernel/ATK/AuditoriaBelnapReal.lean",
+   "line": 137,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.AuditoriaBelnapReal.b2.valor = ATK.StatusHonesto.ValorBelnap.nenhum ∧   ATK.AuditoriaBelnapReal.b3.valor = ATK.StatusHonesto.ValorBelnap.nenhum ∧     ATK.AuditoriaBelnapReal.b5.valor = ATK.StatusHonesto.ValorBelnap.nenhum ∧       ATK.AuditoriaBelnapReal.b6.valor = ATK.StatusHonesto.ValorBelnap.nenhum ∧         ATK.AuditoriaBelnapReal.b7.valor = ATK.StatusHonesto.ValorBelnap.nenhum ∧"
+  },
+  {
+   "name": "ATK.RefutacaoTri.sevenStatements_tf_would_explode",
+   "file": "atk-kernel/ATK/RefutacaoTri.lean",
+   "line": 52,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {M : ATK.ClosedMath.Models}, ATK.ClosedMath.SevenStatements M → ¬ATK.ClosedMath.SevenStatements M → False"
+  },
+  {
+   "name": "ATK.RefutacaoTri.tf_explodes",
+   "file": "atk-kernel/ATK/RefutacaoTri.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {P Q : Prop}, P → ¬P → Q"
+  },
+  {
+   "name": "ATK.RefutacaoTri.tf_requires_false",
+   "file": "atk-kernel/ATK/RefutacaoTri.lean",
+   "line": 40,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {P : Prop}, P → ¬P → False"
+  },
+  {
+   "name": "ATK.RefutacaoTri.tri_tf_case_gives_false",
+   "file": "atk-kernel/ATK/RefutacaoTri.lean",
+   "line": 47,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {P : Prop}, (∃ (_ : P) (_ : ¬P), True) → False"
+  }
+ ],
+ "closed": 14,
+ "files_sha256": {
+  "atk-kernel/ATK/AnaliseInversao.lean": "39b3c2706031ce9667daaaab9140f214f99ff03b240b6a277e60f58f3f4a48f1",
+  "atk-kernel/ATK/AuditoriaBelnapReal.lean": "1122f4c24df677d26de5b99242138b6cc3813af4c855bdc226ed57ef25ddcaf8",
+  "atk-kernel/ATK/ClosedMath.lean": "599b1dcc83d768fdcda5b35c6ae69a1b6a5f22bcfe44f785d354fb8ed844fb95",
+  "atk-kernel/ATK/Conditional.lean": "b257632b3dee16101bf7bca086307e43b951dde4c7de29dff2286a92d9b8261d",
+  "atk-kernel/ATK/Conditional/BSD.lean": "39138cc722f5edef5db0cdaf0b99a75f571b6d32cbc7eb1e8ac228d864b89f65",
+  "atk-kernel/ATK/Conditional/Beal.lean": "f62f97d014fa5b1302be281194be525590400869280ae94f135ac2dcf1385152",
+  "atk-kernel/ATK/Conditional/Hodge.lean": "aa3719783ab8e671bb21431f2cfa2530482fe5a3b8a32158aefd9e9844c72698",
+  "atk-kernel/ATK/Conditional/NavierStokes.lean": "332fc2e50242c07cfee0b40cf545bbbd2dac0ae4d860c4e21ac2f639ca04a531",
+  "atk-kernel/ATK/Conditional/PvsNP.lean": "e1731d6b484651a6f5bd16fe73687b1dd9ae0cbbfa36a6da9ab3b0882b926345",
+  "atk-kernel/ATK/Conditional/Riemann.lean": "4c1dc437747de9c70341bdca01a0c9fef299a9b6d9b30413a75fc005d3631382",
+  "atk-kernel/ATK/Conditional/YangMills.lean": "2d84f374b93e2bd4557098f86e205ba6a5c4141da7dc8453589a31e1b4aaf5a5",
+  "atk-kernel/ATK/RefutacaoTri.lean": "a16306bdcf9c821c2722705a44037b845eab1d0b3c80ce1dd0378dd70edbaadb",
+  "atk-kernel/ATK/StatusHonesto.lean": "73807d99287d682bc1977c6dabadd22f9aa9ca50fa29ef6c356f74b25c780a77",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-29T01:37:25Z",
+ "certificate_sha256": "afa8f03a33500c58a6035792e2f3187baca85e27835eb1facbba28c23707c372"
+}

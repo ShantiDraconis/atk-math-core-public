@@ -1268,7 +1268,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-28T19:11:15+00:00",
+  "generated_at": "2026-10-28T23:56:08+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -4660,6 +4660,6 @@
   "lean/MCore/FinalFail/TopologyOperatorCore.lean": "891f585161ea3ac61ef4e2d3af9aaad714b96888a58f092fa621a6fc82d35d25",
   "lean/MCore/MaterialMath/TriState/Core.lean": "8543090158331505d413721ba56a666c08e3b1bbd232bfc1b97695e1b60e5b09"
  },
- "published_at": "2026-10-28T19:19:18Z",
- "certificate_sha256": "9cb0d80f1b816f5b7a88d3cacbf620442fa9df4c3066419c01ada2cf51969c10"
+ "published_at": "2026-10-29T01:37:20Z",
+ "certificate_sha256": "3f2dcd7d93974faeb98a0ada0e5c410f11448136bf212c0c355f2a7225c3b244"
 }

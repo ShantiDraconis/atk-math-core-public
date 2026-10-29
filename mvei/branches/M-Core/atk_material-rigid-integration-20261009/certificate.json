@@ -1,0 +1,58 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/material-rigid-integration-20261009",
+ "branch_state": "parada",
+ "head_commit": "ca414d142d83e25517b91bdec41c49371eab41a9",
+ "head_commit_date": "2026-10-09T12:58:05+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "ca414d142d83e25517b91bdec41c49371eab41a9",
+   "date": "2026-10-09T12:58:05+02:00",
+   "subject": "feat(atk): global eight-lane certification audit root"
+  },
+  {
+   "commit": "1f132abcb1fa4ef4850497953ee8a582a439af8e",
+   "date": "2026-10-09T12:13:32+02:00",
+   "subject": "feat(atk): create global dense kernel entrypoint"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.Global.status_pending",
+   "file": "lean/ATK/GlobalMaterialDense.lean",
+   "line": 19,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(lane : Lane) : status lane = .buildPending"
+  },
+  {
+   "name": "ATK.Global.terminal_not_yet_certified",
+   "file": "lean/ATK/GlobalMaterialDense.lean",
+   "line": 25,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(lane : Lane) : terminalCertified lane = false"
+  }
+ ],
+ "closed": 2,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/ATK/GlobalMaterialDense.lean": "a917232cd75c0c6419b4276c6917a714bca8b1af0599d7d672a1df56e5ab5d87"
+ },
+ "published_at": "2026-10-29T01:37:32Z",
+ "certificate_sha256": "6ee72aab29fc2170e4105af2d64d5bbf8c269dedbaa2c751ecec3ca94165f168"
+}

@@ -1,0 +1,206 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "claude/atk-protocol-setup-wzeajl",
+ "branch_state": "em andamento",
+ "head_commit": "bc0496984e737f61e48abb6c4a05bbb237e387f3",
+ "head_commit_date": "2026-10-27T00:58:37+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "bc0496984e737f61e48abb6c4a05bbb237e387f3",
+   "date": "2026-10-27T00:58:37+01:00",
+   "subject": "ATK.lean: restaurar import de ScaffoldWightman (derrubado por condicao de corrida entre pushes concorrentes dos forks de andaime)"
+  },
+  {
+   "commit": "03f11bbc2c0fb0938829753c62a6494dca9e6303",
+   "date": "2026-10-27T00:57:09+01:00",
+   "subject": "ATK.lean: restaura import ATK.ScaffoldHeegner (segunda corrida de forks concorrentes no mesmo arquivo)"
+  },
+  {
+   "commit": "2a612d66e2716ab7b8a7b75d2169af61ac2ed198",
+   "date": "2026-10-27T00:57:04+01:00",
+   "subject": "ATK.lean: restaurar import ATK.ScaffoldHeegner (derrubado por push concorrente)"
+  },
+  {
+   "commit": "073cff1d22102a003d9671d6596d97be2d0d6248",
+   "date": "2026-10-27T00:55:56+01:00",
+   "subject": "ATK: ScaffoldHodge — andaime mínimo (KahlerManifoldData local, HodgeDecompositionData via DirectSum.IsInternal); corrige import de PonteHodgeRestante perdido por corrida entre forks concorrentes"
+  },
+  {
+   "commit": "4f8f7daef7c8481d8fce7163d03e1f25abc74c8d",
+   "date": "2026-10-27T00:55:54+01:00",
+   "subject": "ATK: ScaffoldHeegner - altura canonica (caracterizacao) e ponto de Heegner (andaime simplificado) para Gross-Zagier-Kolyvagin"
+  },
+  {
+   "commit": "ae79241c66693ee8ab382be645ca3723a91b6188",
+   "date": "2026-10-27T00:55:50+01:00",
+   "subject": "ATK: ScaffoldWightman — andaime minimo simplificado dos axiomas de Wightman"
+  },
+  {
+   "commit": "6ca29889f2d6077f81e25f58583c62453f3acf34",
+   "date": "2026-10-26T23:19:28+01:00",
+   "subject": "ATK.lean: importar PonteBSDRestante"
+  },
+  {
+   "commit": "b1fefa086f1315b16eae7fca89975d6ce4f4698d",
+   "date": "2026-10-26T23:18:45+01:00",
+   "subject": "ATK: PonteBSDRestante - modularidade geral e cota de Hasse geral como obrigacoes abertas (corrige push anterior corrompido)"
+  },
+  {
+   "commit": "47fb6916bb7b24aaddf9a28c80a9c1f5dce25bd3",
+   "date": "2026-10-26T23:18:27+01:00",
+   "subject": "ATK.lean: importar PonteHodgeRestante"
+  },
+  {
+   "commit": "4f48b4c21e914db936f5f086eb16a06acf84146a",
+   "date": "2026-10-26T23:18:18+01:00",
+   "subject": "ATK: PonteBSDRestante — modularidade geral e cota de Hasse geral como obrigações abertas"
+  },
+  {
+   "commit": "811b179195f4eaf95d74d47b41bb9ff447c769a3",
+   "date": "2026-10-26T23:17:16+01:00",
+   "subject": "ATK: PonteHodgeRestante — obstaculos documentados (Lefschetz 1,1 e Hodge geral)"
+  },
+  {
+   "commit": "5ce7798eb38725df1c9c7f39ceb2a1cae75c642c",
+   "date": "2026-10-26T22:52:42+01:00",
+   "subject": "ATK: SpectralBridge — stub local mínimo para BerryKeatingBridge"
+  },
+  {
+   "commit": "8da2567648484d8147608831fb1d74e60a21103d",
+   "date": "2026-10-26T20:28:36+01:00",
+   "subject": "ATK: SpectralBridge — SelbergLikeBridge (Davenport-Heilbronn abstrato) + obstáculo documentado para Berry-Keating"
+  },
+  {
+   "commit": "1b5b1b0c79fb6e40da453e9caa6372a1d922a98a",
+   "date": "2026-10-26T20:15:16+01:00",
+   "subject": "ATK: SpectralBridge — obstáculo estrutural das pontes espectrais candidatas"
+  },
+  {
+   "commit": "93bc8686ca0979637da3c1716bfd8dbc34e15ed7",
+   "date": "2026-10-25T02:55:58+02:00",
+   "subject": "ATK: GramMdc — corolário explícito de escala (G(i,j)=(1/d)G(a,b) via mdc)"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.GramMdc.gcd_div_gcd_eq_one",
+   "file": "atk-kernel/ATK/GramMdc.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (i j : ℕ), 0 < i → (i / i.gcd j).gcd (j / i.gcd j) = 1"
+  },
+  {
+   "name": "ATK.GramMdc.gcd_pos",
+   "file": "atk-kernel/ATK/GramMdc.lean",
+   "line": 27,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {i j : ℕ}, 0 < i → 0 < i.gcd j"
+  },
+  {
+   "name": "ATK.GramMdc.gram_scaling_gcd",
+   "file": "atk-kernel/ATK/GramMdc.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (i j : ℕ),   0 < i →     0 < j →       ∫ (t : ℝ) in Set.Ioi 0, ATK.Conditional.Riemann.rho i t * ATK.Conditional.Riemann.rho j t =         (↑(i.gcd j))⁻¹ *           ∫ (t : ℝ) in Set.Ioi 0,             ATK.Conditional.Riemann.rho (i / i.gcd j) t * ATK.Conditional.Riemann.rho (j / i.gcd j) t"
+  },
+  {
+   "name": "ATK.PonteBSDRestante.modularidade_e_hasse_dao_reconstrucao",
+   "file": "atk-kernel/ATK/PonteBSDRestante.lean",
+   "line": 50,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.PonteBSDRestante.ModularidadeGeral →   ∀ (hCH : ATK.PonteBSDRestante.CotaHasseGeral) (W : WeierstrassCurve ℚ),     ∃ c ε,       ∃ (hc : 0 < c) (hε : ε ≠ 0) (hM : ATK.AtaqueBSD.PonteModular W c ε),         Differentiable ℂ (ATK.AtaqueBSD.Lc hc ⋯ hε hM)"
+  },
+  {
+   "name": "ATK.SpectralBridge.local_selfadjoint_real_eigenvalue",
+   "file": "atk-kernel/ATK/SpectralBridge.lean",
+   "line": 180,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{α : Type*} [NormedAddCommGroup α] [InnerProductSpace ℂ α] {T : UnboundedOp α} (hT : LocalSelfAdjoint T) : ∀ lam ∈ LocalSpectrum T, lam.im = 0"
+  },
+  {
+   "name": "ATK.SpectralBridge.no_finite_degree_bridge",
+   "file": "atk-kernel/ATK/SpectralBridge.lean",
+   "line": 77,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{G F : ℂ → ℂ} (hG : (zeroSet G).Infinite) (hF : (zeroSet F).Finite) (C : ℂ → ℂ) (hC : ∀ s, C s ≠ 0) : G ≠ fun s => C s * F s"
+  },
+  {
+   "name": "ATK.SpectralBridge.no_polynomial_bridge",
+   "file": "atk-kernel/ATK/SpectralBridge.lean",
+   "line": 101,
+   "state": "erro",
+   "axioms_beyond_standard": [],
+   "statement": "{G : ℂ → ℂ} (hG : (zeroSet G).Infinite) (p : Polynomial ℂ) (hp : p ≠ 0) (C : ℂ → ℂ) (hC : ∀ s, C s ≠ 0) : G ≠ fun s => C s * p.eval s"
+  }
+ ],
+ "closed": 5,
+ "files_sha256": {
+  "atk-kernel/ATK/AtaqueBSD.lean": "001dd39adea4c3530a31458bb7ae9b4fa984e7da73e9092aacfd3bf9531a090f",
+  "atk-kernel/ATK/BDDistSqPort.lean": "3d209211337b561728bb8823cf8074c2a9539c832783e57d59398ae88b0d3c3f",
+  "atk-kernel/ATK/BaezDuarteBridge.lean": "6cb5d5346a77a4bb236de5c8dd10bfa1753492dc43016a87424d69c148f355a7",
+  "atk-kernel/ATK/BaezDuarteVetorB.lean": "e2d90b7e22b65abd3540437139e702fea3be3d8857f2c9484ccc79595aff5846",
+  "atk-kernel/ATK/BaseRiemannTeta.lean": "1f50f4cf170e3d410d5f2307542f286306823e8af3adecdfd9b227e9a59fc2f4",
+  "atk-kernel/ATK/BaseRiemannXi.lean": "0b3b81a36188cb89fc7728e33d9e7baacda860a891f62d0b0dd3a84fcbff86fd",
+  "atk-kernel/ATK/Conditional/BSD.lean": "39138cc722f5edef5db0cdaf0b99a75f571b6d32cbc7eb1e8ac228d864b89f65",
+  "atk-kernel/ATK/Conditional/Riemann.lean": "4c1dc437747de9c70341bdca01a0c9fef299a9b6d9b30413a75fc005d3631382",
+  "atk-kernel/ATK/CongruentCurve.lean": "8b9d99a5469398f96d5f391c2d66493dc4e6ced3d4cd3d7d498e568e83846d78",
+  "atk-kernel/ATK/DInfinito.lean": "896e72fcc4b8c4b8fcf0288235ce9991a2af26155973ab1725fd1e57be18625e",
+  "atk-kernel/ATK/EspectralDN.lean": "752914e1bc8e260f831e9b05d5c0b4bd5ca9b22fbc2bf557f90db329853e8e4a",
+  "atk-kernel/ATK/FechamentoO1.lean": "6f977ec6f7ad05d67d6ea247168ac1cbc259f1beb8f2db025a8045108c0eb7f0",
+  "atk-kernel/ATK/FermatRightTriangle.lean": "b31212601d3712ea6f226ab20e78e26e11ce1e86d82197307f746ea2c301e5cd",
+  "atk-kernel/ATK/ForaDaLinha.lean": "5a7baee5430fd146ebc24bef636b934ab56105f8744a68364fbc194876cd2919",
+  "atk-kernel/ATK/GammaVertical.lean": "b0d6aa631f0e4a274b649e46f6c19614ca99477fae66d0b0a06f57170b1c0667",
+  "atk-kernel/ATK/GramBaezDuarte.lean": "3490e6d7d6afc5134dfa64df59e3fd80c6840b4c492103a009d5b9a5ba329d80",
+  "atk-kernel/ATK/GramExato.lean": "cd56dcd8b0e0a08856e89ec0c33fa9ba44edeb41a7b87e7073db16c3816c2fcb",
+  "atk-kernel/ATK/GramMdc.lean": "30f0cfccf5a49953b5e950ddf4c3b0ad7df9b2b2fec21c2e8d50a67da0ee19d0",
+  "atk-kernel/ATK/Indeterminacy.lean": "9fc0a38993d4846610033b2a38e63894b463a738633a142520561e209bd88f57",
+  "atk-kernel/ATK/IndeterminacyStates.lean": "1a4c9ee6bd9b773c76e53ba812e1c920a6ecb2c4616f0a96179f6af279bc8a8e",
+  "atk-kernel/ATK/LigacaoBSD.lean": "0a686c591736ca9719b84c1f2b9369bf044aec5dd5e964465773ca0f3477b704",
+  "atk-kernel/ATK/LigacaoBSDTestes.lean": "a2c052adf3f5c5e21f6a0ae4dc04000b7a3b4d814c090c9052bc2b4dbb7164fe",
+  "atk-kernel/ATK/MellinPlancherel.lean": "882e32ea14eadf281c77f24a0fc75b83f6fd9d6300d655904ea2a0008ef59bec",
+  "atk-kernel/ATK/MellinRho.lean": "d37a84591f1594e64f5b0a7d4eb4018bafe5cef503c954a41306c4daffb02771",
+  "atk-kernel/ATK/NecessidadeBD.lean": "cb2cc7451cb9307f9e11da50b8041f2b0db7de9ee24faa97038639c82254bb2b",
+  "atk-kernel/ATK/NecessidadeRH.lean": "1d6dbb3d928b918d0e185e3f95b0a9b2c2ba6ba279d9502b7df72438f90ed0e8",
+  "atk-kernel/ATK/OmegaGramL2.lean": "5f090104711b3971e13644d54dc1cddf74370000e30038c7eb450b5b522047b5",
+  "atk-kernel/ATK/OmegaGramRho.lean": "82b3ede0a852c0d9e599031ccbad200134f58dce1d4f97c47e392d843b8d6911",
+  "atk-kernel/ATK/PerronSuave.lean": "ba15a911c98f93ca0ea809c471ad7b9f06cbcffc49afb722bd69062e1cd76fea",
+  "atk-kernel/ATK/PlancherelL1L2.lean": "40e044d1105e8e86ac679ccaca44c38e8fdb673e141b5ac0208bccd25866c6b0",
+  "atk-kernel/ATK/PonteBSDRestante.lean": "19e772c5b26c0248e26f78721447f5b56d3a98b24d9263573696f0f0aea6c3f4",
+  "atk-kernel/ATK/RHLogZeta.lean": "99eb566c78105d25c6200585e708a740c2f81587f284728cacd5009540410cb8",
+  "atk-kernel/ATK/RazaoZeta.lean": "c233a2918e5832cbf16bae610bdc9e7b6c2661ebe909166d425e5803753152e4",
+  "atk-kernel/ATK/RhoIndependente.lean": "03ba42943832a233060807543461254100f07c06dc2c4d5ac0ef691c6c89f5df",
+  "atk-kernel/ATK/RiemannConcrete.lean": "47f40910773da5d00ee472e91e00bcbaaf3c91114b4f37d751a73c5249ce263d",
+  "atk-kernel/ATK/RiemannFaithful.lean": "269bfe14fa25f1d369c074c2bcb3416e1fd4b1df63a0c23d0773e3d691322c11",
+  "atk-kernel/ATK/RiemannStates.lean": "007cae414504383e41b72abe530d7794b8be7449c8762a2dedc399b9997cd77b",
+  "atk-kernel/ATK/SpectralBridge.lean": "c58cf451c4d836ed14ae14fe25ed29262acaa58374b8d3a3b836e3167621ff02",
+  "atk-kernel/ATK/ZetaRegiao.lean": "0d0368a0cf8b92fd96ee68258c373590f2906b7d1e47d036de2a59fab3ee9bc0",
+  "atk-kernel/ATK/ZetaRetangulo.lean": "db4894dc82d4e302b9260e188f37bf79c2c1bf82999f6380e39228e7bcc160a4",
+  "atk-kernel/ATK/ZetaSimetria.lean": "b69eed771ea2e61c424ff33f5891ee595a05d3c8a2857a5bec11060f876d4acf",
+  "atk-kernel/ATK/ZetaStrip.lean": "202994e0bf413c54bf1d4eedd1448e5777732bbd4d15df40ac24f9377074624e",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-29T01:37:25Z",
+ "certificate_sha256": "66bf64cc0dee9d778b6fb9af149965cf6ee7ed15b2b95363f59548e9fc182695"
+}

@@ -1,0 +1,60 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/ym-wilson-loop-area-law-20261019",
+ "branch_state": "em andamento",
+ "head_commit": "19d4ef369ac0babd8524e33d7768769b9a725a50",
+ "head_commit_date": "2026-10-19T20:27:41+00:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "19d4ef369ac0babd8524e33d7768769b9a725a50",
+   "date": "2026-10-19T20:27:41+00:00",
+   "subject": "feat(atk-ym): name the Wilson loop and prove its area law (B7)"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.YMWilsonLoop.wilson_area_law",
+   "file": "atk-kernel/ATK/YMWilsonLoop.lean",
+   "line": 28,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (β : ℝ) (A : ℕ), ATK.YMWilsonLoop.wilsonLoop β A = Real.tanh β ^ A"
+  },
+  {
+   "name": "ATK.YMWilsonLoop.wilson_area_law_exp",
+   "file": "atk-kernel/ATK/YMWilsonLoop.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {β : ℝ}, 0 < β → ∀ (A : ℕ), ATK.YMWilsonLoop.wilsonLoop β A = Real.exp (-ATK.YMToy.massa β * ↑A)"
+  }
+ ],
+ "closed": 2,
+ "files_sha256": {
+  "atk-kernel/ATK/Conditional/Riemann.lean": "4c1dc437747de9c70341bdca01a0c9fef299a9b6d9b30413a75fc005d3631382",
+  "atk-kernel/ATK/Indeterminacy.lean": "9fc0a38993d4846610033b2a38e63894b463a738633a142520561e209bd88f57",
+  "atk-kernel/ATK/IndeterminacyStates.lean": "1a4c9ee6bd9b773c76e53ba812e1c920a6ecb2c4616f0a96179f6af279bc8a8e",
+  "atk-kernel/ATK/YMReconstrucao.lean": "9179947558621aa9504a9f2f16c66516080cb6659e1dd5cb0d41e013dc10054d",
+  "atk-kernel/ATK/YMToy.lean": "ccdf06a4414bffcdb4d30544090a2b35c8376273f01be11c79aa5ea4102cef97",
+  "atk-kernel/ATK/YMWilsonLoop.lean": "544cbb15bcfaf4afd497be97fb0f0ba43d4f71c572ebcd3f5932dfd1ba9a96a6",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-29T01:37:32Z",
+ "certificate_sha256": "970a8d1874c2557371697bca55d63d423de5c329e913b8acdd3d9115335857df"
+}

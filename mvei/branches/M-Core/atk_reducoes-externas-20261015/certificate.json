@@ -1,0 +1,291 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/reducoes-externas-20261015",
+ "branch_state": "em andamento",
+ "head_commit": "e63a6dba916b6bbeafede327ec149e08833e1117",
+ "head_commit_date": "2026-10-16T09:31:58+00:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "e63a6dba916b6bbeafede327ec149e08833e1117",
+   "date": "2026-10-16T09:31:58+00:00",
+   "subject": "Fix stale OpenAI subproject references"
+  },
+  {
+   "commit": "a711a03ac1fbe89d4d6ac35132c9a395554846fe",
+   "date": "2026-10-15T19:22:05+01:00",
+   "subject": "atk-externo: quasi-RH certificada 4/4; build com falha derruba o job"
+  },
+  {
+   "commit": "54cef29715f8682f405fd4ab432a1047754bb4f2",
+   "date": "2026-10-15T13:32:07+01:00",
+   "subject": "atk-externo: aplica os patches de compatibilidade da OpenAI às dependências"
+  },
+  {
+   "commit": "ed02eb2bb23460df3e381357b9704f7535fb08b8",
+   "date": "2026-10-15T10:11:19+01:00",
+   "subject": "atk-kernel: Riemann reduzida à faixa 1/2 < Re ≤ 7/8 e Beal a mdc ≤ 2, com provas externas"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.33.1",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.BealFermat.beal_de_mdc_ge_tres",
+   "file": "atk-kernel/ATK/BealFermat.lean",
+   "line": 63,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "FermatLastTheorem → ∀ {x y z : ℕ}, 3 ≤ x.gcd (y.gcd z) → ATK.BealFermat.BealFor x y z"
+  },
+  {
+   "name": "ATK.BealFermat.beal_iff_forall_bealFor",
+   "file": "atk-kernel/ATK/BealFermat.lean",
+   "line": 37,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Conditional.Beal.BealConjecture ↔ ∀ (x y z : ℕ), 2 < x → 2 < y → 2 < z → ATK.BealFermat.BealFor x y z"
+  },
+  {
+   "name": "ATK.BealFermat.beal_iff_residual",
+   "file": "atk-kernel/ATK/BealFermat.lean",
+   "line": 68,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "FermatLastTheorem → (ATK.Conditional.Beal.BealConjecture ↔ ATK.BealFermat.ResidualMdcAteDois)"
+  },
+  {
+   "name": "ATK.BealFermat.mdc_pos",
+   "file": "atk-kernel/ATK/BealFermat.lean",
+   "line": 83,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {x y z : ℕ}, 2 < x → 0 < x.gcd (y.gcd z)"
+  },
+  {
+   "name": "ATK.BealFermat.residual_de_beal",
+   "file": "atk-kernel/ATK/BealFermat.lean",
+   "line": 79,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.Conditional.Beal.BealConjecture → ATK.BealFermat.ResidualMdcAteDois"
+  },
+  {
+   "name": "ATK.BealFermat.sem_solucao_de_divisor",
+   "file": "atk-kernel/ATK/BealFermat.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {d a b c x y z : ℕ}, FermatLastTheoremFor d → d ∣ x → d ∣ y → d ∣ z → 0 < a → 0 < b → 0 < c → a ^ x + b ^ y ≠ c ^ z"
+  },
+  {
+   "name": "ATK.BealFermat.sem_solucao_mdc",
+   "file": "atk-kernel/ATK/BealFermat.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {d a b c x y z : ℕ}, FermatLastTheoremFor d → d ∣ x.gcd (y.gcd z) → 0 < a → 0 < b → 0 < c → a ^ x + b ^ y ≠ c ^ z"
+  },
+  {
+   "name": "ATK.Externo.RiemannQuasi.quasiRH",
+   "file": "atk-kernel/externo/ATKExterno/RiemannQuasi.lean",
+   "line": 25,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": QuasiRH"
+  },
+  {
+   "name": "ATK.Externo.RiemannQuasi.rh_de_faixa",
+   "file": "atk-kernel/externo/ATKExterno/RiemannQuasi.lean",
+   "line": 33,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(h : FaixaLivre (1 / 2) (7 / 8)) : RiemannHypothesis"
+  },
+  {
+   "name": "ATK.Externo.RiemannQuasi.rh_iff_faixa",
+   "file": "atk-kernel/externo/ATKExterno/RiemannQuasi.lean",
+   "line": 29,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": RiemannHypothesis ↔ FaixaLivre (1 / 2) (7 / 8)"
+  },
+  {
+   "name": "ATK.Fermat.beal_de_mdc_ge_tres",
+   "file": "atk-fermat/AtkFermat/Beal.lean",
+   "line": 64,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(hF : FermatLastTheorem) {x y z : ℕ} (h : 3 ≤ Nat.gcd x (Nat.gcd y z)) : BealFor x y z"
+  },
+  {
+   "name": "ATK.Fermat.beal_de_mdc_ge_tres_incondicional",
+   "file": "atk-fermat/AtkFermat/Beal.lean",
+   "line": 94,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{x y z : ℕ} (h : 3 ≤ Nat.gcd x (Nat.gcd y z)) : BealFor x y z"
+  },
+  {
+   "name": "ATK.Fermat.beal_iff_forall_bealFor",
+   "file": "atk-fermat/AtkFermat/Beal.lean",
+   "line": 38,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": BealConjecture ↔ ∀ x y z : ℕ, 2 < x → 2 < y → 2 < z → BealFor x y z"
+  },
+  {
+   "name": "ATK.Fermat.beal_iff_residual",
+   "file": "atk-fermat/AtkFermat/Beal.lean",
+   "line": 69,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(hF : FermatLastTheorem) : BealConjecture ↔ ResidualMdcAteDois"
+  },
+  {
+   "name": "ATK.Fermat.beal_iff_residual_incondicional",
+   "file": "atk-fermat/AtkFermat/Beal.lean",
+   "line": 99,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": BealConjecture ↔ ResidualMdcAteDois"
+  },
+  {
+   "name": "ATK.Fermat.fermat",
+   "file": "atk-fermat/AtkFermat/Beal.lean",
+   "line": 88,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": FermatLastTheorem"
+  },
+  {
+   "name": "ATK.Fermat.mdc_pos",
+   "file": "atk-fermat/AtkFermat/Beal.lean",
+   "line": 84,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{x y z : ℕ} (hx : 2 < x) : 0 < Nat.gcd x (Nat.gcd y z)"
+  },
+  {
+   "name": "ATK.Fermat.residual_de_beal",
+   "file": "atk-fermat/AtkFermat/Beal.lean",
+   "line": 80,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(h : BealConjecture) : ResidualMdcAteDois"
+  },
+  {
+   "name": "ATK.Fermat.sem_solucao_de_divisor",
+   "file": "atk-fermat/AtkFermat/Beal.lean",
+   "line": 43,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{d a b c x y z : ℕ} (hF : FermatLastTheoremFor d) (hx : d ∣ x) (hy : d ∣ y) (hz : d ∣ z) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : a ^ x + b ^ y ≠ c ^ z"
+  },
+  {
+   "name": "ATK.Fermat.sem_solucao_mdc",
+   "file": "atk-fermat/AtkFermat/Beal.lean",
+   "line": 56,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{d a b c x y z : ℕ} (hF : FermatLastTheoremFor d) (h : d ∣ Nat.gcd x (Nat.gcd y z)) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : a ^ x + b ^ y ≠ c ^ z"
+  },
+  {
+   "name": "ATK.QuasiRiemann.quasi_de_rh",
+   "file": "atk-kernel/ATK/QuasiRiemann.lean",
+   "line": 87,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "RiemannHypothesis → ATK.QuasiRiemann.QuasiRH"
+  },
+  {
+   "name": "ATK.QuasiRiemann.rh_de_quasi_e_faixa",
+   "file": "atk-kernel/ATK/QuasiRiemann.lean",
+   "line": 83,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.QuasiRiemann.QuasiRH → ATK.QuasiRiemann.FaixaLivre (1 / 2) (7 / 8) → RiemannHypothesis"
+  },
+  {
+   "name": "ATK.QuasiRiemann.rh_iff_faixa",
+   "file": "atk-kernel/ATK/QuasiRiemann.lean",
+   "line": 64,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {θ : ℝ}, ATK.QuasiRiemann.ZeroLivreAcima θ → (RiemannHypothesis ↔ ATK.QuasiRiemann.FaixaLivre (1 / 2) θ)"
+  },
+  {
+   "name": "ATK.QuasiRiemann.rh_iff_faixa_sete_oitavos",
+   "file": "atk-kernel/ATK/QuasiRiemann.lean",
+   "line": 79,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.QuasiRiemann.QuasiRH → (RiemannHypothesis ↔ ATK.QuasiRiemann.FaixaLivre (1 / 2) (7 / 8))"
+  },
+  {
+   "name": "ATK.QuasiRiemann.rh_iff_faixa_um",
+   "file": "atk-kernel/ATK/QuasiRiemann.lean",
+   "line": 75,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "RiemannHypothesis ↔ ATK.QuasiRiemann.FaixaLivre (1 / 2) 1"
+  },
+  {
+   "name": "ATK.QuasiRiemann.rh_iff_metade",
+   "file": "atk-kernel/ATK/QuasiRiemann.lean",
+   "line": 45,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "RiemannHypothesis ↔ ATK.QuasiRiemann.ZeroLivreAcima (1 / 2)"
+  },
+  {
+   "name": "ATK.QuasiRiemann.zeroLivre_mono",
+   "file": "atk-kernel/ATK/QuasiRiemann.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {θ θ' : ℝ}, θ ≤ θ' → ATK.QuasiRiemann.ZeroLivreAcima θ → ATK.QuasiRiemann.ZeroLivreAcima θ'"
+  },
+  {
+   "name": "ATK.QuasiRiemann.zeroLivre_um",
+   "file": "atk-kernel/ATK/QuasiRiemann.lean",
+   "line": 38,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.QuasiRiemann.ZeroLivreAcima 1"
+  }
+ ],
+ "closed": 15,
+ "files_sha256": {
+  "atk-kernel/ATK/BaezDuarteBridge.lean": "6cb5d5346a77a4bb236de5c8dd10bfa1753492dc43016a87424d69c148f355a7",
+  "atk-kernel/ATK/BealFermat.lean": "0acf81c35859ec2be6b5e0a5503200f6cc8bddaaf1a967d9c4ac9e13ff0f828f",
+  "atk-kernel/ATK/Conditional/Beal.lean": "f62f97d014fa5b1302be281194be525590400869280ae94f135ac2dcf1385152",
+  "atk-kernel/ATK/Conditional/Riemann.lean": "4c1dc437747de9c70341bdca01a0c9fef299a9b6d9b30413a75fc005d3631382",
+  "atk-kernel/ATK/Indeterminacy.lean": "9fc0a38993d4846610033b2a38e63894b463a738633a142520561e209bd88f57",
+  "atk-kernel/ATK/IndeterminacyStates.lean": "1a4c9ee6bd9b773c76e53ba812e1c920a6ecb2c4616f0a96179f6af279bc8a8e",
+  "atk-kernel/ATK/MellinRho.lean": "d37a84591f1594e64f5b0a7d4eb4018bafe5cef503c954a41306c4daffb02771",
+  "atk-kernel/ATK/QuasiRiemann.lean": "b48f206d0a5f952873a249f108446c226231ac926d51bcb3210942fe4aa99ac6",
+  "atk-kernel/ATK/RiemannConcrete.lean": "47f40910773da5d00ee472e91e00bcbaaf3c91114b4f37d751a73c5249ce263d",
+  "atk-kernel/ATK/RiemannFaithful.lean": "269bfe14fa25f1d369c074c2bcb3416e1fd4b1df63a0c23d0773e3d691322c11",
+  "atk-kernel/ATK/RiemannStates.lean": "007cae414504383e41b72abe530d7794b8be7449c8762a2dedc399b9997cd77b",
+  "atk-kernel/ATK/ZetaSimetria.lean": "b69eed771ea2e61c424ff33f5891ee595a05d3c8a2857a5bec11060f876d4acf",
+  "atk-kernel/ATK/ZetaStrip.lean": "202994e0bf413c54bf1d4eedd1448e5777732bbd4d15df40ac24f9377074624e",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-29T01:37:24Z",
+ "certificate_sha256": "0f357b6faed4006b695a8cbc62d109e700ac382d2d2f2f4f3dd062f78262fbd5"
+}

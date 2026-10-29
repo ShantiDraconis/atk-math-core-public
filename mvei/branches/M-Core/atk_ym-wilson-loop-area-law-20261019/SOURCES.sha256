@@ -1,0 +1,9 @@
+4c1dc437747de9c70341bdca01a0c9fef299a9b6d9b30413a75fc005d3631382  branches/M-Core/atk_ym-wilson-loop-area-law-20261019/atk-kernel/ATK/Conditional/Riemann.lean
+9fc0a38993d4846610033b2a38e63894b463a738633a142520561e209bd88f57  branches/M-Core/atk_ym-wilson-loop-area-law-20261019/atk-kernel/ATK/Indeterminacy.lean
+1a4c9ee6bd9b773c76e53ba812e1c920a6ecb2c4616f0a96179f6af279bc8a8e  branches/M-Core/atk_ym-wilson-loop-area-law-20261019/atk-kernel/ATK/IndeterminacyStates.lean
+9179947558621aa9504a9f2f16c66516080cb6659e1dd5cb0d41e013dc10054d  branches/M-Core/atk_ym-wilson-loop-area-law-20261019/atk-kernel/ATK/YMReconstrucao.lean
+ccdf06a4414bffcdb4d30544090a2b35c8376273f01be11c79aa5ea4102cef97  branches/M-Core/atk_ym-wilson-loop-area-law-20261019/atk-kernel/ATK/YMToy.lean
+544cbb15bcfaf4afd497be97fb0f0ba43d4f71c572ebcd3f5932dfd1ba9a96a6  branches/M-Core/atk_ym-wilson-loop-area-law-20261019/atk-kernel/ATK/YMWilsonLoop.lean
+e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8  branches/M-Core/atk_ym-wilson-loop-area-law-20261019/atk-kernel/lake-manifest.json
+139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d  branches/M-Core/atk_ym-wilson-loop-area-law-20261019/atk-kernel/lakefile.toml
+d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b  branches/M-Core/atk_ym-wilson-loop-area-law-20261019/atk-kernel/lean-toolchain

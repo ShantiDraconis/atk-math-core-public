@@ -1,0 +1,12 @@
+050e425c3cac8ba4c7235e08f4c5b3cc8b82c32f2d6bff2ae482f4a4033c937a  branches/M-Core/atk_debug-beal-completo-tmp/atk-kernel/ATK/BealCompleto.lean
+ead6713ed0f643ce828121f0c63b240feec2ebbe0d0a269c3a86c97012161ab6  branches/M-Core/atk_debug-beal-completo-tmp/atk-kernel/ATK/BealDarmonMerel.lean
+2ae030020dfaf3520e61a81afe2c18a689e11ba7a81a0ca31d0878e6476bbdcd  branches/M-Core/atk_debug-beal-completo-tmp/atk-kernel/ATK/BealFermatDescent.lean
+07b323e543eee66a877ebaa9514fc3582b6f8bbdf108f6c1054a325535f1b406  branches/M-Core/atk_debug-beal-completo-tmp/atk-kernel/ATK/BealFourFourTwo.lean
+1e6c661b835a86ef19e36b46e5af356cd60d873e2d4b784134bbe6983bda05fb  branches/M-Core/atk_debug-beal-completo-tmp/atk-kernel/ATK/BealPartial.lean
+61bf2d4278f511b479e77cda7535fae804f00526fbede8b804ba898edcca0875  branches/M-Core/atk_debug-beal-completo-tmp/atk-kernel/ATK/BealReduction.lean
+4e79676f5e996b3f1c5202998a7cff418a419617f741dcf6a1c02bd11cb3addd  branches/M-Core/atk_debug-beal-completo-tmp/atk-kernel/ATK/BealResidual.lean
+f62f97d014fa5b1302be281194be525590400869280ae94f135ac2dcf1385152  branches/M-Core/atk_debug-beal-completo-tmp/atk-kernel/ATK/Conditional/Beal.lean
+b31212601d3712ea6f226ab20e78e26e11ce1e86d82197307f746ea2c301e5cd  branches/M-Core/atk_debug-beal-completo-tmp/atk-kernel/ATK/FermatRightTriangle.lean
+e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8  branches/M-Core/atk_debug-beal-completo-tmp/atk-kernel/lake-manifest.json
+139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d  branches/M-Core/atk_debug-beal-completo-tmp/atk-kernel/lakefile.toml
+d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b  branches/M-Core/atk_debug-beal-completo-tmp/atk-kernel/lean-toolchain

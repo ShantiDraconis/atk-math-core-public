@@ -5,7 +5,7 @@ Lean sources from the branch `research/closed-empty-external-20260924` of the pr
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 7 — closed 4, conditional 0, open 0, proof error 1, not reached 2, no result 0.
 * History: 20 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `dc86328d002e119216f64cd86ef9aac12a6fffdd6106a530342ac1866b7c9894`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/research_closed-empty-external-20260924/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `fe5c31e273381898b5c9ebfc8d2d482ce249d767bcd24e5e7dbe8f23ae9df71b`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/research_closed-empty-external-20260924/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

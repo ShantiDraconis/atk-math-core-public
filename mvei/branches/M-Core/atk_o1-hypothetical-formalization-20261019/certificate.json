@@ -1,0 +1,197 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/o1-hypothetical-formalization-20261019",
+ "branch_state": "em andamento",
+ "head_commit": "6a54f8517bfb1e96dd970cf17712e924d8957dcd",
+ "head_commit_date": "2026-10-19T21:06:54+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "6a54f8517bfb1e96dd970cf17712e924d8957dcd",
+   "date": "2026-10-19T21:06:54+02:00",
+   "subject": "proof(atk): add conditional closure equivalence and conjunction elimination lemmas"
+  },
+  {
+   "commit": "fa3843e75c599f4bd1b7b71d6d8cf9cae2594b52",
+   "date": "2026-10-19T20:57:12+02:00",
+   "subject": "audit: define fail-closed universal green proof and certification gate"
+  },
+  {
+   "commit": "cdb0932ae33c9ab66c69428f71b1f67498790341",
+   "date": "2026-10-19T20:31:48+02:00",
+   "subject": "feat(atk): formalize closed-math and closed-bridge conditional seven-target contract"
+  },
+  {
+   "commit": "b2201b7545b986a8a219d9ec558025eea5e3690a",
+   "date": "2026-10-19T20:08:02+02:00",
+   "subject": "feat(o1): add hypothesis-preserving Lean lemmas and formal contract"
+  },
+  {
+   "commit": "852450c8c5b0765450a9c566d8ba68138977e652",
+   "date": "2026-10-19T20:07:59+02:00",
+   "subject": "feat(o1): add hypothesis-preserving Lean lemmas and formal contract"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.HypotheticalClosed.all_seven_of_closed",
+   "file": "atk-kernel/ATK/HypotheticalClosed.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{M : Models} (hb : ClosedBridge M) (hm : ClosedMath M) : SevenStatements M"
+  },
+  {
+   "name": "ATK.HypotheticalClosed.closed_contract_iff",
+   "file": "atk-kernel/ATK/HypotheticalClosed.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{M : Models} : (ClosedBridge M ∧ ClosedMath M) ↔ (PontesParametricas M ∧ Obrigacoes M)"
+  },
+  {
+   "name": "ATK.HypotheticalClosed.no_open_bridge",
+   "file": "atk-kernel/ATK/HypotheticalClosed.lean",
+   "line": 21,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{M : Models} (h : ClosedBridge M) : PontesParametricas M"
+  },
+  {
+   "name": "ATK.HypotheticalClosed.no_open_math",
+   "file": "atk-kernel/ATK/HypotheticalClosed.lean",
+   "line": 26,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{M : Models} (h : ClosedMath M) : Obrigacoes M"
+  },
+  {
+   "name": "ATK.HypotheticalClosed.rh_of_closed",
+   "file": "atk-kernel/ATK/HypotheticalClosed.lean",
+   "line": 37,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{M : Models} (hm : ClosedMath M) : RiemannHypothesis"
+  },
+  {
+   "name": "ATK.HypotheticalClosed.rh_of_contract",
+   "file": "atk-kernel/ATK/HypotheticalClosed.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{M : Models} (h : ClosedBridge M ∧ ClosedMath M) : RiemannHypothesis"
+  },
+  {
+   "name": "ATK.HypotheticalClosed.seven_of_contract",
+   "file": "atk-kernel/ATK/HypotheticalClosed.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{M : Models} (h : ClosedBridge M ∧ ClosedMath M) : SevenStatements M"
+  },
+  {
+   "name": "ATK.O1Hypothetical.closure_contract",
+   "file": "atk-kernel/ATK/O1Hypothetical.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": TerminalLimit → (Tendsto DN atTop (𝓝 0) ∧ RiemannHypothesis)"
+  },
+  {
+   "name": "ATK.O1Hypothetical.rh_of_terminal",
+   "file": "atk-kernel/ATK/O1Hypothetical.lean",
+   "line": 24,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(h : TerminalLimit) : RiemannHypothesis"
+  },
+  {
+   "name": "ATK.O1Hypothetical.terminal_iff_convergence",
+   "file": "atk-kernel/ATK/O1Hypothetical.lean",
+   "line": 19,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": TerminalLimit ↔ Tendsto DN atTop (𝓝 0)"
+  },
+  {
+   "name": "ATK.O1Hypothetical.terminal_of_original_bound",
+   "file": "atk-kernel/ATK/O1Hypothetical.lean",
+   "line": 29,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(h : UniformLogBound) : TerminalLimit"
+  }
+ ],
+ "closed": 11,
+ "files_sha256": {
+  "atk-kernel/ATK/AlgebraTerminal.lean": "ab045c0a40a165fbe781e2c2e58eee54e1b79e6164a635016bf98a4959b2823b",
+  "atk-kernel/ATK/BaezDuarteBridge.lean": "6cb5d5346a77a4bb236de5c8dd10bfa1753492dc43016a87424d69c148f355a7",
+  "atk-kernel/ATK/BealCompleto.lean": "6fa288b32dd05fbffbeaf3b5d802ecf7fea25e5ec49bb4eb704ea2f3401cb7ed",
+  "atk-kernel/ATK/BealDarmonMerel.lean": "ead6713ed0f643ce828121f0c63b240feec2ebbe0d0a269c3a86c97012161ab6",
+  "atk-kernel/ATK/BealFermatDescent.lean": "2ae030020dfaf3520e61a81afe2c18a689e11ba7a81a0ca31d0878e6476bbdcd",
+  "atk-kernel/ATK/BealFourFourTwo.lean": "07b323e543eee66a877ebaa9514fc3582b6f8bbdf108f6c1054a325535f1b406",
+  "atk-kernel/ATK/BealPartial.lean": "1e6c661b835a86ef19e36b46e5af356cd60d873e2d4b784134bbe6983bda05fb",
+  "atk-kernel/ATK/BealReduction.lean": "61bf2d4278f511b479e77cda7535fae804f00526fbede8b804ba898edcca0875",
+  "atk-kernel/ATK/BealResidual.lean": "4e79676f5e996b3f1c5202998a7cff418a419617f741dcf6a1c02bd11cb3addd",
+  "atk-kernel/ATK/BridgeReduction.lean": "30ec54f4d5af3459eb1eabff2ea60e179d28ef9e2ae01b765b220aa6c73b8143",
+  "atk-kernel/ATK/ClosedMath.lean": "599b1dcc83d768fdcda5b35c6ae69a1b6a5f22bcfe44f785d354fb8ed844fb95",
+  "atk-kernel/ATK/Compilador.lean": "a1b3c132b76ddd72780935a5d338d0e7f9bae65c17a8fdb585c825a8c18cb399",
+  "atk-kernel/ATK/ComposicaoTM2.lean": "afd2dad6b7a9cc250a1cd1e74609030e25bfbda5a1220f1e97842dfe1f685df6",
+  "atk-kernel/ATK/Conditional.lean": "b257632b3dee16101bf7bca086307e43b951dde4c7de29dff2286a92d9b8261d",
+  "atk-kernel/ATK/Conditional/BSD.lean": "39138cc722f5edef5db0cdaf0b99a75f571b6d32cbc7eb1e8ac228d864b89f65",
+  "atk-kernel/ATK/Conditional/Beal.lean": "f62f97d014fa5b1302be281194be525590400869280ae94f135ac2dcf1385152",
+  "atk-kernel/ATK/Conditional/Hodge.lean": "aa3719783ab8e671bb21431f2cfa2530482fe5a3b8a32158aefd9e9844c72698",
+  "atk-kernel/ATK/Conditional/NavierStokes.lean": "332fc2e50242c07cfee0b40cf545bbbd2dac0ae4d860c4e21ac2f639ca04a531",
+  "atk-kernel/ATK/Conditional/PvsNP.lean": "e1731d6b484651a6f5bd16fe73687b1dd9ae0cbbfa36a6da9ab3b0882b926345",
+  "atk-kernel/ATK/Conditional/Riemann.lean": "4c1dc437747de9c70341bdca01a0c9fef299a9b6d9b30413a75fc005d3631382",
+  "atk-kernel/ATK/Conditional/YangMills.lean": "2d84f374b93e2bd4557098f86e205ba6a5c4141da7dc8453589a31e1b4aaf5a5",
+  "atk-kernel/ATK/ContracaoDN.lean": "d7d2a018cc9fd69d8ca99c8e260b2a4b34681e050683861b91ebf5cfd289e8ec",
+  "atk-kernel/ATK/CookLevinBase.lean": "8240cd58a4cf9cae7589afd906aa48417624427c4381af6e220e417e9df92600",
+  "atk-kernel/ATK/CookLevinGerador.lean": "67da7751f715b0e0fc2be259ab9a7e86d1788a395dc108d43164246dd88e0a1a",
+  "atk-kernel/ATK/CookLevinLacos.lean": "3870f4a92eb0abc8e2c53d30d02201f3a439e2b277ea3d76cabf8b160a84e0e1",
+  "atk-kernel/ATK/CookLevinNP.lean": "a26cca2c6d2158b4cf2a2c9694e6c972544228582e990f0aef42bb6535e0b21b",
+  "atk-kernel/ATK/CookLevinReducao.lean": "92eba3a30e9ca6883ec298e8598f4eb3371213111d6d6a3fc3fe6e6ae5e84582",
+  "atk-kernel/ATK/CookLevinTableau.lean": "1a47f6b4dc45d5920ce651c7c29284bc82abbb1e41c9ed6ab468a2b624858b7b",
+  "atk-kernel/ATK/FermatRightTriangle.lean": "b31212601d3712ea6f226ab20e78e26e11ce1e86d82197307f746ea2c301e5cd",
+  "atk-kernel/ATK/FinalRoot.lean": "800ebc823c6c797a4f1f1249ea333bf44445d6f9db942046ab9f37d2995eebad",
+  "atk-kernel/ATK/ForaDaLinha.lean": "5a7baee5430fd146ebc24bef636b934ab56105f8744a68364fbc194876cd2919",
+  "atk-kernel/ATK/Fragmentos.lean": "a408b89e8737ef09c654b619f68036b51e36b1d577ff1a247727daf463d0f374",
+  "atk-kernel/ATK/HypotheticalClosed.lean": "24fdaa67fa9d0518757a3b5b4a5bf45f1ff0ee75ea70c48573534ff23b016421",
+  "atk-kernel/ATK/Indeterminacy.lean": "9fc0a38993d4846610033b2a38e63894b463a738633a142520561e209bd88f57",
+  "atk-kernel/ATK/IndeterminacyStates.lean": "1a4c9ee6bd9b773c76e53ba812e1c920a6ecb2c4616f0a96179f6af279bc8a8e",
+  "atk-kernel/ATK/LigacaoNS.lean": "3f3783fc28394feb2d42b2bc6a0b8960ccf9b72217ed4e23560578be20bddf76",
+  "atk-kernel/ATK/LigacaoPNP.lean": "a677ff4783b1f6a638a95fb4e2dbd29bcdf5dd98c905a971d3ca3fc6740e8cdf",
+  "atk-kernel/ATK/MellinRho.lean": "d37a84591f1594e64f5b0a7d4eb4018bafe5cef503c954a41306c4daffb02771",
+  "atk-kernel/ATK/ModeloPNP.lean": "878719f9129625068bba8b1e3b34e87bf30858207bec3c3595a8307e9cfbd524",
+  "atk-kernel/ATK/O1Hypothetical.lean": "caeeee9c80e75d1f3dac28004379ff700fbaa605211f15b7f46724c76692e19c",
+  "atk-kernel/ATK/ObligationsClosed.lean": "e6005bdb1a3cc26021328a230750907264d0499882e479f334452a5257e34439",
+  "atk-kernel/ATK/ObrigacoesMinimas.lean": "519075073f7fb200d82415d6093f438a92918b4fe944a61252d5ac94129bd18a",
+  "atk-kernel/ATK/RiemannConcrete.lean": "47f40910773da5d00ee472e91e00bcbaaf3c91114b4f37d751a73c5249ce263d",
+  "atk-kernel/ATK/RiemannFaithful.lean": "269bfe14fa25f1d369c074c2bcb3416e1fd4b1df63a0c23d0773e3d691322c11",
+  "atk-kernel/ATK/RiemannStates.lean": "007cae414504383e41b72abe530d7794b8be7449c8762a2dedc399b9997cd77b",
+  "atk-kernel/ATK/SATemNP.lean": "ab78922537c886f9b637fadf21e47cfaeda7d8251a9c9c4e6e90dfaa3b20be9a",
+  "atk-kernel/ATK/Termos.lean": "6a319edc9e6f9d9a3b7eb3a34d5e68a2b4f6ab60b23178c497b05f1bde86c456",
+  "atk-kernel/ATK/ZetaRegiao.lean": "0d0368a0cf8b92fd96ee68258c373590f2906b7d1e47d036de2a59fab3ee9bc0",
+  "atk-kernel/ATK/ZetaRetangulo.lean": "db4894dc82d4e302b9260e188f37bf79c2c1bf82999f6380e39228e7bcc160a4",
+  "atk-kernel/ATK/ZetaSimetria.lean": "b69eed771ea2e61c424ff33f5891ee595a05d3c8a2857a5bec11060f876d4acf",
+  "atk-kernel/ATK/ZetaStrip.lean": "202994e0bf413c54bf1d4eedd1448e5777732bbd4d15df40ac24f9377074624e",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-29T01:37:25Z",
+ "certificate_sha256": "81778fe6f4856b721e09239b01f8486c0e1d5beb9681bb3848113d8759f7af83"
+}

@@ -1,0 +1,79 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/bsd-mathlib-v434-probe",
+ "branch_state": "parada",
+ "head_commit": "b920643e18dcdec64a1a4c1a50383846879b20ef",
+ "head_commit_date": "2026-09-29T00:06:53+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "b920643e18dcdec64a1a4c1a50383846879b20ef",
+   "date": "2026-09-29T00:06:53+01:00",
+   "subject": "probe: add isolated BSD v4.34 kernel workflow"
+  },
+  {
+   "commit": "4efd70bfbea6d87b4245232a7c813b2359723128",
+   "date": "2026-09-29T00:06:39+01:00",
+   "subject": "probe: test concrete BSD rank producer on Mathlib v4.34"
+  },
+  {
+   "commit": "09ebb898bb9227c7b1b367833acd2eb2843a9614",
+   "date": "2026-09-29T00:06:09+01:00",
+   "subject": "probe: pin Mathlib v4.34 for BSD modern APIs"
+  },
+  {
+   "commit": "2c6e87a91a5f9335ff7b0c23aa6331b2f4d9cfd3",
+   "date": "2026-09-29T00:06:04+01:00",
+   "subject": "probe: pin Lean v4.34 for BSD modern APIs"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.34.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.FinalFail.Semantic.BSDRankProducerFor.finiteGeneration",
+   "file": "lean/MCore/FinalFail/BSDConcreteDomain.lean",
+   "line": 99,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {E : MCore.FinalFail.Semantic.EllipticCurveQ} (P : MCore.FinalFail.Semantic.BSDRankProducerFor E),   MCore.FinalFail.Semantic.MordellWeilFiniteGeneration E"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.mordellWeilFiniteGeneration_of_twoDescent",
+   "file": "lean/MCore/FinalFail/BSDConcreteDomain.lean",
+   "line": 58,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (E : MCore.FinalFail.Semantic.EllipticCurveQ),   MCore.FinalFail.Semantic.MWTwoDescentFinite E → MCore.FinalFail.Semantic.MordellWeilFiniteGeneration E"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.naiveRankPair_is_trivially_inhabited",
+   "file": "lean/MCore/FinalFail/BSDConcreteDomain.lean",
+   "line": 114,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (E : MCore.FinalFail.Semantic.EllipticCurveQ), Nonempty (MCore.FinalFail.Semantic.BSDNaiveRankPair E)"
+  }
+ ],
+ "closed": 3,
+ "files_sha256": {
+  "lakefile.lean": "541bbdd37d24fe037aecd5df237c631a0936a6086ce5cd99349170030c496d55",
+  "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+  "lean/MCore/FinalFail/BSDConcreteDomain.lean": "745cf20792245e1aa5bdd983845e09434ed19ab818cd92749f7242bbe4ccf523",
+  "lean/MCore/FinalFail/BoundaryAtoms.lean": "54deb42c3e0d344359ecab23e499cb0e60114146b007003b540c2d564a36024f",
+  "lean/MCore/FinalFail/Semantic/BSD.lean": "be66d8c211db7a78d648b1d4be0a27f54fdd969e305640e8a401abb80c507668",
+  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d"
+ },
+ "published_at": "2026-10-29T01:37:32Z",
+ "certificate_sha256": "e2995406eefabf0b965adb2da2afe5e0b305ddfb406bf2243ec43a86559e08ee"
+}

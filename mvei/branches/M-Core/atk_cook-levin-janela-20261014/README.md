@@ -5,7 +5,7 @@ Lean sources from the branch `atk/cook-levin-janela-20261014` of the private rep
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 391 — closed 391, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 19 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `c55ebd971a8b6cc3fb9bb08b6f1a946a3308fd3146e33ce4e3c2c5a59a180969`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_cook-levin-janela-20261014/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `c7bbcc4302f37aa6a987433e5add0dddacb40bd1a309dc7cc7194f52b4524138`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_cook-levin-janela-20261014/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

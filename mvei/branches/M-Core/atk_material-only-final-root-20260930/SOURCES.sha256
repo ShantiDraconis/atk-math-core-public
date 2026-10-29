@@ -1,0 +1,17 @@
+d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e  branches/M-Core/atk_material-only-final-root-20260930/lakefile.lean
+55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea  branches/M-Core/atk_material-only-final-root-20260930/lean-toolchain
+6c8d3bff0bad718c736ecfbde2bc92937dfddc95de68ce0c17d5b539420de653  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/AcceptedSemanticActivation.lean
+b7b1e5764451649e092acaa42c2a992386940c7a18eb80cc7e94a7d545f5345c  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/BSDConcreteDomain.lean
+54deb42c3e0d344359ecab23e499cb0e60114146b007003b540c2d564a36024f  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/BoundaryAtoms.lean
+8d370ff6426a4c595ca1730a90c8864b7fbcf2c154e4ef9c1c5d2449e49a03ec  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/DirectProducerCuts.lean
+2ddeac0c3dd2a10c36e794bd94a8c7c28ccdc6845d7af388188715eace3e4025  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/MaterialProducerNormalForms.lean
+46a5c72a6392e292406ad0b3a687651f1f5af868811961c3472b94ae083ee109  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/MechanicalClosure.lean
+be66d8c211db7a78d648b1d4be0a27f54fdd969e305640e8a401abb80c507668  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/Semantic/BSD.lean
+7461d91a196c5d7a61ba7f3fabce0947d529902426ec1e96cab2994b97f787a0  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/Semantic/Beal.lean
+c82ec2d0082ec5c801c4f2937246e831021f00ef8dec5cc7059628a9df7b4d03  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/Semantic/Hodge.lean
+d5cb2e2d3bf4e3be8816d020852bed1bca3920e9365bc37246b84421824f2905  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/Semantic/NavierStokes.lean
+d9e1c3abda3fa56fc38b15a4d79b925e274bdc8bd4a5a0db10156208bfbe656b  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/Semantic/PvsNP.lean
+3e27a82494ef344bf6017275345cd6d8af1e2f2ab3c34f7d684d5c6dfc26370e  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/Semantic/Riemann.lean
+46576c47f06fef4d4fe52a6812097bf72a3127d18af23effc2107da7615e301c  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/Semantic/YangMills.lean
+3fcf6ca711dd35f2f46235df26768b752042787b5f7bed7d92b3293f39a283bd  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/SemanticParallel.lean
+79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d  branches/M-Core/atk_material-only-final-root-20260930/lean/MCore/FinalFail/SevenLocalNuclei.lean

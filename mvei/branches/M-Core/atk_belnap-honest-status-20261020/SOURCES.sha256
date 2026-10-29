@@ -1,0 +1,16 @@
+39b3c2706031ce9667daaaab9140f214f99ff03b240b6a277e60f58f3f4a48f1  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/ATK/AnaliseInversao.lean
+1122f4c24df677d26de5b99242138b6cc3813af4c855bdc226ed57ef25ddcaf8  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/ATK/AuditoriaBelnapReal.lean
+599b1dcc83d768fdcda5b35c6ae69a1b6a5f22bcfe44f785d354fb8ed844fb95  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/ATK/ClosedMath.lean
+b257632b3dee16101bf7bca086307e43b951dde4c7de29dff2286a92d9b8261d  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/ATK/Conditional.lean
+39138cc722f5edef5db0cdaf0b99a75f571b6d32cbc7eb1e8ac228d864b89f65  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/ATK/Conditional/BSD.lean
+f62f97d014fa5b1302be281194be525590400869280ae94f135ac2dcf1385152  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/ATK/Conditional/Beal.lean
+aa3719783ab8e671bb21431f2cfa2530482fe5a3b8a32158aefd9e9844c72698  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/ATK/Conditional/Hodge.lean
+332fc2e50242c07cfee0b40cf545bbbd2dac0ae4d860c4e21ac2f639ca04a531  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/ATK/Conditional/NavierStokes.lean
+e1731d6b484651a6f5bd16fe73687b1dd9ae0cbbfa36a6da9ab3b0882b926345  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/ATK/Conditional/PvsNP.lean
+4c1dc437747de9c70341bdca01a0c9fef299a9b6d9b30413a75fc005d3631382  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/ATK/Conditional/Riemann.lean
+2d84f374b93e2bd4557098f86e205ba6a5c4141da7dc8453589a31e1b4aaf5a5  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/ATK/Conditional/YangMills.lean
+a16306bdcf9c821c2722705a44037b845eab1d0b3c80ce1dd0378dd70edbaadb  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/ATK/RefutacaoTri.lean
+73807d99287d682bc1977c6dabadd22f9aa9ca50fa29ef6c356f74b25c780a77  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/ATK/StatusHonesto.lean
+e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/lake-manifest.json
+139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/lakefile.toml
+d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b  branches/M-Core/atk_belnap-honest-status-20261020/atk-kernel/lean-toolchain

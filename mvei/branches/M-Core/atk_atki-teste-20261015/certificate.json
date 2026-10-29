@@ -1,0 +1,113 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/atki-teste-20261015",
+ "branch_state": "em andamento",
+ "head_commit": "a59a15ee521394173ba4242961f3a6ca1ece8b1c",
+ "head_commit_date": "2026-10-15T00:07:34+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "a59a15ee521394173ba4242961f3a6ca1ece8b1c",
+   "date": "2026-10-15T00:07:34+01:00",
+   "subject": "ATK-I: teste — a estrutura vale para toda proposição e não decide nenhuma"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.ATKITeste.dTrivial_nonneg",
+   "file": "atk-kernel/ATK/ATKITeste.lean",
+   "line": 91,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T : Prop), 0 ≤ ATK.ATKITeste.dTrivial T"
+  },
+  {
+   "name": "ATK.ATKITeste.dTrivial_ponte",
+   "file": "atk-kernel/ATK/ATKITeste.lean",
+   "line": 86,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (T : Prop), T ↔ ATK.ATKITeste.dTrivial T = 0"
+  },
+  {
+   "name": "ATK.ATKITeste.estrutura_RH_e_negacao",
+   "file": "atk-kernel/ATK/ATKITeste.lean",
+   "line": 57,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "ATK.ATKITeste.EstruturaATKI RiemannHypothesis ∧ ATK.ATKITeste.EstruturaATKI ¬RiemannHypothesis"
+  },
+  {
+   "name": "ATK.ATKITeste.estrutura_nao_implica",
+   "file": "atk-kernel/ATK/ATKITeste.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "¬∀ (P : Prop), ATK.ATKITeste.EstruturaATKI P → P"
+  },
+  {
+   "name": "ATK.ATKITeste.estrutura_vale",
+   "file": "atk-kernel/ATK/ATKITeste.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : Prop), ATK.ATKITeste.EstruturaATKI P"
+  },
+  {
+   "name": "ATK.ATKITeste.interpretarP_todo_iff",
+   "file": "atk-kernel/ATK/ATKITeste.lean",
+   "line": 62,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : Prop), ATK.ATKI.interpretarP P = ATK.ATKI.Estado.todo ↔ P"
+  },
+  {
+   "name": "ATK.ATKITeste.todo_iff",
+   "file": "atk-kernel/ATK/ATKITeste.lean",
+   "line": 68,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (P : Prop), (∃ c, c.estado = ATK.ATKI.Estado.todo) ↔ P"
+  },
+  {
+   "name": "ATK.ATKITeste.ultimo_passo_RH",
+   "file": "atk-kernel/ATK/ATKITeste.lean",
+   "line": 96,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(∃ ε, (∀ (n : ℕ), ATK.ATKITeste.dTrivial RiemannHypothesis ≤ ε n) ∧ Filter.Tendsto ε Filter.atTop (nhds 0)) ↔   RiemannHypothesis"
+  },
+  {
+   "name": "ATK.ATKITeste.ultimo_passo_iff",
+   "file": "atk-kernel/ATK/ATKITeste.lean",
+   "line": 72,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {T : Prop} {d : ℝ}, (T ↔ d = 0) → 0 ≤ d → ((∃ ε, (∀ (n : ℕ), d ≤ ε n) ∧ Filter.Tendsto ε Filter.atTop (nhds 0)) ↔ T)"
+  }
+ ],
+ "closed": 9,
+ "files_sha256": {
+  "atk-kernel/ATK/ATKI.lean": "25b2cc254f3718260080f8924f72a82d4592a379bf4923a087099af5afab39b5",
+  "atk-kernel/ATK/ATKITeste.lean": "5c7d5818173da4ca574c46d201729b48c3256aa90372a2787d407d0208a58fff",
+  "atk-kernel/ATK/IGeometria.lean": "9f2d5eca9a7f61dd0fefb90b7794d8cc261c3e97db799fca2807bfe43aa40ab3",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-29T01:37:25Z",
+ "certificate_sha256": "8fe0c7f48777e86f8e91fd3329660587cc5d97980a86aadcc000fdd436203937"
+}

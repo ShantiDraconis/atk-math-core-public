@@ -113,7 +113,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-28T19:11:15+00:00",
+  "generated_at": "2026-10-28T23:56:08+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -179,6 +179,6 @@
   "lean/MCore/FinalFail/RelationalHardAtom.lean": "40fd0423c86833fcf60dc6116735584dcb75239ca396af6a0373604dd23e33bf",
   "lean/MCore/FinalFail/TriadicObstructionCalculus.lean": "83f31dfc0e5d1282b54b2e1a8fe332e45177b069a533cb51cbee6287414af5e8"
  },
- "published_at": "2026-10-28T19:19:21Z",
- "certificate_sha256": "c6d065f6e85bb98828173ac21e1cefdd105c552f20d5dadd151b1edfa19754a4"
+ "published_at": "2026-10-29T01:37:25Z",
+ "certificate_sha256": "d4ffa280438e6604b6c66451031c1ed1e67cac99d1dcd93b34abcd24e4bad7e0"
 }

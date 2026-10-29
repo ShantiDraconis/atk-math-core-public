@@ -1,0 +1,88 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/sync-existing-none-results-20261008",
+ "branch_state": "parada",
+ "head_commit": "5cf1e212a0eccfb490a80d1f79ac87c86ee769bf",
+ "head_commit_date": "2026-10-08T12:06:46+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "5cf1e212a0eccfb490a80d1f79ac87c86ee769bf",
+   "date": "2026-10-08T12:06:46+02:00",
+   "subject": "fix: normalize RPA endpoint multiplicities with decidable equality branches"
+  },
+  {
+   "commit": "24c0bf17fc153f1feb7b13a828b16381d77633da",
+   "date": "2026-10-08T11:23:47+02:00",
+   "subject": "fix: keep RPAConfirmation Prop proof fields only; preserve role distinction theorem"
+  },
+  {
+   "commit": "33a3c71e9a53a139c61d9c332fd72e0140c1ff08",
+   "date": "2026-10-08T11:19:45+02:00",
+   "subject": "ci: use standalone Lean toolchain to avoid missing lake manifest"
+  },
+  {
+   "commit": "0a6ee4d9e0e2cb61ca838c2fa7db262f86a60bcf",
+   "date": "2026-10-08T11:10:12+02:00",
+   "subject": "ci: validate terminal Lean interface on draft pull requests"
+  },
+  {
+   "commit": "d5a9544a2d58a0405d6c08ada2b6fc81987f5483",
+   "date": "2026-10-08T11:03:01+02:00",
+   "subject": "ci: check seven-terminal Lean interface independently and fail on holes"
+  },
+  {
+   "commit": "439a42764ea7fae7500ee2abe21482149d842493",
+   "date": "2026-10-08T11:01:35+02:00",
+   "subject": "audit: map seven terminal interfaces to canonical mathematical producers"
+  },
+  {
+   "commit": "19bb25f54198e655ca6e334630856161e1856933",
+   "date": "2026-10-08T10:59:54+02:00",
+   "subject": "formal: add fail-closed seven-terminal proof interfaces and composition"
+  },
+  {
+   "commit": "0ca865ea49985fdd867e5a89b266ebbd49e60012",
+   "date": "2026-10-08T10:56:44+02:00",
+   "subject": "audit: reconcile existing optional values without false endpoint promotion"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.Terminal.close_from_material",
+   "file": "lean/ATK/TerminalSevenInterfaces.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(E : SevenEndpoints) (hb : E.beal) (hh : E.hodge) (hy : E.yangMills) (hr : E.riemann) (hp : E.pNeNP) (hbsd : E.bsd) (hns : E.navierStokes) : MaterialComplete E"
+  },
+  {
+   "name": "ATK.Terminal.terminalProofs_iff_materialComplete",
+   "file": "lean/ATK/TerminalSevenInterfaces.lean",
+   "line": 37,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(E : SevenEndpoints) : Nonempty (TerminalProofs E) ↔ MaterialComplete E"
+  }
+ ],
+ "closed": 2,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/ATK/TerminalSevenInterfaces.lean": "3a128037018d4cec561668525d07735080909538fe78c757e7c6f1d0a2cbe8ae"
+ },
+ "published_at": "2026-10-29T01:37:32Z",
+ "certificate_sha256": "133e34c6e16744cd33f6672a0ce212ad4f874af63e4f7038b7089a487977fcc8"
+}

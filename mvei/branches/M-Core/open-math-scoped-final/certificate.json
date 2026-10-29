@@ -1,0 +1,368 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "open-math-scoped-final",
+ "branch_state": "parada",
+ "head_commit": "373f03d2669b35f9530c304926e9e497e0f36016",
+ "head_commit_date": "2026-09-24T23:44:06+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "373f03d2669b35f9530c304926e9e497e0f36016",
+   "date": "2026-09-24T23:44:06+01:00",
+   "subject": "CI: build minimal scoped FinalProof endpoint"
+  },
+  {
+   "commit": "16d67f35e042a345e6c53b1325e459ece7b579da",
+   "date": "2026-09-24T23:44:03+01:00",
+   "subject": "Make FinalClaim consume minimal scoped FinalProof"
+  },
+  {
+   "commit": "b32cc4262b65eb2289f142105c62767820b564da",
+   "date": "2026-09-24T23:43:52+01:00",
+   "subject": "Close minimal scoped FinalProof from frozen vanishing bound"
+  },
+  {
+   "commit": "492c095d6a4f761143d988c160a87f3da6f81540",
+   "date": "2026-09-24T23:28:27+01:00",
+   "subject": "Fix Riemann scoped toolchain to pinned source"
+  },
+  {
+   "commit": "94e676883f261646b9a5093a142390825b17f656",
+   "date": "2026-09-24T23:24:28+01:00",
+   "subject": "Vendor A14 countermodel route into scoped build"
+  },
+  {
+   "commit": "d7975a6e20ac5ce4cf2ad77cecc3bf06fbb31af0",
+   "date": "2026-09-24T23:24:26+01:00",
+   "subject": "Make Riemann scoped build self-contained"
+  },
+  {
+   "commit": "af01d341e6d771ee3c122bd0e5b31adaa3d8325d",
+   "date": "2026-09-24T23:24:03+01:00",
+   "subject": "Vendor pinned Riemann module MCore/RH/NB/QuantitativeUpperBound.lean"
+  },
+  {
+   "commit": "1833570dd5e40bd68506be6c0eac130163064456",
+   "date": "2026-09-24T23:24:01+01:00",
+   "subject": "Vendor pinned Riemann module MCore/RH/NB/ZeroLimitFrontier.lean"
+  },
+  {
+   "commit": "e8f5e5861779cd4ad13cf8614089ffbdd1bc516f",
+   "date": "2026-09-24T23:23:59+01:00",
+   "subject": "Vendor pinned Riemann module MCore/RH/NB/Limit.lean"
+  },
+  {
+   "commit": "7237b8f4d73f3f1ea35d167d4cac340715dd547a",
+   "date": "2026-09-24T23:23:56+01:00",
+   "subject": "Vendor pinned Riemann module MCore/RH/NB/Antitone.lean"
+  },
+  {
+   "commit": "050f6423f10b0f5adf557351283a7ea953bf2551",
+   "date": "2026-09-24T23:23:54+01:00",
+   "subject": "Vendor pinned Riemann module MCore/RH/NB/Nesting.lean"
+  },
+  {
+   "commit": "1f1db480b541d3f2ecb52c2de6f12d34371b945f",
+   "date": "2026-09-24T23:23:52+01:00",
+   "subject": "Vendor pinned Riemann module MCore/RH/NB/Distance.lean"
+  },
+  {
+   "commit": "d6293f1b102c1d83f0b5fcf61d75cb92bc4877b4",
+   "date": "2026-09-24T23:23:50+01:00",
+   "subject": "Vendor pinned Riemann module MCore/RH/NB/Projection.lean"
+  },
+  {
+   "commit": "f54d498385936a44efc45a913a938cf629ff6104",
+   "date": "2026-09-24T23:23:48+01:00",
+   "subject": "Vendor pinned Riemann module MCore/RH/NB/FiniteSpan.lean"
+  },
+  {
+   "commit": "0a542894a69d0a262aed162b87d3efbcc7523f5c",
+   "date": "2026-09-24T23:23:46+01:00",
+   "subject": "Vendor pinned Riemann module MCore/RH/NB/HilbertData.lean"
+  },
+  {
+   "commit": "5420771f5422cf394a0b49e79631257721d555f6",
+   "date": "2026-09-24T23:22:17+01:00",
+   "subject": "Fix Riemann open-math scoped-final CI bootstrap"
+  },
+  {
+   "commit": "33b4f64f8a64553a8c478d6c32e7eecc5a996896",
+   "date": "2026-09-24T23:21:20+01:00",
+   "subject": "CI: certify Riemann open-math scoped final"
+  },
+  {
+   "commit": "c89d45ebc695a63e0d1c804ccd256c63f5266c04",
+   "date": "2026-09-24T23:21:06+01:00",
+   "subject": "Riemann open-math minimal: add certifica.sh"
+  },
+  {
+   "commit": "366c2e33246ca02ee64244f1aeb54954450ffa53",
+   "date": "2026-09-24T23:20:51+01:00",
+   "subject": "Riemann open-math minimal: add CERTIFICACAO_MINIMA.md"
+  },
+  {
+   "commit": "0c663742973ab7ed269dc426edbed6c64042b46b",
+   "date": "2026-09-24T23:20:49+01:00",
+   "subject": "Riemann open-math minimal: add Riemann/refuted-routes.txt"
+  },
+  {
+   "commit": "8a345c2389a0464f7d6196d116075bbe16df3d34",
+   "date": "2026-09-24T23:20:47+01:00",
+   "subject": "Riemann open-math minimal: add Riemann/docs/fail-closed/EXTERNO.txt"
+  },
+  {
+   "commit": "cc16f388aca702bae2a6e132ce7aab25ddf5b6a0",
+   "date": "2026-09-24T23:20:45+01:00",
+   "subject": "Riemann open-math minimal: add Riemann/frozen/LISTA_MINIMA.txt"
+  },
+  {
+   "commit": "eba39443681320bf2e459a7d571070e430e0f1ca",
+   "date": "2026-09-24T23:20:42+01:00",
+   "subject": "Riemann open-math minimal: add Riemann/refuted-routes/A14NonImplication.lean"
+  },
+  {
+   "commit": "52a32fd1d5feccbd8ebe83e1da9d41336d5c1d4a",
+   "date": "2026-09-24T23:20:40+01:00",
+   "subject": "Riemann open-math minimal: add Riemann/scoped/FinalClaim.lean"
+  },
+  {
+   "commit": "bdf46b5809e1be17e71ab81e3b601f98379f93a4",
+   "date": "2026-09-24T23:20:38+01:00",
+   "subject": "Riemann open-math minimal: add Riemann/scoped/FinalProof.lean"
+  },
+  {
+   "commit": "68a0db3d237cbd28c792e7337d088f826fcf46b6",
+   "date": "2026-09-24T23:20:35+01:00",
+   "subject": "Riemann open-math minimal: add Riemann/frozen/vanishing_upper_bound_green_5c66f8dc.lean"
+  },
+  {
+   "commit": "d05e24c1fabb3b0687eb5ef9d32802c01c029fc3",
+   "date": "2026-09-24T23:20:32+01:00",
+   "subject": "Riemann open-math minimal: add lean-toolchain"
+  },
+  {
+   "commit": "1b1d2e98e14cbc6732d440caae20ac9bdce92114",
+   "date": "2026-09-24T23:20:30+01:00",
+   "subject": "Riemann open-math minimal: add lakefile.lean"
+  },
+  {
+   "commit": "a432f19af9a776cce6798c2c142628f5bb4f7c12",
+   "date": "2026-09-24T23:16:51+01:00",
+   "subject": "Document Riemann scoped final claim"
+  },
+  {
+   "commit": "d3e4645d806573b4f22e9b471ab955b064e65c6f",
+   "date": "2026-09-24T23:16:49+01:00",
+   "subject": "Add Riemann fail-closed external witness"
+  },
+  {
+   "commit": "9b861efd3b6e34ae3ae9d3a7a800300beecb8fe0",
+   "date": "2026-09-24T23:16:47+01:00",
+   "subject": "Register A14 countermodel-closed Riemann route"
+  },
+  {
+   "commit": "11861b742a344b6536487ec816258a78a378c177",
+   "date": "2026-09-24T23:16:45+01:00",
+   "subject": "Add fail-closed Riemann scoped FinalClaim"
+  },
+  {
+   "commit": "03500d9868990390e8e54755e8e15060ca239b14",
+   "date": "2026-09-24T23:16:14+01:00",
+   "subject": "Register scoped Riemann frozen certificate r2-dual-frontier"
+  },
+  {
+   "commit": "bbd792762fcd1a9f252f257a2d77abc24812d61f",
+   "date": "2026-09-24T23:16:13+01:00",
+   "subject": "Register scoped Riemann frozen certificate r2-backward-dense-green-43d7c060"
+  },
+  {
+   "commit": "5b0fa67e30286a2aa2bdc8a7244da69c4c54bb3e",
+   "date": "2026-09-24T23:16:10+01:00",
+   "subject": "Register scoped Riemann frozen certificate vanishing-upper-bound-green-5c66f8dc"
+  },
+  {
+   "commit": "4d298d29c5ef674536607d9fd5aefbdb4626ad42",
+   "date": "2026-09-24T23:16:08+01:00",
+   "subject": "Register scoped Riemann frozen certificate nb-zero-limit-density-equivalence-green-d6a291b4"
+  },
+  {
+   "commit": "ac613e91943612c6e9c01c4579e2dd7569990e8c",
+   "date": "2026-09-24T23:15:55+01:00",
+   "subject": "Register scoped Riemann frozen certificate nb-total-green-38aad03"
+  },
+  {
+   "commit": "94a1d457171b31bd40fe55df8078436dbb6d1f61",
+   "date": "2026-09-24T23:15:52+01:00",
+   "subject": "Register scoped Riemann frozen certificate nb15-zero-limit-frontier-green-e7e36d6"
+  },
+  {
+   "commit": "0d3722b4ce835e6bd5ec70d03f542568d3037f5c",
+   "date": "2026-09-24T23:15:50+01:00",
+   "subject": "Register scoped Riemann frozen certificate nb14-limit-green-9d6c36d"
+  },
+  {
+   "commit": "00c3e85ed8b13fde12499909d259799332b6086c",
+   "date": "2026-09-24T23:15:48+01:00",
+   "subject": "Register scoped Riemann frozen certificate nb13-antitone-green-b2ef9ba"
+  },
+  {
+   "commit": "5a1d42eb8f6ad1d993d382b7432e659fd99256b0",
+   "date": "2026-09-24T23:15:46+01:00",
+   "subject": "Register scoped Riemann frozen certificate nb12-nesting-green-7c2d8d3"
+  },
+  {
+   "commit": "519cae6a75aabd72bee63ea03c2106715b813033",
+   "date": "2026-09-24T23:15:40+01:00",
+   "subject": "Register scoped Riemann frozen certificate nb10-distance-green-5ed1df6"
+  },
+  {
+   "commit": "bf6b4aad5224b6af1afb25fa2c1bb344c16b8b0a",
+   "date": "2026-09-24T23:15:38+01:00",
+   "subject": "Register scoped Riemann frozen certificate nb9-projection-green-49c511f"
+  },
+  {
+   "commit": "12f337a304abbb03771cf985dadd6e251e4a579b",
+   "date": "2026-09-24T23:15:36+01:00",
+   "subject": "Register scoped Riemann frozen certificate nb8-finite-span-green-40b45b6"
+  },
+  {
+   "commit": "7dd9ca87895cffd429c07438a9c97bd6c51085ca",
+   "date": "2026-09-24T23:15:34+01:00",
+   "subject": "Register scoped Riemann frozen certificate r0-rho-identification-green-66a9b18"
+  },
+  {
+   "commit": "e7fceb4dba0b0787f633c9b8d68a9695e74efc1c",
+   "date": "2026-09-24T23:15:30+01:00",
+   "subject": "Register scoped Riemann frozen certificate r0-4-chi-memlp-green-c0fe29a"
+  },
+  {
+   "commit": "926e945ba6eb3dcd251dfd4986d9f322e6c16d57",
+   "date": "2026-09-24T23:15:28+01:00",
+   "subject": "Register scoped Riemann frozen certificate r0-3-chi-l2-green-67c9055"
+  },
+  {
+   "commit": "0700b4dc168fc60d443e502eb0c53108d583bcc9",
+   "date": "2026-09-24T23:15:25+01:00",
+   "subject": "Register scoped Riemann frozen certificate r0-2-concrete-domain-green-be25ead"
+  },
+  {
+   "commit": "dcf994b08525a8e8da14565da3230338555ade33",
+   "date": "2026-09-24T23:15:24+01:00",
+   "subject": "Register scoped Riemann frozen certificate r0-1-ambient-carrier-green-6905ef3"
+  },
+  {
+   "commit": "720b75d9effeab908275dc15efa2c52be7691b07",
+   "date": "2026-09-24T23:15:22+01:00",
+   "subject": "Register scoped Riemann frozen certificate r0-0-normalization-green-93982ae"
+  },
+  {
+   "commit": "dfcbe17d4b119cff3b331e0d655596c528ec1b6b",
+   "date": "2026-09-24T23:12:10+01:00",
+   "subject": "Zero Riemann axiom footprint"
+  },
+  {
+   "commit": "515184441e7fd79b0430c88eafac7f4a12d73b31",
+   "date": "2026-09-24T23:12:08+01:00",
+   "subject": "Zero Riemann gate ledger"
+  },
+  {
+   "commit": "471cb4a4dd29bbbb7b9d7449a61186477538e182",
+   "date": "2026-09-24T23:12:06+01:00",
+   "subject": "Zero Riemann final-proof provenance"
+  },
+  {
+   "commit": "780565f5b886044cc319fcbac7bb0a7294fabd49",
+   "date": "2026-09-24T23:12:04+01:00",
+   "subject": "Zero Riemann final-proof status"
+  },
+  {
+   "commit": "037bfdbdeae4dc9fd97a087e72be55ccc4d9edb1",
+   "date": "2026-09-24T23:12:02+01:00",
+   "subject": "Zero Riemann final-proof manifest"
+  },
+  {
+   "commit": "539d9e3c71886218868e537145bc41939209e8e9",
+   "date": "2026-09-24T23:12:01+01:00",
+   "subject": "Zero all Riemann final-proof scope values"
+  },
+  {
+   "commit": "c04372d069d09efe2bffb6521aa6fc3768d8cdf2",
+   "date": "2026-09-24T23:11:39+01:00",
+   "subject": "Add empty Riemann SHA256SUMS"
+  },
+  {
+   "commit": "301ef4e85ef252ddc07482d72839353db8d0b179",
+   "date": "2026-09-24T23:11:37+01:00",
+   "subject": "Add empty Riemann axiom footprint"
+  },
+  {
+   "commit": "e13c8560d4b08e61f0e89445e2a8b9a2c2c0b630",
+   "date": "2026-09-24T23:11:35+01:00",
+   "subject": "Add empty Riemann gate ledger"
+  },
+  {
+   "commit": "d1088ffe2ec29eca7f1eaef124de480e4b2b7a7d",
+   "date": "2026-09-24T23:11:33+01:00",
+   "subject": "Add empty Riemann final-proof provenance"
+  },
+  {
+   "commit": "d88548d315495fd5dea9b9cef68c7d31bca57925",
+   "date": "2026-09-24T23:11:31+01:00",
+   "subject": "Add empty Riemann final-proof status"
+  },
+  {
+   "commit": "bb4718a85986db6aa507d3ebd3f3fea531b19b20",
+   "date": "2026-09-24T23:11:29+01:00",
+   "subject": "Add empty Riemann final-proof manifest"
+  },
+  {
+   "commit": "4cacaa6c246f906eea0f3c04359005163b06b21f",
+   "date": "2026-09-24T23:11:19+01:00",
+   "subject": "Initialize empty Riemann final-proof scope"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "Riemann.scoped.FINAL_CLAIM",
+   "file": "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/Riemann/scoped/FinalClaim.lean",
+   "line": 6,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (D : MCore.RH.NB.NBHilbertData) (rho : D.GeneratorFamily), D.VanishingUpperBound rho → D.DNLimit rho = 0"
+  }
+ ],
+ "closed": 1,
+ "files_sha256": {
+  "imports/final-proof/RIEMANN/ad3011f1/lean/MCore/RH/NB/ZeroLimitFrontier.lean": "c1c88007b2989252e311dcf2a90590346f47dcdf2b09c03ee89a31ba874f91da",
+  "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/Antitone.lean": "53ad638a3f7fa211c552a1dde876fa5275ebdfde5ddb2a8512c506a0279db5e8",
+  "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/Distance.lean": "544b4690ae04a92636cf96abd1bc81520600292c656bb45e605c9c25bf166f7f",
+  "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/FiniteSpan.lean": "1eb366d74e7f2232ec962ca97d02d69c6eb75350ffdb576582e0c8da9f869bca",
+  "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/HilbertData.lean": "b124ed2ee7207e63e9b5312656f56676f0998b4fe3029ce9274e88cc169922ac",
+  "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/Limit.lean": "bd9a0a53602eba4d1f1645bb1551062fac4dad044cb3b87c72ef8ac608717c86",
+  "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/Nesting.lean": "fecf092165ef7cea17175fa4e793e7a055d63c4e2a7e34fcf3e5b0e8f43f24b4",
+  "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/Projection.lean": "f03d0a2978431f1758f9323f6a00df2a931773ce8048849b11990444b4728f3f",
+  "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/MCore/RH/NB/QuantitativeUpperBound.lean": "8c47cb29ff0d4c0e70c257f795fb256dd7c60e32825b00d5d6d476d948817aa5",
+  "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/Riemann/frozen/vanishing_upper_bound_green_5c66f8dc.lean": "9b06434ab8ac87f243115ccf701b2feb70ade53305c338eac733a055983ab58f",
+  "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/Riemann/scoped/FinalClaim.lean": "7557cd2dec8516db807dfd3b2bf25b16e8e6726fba3ad10a7d22fb06ce2ea9b6",
+  "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/Riemann/scoped/FinalProof.lean": "53432096155b20202c7ed27a1c41b67cdf998b54bd53a5a5bafee31bafdaed38",
+  "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/lakefile.lean": "f2bf43785be91762d87439f663c4447a8eb1a8808bb4a21ab23959b77aef3477",
+  "imports/final-proof/RIEMANN/open-math-scoped-final/open-math/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+ },
+ "published_at": "2026-10-29T01:37:32Z",
+ "certificate_sha256": "2c17926582598462df5d62b5fd6553cc8e718536ac71ec28cb261eda7785aed8"
+}

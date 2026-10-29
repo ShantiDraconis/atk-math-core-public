@@ -1,0 +1,116 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "attack/cross-chain-certified-reuse-20260921",
+ "branch_state": "parada",
+ "head_commit": "73dd22373d50c6cea3b50f062957acf423d05123",
+ "head_commit_date": "2026-09-21T11:59:49+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "73dd22373d50c6cea3b50f062957acf423d05123",
+   "date": "2026-09-21T11:59:49+01:00",
+   "subject": "atk: pin strongest frozen cross-chain prefixes"
+  },
+  {
+   "commit": "27dde30c27fe54a2f9ae8b27221864b19014363a",
+   "date": "2026-09-21T11:52:44+01:00",
+   "subject": "ci: isolate cross-chain firewall certification from unrelated M-Core modules"
+  },
+  {
+   "commit": "11c929faf6f1c690b1d1a9500b0da939aa3f8a27",
+   "date": "2026-09-21T11:49:22+01:00",
+   "subject": "ci: resolve M-Core dependencies before cross-chain certification"
+  },
+  {
+   "commit": "853dacf2eae864a3b42400052cf634f080166247",
+   "date": "2026-09-21T11:48:25+01:00",
+   "subject": "ci: certify reusable cross-chain firewalls"
+  },
+  {
+   "commit": "006f86d0e6490549344d3714d56ab06b8f8e827c",
+   "date": "2026-09-21T11:48:09+01:00",
+   "subject": "formal: include certified cross-chain firewalls in M-Core"
+  },
+  {
+   "commit": "77bc4f40fa144ea495e7d9f86852de010c28a7c8",
+   "date": "2026-09-21T11:48:07+01:00",
+   "subject": "formal: rederive common certified firewalls in M-Core"
+  },
+  {
+   "commit": "fb677119e4c1a847b4017eec1f23e7652332753f",
+   "date": "2026-09-21T11:48:05+01:00",
+   "subject": "atk: register cross-chain frozen certificates for local reuse"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.CertifiedFirewalls.counterexample_blocks_universal",
+   "file": "MCore/CertifiedFirewalls.lean",
+   "line": 4,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type} {P : α → Prop}, (∃ x, ¬P x) → ¬∀ (x : α), P x"
+  },
+  {
+   "name": "MCore.CertifiedFirewalls.exists_and_counterexample_blocks_forall",
+   "file": "MCore/CertifiedFirewalls.lean",
+   "line": 13,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type} {P : α → Prop}, (∃ x, P x) → (∃ x, ¬P x) → (∃ x, P x) ∧ ¬∀ (x : α), P x"
+  },
+  {
+   "name": "MCore.CertifiedFirewalls.finite_prefix_does_not_imply_global_bool",
+   "file": "MCore/CertifiedFirewalls.lean",
+   "line": 32,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (N : ℕ), ∃ s, (∀ n ≤ N, s n = false) ∧ ∃ n, s n = true"
+  },
+  {
+   "name": "MCore.CertifiedFirewalls.pointwise_does_not_imply_uniform_nat",
+   "file": "MCore/CertifiedFirewalls.lean",
+   "line": 21,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(∀ (n : ℕ), ∃ k, n < k) ∧ ¬∃ k, ∀ (n : ℕ), n < k"
+  },
+  {
+   "name": "MCore.CertifiedFirewalls.verifiedRelation_holds",
+   "file": "MCore/CertifiedFirewalls.lean",
+   "line": 61,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α β : Type} {R : α → β → Prop} (v : MCore.CertifiedFirewalls.VerifiedRelation α β R), R v.input v.output"
+  },
+  {
+   "name": "MCore.CertifiedFirewalls.verifiedWitness_nonempty",
+   "file": "MCore/CertifiedFirewalls.lean",
+   "line": 49,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {α : Type} {P : α → Prop}, MCore.CertifiedFirewalls.VerifiedWitness α P → ∃ x, P x"
+  }
+ ],
+ "closed": 6,
+ "files_sha256": {
+  "MCore/CertifiedFirewalls.lean": "0e64b6555bc95829f86f87ea60e889494c604e90d3725f60c8e282df47e7d62d",
+  "MCore/Core.lean": "ae45ba15213312d6f28ace5021c9e7f6bf44d6c08a3f9b07c4d457d333d16e49",
+  "lakefile.lean": "f53cac7f442d9cb312870f171649382381e313931ad59cfc8d0799f52df430ac",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+ },
+ "published_at": "2026-10-29T01:37:25Z",
+ "certificate_sha256": "e6a5d0a13628eb3e787821c1583e8640dca198c1e61d72d304221b4ef9673de0"
+}

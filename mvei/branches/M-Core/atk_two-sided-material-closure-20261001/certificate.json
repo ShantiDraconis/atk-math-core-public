@@ -163,7 +163,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-28T19:11:15+00:00",
+  "generated_at": "2026-10-28T23:56:08+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -335,6 +335,6 @@
   "lean/MCore/ATK/MaterialDecisionClosure.lean": "385d87358b1123d1a1c30ad53db2b5ff8c8353b5cb292b38a58295668e9098a0",
   "lean/MCore/ATK/TwoSidedMaterialClosure.lean": "e891df3899cd8a4e428988f842b3e63205dbbc6e98c80a2ad17179a937f4cac4"
  },
- "published_at": "2026-10-28T19:19:21Z",
- "certificate_sha256": "e26e63694fb85bc9991170a7798ede000de7f1af51a01ddf6cfc7209e5dff058"
+ "published_at": "2026-10-29T01:37:24Z",
+ "certificate_sha256": "a2fb4d75333af05d5cdb758d40a84d88decb1077fffdb782f8a19345a7a07fef"
 }

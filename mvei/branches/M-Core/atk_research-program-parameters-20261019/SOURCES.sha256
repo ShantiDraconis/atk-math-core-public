@@ -1,0 +1,9 @@
+39138cc722f5edef5db0cdaf0b99a75f571b6d32cbc7eb1e8ac228d864b89f65  branches/M-Core/atk_research-program-parameters-20261019/atk-kernel/ATK/Conditional/BSD.lean
+92cea3d7398352df31fed6476bc8e0c894bfb00243ccf3095c5638d99a7b88c7  branches/M-Core/atk_research-program-parameters-20261019/atk-kernel/ATK/Conditional/BSDResearchProgram.lean
+332fc2e50242c07cfee0b40cf545bbbd2dac0ae4d860c4e21ac2f639ca04a531  branches/M-Core/atk_research-program-parameters-20261019/atk-kernel/ATK/Conditional/NavierStokes.lean
+ed8cd9053d7beec9f99bf4035338ff21449d161e640506f1b8d4e7c6e65c2d54  branches/M-Core/atk_research-program-parameters-20261019/atk-kernel/ATK/Conditional/NavierStokesResearchProgram.lean
+2d84f374b93e2bd4557098f86e205ba6a5c4141da7dc8453589a31e1b4aaf5a5  branches/M-Core/atk_research-program-parameters-20261019/atk-kernel/ATK/Conditional/YangMills.lean
+32675cc3e91341c2aa1592fab9dcae5b8a5bb2f62697150b908f3c01a0066bc2  branches/M-Core/atk_research-program-parameters-20261019/atk-kernel/ATK/Conditional/YangMillsResearchProgram.lean
+e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8  branches/M-Core/atk_research-program-parameters-20261019/atk-kernel/lake-manifest.json
+139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d  branches/M-Core/atk_research-program-parameters-20261019/atk-kernel/lakefile.toml
+d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b  branches/M-Core/atk_research-program-parameters-20261019/atk-kernel/lean-toolchain

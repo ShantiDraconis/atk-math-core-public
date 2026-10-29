@@ -1,0 +1,478 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/material-only-final-root-20260930",
+ "branch_state": "parada",
+ "head_commit": "83228ae7926daf8b5ccee55297f2cabc24495608",
+ "head_commit_date": "2026-10-01T01:29:39+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "83228ae7926daf8b5ccee55297f2cabc24495608",
+   "date": "2026-10-01T01:29:39+02:00",
+   "subject": "audit: align P01 to raw decode-none totalization mincut"
+  },
+  {
+   "commit": "b46dbc6b9373b318eb50c08c9bb775d0ec94762a",
+   "date": "2026-10-01T01:28:43+02:00",
+   "subject": "atk: tighten P01 mechanical min-cut to raw decode-none totalization"
+  },
+  {
+   "commit": "984b5b871b95919439fe8e977e66c7d6fafe4292",
+   "date": "2026-10-01T01:20:12+02:00",
+   "subject": "atk: add producer projection firewall and nucleus bridge"
+  },
+  {
+   "commit": "c2f9ed784ba7a9c4d9a6fd9673a2ccb866695daa",
+   "date": "2026-10-01T01:17:47+02:00",
+   "subject": "fix: parameterize universal mechanical and release gates"
+  },
+  {
+   "commit": "824e346b67a4162c5a0b4dd6199a37aedb38eb09",
+   "date": "2026-10-01T01:08:13+02:00",
+   "subject": "cert: declare universal composition law in manifest"
+  },
+  {
+   "commit": "039684c96ac7b99443d4b5d79e0181ba72528107",
+   "date": "2026-10-01T01:08:11+02:00",
+   "subject": "cert: include universal closure record in preparatory payload"
+  },
+  {
+   "commit": "c811acff2cf696efce6217be5f0ef875fbf60f23",
+   "date": "2026-10-01T01:07:58+02:00",
+   "subject": "audit: canonicalize branch alignment around material min-cuts"
+  },
+  {
+   "commit": "94ccf5453bc93a363caf9d80c160265e242af869",
+   "date": "2026-10-01T01:07:55+02:00",
+   "subject": "cert: register universal seven-inhabitant closure law"
+  },
+  {
+   "commit": "cd022339ab610e7fec15b9c3ff3a06b39bf73dd5",
+   "date": "2026-10-01T01:06:58+02:00",
+   "subject": "ci: kernel-check universal closure law"
+  },
+  {
+   "commit": "62b7afe9c73bd7acb70f418fc2adef3892ebbb37",
+   "date": "2026-10-01T01:06:55+02:00",
+   "subject": "atk: link universal closure law into master"
+  },
+  {
+   "commit": "92d4c35e7787c9046ed51ed69d602166d09e26d4",
+   "date": "2026-10-01T01:06:35+02:00",
+   "subject": "atk: formalize fail-closed universal seven-inhabitant closure"
+  },
+  {
+   "commit": "7db2f0d7d439e052d77252b5aff975eed7e7537f",
+   "date": "2026-10-01T00:30:01+02:00",
+   "subject": "cert: bind kernel evidence to material-only reductions"
+  },
+  {
+   "commit": "0e9897ff0b3987de98bea93f36e740b7b5e6224f",
+   "date": "2026-10-01T00:29:16+02:00",
+   "subject": "audit: align final-proof reuse manifest to material-only targets"
+  },
+  {
+   "commit": "94d37866e6c540c94f97cae3211596736346cafc",
+   "date": "2026-10-01T00:29:13+02:00",
+   "subject": "audit: separate material and mechanical blockers globally"
+  },
+  {
+   "commit": "c21a2174524cae7f50272592b514f79e4e46736b",
+   "date": "2026-10-01T00:29:08+02:00",
+   "subject": "audit: normalize global terminal producers to material min-cuts"
+  },
+  {
+   "commit": "3404baed3c3054f62cdd855add2ef469c17d8b10",
+   "date": "2026-10-01T00:28:29+02:00",
+   "subject": "cert: bind P01 min-cut kernel evidence"
+  },
+  {
+   "commit": "33205c6281c83397c7d0a39dc9b1e62350bd8266",
+   "date": "2026-10-01T00:28:27+02:00",
+   "subject": "cert: pin GREEN P01 structural min-cut"
+  },
+  {
+   "commit": "07a8488c1d4bf63554f8d3b20c3996c4f03edf76",
+   "date": "2026-10-01T00:28:22+02:00",
+   "subject": "cert(p01): pin GREEN verifier-phase min-cut reduction"
+  },
+  {
+   "commit": "cac3892bf274c84d86d3a6373f1b5b0b51b2b143",
+   "date": "2026-10-01T00:26:13+02:00",
+   "subject": "ci: prove final-root gate remains fail-closed"
+  },
+  {
+   "commit": "31473be05d79636e0b9bf2ff09c000a600636511",
+   "date": "2026-10-01T00:26:10+02:00",
+   "subject": "cert: hash finalizer in preparatory payload"
+  },
+  {
+   "commit": "8222f5e75a9f93848108641e1e8aeb619c7880fb",
+   "date": "2026-10-01T00:26:08+02:00",
+   "subject": "cert: bind fail-closed finalizer into package"
+  },
+  {
+   "commit": "d3d5953d9c5fc15fa8b9a1fae8d07d631941ccab",
+   "date": "2026-10-01T00:25:52+02:00",
+   "subject": "cert: align status to single mechanical verifier min-cut"
+  },
+  {
+   "commit": "56b1213a709c9eca99b660a8ab9f517cafeff7c4",
+   "date": "2026-10-01T00:25:49+02:00",
+   "subject": "cert: add fail-closed FINAL_ROOT generator"
+  },
+  {
+   "commit": "4f5c95c9c6e8362dc53fce9afe80f8dd9961123d",
+   "date": "2026-10-01T00:25:46+02:00",
+   "subject": "docs: remove obsolete wiring gaps from final external package"
+  },
+  {
+   "commit": "d77ba64f3d8790640f282ab5712cd2021f99b1db",
+   "date": "2026-10-01T00:24:19+02:00",
+   "subject": "cert: include final-root closure plan in frozen payload"
+  },
+  {
+   "commit": "377f31072128497c780eeebb9acacf914b61ce5a",
+   "date": "2026-10-01T00:24:15+02:00",
+   "subject": "cert: bind final-root closure plan into manifest"
+  },
+  {
+   "commit": "8c9c8864f9fb21fa72862ff530795345ed7e5898",
+   "date": "2026-10-01T00:24:01+02:00",
+   "subject": "cert: add exact material-to-final-root closure plan"
+  },
+  {
+   "commit": "3bc33be7b6f02bef408c714a7cfb6cdfa948f595",
+   "date": "2026-10-01T00:19:52+02:00",
+   "subject": "cert: keep only kernel-clean P01 verifier min-cut"
+  },
+  {
+   "commit": "699703808513cfca473a5e9a4ba1c345827994c0",
+   "date": "2026-10-01T00:19:49+02:00",
+   "subject": "cert: retract unverified P01 canonical closure"
+  },
+  {
+   "commit": "c737598a5e5dae3b2bbd01a2e92e6cbc85b91b0b",
+   "date": "2026-10-01T00:19:47+02:00",
+   "subject": "status: record P01 clean-build integrity RED"
+  },
+  {
+   "commit": "01f41553ff24f2650a2a451fb37b6d8de602be2f",
+   "date": "2026-10-01T00:19:43+02:00",
+   "subject": "cert: fail-close P01 candidate base integrity"
+  },
+  {
+   "commit": "15a0a4750a5112af8c67395979cb338c570c223b",
+   "date": "2026-10-01T00:19:38+02:00",
+   "subject": "fix: retract unverified P01 exact-verifier credit"
+  },
+  {
+   "commit": "22ef375debb53668867d279a33b735a8575ace79",
+   "date": "2026-10-01T00:16:08+02:00",
+   "subject": "status: make material-only boundary canonical source of truth"
+  },
+  {
+   "commit": "caa22ff3fdf83757f5d6bdb583576ce2ecfbaeef",
+   "date": "2026-10-01T00:12:14+02:00",
+   "subject": "atk: align exact gap ledger to material-only min-cuts"
+  },
+  {
+   "commit": "0e4a9daf61f7046531fa448fe1cdb168436b6e8d",
+   "date": "2026-10-01T00:09:15+02:00",
+   "subject": "cert: reduce P01 gate to verifier-phase min-cut"
+  },
+  {
+   "commit": "895d34de340d4cc416cabd91a7b7170cdb678ca1",
+   "date": "2026-10-01T00:09:13+02:00",
+   "subject": "cert: validate single P01 verifier-phase blocker"
+  },
+  {
+   "commit": "7fb7a058246b6acf15f519faa8c1fcde4e7b3b04",
+   "date": "2026-10-01T00:08:54+02:00",
+   "subject": "cert: align manifest with P01 verifier-phase min-cut"
+  },
+  {
+   "commit": "6e3b43c5c7bc50965868fb06da654f245c9637fb",
+   "date": "2026-10-01T00:08:52+02:00",
+   "subject": "cert: expose single P01 verifier-phase blocker"
+  },
+  {
+   "commit": "6e826d5482f0c077c3bf657d18b0933a2a38c0ac",
+   "date": "2026-10-01T00:08:50+02:00",
+   "subject": "cert: compress P01 mechanical boundary to verifier phase"
+  },
+  {
+   "commit": "9421d47d00d520430945b6221530e83c01ae0cc2",
+   "date": "2026-10-01T00:08:47+02:00",
+   "subject": "atk: update master to one P01 mechanical min-cut"
+  },
+  {
+   "commit": "f59163274d4249d30f1d47a9b4bf4f3e6d3eb017",
+   "date": "2026-10-01T00:08:45+02:00",
+   "subject": "atk: update final-root boundary to one P01 mechanical min-cut"
+  },
+  {
+   "commit": "4cb7d2c966c3602ef0a578fe9f3d614d6c5815e4",
+   "date": "2026-10-01T00:08:15+02:00",
+   "subject": "atk: compress P01 wiring to one verifier-phase min-cut"
+  },
+  {
+   "commit": "7520acb20a117087636cdf8da23d8f0f54a9d269",
+   "date": "2026-10-01T00:03:48+02:00",
+   "subject": "atk: bind material normal forms into final root boundary"
+  },
+  {
+   "commit": "751441405c56c150cbb5ce48456d52c93670e0a0",
+   "date": "2026-10-01T00:03:39+02:00",
+   "subject": "atk: formalize seven material producer normal forms"
+  },
+  {
+   "commit": "372ffeeb69a3b9042104c8641e9e7970c2c363b2",
+   "date": "2026-10-01T00:02:04+02:00",
+   "subject": "ci: validate lean boundary and preparatory package"
+  },
+  {
+   "commit": "12a0d8a05d4fe795e5267d87808462bc658e4e65",
+   "date": "2026-10-01T00:02:02+02:00",
+   "subject": "fix: keep material readiness proof tactic-minimal"
+  },
+  {
+   "commit": "28901f0c0b198558ade88d079b5bab363d1e39af",
+   "date": "2026-10-01T00:01:42+02:00",
+   "subject": "cert: validate material mechanical and release blockers separately"
+  },
+  {
+   "commit": "50eedc7369063a85ea07e7446e432e3a589bcad2",
+   "date": "2026-10-01T00:01:40+02:00",
+   "subject": "cert: remove wiring from open-math ledger"
+  },
+  {
+   "commit": "763a042c977d0900dbb59e7f79af1d9349baeb15",
+   "date": "2026-10-01T00:01:36+02:00",
+   "subject": "cert: align manifest to material-only taxonomy"
+  },
+  {
+   "commit": "f3195058f06c1761e66c912b91ced6ee548aac2c",
+   "date": "2026-10-01T00:00:44+02:00",
+   "subject": "cert: classify P01 as mechanical and G21 as sole open math"
+  },
+  {
+   "commit": "b4e1c10109b6756d4b348bd506ddda622c0c2538",
+   "date": "2026-10-01T00:00:28+02:00",
+   "subject": "cert: add material-only final external boundary"
+  },
+  {
+   "commit": "5c4ec0a1c502dd672da191bab2b38c2fc5db49e0",
+   "date": "2026-10-01T00:00:09+02:00",
+   "subject": "atk: wire material-only boundary into final-fail master"
+  },
+  {
+   "commit": "c92b4861ac722789ddfc069e6056379dba9c986a",
+   "date": "2026-09-30T23:59:35+02:00",
+   "subject": "atk: formalize material-only final root boundary"
+  },
+  {
+   "commit": "7c37b308a9fda9615469002cab0ba83255b4d6f8",
+   "date": "2026-09-30T23:59:33+02:00",
+   "subject": "atk: separate mechanical closure from open math"
+  },
+  {
+   "commit": "7df0d4a15f2fd3919c352053ad1e2b538e748221",
+   "date": "2026-09-30T23:58:56+02:00",
+   "subject": "atk: isolate material-only terminal producers"
+  },
+  {
+   "commit": "8b120713a158a6fe7a49579574b9532d094c2923",
+   "date": "2026-09-30T23:58:42+02:00",
+   "subject": "ci: add material-only final root gate"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.FinalFail.MaterialOnly.final_root_not_ready",
+   "file": "lean/MCore/FinalFail/MaterialOnlyFinalRoot.lean",
+   "line": 52,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ finalRootReady"
+  },
+  {
+   "name": "MCore.FinalFail.MaterialOnly.material_math_not_ready",
+   "file": "lean/MCore/FinalFail/MaterialOnlyFinalRoot.lean",
+   "line": 47,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ materialMathReady"
+  },
+  {
+   "name": "MCore.FinalFail.MaterialOnly.no_wiring_gap_in_open_math",
+   "file": "lean/MCore/FinalFail/MaterialOnlyFinalRoot.lean",
+   "line": 57,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": openFinalProblems = 7 ∧ openDirectCount = 7 ∧ materialProducerPlanCount = 7 ∧ pendingMechanicalCount = 1"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.closedMechanicalCount_eq_zero",
+   "file": "lean/MCore/FinalFail/MechanicalClosure.lean",
+   "line": 58,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": closedMechanicalCount = 0"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.materialProducerPlanCount_eq_seven",
+   "file": "lean/MCore/FinalFail/MaterialProducerNormalForms.lean",
+   "line": 75,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": materialProducerPlanCount = 7"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.material_count_ignores_mechanical",
+   "file": "lean/MCore/FinalFail/MechanicalClosure.lean",
+   "line": 62,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": openDirectCount = 7"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.mechanicalClosureCount_eq_one",
+   "file": "lean/MCore/FinalFail/MechanicalClosure.lean",
+   "line": 50,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": mechanicalClosureCount = 1"
+  },
+  {
+   "name": "MCore.FinalFail.Semantic.pendingMechanicalCount_eq_one",
+   "file": "lean/MCore/FinalFail/MechanicalClosure.lean",
+   "line": 54,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": pendingMechanicalCount = 1"
+  },
+  {
+   "name": "MCore.FinalFail.Universal.candidate_closes_core",
+   "file": "lean/MCore/FinalFail/UniversalClosure.lean",
+   "line": 115,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{Core : Prop} (A : ProducerAdapter Core) (h : A.Candidate) : Core"
+  },
+  {
+   "name": "MCore.FinalFail.Universal.exact_candidate_iff_core",
+   "file": "lean/MCore/FinalFail/UniversalClosure.lean",
+   "line": 122,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{Core : Prop} (A : ExactProducerAdapter Core) : A.Candidate ↔ Core"
+  },
+  {
+   "name": "MCore.FinalFail.Universal.exact_universal_closure_iff",
+   "file": "lean/MCore/FinalFail/UniversalClosure.lean",
+   "line": 166,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(K : ExactUniversalKernel) : SevenEndpoints K.Endpoint ↔ SevenInhabitants K.Core"
+  },
+  {
+   "name": "MCore.FinalFail.Universal.sevenEndpoints_iff_forall",
+   "file": "lean/MCore/FinalFail/UniversalClosure.lean",
+   "line": 94,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(Endpoint : ProblemId → Prop) : SevenEndpoints Endpoint ↔ ∀ p, Endpoint p"
+  },
+  {
+   "name": "MCore.FinalFail.Universal.sevenInhabitants_iff_forall",
+   "file": "lean/MCore/FinalFail/UniversalClosure.lean",
+   "line": 87,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(Core : ProblemId → Prop) : SevenInhabitants Core ↔ ∀ p, Core p"
+  },
+  {
+   "name": "MCore.FinalFail.Universal.universal_closure",
+   "file": "lean/MCore/FinalFail/UniversalClosure.lean",
+   "line": 138,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(K : UniversalKernel) (h : SevenInhabitants K.Core) : SevenEndpoints K.Endpoint"
+  },
+  {
+   "name": "MCore.FinalFail.Universal.universal_final_root",
+   "file": "lean/MCore/FinalFail/UniversalClosure.lean",
+   "line": 192,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(K : UniversalKernel) {Mechanical Release : Prop} (h : FinalRootInputs K Mechanical Release) : FinalRootResult K Mechanical Release"
+  },
+  {
+   "name": "MCore.FinalFail.Universal.universal_final_root_has_all_endpoints",
+   "file": "lean/MCore/FinalFail/UniversalClosure.lean",
+   "line": 204,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(K : UniversalKernel) {Mechanical Release : Prop} (h : FinalRootResult K Mechanical Release) : ∀ p, K.Endpoint p"
+  },
+  {
+   "name": "MCore.FinalFail.Universal.universal_nucleus_closure",
+   "file": "lean/MCore/FinalFail/UniversalClosure.lean",
+   "line": 158,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(F : UniversalNucleusFamily) (h : SevenInhabitants F.toKernel.Core) : SevenEndpoints F.toKernel.Endpoint"
+  },
+  {
+   "name": "MCore.FinalFail.master_material_only_boundary",
+   "file": "lean/MCore/FinalFail/Master.lean",
+   "line": 23,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ": Semantic.openDirectCount = 7 ∧ Semantic.pendingMechanicalCount = 1"
+  },
+  {
+   "name": "MCore.FinalFail.master_universal_requires_seven",
+   "file": "lean/MCore/FinalFail/Master.lean",
+   "line": 29,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(K : Universal.UniversalKernel) (h : Universal.SevenInhabitants K.Core) : Universal.SevenEndpoints K.Endpoint"
+  }
+ ],
+ "closed": 5,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/FinalFail/AcceptedSemanticActivation.lean": "6c8d3bff0bad718c736ecfbde2bc92937dfddc95de68ce0c17d5b539420de653",
+  "lean/MCore/FinalFail/BSDConcreteDomain.lean": "b7b1e5764451649e092acaa42c2a992386940c7a18eb80cc7e94a7d545f5345c",
+  "lean/MCore/FinalFail/BoundaryAtoms.lean": "54deb42c3e0d344359ecab23e499cb0e60114146b007003b540c2d564a36024f",
+  "lean/MCore/FinalFail/DirectProducerCuts.lean": "8d370ff6426a4c595ca1730a90c8864b7fbcf2c154e4ef9c1c5d2449e49a03ec",
+  "lean/MCore/FinalFail/MaterialProducerNormalForms.lean": "2ddeac0c3dd2a10c36e794bd94a8c7c28ccdc6845d7af388188715eace3e4025",
+  "lean/MCore/FinalFail/MechanicalClosure.lean": "46a5c72a6392e292406ad0b3a687651f1f5af868811961c3472b94ae083ee109",
+  "lean/MCore/FinalFail/Semantic/BSD.lean": "be66d8c211db7a78d648b1d4be0a27f54fdd969e305640e8a401abb80c507668",
+  "lean/MCore/FinalFail/Semantic/Beal.lean": "7461d91a196c5d7a61ba7f3fabce0947d529902426ec1e96cab2994b97f787a0",
+  "lean/MCore/FinalFail/Semantic/Hodge.lean": "c82ec2d0082ec5c801c4f2937246e831021f00ef8dec5cc7059628a9df7b4d03",
+  "lean/MCore/FinalFail/Semantic/NavierStokes.lean": "d5cb2e2d3bf4e3be8816d020852bed1bca3920e9365bc37246b84421824f2905",
+  "lean/MCore/FinalFail/Semantic/PvsNP.lean": "d9e1c3abda3fa56fc38b15a4d79b925e274bdc8bd4a5a0db10156208bfbe656b",
+  "lean/MCore/FinalFail/Semantic/Riemann.lean": "3e27a82494ef344bf6017275345cd6d8af1e2f2ab3c34f7d684d5c6dfc26370e",
+  "lean/MCore/FinalFail/Semantic/YangMills.lean": "46576c47f06fef4d4fe52a6812097bf72a3127d18af23effc2107da7615e301c",
+  "lean/MCore/FinalFail/SemanticParallel.lean": "3fcf6ca711dd35f2f46235df26768b752042787b5f7bed7d92b3293f39a283bd",
+  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d"
+ },
+ "published_at": "2026-10-29T01:37:24Z",
+ "certificate_sha256": "e04e51048f295d720d8d807ec84130bd429b4283b45d834c3c03d2bd4dc6fabd"
+}

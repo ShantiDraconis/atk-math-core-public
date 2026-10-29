@@ -1,0 +1,321 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "attack/unified-terminal-logic-20260921",
+ "branch_state": "parada",
+ "head_commit": "1c55ef71237b9ff8d3b391e013cc6b59db60791a",
+ "head_commit_date": "2026-09-21T19:26:13+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "1c55ef71237b9ff8d3b391e013cc6b59db60791a",
+   "date": "2026-09-21T19:26:13+01:00",
+   "subject": "atk(mcore): define posterior cross-problem analysis route"
+  },
+  {
+   "commit": "e921c6a217b17ead009cb843154a1238d8d73167",
+   "date": "2026-09-21T19:25:44+01:00",
+   "subject": "atk(mcore): include cross-problem taxonomy in kernel surface"
+  },
+  {
+   "commit": "8e3ac10e5ddff5e91229ef52853cb6a34d1caccc",
+   "date": "2026-09-21T19:25:32+01:00",
+   "subject": "atk(mcore): formalize cross-problem similarity and failure taxonomy"
+  },
+  {
+   "commit": "58b467eeaf7b0b8dbc91df34fd933595029cb117",
+   "date": "2026-09-21T19:25:20+01:00",
+   "subject": "atk(mcore): add machine-readable cross-problem analysis line"
+  },
+  {
+   "commit": "2a60f5016d21b8fbd1c648fb3a6dd0a49162563a",
+   "date": "2026-09-21T19:24:57+01:00",
+   "subject": "atk(mcore): recover historical cross-problem grouping corpus"
+  },
+  {
+   "commit": "a300abec0410a13a8acd2fd39d46e9d0d172cdbb",
+   "date": "2026-09-21T19:21:20+01:00",
+   "subject": "atk(mcore): classify cross-problem gaps, reuse and discarded patterns"
+  },
+  {
+   "commit": "038a530d2b87cf92c05bfacb7592a68a854642eb",
+   "date": "2026-09-21T19:15:51+01:00",
+   "subject": "ci(mcore): certify unified terminal logic"
+  },
+  {
+   "commit": "b3a26d6bb601fd36751901c0e22cbec7e47f93e3",
+   "date": "2026-09-21T19:15:38+01:00",
+   "subject": "atk(mcore): include unified terminal logic in kernel surface"
+  },
+  {
+   "commit": "7af515ff5883bc33fa9d91a9145dd3300329ca03",
+   "date": "2026-09-21T19:15:26+01:00",
+   "subject": "atk(mcore): formalize unified terminal producer logic"
+  },
+  {
+   "commit": "1eb62478b6e6912e5ae0753dbf5c2605faf6db13",
+   "date": "2026-09-21T18:39:46+01:00",
+   "subject": "ci(mcore): use nominal intervalIntegral API"
+  },
+  {
+   "commit": "638c99d7d220ad0f1950581a2d549128fa0201ea",
+   "date": "2026-09-21T18:35:22+01:00",
+   "subject": "ci(mcore): fix final forall implication in Gronwall target"
+  },
+  {
+   "commit": "446982baffcb990eeac774de74a99c7f53da68f1",
+   "date": "2026-09-21T18:31:41+01:00",
+   "subject": "ci(mcore): use explicit interval-integral parser spacing"
+  },
+  {
+   "commit": "4b74b6f58605325155cf6dc25d33f4f23bf89975",
+   "date": "2026-09-21T18:31:36+01:00",
+   "subject": "ci(mcore): discharge rho-epsilon commutativity goal"
+  },
+  {
+   "commit": "824bfebfad5d58794eb45f58af838962e7611a09",
+   "date": "2026-09-21T18:27:27+01:00",
+   "subject": "ci(mcore): fix interval integral syntax in Gronwall target"
+  },
+  {
+   "commit": "9dcdef9d4d477526d019f2544e0b0b020ffb5865",
+   "date": "2026-09-21T18:27:23+01:00",
+   "subject": "ci(mcore): close rho-epsilon denominator side condition"
+  },
+  {
+   "commit": "5682050d5614b32e930b0f7da694de7ad309f5fe",
+   "date": "2026-09-21T18:01:03+01:00",
+   "subject": "ci(mcore): build only active registered kernel modules"
+  },
+  {
+   "commit": "1820660a859f97f9d27a9a659f1c195d82b09ae8",
+   "date": "2026-09-21T18:00:57+01:00",
+   "subject": "ci(mcore): register active MCore submodules under lean srcDir"
+  },
+  {
+   "commit": "c149fec7f7ba7ad6cd96908b2eb93931a7fb87ba",
+   "date": "2026-09-21T17:57:39+01:00",
+   "subject": "ci(mcore): build active MCore root"
+  },
+  {
+   "commit": "e37f5f7383a926bd7dfb85dba89a5f988941539a",
+   "date": "2026-09-21T17:57:36+01:00",
+   "subject": "ci(mcore): bind MCore library to lean source tree"
+  },
+  {
+   "commit": "93c2beb332d7573f632f1ed5471efcf9bbcc5e33",
+   "date": "2026-09-21T17:20:12+01:00",
+   "subject": "ci(mcore): build scoped audit root before kernel scan"
+  },
+  {
+   "commit": "02e0410b1c5f27f6094104092366ab0094da294e",
+   "date": "2026-09-21T17:20:03+01:00",
+   "subject": "ci(mcore): audit only active kernel surface"
+  },
+  {
+   "commit": "2832ec48d31a697e8def9723cdce853008304011",
+   "date": "2026-09-21T17:19:54+01:00",
+   "subject": "ci(mcore): scope audit library to KernelBuild root"
+  },
+  {
+   "commit": "31583ddccc16632038748d3115fd7b2ad52ad33f",
+   "date": "2026-09-21T17:15:55+01:00",
+   "subject": "atk: include seven-terminal attack map in kernel surface"
+  },
+  {
+   "commit": "72f62c5352de9559fae08b52dfb5e998738f552f",
+   "date": "2026-09-21T17:15:46+01:00",
+   "subject": "atk: pin exact seven-terminal parallel attack map"
+  },
+  {
+   "commit": "ca58ecebb25a1848a2819a4ae8a310e6cf03a94e",
+   "date": "2026-09-21T17:13:55+01:00",
+   "subject": "atk(ns): repair isolated Lean 4.19 source build"
+  },
+  {
+   "commit": "d0341c93cfbac11cb4fa7551a9d253a1920411de",
+   "date": "2026-09-21T17:13:53+01:00",
+   "subject": "atk(ns): repair isolated Lean 4.19 source build"
+  },
+  {
+   "commit": "81b9cc286de909aa436ef6ee007a10d070545531",
+   "date": "2026-09-21T17:13:51+01:00",
+   "subject": "atk(ns): repair isolated Lean 4.19 source build"
+  },
+  {
+   "commit": "18ca4d63abeb889fd8e44fbf5a42d168204291ea",
+   "date": "2026-09-21T17:13:49+01:00",
+   "subject": "atk(ns): repair isolated Lean 4.19 source build"
+  },
+  {
+   "commit": "57d434b6997e9658a02fe5bad75354470b4c23c0",
+   "date": "2026-09-21T17:13:47+01:00",
+   "subject": "atk(ns): repair isolated Lean 4.19 source build"
+  },
+  {
+   "commit": "6b8ac54d965b396f997a9932f077d7fafaa8c4ba",
+   "date": "2026-09-21T17:13:45+01:00",
+   "subject": "atk(ns): repair isolated Lean 4.19 source build"
+  },
+  {
+   "commit": "2345c46349623686612faee7e5743a63b07472e8",
+   "date": "2026-09-21T17:13:42+01:00",
+   "subject": "atk(ns): repair isolated Lean 4.19 source build"
+  },
+  {
+   "commit": "3cc63d18b9877699f14d51f934811a2bb7724e35",
+   "date": "2026-09-21T17:08:21+01:00",
+   "subject": "atk(ns): isolate variable-coefficient Gronwall formal gap"
+  },
+  {
+   "commit": "3644108ae645a64fe4f33c27453db37c24373c3e",
+   "date": "2026-09-21T17:05:05+01:00",
+   "subject": "ci: certify fail-closed M-Core NS G5 source"
+  },
+  {
+   "commit": "9271e0e81ee85e865e30e3dc825ad021b4dbdf13",
+   "date": "2026-09-21T17:04:44+01:00",
+   "subject": "atk: add fail-closed M-Core NS G5 source surface"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.Attack.NS.G5Corrected.G5_to_Gronwall",
+   "file": "lean/MCore/Attack/NS/G5DirectCorrected.lean",
+   "line": 35,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {f : MCore.Attack.NS.G5Corrected.TimeFuncs} {nu t0 T : ℝ},   MCore.Attack.NS.G5Corrected.BalanceIdentity f nu →     ∀ (g : MCore.Attack.NS.G5Corrected.G5Witness f nu t0 T),       ∀ t ∈ Set.Ioo t0 T, deriv f.y t + 2 * (1 - g.theta) * nu * f.z t ≤ 2 * g.a t * f.y t"
+  },
+  {
+   "name": "MCore.CrossProblemTaxonomy.allEdges_no_automatic_theorem_transfer",
+   "file": "lean/MCore/CrossProblemTaxonomy.lean",
+   "line": 70,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ e ∈ MCore.CrossProblemTaxonomy.allEdges, e.theoremTransferAllowed = false"
+  },
+  {
+   "name": "MCore.CrossProblemTaxonomy.universalFailureMode_count",
+   "file": "lean/MCore/CrossProblemTaxonomy.lean",
+   "line": 78,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.CrossProblemTaxonomy.universalFailureModes.length = 7"
+  },
+  {
+   "name": "MCore.ExactGap.openPrizeEndpoints_eq_seven",
+   "file": "lean/MCore/ExactGapLedger.lean",
+   "line": 12,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.ExactGap.openPrizeEndpoints = 7"
+  },
+  {
+   "name": "MCore.LimitClosed.rho_epsilon",
+   "file": "lean/MCore/TopologyLimitClosed.lean",
+   "line": 7,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {r : ℝ}, r ≠ -1 → MCore.LimitClosed.rho r + MCore.LimitClosed.epsilon r = 1"
+  },
+  {
+   "name": "MCore.SevenParallelAttack.activeProblemCount_eq_seven",
+   "file": "lean/MCore/SevenParallelAttack.lean",
+   "line": 33,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.SevenParallelAttack.activeProblemCount = 7"
+  },
+  {
+   "name": "MCore.UnifiedTerminalLogic.activeProducerCount_eq_seven",
+   "file": "lean/MCore/UnifiedTerminalLogic.lean",
+   "line": 147,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.UnifiedTerminalLogic.activeProducerCount = 7"
+  },
+  {
+   "name": "MCore.UnifiedTerminalLogic.allSpecs_count",
+   "file": "lean/MCore/UnifiedTerminalLogic.lean",
+   "line": 134,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.UnifiedTerminalLogic.allSpecs.length = 7"
+  },
+  {
+   "name": "MCore.UnifiedTerminalLogic.all_backbones_frozen",
+   "file": "lean/MCore/UnifiedTerminalLogic.lean",
+   "line": 136,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ s ∈ MCore.UnifiedTerminalLogic.allSpecs, s.frozenBackbone = true"
+  },
+  {
+   "name": "MCore.UnifiedTerminalLogic.all_infrastructure_zero",
+   "file": "lean/MCore/UnifiedTerminalLogic.lean",
+   "line": 140,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ s ∈ MCore.UnifiedTerminalLogic.allSpecs, s.infrastructureRemaining = 0"
+  },
+  {
+   "name": "MCore.UnifiedTerminalLogic.finalProofCount_eq_zero",
+   "file": "lean/MCore/UnifiedTerminalLogic.lean",
+   "line": 152,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.UnifiedTerminalLogic.finalProofCount = 0"
+  },
+  {
+   "name": "MCore.UnifiedTerminalLogic.hardCertificate_closes_endpoint",
+   "file": "lean/MCore/UnifiedTerminalLogic.lean",
+   "line": 55,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {C : MCore.UnifiedTerminalLogic.TerminalChain}, MCore.UnifiedTerminalLogic.HardCertificate C → C.endpoint"
+  },
+  {
+   "name": "MCore.UnifiedTerminalLogic.requiredStages_count",
+   "file": "lean/MCore/UnifiedTerminalLogic.lean",
+   "line": 33,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.UnifiedTerminalLogic.requiredStages.length = 6"
+  },
+  {
+   "name": "MCore.UnifiedTerminalLogic.reuse",
+   "file": "lean/MCore/UnifiedTerminalLogic.lean",
+   "line": 66,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {old new : Prop}, MCore.UnifiedTerminalLogic.ReuseCompatibility old new → old → new"
+  }
+ ],
+ "closed": 14,
+ "files_sha256": {
+  "lakefile.lean": "36904ea7ea896079bffb7dc33b0459ff09d8c32b2525b1ae75814f48e1ef07e9",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/Attack/NS/G5DirectCorrected.lean": "36f1283e0e43f7450b4173417c098fc719a3e77b945e3e620bc48248557b84bd",
+  "lean/MCore/CrossProblemTaxonomy.lean": "7807df0cb4dcefe001070c482f5d70adabcb027489d947a6395098da24c490d6",
+  "lean/MCore/ExactGapLedger.lean": "56849b74d38085a6e32aed06cd8830547f43b065575b55382320e843e296770a",
+  "lean/MCore/ResolutionPredicate.lean": "832be64a18026950ee2b502378b8836cb42c0497f268b0e7c0b6e605c87f0312",
+  "lean/MCore/SevenDeltasFormal.lean": "a46de7aa45280a921b82aceabd351a3372b3c35538c452ad80870220a3a67b02",
+  "lean/MCore/SevenParallelAttack.lean": "26102c71438c14989a1ccc6d03355719ed6f7b0c405f1a2893eea755a4eb5195",
+  "lean/MCore/TopologyLimitClosed.lean": "95b4790d7a4281800858aaef0b87dd50d885341eda798a2f8d7d7cdb7a3f9e65",
+  "lean/MCore/UnifiedTerminalLogic.lean": "bb855b28a7d5c0851570aa639c321f7fef818aba62fc69ccac055735018b4917"
+ },
+ "published_at": "2026-10-29T01:37:25Z",
+ "certificate_sha256": "6fe0bb72c601274e2083df5be2a30c42df729d1c194acca08aeb00d6bb1288d4"
+}

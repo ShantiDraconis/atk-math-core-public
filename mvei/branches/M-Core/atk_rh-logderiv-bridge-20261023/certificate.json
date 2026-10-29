@@ -1,0 +1,81 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/rh-logderiv-bridge-20261023",
+ "branch_state": "em andamento",
+ "head_commit": "d5b60b06a2c4876aff2a2acb8fc3a5429c6b7183",
+ "head_commit_date": "2026-10-23T02:04:11+00:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "d5b60b06a2c4876aff2a2acb8fc3a5429c6b7183",
+   "date": "2026-10-23T02:04:11+00:00",
+   "subject": "atk-kernel: nova ponte condicional de Riemann — positividade da derivada logarítmica"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.Conditional.RiemannLogDerivative.logDerivPositivity_implies_RH",
+   "file": "atk-kernel/ATK/Conditional/RiemannLogDerivative.lean",
+   "line": 176,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(hP : LogDerivPositivity) : RiemannHypothesis"
+  },
+  {
+   "name": "ATK.Conditional.RiemannLogDerivative.neg_reLogDeriv_near_zero_of_order_lt_top",
+   "file": "atk-kernel/ATK/Conditional/RiemannLogDerivative.lean",
+   "line": 42,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{f : ℂ → ℂ} {z₀ : ℂ} (hf : AnalyticAt ℂ f z₀) (hz₀ : f z₀ = 0) (hord : analyticOrderAt f z₀ ≠ ⊤) : ∃ δ : ℝ, 0 < δ ∧ ∀ ε : ℝ, 0 < ε → ε < δ → (deriv f (z₀ - (ε : ℂ)) / f (z₀ - (ε : ℂ))).re < 0"
+  },
+  {
+   "name": "ATK.Conditional.RiemannLogDerivative.neg_reLogDeriv_riemannZeta",
+   "file": "atk-kernel/ATK/Conditional/RiemannLogDerivative.lean",
+   "line": 168,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{ρ : ℂ} (hζρ : riemannZeta ρ = 0) (hρ1 : ρ ≠ 1) : ∃ δ : ℝ, 0 < δ ∧ ∀ ε : ℝ, 0 < ε → ε < δ → (deriv riemannZeta (ρ - (ε : ℂ)) / riemannZeta (ρ - (ε : ℂ))).re < 0"
+  },
+  {
+   "name": "ATK.Conditional.RiemannLogDerivative.riemannZeta_analyticOrderAt_ne_top",
+   "file": "atk-kernel/ATK/Conditional/RiemannLogDerivative.lean",
+   "line": 152,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{ρ : ℂ} (hρ1 : ρ ≠ 1) : analyticOrderAt riemannZeta ρ ≠ ⊤"
+  }
+ ],
+ "closed": 4,
+ "files_sha256": {
+  "atk-kernel/ATK/BaezDuarteBridge.lean": "6cb5d5346a77a4bb236de5c8dd10bfa1753492dc43016a87424d69c148f355a7",
+  "atk-kernel/ATK/Conditional/Riemann.lean": "4c1dc437747de9c70341bdca01a0c9fef299a9b6d9b30413a75fc005d3631382",
+  "atk-kernel/ATK/Conditional/RiemannLogDerivative.lean": "e248bfdc8681e2a58d996898544e3c00f58e03198edd177e1314163c19113eb5",
+  "atk-kernel/ATK/Indeterminacy.lean": "9fc0a38993d4846610033b2a38e63894b463a738633a142520561e209bd88f57",
+  "atk-kernel/ATK/IndeterminacyStates.lean": "1a4c9ee6bd9b773c76e53ba812e1c920a6ecb2c4616f0a96179f6af279bc8a8e",
+  "atk-kernel/ATK/MellinRho.lean": "d37a84591f1594e64f5b0a7d4eb4018bafe5cef503c954a41306c4daffb02771",
+  "atk-kernel/ATK/RiemannConcrete.lean": "47f40910773da5d00ee472e91e00bcbaaf3c91114b4f37d751a73c5249ce263d",
+  "atk-kernel/ATK/RiemannFaithful.lean": "269bfe14fa25f1d369c074c2bcb3416e1fd4b1df63a0c23d0773e3d691322c11",
+  "atk-kernel/ATK/RiemannStates.lean": "007cae414504383e41b72abe530d7794b8be7449c8762a2dedc399b9997cd77b",
+  "atk-kernel/ATK/ZetaSimetria.lean": "b69eed771ea2e61c424ff33f5891ee595a05d3c8a2857a5bec11060f876d4acf",
+  "atk-kernel/ATK/ZetaStrip.lean": "202994e0bf413c54bf1d4eedd1448e5777732bbd4d15df40ac24f9377074624e",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-29T01:37:32Z",
+ "certificate_sha256": "b19d9922d2a22522d752a9869e7fed5a302ba5dfee688024662bbca294e715ee"
+}

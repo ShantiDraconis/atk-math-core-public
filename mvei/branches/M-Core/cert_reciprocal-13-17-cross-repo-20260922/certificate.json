@@ -1,0 +1,204 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "cert/reciprocal-13-17-cross-repo-20260922",
+ "branch_state": "parada",
+ "head_commit": "d05fb9fd52c7f77b2f853c1eb6176b4c20871a37",
+ "head_commit_date": "2026-09-22T09:02:09+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "d05fb9fd52c7f77b2f853c1eb6176b4c20871a37",
+   "date": "2026-09-22T09:02:09+01:00",
+   "subject": "cert: pin SHA256 reciprocal 13-17 cross-repo master"
+  },
+  {
+   "commit": "dc4bc12817add95efe81a940dacc8284dfc30b41",
+   "date": "2026-09-22T09:01:49+01:00",
+   "subject": "cert: add reciprocal 13-17 cross-repo master"
+  },
+  {
+   "commit": "61c7254f1a15ce9bc1b2c405831e03f302f09d4e",
+   "date": "2026-09-22T08:58:28+01:00",
+   "subject": "cert: pin SHA256 reciprocal pair 13-17 v1"
+  },
+  {
+   "commit": "c999e316dd5835ae9181ef2d8ec0daba63b43bbe",
+   "date": "2026-09-22T08:58:08+01:00",
+   "subject": "cert: record GREEN reciprocal pair 13-17 v1"
+  },
+  {
+   "commit": "89cf9683251493e3b97b893e8cf48addf2b2128a",
+   "date": "2026-09-22T08:56:13+01:00",
+   "subject": "fix(formal): close exact reciprocal identities by kernel reduction"
+  },
+  {
+   "commit": "8d2ac1c48be807e3a665bf98a1a3fcdff698f5af",
+   "date": "2026-09-22T08:55:28+01:00",
+   "subject": "ci: compile reciprocal invariant without Mathlib dependency"
+  },
+  {
+   "commit": "e44b6c860190721f3c82fed6e82644048d786ad8",
+   "date": "2026-09-22T08:55:25+01:00",
+   "subject": "formal: make reciprocal invariant kernel-only exact arithmetic"
+  },
+  {
+   "commit": "92fd3df2e38bd727c1311044c93704d8d36be330",
+   "date": "2026-09-22T08:52:36+01:00",
+   "subject": "fix(ci): resolve Lean dependencies before reciprocal build"
+  },
+  {
+   "commit": "fa9018a5afc1bc906928884e680d21d3e3fbe75d",
+   "date": "2026-09-22T08:51:09+01:00",
+   "subject": "ci: add lake manifest for reciprocal pair build"
+  },
+  {
+   "commit": "7750278efb7da0ce91d13f73efb24e81351985a3",
+   "date": "2026-09-22T08:50:12+01:00",
+   "subject": "ci: gate reciprocal pair 13-17 formalization"
+  },
+  {
+   "commit": "b4e0586039a0c4a07afbcd550dcca65ebf92c6cc",
+   "date": "2026-09-22T08:50:10+01:00",
+   "subject": "formal: export reciprocal pair invariant"
+  },
+  {
+   "commit": "73294efd94ac9038c6502bb9d71cb8dfc3955670",
+   "date": "2026-09-22T08:50:08+01:00",
+   "subject": "formal: add reciprocal 13-17 pair invariant"
+  },
+  {
+   "commit": "3f5b8358ade60419ef95fb7e87faf2c853449ccb",
+   "date": "2026-09-22T08:27:41+01:00",
+   "subject": "cert: pin SHA256 for production runtime cross-repo master"
+  },
+  {
+   "commit": "0083de0973e80c2837d9b5f54ef781ad8a36024c",
+   "date": "2026-09-22T08:27:18+01:00",
+   "subject": "cert: add production runtime cross-repo master v1"
+  },
+  {
+   "commit": "ef9cc95a83f6d4279da17d3f52e75073df844593",
+   "date": "2026-09-22T08:21:11+01:00",
+   "subject": "cert: pin SHA256 for full-chain runtime master v1"
+  },
+  {
+   "commit": "4c689ffd3d571daf9c8a63f93b8b95b99edf5e70",
+   "date": "2026-09-22T08:20:51+01:00",
+   "subject": "cert: add full-chain runtime cross-repo master v1"
+  },
+  {
+   "commit": "a1fc1f2c761366f599576c81fbb88dd6df028388",
+   "date": "2026-09-22T00:20:15+01:00",
+   "subject": "cert: pin SHA256 for no-findings GREEN cross-repo master"
+  },
+  {
+   "commit": "3472b6140ee649b7292db8ffa1ff5c2fb9968a99",
+   "date": "2026-09-22T00:20:02+01:00",
+   "subject": "cert: add cross-repo no-findings master for all explicit GREEN SHAs"
+  },
+  {
+   "commit": "8f032de4a352224ae01031f3de18bf012380e091",
+   "date": "2026-09-22T00:07:41+01:00",
+   "subject": "cert: pin SHA256 for cross-repo master v2"
+  },
+  {
+   "commit": "6c424a26f642b98a14566ad3601a69aa81ec18ed",
+   "date": "2026-09-22T00:07:19+01:00",
+   "subject": "cert: finalize cross-repo master with SHA256-pinned child certificates"
+  },
+  {
+   "commit": "100155ef8c9fc9fb1cc48cea297e41a7e3ce6b7f",
+   "date": "2026-09-22T00:05:21+01:00",
+   "subject": "cert: link Elyon Temple HUB OS into cross-repo frozen master"
+  },
+  {
+   "commit": "e41955ad39a849cfb996f610ba3f8d5701ebffb2",
+   "date": "2026-09-21T23:54:49+01:00",
+   "subject": "cert: add cross-repo master for all generated HARD/brain SHAs"
+  },
+  {
+   "commit": "05d047d239f0030d0d981e5775d2c187747e4bde",
+   "date": "2026-09-21T23:53:44+01:00",
+   "subject": "cert: classify and certify all generated HARD/brain SHAs"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.endpoint_projection_forward",
+   "file": "MCore/ReciprocalPair.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.forward13_17 = { num := 13, den := 17 }"
+  },
+  {
+   "name": "MCore.endpoint_projection_reverse",
+   "file": "MCore/ReciprocalPair.lean",
+   "line": 47,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.reverse17_13 = { num := 17, den := 13 }"
+  },
+  {
+   "name": "MCore.orientation_pair_exact",
+   "file": "MCore/ReciprocalPair.lean",
+   "line": 65,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(MCore.forward13_17, MCore.reverse17_13) = ({ num := 13, den := 17 }, { num := 17, den := 13 })"
+  },
+  {
+   "name": "MCore.reciprocalPublicInvariant13_17_exact",
+   "file": "MCore/ReciprocalPair.lean",
+   "line": 87,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.reciprocalPublicInvariant13_17 =   { forward := { num := 13, den := 17 }, reverse := { num := 17, den := 13 }, symmetric := { num := 458, den := 221 },     closure := { num := 221, den := 221 } }"
+  },
+  {
+   "name": "MCore.reciprocal_closure_exact",
+   "file": "MCore/ReciprocalPair.lean",
+   "line": 56,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.closure13_17 = { num := 221, den := 221 }"
+  },
+  {
+   "name": "MCore.reciprocal_closure_represents_one",
+   "file": "MCore/ReciprocalPair.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.closure13_17.representsOne"
+  },
+  {
+   "name": "MCore.symmetric_invariant_exact",
+   "file": "MCore/ReciprocalPair.lean",
+   "line": 60,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "MCore.symmetric13_17 = { num := 458, den := 221 }"
+  }
+ ],
+ "closed": 7,
+ "files_sha256": {
+  "MCore/ReciprocalPair.lean": "e1456fd92d75776f9e07a144aa320ee082601462354dfb599de3346039e13ada",
+  "lake-manifest.json": "b32a0f59f0ac9408fa55d483e9c6c32ca4a6acdc41282f361044f79f51e56dfc",
+  "lakefile.lean": "f53cac7f442d9cb312870f171649382381e313931ad59cfc8d0799f52df430ac",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+ },
+ "published_at": "2026-10-29T01:37:25Z",
+ "certificate_sha256": "61fc1a4497078973b7e8c9eb8877f80e8393c68143918c3321874a34df84fbc6"
+}

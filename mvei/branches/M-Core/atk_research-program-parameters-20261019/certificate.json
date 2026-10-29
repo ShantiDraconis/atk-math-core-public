@@ -1,0 +1,97 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/research-program-parameters-20261019",
+ "branch_state": "em andamento",
+ "head_commit": "070cff7dfd135b050d834af74005593400a7e0bd",
+ "head_commit_date": "2026-10-20T00:27:49+00:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "070cff7dfd135b050d834af74005593400a7e0bd",
+   "date": "2026-10-20T00:27:49+00:00",
+   "subject": "fix(atk): repair real compile errors in research-program decompositions"
+  },
+  {
+   "commit": "b59e29f6ad02743f16d3ee23b2dd901a39d759fd",
+   "date": "2026-10-19T23:30:19+00:00",
+   "subject": "audit(atk): decompose O8/O3/O6 into named research-program steps"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-10-28T23:56:08+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0",
+   "leanprover/lean4:v4.34.1"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "ATK.Conditional.BSD.BSDHigherRankProgram.toEquality",
+   "file": "atk-kernel/ATK/Conditional/BSDResearchProgram.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {M : ATK.Conditional.BSD.BSDModel} {E : M.Curve},   ATK.Conditional.BSD.BSDHigherRankProgram M E → M.rank E = M.analyticRank E"
+  },
+  {
+   "name": "ATK.Conditional.BSD.rankOpen_of_researchPrograms",
+   "file": "atk-kernel/ATK/Conditional/BSDResearchProgram.lean",
+   "line": 38,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {M : ATK.Conditional.BSD.BSDModel},   (∀ (E : M.Curve), 2 ≤ M.analyticRank E → ATK.Conditional.BSD.BSDHigherRankProgram M E) →     ATK.Conditional.BSD.RankOpen M"
+  },
+  {
+   "name": "ATK.Conditional.NavierStokes.EnstrophyControlProgram.toBound",
+   "file": "atk-kernel/ATK/Conditional/NavierStokesResearchProgram.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {M : ATK.Conditional.NavierStokes.NSModel} {u₀ : M.Data} {T : ℝ}   (P : ATK.Conditional.NavierStokes.EnstrophyControlProgram M u₀ T), ∃ B, ∀ t ∈ Set.Ico 0 T, M.enstrophy u₀ t ≤ B"
+  },
+  {
+   "name": "ATK.Conditional.NavierStokes.enstrophyAPrioriBound_of_researchPrograms",
+   "file": "atk-kernel/ATK/Conditional/NavierStokesResearchProgram.lean",
+   "line": 56,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {M : ATK.Conditional.NavierStokes.NSModel}   (P :     (u₀ : M.Data) →       M.Admissible u₀ →         (T : ℝ) → 0 < T → M.SmoothOn u₀ T → ATK.Conditional.NavierStokes.EnstrophyControlProgram M u₀ T),   ATK.Conditional.NavierStokes.EnstrophyAPrioriBound M"
+  },
+  {
+   "name": "ATK.Conditional.YangMills.YM4DResearchProgram.toWitness",
+   "file": "atk-kernel/ATK/Conditional/YangMillsResearchProgram.lean",
+   "line": 47,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {M : ATK.Conditional.YangMills.YMModel} {G : M.Group} (P : ATK.Conditional.YangMills.YM4DResearchProgram M G),   ∃ μ, M.OSAxioms G μ ∧ ∃ m, 0 < m ∧ M.ClusterRate μ m"
+  },
+  {
+   "name": "ATK.Conditional.YangMills.constructiveYM4D_of_researchPrograms",
+   "file": "atk-kernel/ATK/Conditional/YangMillsResearchProgram.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ {M : ATK.Conditional.YangMills.YMModel}   (P : (G : M.Group) → M.CompactSimple G → ATK.Conditional.YangMills.YM4DResearchProgram M G),   ATK.Conditional.YangMills.ConstructiveYM4D M"
+  }
+ ],
+ "closed": 6,
+ "files_sha256": {
+  "atk-kernel/ATK/Conditional/BSD.lean": "39138cc722f5edef5db0cdaf0b99a75f571b6d32cbc7eb1e8ac228d864b89f65",
+  "atk-kernel/ATK/Conditional/BSDResearchProgram.lean": "92cea3d7398352df31fed6476bc8e0c894bfb00243ccf3095c5638d99a7b88c7",
+  "atk-kernel/ATK/Conditional/NavierStokes.lean": "332fc2e50242c07cfee0b40cf545bbbd2dac0ae4d860c4e21ac2f639ca04a531",
+  "atk-kernel/ATK/Conditional/NavierStokesResearchProgram.lean": "ed8cd9053d7beec9f99bf4035338ff21449d161e640506f1b8d4e7c6e65c2d54",
+  "atk-kernel/ATK/Conditional/YangMills.lean": "2d84f374b93e2bd4557098f86e205ba6a5c4141da7dc8453589a31e1b4aaf5a5",
+  "atk-kernel/ATK/Conditional/YangMillsResearchProgram.lean": "32675cc3e91341c2aa1592fab9dcae5b8a5bb2f62697150b908f3c01a0066bc2",
+  "atk-kernel/lake-manifest.json": "e5348b3372120c86b705268ca8b798d73e2aa328d92261477763e63349c851c8",
+  "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
+  "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+ },
+ "published_at": "2026-10-29T01:37:25Z",
+ "certificate_sha256": "2c5fd092d3f2bb448bdab013b0f892bb75a429020de445bdf31588fc60a49fb2"
+}
