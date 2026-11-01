@@ -21,3 +21,8 @@ Do not add confidential data or third-party code without checking its license an
 
 46 branch(es) with 2 402 theorems that exist only on branches and that the Lean kernel closed, each with a certificate (commit, date, history, SHA-256): [`branches/README.md`](branches/README.md).
 <!-- mvei-branches:end -->
+
+## Riemann bridge archive
+
+The separate recovered bicomplex/Riemann formalization, its application and classical bridge index, status ledger, and Lean workflow are documented at [`research/riemann/bicomplex-riemann-formalization/`](research/riemann/bicomplex-riemann-formalization/README.md). Its algebraic and conditional Lean results are not a proof of the Riemann Hypothesis; the package records open analytic obligations explicitly.
+
