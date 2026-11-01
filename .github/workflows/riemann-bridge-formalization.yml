@@ -1,0 +1,30 @@
+name: Riemann bridge formalization
+
+on:
+  push:
+    paths:
+      - "research/riemann/bicomplex-riemann-formalization/**"
+      - ".github/workflows/riemann-bridge-formalization.yml"
+  pull_request:
+    paths:
+      - "research/riemann/bicomplex-riemann-formalization/**"
+      - ".github/workflows/riemann-bridge-formalization.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lean:
+    name: Lean build and axiom audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: research/riemann/bicomplex-riemann-formalization
+          build: true
+          test: false
+          use-mathlib-cache: false
+          axiom-audit: true
+          axiom-audit-root: Formal
