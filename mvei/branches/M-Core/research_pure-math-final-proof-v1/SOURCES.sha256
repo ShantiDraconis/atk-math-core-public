@@ -6,7 +6,6 @@ d344ba54dcebaab0c3db252f477507e25070f1cb2d9540b5d8965c1034ecb7d5  branches/M-Cor
 1cf40ca65d20c73998a926c09191cf2c56815c8eff4a2c5735d34b94b40afdb7  branches/M-Core/research_pure-math-final-proof-v1/MCore/V21/Examples.lean
 12d50e7cb370d81aaa289cac4d4be2cbfac4c02e18531e2376058b48dfb13372  branches/M-Core/research_pure-math-final-proof-v1/MCore/V21/ProblemEmbedding.lean
 b20db6957fd7bb1b62b76c6a9df77776de287892eee548a167dc2a2ebca80896  branches/M-Core/research_pure-math-final-proof-v1/MCore/V21/ResidueClassifier.lean
-a22d35ccf61828fd7e5c57623f66c8dc012cdc62a1e69d14ce375e6c4adf5977  branches/M-Core/research_pure-math-final-proof-v1/MCore/V22/BidirectionalClosure.lean
 ab87af7a7741c8f7a04166378db27e16de030629c2022de59d71d6b9ae87b916  branches/M-Core/research_pure-math-final-proof-v1/MCore/V22/ExactBlockers.lean
 78b4faf7e81c82b03704068c7a1ea416f3658a63b0a3bf91a54b161ea011fac9  branches/M-Core/research_pure-math-final-proof-v1/MCore/V22/FrontierKernel.lean
 b70ad42368bb77de5954237681aed3d31410c138135be25d85a3df8a1dc74368  branches/M-Core/research_pure-math-final-proof-v1/MCore/V22/FrontierRegistry.lean

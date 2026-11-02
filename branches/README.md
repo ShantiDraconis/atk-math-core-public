@@ -4,27 +4,25 @@ Each row is a branch of a private repository of ShantiDraconis with theorems tha
 
 | Repository | Branch | Last commit | State | Closed / theorems only on branches | Files | Commits not in default | Certificate |
 |---|---|---|---|---:|---:|---:|---|
-| M-Core | `atk/rh-rho-independent` | 2026-10-28 | em andamento | 719 / 719 | 38 | 40 | [certificate](../mvei/branches/M-Core/atk_rh-rho-independent/README.md) |
-| M-Core | `atk/kernel-21-registros` | 2026-10-16 | em andamento | 434 / 1335 | 192 | 25 | [certificate](../mvei/branches/M-Core/atk_kernel-21-registros/README.md) |
 | M-Core | `atk/cook-levin-janela-20261014` | 2026-10-14 | em andamento | 391 / 391 | 55 | 19 | [certificate](../mvei/branches/M-Core/atk_cook-levin-janela-20261014/README.md) |
-| M-Core | `atk-kernel-check` | 2026-10-13 | em andamento | 196 / 216 | 41 | 35 | [certificate](../mvei/branches/M-Core/atk-kernel-check/README.md) |
+| M-Core | `atk/kernel-21-registros` | 2026-10-16 | em andamento | 381 / 1335 | 182 | 25 | [certificate](../mvei/branches/M-Core/atk_kernel-21-registros/README.md) |
+| M-Core | `atk/rh-rho-independent` | 2026-10-28 | em andamento | 252 / 719 | 18 | 40 | [certificate](../mvei/branches/M-Core/atk_rh-rho-independent/README.md) |
+| M-Core | `atk-kernel-check` | 2026-10-13 | em andamento | 169 / 216 | 31 | 35 | [certificate](../mvei/branches/M-Core/atk-kernel-check/README.md) |
 | M-Core | `atk/discovery-20261024` | 2026-10-25 | em andamento | 151 / 151 | 28 | 2 | [certificate](../mvei/branches/M-Core/atk_discovery-20261024/README.md) |
 | M-Core | `parametros-modelo` | 2026-10-15 | em andamento | 57 / 57 | 5 | 3 | [certificate](../mvei/branches/M-Core/parametros-modelo/README.md) |
-| M-Core | `atk/seven-terminal-parameter-law` | 2026-10-06 | parada | 41 / 98 | 20 | 18 | [certificate](../mvei/branches/M-Core/atk_seven-terminal-parameter-law/README.md) |
-| M-Core | `research/pure-math-final-proof-v1` | 2026-09-20 | parada | 39 / 75 | 21 | 82 | [certificate](../mvei/branches/M-Core/research_pure-math-final-proof-v1/README.md) |
-| M-Core | `work/kernel-truncation-closure-20261005` | 2026-10-05 | parada | 29 / 39 | 26 | 41 | [certificate](../mvei/branches/M-Core/work_kernel-truncation-closure-20261005/README.md) |
+| M-Core | `atk/open-math-forward-only-integration-20261001` | 2026-10-01 | parada | 51 / 114 | 7 | 125 | [certificate](../mvei/branches/M-Core/atk_open-math-forward-only-integration-20261001/README.md) |
+| M-Core | `research/pure-math-final-proof-v1` | 2026-09-20 | parada | 36 / 75 | 20 | 82 | [certificate](../mvei/branches/M-Core/research_pure-math-final-proof-v1/README.md) |
 | M-Core | `certificates/rh-nb-projection-distance-green-30` | 2026-09-16 | parada | 28 / 29 | 15 | 35 | [certificate](../mvei/branches/M-Core/certificates_rh-nb-projection-distance-green-30/README.md) |
 | M-Core | `atk/beal-442-fermat42-20261013` | 2026-10-14 | em andamento | 25 / 25 | 24 | 2 | [certificate](../mvei/branches/M-Core/atk_beal-442-fermat42-20261013/README.md) |
 | M-Core | `conditional` | 2026-10-28 | em andamento | 23 / 23 | 8 | 9 | [certificate](../mvei/branches/M-Core/conditional/README.md) |
-| M-Core | `atk/material-math-tristate-20261001` | 2026-10-01 | parada | 22 / 420 | 16 | 252 | [certificate](../mvei/branches/M-Core/atk_material-math-tristate-20261001/README.md) |
-| M-Core | `atk/b4-m2d2-reducao-20261015` | 2026-10-15 | em andamento | 21 / 77 | 45 | 2 | [certificate](../mvei/branches/M-Core/atk_b4-m2d2-reducao-20261015/README.md) |
-| M-Core | `atk/open-math-forward-only-integration-20261001` | 2026-10-01 | parada | 20 / 114 | 4 | 125 | [certificate](../mvei/branches/M-Core/atk_open-math-forward-only-integration-20261001/README.md) |
+| M-Core | `atk/seven-terminal-parameter-law` | 2026-10-06 | parada | 22 / 98 | 19 | 18 | [certificate](../mvei/branches/M-Core/atk_seven-terminal-parameter-law/README.md) |
 | M-Core | `atk/reducoes-externas-20261015` | 2026-10-16 | em andamento | 15 / 28 | 16 | 4 | [certificate](../mvei/branches/M-Core/atk_reducoes-externas-20261015/README.md) |
 | M-Core | `atk/rh-euler-audit-20261016` | 2026-10-16 | em andamento | 15 / 18 | 4 | 4 | [certificate](../mvei/branches/M-Core/atk_rh-euler-audit-20261016/README.md) |
 | M-Core | `atk/belnap-honest-status-20261020` | 2026-10-20 | em andamento | 14 / 14 | 16 | 8 | [certificate](../mvei/branches/M-Core/atk_belnap-honest-status-20261020/README.md) |
 | M-Core | `attack/unified-terminal-logic-20260921` | 2026-09-21 | parada | 14 / 14 | 10 | 34 | [certificate](../mvei/branches/M-Core/attack_unified-terminal-logic-20260921/README.md) |
 | M-Core | `atk/beal-flt-regular-20261014` | 2026-10-14 | em andamento | 13 / 13 | 3 | 4 | [certificate](../mvei/branches/M-Core/atk_beal-flt-regular-20261014/README.md) |
 | M-Core | `atk/global-audit-20261008` | 2026-10-11 | parada | 12 / 12 | 22 | 14 | [certificate](../mvei/branches/M-Core/atk_global-audit-20261008/README.md) |
+| M-Core | `work/kernel-truncation-closure-20261005` | 2026-10-05 | parada | 11 / 39 | 19 | 41 | [certificate](../mvei/branches/M-Core/work_kernel-truncation-closure-20261005/README.md) |
 | M-Core | `atk/o1-hypothetical-formalization-20261019` | 2026-10-19 | em andamento | 11 / 11 | 54 | 5 | [certificate](../mvei/branches/M-Core/atk_o1-hypothetical-formalization-20261019/README.md) |
 | M-Core | `atk/two-sided-material-closure-20261001` | 2026-10-01 | parada | 10 / 19 | 4 | 31 | [certificate](../mvei/branches/M-Core/atk_two-sided-material-closure-20261001/README.md) |
 | M-Core | `atk/atki-teste-20261015` | 2026-10-15 | em andamento | 9 / 9 | 6 | 1 | [certificate](../mvei/branches/M-Core/atk_atki-teste-20261015/README.md) |
@@ -44,6 +42,7 @@ Each row is a branch of a private repository of ShantiDraconis with theorems tha
 | M-Core | `atk/universal-multistate-signature-20260926` | 2026-09-27 | parada | 3 / 28 | 5 | 21 | [certificate](../mvei/branches/M-Core/atk_universal-multistate-signature-20260926/README.md) |
 | M-Core | `infra/atl-v3-canonical-20260926` | 2026-09-26 | parada | 3 / 7 | 4 | 17 | [certificate](../mvei/branches/M-Core/infra_atl-v3-canonical-20260926/README.md) |
 | M-Core | `atk/bsd-mathlib-v434-probe` | 2026-09-29 | parada | 3 / 3 | 6 | 4 | [certificate](../mvei/branches/M-Core/atk_bsd-mathlib-v434-probe/README.md) |
+| M-Core | `atk/material-math-tristate-20261001` | 2026-10-01 | parada | 2 / 420 | 13 | 252 | [certificate](../mvei/branches/M-Core/atk_material-math-tristate-20261001/README.md) |
 | M-Core | `attack/universal-multistate-signature` | 2026-09-27 | parada | 2 / 16 | 4 | 10 | [certificate](../mvei/branches/M-Core/attack_universal-multistate-signature/README.md) |
 | M-Core | `atk/debug-beal-completo-tmp` | 2026-10-14 | em andamento | 2 / 2 | 12 | 2 | [certificate](../mvei/branches/M-Core/atk_debug-beal-completo-tmp/README.md) |
 | M-Core | `atk/material-rigid-integration-20261009` | 2026-10-09 | parada | 2 / 2 | 3 | 2 | [certificate](../mvei/branches/M-Core/atk_material-rigid-integration-20261009/README.md) |

@@ -13,13 +13,13 @@ Do not add confidential data or third-party code without checking its license an
 <!-- mvei:start -->
 ## Lean sources and kernel check (MVEI)
 
-[`imports/M-Core/`](imports/M-Core/) holds the Lean sources of `ShantiDraconis/M-Core` at commit `60a04e7` (2026-10-27): 544 files. In the MVEI verification the Lean kernel closed 11 717 theorems here (9 747 unique, without the lemmas Lean generates itself), with 5 conditional and 15 open (`sorry`). A closed theorem proves the statement written in the file; it is not a claim that an open problem is solved. Statements, axioms, the build log and how to reproduce: [`mvei/README.md`](mvei/README.md).
+[`imports/M-Core/`](imports/M-Core/) holds the Lean sources of `ShantiDraconis/M-Core` at commit `60a04e7` (2026-10-27): 544 files. In the MVEI verification the Lean kernel closed 11 774 theorems here (9 790 unique, without the lemmas Lean generates itself), with 6 conditional and 5 open (`sorry`). A closed theorem proves the statement written in the file; it is not a claim that an open problem is solved. Statements, axioms, the build log and how to reproduce: [`mvei/README.md`](mvei/README.md).
 <!-- mvei:end -->
 
 <!-- mvei-branches:start -->
 ## Theorems found only on branches
 
-46 branch(es) with 2 402 theorems that exist only on branches and that the Lean kernel closed, each with a certificate (commit, date, history, SHA-256): [`branches/README.md`](branches/README.md).
+45 branch(es) with 1 805 theorems that exist only on branches and that the Lean kernel closed, each with a certificate (commit, date, history, SHA-256): [`branches/README.md`](branches/README.md).
 <!-- mvei-branches:end -->
 
 ## Riemann bridge archive

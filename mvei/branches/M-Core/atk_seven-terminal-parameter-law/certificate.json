@@ -98,7 +98,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-29T05:36:17+00:00",
+  "generated_at": "2026-10-30T16:50:26+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -114,7 +114,7 @@
    "name": "MCore.FinalFail.RPA.COC_ne_CCO",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 292,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": wCOC ≠ wCCO"
   },
@@ -122,7 +122,7 @@
    "name": "MCore.FinalFail.RPA.OCC_ne_COC",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 291,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": wOCC ≠ wCOC"
   },
@@ -130,7 +130,7 @@
    "name": "MCore.FinalFail.RPA.OCO_ne_COO",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 290,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": wOCO ≠ wCOO"
   },
@@ -138,7 +138,7 @@
    "name": "MCore.FinalFail.RPA.OOC_ne_OCO",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 287,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": wOOC ≠ wOCO"
   },
@@ -146,7 +146,7 @@
    "name": "MCore.FinalFail.RPA.bridge_eq_math",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 63,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : OpenBridgeClosedBridge Open Closed ↔ Math Open Closed"
   },
@@ -154,7 +154,7 @@
    "name": "MCore.FinalFail.RPA.cannot_confirm_from_closed_alone",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 50,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) (hnot : ¬ Open) : Closed → ¬ Nonempty (Transition Open Closed)"
   },
@@ -162,7 +162,7 @@
    "name": "MCore.FinalFail.RPA.cannot_confirm_from_open_alone",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 42,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) (hnot : ¬ Closed) : Open → ¬ Nonempty (Transition Open Closed)"
   },
@@ -170,7 +170,7 @@
    "name": "MCore.FinalFail.RPA.confirmed_projects_closed",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 93,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{Open Closed : Prop} (h : GlobalExternalCertificate Open Closed) : Closed"
   },
@@ -178,7 +178,7 @@
    "name": "MCore.FinalFail.RPA.confirmed_projects_open",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 86,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{Open Closed : Prop} (h : GlobalExternalCertificate Open Closed) : Open"
   },
@@ -186,7 +186,7 @@
    "name": "MCore.FinalFail.RPA.dualEndpointState_iff_both_and_identity",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 145,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(OpenEndpoint ClosedEndpoint : Prop) : Nonempty (DualEndpointState OpenEndpoint ClosedEndpoint) ↔ OpenEndpoint ∧ ClosedEndpoint ∧ (OpenEndpoint ↔ ClosedEndpoint)"
   },
@@ -194,7 +194,7 @@
    "name": "MCore.FinalFail.RPA.dualEndpointState_iff_transition",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 135,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(OpenEndpoint ClosedEndpoint : Prop) : Nonempty (DualEndpointState OpenEndpoint ClosedEndpoint) ↔ Nonempty (Transition OpenEndpoint ClosedEndpoint)"
   },
@@ -202,7 +202,7 @@
    "name": "MCore.FinalFail.RPA.dual_endpoint_eq_global_external",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 196,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(OpenEndpoint ClosedEndpoint : Prop) : Nonempty (DualEndpointState OpenEndpoint ClosedEndpoint) ↔ GlobalExternalCertificate OpenEndpoint ClosedEndpoint"
   },
@@ -210,7 +210,7 @@
    "name": "MCore.FinalFail.RPA.dual_endpoint_full_chain",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 177,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(OpenEndpoint ClosedEndpoint : Prop) : (Nonempty (DualEndpointState OpenEndpoint ClosedEndpoint) ↔ OpenMathClosedMath OpenEndpoint ClosedEndpoint) ∧ (OpenMathClosedMath OpenEndpoint ClosedEndpoint ↔ OpenBridgeClosedBridge OpenEndpoint ClosedEndpoint) ∧ (OpenBridgeClosedBridge OpenEndpoint ClosedEndpoint ↔ Math OpenEndpoint ClosedEndpoint) ∧ (Math OpenEndpoint ClosedEndpoint ↔ FinalRoot OpenEndpoin"
   },
@@ -218,7 +218,7 @@
    "name": "MCore.FinalFail.RPA.dual_state_projects_closed",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 170,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{OpenEndpoint ClosedEndpoint : Prop} (h : Nonempty (DualEndpointState OpenEndpoint ClosedEndpoint)) : ClosedEndpoint"
   },
@@ -226,7 +226,7 @@
    "name": "MCore.FinalFail.RPA.dual_state_projects_open",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 163,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{OpenEndpoint ClosedEndpoint : Prop} (h : Nonempty (DualEndpointState OpenEndpoint ClosedEndpoint)) : OpenEndpoint"
   },
@@ -234,7 +234,7 @@
    "name": "MCore.FinalFail.RPA.eval_C",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 235,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wC = ⟨0, 1⟩"
   },
@@ -242,7 +242,7 @@
    "name": "MCore.FinalFail.RPA.eval_CC",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 247,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wCC = ⟨0, 2⟩"
   },
@@ -250,7 +250,7 @@
    "name": "MCore.FinalFail.RPA.eval_CCC",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 253,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wCCC = ⟨0, 3⟩"
   },
@@ -258,7 +258,7 @@
    "name": "MCore.FinalFail.RPA.eval_CCO",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 271,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wCCO = ⟨1, 2⟩"
   },
@@ -266,7 +266,7 @@
    "name": "MCore.FinalFail.RPA.eval_CO",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 244,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wCO = ⟨1, 1⟩"
   },
@@ -274,7 +274,7 @@
    "name": "MCore.FinalFail.RPA.eval_COC",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 268,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wCOC = ⟨1, 2⟩"
   },
@@ -282,7 +282,7 @@
    "name": "MCore.FinalFail.RPA.eval_COO",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 262,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wCOO = ⟨2, 1⟩"
   },
@@ -290,7 +290,7 @@
    "name": "MCore.FinalFail.RPA.eval_O",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 232,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wO = ⟨1, 0⟩"
   },
@@ -298,7 +298,7 @@
    "name": "MCore.FinalFail.RPA.eval_OC",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 241,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wOC = ⟨1, 1⟩"
   },
@@ -306,7 +306,7 @@
    "name": "MCore.FinalFail.RPA.eval_OCC",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 265,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wOCC = ⟨1, 2⟩"
   },
@@ -314,7 +314,7 @@
    "name": "MCore.FinalFail.RPA.eval_OCO",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 259,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wOCO = ⟨2, 1⟩"
   },
@@ -322,7 +322,7 @@
    "name": "MCore.FinalFail.RPA.eval_OO",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 238,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wOO = ⟨2, 0⟩"
   },
@@ -330,7 +330,7 @@
    "name": "MCore.FinalFail.RPA.eval_OOC",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 256,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wOOC = ⟨2, 1⟩"
   },
@@ -338,7 +338,7 @@
    "name": "MCore.FinalFail.RPA.eval_OOCC",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 274,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wOOCC = ⟨2, 2⟩"
   },
@@ -346,7 +346,7 @@
    "name": "MCore.FinalFail.RPA.eval_OOO",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 250,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wOOO = ⟨3, 0⟩"
   },
@@ -354,7 +354,7 @@
    "name": "MCore.FinalFail.RPA.finalRoot_eq_globalExternalCertificate",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 73,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : FinalRoot Open Closed ↔ GlobalExternalCertificate Open Closed"
   },
@@ -362,7 +362,7 @@
    "name": "MCore.FinalFail.RPA.free_closed_plus_closed",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 45,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": freeClosed.add freeClosed = freeClosedSq"
   },
@@ -370,7 +370,7 @@
    "name": "MCore.FinalFail.RPA.free_open_closed_closed",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 53,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": freeOpen.add freeClosedSq = freeOpenClosedClosed"
   },
@@ -378,7 +378,7 @@
    "name": "MCore.FinalFail.RPA.free_open_open_closed",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 49,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": freeOpenSq.add freeClosed = freeOpenOpenClosed"
   },
@@ -386,7 +386,7 @@
    "name": "MCore.FinalFail.RPA.free_open_plus_closed",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 37,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": freeOpen.add freeClosed = freeDual"
   },
@@ -394,7 +394,7 @@
    "name": "MCore.FinalFail.RPA.free_open_plus_open",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 41,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": freeOpen.add freeOpen = freeOpenSq"
   },
@@ -402,7 +402,7 @@
    "name": "MCore.FinalFail.RPA.free_two_two_full",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 57,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": freeOpenSq.add freeClosedSq = freeFull22"
   },
@@ -410,7 +410,7 @@
    "name": "MCore.FinalFail.RPA.full_eq_dualEndpointState",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 152,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(OpenEndpoint ClosedEndpoint : Prop) : FullEndpointPayload OpenEndpoint ClosedEndpoint ↔ Nonempty (DualEndpointState OpenEndpoint ClosedEndpoint)"
   },
@@ -418,7 +418,7 @@
    "name": "MCore.FinalFail.RPA.full_eq_finalRoot",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 164,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(OpenEndpoint ClosedEndpoint : Prop) : FullEndpointPayload OpenEndpoint ClosedEndpoint ↔ FinalRoot OpenEndpoint ClosedEndpoint"
   },
@@ -426,7 +426,7 @@
    "name": "MCore.FinalFail.RPA.full_eq_globalExternalCertificate",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 170,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(OpenEndpoint ClosedEndpoint : Prop) : FullEndpointPayload OpenEndpoint ClosedEndpoint ↔ GlobalExternalCertificate OpenEndpoint ClosedEndpoint"
   },
@@ -434,7 +434,7 @@
    "name": "MCore.FinalFail.RPA.full_eq_math",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 158,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(OpenEndpoint ClosedEndpoint : Prop) : FullEndpointPayload OpenEndpoint ClosedEndpoint ↔ Math OpenEndpoint ClosedEndpoint"
   },
@@ -442,7 +442,7 @@
    "name": "MCore.FinalFail.RPA.full_maximal_chain",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 176,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(OpenEndpoint ClosedEndpoint : Prop) : (FullEndpointPayload OpenEndpoint ClosedEndpoint ↔ Nonempty (DualEndpointState OpenEndpoint ClosedEndpoint)) ∧ (FullEndpointPayload OpenEndpoint ClosedEndpoint ↔ Math OpenEndpoint ClosedEndpoint) ∧ (FullEndpointPayload OpenEndpoint ClosedEndpoint ↔ FinalRoot OpenEndpoint ClosedEndpoint) ∧ (FullEndpointPayload OpenEndpoint ClosedEndpoint ↔ GlobalExternalCertif"
   },
@@ -450,7 +450,7 @@
    "name": "MCore.FinalFail.RPA.global_certificate_contains_both_endpoints",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 202,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{OpenEndpoint ClosedEndpoint : Prop} (h : GlobalExternalCertificate OpenEndpoint ClosedEndpoint) : OpenEndpoint ∧ ClosedEndpoint"
   },
@@ -458,7 +458,7 @@
    "name": "MCore.FinalFail.RPA.global_external_no_escape",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 99,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{Open Closed : Prop} (h : GlobalExternalCertificate Open Closed) : Open ∧ Closed"
   },
@@ -466,7 +466,7 @@
    "name": "MCore.FinalFail.RPA.join_closed_idempotent",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 128,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": CanonicalEndpointState.closed.join .closed = .closed"
   },
@@ -474,7 +474,7 @@
    "name": "MCore.FinalFail.RPA.join_closed_open_full",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 136,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": CanonicalEndpointState.closed.join .open = .full"
   },
@@ -482,7 +482,7 @@
    "name": "MCore.FinalFail.RPA.join_full_absorbing_left",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 140,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(x : CanonicalEndpointState) : CanonicalEndpointState.full.join x = .full"
   },
@@ -490,7 +490,7 @@
    "name": "MCore.FinalFail.RPA.join_full_absorbing_right",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 144,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(x : CanonicalEndpointState) : x.join .full = .full"
   },
@@ -498,7 +498,7 @@
    "name": "MCore.FinalFail.RPA.join_open_closed_full",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 132,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": CanonicalEndpointState.open.join .closed = .full"
   },
@@ -506,7 +506,7 @@
    "name": "MCore.FinalFail.RPA.join_open_idempotent",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 124,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": CanonicalEndpointState.open.join .open = .open"
   },
@@ -514,7 +514,7 @@
    "name": "MCore.FinalFail.RPA.math_eq_finalRoot",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 68,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : Math Open Closed ↔ FinalRoot Open Closed"
   },
@@ -522,7 +522,7 @@
    "name": "MCore.FinalFail.RPA.normalize_CCC_closed",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 321,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree (evalWord wCCC) = .closed"
   },
@@ -530,7 +530,7 @@
    "name": "MCore.FinalFail.RPA.normalize_CCO_full",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 316,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree (evalWord wCCO) = .full"
   },
@@ -538,7 +538,7 @@
    "name": "MCore.FinalFail.RPA.normalize_COC_full",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 314,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree (evalWord wCOC) = .full"
   },
@@ -546,7 +546,7 @@
    "name": "MCore.FinalFail.RPA.normalize_COO_full",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 310,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree (evalWord wCOO) = .full"
   },
@@ -554,7 +554,7 @@
    "name": "MCore.FinalFail.RPA.normalize_OCC_full",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 312,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree (evalWord wOCC) = .full"
   },
@@ -562,7 +562,7 @@
    "name": "MCore.FinalFail.RPA.normalize_OCO_full",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 308,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree (evalWord wOCO) = .full"
   },
@@ -570,7 +570,7 @@
    "name": "MCore.FinalFail.RPA.normalize_OOC_full",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 304,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree (evalWord wOOC) = .full"
   },
@@ -578,7 +578,7 @@
    "name": "MCore.FinalFail.RPA.normalize_OOO_open",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 318,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree (evalWord wOOO) = .open"
   },
@@ -586,7 +586,7 @@
    "name": "MCore.FinalFail.RPA.normalize_closed_sq",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 96,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree freeClosedSq = .closed"
   },
@@ -594,7 +594,7 @@
    "name": "MCore.FinalFail.RPA.normalize_dual",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 88,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree freeDual = .full"
   },
@@ -602,7 +602,7 @@
    "name": "MCore.FinalFail.RPA.normalize_empty",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 76,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree freeEmpty = .empty"
   },
@@ -610,7 +610,7 @@
    "name": "MCore.FinalFail.RPA.normalize_open_closed_closed",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 104,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree freeOpenClosedClosed = .full"
   },
@@ -618,7 +618,7 @@
    "name": "MCore.FinalFail.RPA.normalize_open_open_closed",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 100,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree freeOpenOpenClosed = .full"
   },
@@ -626,7 +626,7 @@
    "name": "MCore.FinalFail.RPA.normalize_open_sq",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 92,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree freeOpenSq = .open"
   },
@@ -634,7 +634,7 @@
    "name": "MCore.FinalFail.RPA.normalize_two_two_full",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 108,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree freeFull22 = .full"
   },
@@ -642,7 +642,7 @@
    "name": "MCore.FinalFail.RPA.openEndpointSide_ne_closedEndpointSide",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 122,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": EndpointSide.open ≠ EndpointSide.closed"
   },
@@ -650,7 +650,7 @@
    "name": "MCore.FinalFail.RPA.open_and_closed_coexist",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 155,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{OpenEndpoint ClosedEndpoint : Prop} (hOpen : OpenEndpoint) (hClosed : ClosedEndpoint) (hId : OpenEndpoint ↔ ClosedEndpoint) : Nonempty (DualEndpointState OpenEndpoint ClosedEndpoint)"
   },
@@ -658,7 +658,7 @@
    "name": "MCore.FinalFail.RPA.open_closed_eq_bridge",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 58,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : OpenMathClosedMath Open Closed ↔ OpenBridgeClosedBridge Open Closed"
   },
@@ -666,7 +666,7 @@
    "name": "MCore.FinalFail.RPA.ordered_FULL_eq_globalExternalCertificate",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 333,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(OpenEndpoint ClosedEndpoint : Prop) : FullEndpointPayload OpenEndpoint ClosedEndpoint ↔ GlobalExternalCertificate OpenEndpoint ClosedEndpoint"
   },
@@ -674,7 +674,7 @@
    "name": "MCore.FinalFail.RPA.ordered_OOCC_is_freeFull22",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 324,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wOOCC = freeFull22"
   },
@@ -682,7 +682,7 @@
    "name": "MCore.FinalFail.RPA.ordered_OOCC_normalizes_FULL",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 329,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": normalizeFree (evalWord wOOCC) = .full"
   },
@@ -690,7 +690,7 @@
    "name": "MCore.FinalFail.RPA.three_closed_one_two_same_multiplicity",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 299,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wOCC = evalWord wCOC ∧ evalWord wCOC = evalWord wCCO"
   },
@@ -698,7 +698,7 @@
    "name": "MCore.FinalFail.RPA.three_open_two_one_same_multiplicity",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 293,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": evalWord wOOC = evalWord wOCO ∧ evalWord wOCO = evalWord wCOO"
   },
@@ -706,7 +706,7 @@
    "name": "MCore.FinalFail.RPA.transition_iff_source_target_identity",
    "file": "lean/MCore/FinalFail/RPATransitionDuality.lean",
    "line": 32,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(Open Closed : Prop) : Nonempty (Transition Open Closed) ↔ Open ∧ Closed ∧ (Open ↔ Closed)"
   },
@@ -714,7 +714,7 @@
    "name": "MCore.FinalFail.RPA.wordsUpToThree_count",
    "file": "lean/MCore/FinalFail/RPAEndpointLattice.lean",
    "line": 283,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": wordsUpToThree.length = 14"
   },
@@ -895,7 +895,7 @@
    "statement": "∀ (M : MCore.FinalFail.SevenTerminalParameterLaw.YangMillsModel),   ¬(MCore.FinalFail.SevenTerminalParameterLaw.YangMillsCertifies M ∧       MCore.FinalFail.SevenTerminalParameterLaw.YangMillsRefutes M)"
   }
  ],
- "closed": 41,
+ "closed": 22,
  "files_sha256": {
   "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
   "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
@@ -904,7 +904,6 @@
   "lean/MCore/FinalFail/BoundaryAtoms.lean": "54deb42c3e0d344359ecab23e499cb0e60114146b007003b540c2d564a36024f",
   "lean/MCore/FinalFail/DirectProducerCuts.lean": "7441cfa7bed39df4bf1a4c1f2d6fd44b7e815cf84c72177fd49ec63e19c7cbee",
   "lean/MCore/FinalFail/ProblemSignature.lean": "4b35cf595226b84dc7d7abf931330e59359aae03c2f0ce5bb8029b3eeb6d739d",
-  "lean/MCore/FinalFail/RPATransitionDuality.lean": "cd0245c37a624b798392535bee3339d2917d5ff98f80e539f006b6bf3b215407",
   "lean/MCore/FinalFail/Semantic/BSD.lean": "be66d8c211db7a78d648b1d4be0a27f54fdd969e305640e8a401abb80c507668",
   "lean/MCore/FinalFail/Semantic/Beal.lean": "7461d91a196c5d7a61ba7f3fabce0947d529902426ec1e96cab2994b97f787a0",
   "lean/MCore/FinalFail/Semantic/Hodge.lean": "c82ec2d0082ec5c801c4f2937246e831021f00ef8dec5cc7059628a9df7b4d03",
@@ -918,6 +917,6 @@
   "lean/MCore/FinalFail/SevenTerminalParameterLaw.lean": "b9dba747e81e7a8a6f950bd282baa4942a8fe0ccb7b7e26be46fffea24fb8693",
   "lean/MCore/FinalFail/UniversalTerminalClosure.lean": "fb3ff48d134a3b80d70f1923cc58e8339d3f7b2211b1c9214085ac79389f8170"
  },
- "published_at": "2026-10-29T20:16:01Z",
- "certificate_sha256": "c79c7ebd169fbdaae0f8db4b759d401be28c5d547bed5f04d1f28dbaa6df6615"
+ "published_at": "2026-11-02T20:55:41Z",
+ "certificate_sha256": "00b7eb544fe8962cb94150e3edbff73ac820f2864875e4e12845a84b5b941949"
 }

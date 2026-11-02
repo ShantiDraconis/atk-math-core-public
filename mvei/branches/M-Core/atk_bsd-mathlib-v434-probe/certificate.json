@@ -28,7 +28,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-29T05:36:17+00:00",
+  "generated_at": "2026-10-30T16:50:26+00:00",
   "lean": [
    "leanprover/lean4:v4.34.0"
   ],
@@ -74,6 +74,6 @@
   "lean/MCore/FinalFail/Semantic/BSD.lean": "be66d8c211db7a78d648b1d4be0a27f54fdd969e305640e8a401abb80c507668",
   "lean/MCore/FinalFail/SevenLocalNuclei.lean": "79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d"
  },
- "published_at": "2026-10-29T20:16:16Z",
- "certificate_sha256": "75ed93d8d66e34f4bc25359a1f6c24311f7495bd8345aa201a9f522379ca594f"
+ "published_at": "2026-11-02T20:55:58Z",
+ "certificate_sha256": "f8b7411db199ac2d7ef05ceb6f6c4cddfdcadb2aba6bc628f0948b433665574b"
 }

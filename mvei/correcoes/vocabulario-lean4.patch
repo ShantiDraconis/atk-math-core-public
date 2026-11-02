@@ -1,0 +1,5927 @@
+--- a/Contaminated/NotImported/lean-MCore/Poincare.lean
++++ b/Contaminated/NotImported/lean-MCore/Poincare.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore.Poincare
+ 
+ /--
+@@ -17,14 +19,14 @@
+   deriving DecidableEq, Repr
+ 
+ /-- Abstract endpoint interface for the closed 3-manifold problem. -/
+-constant Closed3Manifold : Type
+-constant S3 : Closed3Manifold
+-constant SimplyConnected : Closed3Manifold → Prop
+-constant Diffeomorphic : Closed3Manifold → Closed3Manifold → Prop
++axiom Closed3Manifold : Type
++axiom S3 : Closed3Manifold
++axiom SimplyConnected : Closed3Manifold → Prop
++axiom Diffeomorphic : Closed3Manifold → Closed3Manifold → Prop
+ 
+ /-- Abstract Ricci-flow-with-surgery interface used only to type the route. -/
+-constant RicciFlowWithSurgery : Closed3Manifold → ℝ → Closed3Manifold
+-constant FiniteTimeExtinction : Closed3Manifold → ℝ → Prop
++axiom RicciFlowWithSurgery : Closed3Manifold → ℝ → Closed3Manifold
++axiom FiniteTimeExtinction : Closed3Manifold → ℝ → Prop
+ 
+ /-- C0: the topological input condition. -/
+ def SimplyConnectedCertificate (M : Closed3Manifold) : Prop :=
+--- a/MCore/A1Amplitude.lean
++++ b/MCore/A1Amplitude.lean
+@@ -1,6 +1,8 @@
+ import MCore.Core
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ /-- Degree-one amplitude homogeneity on a real vector space. -/
+--- a/MCore/A2SelfRef.lean
++++ b/MCore/A2SelfRef.lean
+@@ -1,6 +1,8 @@
+ import MCore.Core
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ inductive Node where
+--- a/MCore/A3Zero.lean
++++ b/MCore/A3Zero.lean
+@@ -1,6 +1,8 @@
+ import MCore.Core
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ /-- A quotient-like invariant is undefined at a zero locus until an extension
+--- a/MCore/A4Scale.lean
++++ b/MCore/A4Scale.lean
+@@ -1,6 +1,8 @@
+ import MCore.Core
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ /-- Problem-specific rescaling action. M-Core does not assume that unrelated
+--- a/MCore/Admissible.lean
++++ b/MCore/Admissible.lean
+@@ -3,6 +3,8 @@
+ import MCore.A4Scale
+ import MCore.DAG
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ /-- Certified facts exposed by a concrete adapter.  No numerical calibration or
+--- a/MCore/BSDLogicOpenMath.lean
++++ b/MCore/BSDLogicOpenMath.lean
+@@ -1,5 +1,7 @@
+ import MCore.IBoundaryProvenance
+ 
++noncomputable section
++
+ /-!
+ # BSD Logic Open-Math Gate
+ 
+--- a/MCore/Bridge20.lean
++++ b/MCore/Bridge20.lean
+@@ -1,6 +1,8 @@
+ import MCore.CertificateKernel
+ import MCore.Core
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ /-- #20: the final Navier–Stokes bridge is represented explicitly as an open
+--- a/MCore/CertificateKernel.lean
++++ b/MCore/CertificateKernel.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ /-- Status carried by certificate-DAG nodes. Only `proved` may inhabit
+--- a/MCore/Core.lean
++++ b/MCore/Core.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ /-- Scientific status is explicit and never inferred from a filename. -/
+--- a/MCore/DAG.lean
++++ b/MCore/DAG.lean
+@@ -1,5 +1,7 @@
+ import MCore.A2SelfRef
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ /-- Reflexive-transitive reachability in an arbitrary audit graph. -/
+--- a/MCore/DagAudit.lean
++++ b/MCore/DagAudit.lean
+@@ -1,5 +1,7 @@
+ import MCore.CertificateKernel
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ /-- K10: `dependency` is necessary for this declared derivation route exactly
+--- a/MCore/IBoundaryProvenance.lean
++++ b/MCore/IBoundaryProvenance.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.Order.Filter.Basic
+ import Mathlib.Topology.Instances.Real.Lemmas
+ 
++noncomputable section
++
+ /-!
+ # I-Boundary Provenance
+ 
+@@ -39,7 +41,7 @@
+   infinitesimalPart : ℝ
+   kind : SingularityKind
+   orientation : Orientation
+-  deriving DecidableEq, Repr
++  deriving DecidableEq
+ 
+ /-- Terminal observable projection. -/
+ def terminalProjection (x : INumber) : ℝ := x.realPart
+--- a/MCore/ScaleFixture.lean
++++ b/MCore/ScaleFixture.lean
+@@ -1,5 +1,7 @@
+ import MCore.A4Scale
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ /-- Pure scale fixture: no Phi, epsilon0, or stopping-time statement is hidden
+--- a/MCore/ZeroQuotient.lean
++++ b/MCore/ZeroQuotient.lean
+@@ -1,6 +1,8 @@
+ import MCore.A3Zero
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ /-- The numerator and denominator are fixed globally; only the approach path
+--- a/atk-kernel/ATK/ASWReciproca.lean
++++ b/atk-kernel/ATK/ASWReciproca.lean
+@@ -1,4 +1,7 @@
+ import ATK.ToeplitzTN
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — A recíproca de Aissen–Schoenberg–Whitney para polinômios
+--- a/atk-kernel/ATK/ATKI.lean
++++ b/atk-kernel/ATK/ATKI.lean
+@@ -3,6 +3,7 @@
+ import Mathlib.Topology.Algebra.InfiniteSum.Real
+ import Mathlib.Algebra.BigOperators.Fin
+ import Mathlib.Data.Fin.Tuple.Basic
++import Mathlib.Tactic.Positivity
+ 
+ /-!
+ # ATK-I — estados, certificados, fechamento por defeito e números relacionais
+--- a/atk-kernel/ATK/ATKIAplicacoes.lean
++++ b/atk-kernel/ATK/ATKIAplicacoes.lean
+@@ -3,6 +3,8 @@
+ import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+ import Mathlib.LinearAlgebra.Matrix.Notation
+ import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
+ 
+ /-!
+ # ATK-I — aplicações às sete conjecturas: o que a álgebra relacional prova de fato
+--- a/atk-kernel/ATK/ATKIExemplos.lean
++++ b/atk-kernel/ATK/ATKIExemplos.lean
+@@ -4,6 +4,9 @@
+ import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+ import Mathlib.Data.Matrix.Mul
+ import Mathlib.Data.Complex.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
+ 
+ /-!
+ # ATK-I — os sete cálculos concretos do texto, verificados
+--- a/atk-kernel/ATK/ATKINormal.lean
++++ b/atk-kernel/ATK/ATKINormal.lean
+@@ -1,6 +1,8 @@
+ import ATK.ATKIBagchi
+ import Mathlib.Analysis.Real.Hyperreal
+ 
++noncomputable section
++
+ /-!
+ # ATK-I — pares relacionais, ordem de proximidade e normalização da igualdade
+ 
+--- a/atk-kernel/ATK/AlgebraTerminal.lean
++++ b/atk-kernel/ATK/AlgebraTerminal.lean
+@@ -1,5 +1,7 @@
+ import Mathlib.Analysis.SpecialFunctions.Pow.Real
+ 
++noncomputable section
++
+ /-!
+ # ATK — Álgebra de Terminais com Certificação
+ 
+--- a/atk-kernel/ATK/AtaqueBSD.lean
++++ b/atk-kernel/ATK/AtaqueBSD.lean
+@@ -44,6 +44,10 @@
+ import Mathlib.Analysis.Complex.ExponentialBounds
+ import Mathlib.Analysis.Real.Pi.Bounds
+ import Mathlib.MeasureTheory.Integral.DominatedConvergence
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ open Complex Set MeasureTheory Filter Asymptotics Topology
+ open scoped Real
+--- a/atk-kernel/ATK/AtaqueNS.lean
++++ b/atk-kernel/ATK/AtaqueNS.lean
+@@ -20,6 +20,8 @@
+ -/
+ import ATK.LigacaoNS
+ 
++noncomputable section
++
+ namespace ATK.AtaqueNS
+ 
+ open ATK.Conditional.NavierStokes ATK.LigacaoNS
+--- a/atk-kernel/ATK/AtaquePvsNP.lean
++++ b/atk-kernel/ATK/AtaquePvsNP.lean
+@@ -21,6 +21,8 @@
+ import ATK.LigacaoPNP
+ import ATK.Shannon
+ 
++noncomputable section
++
+ namespace ATK.AtaquePvsNP
+ 
+ open ATK.LigacaoPNP ATK.Shannon Filter
+--- a/atk-kernel/ATK/AtaqueRH.lean
++++ b/atk-kernel/ATK/AtaqueRH.lean
+@@ -21,6 +21,13 @@
+ -/
+ import ATK.BaseRiemannXiSinal
+ import ATK.BaseRiemannTeta
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ open Complex Set MeasureTheory Filter
+ open scoped Real
+--- a/atk-kernel/ATK/AtaqueYM.lean
++++ b/atk-kernel/ATK/AtaqueYM.lean
+@@ -16,6 +16,9 @@
+ (com fixação de calibre nos elos que cruzam); Y4 (gap em acoplamento forte) vem depois.
+ -/
+ import ATK.BasePositividadeReflexao
++import Mathlib.Analysis.SpecialFunctions.Exp
++
++noncomputable section
+ 
+ open MeasureTheory
+ 
+--- a/atk-kernel/ATK/BDDistSqPort.lean
++++ b/atk-kernel/ATK/BDDistSqPort.lean
+@@ -1,4 +1,7 @@
+ import ATK.BaezDuarteBridge
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Port de B1 para a distância `bdDistSq` da linha de Riemann
+--- a/atk-kernel/ATK/BLCauda.lean
++++ b/atk-kernel/ATK/BLCauda.lean
+@@ -1,5 +1,7 @@
+ import ATK.MellinPlancherel
+ import ATK.BLEulerMaclaurin
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Bohr–Landau, passo 3 — a cauda de Euler–Maclaurin em L² (Plancherel de Mellin)
+--- a/atk-kernel/ATK/BLDirichlet.lean
++++ b/atk-kernel/ATK/BLDirichlet.lean
+@@ -2,6 +2,11 @@
+ import Mathlib.Analysis.SumIntegralComparisons
+ import Mathlib.NumberTheory.Harmonic.Bounds
+ import Mathlib.Analysis.SpecialFunctions.Pow.Complex
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # Bohr–Landau, passo 4 — média quadrática do polinômio de Dirichlet
+--- a/atk-kernel/ATK/BLEulerMaclaurin.lean
++++ b/atk-kernel/ATK/BLEulerMaclaurin.lean
+@@ -1,4 +1,6 @@
+ import ATK.ZetaStrip
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # Bohr–Landau, passo 2 — Euler–Maclaurin de primeira ordem para `N` geral
+--- a/atk-kernel/ATK/BLJensen.lean
++++ b/atk-kernel/ATK/BLJensen.lean
+@@ -1,5 +1,8 @@
+ import Mathlib.Analysis.Complex.JensenFormula
+ import Mathlib.NumberTheory.LSeries.ZetaZeros
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Bohr–Landau, passo 1 — contagem de zeros por Jensen, em forma de média
+--- a/atk-kernel/ATK/BLMediaZeta.lean
++++ b/atk-kernel/ATK/BLMediaZeta.lean
+@@ -1,5 +1,8 @@
+ import ATK.BLCauda
+ import ATK.BLDirichlet
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # Bohr–Landau, passo 5 — média quadrática de `ζ` à direita de `1/2`
+--- a/atk-kernel/ATK/BLProva.lean
++++ b/atk-kernel/ATK/BLProva.lean
+@@ -3,6 +3,10 @@
+ import ATK.BohrLandau
+ import Mathlib.Analysis.Real.Pi.Bounds
+ import Mathlib.NumberTheory.ZetaValues
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # Bohr–Landau, passo 6 — a prova incondicional de `N(1/2 + δ, T) = O(T)`
+--- a/atk-kernel/ATK/BSDEulerE32.lean
++++ b/atk-kernel/ATK/BSDEulerE32.lean
+@@ -1,5 +1,6 @@
+ import ATK.BSDTamagawaE32
+ import Mathlib.NumberTheory.LegendreSymbol.QuadraticChar.Basic
++import Mathlib.Algebra.Polynomial.Basic
+ 
+ /-!
+ # O fator de Euler de `y² = x³ − x` nos primos supersingulares, na função L da Mathlib
+--- a/atk-kernel/ATK/BSDInvariantes.lean
++++ b/atk-kernel/ATK/BSDInvariantes.lean
+@@ -7,6 +7,9 @@
+ import Mathlib.Analysis.SpecialFunctions.Pow.Real
+ import Mathlib.GroupTheory.Descent
+ import Mathlib.LinearAlgebra.Dimension.StrongRankCondition
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ligação L4: os invariantes da fórmula refinada de BSD
+--- a/atk-kernel/ATK/BSDPortoes.lean
++++ b/atk-kernel/ATK/BSDPortoes.lean
+@@ -1,5 +1,7 @@
+ import ATK.LigacaoBSD
+ 
++noncomputable section
++
+ /-!
+ # BSD em dois portões: BSD_CLAY (posto) e BSD_REFINED (fórmula refinada)
+ 
+--- a/atk-kernel/ATK/BSDRefinada.lean
++++ b/atk-kernel/ATK/BSDRefinada.lean
+@@ -3,6 +3,8 @@
+ import Mathlib.Topology.LocallyConstant.Basic
+ import Mathlib.Algebra.BigOperators.Finprod
+ 
++noncomputable section
++
+ /-!
+ # ATK — Ligação L4: Tamagawa, Ш e a fórmula refinada de BSD
+ 
+--- a/atk-kernel/ATK/BaezDuarteBridge.lean
++++ b/atk-kernel/ATK/BaezDuarteBridge.lean
+@@ -1,6 +1,10 @@
+ import ATK.MellinRho
+ import ATK.RiemannStates
+ import Mathlib.NumberTheory.LSeries.Nonvanishing
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — Ponte B1 provada: `D_N → 0 ⇒ Hipótese de Riemann` (Nyman–Beurling–Báez-Duarte)
+--- a/atk-kernel/ATK/BaezDuarteVetorB.lean
++++ b/atk-kernel/ATK/BaezDuarteVetorB.lean
+@@ -21,6 +21,8 @@
+ import ATK.GramBaezDuarte
+ import Mathlib.NumberTheory.Harmonic.EulerMascheroni
+ import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Data.Real.Basic
+ 
+ namespace ATK.BaezDuarteVetorB
+ 
+--- a/atk-kernel/ATK/BarreiraModelos.lean
++++ b/atk-kernel/ATK/BarreiraModelos.lean
+@@ -1,6 +1,10 @@
+ import ATK.BarreiraZero
+ import ATK.LinhaIncognita
+ import ATK.Cert.Transc
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK-RH — Cálculo da barreira, o modelo logarítmico e o ajuste de dois pontos
+--- a/atk-kernel/ATK/BarreiraZero.lean
++++ b/atk-kernel/ATK/BarreiraZero.lean
+@@ -1,5 +1,8 @@
+ import ATK.ForaDaLinha
+ import ATK.DInfinito
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK-RH — A barreira de um zero fora da linha: `D_N ≥ (2σ−1)|1−ρ|²/|ρ|⁴`
+--- a/atk-kernel/ATK/BaseGalerkinDecaimento.lean
++++ b/atk-kernel/ATK/BaseGalerkinDecaimento.lean
+@@ -16,6 +16,11 @@
+ É a estimativa uniforme em `K` que alimenta a compacidade (N4) e a passagem ao limite (N5).
+ -/
+ import ATK.BaseGalerkinGlobal
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Complex.Basic
+ 
+ open Finset Complex ComplexConjugate Set
+ open scoped RealInnerProductSpace
+--- a/atk-kernel/ATK/BaseGalerkinGlobal.lean
++++ b/atk-kernel/ATK/BaseGalerkinGlobal.lean
+@@ -22,6 +22,11 @@
+ import Mathlib.Analysis.InnerProductSpace.PiL2
+ import Mathlib.Analysis.Calculus.ContDiff.Operations
+ import Mathlib.Analysis.Calculus.MeanValue
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ open Finset Complex ComplexConjugate Metric Set
+ open scoped NNReal RealInnerProductSpace
+--- a/atk-kernel/ATK/BaseGalerkinNS.lean
++++ b/atk-kernel/ATK/BaseGalerkinNS.lean
+@@ -27,6 +27,10 @@
+ import Mathlib.Analysis.Calculus.Deriv.Add
+ import Mathlib.Analysis.Calculus.Deriv.MeanValue
+ import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ open Finset Complex ComplexConjugate
+ 
+--- a/atk-kernel/ATK/BaseGaussCurva32.lean
++++ b/atk-kernel/ATK/BaseGaussCurva32.lean
+@@ -1,6 +1,8 @@
+ import ATK.PonteFatoresCurva32
+ import ATK.BaseGaussPrimario
+ 
++noncomputable section
++
+ /-!
+ # ATK — Base: o traço de Frobenius de `y² = x³ − x` é `π + π̄` (Gauss)
+ 
+--- a/atk-kernel/ATK/BaseGaussPrimario.lean
++++ b/atk-kernel/ATK/BaseGaussPrimario.lean
+@@ -1,6 +1,8 @@
+ import ATK.PonteCoefCurva32
+ import Mathlib.NumberTheory.Zsqrtd.QuadraticReciprocity
+ 
++noncomputable section
++
+ /-!
+ # ATK — Base: inteiros de Gauss primários e a série `Σ α q^{N(α)}`
+ 
+--- a/atk-kernel/ATK/BaseHasseCurva32.lean
++++ b/atk-kernel/ATK/BaseHasseCurva32.lean
+@@ -20,6 +20,9 @@
+ -/
+ import Mathlib.NumberTheory.LegendreSymbol.QuadraticChar.Basic
+ import Mathlib.Algebra.BigOperators.Ring.Finset
++import Mathlib.Tactic.Positivity
++
++noncomputable section
+ 
+ open Finset
+ 
+--- a/atk-kernel/ATK/BaseHodgeLinear.lean
++++ b/atk-kernel/ATK/BaseHodgeLinear.lean
+@@ -21,6 +21,8 @@
+ import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
+ import Mathlib.Analysis.Complex.Basic
+ import Mathlib.Tactic.Module
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Complex.Basic
+ 
+ open Complex ComplexConjugate
+ 
+--- a/atk-kernel/ATK/BaseIntervalar.lean
++++ b/atk-kernel/ATK/BaseIntervalar.lean
+@@ -19,6 +19,11 @@
+ import Mathlib.Analysis.Complex.ExponentialBounds
+ import Mathlib.Analysis.Real.Pi.Bounds
+ import Mathlib.Data.Rat.Cast.Order
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Data.Nat.Factorial.Basic
++
++noncomputable section
+ 
+ namespace ATK.BaseIntervalar
+ 
+--- a/atk-kernel/ATK/BaseNagellLutzDois.lean
++++ b/atk-kernel/ATK/BaseNagellLutzDois.lean
+@@ -18,6 +18,9 @@
+ import Mathlib.Algebra.Polynomial.Degree.SmallDegree
+ import Mathlib.Algebra.Group.Int.Units
+ import Mathlib.Data.Rat.Lemmas
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ namespace ATK.BaseNagellLutzDois
+ 
+--- a/atk-kernel/ATK/BasePositividadeReflexao.lean
++++ b/atk-kernel/ATK/BasePositividadeReflexao.lean
+@@ -28,6 +28,10 @@
+ import Mathlib.Analysis.SpecialFunctions.Exponential
+ import Mathlib.Analysis.SpecificLimits.Normed
+ import Mathlib.Algebra.Order.BigOperators.Ring.Finset
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++
++noncomputable section
+ 
+ open MeasureTheory Finset
+ open scoped Nat
+--- a/atk-kernel/ATK/BaseRedeCalibre.lean
++++ b/atk-kernel/ATK/BaseRedeCalibre.lean
+@@ -25,6 +25,8 @@
+ import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+ import Mathlib.Data.Complex.Basic
+ 
++noncomputable section
++
+ namespace ATK.BaseRedeCalibre
+ 
+ open Finset
+--- a/atk-kernel/ATK/BaseReducaoDois.lean
++++ b/atk-kernel/ATK/BaseReducaoDois.lean
+@@ -17,6 +17,8 @@
+ import ATK.BaseNagellLutzDois
+ import Mathlib.Data.ZMod.Basic
+ 
++noncomputable section
++
+ namespace ATK.BaseReducaoDois
+ 
+ open WeierstrassCurve WeierstrassCurve.Affine ATK.BaseCurvasTorsao ATK.BaseNagellLutzDois
+--- a/atk-kernel/ATK/BaseRiemannTeta.lean
++++ b/atk-kernel/ATK/BaseRiemannTeta.lean
+@@ -18,6 +18,11 @@
+ Esta é a representação sobre a qual se constrói o teorema de Hardy (camada R4).
+ -/
+ import ATK.BaseRiemannXi
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ open Complex Set MeasureTheory
+ open scoped Real
+--- a/atk-kernel/ATK/BaseRiemannXi.lean
++++ b/atk-kernel/ATK/BaseRiemannXi.lean
+@@ -23,6 +23,9 @@
+ import Mathlib.NumberTheory.LSeries.Nonvanishing
+ import Mathlib.Topology.Algebra.Module.Cardinality
+ import Mathlib.Topology.Order.IntermediateValue
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ open Complex ComplexConjugate Set Filter Topology
+ 
+--- a/atk-kernel/ATK/BaseRiemannXiSinal.lean
++++ b/atk-kernel/ATK/BaseRiemannXiSinal.lean
+@@ -17,6 +17,9 @@
+ -/
+ import ATK.BaseRiemannXi
+ import ATK.ZetaSimetria
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ open Complex Set
+ 
+--- a/atk-kernel/ATK/BaseToroPoincare.lean
++++ b/atk-kernel/ATK/BaseToroPoincare.lean
+@@ -20,6 +20,8 @@
+ -/
+ import ATK.BaseGalerkinDecaimento
+ import Mathlib.Analysis.Fourier.AddCircleMulti
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
+ 
+ open MeasureTheory UnitAddTorus Finset Set
+ open scoped ComplexConjugate
+--- a/atk-kernel/ATK/BaseWilsonMedida.lean
++++ b/atk-kernel/ATK/BaseWilsonMedida.lean
+@@ -21,6 +21,8 @@
+ import Mathlib.MeasureTheory.Group.Measure
+ import Mathlib.Analysis.SpecialFunctions.Exp
+ 
++noncomputable section
++
+ open MeasureTheory
+ open scoped ENNReal
+ 
+--- a/atk-kernel/ATK/BealCompleto.lean
++++ b/atk-kernel/ATK/BealCompleto.lean
+@@ -1,5 +1,7 @@
+ import ATK.BealDarmonMerel
+ 
++noncomputable section
++
+ /-!
+ # ATK — Teorema completo de Beal: o que está provado, o que é ponte, o que resta
+ 
+--- a/atk-kernel/ATK/BealDarmonMerel.lean
++++ b/atk-kernel/ATK/BealDarmonMerel.lean
+@@ -1,5 +1,7 @@
+ import ATK.BealFermatDescent
+ 
++noncomputable section
++
+ /-!
+ # ATK — Redução **condicional** de O2 pela ponte de Darmon–Merel
+ 
+--- a/atk-kernel/ATK/BealFLT.lean
++++ b/atk-kernel/ATK/BealFLT.lean
+@@ -1,5 +1,8 @@
+ import ATK.BealResidual
+ import Mathlib.Data.Nat.Factorization.Basic
++import Mathlib.Data.Nat.Prime.Defs
++
++noncomputable section
+ 
+ /-!
+ # ATK — Beal com o Último Teorema de Fermat: a lacuna se reduz a `mdc(x, y, z) ∈ {1, 2}`
+--- a/atk-kernel/ATK/BealFermatDescent.lean
++++ b/atk-kernel/ATK/BealFermatDescent.lean
+@@ -1,6 +1,8 @@
+ import ATK.BealFourFourTwo
+ import ATK.FermatRightTriangle
+ 
++noncomputable section
++
+ /-!
+ # ATK — Beal nas assinaturas `(4k, 2l, 4m)` e `(2k, 4l, 4m)` (redução do residual de O2)
+ 
+--- a/atk-kernel/ATK/BealFermatRegular.lean
++++ b/atk-kernel/ATK/BealFermatRegular.lean
+@@ -1,6 +1,8 @@
+ import ATK.BealSeisSeisDois
+ import ATK.FermatRegular
+ 
++noncomputable section
++
+ /-!
+ # ATK — Beal com fator comum 5, 7, 11, 13, 17 ou 19 nos expoentes, incondicionalmente
+ 
+--- a/atk-kernel/ATK/BealFiltros.lean
++++ b/atk-kernel/ATK/BealFiltros.lean
+@@ -1,5 +1,7 @@
+ import ATK.Conditional.Beal
+ 
++noncomputable section
++
+ /-!
+ # ATK — Beal: filtros de paridade e o valor exato de `g*`
+ 
+--- a/atk-kernel/ATK/BealFourFourTwo.lean
++++ b/atk-kernel/ATK/BealFourFourTwo.lean
+@@ -1,5 +1,7 @@
+ import ATK.BealResidual
+ 
++noncomputable section
++
+ /-!
+ # ATK — Beal na assinatura `(4k, 4l, 2m)`, incondicionalmente (redução do residual de O2)
+ 
+--- a/atk-kernel/ATK/BealPartial.lean
++++ b/atk-kernel/ATK/BealPartial.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.NumberTheory.FLT.Three
+ import Mathlib.NumberTheory.FLT.Four
+ 
++noncomputable section
++
+ /-!
+ # ATK — Casos de Beal provados incondicionalmente (fragmento da obrigação O2)
+ 
+--- a/atk-kernel/ATK/BealPolinomial.lean
++++ b/atk-kernel/ATK/BealPolinomial.lean
+@@ -17,6 +17,7 @@
+ -/
+ import ATK.RefutacoesBeal
+ import Mathlib.NumberTheory.FLT.Polynomial
++import Mathlib.Algebra.Polynomial.Basic
+ 
+ namespace ATK.BealPolinomial
+ 
+--- a/atk-kernel/ATK/BealReduction.lean
++++ b/atk-kernel/ATK/BealReduction.lean
+@@ -1,4 +1,7 @@
+ import ATK.Conditional.Beal
++import Mathlib.Data.Nat.Prime.Defs
++
++noncomputable section
+ 
+ /-!
+ # ATK — Redução exata de Beal às soluções primitivas (produtor `C_Beal`)
+--- a/atk-kernel/ATK/BealResidual.lean
++++ b/atk-kernel/ATK/BealResidual.lean
+@@ -1,6 +1,8 @@
+ import ATK.BealReduction
+ import ATK.BealPartial
+ 
++noncomputable section
++
+ /-!
+ # ATK — O domínio residual exato de Beal, incondicionalmente
+ 
+--- a/atk-kernel/ATK/BealSeisSeisDois.lean
++++ b/atk-kernel/ATK/BealSeisSeisDois.lean
+@@ -1,5 +1,8 @@
+ import ATK.BealFermatDescent
+ import ATK.DarmonMerelSeis
++import Mathlib.Data.Nat.Prime.Defs
++
++noncomputable section
+ 
+ /-!
+ # ATK — Beal na assinatura `(6k, 6l, 2m)`, incondicionalmente (redução do residual de O2)
+--- a/atk-kernel/ATK/BohrLandau.lean
++++ b/atk-kernel/ATK/BohrLandau.lean
+@@ -1,6 +1,8 @@
+ import ATK.EixoDeslocado
+ import Mathlib.NumberTheory.LSeries.ZetaZeros
+ 
++noncomputable section
++
+ /-!
+ # ATK-RH — O teorema de aproximação em 1/2 (Bohr–Landau, 1914)
+ 
+--- a/atk-kernel/ATK/BorderPrimes.lean
++++ b/atk-kernel/ATK/BorderPrimes.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.Data.Nat.Digits.Div
+ import Mathlib.Tactic.NormNum.Prime
+ 
++noncomputable section
++
+ /-!
+ # ATK — Primos de borda (`pi-border-primes`) e as leis L1–L4
+ 
+--- a/atk-kernel/ATK/BridgeReduction.lean
++++ b/atk-kernel/ATK/BridgeReduction.lean
+@@ -3,6 +3,8 @@
+ import ATK.BaezDuarteBridge
+ import ATK.BealFermatDescent
+ 
++noncomputable section
++
+ /-!
+ # ATK — Redução das hipóteses do teorema-mestre ao que o kernel ainda não tem
+ 
+--- a/atk-kernel/ATK/CapturaIncondicional.lean
++++ b/atk-kernel/ATK/CapturaIncondicional.lean
+@@ -14,6 +14,7 @@
+ -/
+ import ATK.CapturaRH
+ import ATK.RelacionalDN
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
+ 
+ namespace ATK.CapturaIncondicional
+ 
+--- a/atk-kernel/ATK/CapturaRH.lean
++++ b/atk-kernel/ATK/CapturaRH.lean
+@@ -1,4 +1,6 @@
+ import ATK.ContracaoDN
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
+ 
+ /-!
+ # Captura relativa acumulada na família genuína de Báez-Duarte
+--- a/atk-kernel/ATK/CaudaMeio.lean
++++ b/atk-kernel/ATK/CaudaMeio.lean
+@@ -1,5 +1,6 @@
+ import ATK.ZetaTroca
+ import ATK.BarreiraZero
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK-RH — "1/2 com cauda": as três leituras, decididas
+--- a/atk-kernel/ATK/Cert/Intervalo.lean
++++ b/atk-kernel/ATK/Cert/Intervalo.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # Aritmética de intervalos verificada sobre `ℚ` (fase 2)
+ 
+--- a/atk-kernel/ATK/Cert/Transc.lean
++++ b/atk-kernel/ATK/Cert/Transc.lean
+@@ -1,4 +1,11 @@
+ import ATK.Cert.Intervalo
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # Funções transcendentes certificadas: `e^{iθ}`, `log n`, `√n` (fase 2)
+--- a/atk-kernel/ATK/CircuitoCamadas.lean
++++ b/atk-kernel/ATK/CircuitoCamadas.lean
+@@ -1,5 +1,7 @@
+ import ATK.Shannon
+ 
++noncomputable section
++
+ /-!
+ # ATK — Circuitos em camadas (base para a ponte `P ⊆ P/poly`)
+ 
+--- a/atk-kernel/ATK/CircuitoExplicito.lean
++++ b/atk-kernel/ATK/CircuitoExplicito.lean
+@@ -1,6 +1,8 @@
+ import ATK.Shannon
+ import Mathlib.Data.List.GetD
+ 
++noncomputable section
++
+ /-!
+ # ATK — Obrigação O4: uma cota inferior **explícita** (linear) de circuitos
+ 
+--- a/atk-kernel/ATK/ClosedMath.lean
++++ b/atk-kernel/ATK/ClosedMath.lean
+@@ -1,5 +1,7 @@
+ import ATK.Conditional
+ 
++noncomputable section
++
+ /-!
+ # ATK — Estrutura para CLOSED_MATH (teorema-mestre, obrigações e firewall)
+ 
+--- a/atk-kernel/ATK/ClosedMathCEZ.lean
++++ b/atk-kernel/ATK/ClosedMathCEZ.lean
+@@ -1,4 +1,10 @@
+ import ATK.CaudaMeio
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-CEZ — Completude dos Estados dos Zeros ("Closed Math"), formalizada
+--- a/atk-kernel/ATK/ClosedMathCompleto.lean
++++ b/atk-kernel/ATK/ClosedMathCompleto.lean
+@@ -1,5 +1,14 @@
+ import ATK.ClosedMathCEZ
+ import ATK.Cert.Intervalo
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Closed Math completo
+--- a/atk-kernel/ATK/ClosedMathGeometrias.lean
++++ b/atk-kernel/ATK/ClosedMathGeometrias.lean
+@@ -1,4 +1,10 @@
+ import ATK.RHTerminal
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Closed Math em hélices, parábolas, hipérboles, toros e a ponte espectral
+--- a/atk-kernel/ATK/ClosedMathReal.lean
++++ b/atk-kernel/ATK/ClosedMathReal.lean
+@@ -2,6 +2,8 @@
+ import ATK.CookLevinNP
+ import ATK.BSDRefinada
+ 
++noncomputable section
++
+ /-!
+ # CLOSED_MATH = true sobre os enunciados reais — a forma condicional
+ 
+--- a/atk-kernel/ATK/ClosedMathToro.lean
++++ b/atk-kernel/ATK/ClosedMathToro.lean
+@@ -1,4 +1,14 @@
+ import ATK.ClosedMathCompleto
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # ATK — Closed Math no toro, fluxos, tempos verbais e o modelo com zeros triviais
+--- a/atk-kernel/ATK/Compilador.lean
++++ b/atk-kernel/ATK/Compilador.lean
+@@ -1,5 +1,8 @@
+ import ATK.Fragmentos
+ import ATK.LigacaoPNP
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ponte B4, marco M2d (parte 1b): um compilador verificado de laços para `FinTM2`
+--- a/atk-kernel/ATK/ComposicaoTM2.lean
++++ b/atk-kernel/ATK/ComposicaoTM2.lean
+@@ -1,4 +1,7 @@
+ import Mathlib.Computability.TuringMachine.Computable
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # Composição de máquinas `Turing.FinTM2` em tempo polinomial
+--- a/atk-kernel/ATK/Conditional/BSD.lean
++++ b/atk-kernel/ATK/Conditional/BSD.lean
+@@ -1,5 +1,7 @@
+ import Mathlib.Order.Basic
+ 
++noncomputable section
++
+ /-!
+ # Condicional — Birch e Swinnerton-Dyer
+ 
+--- a/atk-kernel/ATK/Conditional/Beal.lean
++++ b/atk-kernel/ATK/Conditional/Beal.lean
+@@ -1,6 +1,8 @@
+ import Mathlib.NumberTheory.FLT.Basic
+ import Mathlib.Data.Nat.Prime.Basic
+ 
++noncomputable section
++
+ /-!
+ # Condicional — Conjectura de Beal
+ 
+--- a/atk-kernel/ATK/Conditional/Hodge.lean
++++ b/atk-kernel/ATK/Conditional/Hodge.lean
+@@ -1,5 +1,7 @@
+ import Mathlib.Order.Basic
+ 
++noncomputable section
++
+ /-!
+ # Condicional — Conjectura de Hodge
+ 
+--- a/atk-kernel/ATK/Conditional/NavierStokes.lean
++++ b/atk-kernel/ATK/Conditional/NavierStokes.lean
+@@ -1,6 +1,8 @@
+ import Mathlib.Basic.Real.Basic
+ import Mathlib.Order.Interval.Set.Defs
+ 
++noncomputable section
++
+ /-!
+ # Condicional — Navier–Stokes 3D (enunciado de Clay, caso A: ℝ³, sem força)
+ 
+--- a/atk-kernel/ATK/Conditional/PvsNP.lean
++++ b/atk-kernel/ATK/Conditional/PvsNP.lean
+@@ -1,5 +1,7 @@
+ import Mathlib.Data.Set.Basic
+ 
++noncomputable section
++
+ /-!
+ # Condicional — P vs NP
+ 
+--- a/atk-kernel/ATK/Conditional/Riemann.lean
++++ b/atk-kernel/ATK/Conditional/Riemann.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.MeasureTheory.Integral.Bochner.Set
+ import Mathlib.Analysis.SpecialFunctions.Log.Basic
+ 
++noncomputable section
++
+ /-!
+ # Condicional — Hipótese de Riemann (rota Nyman–Beurling / Báez-Duarte)
+ 
+--- a/atk-kernel/ATK/Conditional/YangMills.lean
++++ b/atk-kernel/ATK/Conditional/YangMills.lean
+@@ -1,5 +1,7 @@
+ import Mathlib.Basic.Real.Basic
+ 
++noncomputable section
++
+ /-!
+ # Condicional — Yang–Mills e gap de massa
+ 
+--- a/atk-kernel/ATK/CongruentBijection.lean
++++ b/atk-kernel/ATK/CongruentBijection.lean
+@@ -1,5 +1,7 @@
+ import ATK.CongruentCurve
+ 
++noncomputable section
++
+ /-!
+ # ATK — Números congruentes: triângulos de área `n` ⟷ pontos de `y² = x³ − n²x` com `y ≠ 0`
+ 
+--- a/atk-kernel/ATK/CongruentCurve.lean
++++ b/atk-kernel/ATK/CongruentCurve.lean
+@@ -1,6 +1,8 @@
+ import ATK.FermatRightTriangle
+ import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
+ 
++noncomputable section
++
+ /-!
+ # ATK — A curva `E : y² = x³ − x` sobre `ℚ`: `E(ℚ) = {O, (0, 0), (1, 0), (−1, 0)}`
+ 
+--- a/atk-kernel/ATK/ContracaoDN.lean
++++ b/atk-kernel/ATK/ContracaoDN.lean
+@@ -1,5 +1,8 @@
+ import ATK.BaezDuarteBridge
+ import ATK.AlgebraTerminal
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Caudas de `D_N`: contração, piso logarítmico e o que uma amostra finita decide
+--- a/atk-kernel/ATK/CookLevinBase.lean
++++ b/atk-kernel/ATK/CookLevinBase.lean
+@@ -1,4 +1,7 @@
+ import ATK.SATemNP
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ponte B4, marco M2a: fatos gerais sobre um passo de `Turing.TM2`
+--- a/atk-kernel/ATK/CookLevinGerador.lean
++++ b/atk-kernel/ATK/CookLevinGerador.lean
+@@ -1,6 +1,8 @@
+ import ATK.CookLevinLacos
+ import ATK.CookLevinReducao
+ 
++noncomputable section
++
+ /-!
+ # ATK — Ponte B4, marco M2d (parte 2b): o gerador do tableau
+ 
+--- a/atk-kernel/ATK/CookLevinLacos.lean
++++ b/atk-kernel/ATK/CookLevinLacos.lean
+@@ -1,4 +1,7 @@
+ import ATK.Compilador
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ponte B4, marco M2d (parte 2a): ferramentas da linguagem de laços
+--- a/atk-kernel/ATK/CookLevinNP.lean
++++ b/atk-kernel/ATK/CookLevinNP.lean
+@@ -1,5 +1,7 @@
+ import ATK.CookLevinGerador
+ 
++noncomputable section
++
+ /-!
+ # ATK — Ponte B4, marco M2d (parte 2c): Cook–Levin no modelo genuíno
+ 
+--- a/atk-kernel/ATK/CookLevinReducao.lean
++++ b/atk-kernel/ATK/CookLevinReducao.lean
+@@ -1,4 +1,7 @@
+ import ATK.CookLevinTableau
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ponte B4, marco M2c: a redução de Cook–Levin como função pura
+--- a/atk-kernel/ATK/CookLevinTableau.lean
++++ b/atk-kernel/ATK/CookLevinTableau.lean
+@@ -1,5 +1,7 @@
+ import ATK.CookLevinBase
+ 
++noncomputable section
++
+ /-!
+ # ATK — Ponte B4, marco M2b: o tableau de Cook–Levin para máquinas de pilhas
+ 
+--- a/atk-kernel/ATK/DBNFechado.lean
++++ b/atk-kernel/ATK/DBNFechado.lean
+@@ -1,5 +1,7 @@
+ import ATK.HurwitzJensen
+ import ATK.DeBruijnNewman
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — `S = {t | zeros de H_t reais}` é fechado (Hurwitz), e a ponte `HR ⟺ Λ ≤ 0` com uma hipótese a menos
+--- a/atk-kernel/ATK/DInfinito.lean
++++ b/atk-kernel/ATK/DInfinito.lean
+@@ -1,4 +1,5 @@
+ import ATK.FechamentoO1
++import Mathlib.NumberTheory.LSeries.RiemannZeta
+ 
+ /-!
+ # `D_∞ = inf_N D_N`: o limite de Báez-Duarte como número
+--- a/atk-kernel/ATK/DarmonMerelReducao.lean
++++ b/atk-kernel/ATK/DarmonMerelReducao.lean
+@@ -1,6 +1,9 @@
+ import ATK.BealDarmonMerel
+ import Mathlib.NumberTheory.FLT.Three
+ import Mathlib.NumberTheory.FLT.Four
++import Mathlib.Data.Nat.Prime.Defs
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ponte B8 (Darmon–Merel): redução a expoentes primos
+--- a/atk-kernel/ATK/DeBruijnNewman.lean
++++ b/atk-kernel/ATK/DeBruijnNewman.lean
+@@ -1,4 +1,11 @@
+ import ATK.XiCrescimento
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — A família de de Bruijn–Newman `H_t` e a constante `Λ`
+--- a/atk-kernel/ATK/DeltaCertificado.lean
++++ b/atk-kernel/ATK/DeltaCertificado.lean
+@@ -1,5 +1,14 @@
+ import ATK.ZeroCertificado
+ import ATK.RHTerminal
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — `δ₅ > 0` certificado: `ζ` não se anula em `K₅`
+--- a/atk-kernel/ATK/EMGeral.lean
++++ b/atk-kernel/ATK/EMGeral.lean
+@@ -1,5 +1,9 @@
+ import ATK.BLEulerMaclaurin
+ import Mathlib.NumberTheory.ZetaValues
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # Euler–Maclaurin de ordem arbitrária para `ζ`, com resto explícito
+--- a/atk-kernel/ATK/EdreiInteira.lean
++++ b/atk-kernel/ATK/EdreiInteira.lean
+@@ -1,4 +1,7 @@
+ import ATK.ASWReciproca
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Edrei para funções inteiras (sem Nevanlinna)
+--- a/atk-kernel/ATK/EnunciadosOficiais.lean
++++ b/atk-kernel/ATK/EnunciadosOficiais.lean
+@@ -1,6 +1,9 @@
+ import ATK.ClosedMathReal
+ import ATK.YMOficial
+ import ATK.HodgeOficial
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++
++noncomputable section
+ 
+ /-!
+ # Os sete enunciados oficiais, num só lugar
+--- a/atk-kernel/ATK/ErrosAnaliticos.lean
++++ b/atk-kernel/ATK/ErrosAnaliticos.lean
+@@ -4,6 +4,16 @@
+ import ATK.BaseRiemannTeta
+ import ATK.BaseRiemannXiSinal
+ import ATK.NecessidadeRH
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Erros dos textos (parte analítica): explicação, correção e teoremas
+--- a/atk-kernel/ATK/ErrosConstantes.lean
++++ b/atk-kernel/ATK/ErrosConstantes.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # ATK — Erros da tabela de constantes (texto 7a43314b): `1/ζ(3)` e `2π²`
+ 
+--- a/atk-kernel/ATK/ErrosGram.lean
++++ b/atk-kernel/ATK/ErrosGram.lean
+@@ -1,5 +1,9 @@
+ import ATK.GramDois
+ import ATK.BarreiraModelos
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Erros dos textos (Gram / Báez-Duarte): explicação, correção e teoremas
+--- a/atk-kernel/ATK/EspectralDN.lean
++++ b/atk-kernel/ATK/EspectralDN.lean
+@@ -1,5 +1,8 @@
+ import ATK.MellinPlancherel
+ import ATK.BaezDuarteBridge
++import Mathlib.Data.Complex.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Fórmula espectral de `D_N` na linha crítica
+--- a/atk-kernel/ATK/EspectroToro.lean
++++ b/atk-kernel/ATK/EspectroToro.lean
+@@ -1,4 +1,8 @@
+ import ATK.ClosedMathGeometrias
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — O laplaciano do toro plano: autofunções, espectro real e a ponte que falta
+--- a/atk-kernel/ATK/EtaCriterio.lean
++++ b/atk-kernel/ATK/EtaCriterio.lean
+@@ -1,5 +1,9 @@
+ import ATK.ZetaLog
+ import ATK.RHTerminal
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-RH — O critério das somas parciais de `η`
+--- a/atk-kernel/ATK/Externo/FCBSD.lean
++++ b/atk-kernel/ATK/Externo/FCBSD.lean
+@@ -18,6 +18,8 @@
+ import Mathlib.Analysis.Meromorphic.RCLike
+ import Mathlib.GroupTheory.Torsion
+ 
++noncomputable section
++
+ /-!
+ # Cópia dos enunciados de BSD e de Hasse–Weil do formal-conjectures (Google DeepMind)
+ 
+--- a/atk-kernel/ATK/Externo/FCBeal.lean
++++ b/atk-kernel/ATK/Externo/FCBeal.lean
+@@ -16,6 +16,8 @@
+ import Mathlib.Algebra.GCDMonoid.Finset
+ import Mathlib.Algebra.GCDMonoid.Nat
+ 
++noncomputable section
++
+ /-!
+ # Cópia do enunciado da conjectura de Beal do formal-conjectures (Google DeepMind)
+ 
+--- a/atk-kernel/ATK/Externo/FCComplexidade.lean
++++ b/atk-kernel/ATK/Externo/FCComplexidade.lean
+@@ -15,6 +15,9 @@
+ -/
+ import Mathlib.Computability.Encoding
+ import Mathlib.Computability.TuringMachine.Computable
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # Cópia das definições de P e NP do formal-conjectures (Google DeepMind)
+@@ -57,7 +60,7 @@
+ theorem bitDecode_bitEncode [BitstringEncoding α] (a : α) : bitDecode (bitEncode a) = some a :=
+   toEncoding.decode_encode a
+ 
+-/-- `Bool` is encoded as a singleton bitstring. -/
++/- `Bool` is encoded as a singleton bitstring. -/
+ instance : BitstringEncoding Bool where
+   encode b := [b]
+   decode l := match l with
+@@ -90,7 +93,7 @@
+   | nil => rfl
+   | cons b l ih => simp [delimit, ih]; omega
+ 
+-/-- Parse a sequence of self-delimiting blocks, using `fuel` to bound the number of blocks. -/
++/- Parse a sequence of self-delimiting blocks, using `fuel` to bound the number of blocks. -/
+ def undelimitBlocksAux : ℕ → List Bool → Option (List (List Bool))
+   | _, [] => some []
+   | 0, _ :: _ => none
+@@ -129,7 +132,7 @@
+   | nil => rfl
+   | cons a t ih => simp [ih]
+ 
+-/-- A pair is encoded as a self-delimiting block for the first component followed by the
++/- A pair is encoded as a self-delimiting block for the first component followed by the
+ encoding of the second. -/
+ instance [BitstringEncoding α] [BitstringEncoding β] : BitstringEncoding (α × β) where
+   encode p := delimit (bitEncode p.1) ++ bitEncode p.2
+--- a/atk-kernel/ATK/Externo/FCNavierStokes.lean
++++ b/atk-kernel/ATK/Externo/FCNavierStokes.lean
+@@ -20,6 +20,11 @@
+ import Mathlib.Analysis.Calculus.ContDiff.Basic
+ import Mathlib.Analysis.Calculus.Deriv.Basic
+ import Mathlib.LinearAlgebra.Trace
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # Cópia das definições de Navier–Stokes do formal-conjectures (Google DeepMind)
+@@ -70,18 +75,18 @@
+     (hv : ¬ DifferentiableAt ℝ v x) : ∇⬝ v x = 0 := by
+   simp [divergence, fderiv_zero_of_not_differentiableAt hv]
+ 
+-/-- The divergence of the zero vector field is zero. -/
++/- The divergence of the zero vector field is zero. -/
+ @[simp]
+ theorem divergence_zero (x : ℝ^n) : ∇⬝ (0 : ℝ^n → ℝ^n) x = 0 := by
+   simp [divergence]
+ 
+-/-- The divergence of a constant vector field is zero. -/
++/- The divergence of a constant vector field is zero. -/
+ @[simp]
+ theorem divergence_const (c : ℝ^n) (x : ℝ^n) :
+     ∇⬝ (fun _ : ℝ^n => c) x = 0 := by
+   simp [divergence]
+ 
+-/-- Divergence is additive at points where both vector fields are differentiable. -/
++/- Divergence is additive at points where both vector fields are differentiable. -/
+ theorem divergence_add {v w : ℝ^n → ℝ^n} {x : ℝ^n}
+     (hv : DifferentiableAt ℝ v x) (hw : DifferentiableAt ℝ w x) :
+     ∇⬝ (fun y => v y + w y) x = ∇⬝ v x + ∇⬝ w x := by
+--- a/atk-kernel/ATK/F1YM.lean
++++ b/atk-kernel/ATK/F1YM.lean
+@@ -1,6 +1,8 @@
+ import ATK.Conditional.YangMills
+ import ATK.YMOficial
+ 
++noncomputable section
++
+ /-!
+ # F.1/O8: `ConstructiveYM4D` é paramétrica
+ 
+--- a/atk-kernel/ATK/FechamentoO1.lean
++++ b/atk-kernel/ATK/FechamentoO1.lean
+@@ -4,6 +4,12 @@
+ import Mathlib.Analysis.Analytic.Order
+ import Mathlib.Analysis.Complex.CauchyIntegral
+ import Mathlib.Analysis.Normed.Module.Connected
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # O1 (Riemann): a estrutura completa do fechamento e o que falta na Mathlib
+--- a/atk-kernel/ATK/FermatDezenove.lean
++++ b/atk-kernel/ATK/FermatDezenove.lean
+@@ -10,6 +10,10 @@
+ import ATK.FermatDezenoveCertC
+ import ATK.FermatDezenoveCertD
+ import ATK.FermatDezenoveCertE
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Último teorema de Fermat para `n = 19`
+--- a/atk-kernel/ATK/FermatDezenoveBase.lean
++++ b/atk-kernel/ATK/FermatDezenoveBase.lean
+@@ -5,6 +5,12 @@
+ import Mathlib.Tactic.NormNum.Prime
+ import Mathlib.Tactic.ComputeDegree
+ import ATK.PolyLista
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Último teorema de Fermat para `n = 19`: cota de Minkowski e polinômio ciclotômico
+--- a/atk-kernel/ATK/FermatDezenoveCertA.lean
++++ b/atk-kernel/ATK/FermatDezenoveCertA.lean
+@@ -1,4 +1,7 @@
+ import ATK.FermatDezenoveBase
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Certificados para `𝓞(ℚ(ζ₁₉))` principal (parte A)
+--- a/atk-kernel/ATK/FermatDezenoveCertB.lean
++++ b/atk-kernel/ATK/FermatDezenoveCertB.lean
+@@ -1,4 +1,7 @@
+ import ATK.FermatDezenoveBase
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Certificados para `𝓞(ℚ(ζ₁₉))` principal (parte B)
+--- a/atk-kernel/ATK/FermatDezenoveCertC.lean
++++ b/atk-kernel/ATK/FermatDezenoveCertC.lean
+@@ -1,4 +1,7 @@
+ import ATK.FermatDezenoveBase
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Certificados para `𝓞(ℚ(ζ₁₉))` principal (parte C)
+--- a/atk-kernel/ATK/FermatDezenoveCertD.lean
++++ b/atk-kernel/ATK/FermatDezenoveCertD.lean
+@@ -1,4 +1,7 @@
+ import ATK.FermatDezenoveBase
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Certificados para `𝓞(ℚ(ζ₁₉))` principal (parte D)
+--- a/atk-kernel/ATK/FermatDezenoveCertE.lean
++++ b/atk-kernel/ATK/FermatDezenoveCertE.lean
+@@ -1,4 +1,7 @@
+ import ATK.FermatDezenoveBase
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Certificados para `𝓞(ℚ(ζ₁₉))` principal (parte E)
+--- a/atk-kernel/ATK/FermatDezessete.lean
++++ b/atk-kernel/ATK/FermatDezessete.lean
+@@ -5,6 +5,12 @@
+ import Mathlib.Tactic.NormNum.Prime
+ import Mathlib.Tactic.ComputeDegree
+ import ATK.PolyLista
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Último teorema de Fermat para `n = 17`
+--- a/atk-kernel/ATK/FermatExpoentes.lean
++++ b/atk-kernel/ATK/FermatExpoentes.lean
+@@ -1,5 +1,7 @@
+ import ATK.FermatRegular
+ 
++noncomputable section
++
+ /-!
+ # ATK — Os expoentes de Fermat cobertos pelo kernel e o resíduo exato
+ 
+--- a/atk-kernel/ATK/FermatOnze.lean
++++ b/atk-kernel/ATK/FermatOnze.lean
+@@ -3,6 +3,12 @@
+ import ATK.FltRegular.FltRegular
+ import ATK.FltRegular.NumberTheory.RegularPrimes
+ import Mathlib.Tactic.NormNum.Prime
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Último teorema de Fermat para `n = 11`
+--- a/atk-kernel/ATK/FermatRightTriangle.lean
++++ b/atk-kernel/ATK/FermatRightTriangle.lean
+@@ -1,5 +1,9 @@
+ import Mathlib.NumberTheory.FLT.Four
+ import Mathlib.Data.Int.Lemmas
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Tactic.Positivity
++
++noncomputable section
+ 
+ /-!
+ # ATK — Teorema do triângulo retângulo de Fermat: `x⁴ − y⁴ ≠ z²`
+--- a/atk-kernel/ATK/FermatTreze.lean
++++ b/atk-kernel/ATK/FermatTreze.lean
+@@ -4,6 +4,12 @@
+ import ATK.FltRegular.NumberTheory.RegularPrimes
+ import Mathlib.Tactic.NormNum.Prime
+ import Mathlib.Tactic.ComputeDegree
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Último teorema de Fermat para `n = 13`
+--- a/atk-kernel/ATK/Fichas.lean
++++ b/atk-kernel/ATK/Fichas.lean
+@@ -5,6 +5,13 @@
+ import ATK.NSPequeno
+ import ATK.CongruentCurve
+ import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Fichas das conjecturas: parte provada, parte refutada, lacuna e parâmetros
+--- a/atk-kernel/ATK/FinalRoot.lean
++++ b/atk-kernel/ATK/FinalRoot.lean
+@@ -3,6 +3,8 @@
+ import ATK.ForaDaLinha
+ import ATK.ContracaoDN
+ 
++noncomputable section
++
+ /-!
+ # ATK — Raiz final (`FINAL_ROOT`) e verde universal (`UNIVERSAL_GREEN`): a estrutura completa
+ 
+--- a/atk-kernel/ATK/FltRegular/CaseI/Statement.lean
++++ b/atk-kernel/ATK/FltRegular/CaseI/Statement.lean
+@@ -6,6 +6,7 @@
+ import ATK.FltRegular.NumberTheory.Cyclotomic.CaseI
+ import ATK.FltRegular.NumberTheory.Cyclotomic.CyclRat
+ public import ATK.FltRegular.NumberTheory.RegularPrimes
++import Mathlib.Algebra.Polynomial.Basic
+ 
+ /-!
+ # The first case of Fermat's Last Theorem for regular primes
+--- a/atk-kernel/ATK/FltRegular/CaseII/AuxLemmas.lean
++++ b/atk-kernel/ATK/FltRegular/CaseII/AuxLemmas.lean
+@@ -2,6 +2,7 @@
+ 
+ public import Mathlib.RingTheory.ClassGroup.Basic
+ import Mathlib.RingTheory.DedekindDomain.Ideal.Lemmas
++import Mathlib.Algebra.Polynomial.Basic
+ 
+ @[expose] public section
+ 
+--- a/atk-kernel/ATK/FltRegular/CaseII/InductionStep.lean
++++ b/atk-kernel/ATK/FltRegular/CaseII/InductionStep.lean
+@@ -9,6 +9,8 @@
+ import ATK.FltRegular.NumberTheory.Cyclotomic.UnitLemmas
+ import ATK.FltRegular.NumberTheory.Hilbert92
+ import ATK.FltRegular.NumberTheory.KummersLemma.KummersLemma
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
+ 
+ /-!
+ # The induction step in Case II
+--- a/atk-kernel/ATK/FltRegular/CaseII/Statement.lean
++++ b/atk-kernel/ATK/FltRegular/CaseII/Statement.lean
+@@ -6,6 +6,8 @@
+ import Mathlib.Order.CompletePartialOrder
+ public import Mathlib.NumberTheory.NumberField.Cyclotomic.Basic
+ import Mathlib.NumberTheory.NumberField.Cyclotomic.Ideal
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
+ 
+ @[expose] public section
+ 
+--- a/atk-kernel/ATK/FltRegular/NumberTheory/Cyclotomic/CyclRat.lean
++++ b/atk-kernel/ATK/FltRegular/NumberTheory/Cyclotomic/CyclRat.lean
+@@ -2,6 +2,7 @@
+ 
+ public import Mathlib.NumberTheory.Cyclotomic.Basic
+ import Mathlib.NumberTheory.NumberField.Cyclotomic.Ideal
++import Mathlib.Algebra.Polynomial.Basic
+ 
+ /-!
+ # Ideals in rational cyclotomic fields
+--- a/atk-kernel/ATK/FltRegular/NumberTheory/Cyclotomic/MoreLemmas.lean
++++ b/atk-kernel/ATK/FltRegular/NumberTheory/Cyclotomic/MoreLemmas.lean
+@@ -3,6 +3,8 @@
+ import Mathlib.RingTheory.NormTrace
+ public import Mathlib.NumberTheory.NumberField.Cyclotomic.Basic
+ import Mathlib.NumberTheory.NumberField.Cyclotomic.Ideal
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
+ 
+ /-!
+ # Additional lemmas for cyclotomic fields
+--- a/atk-kernel/ATK/FltRegular/NumberTheory/Cyclotomic/UnitLemmas.lean
++++ b/atk-kernel/ATK/FltRegular/NumberTheory/Cyclotomic/UnitLemmas.lean
+@@ -4,6 +4,7 @@
+ public import Mathlib.NumberTheory.NumberField.Cyclotomic.Basic
+ import Mathlib.NumberTheory.NumberField.Cyclotomic.Ideal
+ import ATK.FltRegular.NumberTheory.Cyclotomic.MoreLemmas
++import Mathlib.Algebra.Polynomial.Basic
+ 
+ /-!
+ # Units in cyclotomic fields
+--- a/atk-kernel/ATK/FltRegular/NumberTheory/CyclotomicRing.lean
++++ b/atk-kernel/ATK/FltRegular/NumberTheory/CyclotomicRing.lean
+@@ -3,6 +3,7 @@
+ public import Mathlib.NumberTheory.NumberField.Cyclotomic.Basic
+ import Mathlib.NumberTheory.NumberField.Cyclotomic.Ideal
+ import ATK.FltRegular.NumberTheory.Cyclotomic.MoreLemmas
++import Mathlib.Algebra.Polynomial.Basic
+ 
+ /-!
+ # Cyclotomic integers
+@@ -56,7 +57,7 @@
+   AdjoinRoot.isDomain_of_prime (UniqueFactorizationMonoid.irreducible_iff_prime.mp
+     (cyclotomic.irreducible hpri.out.pos))
+ 
+-/-- The tautological primitive root of unity in `CyclotomicIntegers p`. -/
++/- The tautological primitive root of unity in `CyclotomicIntegers p`. -/
+ def zeta : CyclotomicIntegers p := AdjoinRoot.root _
+ 
+ set_option backward.isDefEq.respectTransparency false in
+--- a/atk-kernel/ATK/FltRegular/NumberTheory/Hilbert92.lean
++++ b/atk-kernel/ATK/FltRegular/NumberTheory/Hilbert92.lean
+@@ -5,6 +5,9 @@
+ public import Mathlib.RingTheory.Henselian
+ public import Mathlib.GroupTheory.FiniteAbelian.Basic
+ public import Mathlib.LinearAlgebra.Dimension.Torsion.Finite
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Tactic.FieldSimp
+ 
+ @[expose] public section
+ 
+@@ -44,7 +47,7 @@
+ noncomputable def systemOfUnits.index [Module A G] (sys : systemOfUnits p G s) [sys.IsMaximal] :=
+   (Submodule.span A (Set.range sys.units)).toAddSubgroup.index
+ 
+-/-- A system of units is fundamental if it's maximal and the submodule generated by the elements
++/- A system of units is fundamental if it's maximal and the submodule generated by the elements
+ of the system has smallest index. -/
+ def systemOfUnits.IsFundamental [Module A G] (h : systemOfUnits p G s) :=
+   ∃ _ : h.IsMaximal, ∀ (S : systemOfUnits p G s) (_ : S.IsMaximal), h.index ≤ S.index
+@@ -230,7 +233,7 @@
+   simp_rw [relativeUnitsMap_mk, map_mul]
+   rfl
+ 
+-/-- The monoid homomorphism from algebra endomorphisms to endomorphisms of relative units. -/
++/- The monoid homomorphism from algebra endomorphisms to endomorphisms of relative units. -/
+ noncomputable
+ def relativeUnitsMapHom : (K →ₐ[k] K) →* (Monoid.End (RelativeUnits k K)) where
+   toFun := relativeUnitsMap
+@@ -284,7 +287,7 @@
+   rw [prod_subtype]
+   simp [mem_univ, hσ]
+ 
+-/-- Relative units bundled with the generator data used in Hilbert 92. -/
++/- Relative units bundled with the generator data used in Hilbert 92. -/
+ @[nolint unusedArguments]
+ def relativeUnitsWithGenerator (_hp : Nat.Prime p)
+   (_hKL : finrank k K = p) (σ : K ≃ₐ[k] K) (_hσ : ∀ x, x ∈ Subgroup.zpowers σ) :=
+--- a/atk-kernel/ATK/FltRegular/NumberTheory/Hilbert94.lean
++++ b/atk-kernel/ATK/FltRegular/NumberTheory/Hilbert94.lean
+@@ -6,6 +6,8 @@
+ import ATK.FltRegular.NumberTheory.Hilbert92
+ import ATK.FltRegular.NumberTheory.RegularPrimes
+ import ATK.FltRegular.NumberTheory.Unramified
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
+ 
+ @[expose] public section
+ 
+--- a/atk-kernel/ATK/FltRegular/NumberTheory/KummersLemma/Field.lean
++++ b/atk-kernel/ATK/FltRegular/NumberTheory/KummersLemma/Field.lean
+@@ -5,6 +5,8 @@
+ import Mathlib.NumberTheory.NumberField.Cyclotomic.Ideal
+ 
+ import ATK.FltRegular.NumberTheory.Unramified
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
+ 
+ /-!
+ # The field-theoretic part of Kummer's lemma
+@@ -66,7 +68,7 @@
+     · exact C_ne_zero.mpr (hζ.toInteger_isPrimitiveRoot.sub_one_ne_zero hpri.out.one_lt)
+ variable [IsCyclotomicExtension {p} ℚ K]
+ 
+-/-- The monic polynomial used in Kummer's lemma after dividing by `(ζ - 1)^p`. -/
++/- The monic polynomial used in Kummer's lemma after dividing by `(ζ - 1)^p`. -/
+ noncomputable def poly : (𝓞 K)[X] := (zeta_sub_one_pow_dvd_poly hp hζ u hcong).choose
+ 
+ lemma poly_spec :
+--- a/atk-kernel/ATK/FltRegular/NumberTheory/KummersLemma/KummersLemma.lean
++++ b/atk-kernel/ATK/FltRegular/NumberTheory/KummersLemma/KummersLemma.lean
+@@ -9,6 +9,8 @@
+ import ATK.FltRegular.NumberTheory.Hilbert92
+ import ATK.FltRegular.NumberTheory.Hilbert94
+ import ATK.FltRegular.NumberTheory.KummersLemma.Field
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
+ 
+ /-!
+ # Kummer's lemma for regular primes
+--- a/atk-kernel/ATK/FltRegular/NumberTheory/RegularPrimes.lean
++++ b/atk-kernel/ATK/FltRegular/NumberTheory/RegularPrimes.lean
+@@ -3,6 +3,8 @@
+ public import Mathlib.NumberTheory.Cyclotomic.Basic
+ public import Mathlib.NumberTheory.NumberField.ClassNumber
+ import Mathlib.NumberTheory.NumberField.Cyclotomic.PID
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
+ 
+ /-!
+ # Regular primes
+--- a/atk-kernel/ATK/FltRegular/NumberTheory/SystemOfUnits.lean
++++ b/atk-kernel/ATK/FltRegular/NumberTheory/SystemOfUnits.lean
+@@ -1,6 +1,7 @@
+ module
+ 
+ public import ATK.FltRegular.NumberTheory.CyclotomicRing
++import Mathlib.Data.Nat.Prime.Defs
+ 
+ @[expose] public section
+ 
+--- a/atk-kernel/ATK/FltRegular/NumberTheory/Unramified.lean
++++ b/atk-kernel/ATK/FltRegular/NumberTheory/Unramified.lean
+@@ -6,6 +6,7 @@
+ import Mathlib.RingTheory.DedekindDomain.Factorization
+ public import Mathlib.RingTheory.DedekindDomain.Ideal.Lemmas
+ public import Mathlib.RingTheory.Unramified.Locus
++import Mathlib.Algebra.Polynomial.Basic
+ 
+ /-!
+ # Unramified extensions
+--- a/atk-kernel/ATK/FltRegular/SmallNumbers/Cyclotomic.lean
++++ b/atk-kernel/ATK/FltRegular/SmallNumbers/Cyclotomic.lean
+@@ -6,6 +6,9 @@
+ import Mathlib.RingTheory.Polynomial.Cyclotomic.Factorization
+ 
+ import ATK.FltRegular.SmallNumbers.PID
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Principal ideal criteria for cyclotomic fields
+--- a/atk-kernel/ATK/FltRegular/SmallNumbers/Five/FLT5.lean
++++ b/atk-kernel/ATK/FltRegular/SmallNumbers/Five/FLT5.lean
+@@ -5,6 +5,7 @@
+ 
+ import ATK.FltRegular.FltRegular
+ public import ATK.FltRegular.NumberTheory.RegularPrimes
++import Mathlib.Data.Nat.Prime.Defs
+ 
+ /-!
+ # Fermat's Last Theorem for exponent five
+--- a/atk-kernel/ATK/FltRegular/SmallNumbers/PID.lean
++++ b/atk-kernel/ATK/FltRegular/SmallNumbers/PID.lean
+@@ -4,6 +4,7 @@
+ public import Mathlib.NumberTheory.NumberField.Discriminant.Defs
+ public import Mathlib.NumberTheory.NumberField.InfinitePlace.Basic
+ import Mathlib.NumberTheory.NumberField.ClassNumber
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A principal ideal domain criterion for Galois number fields
+--- a/atk-kernel/ATK/FltRegular/SmallNumbers/Seven/FLT7.lean
++++ b/atk-kernel/ATK/FltRegular/SmallNumbers/Seven/FLT7.lean
+@@ -6,6 +6,7 @@
+ import ATK.FltRegular.FltRegular
+ public import ATK.FltRegular.NumberTheory.RegularPrimes
+ import ATK.FltRegular.SmallNumbers.Seven.Seven
++import Mathlib.Data.Nat.Prime.Defs
+ 
+ /-!
+ # Fermat's Last Theorem for exponent seven
+--- a/atk-kernel/ATK/FltRegular/SmallNumbers/Seven/Seven.lean
++++ b/atk-kernel/ATK/FltRegular/SmallNumbers/Seven/Seven.lean
+@@ -5,6 +5,9 @@
+ 
+ import ATK.FltRegular.SmallNumbers.Cyclotomic
+ import ATK.FltRegular.SmallNumbers.OrderOf
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # The ring of integers of the seventh cyclotomic field
+--- a/atk-kernel/ATK/ForaDaLinha.lean
++++ b/atk-kernel/ATK/ForaDaLinha.lean
+@@ -1,5 +1,10 @@
+ import ATK.ZetaRegiao
+ import ATK.RiemannStates
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Os zeros fora da linha crítica: o anti-produto material de RH
+@@ -31,7 +36,7 @@
+   ATK.Conditional.Riemann ATK.RiemannStates ATK.IndeterminacyStates ATK.RiemannConcrete
+ 
+ /-- Testemunha que refutaria RH: um zero não trivial fora da reta crítica. -/
+-def ZeroFora : Type := {ρ : ℂ // ρ ∈ Z ∧ ρ.re ≠ 1 / 2}
++abbrev ZeroFora : Type := {ρ : ℂ // ρ ∈ Z ∧ ρ.re ≠ 1 / 2}
+ 
+ /-- **RH ⟺ não há zero fora da linha.** -/
+ theorem riemann_iff_vazio : RiemannHypothesis ↔ IsEmpty ZeroFora := by
+--- a/atk-kernel/ATK/Fragmentos.lean
++++ b/atk-kernel/ATK/Fragmentos.lean
+@@ -1,5 +1,7 @@
+ import ATK.CookLevinBase
+ 
++noncomputable section
++
+ /-!
+ # ATK — Ponte B4, marco M2d (parte 1a): fragmentos de programa para máquinas de pilhas
+ 
+--- a/atk-kernel/ATK/FreyBeal.lean
++++ b/atk-kernel/ATK/FreyBeal.lean
+@@ -1,5 +1,7 @@
+ import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
+ 
++noncomputable section
++
+ /-!
+ # ATK — A curva de Frey–Hellegouarch de uma suposta solução de Beal
+ 
+--- a/atk-kernel/ATK/GamaCotas.lean
++++ b/atk-kernel/ATK/GamaCotas.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.NumberTheory.Harmonic.EulerMascheroni
+ import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+ import Mathlib.Analysis.Real.Pi.Bounds
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Cotas certificadas para `γ`, `log π`, `log 2π` e `C₀ = 2 + γ − log 4π`
+--- a/atk-kernel/ATK/GammaVertical.lean
++++ b/atk-kernel/ATK/GammaVertical.lean
+@@ -5,6 +5,12 @@
+ import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
+ import Mathlib.Analysis.Real.Pi.Bounds
+ import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — `Γ` em faixas verticais e o fator da equação funcional
+--- a/atk-kernel/ATK/GapGrafo.lean
++++ b/atk-kernel/ATK/GapGrafo.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.Combinatorics.SimpleGraph.Paths
+ import Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected
+ 
++noncomputable section
++
+ /-!
+ # Teorema 3 no caso geral: gap espectral de todo grafo finito conexo
+ 
+--- a/atk-kernel/ATK/GeometriaExtra.lean
++++ b/atk-kernel/ATK/GeometriaExtra.lean
+@@ -1,6 +1,16 @@
+ import ATK.Hexagrama
+ import ATK.ClosedMathGeometrias
+ import Mathlib.MeasureTheory.Integral.Gamma
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Geometria extra, contraexemplos e erros registrados
+--- a/atk-kernel/ATK/GermainLegendre.lean
++++ b/atk-kernel/ATK/GermainLegendre.lean
+@@ -1,4 +1,7 @@
+ import ATK.SophieGermain
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ponte B2 (FLT): o critério de Germain–Legendre e o primeiro caso para `p < 300`
+--- a/atk-kernel/ATK/GramBaezDuarte.lean
++++ b/atk-kernel/ATK/GramBaezDuarte.lean
+@@ -27,6 +27,8 @@
+ import Mathlib.MeasureTheory.Function.L2Space
+ import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
+ 
++noncomputable section
++
+ namespace ATK.GramBaezDuarte
+ 
+ open MeasureTheory Set Filter Topology Finset Matrix
+--- a/atk-kernel/ATK/GramDois.lean
++++ b/atk-kernel/ATK/GramDois.lean
+@@ -1,6 +1,13 @@
+ import ATK.GramExato
+ import ATK.GamaCotas
+ import ATK.Cert.Intervalo
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-RH — `G₁₂`, `D₂` exato e a primeira cota numérica incondicional `D_∞ < 0,29`
+--- a/atk-kernel/ATK/GramExato.lean
++++ b/atk-kernel/ATK/GramExato.lean
+@@ -2,6 +2,10 @@
+ import ATK.DInfinito
+ import ATK.NecessidadeRH
+ import Mathlib.Analysis.SpecialFunctions.Stirling
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK-RH — Valores exatos de Gram, `D₁`, cauda, certificado ortogonal
+--- a/atk-kernel/ATK/HadamardGenero0.lean
++++ b/atk-kernel/ATK/HadamardGenero0.lean
+@@ -1,4 +1,9 @@
+ import ATK.InteiraAnalitica
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Fatoração de Hadamard de gênero 0 (zeros reais negativos) e a volta de Edrei
+--- a/atk-kernel/ATK/Hexagrama.lean
++++ b/atk-kernel/ATK/Hexagrama.lean
+@@ -1,4 +1,9 @@
+ import ATK.EspectroToro
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Hexagrama, grafo completo `K₆` e energia horizontal
+--- a/atk-kernel/ATK/HodgeOficial.lean
++++ b/atk-kernel/ATK/HodgeOficial.lean
+@@ -8,6 +8,8 @@
+ import Mathlib.Algebra.Category.ModuleCat.Abelian
+ import Mathlib.RingTheory.MvPolynomial.Homogeneous
+ 
++noncomputable section
++
+ /-!
+ # A conjectura de Hodge sobre os objetos da Mathlib
+ 
+--- a/atk-kernel/ATK/HodgeToro.lean
++++ b/atk-kernel/ATK/HodgeToro.lean
+@@ -1,6 +1,8 @@
+ import ATK.L3Base
+ import Mathlib.RingTheory.TensorProduct.Free
+ import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — Ligação L3: a estrutura de Hodge de `H¹` de um toro complexo
+--- a/atk-kernel/ATK/HurwitzJensen.lean
++++ b/atk-kernel/ATK/HurwitzJensen.lean
+@@ -1,4 +1,6 @@
+ import ATK.JensenPolya
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — Teorema de Hurwitz e o critério de Pólya–Jensen completo: **HR ⟺ todo `J^{d,n}` de `Ξ` hiperbólico**
+--- a/atk-kernel/ATK/HypothesisCalculus.lean
++++ b/atk-kernel/ATK/HypothesisCalculus.lean
+@@ -1,6 +1,8 @@
+ import Mathlib.Data.Finset.Card
+ import Mathlib.Logic.Relation
+ 
++noncomputable section
++
+ /-!
+ # ATK — Cálculo de hipóteses: derivação, redução, corte, componentes e base minimal
+ 
+--- a/atk-kernel/ATK/IAlgebra.lean
++++ b/atk-kernel/ATK/IAlgebra.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.Algebra.Ring.Pointwise.Set
+ import Mathlib.Analysis.Real.Hyperreal
+ 
++noncomputable section
++
+ /-!
+ # ATK — A álgebra de `I`: o que é consistente, o que é inconsistente, e os modelos
+ 
+--- a/atk-kernel/ATK/IFormas.lean
++++ b/atk-kernel/ATK/IFormas.lean
+@@ -1,6 +1,10 @@
+ import ATK.IndeterminacyStates
+ import Mathlib.Topology.Instances.EReal.Lemmas
+ import Mathlib.Analysis.SpecialFunctions.Pow.Real
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — O conjunto `I` materializado: as sete formas indeterminadas e seus conjuntos de valores
+--- a/atk-kernel/ATK/IGeometria.lean
++++ b/atk-kernel/ATK/IGeometria.lean
+@@ -2,6 +2,10 @@
+ import Mathlib.Analysis.SpecialFunctions.Exp
+ import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
+ import Mathlib.Analysis.SpecificLimits.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Tactic.Positivity
++
++noncomputable section
+ 
+ /-!
+ # ATK — Geometria de `I`: início fechado e fim fechado tendendo ao mesmo meio
+--- a/atk-kernel/ATK/IMath/Algebra/Absorbing.lean
++++ b/atk-kernel/ATK/IMath/Algebra/Absorbing.lean
+@@ -1,5 +1,7 @@
+ import ATK.IMath.Core.Phi3
+ 
++noncomputable section
++
+ namespace IMath
+ namespace Phi3
+ 
+--- a/atk-kernel/ATK/IMath/Analysis/Germ.lean
++++ b/atk-kernel/ATK/IMath/Analysis/Germ.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace IMath
+ 
+ /--
+--- a/atk-kernel/ATK/IMath/Arithmetic/Collapse.lean
++++ b/atk-kernel/ATK/IMath/Arithmetic/Collapse.lean
+@@ -1,5 +1,7 @@
+ import ATK.IMath.Core.Phi3
+ 
++noncomputable section
++
+ namespace IMath
+ namespace Phi3
+ 
+--- a/atk-kernel/ATK/IMath/Arithmetic/Division.lean
++++ b/atk-kernel/ATK/IMath/Arithmetic/Division.lean
+@@ -1,5 +1,7 @@
+ import ATK.IMath.Core.Phi3
+ 
++noncomputable section
++
+ namespace IMath
+ namespace Phi3
+ 
+--- a/atk-kernel/ATK/IMath/Core/Embeddings.lean
++++ b/atk-kernel/ATK/IMath/Core/Embeddings.lean
+@@ -1,6 +1,8 @@
+ import ATK.IMath.Core.Phi3
+ import Mathlib.Data.Complex.Basic
+ 
++noncomputable section
++
+ namespace IMath
+ 
+ /-- Embed an ordinary complex number as a finite three-state value. -/
+--- a/atk-kernel/ATK/IMath/Core/Phi3.lean
++++ b/atk-kernel/ATK/IMath/Core/Phi3.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import ATK.IMath.Core.Expr
+ 
++noncomputable section
++
+ namespace IMath
+ 
+ universe u
+--- a/atk-kernel/ATK/IMath/Geometry/Point.lean
++++ b/atk-kernel/ATK/IMath/Geometry/Point.lean
+@@ -1,5 +1,7 @@
+ import ATK.IMath.Core.Phi3
+ 
++noncomputable section
++
+ namespace IMath
+ 
+ universe u
+--- a/atk-kernel/ATK/IMath/Refinement/Realization.lean
++++ b/atk-kernel/ATK/IMath/Refinement/Realization.lean
+@@ -1,5 +1,7 @@
+ import Mathlib.Data.Set.Basic
+ 
++noncomputable section
++
+ namespace IMath
+ 
+ universe u
+--- a/atk-kernel/ATK/IMathPonte.lean
++++ b/atk-kernel/ATK/IMathPonte.lean
+@@ -1,6 +1,8 @@
+ import ATK.Indeterminacy
+ import ATK.IMath.Certificates.Core
+ 
++noncomputable section
++
+ /-!
+ # ATK — I-Mathematics no kernel: os 15 certificados e a ponte com o `I` do ATK
+ 
+--- a/atk-kernel/ATK/Indeterminacy.lean
++++ b/atk-kernel/ATK/Indeterminacy.lean
+@@ -3,6 +3,11 @@
+ import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+ import Mathlib.Analysis.Calculus.Deriv.Slope
+ import Mathlib.Topology.Algebra.Order.Field
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Indeterminações como pontos de 3 estados (formalização da proposta do autor)
+--- a/atk-kernel/ATK/IndeterminacyStates.lean
++++ b/atk-kernel/ATK/IndeterminacyStates.lean
+@@ -2,6 +2,9 @@
+ import ATK.Conditional.Riemann
+ import Mathlib.Analysis.Calculus.Deriv.ZPow
+ import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
++import Mathlib.Analysis.Calculus.Deriv.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Estrutura de estados das indeterminações (7 estados, ordem de informação, leis de composição)
+--- a/atk-kernel/ATK/IntegracaoFCNS.lean
++++ b/atk-kernel/ATK/IntegracaoFCNS.lean
+@@ -2,6 +2,11 @@
+ import ATK.Externo.FCNavierStokes
+ import Mathlib.Analysis.InnerProductSpace.Trace
+ import Mathlib.MeasureTheory.Function.L2Space
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # ATK — O enunciado (A) de Navier–Stokes do ATK contra o do formal-conjectures
+--- a/atk-kernel/ATK/IntegracaoFCPNP.lean
++++ b/atk-kernel/ATK/IntegracaoFCPNP.lean
+@@ -1,6 +1,8 @@
+ import ATK.ModeloPNP
+ import ATK.Externo.FCComplexidade
+ 
++noncomputable section
++
+ /-!
+ # ATK — Integração com o formal-conjectures: o enunciado de P ≠ NP
+ 
+--- a/atk-kernel/ATK/InteiraAnalitica.lean
++++ b/atk-kernel/ATK/InteiraAnalitica.lean
+@@ -1,4 +1,5 @@
+ import ATK.EdreiInteira
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — Funções inteiras dadas por coeficientes: analiticidade, Cauchy, zeros, módulo máximo
+--- a/atk-kernel/ATK/JensenPolya.lean
++++ b/atk-kernel/ATK/JensenPolya.lean
+@@ -1,4 +1,5 @@
+ import ATK.ProdutoresTN
++import Mathlib.Algebra.Polynomial.Basic
+ 
+ /-!
+ # ATK — Polinômios de Jensen de `Ξ`: HR ⇒ todos hiperbólicos (Pólya), e Turán sob HR
+--- a/atk-kernel/ATK/JensenTuran.lean
++++ b/atk-kernel/ATK/JensenTuran.lean
+@@ -1,4 +1,9 @@
+ import ATK.Hexagrama
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Polinômios de Jensen, Turán, Toeplitz e momentos (a rota de Jensen–Pólya)
+--- a/atk-kernel/ATK/L3Base.lean
++++ b/atk-kernel/ATK/L3Base.lean
+@@ -4,6 +4,11 @@
+ import Mathlib.Analysis.Complex.Basic
+ import Mathlib.Analysis.InnerProductSpace.LinearMap
+ import Mathlib.Analysis.Calculus.DifferentialForm.Basic
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — L3, base: estruturas de Hodge e estruturas de Kähler
+--- a/atk-kernel/ATK/L4Base.lean
++++ b/atk-kernel/ATK/L4Base.lean
+@@ -1,4 +1,8 @@
+ import ATK.LigacaoBSDTestes
++import Mathlib.Data.Complex.Basic
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # ATK — L4, base: a conjectura de BSD (parte do posto) em forma de biblioteca
+--- a/atk-kernel/ATK/L5Base.lean
++++ b/atk-kernel/ATK/L5Base.lean
+@@ -1,6 +1,10 @@
+ import Mathlib.Analysis.Distribution.SchwartzSpace.Fourier
+ import Mathlib.Analysis.Fourier.Inversion
+ import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Algebra.Star.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — L5, base: os axiomas de Wightman
+--- a/atk-kernel/ATK/L5Lacuna.lean
++++ b/atk-kernel/ATK/L5Lacuna.lean
+@@ -1,4 +1,7 @@
+ import ATK.L5Base
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ligação L5: a lacuna de massa sobre os axiomas de Wightman
+--- a/atk-kernel/ATK/LaguerrePolya.lean
++++ b/atk-kernel/ATK/LaguerrePolya.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # ATK — Laguerre: `p + c·p'` preserva raízes reais, e o fluxo do calor discreto em polinômios
+ 
+--- a/atk-kernel/ATK/LeisDeGanho.lean
++++ b/atk-kernel/ATK/LeisDeGanho.lean
+@@ -1,5 +1,9 @@
+ import ATK.CapturaIncondicional
+ import ATK.DInfinito
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++
++noncomputable section
+ 
+ /-!
+ # ATK-RH — As "leis de ganho por passo" propostas para Báez-Duarte, testadas no kernel
+--- a/atk-kernel/ATK/LiCriterio.lean
++++ b/atk-kernel/ATK/LiCriterio.lean
+@@ -1,4 +1,6 @@
+ import ATK.JensenTuran
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — O núcleo algébrico do critério de Li
+--- a/atk-kernel/ATK/LigacaoBSD.lean
++++ b/atk-kernel/ATK/LigacaoBSD.lean
+@@ -2,6 +2,10 @@
+ import Mathlib.AlgebraicGeometry.EllipticCurve.LFunction
+ import Mathlib.Analysis.Analytic.Order
+ import Mathlib.Analysis.Complex.CauchyIntegral
++import Mathlib.Data.Complex.Basic
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ligação L4 (parte do posto): o enunciado de BSD do Clay sobre os objetos da Mathlib
+--- a/atk-kernel/ATK/LigacaoBSDTestes.lean
++++ b/atk-kernel/ATK/LigacaoBSDTestes.lean
+@@ -5,6 +5,8 @@
+ import Mathlib.NumberTheory.LSeries.Convergence
+ import Mathlib.NumberTheory.LSeries.Injectivity
+ 
++noncomputable section
++
+ /-!
+ # ATK — Ligação L4: testes de sanidade e a forma de Taylor do enunciado oficial
+ 
+--- a/atk-kernel/ATK/LigacaoNS.lean
++++ b/atk-kernel/ATK/LigacaoNS.lean
+@@ -3,6 +3,11 @@
+ import Mathlib.Analysis.InnerProductSpace.PiL2
+ import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
+ import Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Analysis.Calculus.Deriv.Basic
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ligação L1: o modelo genuíno de Navier–Stokes (enunciado (A) do Clay)
+--- a/atk-kernel/ATK/LigacaoPNP.lean
++++ b/atk-kernel/ATK/LigacaoPNP.lean
+@@ -1,6 +1,9 @@
+ import ATK.Conditional.PvsNP
+ import Mathlib.Computability.TuringMachine.Computable
+ import Mathlib.Computability.Encoding
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ligação L2 (parte 1): o enunciado fiel de P ≠ NP sobre as máquinas da Mathlib
+--- a/atk-kernel/ATK/LimitesUm.lean
++++ b/atk-kernel/ATK/LimitesUm.lean
+@@ -1,6 +1,8 @@
+ import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+ import Mathlib.Analysis.SpecialFunctions.Sqrt
+ import Mathlib.Analysis.SpecificLimits.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Formas `0/0` e `∞/∞` com valor determinado (catálogos C53 e D15)
+--- a/atk-kernel/ATK/LinhaIncognita.lean
++++ b/atk-kernel/ATK/LinhaIncognita.lean
+@@ -1,4 +1,5 @@
+ import ATK.ForaDaLinha
++import Mathlib.NumberTheory.LSeries.RiemannZeta
+ 
+ /-!
+ # ATK-RH — A linha crítica como incógnita, e o ponto `1/2`
+--- a/atk-kernel/ATK/LinhasNovas.lean
++++ b/atk-kernel/ATK/LinhasNovas.lean
+@@ -4,6 +4,10 @@
+ import Mathlib.Order.Filter.AtTopBot.Basic
+ import Mathlib.Analysis.Real.Sqrt
+ import Mathlib.Data.Set.Finite.List
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # Linhas de pesquisa novas: como o kernel reage
+--- a/atk-kernel/ATK/LinhasNovasII.lean
++++ b/atk-kernel/ATK/LinhasNovasII.lean
+@@ -5,6 +5,7 @@
+ import Mathlib.Analysis.SpecificLimits.Basic
+ import Mathlib.Tactic.LinearCombination
+ import Mathlib.Tactic.Module
++open scoped ENNReal
+ 
+ /-!
+ # Linhas novas II: unificação, pontos fixos, colapso `∞ = 0` e densidade de `ℤ[1/10]`
+--- a/atk-kernel/ATK/LinhasNovasIII.lean
++++ b/atk-kernel/ATK/LinhasNovasIII.lean
+@@ -1,5 +1,8 @@
+ import ATK.LinhasNovasII
+ import Mathlib.Data.Int.SuccPred
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # Linhas novas III: vereditos afiados
+--- a/atk-kernel/ATK/MellinPlancherel.lean
++++ b/atk-kernel/ATK/MellinPlancherel.lean
+@@ -1,5 +1,7 @@
+ import ATK.PlancherelL1L2
+ import Mathlib.Analysis.MellinInversion
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Plancherel de Mellin na linha `Re s = 1/2`
+--- a/atk-kernel/ATK/MellinRho.lean
++++ b/atk-kernel/ATK/MellinRho.lean
+@@ -1,5 +1,7 @@
+ import ATK.ZetaStrip
+ import ATK.RiemannFaithful
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — Transformada de Mellin dos geradores de Báez-Duarte (passo 2 da ponte)
+--- a/atk-kernel/ATK/ModeloPNP.lean
++++ b/atk-kernel/ATK/ModeloPNP.lean
+@@ -1,5 +1,8 @@
+ import ATK.ComposicaoTM2
+ import ATK.Termos
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ligação L2 (parte 2): o modelo genuíno de P e NP
+--- a/atk-kernel/ATK/ModeloParametrico.lean
++++ b/atk-kernel/ATK/ModeloParametrico.lean
+@@ -1,4 +1,10 @@
+ import ATK.TruncamentoZero
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-PARAMETRIC-GEOMETRY — o sistema paramétrico do texto encaminhado, provado
+--- a/atk-kernel/ATK/ModelosSete.lean
++++ b/atk-kernel/ATK/ModelosSete.lean
+@@ -3,6 +3,15 @@
+ import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+ import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
+ import Mathlib.LinearAlgebra.FiniteDimensional.Basic
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Os modelos finitos das sete linhas, certificados
+--- a/atk-kernel/ATK/MordellWeilCorpo.lean
++++ b/atk-kernel/ATK/MordellWeilCorpo.lean
+@@ -1,4 +1,7 @@
+ import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — 2-descida sobre um corpo qualquer
+--- a/atk-kernel/ATK/MordellWeilDois.lean
++++ b/atk-kernel/ATK/MordellWeilDois.lean
+@@ -1,5 +1,8 @@
+ import ATK.BSDInvariantes
+ import Mathlib.NumberTheory.Padics.PadicVal.Basic
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Teorema de Mordell–Weil para curvas com 2-torção racional completa
+--- a/atk-kernel/ATK/MordellWeilGeral.lean
++++ b/atk-kernel/ATK/MordellWeilGeral.lean
+@@ -2,6 +2,9 @@
+ import ATK.MudancaVariaveis
+ import ATK.BSDInvariantes
+ import Mathlib.FieldTheory.Galois.Basic
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Teorema de Mordell–Weil para toda curva elíptica sobre `ℚ`
+--- a/atk-kernel/ATK/MordellWeilNumero.lean
++++ b/atk-kernel/ATK/MordellWeilNumero.lean
+@@ -2,6 +2,8 @@
+ import ATK.SelmerFinito
+ import Mathlib.RingTheory.DedekindDomain.FiniteAdeleRing
+ 
++noncomputable section
++
+ /-!
+ # ATK — Mordell–Weil fraco sobre corpos de números (2-torção racional completa)
+ 
+--- a/atk-kernel/ATK/MudancaVariaveis.lean
++++ b/atk-kernel/ATK/MudancaVariaveis.lean
+@@ -1,5 +1,7 @@
+ import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
+ 
++noncomputable section
++
+ /-!
+ # ATK — Completar o quadrado: `E(ℚ) ≅ E'(ℚ)` com `E' : y² = x³ + a₂'x² + a₄'x + a₆'`
+ 
+--- a/atk-kernel/ATK/MundoHipotetico.lean
++++ b/atk-kernel/ATK/MundoHipotetico.lean
+@@ -1,6 +1,8 @@
+ import ATK.Conditional.Beal
+ import ATK.Conditional.Riemann
+ 
++noncomputable section
++
+ /-!
+ # O mundo hipotético ATK-O1 no kernel — o que acontece
+ 
+--- a/atk-kernel/ATK/NSCampos.lean
++++ b/atk-kernel/ATK/NSCampos.lean
+@@ -1,5 +1,12 @@
+ import ATK.NSFisico
+ import Mathlib.Analysis.Fourier.Convolution
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS4b: os campos físicos e a equação ponto a ponto
+--- a/atk-kernel/ATK/NSContinua.lean
++++ b/atk-kernel/ATK/NSContinua.lean
+@@ -1,4 +1,6 @@
+ import ATK.NSEnergia
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS7b: desigualdade de energia e critério de continuação
+--- a/atk-kernel/ATK/NSCriterio.lean
++++ b/atk-kernel/ATK/NSCriterio.lean
+@@ -1,4 +1,9 @@
+ import ATK.NSUnico
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS9: o critério de explosão da enstrofia no modelo genuíno
+--- a/atk-kernel/ATK/NSDual.lean
++++ b/atk-kernel/ATK/NSDual.lean
+@@ -1,4 +1,11 @@
+ import ATK.NSFracaF
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS8d: pareamentos com testes de Fourier e a família do calor
+--- a/atk-kernel/ATK/NSEnergia.lean
++++ b/atk-kernel/ATK/NSEnergia.lean
+@@ -1,4 +1,5 @@
+ import ATK.NSMaximal
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS7a: energia, cancelamento e a estimativa de enstrofia
+--- a/atk-kernel/ATK/NSEquacao.lean
++++ b/atk-kernel/ATK/NSEquacao.lean
+@@ -1,4 +1,12 @@
+ import ATK.NSCampos
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS4b (parte 2): os campos físicos e a equação ponto a ponto
+@@ -110,15 +118,15 @@
+     rfl
+   -- somamos as coordenadas `j`
+   set g : Fin 3 → E3 → C3 := fun j => ⇑(LineDeriv.lineDerivOp (ATK.LigacaoNS.e j) (u0c u₀))
+-  have hint : ∀ j : Fin 3, Integrable fun x => 𝐞 (-inner ℝ x ξ) • g j x := fun j =>
++  have hint : ∀ j : Fin 3, Integrable fun x => «𝐞» (-inner ℝ x ξ) • g j x := fun j =>
+     (Real.fourierIntegral_convergent_iff ξ).mpr (SchwartzMap.integrable _)
+-  have hint' : ∀ j : Fin 3, Integrable fun x => (𝐞 (-inner ℝ x ξ) • g j x) j := fun j =>
++  have hint' : ∀ j : Fin 3, Integrable fun x => («𝐞» (-inner ℝ x ξ) • g j x) j := fun j =>
+     (EuclideanSpace.proj (𝕜 := ℂ) (ι := Fin 3) j).integrable_comp (hint j)
+   have hsum : ∑ j : Fin 3, (𝓕 (g j) ξ) j = 0 := by
+     simp_rw [Real.fourier_eq]
+     rw [Finset.sum_congr rfl fun j _ => proj_integral (hint j) j,
+       ← integral_finsetSum _ (fun j _ => hint' j)]
+-    have h0 : ∀ x, ∑ j : Fin 3, (𝐞 (-inner ℝ x ξ) • g j x) j = 0 := by
++    have h0 : ∀ x, ∑ j : Fin 3, («𝐞» (-inner ℝ x ξ) • g j x) j = 0 := by
+       intro x
+       simp only [g, Circle.smul_def, PiLp.smul_apply, lineDeriv_u0c, cx_apply, smul_eq_mul]
+       rw [← Finset.mul_sum]
+@@ -322,7 +330,7 @@
+   (EuclideanSpace.proj (𝕜 := ℂ) (ι := Fin 3) j).integrable_comp hf
+ 
+ theorem integrable_fourierInv_integrand {g : E3 → C3} (hg : Integrable g) (x : E3) :
+-    Integrable fun v => 𝐞 (inner ℝ v x) • g v := by
++    Integrable fun v => «𝐞» (inner ℝ v x) • g v := by
+   have := (Real.fourierIntegral_convergent_iff (μ := volume) (f := g) (-x)).mpr hg
+   simpa [inner_neg_right] using this
+ 
+--- a/atk-kernel/ATK/NSExplosao.lean
++++ b/atk-kernel/ATK/NSExplosao.lean
+@@ -4,6 +4,8 @@
+ import Mathlib.Analysis.SpecialFunctions.Sqrt
+ import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+ import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Navier–Stokes: a taxa de Leray e a explosão da comparação de Riccati
+--- a/atk-kernel/ATK/NSFisico.lean
++++ b/atk-kernel/ATK/NSFisico.lean
+@@ -1,5 +1,12 @@
+ import ATK.NSRegular
+ import Mathlib.Analysis.SpecialFunctions.Pow.Integral
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Data.Complex.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS4a: integrais de Fourier com parâmetros são `C^∞`
+--- a/atk-kernel/ATK/NSFourierBase.lean
++++ b/atk-kernel/ATK/NSFourierBase.lean
+@@ -1,6 +1,12 @@
+ import ATK.LigacaoNS
+ import Mathlib.Analysis.SpecialFunctions.JapaneseBracket
+ import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Navier–Stokes no lado de Fourier, marco NS1: álgebra e núcleos
+--- a/atk-kernel/ATK/NSFraca.lean
++++ b/atk-kernel/ATK/NSFraca.lean
+@@ -1,5 +1,10 @@
+ import ATK.NSContinua
+ import Mathlib.Analysis.Calculus.FDeriv.Symmetric
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS8a: a formulação fraca (sem pressão)
+--- a/atk-kernel/ATK/NSFracaF.lean
++++ b/atk-kernel/ATK/NSFracaF.lean
+@@ -1,4 +1,8 @@
+ import ATK.NSTeste
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS8c: a formulação fraca contra os campos teste de Fourier
+--- a/atk-kernel/ATK/NSLocal.lean
++++ b/atk-kernel/ATK/NSLocal.lean
+@@ -1,4 +1,6 @@
+ import ATK.NSPlancherel
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS5b: existência local de solução suave (dados do Clay)
+--- a/atk-kernel/ATK/NSMaximal.lean
++++ b/atk-kernel/ATK/NSMaximal.lean
+@@ -1,4 +1,8 @@
+ import ATK.NSLocal
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS6: unicidade de Duhamel, concatenação e a solução maximal
+--- a/atk-kernel/ATK/NSMild.lean
++++ b/atk-kernel/ATK/NSMild.lean
+@@ -1,4 +1,9 @@
+ import ATK.NSDual
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS8e: a fórmula de Duhamel testada para a diferença de duas soluções
+--- a/atk-kernel/ATK/NSPequeno.lean
++++ b/atk-kernel/ATK/NSPequeno.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.Analysis.Calculus.MeanValue
+ import Mathlib.Analysis.SpecialFunctions.Exp
+ import Mathlib.Analysis.SpecialFunctions.ExpDeriv
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Navier–Stokes: o núcleo analítico da regularidade global para dados pequenos
+--- a/atk-kernel/ATK/NSPicard.lean
++++ b/atk-kernel/ATK/NSPicard.lean
+@@ -1,6 +1,12 @@
+ import ATK.NSFourierBase
+ import Mathlib.Topology.ContinuousMap.Bounded.Normed
+ import Mathlib.Topology.MetricSpace.Contracting
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Navier–Stokes no lado de Fourier, marco NS2: a não linearidade e a existência local
+--- a/atk-kernel/ATK/NSPlancherel.lean
++++ b/atk-kernel/ATK/NSPlancherel.lean
+@@ -1,6 +1,11 @@
+ import ATK.NSEquacao
+ import Mathlib.Analysis.Fourier.LpSpace
+ import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS5a: Plancherel para campos `ℝ³ → ℂ³` em `L¹ ∩ L²`
+--- a/atk-kernel/ATK/NSReducao.lean
++++ b/atk-kernel/ATK/NSReducao.lean
+@@ -1,4 +1,9 @@
+ import ATK.LigacaoNS
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Analysis.Calculus.Deriv.Basic
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # ATK — A ponte B3 reduzida a quatro teoremas clássicos da teoria local
+--- a/atk-kernel/ATK/NSRegular.lean
++++ b/atk-kernel/ATK/NSRegular.lean
+@@ -1,4 +1,8 @@
+ import ATK.NSPicard
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Navier–Stokes no lado de Fourier, marco NS3: persistência dos pesos e regularidade em `t`
+--- a/atk-kernel/ATK/NSTeste.lean
++++ b/atk-kernel/ATK/NSTeste.lean
+@@ -1,4 +1,12 @@
+ import ATK.NSFraca
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS8b: campos teste de Fourier e a função de corte
+--- a/atk-kernel/ATK/NSUnico.lean
++++ b/atk-kernel/ATK/NSUnico.lean
+@@ -1,5 +1,10 @@
+ import ATK.NSMild
+ import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
++import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
+ 
+ /-!
+ # ATK — Navier–Stokes, marco NS8f: unicidade na classe `SolucaoLocal` (pressão arbitrária)
+--- a/atk-kernel/ATK/NecessidadeBD.lean
++++ b/atk-kernel/ATK/NecessidadeBD.lean
+@@ -1,6 +1,11 @@
+ import ATK.EspectralDN
+ import ATK.RiemannConcrete
+ import Mathlib.NumberTheory.LSeries.Dirichlet
++import Mathlib.Data.Complex.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Necessidade de Báez-Duarte: esqueleto analítico e entradas isoladas
+--- a/atk-kernel/ATK/NecessidadeRH.lean
++++ b/atk-kernel/ATK/NecessidadeRH.lean
+@@ -3,6 +3,9 @@
+ import ATK.RazaoZeta
+ import Mathlib.NumberTheory.LSeries.ZetaZeros
+ import ATK.BDDistSqPort
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — A recíproca de Báez-Duarte: RH ⇒ `D_N → 0`, e **RH ⟺ `D_N → 0`** (sem pontes)
+--- a/atk-kernel/ATK/ObrigacoesMinimas.lean
++++ b/atk-kernel/ATK/ObrigacoesMinimas.lean
+@@ -1,6 +1,8 @@
+ import ATK.BridgeReduction
+ import ATK.RiemannConcrete
+ 
++noncomputable section
++
+ /-!
+ # ATK — Teorema-mestre mínimo: só B3–B7 e obrigações do tamanho exato dos problemas
+ 
+--- a/atk-kernel/ATK/OmegaClasses.lean
++++ b/atk-kernel/ATK/OmegaClasses.lean
+@@ -18,6 +18,8 @@
+ import Mathlib.Tactic.FinCases
+ import Mathlib.Tactic.LinearCombination
+ 
++noncomputable section
++
+ namespace ATK.OmegaClasses
+ 
+ /-! ### R — anulação assintótica -/
+--- a/atk-kernel/ATK/OmegaContracao.lean
++++ b/atk-kernel/ATK/OmegaContracao.lean
+@@ -23,6 +23,8 @@
+ import Mathlib.Tactic.FieldSimp
+ import Mathlib.Tactic.Ring
+ 
++noncomputable section
++
+ namespace ATK.OmegaContracao
+ 
+ open Finset
+--- a/atk-kernel/ATK/OmegaEstados.lean
++++ b/atk-kernel/ATK/OmegaEstados.lean
+@@ -11,6 +11,8 @@
+ import Mathlib.Algebra.Order.Archimedean.Real.Basic
+ import Mathlib.Logic.Function.Basic
+ 
++noncomputable section
++
+ namespace ATK.OmegaEstados
+ 
+ /-! ### Estados -/
+--- a/atk-kernel/ATK/OmegaGramRho.lean
++++ b/atk-kernel/ATK/OmegaGramRho.lean
+@@ -23,6 +23,8 @@
+ import Mathlib.Tactic.FieldSimp
+ import Mathlib.Tactic.Ring
+ 
++noncomputable section
++
+ namespace ATK.OmegaGramRho
+ 
+ open Finset Matrix
+--- a/atk-kernel/ATK/OrdemCoordenadas.lean
++++ b/atk-kernel/ATK/OrdemCoordenadas.lean
+@@ -1,4 +1,6 @@
+ import ATK.ClosedMathToro
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — B18: a ordem de um zero não muda por mudança de coordenadas conforme
+--- a/atk-kernel/ATK/Orion.lean
++++ b/atk-kernel/ATK/Orion.lean
+@@ -20,6 +20,9 @@
+ import Mathlib.Analysis.Calculus.Deriv.Mul
+ import Mathlib.Tactic.Linarith
+ import Mathlib.Tactic.Ring
++import Mathlib.Analysis.Calculus.Deriv.Basic
++
++noncomputable section
+ 
+ namespace ATK.Orion
+ 
+--- a/atk-kernel/ATK/OrionAlcance.lean
++++ b/atk-kernel/ATK/OrionAlcance.lean
+@@ -23,6 +23,8 @@
+ import Mathlib.Tactic.Linarith
+ import Mathlib.Tactic.FieldSimp
+ import Mathlib.Tactic.Ring
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Star.Basic
+ 
+ namespace ATK.OrionAlcance
+ 
+--- a/atk-kernel/ATK/PemPpoly.lean
++++ b/atk-kernel/ATK/PemPpoly.lean
+@@ -2,6 +2,8 @@
+ import ATK.CookLevinBase
+ import ATK.AtaquePvsNP
+ 
++noncomputable section
++
+ /-!
+ # ATK — Ponte `P ⊆ P/poly` provada (Savage 1972) para as máquinas `Turing.FinTM2` da Mathlib
+ 
+--- a/atk-kernel/ATK/PerronSuave.lean
++++ b/atk-kernel/ATK/PerronSuave.lean
+@@ -4,6 +4,9 @@
+ import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+ import ATK.RHLogZeta
+ import Mathlib.NumberTheory.LSeries.Dirichlet
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Fórmula de Perron suavizada e deslocamento de contorno
+--- a/atk-kernel/ATK/PlancherelL1L2.lean
++++ b/atk-kernel/ATK/PlancherelL1L2.lean
+@@ -1,6 +1,8 @@
+ import Mathlib.Analysis.Fourier.LpSpace
+ import Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
+ import Mathlib.Analysis.Distribution.SchwartzSpace.Fourier
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++open scoped ENNReal
+ 
+ /-!
+ # ATK — Plancherel na forma integral para `f ∈ L¹ ∩ L²` (reta real)
+--- a/atk-kernel/ATK/PolyLista.lean
++++ b/atk-kernel/ATK/PolyLista.lean
+@@ -1,4 +1,7 @@
+ import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Tactic.Ring
++
++noncomputable section
+ 
+ /-!
+ # ATK — Polinômios inteiros por listas de coeficientes (reflexão para certificados)
+--- a/atk-kernel/ATK/PolyaCalor.lean
++++ b/atk-kernel/ATK/PolyaCalor.lean
+@@ -1,4 +1,5 @@
+ import ATK.LaguerrePolya
++import Mathlib.Algebra.Polynomial.Basic
+ 
+ /-!
+ # ATK — Pólya–de Bruijn para polinômios: `e^{−λD²}` preserva raízes reais (`λ ≥ 0`)
+--- a/atk-kernel/ATK/PonteCoefCurva32.lean
++++ b/atk-kernel/ATK/PonteCoefCurva32.lean
+@@ -27,6 +27,9 @@
+ import Mathlib.FieldTheory.Finite.Basic
+ import Mathlib.Data.Nat.Factorization.Basic
+ import Mathlib.Tactic.NormNum.Prime
++import Mathlib.Data.Nat.Prime.Defs
++
++noncomputable section
+ 
+ open ATK.LigacaoBSD ATK.LigacaoBSDTestes ATK.AtaqueBSD ATK.BaseHasseCurva32
+ 
+--- a/atk-kernel/ATK/PonteFatoresCurva32.lean
++++ b/atk-kernel/ATK/PonteFatoresCurva32.lean
+@@ -2,6 +2,9 @@
+ import ATK.BSDTamagawaE32
+ import Mathlib.NumberTheory.Padics.HeightOneSpectrum
+ import Mathlib.NumberTheory.Padics.RingHoms
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ponte P2a provada: os fatores locais de `L(E, s)` para `y² = x³ − x`
+--- a/atk-kernel/ATK/PonteModularCurva32.lean
++++ b/atk-kernel/ATK/PonteModularCurva32.lean
+@@ -3,6 +3,13 @@
+ import Mathlib.NumberTheory.LSeries.HurwitzZetaEven
+ import Mathlib.NumberTheory.LSeries.Deriv
+ import Mathlib.NumberTheory.ModularForms.EisensteinSeries.Summable
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ponte P1 provada: a equação funcional modular de `y² = x³ − x`
+--- a/atk-kernel/ATK/PostoDois.lean
++++ b/atk-kernel/ATK/PostoDois.lean
+@@ -1,5 +1,7 @@
+ import ATK.MordellWeilDois
+ 
++noncomputable section
++
+ /-!
+ # ATK — Posto de Mordell–Weil `≥ 2` por 2-descida completa
+ 
+--- a/atk-kernel/ATK/ProdutoresTN.lean
++++ b/atk-kernel/ATK/ProdutoresTN.lean
+@@ -1,5 +1,8 @@
+ import ATK.XiMomentos
+ import ATK.PolyaCalor
++import Mathlib.Data.Nat.Factorial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Interface dos produtores de positividade total (Grupo 3) e as suas ressalvas
+--- a/atk-kernel/ATK/Projetores.lean
++++ b/atk-kernel/ATK/Projetores.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # ATK — Simetrias, projetores, estrela de Hodge, gap 2×2, descida e limites
+ 
+--- a/atk-kernel/ATK/RHLogZeta.lean
++++ b/atk-kernel/ATK/RHLogZeta.lean
+@@ -7,6 +7,12 @@
+ import Mathlib.NumberTheory.ZetaValues
+ import Mathlib.Analysis.Real.Pi.Bounds
+ import ATK.ZetaRegiao
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Sob RH, `1/ζ` cresce menos que qualquer potência em `Re s ≥ 1/2 + δ` (Titchmarsh 14.2)
+--- a/atk-kernel/ATK/RHTerminal.lean
++++ b/atk-kernel/ATK/RHTerminal.lean
+@@ -1,5 +1,10 @@
+ import ATK.ClosedMathToro
+ import ATK.EMGeral
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Redução terminal de HR a uma desigualdade de somas finitas
+--- a/atk-kernel/ATK/RazaoZeta.lean
++++ b/atk-kernel/ATK/RazaoZeta.lean
+@@ -1,5 +1,9 @@
+ import ATK.GammaVertical
+ import ATK.RHLogZeta
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Algebra.Star.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — Sob RH, `|ζ(s)/ζ(s + ε)| ≤ C |s + 3|^(ε/2)` na reta crítica, uniformemente em `ε`
+--- a/atk-kernel/ATK/RefutacoesBeal.lean
++++ b/atk-kernel/ATK/RefutacoesBeal.lean
+@@ -20,6 +20,9 @@
+ import ATK.Conditional.Beal
+ import Mathlib.Tactic.NormNum.GCD
+ import Mathlib.Tactic.NormNum.Prime
++import Mathlib.Data.Nat.Prime.Defs
++
++noncomputable section
+ 
+ namespace ATK.RefutacoesBeal
+ 
+--- a/atk-kernel/ATK/Regimes.lean
++++ b/atk-kernel/ATK/Regimes.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.Analysis.SpecialFunctions.Exp
+ import ATK.Conditional.BSD
+ 
++noncomputable section
++
+ /-!
+ # ATK — Regimes do gateway (camada de simulação, v5.1)
+ 
+--- a/atk-kernel/ATK/RelacionalI.lean
++++ b/atk-kernel/ATK/RelacionalI.lean
+@@ -39,6 +39,8 @@
+ import Mathlib.Analysis.SpecificLimits.Basic
+ import Mathlib.Topology.Separation.Hausdorff
+ 
++noncomputable section
++
+ namespace ATK.RelacionalI
+ 
+ open Filter Topology
+--- a/atk-kernel/ATK/RelacionalLeis.lean
++++ b/atk-kernel/ATK/RelacionalLeis.lean
+@@ -28,6 +28,8 @@
+ import Mathlib.Analysis.Real.Hyperreal
+ import Mathlib.Algebra.Order.BigOperators.Ring.Finset
+ 
++noncomputable section
++
+ namespace ATK.RelacionalLeis
+ 
+ open ATK.RelacionalI Finset
+--- a/atk-kernel/ATK/RelacionalTransporte.lean
++++ b/atk-kernel/ATK/RelacionalTransporte.lean
+@@ -30,6 +30,10 @@
+ import Mathlib.Analysis.SpecialFunctions.Log.Basic
+ import Mathlib.Topology.Homeomorph.Defs
+ import Mathlib.Algebra.Order.Ring.Abs
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Tactic.Positivity
++
++noncomputable section
+ 
+ namespace ATK.RelacionalTransporte
+ 
+--- a/atk-kernel/ATK/Roda.lean
++++ b/atk-kernel/ATK/Roda.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.Tactic.Ring
+ import Mathlib.Tactic.FieldSimp
+ 
++noncomputable section
++
+ /-!
+ # ATK — A roda de Carlström: `0 = [0:1]`, `1 = [1:1]`, `∞ = [1:0]`, `⊥ = 0/0 = [0:0]`
+ 
+--- a/atk-kernel/ATK/SATemNP.lean
++++ b/atk-kernel/ATK/SATemNP.lean
+@@ -1,4 +1,7 @@
+ import ATK.ModeloPNP
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Ponte B4, marco M1: SAT ∈ NP no modelo genuíno
+--- a/atk-kernel/ATK/SelmerFinito.lean
++++ b/atk-kernel/ATK/SelmerFinito.lean
+@@ -4,6 +4,8 @@
+ import Mathlib.NumberTheory.NumberField.Units.DirichletTheorem
+ import Mathlib.GroupTheory.FiniteAbelian.Basic
+ 
++noncomputable section
++
+ /-!
+ # ATK — Finitude do grupo de Selmer `K⟮S, n⟯` de um corpo de números
+ 
+--- a/atk-kernel/ATK/Shannon.lean
++++ b/atk-kernel/ATK/Shannon.lean
+@@ -2,6 +2,9 @@
+ import Mathlib.Data.Fintype.Pi
+ import Mathlib.Data.Fintype.Prod
+ import Mathlib.Analysis.SpecificLimits.Normed
++import Mathlib.Tactic.Positivity
++
++noncomputable section
+ 
+ /-!
+ # ATK — P vs NP: o teorema de contagem de Shannon (funções booleanas difíceis existem)
+--- a/atk-kernel/ATK/SophieGermain.lean
++++ b/atk-kernel/ATK/SophieGermain.lean
+@@ -5,6 +5,8 @@
+ import Mathlib.Tactic.NormNum.Prime
+ import Mathlib.NumberTheory.FLT.Basic
+ 
++noncomputable section
++
+ /-!
+ # ATK — Ponte B2 (FLT): o teorema de Sophie Germain
+ 
+--- a/atk-kernel/ATK/StatusFinal.lean
++++ b/atk-kernel/ATK/StatusFinal.lean
+@@ -5,6 +5,8 @@
+ import ATK.Indeterminacy
+ import ATK.ObligationsClosed
+ 
++noncomputable section
++
+ /-!
+ # Status final certificado: `OPEN_MATH = true`, `CLOSED_MATH = false`
+ 
+--- a/atk-kernel/ATK/TeoremaGlobal.lean
++++ b/atk-kernel/ATK/TeoremaGlobal.lean
+@@ -2,6 +2,8 @@
+ import ATK.BaezDuarteBridge
+ import ATK.BealFermatDescent
+ 
++noncomputable section
++
+ /-!
+ # ATK — Teorema Global (versão de integração), reduzido ao estado atual
+ 
+--- a/atk-kernel/ATK/TerceiroTemplo.lean
++++ b/atk-kernel/ATK/TerceiroTemplo.lean
+@@ -4,6 +4,11 @@
+ import Mathlib.Analysis.Complex.ExponentialBounds
+ import Mathlib.Analysis.SpecificLimits.Basic
+ import Mathlib.Data.Finset.Powerset
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # Terceiro Templo — a estrutura da Cabala como objeto matemático
+--- a/atk-kernel/ATK/TerceiroTemploII.lean
++++ b/atk-kernel/ATK/TerceiroTemploII.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.LinearAlgebra.Matrix.Notation
+ import Mathlib.Tactic.NoncommRing
+ 
++noncomputable section
++
+ /-!
+ # Terceiro Templo II — gap espectral da Árvore, operadores U·C·R e comutadores
+ 
+--- a/atk-kernel/ATK/Termos.lean
++++ b/atk-kernel/ATK/Termos.lean
+@@ -1,6 +1,9 @@
+ import ATK.FinalRoot
+ import ATK.LigacaoNS
+ import ATK.LigacaoPNP
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++
++noncomputable section
+ 
+ /-!
+ # Os termos terminais, um a um, com o tipo exato
+--- a/atk-kernel/ATK/ToeplitzTN.lean
++++ b/atk-kernel/ATK/ToeplitzTN.lean
+@@ -1,4 +1,8 @@
+ import ATK.JensenTuran
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Positividade total de Toeplitz (Aissen–Schoenberg–Whitney–Edrei) para polinômios
+--- a/atk-kernel/ATK/TranscodificadoresFC.lean
++++ b/atk-kernel/ATK/TranscodificadoresFC.lean
+@@ -1,4 +1,7 @@
+ import ATK.IntegracaoFCPNP
++import Mathlib.Algebra.Polynomial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Os quatro transcodificadores entre as codificações do ATK e do formal-conjectures
+--- a/atk-kernel/ATK/TresZeros.lean
++++ b/atk-kernel/ATK/TresZeros.lean
+@@ -1,6 +1,9 @@
+ import ATK.ZeroCritico
+ import ATK.ZeroSegundo
+ import ATK.ZeroTerceiro
++import Mathlib.Algebra.Star.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — Os três primeiros zeros de `ζ` na linha crítica, certificados
+--- a/atk-kernel/ATK/Triadico.lean
++++ b/atk-kernel/ATK/Triadico.lean
+@@ -2,6 +2,9 @@
+ import Mathlib.Analysis.SpecialFunctions.Pow.Real
+ import Mathlib.LinearAlgebra.Matrix.Notation
+ import Mathlib.Tactic.Module
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — Álgebra triádica: operadores de ordem 3, pontos fixos e cadeias simétricas
+--- a/atk-kernel/ATK/TruncamentoToeplitz.lean
++++ b/atk-kernel/ATK/TruncamentoToeplitz.lean
+@@ -1,4 +1,8 @@
+ import ATK.TuranDispersao
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Nat.Factorial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Truncamento de Toeplitz: `P(N)`, `Q(N+1)`, o nível da primeira falha e o fluxo
+--- a/atk-kernel/ATK/TruncamentoZero.lean
++++ b/atk-kernel/ATK/TruncamentoZero.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroIncognito
++import Mathlib.Algebra.Star.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-RH — Truncamento inexato, limite exato: o modelo `ρ_N = A_N/B_N` com uma regra concreta
+--- a/atk-kernel/ATK/TuranDispersao.lean
++++ b/atk-kernel/ATK/TuranDispersao.lean
+@@ -1,4 +1,10 @@
+ import ATK.HurwitzJensen
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Nat.Factorial.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — A identidade de dispersão de ordem 2 e PF₂ dos coeficientes de `Ξ` sem HR (módulo o lema de Csordas)
+--- a/atk-kernel/ATK/ValleePoussin.lean
++++ b/atk-kernel/ATK/ValleePoussin.lean
+@@ -1,5 +1,8 @@
+ import ATK.ZetaLog
+ import ATK.ForaDaLinha
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — A lei de de la Vallée Poussin (forma logarítmica) aplicada aos zeros fora da linha
+--- a/atk-kernel/ATK/WeilMecanismo.lean
++++ b/atk-kernel/ATK/WeilMecanismo.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # ATK — O mecanismo de Weil (índice de Hodge ⇒ hipótese de Riemann para curvas) e a ponte de Hilbert–Pólya
+ 
+--- a/atk-kernel/ATK/XiAnalitica.lean
++++ b/atk-kernel/ATK/XiAnalitica.lean
+@@ -2,6 +2,12 @@
+ import ATK.RHTerminal
+ import ATK.BaseRiemannXi
+ import ATK.BSDCoefLider
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK-RH — `ξ` analítica: ordens, derivada logarítmica, paridade, Jensen no disco, critério de sinal
+--- a/atk-kernel/ATK/XiCrescimento.lean
++++ b/atk-kernel/ATK/XiCrescimento.lean
+@@ -1,6 +1,11 @@
+ import ATK.HadamardGenero0
+ import ATK.XiTP
+ import ATK.XiPhi
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — **HR ⟺ PF∞ dos coeficientes de Ξ** (no kernel, as duas direções)
+--- a/atk-kernel/ATK/XiMomentos.lean
++++ b/atk-kernel/ATK/XiMomentos.lean
+@@ -1,4 +1,7 @@
+ import ATK.XiCrescimento
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — Momentos de `Φ` e os coeficientes de `Ξ` (camadas M1–M2 dos "produtores")
+--- a/atk-kernel/ATK/XiPhi.lean
++++ b/atk-kernel/ATK/XiPhi.lean
+@@ -1,4 +1,9 @@
+ import ATK.ErrosAnaliticos
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — `Ξ(t) = 2∫₀^∞ Φ(u) cos(tu) du`, sem hipóteses
+--- a/atk-kernel/ATK/XiTP.lean
++++ b/atk-kernel/ATK/XiTP.lean
+@@ -1,5 +1,7 @@
+ import ATK.EdreiInteira
+ import ATK.BaseRiemannXiSinal
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — PF∞ dos coeficientes de `Ξ` implica HR (no kernel, sem hipótese oculta)
+--- a/atk-kernel/ATK/YMOficial.lean
++++ b/atk-kernel/ATK/YMOficial.lean
+@@ -1,6 +1,10 @@
+ import ATK.L5Base
+ import Mathlib.Algebra.Lie.TraceForm
+ import Mathlib.Algebra.Lie.Semisimple.Defs
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++
++noncomputable section
+ 
+ /-!
+ # Yang–Mills: o enunciado do Clay, formalizado até onde o texto é matemático
+--- a/atk-kernel/ATK/YMReconstrucao.lean
++++ b/atk-kernel/ATK/YMReconstrucao.lean
+@@ -1,4 +1,5 @@
+ import ATK.YMToy
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Ponte B7 (Osterwalder–Schrader) e O8, em miniatura: reconstrução no modelo de rede
+--- a/atk-kernel/ATK/YMSemGap.lean
++++ b/atk-kernel/ATK/YMSemGap.lean
+@@ -19,6 +19,9 @@
+ import Mathlib.Data.ZMod.Basic
+ import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+ import Mathlib.Algebra.Order.BigOperators.Group.Finset
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ namespace ATK.YMSemGap
+ 
+--- a/atk-kernel/ATK/YMToy.lean
++++ b/atk-kernel/ATK/YMToy.lean
+@@ -2,6 +2,9 @@
+ import Mathlib.Analysis.SpecialFunctions.Log.Basic
+ import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+ import Mathlib.Analysis.SpecificLimits.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Yang–Mills: o gap de massa num modelo de rede exatamente solúvel (e por que o contínuo é a lacuna)
+--- a/atk-kernel/ATK/ZeroCertificado.lean
++++ b/atk-kernel/ATK/ZeroCertificado.lean
+@@ -1,6 +1,13 @@
+ import ATK.Cert.Transc
+ import ATK.EMGeral
+ import ATK.ZetaSimetria
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Um zero não trivial certificado na linha crítica (fase 3)
+--- a/atk-kernel/ATK/ZeroCertificadoAplicado.lean
++++ b/atk-kernel/ATK/ZeroCertificadoAplicado.lean
+@@ -2,6 +2,7 @@
+ import ATK.LinhaIncognita
+ import ATK.TruncamentoZero
+ import ATK.ZeroIncognito
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — Descarregando a hipótese "existe um zero não trivial"
+--- a/atk-kernel/ATK/ZeroClasses/Abscissa.lean
++++ b/atk-kernel/ATK/ZeroClasses/Abscissa.lean
+@@ -1,4 +1,8 @@
+ import ATK.ZeroClasses.QuasiRH
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # A abscissa de convergência de `Σ μ(n)n^{−s}` e de `Σ (Λ(n) − 1)n^{−s}` é `Θ = sup Re ρ` (rodada 62)
+--- a/atk-kernel/ATK/ZeroClasses/ArgRetangulo.lean
++++ b/atk-kernel/ATK/ZeroClasses/ArgRetangulo.lean
+@@ -1,4 +1,10 @@
+ import ATK.ZeroClasses.StirlingComplexo
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # O princípio do argumento em retângulos (rodada 40)
+--- a/atk-kernel/ATK/ZeroClasses/BDBurnolL1.lean
++++ b/atk-kernel/ATK/ZeroClasses/BDBurnolL1.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.BDPisoL1
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Burnol restrito: `D_N ≥ c/(A log N + B)` na classe `‖c‖₁ ≤ N^A`, e um critério de RH num único `σ` (rodada 80)
+--- a/atk-kernel/ATK/ZeroClasses/BDDesloc.lean
++++ b/atk-kernel/ATK/ZeroClasses/BDDesloc.lean
+@@ -1,4 +1,6 @@
+ import ATK.ZeroClasses.BDEspectral
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Báez-Duarte ponderado: o deslocamento do molificador (rodada 74)
+--- a/atk-kernel/ATK/ZeroClasses/BDEspectral.lean
++++ b/atk-kernel/ATK/ZeroClasses/BDEspectral.lean
+@@ -1,5 +1,8 @@
+ import ATK.ZeroClasses.BDPonderado
+ import ATK.EspectralDN
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Báez-Duarte ponderado: a forma espectral de `D_N(σ)` (rodada 73)
+--- a/atk-kernel/ATK/ZeroClasses/BDNormaL1.lean
++++ b/atk-kernel/ATK/ZeroClasses/BDNormaL1.lean
+@@ -1,5 +1,12 @@
+ import ATK.ZeroClasses.TNPPi
+ import ATK.ZeroClasses.ExplicitaInteira
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # `‖c‖₁` controlado por `‖res‖²_σ` à direita de `Θ`, e `κ(σ) ≤ (2σ + 3)(σ − Θ)/Θ` (rodada 82)
+--- a/atk-kernel/ATK/ZeroClasses/BDPisoL1.lean
++++ b/atk-kernel/ATK/ZeroClasses/BDPisoL1.lean
+@@ -1,4 +1,10 @@
+ import ATK.ZeroClasses.BDTheta
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # Pisos `ℓ¹` para Báez-Duarte ponderado: `κ_A(σ) ≤ 2A(σ − Θ)/Θ` (rodada 79)
+--- a/atk-kernel/ATK/ZeroClasses/BDPonderado.lean
++++ b/atk-kernel/ATK/ZeroClasses/BDPonderado.lean
+@@ -1,5 +1,8 @@
+ import ATK.BaezDuarteBridge
+ import ATK.ZeroClasses.OmegaPsi
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # Báez-Duarte ponderado: `D_N(σ) → 0` ⟹ `ζ ≠ 0` em `Re s > σ` (rodada 59)
+--- a/atk-kernel/ATK/ZeroClasses/BDTaxa.lean
++++ b/atk-kernel/ATK/ZeroClasses/BDTaxa.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.BDDesloc
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Báez-Duarte ponderado com taxa: `D_N(σ) ≪ N^{−2δ}` sob semiplano sem zeros (rodada 75)
+--- a/atk-kernel/ATK/ZeroClasses/BDTaxaPiso.lean
++++ b/atk-kernel/ATK/ZeroClasses/BDTaxaPiso.lean
+@@ -1,4 +1,6 @@
+ import ATK.ZeroClasses.BDNormaL1
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # O teto da taxa para `c` arbitrário: `2(σ − Θ) ≤ κ(σ) ≤ (2σ + 3)(σ − Θ)/Θ` (rodada 83)
+--- a/atk-kernel/ATK/ZeroClasses/BDTaxaTeta.lean
++++ b/atk-kernel/ATK/ZeroClasses/BDTaxaTeta.lean
+@@ -1,5 +1,7 @@
+ import ATK.ZeroClasses.BDSemPotencia
+ 
++noncomputable section
++
+ /-!
+ # `Θ` como o início das taxas de potência de `D_N(σ)` (rodada 85)
+ 
+--- a/atk-kernel/ATK/ZeroClasses/BDTheta.lean
++++ b/atk-kernel/ATK/ZeroClasses/BDTheta.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.BDTaxa
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # O expoente `Θ = sup Re ρ` e três instrumentos que o medem (rodada 76)
+--- a/atk-kernel/ATK/ZeroClasses/Basic.lean
++++ b/atk-kernel/ATK/ZeroClasses/Basic.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # ATK-ZERO-CLASSES — camada genérica: classes, partições, aritmética e informação incompleta
+ 
+--- a/atk-kernel/ATK/ZeroClasses/Canonico.lean
++++ b/atk-kernel/ATK/ZeroClasses/Canonico.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.JensenLocal
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # O produto canônico dos zeros de `ζ` converge, e `HadamardXi` vira uma identidade (rodada 31)
+--- a/atk-kernel/ATK/ZeroClasses/CanonicoInteira.lean
++++ b/atk-kernel/ATK/ZeroClasses/CanonicoInteira.lean
+@@ -1,5 +1,11 @@
+ import ATK.ZeroClasses.Canonico
+ import Mathlib.Analysis.Normed.Module.MultipliableUniformlyOn
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
+ 
+ /-!
+ # O produto canônico é inteiro, tem exatamente os zeros de `ξ` e cresce no máximo como `e^{C|s|^{3/2}}`
+--- a/atk-kernel/ATK/ZeroClasses/ChebyshevSuave.lean
++++ b/atk-kernel/ATK/ZeroClasses/ChebyshevSuave.lean
+@@ -1,6 +1,14 @@
+ import ATK.ZeroClasses.LogDerivZeta
+ import ATK.ZeroClasses.LittlewoodMu
+ import ATK.PerronSuave
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A soma de Chebyshev suavizada: `Σ_{n ≤ x} Λ(n)(1 − n/x) = x/2 + O(x log x · e^{−c√log x})` (rodada 53)
+--- a/atk-kernel/ATK/ZeroClasses/Complementar.lean
++++ b/atk-kernel/ATK/ZeroClasses/Complementar.lean
+@@ -1,4 +1,10 @@
+ import ATK.ZeroClasses.MundoFora
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-ZERO-CLASSES — os dois casos: onde se excluem e onde se complementam
+--- a/atk-kernel/ATK/ZeroClasses/Componentes.lean
++++ b/atk-kernel/ATK/ZeroClasses/Componentes.lean
+@@ -1,6 +1,10 @@
+ import ATK.ZeroClasses.Encontro
+ import Mathlib.Analysis.Real.Hyperreal
+ import Mathlib.SetTheory.Ordinal.Arithmetic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK-ZERO-CLASSES — onde o real encontra o imaginário: componentes, mínimos, caudas e o infinito
+--- a/atk-kernel/ATK/ZeroClasses/Construcao.lean
++++ b/atk-kernel/ATK/ZeroClasses/Construcao.lean
+@@ -1,4 +1,10 @@
+ import ATK.ZeroClasses.Complementar
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK-ZERO-CLASSES — o que a escolha humana constrói, e o que ela não alcança
+--- a/atk-kernel/ATK/ZeroClasses/Convexidade.lean
++++ b/atk-kernel/ATK/ZeroClasses/Convexidade.lean
+@@ -1,5 +1,11 @@
+ import ATK.ZeroClasses.BDTaxaTeta
+ import ATK.ZetaTroca
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A cota de convexidade `ζ(σ + it) ≪ |t|^{(1−σ)/2+ε}` (rodada 86)
+--- a/atk-kernel/ATK/ZeroClasses/Encontro.lean
++++ b/atk-kernel/ATK/ZeroClasses/Encontro.lean
+@@ -1,4 +1,11 @@
+ import ATK.ZeroClasses.Escalas
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-ZERO-CLASSES — o encontro: matrizes, composições, colisões e certificados
+--- a/atk-kernel/ATK/ZeroClasses/Escalas.lean
++++ b/atk-kernel/ATK/ZeroClasses/Escalas.lean
+@@ -1,4 +1,12 @@
+ import ATK.ZeroClasses.Construcao
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-ZERO-CLASSES — as escalas em que um zero fora da linha ainda pode existir
+--- a/atk-kernel/ATK/ZeroClasses/ExplicitaGauss.lean
++++ b/atk-kernel/ATK/ZeroClasses/ExplicitaGauss.lean
+@@ -1,4 +1,11 @@
+ import ATK.ZeroClasses.ExplicitaT
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A fórmula explícita com peso gaussiano (rodada 89)
+--- a/atk-kernel/ATK/ZeroClasses/ExplicitaInteira.lean
++++ b/atk-kernel/ATK/ZeroClasses/ExplicitaInteira.lean
+@@ -1,4 +1,11 @@
+ import ATK.ZeroClasses.ExplicitaReal
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A fórmula explícita em `x` inteiro: `ψ₀` (rodada 78)
+--- a/atk-kernel/ATK/ZeroClasses/ExplicitaLimite.lean
++++ b/atk-kernel/ATK/ZeroClasses/ExplicitaLimite.lean
+@@ -1,5 +1,12 @@
+ import ATK.ZeroClasses.ExplicitaResiduos
+ import ATK.ZeroClasses.VonKochRH
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A fórmula explícita de Riemann–von Mangoldt (rodada 71)
+--- a/atk-kernel/ATK/ZeroClasses/ExplicitaPecas.lean
++++ b/atk-kernel/ATK/ZeroClasses/ExplicitaPecas.lean
+@@ -1,4 +1,11 @@
+ import ATK.ZeroClasses.PsiRH
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
+ 
+ /-!
+ # As peças da fórmula explícita (rodada 66)
+--- a/atk-kernel/ATK/ZeroClasses/ExplicitaReal.lean
++++ b/atk-kernel/ATK/ZeroClasses/ExplicitaReal.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.ExplicitaT
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A fórmula explícita para `x` real (rodada 77)
+--- a/atk-kernel/ATK/ZeroClasses/ExplicitaResiduos.lean
++++ b/atk-kernel/ATK/ZeroClasses/ExplicitaResiduos.lean
+@@ -1,4 +1,10 @@
+ import ATK.ZeroClasses.ExplicitaPecas
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
+ 
+ /-!
+ # A fórmula explícita: os resíduos no retângulo largo (rodada 70)
+--- a/atk-kernel/ATK/ZeroClasses/ExplicitaT.lean
++++ b/atk-kernel/ATK/ZeroClasses/ExplicitaT.lean
+@@ -1,4 +1,8 @@
+ import ATK.ZeroClasses.ExplicitaLimite
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A fórmula explícita com `T → ∞` (rodada 72)
+--- a/atk-kernel/ATK/ZeroClasses/Expoente.lean
++++ b/atk-kernel/ATK/ZeroClasses/Expoente.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.LagariasHadamard
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # O expoente de convergência dos zeros é exatamente 1; há infinitos zeros não triviais (rodada 35)
+--- a/atk-kernel/ATK/ZeroClasses/Faixa.lean
++++ b/atk-kernel/ATK/ZeroClasses/Faixa.lean
+@@ -2,6 +2,8 @@
+ import ATK.ZeroClasses.FaixaPecas2
+ import ATK.ZeroClasses.FaixaPecas3
+ import ATK.ZeroClasses.Escalas
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # Nenhum zero de `ζ` na faixa crítica até a altura 13 (rodada 29)
+--- a/atk-kernel/ATK/ZeroClasses/FaixaAval.lean
++++ b/atk-kernel/ATK/ZeroClasses/FaixaAval.lean
+@@ -1,5 +1,10 @@
+ import ATK.ZeroClasses.QuartoGeral
+ import ATK.DeltaCertificado
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # Avaliação certificada de `ζ(σ + it)` para `σ` racional qualquer (rodada 29)
+--- a/atk-kernel/ATK/ZeroClasses/FaixaGeral.lean
++++ b/atk-kernel/ATK/ZeroClasses/FaixaGeral.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.FaixaAval
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # Certificado de `|ζ| ≥ δ` num retângulo (rodada 29)
+--- a/atk-kernel/ATK/ZeroClasses/FaixaPecas1.lean
++++ b/atk-kernel/ATK/ZeroClasses/FaixaPecas1.lean
+@@ -1,4 +1,6 @@
+ import ATK.ZeroClasses.FaixaGeral
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # Peças da faixa sem zeros, arquivo 1 de 3 (rodada 29)
+--- a/atk-kernel/ATK/ZeroClasses/FaixaPecas2.lean
++++ b/atk-kernel/ATK/ZeroClasses/FaixaPecas2.lean
+@@ -1,4 +1,6 @@
+ import ATK.ZeroClasses.FaixaGeral
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # Peças da faixa sem zeros, arquivo 2 de 3 (rodada 29)
+--- a/atk-kernel/ATK/ZeroClasses/FaixaPecas3.lean
++++ b/atk-kernel/ATK/ZeroClasses/FaixaPecas3.lean
+@@ -1,4 +1,6 @@
+ import ATK.ZeroClasses.FaixaGeral
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # Peças da faixa sem zeros, arquivo 3 de 3 (rodada 29)
+--- a/atk-kernel/ATK/ZeroClasses/FinalAudit.lean
++++ b/atk-kernel/ATK/ZeroClasses/FinalAudit.lean
+@@ -1,4 +1,6 @@
+ import ATK.ZeroClasses.Hipotetico
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK-ZERO-CLASSES — auditoria final
+--- a/atk-kernel/ATK/ZeroClasses/Finito.lean
++++ b/atk-kernel/ATK/ZeroClasses/Finito.lean
+@@ -1,4 +1,12 @@
+ import ATK.ZeroClasses.Rouche
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-ZERO-CLASSES — o finito exato, a aritmética terminal e a faixa tolerante (rodada 26)
+--- a/atk-kernel/ATK/ZeroClasses/Forcar.lean
++++ b/atk-kernel/ATK/ZeroClasses/Forcar.lean
+@@ -1,4 +1,12 @@
+ import ATK.ZeroClasses.Componentes
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-ZERO-CLASSES — forçar um zero: o quarteto construído, o certificado de módulo mínimo, caudas e zeros booleanos
+--- a/atk-kernel/ATK/ZeroClasses/Fronteira.lean
++++ b/atk-kernel/ATK/ZeroClasses/Fronteira.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.Finito
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # A fronteira entre estados, antes do colapso (rodada 27)
+@@ -541,7 +546,7 @@
+ 
+ namespace Intervalo
+ 
+-/-- Os pontos de `[lo, hi]`. -/
++/- Os pontos de `[lo, hi]`. -/
+ def pts (I : Intervalo) : Set ℝ := Icc I.lo I.hi
+ 
+ /-- `[a, b] + [c, d] = [a + c, b + d]`. -/
+--- a/atk-kernel/ATK/ZeroClasses/Hadamard.lean
++++ b/atk-kernel/ATK/ZeroClasses/Hadamard.lean
+@@ -5,6 +5,12 @@
+ import Mathlib.Analysis.Complex.JensenFormula
+ import Mathlib.Analysis.SpecialFunctions.Integrability.LogMeromorphic
+ import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # O teorema de Hadamard para `ξ` (rodada 33)
+--- a/atk-kernel/ATK/ZeroClasses/HardyCuspide.lean
++++ b/atk-kernel/ATK/ZeroClasses/HardyCuspide.lean
+@@ -3,6 +3,10 @@
+ import Mathlib.NumberTheory.ModularForms.JacobiTheta.TwoVariable
+ import Mathlib.Analysis.Real.Pi.Bounds
+ import Mathlib.Analysis.Complex.ExponentialBounds
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Hardy, parte 1: a teta na cúspide `y = i` (rodada 47)
+--- a/atk-kernel/ATK/ZeroClasses/HardyFourier.lean
++++ b/atk-kernel/ATK/ZeroClasses/HardyFourier.lean
+@@ -2,6 +2,13 @@
+ import ATK.BaseRiemannTeta
+ import ATK.GammaVertical
+ import ATK.ZeroClasses.VariacaoArg
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Hardy (parte 2): a representação de Fourier de `Ξ` e o decaimento exponencial
+--- a/atk-kernel/ATK/ZeroClasses/HardyMomentos.lean
++++ b/atk-kernel/ATK/ZeroClasses/HardyMomentos.lean
+@@ -2,6 +2,13 @@
+ import Mathlib.Analysis.Fourier.Inversion
+ import Mathlib.Analysis.Calculus.ParametricIntegral
+ import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Hardy (parte 3): inversão de Fourier, continuação à faixa e a identidade dos momentos
+--- a/atk-kernel/ATK/ZeroClasses/HardyTeorema.lean
++++ b/atk-kernel/ATK/ZeroClasses/HardyTeorema.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.HardyMomentos
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK — Hardy (parte 4): o teorema de Hardy (1914)
+--- a/atk-kernel/ATK/ZeroClasses/Hipotetico.lean
++++ b/atk-kernel/ATK/ZeroClasses/Hipotetico.lean
+@@ -1,6 +1,10 @@
+ import ATK.ZeroClasses.Regions
+ import ATK.ZeroClasses.Laws
+ import ATK.TruncamentoToeplitz
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-ZERO-CLASSES — o universo hipotético: zeros fora da reta como **hipótese**, não axioma
+--- a/atk-kernel/ATK/ZeroClasses/JSobRH.lean
++++ b/atk-kernel/ATK/ZeroClasses/JSobRH.lean
+@@ -1,5 +1,11 @@
+ import ATK.ZeroClasses.RiemannVonMangoldt
+ import ATK.ZeroClasses.LagariasHadamard
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # `J(ε) → 0` sob RH (rodada 43)
+--- a/atk-kernel/ATK/ZeroClasses/Jensen.lean
++++ b/atk-kernel/ATK/ZeroClasses/Jensen.lean
+@@ -3,6 +3,12 @@
+ import ATK.GammaVertical
+ import ATK.ZeroCritico
+ import Mathlib.Analysis.Complex.JensenFormula
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # `N(T) = O(T log T)` pela fórmula de Jensen (rodada 30)
+--- a/atk-kernel/ATK/ZeroClasses/JensenLocal.lean
++++ b/atk-kernel/ATK/ZeroClasses/JensenLocal.lean
+@@ -1,6 +1,11 @@
+ import ATK.ZeroClasses.Jensen
+ import ATK.ZeroClasses.Faixa
+ import ATK.BLProva
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Jensen local: `N(T + 1) − N(T) = O(log T)` e `Σ_ρ m_ρ/|ρ|² < ∞` (rodada 31)
+--- a/atk-kernel/ATK/ZeroClasses/Lagarias.lean
++++ b/atk-kernel/ATK/ZeroClasses/Lagarias.lean
+@@ -1,4 +1,10 @@
+ import ATK.ZeroClasses.Fronteira
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # A competição analítica `Re(ξ′/ξ)` e a meia-ponte de Lagarias (rodada 28)
+--- a/atk-kernel/ATK/ZeroClasses/LagariasHadamard.lean
++++ b/atk-kernel/ATK/ZeroClasses/LagariasHadamard.lean
+@@ -1,6 +1,14 @@
+ import ATK.ZeroClasses.Hadamard
+ import ATK.ZeroCertificadoAplicado
+ import Mathlib.Analysis.Calculus.LogDerivUniformlyOn
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # As recíprocas de Lagarias e de Sondow–Dumitrescu, sem hipóteses (rodada 34)
+--- a/atk-kernel/ATK/ZeroClasses/Landau.lean
++++ b/atk-kernel/ATK/ZeroClasses/Landau.lean
+@@ -1,4 +1,10 @@
+ import ATK.ZeroClasses.Expoente
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
+ 
+ /-!
+ # O lema de Landau: a derivada logarítmica perto do centro de um disco (rodada 36)
+--- a/atk-kernel/ATK/ZeroClasses/Laws.lean
++++ b/atk-kernel/ATK/ZeroClasses/Laws.lean
+@@ -1,4 +1,7 @@
+ import ATK.ZeroClasses.Symmetry
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-ZERO-CLASSES — leis: conjuntos, existência, simetria e o grupo dos operadores
+--- a/atk-kernel/ATK/ZeroClasses/LiCompleto.lean
++++ b/atk-kernel/ATK/ZeroClasses/LiCompleto.lean
+@@ -1,5 +1,9 @@
+ import ATK.ZeroClasses.ExplicitaPecas
+ import ATK.LiCriterio
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # O critério de Li completo: RH ⟺ `λ_n ≥ 0` para todo `n ≥ 1` (rodada 68)
+--- a/atk-kernel/ATK/ZeroClasses/LiUm.lean
++++ b/atk-kernel/ATK/ZeroClasses/LiUm.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.LiCompleto
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # `λ₁ = 1 + γ/2 − ½ log 4π` e RH ⟺ `Σ_ρ 1/|ρ|² = 2 + γ − log 4π` (rodada 69)
+--- a/atk-kernel/ATK/ZeroClasses/LindelofRH.lean
++++ b/atk-kernel/ATK/ZeroClasses/LindelofRH.lean
+@@ -1,6 +1,12 @@
+ import ATK.RHLogZeta
+ import ATK.GammaVertical
+ import ATK.ZeroClasses.VariacaoArg
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # RH ⟹ a hipótese de Lindelöf (rodada 61)
+--- a/atk-kernel/ATK/ZeroClasses/LiouvilleRH.lean
++++ b/atk-kernel/ATK/ZeroClasses/LiouvilleRH.lean
+@@ -1,4 +1,7 @@
+ import ATK.ZeroClasses.TetaExpoente
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A função de Liouville: `Σ λ(n)n^{−s} = ζ(2s)/ζ(s)`, `Θ`, RH e a conjectura de Pólya (rodada 99)
+--- a/atk-kernel/ATK/ZeroClasses/LittlewoodBase.lean
++++ b/atk-kernel/ATK/ZeroClasses/LittlewoodBase.lean
+@@ -1,5 +1,12 @@
+ import ATK.ZeroClasses.ExplicitaGauss
+ import ATK.ZeroClasses.PsiLog2
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Littlewood, parte 1: o lado `ψ` da fórmula gaussiana e a localização (rodada 90)
+--- a/atk-kernel/ATK/ZeroClasses/LittlewoodMedia.lean
++++ b/atk-kernel/ATK/ZeroClasses/LittlewoodMedia.lean
+@@ -1,4 +1,12 @@
+ import ATK.ZeroClasses.LittlewoodMontagem
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # As médias de `F` sob RH (rodada 94)
+--- a/atk-kernel/ATK/ZeroClasses/LittlewoodMontagem.lean
++++ b/atk-kernel/ATK/ZeroClasses/LittlewoodMontagem.lean
+@@ -1,5 +1,10 @@
+ import ATK.ZeroClasses.LittlewoodSoma
+ import ATK.ZeroClasses.Unilateral
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Littlewood, parte 3: a montagem (rodada 92)
+--- a/atk-kernel/ATK/ZeroClasses/LittlewoodMu.lean
++++ b/atk-kernel/ATK/ZeroClasses/LittlewoodMu.lean
+@@ -1,6 +1,9 @@
+ import ATK.ZeroClasses.PerronDirichlet
+ import ATK.ZeroClasses.JSobRH
+ import ATK.RHLogZeta
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # O teorema de Littlewood para `Σ μ(n) n^{−s}` sob RH (rodada 46)
+--- a/atk-kernel/ATK/ZeroClasses/LittlewoodPi.lean
++++ b/atk-kernel/ATK/ZeroClasses/LittlewoodPi.lean
+@@ -1,6 +1,11 @@
+ import ATK.ZeroClasses.LittlewoodMedia
+ import ATK.ZeroClasses.LittlewoodTeta
+ import Mathlib.MeasureTheory.Function.JacobianOneDim
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Nat.Factorial.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Littlewood para `π(x) − Li(x)` sob RH (rodada 95)
+--- a/atk-kernel/ATK/ZeroClasses/LittlewoodPiIncond.lean
++++ b/atk-kernel/ATK/ZeroClasses/LittlewoodPiIncond.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.LittlewoodPi
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Littlewood para `π(x) − Li(x)` sem hipóteses (rodada 96)
+--- a/atk-kernel/ATK/ZeroClasses/LittlewoodRH.lean
++++ b/atk-kernel/ATK/ZeroClasses/LittlewoodRH.lean
+@@ -1,5 +1,11 @@
+ import ATK.ZeroClasses.RegiaoLivre
+ import Mathlib.Analysis.Complex.Hadamard
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Littlewood sob RH: `1/ζ(σ + it) = O(|t|^ε)` em `σ ≥ ½ + δ` (rodada 38)
+--- a/atk-kernel/ATK/ZeroClasses/LittlewoodSoma.lean
++++ b/atk-kernel/ATK/ZeroClasses/LittlewoodSoma.lean
+@@ -1,6 +1,12 @@
+ import ATK.ZeroClasses.LittlewoodBase
+ import ATK.ZeroClasses.RiemannVonMangoldt
+ import ATK.ZeroClasses.Expoente
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Littlewood, parte 2: a soma sobre os zeros sob RH (rodada 91)
+--- a/atk-kernel/ATK/ZeroClasses/LittlewoodTeta.lean
++++ b/atk-kernel/ATK/ZeroClasses/LittlewoodTeta.lean
+@@ -1,4 +1,7 @@
+ import ATK.ZeroClasses.LittlewoodMontagem
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Littlewood para `θ` e as trocas de sinal (rodada 93)
+--- a/atk-kernel/ATK/ZeroClasses/LogDerivZeta.lean
++++ b/atk-kernel/ATK/ZeroClasses/LogDerivZeta.lean
+@@ -1,4 +1,11 @@
+ import ATK.ZeroClasses.RegiaoLivre
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++open scoped ENNReal
+ 
+ /-!
+ # `ζ′/ζ = O(log² t)` na região livre de zeros (rodada 52)
+--- a/atk-kernel/ATK/ZeroClasses/MertensRH.lean
++++ b/atk-kernel/ATK/ZeroClasses/MertensRH.lean
+@@ -2,6 +2,11 @@
+ import ATK.BaezDuarteBridge
+ import Mathlib.Analysis.Complex.LocallyUniformLimit
+ import Mathlib.Analysis.Complex.Convex
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # O critério de Littlewood para a função de Mertens: `RH ⟺ M(x) = O(x^{1/2 + ε})` (rodada 51)
+--- a/atk-kernel/ATK/ZeroClasses/Multiplicity.lean
++++ b/atk-kernel/ATK/ZeroClasses/Multiplicity.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Complex.Basic
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # ATK-ZERO-CLASSES — multiplicidade, isolamento e acumulação
+--- a/atk-kernel/ATK/ZeroClasses/MundoFora.lean
++++ b/atk-kernel/ATK/ZeroClasses/MundoFora.lean
+@@ -2,6 +2,9 @@
+ import ATK.ZerosFora
+ import ATK.BLProva
+ import ATK.ZeroIncognito
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-ZERO-CLASSES — o mundo com zeros fora da linha: a linha não cai, e os zeros fora a seguram
+--- a/atk-kernel/ATK/ZeroClasses/OmegaPsi.lean
++++ b/atk-kernel/ATK/ZeroClasses/OmegaPsi.lean
+@@ -1,5 +1,9 @@
+ import ATK.ZeroClasses.QuasiRH
+ import ATK.ZeroClasses.HardyTeorema
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Teoremas Ω: `ψ(x) − x` e `M(x)` não são `o(√x)` (rodada 58)
+--- a/atk-kernel/ATK/ZeroClasses/OmegaRaiz.lean
++++ b/atk-kernel/ATK/ZeroClasses/OmegaRaiz.lean
+@@ -1,4 +1,7 @@
+ import ATK.ZeroClasses.Unilateral
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # `Ω±(√x)` para `ψ(x) − x` e `M(x)`, e zeros simples sob a cota de Mertens fraca (rodada 88)
+--- a/atk-kernel/ATK/ZeroClasses/Perron.lean
++++ b/atk-kernel/ATK/ZeroClasses/Perron.lean
+@@ -1,4 +1,8 @@
+ import ATK.ZeroClasses.ArgRetangulo
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A fórmula de Perron truncada: o núcleo (rodada 44)
+--- a/atk-kernel/ATK/ZeroClasses/PerronDirichlet.lean
++++ b/atk-kernel/ATK/ZeroClasses/PerronDirichlet.lean
+@@ -1,4 +1,8 @@
+ import ATK.ZeroClasses.Perron
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A fórmula de Perron truncada para séries de Dirichlet (rodada 45)
+--- a/atk-kernel/ATK/ZeroClasses/PiLi.lean
++++ b/atk-kernel/ATK/ZeroClasses/PiLi.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.QuasiRH
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # `π(x) = Li(x) + O(x^{θ+ε})` ⟺ `ζ ≠ 0` em `Re s > θ`; `RH ⟺ π(x) = Li(x) + O(x^{1/2+ε})` (rodada 60)
+--- a/atk-kernel/ATK/ZeroClasses/PiLiRH.lean
++++ b/atk-kernel/ATK/ZeroClasses/PiLiRH.lean
+@@ -1,5 +1,9 @@
+ import ATK.ZeroClasses.PsiRH
+ import ATK.ZeroClasses.PiLi
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # RH ⟺ `θ(x) = x + O(√x log³ x)` ⟺ `π(x) = Li(x) + O(√x log² x)` (rodada 65)
+--- a/atk-kernel/ATK/ZeroClasses/PiUnilateral.lean
++++ b/atk-kernel/ATK/ZeroClasses/PiUnilateral.lean
+@@ -1,5 +1,9 @@
+ import ATK.ZeroClasses.LittlewoodPiIncond
+ import ATK.ZeroClasses.PiLi
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # `Θ` lido por cotas de um lado de `θ(x) − x` e de `π(x) − Li(x)` (rodada 97)
+--- a/atk-kernel/ATK/ZeroClasses/Pontes.lean
++++ b/atk-kernel/ATK/ZeroClasses/Pontes.lean
+@@ -1,5 +1,11 @@
+ import ATK.ZeroClasses.Forcar
+ import ATK.CookLevinNP
++import Mathlib.Algebra.Polynomial.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-ZERO-CLASSES — as pontes B1–B23 no kernel: SAT, divisibilidade, determinantes, espectro, ordem de
+--- a/atk-kernel/ATK/ZeroClasses/PrimosCurtos.lean
++++ b/atk-kernel/ATK/ZeroClasses/PrimosCurtos.lean
+@@ -1,4 +1,8 @@
+ import ATK.ZeroClasses.TuranLiouville
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Nat.Prime.Defs
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Primos em intervalos curtos: `Θ`, RH e o TNP (rodada 101)
+--- a/atk-kernel/ATK/ZeroClasses/PsiLog2.lean
++++ b/atk-kernel/ATK/ZeroClasses/PsiLog2.lean
+@@ -1,5 +1,13 @@
+ import ATK.ZeroClasses.ExplicitaPecas
+ import ATK.ZeroClasses.PiLiRH
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # RH ⟺ `ψ(x) = x + O(√x log² x)` ⟺ `π(x) = Li(x) + O(√x log x)` (rodada 67)
+--- a/atk-kernel/ATK/ZeroClasses/PsiRH.lean
++++ b/atk-kernel/ATK/ZeroClasses/PsiRH.lean
+@@ -3,6 +3,15 @@
+ import ATK.ZeroClasses.ChebyshevSuave
+ import ATK.ZeroClasses.TNP
+ import ATK.ZeroClasses.VonKoch
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # RH ⟺ `ψ(x) = x + O(√x log³ x)` (rodada 64)
+--- a/atk-kernel/ATK/ZeroClasses/Quarto.lean
++++ b/atk-kernel/ATK/ZeroClasses/Quarto.lean
+@@ -1,4 +1,6 @@
+ import ATK.ZeroClasses.QuartoGeral
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # `m₄ > 0`: o primeiro ponto aberto do `FinalAudit`, fechado no kernel (rodada 28)
+--- a/atk-kernel/ATK/ZeroClasses/QuartoAval.lean
++++ b/atk-kernel/ATK/ZeroClasses/QuartoAval.lean
+@@ -1,4 +1,10 @@
+ import ATK.ZeroCritico
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # Avaliação certificada de `ζ(¼ + it)` (rodada 28)
+--- a/atk-kernel/ATK/ZeroClasses/QuartoGeral.lean
++++ b/atk-kernel/ATK/ZeroClasses/QuartoGeral.lean
+@@ -1,5 +1,10 @@
+ import ATK.ZeroClasses.QuartoAval
+ import ATK.ZeroClasses.FinalAudit
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # Ferramentas gerais para certificar `ζ ≠ 0` num segmento vertical (rodada 28)
+--- a/atk-kernel/ATK/ZeroClasses/QuasiRH.lean
++++ b/atk-kernel/ATK/ZeroClasses/QuasiRH.lean
+@@ -1,4 +1,12 @@
+ import ATK.ZeroClasses.VonKochRH
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # Quasi-RH: `ζ ≠ 0` em `Re s > θ` ⟺ `ψ(x) = x + O(x^{θ+ε})` ⟺ `M(x) = O(x^{θ+ε})` (rodada 57)
+--- a/atk-kernel/ATK/ZeroClasses/RegiaoLivre.lean
++++ b/atk-kernel/ATK/ZeroClasses/RegiaoLivre.lean
+@@ -1,4 +1,10 @@
+ import ATK.ZeroClasses.Landau
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A região livre de zeros de de la Vallée Poussin (rodada 37)
+--- a/atk-kernel/ATK/ZeroClasses/Regions.lean
++++ b/atk-kernel/ATK/ZeroClasses/Regions.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.Zeta
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-ZERO-CLASSES — o cerco: região residual, compactos, mínimos e certificados
+--- a/atk-kernel/ATK/ZeroClasses/RiemannVonMangoldt.lean
++++ b/atk-kernel/ATK/ZeroClasses/RiemannVonMangoldt.lean
+@@ -1,4 +1,11 @@
+ import ATK.ZeroClasses.VariacaoArg
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # Riemann–von Mangoldt (rodada 42)
+--- a/atk-kernel/ATK/ZeroClasses/Rouche.lean
++++ b/atk-kernel/ATK/ZeroClasses/Rouche.lean
+@@ -1,5 +1,10 @@
+ import ATK.ArgPrincipio
+ import ATK.ZeroClasses.Pontes
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # ATK-ZERO-CLASSES — princípio do argumento e Rouché aplicados a `ζ` (rodada 25)
+--- a/atk-kernel/ATK/ZeroClasses/SomaZeros.lean
++++ b/atk-kernel/ATK/ZeroClasses/SomaZeros.lean
+@@ -2,6 +2,11 @@
+ import ATK.ZeroClasses.JensenLocal
+ import ATK.ZeroClasses.RiemannVonMangoldt
+ import ATK.ZeroClasses.LogDerivZeta
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A soma sobre os zeros e `ζ′/ζ` local (rodada 63)
+--- a/atk-kernel/ATK/ZeroClasses/StirlingComplexo.lean
++++ b/atk-kernel/ATK/ZeroClasses/StirlingComplexo.lean
+@@ -4,6 +4,11 @@
+ import Mathlib.Analysis.Complex.LocallyUniformLimit
+ import Mathlib.Analysis.SpecialFunctions.Complex.LogBounds
+ import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # Stirling complexo: um logaritmo holomorfo de `Γ` e `log Γ(z) = (z − ½) log z − z + ½ log 2π + O(1/|Im z|)`
+--- a/atk-kernel/ATK/ZeroClasses/Symmetry.lean
++++ b/atk-kernel/ATK/ZeroClasses/Symmetry.lean
+@@ -1,4 +1,8 @@
+ import ATK.ZeroClasses.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-ZERO-CLASSES — simetrias e órbitas para uma reta `x = c` arbitrária
+--- a/atk-kernel/ATK/ZeroClasses/TNP.lean
++++ b/atk-kernel/ATK/ZeroClasses/TNP.lean
+@@ -1,5 +1,10 @@
+ import ATK.ZeroClasses.ChebyshevSuave
+ import Mathlib.NumberTheory.Chebyshev
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # O teorema dos números primos com o erro de de la Vallée Poussin (rodada 54)
+--- a/atk-kernel/ATK/ZeroClasses/TNPPi.lean
++++ b/atk-kernel/ATK/ZeroClasses/TNPPi.lean
+@@ -1,5 +1,10 @@
+ import ATK.ZeroClasses.BDBurnolL1
+ import ATK.ZeroClasses.PiLi
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # O teorema dos números primos com erro para `θ` e `π` (rodada 81)
+--- a/atk-kernel/ATK/ZeroClasses/TetaExpoente.lean
++++ b/atk-kernel/ATK/ZeroClasses/TetaExpoente.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZeroClasses.PiUnilateral
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # `Θ` é o expoente exato de `ψ(x) − x`, `θ(x) − x`, `π(x) − Li(x)` e `M(x)`, de cada lado (rodada 98)
+--- a/atk-kernel/ATK/ZeroClasses/TuranLiouville.lean
++++ b/atk-kernel/ATK/ZeroClasses/TuranLiouville.lean
+@@ -1,4 +1,7 @@
+ import ATK.ZeroClasses.LiouvilleRH
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # A conjectura de Turán implica RH (rodada 100)
+--- a/atk-kernel/ATK/ZeroClasses/Unilateral.lean
++++ b/atk-kernel/ATK/ZeroClasses/Unilateral.lean
+@@ -1,5 +1,13 @@
+ import ATK.ZeroClasses.OmegaPsi
+ import ATK.ZeroClasses.BDTheta
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # Cotas de um lado só: o teorema de Landau e `Θ` lido por cima ou por baixo (rodada 87)
+--- a/atk-kernel/ATK/ZeroClasses/VariacaoArg.lean
++++ b/atk-kernel/ATK/ZeroClasses/VariacaoArg.lean
+@@ -1,4 +1,11 @@
+ import ATK.ZeroClasses.ArgRetangulo
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # `S(T) = O(log T)`: a variação do argumento de `ζ` no segmento horizontal (rodada 41)
+--- a/atk-kernel/ATK/ZeroClasses/VonKoch.lean
++++ b/atk-kernel/ATK/ZeroClasses/VonKoch.lean
+@@ -1,5 +1,11 @@
+ import ATK.ZeroClasses.MertensRH
+ import ATK.ZeroClasses.TNP
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ /-!
+ # Termos de erro e semiplanos sem zeros: `ψ(x) = x + O(x^θ)` e `M(x) = O(x^θ)` ⟹ `ζ ≠ 0` em `Re s > θ` (rodada 55)
+--- a/atk-kernel/ATK/ZeroClasses/VonKochRH.lean
++++ b/atk-kernel/ATK/ZeroClasses/VonKochRH.lean
+@@ -1,5 +1,11 @@
+ import ATK.ZeroClasses.VonKoch
+ import ATK.ZeroClasses.LittlewoodMu
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++import Mathlib.Data.Real.Basic
+ 
+ /-!
+ # RH ⟹ `ψ(x) = x + O(x^{1/2+ε})`: o critério de von Koch completo (rodada 56)
+--- a/atk-kernel/ATK/ZeroClasses/Zeta.lean
++++ b/atk-kernel/ATK/ZeroClasses/Zeta.lean
+@@ -6,6 +6,11 @@
+ import ATK.TruncamentoZero
+ import ATK.XiMomentos
+ import ATK.ZeroCritico
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK-ZERO-CLASSES — especialização à `riemannZeta` da Mathlib
+--- a/atk-kernel/ATK/ZeroCritico.lean
++++ b/atk-kernel/ATK/ZeroCritico.lean
+@@ -1,4 +1,10 @@
+ import ATK.ZeroCertificado
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — O primeiro zero, certificado e na linha crítica
+--- a/atk-kernel/ATK/ZeroIncognito.lean
++++ b/atk-kernel/ATK/ZeroIncognito.lean
+@@ -1,4 +1,7 @@
+ import ATK.BLProva
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK-RH — `1/2` como incógnita: o zero `β + iγ` com as duas partes livres
+--- a/atk-kernel/ATK/ZeroSegundo.lean
++++ b/atk-kernel/ATK/ZeroSegundo.lean
+@@ -1,4 +1,10 @@
+ import ATK.ZeroCertificado
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — O segundo zero, certificado e na linha crítica
+--- a/atk-kernel/ATK/ZeroTerceiro.lean
++++ b/atk-kernel/ATK/ZeroTerceiro.lean
+@@ -1,4 +1,10 @@
+ import ATK.ZeroCertificado
++import Mathlib.Analysis.Calculus.Deriv.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — O terceiro zero, certificado e na linha crítica
+--- a/atk-kernel/ATK/ZerosFora.lean
++++ b/atk-kernel/ATK/ZerosFora.lean
+@@ -1,4 +1,8 @@
+ import ATK.FechamentoO1
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # Zeros fora da linha: órbitas, contagem e como se escondem no truncamento
+--- a/atk-kernel/ATK/ZetaLog.lean
++++ b/atk-kernel/ATK/ZetaLog.lean
+@@ -1,5 +1,9 @@
+ import ATK.ZetaParcial
+ import Mathlib.Analysis.Complex.ExponentialBounds
++import Mathlib.Analysis.SpecialFunctions.Log.Basic
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — Região sem zeros logarítmica (tipo de la Vallée Poussin, potência 9 do log)
+--- a/atk-kernel/ATK/ZetaParcial.lean
++++ b/atk-kernel/ATK/ZetaParcial.lean
+@@ -1,6 +1,8 @@
+ import ATK.ZetaRegiao
+ import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+ import Mathlib.NumberTheory.Harmonic.Bounds
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — ζ por somas parciais: `ζ(s) = Σ_{n≤N} n^{−s} + N^{1−s}/(s−1) − s ∫_N^∞ {u} u^{−s−1} du`
+--- a/atk-kernel/ATK/ZetaRegiao.lean
++++ b/atk-kernel/ATK/ZetaRegiao.lean
+@@ -1,5 +1,7 @@
+ import ATK.ZetaRetangulo
+ import Mathlib.NumberTheory.LSeries.Nonvanishing
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — Região sem zeros em **toda** altura: o fim fechado entra na faixa
+--- a/atk-kernel/ATK/ZetaRetangulo.lean
++++ b/atk-kernel/ATK/ZetaRetangulo.lean
+@@ -1,4 +1,9 @@
+ import ATK.ZetaSimetria
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Uma região sem zeros que alcança o meio: RH verificada até a altura `√3/2`
+--- a/atk-kernel/ATK/ZetaSimetria.lean
++++ b/atk-kernel/ATK/ZetaSimetria.lean
+@@ -1,4 +1,10 @@
+ import ATK.BaezDuarteBridge
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Algebra.Star.Basic
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # ATK — Geometria da faixa crítica: extremos fechados, meio neutro, tensão, compressão e torção
+--- a/atk-kernel/ATK/ZetaStrip.lean
++++ b/atk-kernel/ATK/ZetaStrip.lean
+@@ -5,6 +5,8 @@
+ import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+ import Mathlib.MeasureTheory.Function.Floor
+ import Mathlib.Analysis.Complex.Convex
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK — ζ na faixa crítica pela integral de `{t}` (passo 1 da ponte de Báez-Duarte)
+--- a/atk-kernel/ATK/ZetaTroca.lean
++++ b/atk-kernel/ATK/ZetaTroca.lean
+@@ -1,5 +1,7 @@
+ import ATK.ModeloParametrico
+ import ATK.DInfinito
++import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Data.Complex.Basic
+ 
+ /-!
+ # ATK-RH — A zeta nas coordenadas trocadas, e `D_∞`
+--- a/atk-kernel/experimentos/StabilizedBrinquedo.lean
++++ b/atk-kernel/experimentos/StabilizedBrinquedo.lean
+@@ -1,5 +1,6 @@
+ import MillenniumAudit.StabilizedHypothetical
+ import CriticalBarrier.BackwardHypotheticalClosureOracle
++import Mathlib.Tactic
+ 
+ /-! Teste: o "fechamento completo 22 → 25 → 3 → 1" com dados de brinquedo.
+ Todas as funções valem 0, todas as proposições são `True` (ou uma `P` qualquer). -/
+--- a/atk-kernel/mathlib-drafts/BSD.lean
++++ b/atk-kernel/mathlib-drafts/BSD.lean
+@@ -6,6 +6,10 @@
+ import Mathlib.AlgebraicGeometry.EllipticCurve.LFunction
+ import Mathlib.Analysis.Analytic.Order
+ import Mathlib.Analysis.Complex.CauchyIntegral
++import Mathlib.Data.Complex.Basic
++open scoped ENNReal
++
++noncomputable section
+ 
+ /-!
+ # The Birch and Swinnerton-Dyer conjecture (rank part)
+--- a/atk-kernel/mathlib-drafts/CanonicalHeight.lean
++++ b/atk-kernel/mathlib-drafts/CanonicalHeight.lean
+@@ -148,7 +148,7 @@
+     push_cast at hp ⊢
+     linarith
+ 
+-/-- With the Northcott property, the canonical height vanishes exactly on torsion points. -/
++/- With the Northcott property, the canonical height vanishes exactly on torsion points. -/
+ theorem canonicalHeight_eq_zero_iff [Northcott (logHeight₁ (K := F))] (P : W.Point) :
+     P.canonicalHeight = 0 ↔ IsOfFinAddOrder P := by
+   constructor
+--- a/atk-kernel/mathlib-drafts/HodgeStructure.lean
++++ b/atk-kernel/mathlib-drafts/HodgeStructure.lean
+@@ -7,6 +7,9 @@
+ import Mathlib.LinearAlgebra.TensorProduct.Tower
+ import Mathlib.Algebra.DirectSum.Module
+ import Mathlib.Analysis.Complex.Basic
++import Mathlib.Algebra.Star.Basic
++
++noncomputable section
+ 
+ /-!
+ # Rational Hodge structures and Hodge classes
+--- a/atk-kernel/mathlib-drafts/Kahler.lean
++++ b/atk-kernel/mathlib-drafts/Kahler.lean
+@@ -5,6 +5,10 @@
+ -/
+ import Mathlib.Analysis.InnerProductSpace.LinearMap
+ import Mathlib.Analysis.Calculus.DifferentialForm.Basic
++import Mathlib.Analysis.Calculus.ContDiff.Defs
++import Mathlib.Data.Complex.Basic
++
++noncomputable section
+ 
+ /-!
+ # Hermitian structures and local Kähler metrics
+--- a/atk-kernel/mathlib-drafts/Wightman.lean
++++ b/atk-kernel/mathlib-drafts/Wightman.lean
+@@ -6,6 +6,10 @@
+ import Mathlib.Analysis.Distribution.SchwartzSpace.Fourier
+ import Mathlib.Analysis.Fourier.Inversion
+ import Mathlib.Analysis.InnerProductSpace.PiL2
++import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
++import Mathlib.Algebra.Star.Basic
++
++noncomputable section
+ 
+ open scoped FourierTransform InnerProductSpace
+ open MeasureTheory
+--- a/imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean
++++ b/imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean
+@@ -130,7 +130,7 @@
+ /-- The genuinely analytic G1a evolution inequality.  Constructing a value of
+ this structure from an actual NSE solution is OPEN. -/
+ structure JointEvolutionCertificate where
+-  q qDerivative viscousRate production lowerOrder : ℝ → ℝ
++  (q qDerivative viscousRate production lowerOrder : ℝ → ℝ)
+   hq : ∀ t, 0 ≤ q t
+   hViscous : ∀ t, 0 ≤ viscousRate t
+   evolution : ∀ t,
+@@ -208,7 +208,7 @@
+ /-! ## G1d: non-circular time-integrability bookkeeping -/
+ 
+ structure LerayEnergyCertificate where
+-  ν E0 totalGradU2 : ℝ
++  (ν E0 totalGradU2 : ℝ)
+   hν : 0 < ν
+   hE0 : 0 ≤ E0
+   hgrad : 0 ≤ totalGradU2
+@@ -280,7 +280,7 @@
+ 
+ /-- Algebraic G3 reconstruction data. -/
+ structure CriticalReconstruction where
+-  E0 M C : ℝ
++  (E0 M C : ℝ)
+   hE0 : 0 ≤ E0
+   hM : 0 ≤ M
+   hC : 0 ≤ C
+--- a/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/G1/G1_DynamicCriticalGeometry.lean
++++ b/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/G1/G1_DynamicCriticalGeometry.lean
+@@ -253,7 +253,7 @@
+       PDE data without importing a critical regularity bound. -/
+   remainder_vanishes : Prop
+   /-- Explicit dependence witness: the L¹ bound on R_ε is controlled by a
+-      constant that depends ONLY on (‖u₀‖₂, ν) and NOT on ε. -/
++      axiom that depends ONLY on (‖u₀‖₂, ν) and NOT on ε. -/
+   remainder_bound_cutoff_free : Prop
+ 
+ /--
+--- a/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean
++++ b/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # B2.8 signed-flux gap isolation
+ 
+--- a/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
++++ b/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ # B2 deterministic parameter chain (audit target)
+ 
+@@ -23,7 +25,7 @@
+   C_Bern : Scalar
+   C_Sob : Scalar
+   C_CZ : Scalar
+-  deriving Repr
++  
+ 
+ namespace Parameters
+ 
+--- a/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/CriticalTailBridge.lean
++++ b/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/CriticalTailBridge.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ /-!
+ CriticalTailBridge.lean
+ 
+--- a/imports/final-proof/RIEMANN/ad3011f1/lean/MCore/K8.lean
++++ b/imports/final-proof/RIEMANN/ad3011f1/lean/MCore/K8.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.NumberTheory.LSeries.RiemannZeta
+ import Mathlib.Tactic
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ /-- K8 uses Mathlib's exact formal statement of the Riemann hypothesis.
+--- a/imports/final-proof/RIEMANN/ad3011f1/lean/MCore/RH/NB/ZeroLimitFrontier.lean
++++ b/imports/final-proof/RIEMANN/ad3011f1/lean/MCore/RH/NB/ZeroLimitFrontier.lean
+@@ -1,4 +1,7 @@
+ import MCore.RH.NB.Limit
++import Mathlib.Data.Real.Basic
++
++noncomputable section
+ 
+ namespace MCore.RH.NB
+ namespace NBHilbertData
+--- a/imports/final-proof/YANG_MILLS/645b2999/lean/MCore/K13.lean
++++ b/imports/final-proof/YANG_MILLS/645b2999/lean/MCore/K13.lean
+@@ -1,6 +1,8 @@
+ import MCore.K12
+ import Mathlib.Tactic
+ 
++noncomputable section
++
+ namespace MCore
+ 
+ /-- Typed physical-state/Hamiltonian interface. K13 does not assert existence. -/
+--- a/imports/final-proof/YANG_MILLS/645b2999/lean/MCore/PhysicalGapScaling.lean
++++ b/imports/final-proof/YANG_MILLS/645b2999/lean/MCore/PhysicalGapScaling.lean
+@@ -1,5 +1,9 @@
+ import MCore.SpectralExclusion
+ import Mathlib.Analysis.SpecialFunctions.Pow.Real
++import Mathlib.Analysis.SpecialFunctions.Exp
++import Mathlib.Tactic.Positivity
++
++noncomputable section
+ 
+ namespace MCore
+ 
+--- a/imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean
++++ b/imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean
+@@ -1,6 +1,8 @@
+ import MCore.Real.P02BoundedComputationSoundness
+ import MCore.Real.MachineRunLemmas
+ 
++noncomputable section
++
+ namespace MCore
+ namespace Real
+ namespace P02BoundedComputationClose
+--- a/imports/pnp/44e3327a/lean/MCore/Real/P01ConstructionClose.lean
++++ b/imports/pnp/44e3327a/lean/MCore/Real/P01ConstructionClose.lean
+@@ -1,6 +1,8 @@
+ import MCore.Real.P01VerifierComposition
+ import MCore.Real.P01FinalCertificate
+ 
++noncomputable section
++
+ namespace MCore
+ namespace Real
+ namespace P01ConstructionClose
+--- a/imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean
++++ b/imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean
+@@ -2,6 +2,8 @@
+ import MCore.Real.P01FullVerifierStackSemantics
+ import MCore.Real.P01FullVerifierMachine
+ 
++noncomputable section
++
+ namespace MCore
+ namespace Real
+ namespace P01FullVerifierPhysical
+--- a/imports/pnp/44e3327a/lean/MCore/Real/P01IntegratedMachine.lean
++++ b/imports/pnp/44e3327a/lean/MCore/Real/P01IntegratedMachine.lean
+@@ -2,6 +2,8 @@
+ import MCore.Real.P01WitnessPreservingPrep
+ import MCore.Real.P01FullVerifierPhysicalControl
+ 
++noncomputable section
++
+ namespace MCore
+ namespace Real
+ namespace P01IntegratedMachine
+--- a/imports/pnp/a5635895/lean/MCore/Real/P02CandidateCodingFrontier.lean
++++ b/imports/pnp/a5635895/lean/MCore/Real/P02CandidateCodingFrontier.lean
+@@ -1,5 +1,7 @@
+ import MCore.Real.P02UniversalFailureAlgebra
+ 
++noncomputable section
++
+ namespace MCore
+ namespace Real
+ namespace P02CandidateCodingFrontier
+--- a/imports/pnp/b406b806/lean/MCore/Real/FinalExternalTwoGap.lean
++++ b/imports/pnp/b406b806/lean/MCore/Real/FinalExternalTwoGap.lean
+@@ -3,6 +3,8 @@
+ import MCore.Real.CookNormalizedG3Contract
+ import MCore.Real.FinalExternalCertificate
+ 
++noncomputable section
++
+ namespace MCore
+ namespace Real
+ namespace FinalExternalTwoGap
+--- a/imports/pnp/c102d9d4/lean/MCore/Real/FinalExternalCertificate.lean
++++ b/imports/pnp/c102d9d4/lean/MCore/Real/FinalExternalCertificate.lean
+@@ -2,6 +2,8 @@
+ import MCore.Real.CanonicalCircuitBits
+ import MCore.Real.G3ModelMatch
+ 
++noncomputable section
++
+ namespace MCore
+ namespace Real
+ namespace FinalExternalCertificate
+--- a/imports/pnp/c102d9d4/lean/MCore/Real/P02G21G22Attack.lean
++++ b/imports/pnp/c102d9d4/lean/MCore/Real/P02G21G22Attack.lean
+@@ -1,5 +1,7 @@
+ import MCore.Real.P02TerminalFrontier
+ 
++noncomputable section
++
+ namespace MCore
+ namespace Real
+ namespace P02G21G22Attack
+--- a/imports/pnp/d0353f8a/lean/MCore/Real/P01ParserWitnessComposition.lean
++++ b/imports/pnp/d0353f8a/lean/MCore/Real/P01ParserWitnessComposition.lean
+@@ -3,6 +3,8 @@
+ import MCore.Real.CanonicalSATWitnessGuessNTM
+ import MCore.Real.P01VerifiedRelation
+ 
++noncomputable section
++
+ namespace MCore
+ namespace Real
+ namespace P01ParserWitnessComposition
+--- a/lean/MCore/ATK/StructuralDefect.lean
++++ b/lean/MCore/ATK/StructuralDefect.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore.ATK.StructuralDefect
+ 
+ /-- The mathematical problems remain distinct. -/
+--- a/lean/MCore/BSDLogicOpenMath.lean
++++ b/lean/MCore/BSDLogicOpenMath.lean
+@@ -1,5 +1,7 @@
+ import MCore.IBoundaryProvenance
+ 
++noncomputable section
++
+ /-!
+ # BSD Logic Open-Math Gate
+ 
+--- a/lean/MCore/FinalFail/AcceptedInhabitants.lean
++++ b/lean/MCore/FinalFail/AcceptedInhabitants.lean
+@@ -1,6 +1,8 @@
+ import MCore.FinalFail.ExactGapLedger
+ import Mathlib.NumberTheory.LSeries.RiemannZeta
+ 
++noncomputable section
++
+ namespace MCore.FinalFail
+ 
+ /-!
+--- a/lean/MCore/FinalFail/AcceptedSemanticActivation.lean
++++ b/lean/MCore/FinalFail/AcceptedSemanticActivation.lean
+@@ -6,6 +6,8 @@
+ import MCore.FinalFail.Semantic.BSD
+ import MCore.FinalFail.Semantic.YangMills
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Semantic
+ 
+ /-!
+--- a/lean/MCore/FinalFail/ArtifactAttachment.lean
++++ b/lean/MCore/FinalFail/ArtifactAttachment.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.DeltaIsolation
+ 
++noncomputable section
++
+ namespace MCore.FinalFail
+ 
+ structure ArtifactAttachment where
+--- a/lean/MCore/FinalFail/Attack/Beal.lean
++++ b/lean/MCore/FinalFail/Attack/Beal.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.ArtifactAttachment
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Attack.Beal
+ 
+ structure PrimitiveReductionContract where
+--- a/lean/MCore/FinalFail/Attack/NavierStokes.lean
++++ b/lean/MCore/FinalFail/Attack/NavierStokes.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.ArtifactAttachment
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Attack.NavierStokes
+ 
+ structure CompensatorContract where
+--- a/lean/MCore/FinalFail/BSDConcreteDomain.lean
++++ b/lean/MCore/FinalFail/BSDConcreteDomain.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass
+ import Mathlib.Analysis.Analytic.Order
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Semantic
+ 
+ /-!
+--- a/lean/MCore/FinalFail/BoundaryAtoms.lean
++++ b/lean/MCore/FinalFail/BoundaryAtoms.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.SevenLocalNuclei
+ 
++noncomputable section
++
+ namespace MCore.FinalFail
+ 
+ /-!
+--- a/lean/MCore/FinalFail/DeltaIsolation.lean
++++ b/lean/MCore/FinalFail/DeltaIsolation.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.ExactGapLedger
+ 
++noncomputable section
++
+ namespace MCore.FinalFail
+ 
+ structure IsolatedDelta where
+--- a/lean/MCore/FinalFail/DirectProducerCuts.lean
++++ b/lean/MCore/FinalFail/DirectProducerCuts.lean
+@@ -1,6 +1,8 @@
+ import MCore.FinalFail.SemanticParallel
+ import MCore.FinalFail.BSDConcreteDomain
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Semantic
+ 
+ /-!
+--- a/lean/MCore/FinalFail/EnabledInhabitants.lean
++++ b/lean/MCore/FinalFail/EnabledInhabitants.lean
+@@ -1,6 +1,8 @@
+ import MCore.FinalFail.AcceptedInhabitants
+ import MCore.FinalFail.BoundaryAtoms
+ 
++noncomputable section
++
+ namespace MCore.FinalFail
+ 
+ universe u v
+--- a/lean/MCore/FinalFail/ExactGapLedger.lean
++++ b/lean/MCore/FinalFail/ExactGapLedger.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.SevenLocalNuclei
+ 
++noncomputable section
++
+ namespace MCore.FinalFail
+ 
+ inductive GapState where
+--- a/lean/MCore/FinalFail/Master.lean
++++ b/lean/MCore/FinalFail/Master.lean
+@@ -9,6 +9,8 @@
+ import MCore.FinalFail.Attack.Beal
+ import MCore.FinalFail.Attack.NavierStokes
+ 
++noncomputable section
++
+ namespace MCore.FinalFail
+ 
+ def masterState : String :=
+--- a/lean/MCore/FinalFail/RPALattice.lean
++++ b/lean/MCore/FinalFail/RPALattice.lean
+@@ -29,7 +29,7 @@
+ /-- Idempotent quotient: only presence/absence of each endpoint remains. -/
+ inductive CanonicalEndpointState
+   | empty
+-  | open
++  | «open»
+   | closed
+   | full
+   deriving DecidableEq, Repr
+--- a/lean/MCore/FinalFail/RPALatticeCube3.lean
++++ b/lean/MCore/FinalFail/RPALatticeCube3.lean
+@@ -3,7 +3,7 @@
+ namespace MCore.FinalFail.RPA
+ 
+ inductive EndpointAtom
+-  | open
++  | «open»
+   | closed
+   deriving DecidableEq, Repr
+ 
+--- a/lean/MCore/FinalFail/RecoveryFirewall.lean
++++ b/lean/MCore/FinalFail/RecoveryFirewall.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.ExactGapLedger
+ 
++noncomputable section
++
+ namespace MCore.FinalFail
+ 
+ structure RecoveryFirewall where
+--- a/lean/MCore/FinalFail/Semantic/BSD.lean
++++ b/lean/MCore/FinalFail/Semantic/BSD.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.BoundaryAtoms
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Semantic
+ 
+ universe u
+--- a/lean/MCore/FinalFail/Semantic/Beal.lean
++++ b/lean/MCore/FinalFail/Semantic/Beal.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.BoundaryAtoms
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Semantic
+ 
+ /-- Concrete admissible Beal datum, with the Diophantine equation stored as
+--- a/lean/MCore/FinalFail/Semantic/Hodge.lean
++++ b/lean/MCore/FinalFail/Semantic/Hodge.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.BoundaryAtoms
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Semantic
+ 
+ universe u v w
+--- a/lean/MCore/FinalFail/Semantic/NavierStokes.lean
++++ b/lean/MCore/FinalFail/Semantic/NavierStokes.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.BoundaryAtoms
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Semantic
+ 
+ universe u v
+--- a/lean/MCore/FinalFail/Semantic/PvsNP.lean
++++ b/lean/MCore/FinalFail/Semantic/PvsNP.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.BoundaryAtoms
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Semantic
+ 
+ universe u
+--- a/lean/MCore/FinalFail/Semantic/Riemann.lean
++++ b/lean/MCore/FinalFail/Semantic/Riemann.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.NumberTheory.LSeries.RiemannZeta
+ import Mathlib.NumberTheory.LSeries.Nonvanishing
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Semantic
+ 
+ /-- The exact counterexample object selected for the RH lane. -/
+--- a/lean/MCore/FinalFail/Semantic/YangMills.lean
++++ b/lean/MCore/FinalFail/Semantic/YangMills.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.BoundaryAtoms
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Semantic
+ 
+ universe u
+--- a/lean/MCore/FinalFail/SemanticParallel.lean
++++ b/lean/MCore/FinalFail/SemanticParallel.lean
+@@ -7,6 +7,8 @@
+ import MCore.FinalFail.Semantic.YangMills
+ import MCore.FinalFail.AcceptedSemanticActivation
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Semantic
+ 
+ inductive SemanticLaneState where
+--- a/lean/MCore/FinalFail/SevenLocalNuclei.lean
++++ b/lean/MCore/FinalFail/SevenLocalNuclei.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore.FinalFail
+ 
+ inductive ProblemId where
+--- a/lean/MCore/FinalFail/SevenProblemSignatures.lean
++++ b/lean/MCore/FinalFail/SevenProblemSignatures.lean
+@@ -1,6 +1,8 @@
+ import MCore.FinalFail.ProblemSignature
+ import MCore.FinalFail.SevenLocalNuclei
+ 
++noncomputable section
++
+ namespace MCore.FinalFail
+ 
+ def signatureOf : ProblemId → ProblemSignature
+--- a/lean/MCore/FinalFail/TypedCompressionCore.lean
++++ b/lean/MCore/FinalFail/TypedCompressionCore.lean
+@@ -1,5 +1,7 @@
+ import Mathlib.Data.Set.Basic
+ 
++noncomputable section
++
+ /-!
+ # Typed Projection/Fiber Core for FINAL_FAIL
+ 
+--- a/lean/MCore/FinalFail/UniversalTerminalClosure.lean
++++ b/lean/MCore/FinalFail/UniversalTerminalClosure.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalFail.DirectProducerCuts
+ 
++noncomputable section
++
+ namespace MCore.FinalFail.Universal
+ 
+ /-!
+--- a/lean/MCore/FinalProofFirewall.lean
++++ b/lean/MCore/FinalProofFirewall.lean
+@@ -1,5 +1,7 @@
+ import MCore.FinalProofRegistry
+ 
++noncomputable section
++
+ namespace MCore.FinalProof
+ 
+ def FinalProofReady : Prop := provedCount = 7
+--- a/lean/MCore/FinalProofRegistry.lean
++++ b/lean/MCore/FinalProofRegistry.lean
+@@ -3,6 +3,8 @@
+ import MCore.FinalFail.RPALattice
+ import MCore.FinalFail.RPALatticeCube3
+ 
++noncomputable section
++
+ namespace MCore.FinalProof
+ 
+ inductive ProblemSlot where
+--- a/lean/MCore/IBoundaryProvenance.lean
++++ b/lean/MCore/IBoundaryProvenance.lean
+@@ -2,6 +2,8 @@
+ import Mathlib.Order.Filter.Basic
+ import Mathlib.Topology.Instances.Real.Lemmas
+ 
++noncomputable section
++
+ /-!
+ # I-Boundary Provenance
+ 
+@@ -39,7 +41,7 @@
+   infinitesimalPart : ℝ
+   kind : SingularityKind
+   orientation : Orientation
+-  deriving DecidableEq, Repr
++  deriving DecidableEq
+ 
+ /-- Terminal observable projection. -/
+ def terminalProjection (x : INumber) : ℝ := x.realPart
+--- a/lean/MCore/OpenMath/I3Tristable.lean
++++ b/lean/MCore/OpenMath/I3Tristable.lean
+@@ -1,5 +1,8 @@
+ import Mathlib.Data.Complex.Basic
+ import Mathlib.Tactic
++import Mathlib.Analysis.SpecialFunctions.Sqrt
++
++noncomputable section
+ 
+ namespace MCore.OpenMath.I3
+ 
+--- a/lean/MCore/OpenMath/IEnriched.lean
++++ b/lean/MCore/OpenMath/IEnriched.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore.OpenMath.IEnriched
+ 
+ /-- An enriched local resolution state.  The fields are mathematical data;
+--- a/lean/MCore/Research/UserProgram/BridgeFirewall.lean
++++ b/lean/MCore/Research/UserProgram/BridgeFirewall.lean
+@@ -2,6 +2,8 @@
+ import MCore.Research.UserProgram.Operators
+ import MCore.Research.UserProgram.IRegime
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ inductive EvidenceState where
+--- a/lean/MCore/Research/UserProgram/C3Action.lean
++++ b/lean/MCore/Research/UserProgram/C3Action.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import MCore.Research.UserProgram.IRegime
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ def I3State.index : I3State → ZMod 3
+--- a/lean/MCore/Research/UserProgram/C3Fourier.lean
++++ b/lean/MCore/Research/UserProgram/C3Fourier.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import MCore.Research.UserProgram.I3Geometry
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ def ComplexThreeChannel.rotate (x : ComplexThreeChannel) : ComplexThreeChannel where
+--- a/lean/MCore/Research/UserProgram/C3Intertwiner.lean
++++ b/lean/MCore/Research/UserProgram/C3Intertwiner.lean
+@@ -2,6 +2,8 @@
+ import MCore.Research.UserProgram.C3Fourier
+ import MCore.Research.UserProgram.Operators
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ def C3Operator := Operator ComplexThreeChannel
+--- a/lean/MCore/Research/UserProgram/C3LinearSectors.lean
++++ b/lean/MCore/Research/UserProgram/C3LinearSectors.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import MCore.Research.UserProgram.C3Intertwiner
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ structure LinearC3Operator where
+--- a/lean/MCore/Research/UserProgram/ConcreteOperators.lean
++++ b/lean/MCore/Research/UserProgram/ConcreteOperators.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import MCore.Research.UserProgram.I3VectorAlgebra
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ abbrev I3End := I3Vector → I3Vector
+--- a/lean/MCore/Research/UserProgram/CrossOperatorLaws.lean
++++ b/lean/MCore/Research/UserProgram/CrossOperatorLaws.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import MCore.Research.UserProgram.ConcreteOperators
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ def I3Vector.scale (z : ℂ) (x : I3Vector) : I3Vector := z • x
+--- a/lean/MCore/Research/UserProgram/CyclicInvariant.lean
++++ b/lean/MCore/Research/UserProgram/CyclicInvariant.lean
+@@ -1,5 +1,7 @@
+ import MCore.Research.UserProgram.C3Action
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ def CyclicInvariant {β : Type} (f : I3State → β) : Prop :=
+--- a/lean/MCore/Research/UserProgram/FlowSemantics.lean
++++ b/lean/MCore/Research/UserProgram/FlowSemantics.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import MCore.Research.UserProgram.CrossOperatorLaws
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ def orbit0 (x : I3Vector) : I3Vector := x
+--- a/lean/MCore/Research/UserProgram/GlobalCertificate.lean
++++ b/lean/MCore/Research/UserProgram/GlobalCertificate.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import MCore.Research.UserProgram.FlowSemantics
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ structure I3KernelCertificate : Prop where
+--- a/lean/MCore/Research/UserProgram/I3Geometry.lean
++++ b/lean/MCore/Research/UserProgram/I3Geometry.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import MCore.Research.UserProgram.ThreeChannel
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ /-- A primitive cube root represented algebraically. -/
+--- a/lean/MCore/Research/UserProgram/I3VectorAlgebra.lean
++++ b/lean/MCore/Research/UserProgram/I3VectorAlgebra.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import MCore.Research.UserProgram.SemanticProofCore
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ structure I3Vector where
+--- a/lean/MCore/Research/UserProgram/IRegime.lean
++++ b/lean/MCore/Research/UserProgram/IRegime.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ inductive IRegime where
+--- a/lean/MCore/Research/UserProgram/LocalGlobal.lean
++++ b/lean/MCore/Research/UserProgram/LocalGlobal.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ structure Framework where
+--- a/lean/MCore/Research/UserProgram/ModeDecomposition.lean
++++ b/lean/MCore/Research/UserProgram/ModeDecomposition.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import MCore.Research.UserProgram.I3Geometry
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ def ComplexThreeChannel.meanPart (x : ComplexThreeChannel) : ComplexThreeChannel where
+--- a/lean/MCore/Research/UserProgram/OperatorLaws.lean
++++ b/lean/MCore/Research/UserProgram/OperatorLaws.lean
+@@ -1,5 +1,7 @@
+ import MCore.Research.UserProgram.Operators
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ def Commute {α : Type} (f g : Operator α) : Prop :=
+--- a/lean/MCore/Research/UserProgram/Operators.lean
++++ b/lean/MCore/Research/UserProgram/Operators.lean
+@@ -1,5 +1,7 @@
+ import Mathlib
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ structure Operator (α : Type) where
+--- a/lean/MCore/Research/UserProgram/SemanticProofCore.lean
++++ b/lean/MCore/Research/UserProgram/SemanticProofCore.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import MCore.Research.UserProgram.C3LinearSectors
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ /-! Typed semantic/proof layer for the user research program.
+--- a/lean/MCore/Research/UserProgram/ThreeChannel.lean
++++ b/lean/MCore/Research/UserProgram/ThreeChannel.lean
+@@ -1,6 +1,8 @@
+ import Mathlib
+ import MCore.Research.UserProgram.CyclicInvariant
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ structure ThreeChannel (R : Type) [AddCommMonoid R] where
+--- a/lean/MCore/Research/UserProgram.lean
++++ b/lean/MCore/Research/UserProgram.lean
+@@ -18,6 +18,8 @@
+ import MCore.Research.UserProgram.GlobalCertificate
+ import MCore.Research.UserProgram.BridgeFirewall
+ 
++noncomputable section
++
+ namespace MCore.Research.UserProgram
+ 
+ def researchProgramScaffolded : Bool := true

@@ -1,5 +1,0 @@
-name = "atk_universal_producers"
-version = "0.1.0"
-defaultTargets = ["ATK"]
-[[lean_lib]]
-name = "ATK"

@@ -418,7 +418,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-29T05:36:17+00:00",
+  "generated_at": "2026-10-30T16:50:26+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -562,7 +562,7 @@
    "name": "MCore.V22.ExactDecomposition.asIff",
    "file": "MCore/V22/RecursiveDecomposition.lean",
    "line": 12,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(d : ExactDecomposition A B) : A ↔ B"
   },
@@ -570,7 +570,7 @@
    "name": "MCore.V22.ExactDecomposition.child_proof_closes_parent",
    "file": "MCore/V22/RecursiveDecomposition.lean",
    "line": 24,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(d : ExactDecomposition A B) (hB : B) : A"
   },
@@ -578,7 +578,7 @@
    "name": "MCore.V22.ProblemInstance.promotion_requires_goal",
    "file": "MCore/V22/ProblemInstance.lean",
    "line": 19,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(p : ProblemInstance) (h : p.ReadyForPromotion) : p.Goal"
   },
@@ -594,7 +594,7 @@
    "name": "MCore.V22.ResidualSystem.no_step_from_closed",
    "file": "MCore/V22/ResidualCalculus.lean",
    "line": 38,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{r : S.Residual} (h : Closed S r) : ¬ ∃ r', Step S r r'"
   },
@@ -602,7 +602,7 @@
    "name": "MCore.V22.ResidualSystem.step_irrefl",
    "file": "MCore/V22/ResidualCalculus.lean",
    "line": 33,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{r : S.Residual} : ¬ Step S r r"
   },
@@ -714,7 +714,7 @@
    "name": "MCore.V22.beal_has_exact_blocker",
    "file": "MCore/V22/ExactBlockerNecessity.lean",
    "line": 29,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": HasExactBlocker .beal"
   },
@@ -732,7 +732,7 @@
    "name": "MCore.V22.blocker_mem_implies_hasExactBlocker",
    "file": "MCore/V22/ExactBlockerNecessity.lean",
    "line": 15,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{b : ExactBlocker} (hb : b ∈ exactMathematicalBlockers) : HasExactBlocker b.problem"
   },
@@ -758,7 +758,7 @@
    "name": "MCore.V22.bsd_has_exact_blocker",
    "file": "MCore/V22/ExactBlockerNecessity.lean",
    "line": 25,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": HasExactBlocker .bsd"
   },
@@ -792,7 +792,7 @@
    "name": "MCore.V22.certificate_implies_final",
    "file": "MCore/V22/ResidualCalculus.lean",
    "line": 68,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{Final : Prop} (c : ClosureCertificate Final) : Final"
   },
@@ -800,7 +800,7 @@
    "name": "MCore.V22.certificate_to_certifiedClosed",
    "file": "MCore/V22/ClosureCriterion.lean",
    "line": 27,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{Goal : Prop} (c : ClosureCertificate Goal) : CertifiedClosed Goal { statementMatch"
   },
@@ -808,7 +808,7 @@
    "name": "MCore.V22.certifiedClosed_implies_goal",
    "file": "MCore/V22/ClosureCriterion.lean",
    "line": 22,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{Goal : Prop} {a : ClosureAudit} (h : CertifiedClosed Goal a) : Goal"
   },
@@ -816,7 +816,7 @@
    "name": "MCore.V22.certifiedClosed_to_certificate",
    "file": "MCore/V22/ClosureCriterion.lean",
    "line": 38,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{Goal : Prop} {a : ClosureAudit} (h : CertifiedClosed Goal a) : ClosureCertificate Goal where finalProof"
   },
@@ -824,7 +824,7 @@
    "name": "MCore.V22.closedDirections_start_iff_final",
    "file": "MCore/V22/RecursiveDecomposition.lean",
    "line": 41,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "(o : ResearchObligation) (h : ClosedDirections o) : o.Start ↔ o.Final"
   },
@@ -832,7 +832,7 @@
    "name": "MCore.V22.closure_state_count",
    "file": "MCore/V22/BidirectionalClosure.lean",
    "line": 35,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": allClosureStates.length = 8"
   },
@@ -892,7 +892,7 @@
    "name": "MCore.V22.hodge_has_exact_blocker",
    "file": "MCore/V22/ExactBlockerNecessity.lean",
    "line": 21,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": HasExactBlocker .hodge"
   },
@@ -920,7 +920,7 @@
    "name": "MCore.V22.navierStokes_has_exact_blocker",
    "file": "MCore/V22/ExactBlockerNecessity.lean",
    "line": 45,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": HasExactBlocker .navierStokes"
   },
@@ -946,7 +946,7 @@
    "name": "MCore.V22.open_problem_has_registered_exact_blocker",
    "file": "MCore/V22/ExactBlockerNecessity.lean",
    "line": 53,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{p : ProblemId} (hp : OpenResearchProblem p) : HasExactBlocker p"
   },
@@ -962,7 +962,7 @@
    "name": "MCore.V22.pnp_has_exact_blocker",
    "file": "MCore/V22/ExactBlockerNecessity.lean",
    "line": 33,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": HasExactBlocker .pVsNP"
   },
@@ -988,7 +988,7 @@
    "name": "MCore.V22.recursive_frontier_exact",
    "file": "MCore/V22/RecursiveDecomposition.lean",
    "line": 54,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{Parent : Prop} (r : RecursiveFrontier Parent) : Parent ↔ r.Child"
   },
@@ -996,7 +996,7 @@
    "name": "MCore.V22.research_direction_count",
    "file": "MCore/V22/BidirectionalClosure.lean",
    "line": 89,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": allResearchDirections.length = 4"
   },
@@ -1022,7 +1022,7 @@
    "name": "MCore.V22.riemann_has_exact_blocker",
    "file": "MCore/V22/ExactBlockerNecessity.lean",
    "line": 37,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": HasExactBlocker .riemann"
   },
@@ -1030,7 +1030,7 @@
    "name": "MCore.V22.witness_incompatibility",
    "file": "MCore/V22/BidirectionalClosure.lean",
    "line": 97,
-   "state": "fechado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": "{Wpos Wneg : Type} {ValidPos : Wpos → Prop} {ValidNeg : Wneg → Prop} (hDisjoint : ∀ wp wn, ValidPos wp → ValidNeg wn → False) (wp : Wpos) (wn : Wneg) (hp : ValidPos wp) : ¬ ValidNeg wn"
   },
@@ -1038,7 +1038,7 @@
    "name": "MCore.V22.yangMills_has_exact_blocker",
    "file": "MCore/V22/ExactBlockerNecessity.lean",
    "line": 41,
-   "state": "nao_alcancado",
+   "state": "nao_checado",
    "axioms_beyond_standard": [],
    "statement": ": HasExactBlocker .yangMills"
   },
@@ -1061,7 +1061,7 @@
    "statement": "(MCore.V22.blockersFor MCore.V22.ProblemId.yangMills).length = 2"
   }
  ],
- "closed": 39,
+ "closed": 36,
  "files_sha256": {
   "MCore/V21/CertificateTests.lean": "0018d1e58d8e2d359ad299d9acf163fb2102df7bd1a98b615caeac0c82cbff6c",
   "MCore/V21/ClosedChain.lean": "b14ba00bde851fd1dbd82fd4e9150f2f7680d3ca9b76793d2f61a59692a24633",
@@ -1071,7 +1071,6 @@
   "MCore/V21/Examples.lean": "1cf40ca65d20c73998a926c09191cf2c56815c8eff4a2c5735d34b94b40afdb7",
   "MCore/V21/ProblemEmbedding.lean": "12d50e7cb370d81aaa289cac4d4be2cbfac4c02e18531e2376058b48dfb13372",
   "MCore/V21/ResidueClassifier.lean": "b20db6957fd7bb1b62b76c6a9df77776de287892eee548a167dc2a2ebca80896",
-  "MCore/V22/BidirectionalClosure.lean": "a22d35ccf61828fd7e5c57623f66c8dc012cdc62a1e69d14ce375e6c4adf5977",
   "MCore/V22/ExactBlockers.lean": "ab87af7a7741c8f7a04166378db27e16de030629c2022de59d71d6b9ae87b916",
   "MCore/V22/FrontierKernel.lean": "78b4faf7e81c82b03704068c7a1ea416f3658a63b0a3bf91a54b161ea011fac9",
   "MCore/V22/FrontierRegistry.lean": "b70ad42368bb77de5954237681aed3d31410c138135be25d85a3df8a1dc74368",
@@ -1085,6 +1084,6 @@
   "lakefile.lean": "f53cac7f442d9cb312870f171649382381e313931ad59cfc8d0799f52df430ac",
   "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
  },
- "published_at": "2026-10-29T20:16:01Z",
- "certificate_sha256": "ad35b1446d9c2e0656233ba973fa64ce43940eb9257058d477cf8f9894dfc9f5"
+ "published_at": "2026-11-02T20:55:41Z",
+ "certificate_sha256": "193185b59b4b029d498cf2bd3070c3362de7c3f4a2e7b717581f1c8b25e97d39"
 }

@@ -1,0 +1,214 @@
+--- a/MCore/IBoundaryProvenance.lean
++++ b/MCore/IBoundaryProvenance.lean
+@@ -21,6 +21,8 @@
+ 
+ namespace MCore.IBoundary
+ 
++open Filter
++
+ inductive SingularityKind where
+   | zeroOverZero
+   | oneOverZero
+@@ -83,7 +85,7 @@
+ theorem canonical_states_pairwise_distinct :
+     I00 ≠ I10 ∧ I00 ≠ I0Inf ∧ I00 ≠ I1Inf ∧
+     I10 ≠ I0Inf ∧ I10 ≠ I1Inf ∧ I0Inf ≠ I1Inf := by
+-  decide
++  refine ⟨?_, ?_, ?_, ?_, ?_, ?_⟩ <;> intro h <;> exact absurd (congrArg INumber.kind h) (by decide)
+ 
+ theorem canonical_states_boundary_equivalent :
+     BoundaryEquivalent I00 I10 ∧
+@@ -101,6 +103,7 @@
+ 
+ theorem approach_orientation_distinct (ε : ℝ) :
+     (approachNeg ε).orientation ≠ (approachPos ε).orientation := by
++  show Orientation.negative ≠ Orientation.positive
+   decide
+ 
+ theorem approach_states_distinct (ε : ℝ) :
+@@ -113,20 +116,21 @@
+     Tendsto (fun ε : ℝ => terminalProjection (approachNeg ε))
+       (nhdsWithin 0 (Set.Ioi 0)) (nhds 0) := by
+   simpa [terminalProjection, approachNeg] using
+-    (tendsto_neg_atTop_iff.comp tendsto_id)
++    ((continuous_neg.tendsto (0 : ℝ)).mono_left nhdsWithin_le_nhds)
+ 
+ theorem positive_terminal_limit :
+     Tendsto (fun ε : ℝ => terminalProjection (approachPos ε))
+       (nhdsWithin 0 (Set.Ioi 0)) (nhds 0) := by
+   simpa [terminalProjection, approachPos] using
+-    (tendsto_id : Tendsto (fun x : ℝ => x) (nhdsWithin 0 (Set.Ioi 0)) (nhds 0))
++    ((tendsto_id : Tendsto (fun x : ℝ => x) (nhds 0) (nhds 0)).mono_left nhdsWithin_le_nhds)
+ 
+ /-- A simpler epsilon formulation of the two-sided convergence, independent
+ of topology-library lemma naming. -/
+ theorem two_sided_terminal_distance (ε : ℝ) (hε : 0 ≤ ε) :
+     |terminalProjection (approachNeg ε) - terminalProjection (approachPos ε)| =
+       2 * ε := by
+-  simp [terminalProjection, approachNeg, approachPos, abs_of_nonneg hε]
++  simp only [terminalProjection, approachNeg, approachPos]
++  rw [show -ε - ε = -(2 * ε) by ring, abs_neg, abs_of_nonneg (by linarith)]
+ 
+ /-- Provenance code: different singularity natures receive different exact
+ codes.  This is a concrete information channel, not an axiom. -/
+@@ -154,6 +158,8 @@
+ 
+ theorem same_boundary_different_orientation (ε : ℝ) :
+     provenanceCode (approachNeg ε) ≠ provenanceCode (approachPos ε) := by
++  show (kindCode .zeroOverZero, orientationCode .negative) ≠
++    (kindCode .zeroOverZero, orientationCode .positive)
+   decide
+ 
+ /-- Terminal collapse forgets all provenance. -/
+@@ -170,10 +176,14 @@
+ 
+ theorem negative_approach_has_residue (ε : ℝ) :
+     ProvenanceResidue (approachNeg ε) := by
++  show (kindCode .zeroOverZero, orientationCode .negative) ≠
++    (kindCode .zeroOverZero, orientationCode .balanced)
+   decide
+ 
+ theorem positive_approach_has_residue (ε : ℝ) :
+     ProvenanceResidue (approachPos ε) := by
++  show (kindCode .zeroOverZero, orientationCode .positive) ≠
++    (kindCode .zeroOverZero, orientationCode .balanced)
+   decide
+ 
+ /-- A binary terminal representation cannot reconstruct every full I-state:
+--- a/imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean
++++ b/imports/final-proof/NAVIER_STOKES/bdf538c8/G1_KAdmissible_to_SignedDepletion.lean
+@@ -32,8 +32,9 @@
+ theorem K0a_regularizedAmplitude_ge
+     (w ε : ℝ) (hε : 0 < ε) :
+     ε ≤ regularizedAmplitude w ε := by
+-  rw [regularizedAmplitude, ← Real.sqrt_sq (le_of_lt hε)]
+-  exact Real.sqrt_le_sqrt (by nlinarith [sq_nonneg w])
++  unfold regularizedAmplitude
++  calc ε = Real.sqrt (ε ^ 2) := (Real.sqrt_sq (le_of_lt hε)).symm
++    _ ≤ Real.sqrt (w ^ 2 + ε ^ 2) := Real.sqrt_le_sqrt (by nlinarith [sq_nonneg w])
+ 
+ /-- K0a': the regularized amplitude is nonnegative. -/
+ theorem K0a_regularizedAmplitude_nonneg (w ε : ℝ) :
+--- a/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
++++ b/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_DeterministicParameterChain.lean
+@@ -64,8 +64,7 @@
+ theorem differential_decay
+     (p : Parameters) (s : Snapshot) (h : BalanceCertificates p s) :
+     s.dRdt ≤ -(p.decayRate) * s.R := by
+-  dsimp [Parameters.decayRate, Parameters.kappa, Parameters.perturbation,
+-    Parameters.C_error]
++  unfold Parameters.decayRate
+   linarith [h.balance, h.dissipation, h.flux]
+ 
+ /-- Correct high-frequency L3 reconstruction interface:
+--- a/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/CriticalTailBridge.lean
++++ b/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/CriticalTailBridge.lean
+@@ -37,7 +37,8 @@
+ def growingCritical (n : ℕ) : ℝ := n + 1
+ 
+ theorem shrinkingDefect_pos (n : ℕ) : 0 < shrinkingDefect n := by
+-  simp [shrinkingDefect]
++  unfold shrinkingDefect
++  positivity
+ 
+ theorem growingCritical_ge_one (n : ℕ) : 1 ≤ growingCritical n := by
+   simp [growingCritical]
+--- a/lean/MCore/IBoundaryProvenance.lean
++++ b/lean/MCore/IBoundaryProvenance.lean
+@@ -21,6 +21,8 @@
+ 
+ namespace MCore.IBoundary
+ 
++open Filter
++
+ inductive SingularityKind where
+   | zeroOverZero
+   | oneOverZero
+@@ -83,7 +85,7 @@
+ theorem canonical_states_pairwise_distinct :
+     I00 ≠ I10 ∧ I00 ≠ I0Inf ∧ I00 ≠ I1Inf ∧
+     I10 ≠ I0Inf ∧ I10 ≠ I1Inf ∧ I0Inf ≠ I1Inf := by
+-  decide
++  refine ⟨?_, ?_, ?_, ?_, ?_, ?_⟩ <;> intro h <;> exact absurd (congrArg INumber.kind h) (by decide)
+ 
+ theorem canonical_states_boundary_equivalent :
+     BoundaryEquivalent I00 I10 ∧
+@@ -101,6 +103,7 @@
+ 
+ theorem approach_orientation_distinct (ε : ℝ) :
+     (approachNeg ε).orientation ≠ (approachPos ε).orientation := by
++  show Orientation.negative ≠ Orientation.positive
+   decide
+ 
+ theorem approach_states_distinct (ε : ℝ) :
+@@ -113,20 +116,21 @@
+     Tendsto (fun ε : ℝ => terminalProjection (approachNeg ε))
+       (nhdsWithin 0 (Set.Ioi 0)) (nhds 0) := by
+   simpa [terminalProjection, approachNeg] using
+-    (tendsto_neg_atTop_iff.comp tendsto_id)
++    ((continuous_neg.tendsto (0 : ℝ)).mono_left nhdsWithin_le_nhds)
+ 
+ theorem positive_terminal_limit :
+     Tendsto (fun ε : ℝ => terminalProjection (approachPos ε))
+       (nhdsWithin 0 (Set.Ioi 0)) (nhds 0) := by
+   simpa [terminalProjection, approachPos] using
+-    (tendsto_id : Tendsto (fun x : ℝ => x) (nhdsWithin 0 (Set.Ioi 0)) (nhds 0))
++    ((tendsto_id : Tendsto (fun x : ℝ => x) (nhds 0) (nhds 0)).mono_left nhdsWithin_le_nhds)
+ 
+ /-- A simpler epsilon formulation of the two-sided convergence, independent
+ of topology-library lemma naming. -/
+ theorem two_sided_terminal_distance (ε : ℝ) (hε : 0 ≤ ε) :
+     |terminalProjection (approachNeg ε) - terminalProjection (approachPos ε)| =
+       2 * ε := by
+-  simp [terminalProjection, approachNeg, approachPos, abs_of_nonneg hε]
++  simp only [terminalProjection, approachNeg, approachPos]
++  rw [show -ε - ε = -(2 * ε) by ring, abs_neg, abs_of_nonneg (by linarith)]
+ 
+ /-- Provenance code: different singularity natures receive different exact
+ codes.  This is a concrete information channel, not an axiom. -/
+@@ -154,6 +158,8 @@
+ 
+ theorem same_boundary_different_orientation (ε : ℝ) :
+     provenanceCode (approachNeg ε) ≠ provenanceCode (approachPos ε) := by
++  show (kindCode .zeroOverZero, orientationCode .negative) ≠
++    (kindCode .zeroOverZero, orientationCode .positive)
+   decide
+ 
+ /-- Terminal collapse forgets all provenance. -/
+@@ -170,10 +176,14 @@
+ 
+ theorem negative_approach_has_residue (ε : ℝ) :
+     ProvenanceResidue (approachNeg ε) := by
++  show (kindCode .zeroOverZero, orientationCode .negative) ≠
++    (kindCode .zeroOverZero, orientationCode .balanced)
+   decide
+ 
+ theorem positive_approach_has_residue (ε : ℝ) :
+     ProvenanceResidue (approachPos ε) := by
++  show (kindCode .zeroOverZero, orientationCode .positive) ≠
++    (kindCode .zeroOverZero, orientationCode .balanced)
+   decide
+ 
+ /-- A binary terminal representation cannot reconstruct every full I-state:
+--- a/lean/MCore/Research/UserProgram/C3Action.lean
++++ b/lean/MCore/Research/UserProgram/C3Action.lean
+@@ -12,7 +12,7 @@
+ 
+ theorem I3State.index_injective : Function.Injective I3State.index := by
+   intro a b h
+-  cases a <;> cases b <;> simp_all [I3State.index]
++  cases a <;> cases b <;> first | rfl | exact absurd h (by decide)
+ 
+ theorem I3State.index_next (s : I3State) :
+     s.next.index = s.index + 1 := by
+--- a/lean/MCore/Research/UserProgram/Operators.lean
++++ b/lean/MCore/Research/UserProgram/Operators.lean
+@@ -10,7 +10,7 @@
+ def Operator.comp {α : Type} (f g : Operator α) : Operator α :=
+   ⟨f.run ∘ g.run⟩
+ 
+-def Operator.id (α : Type) : Operator α := ⟨id⟩
++def Operator.id (α : Type) : Operator α := ⟨_root_.id⟩
+ 
+ theorem Operator.comp_assoc {α : Type} (f g h : Operator α) :
+     Operator.comp (Operator.comp f g) h =

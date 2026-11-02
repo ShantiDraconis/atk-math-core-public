@@ -1,0 +1,37 @@
+--- a/imports/final-proof/RIEMANN/ad3011f1/lean/MCore/K8.lean
++++ b/imports/final-proof/RIEMANN/ad3011f1/lean/MCore/K8.lean
+@@ -1,5 +1,6 @@
+ import MCore.K7
+ import Mathlib.NumberTheory.LSeries.RiemannZeta
++import Mathlib.Tactic
+ 
+ namespace MCore
+ 
+@@ -25,7 +26,7 @@
+ 
+ /-- The K7 target remains open after introducing the scientific contract. -/
+ theorem k8_k7_target_open :
+-    k6_dependency.target.status = .openBridge :=
+-  k7_target_open
++    k6_dependency.target.status = .openBridge := by
++  first | (rfl) | (decide) | (trivial) | (simp) | (omega) | (simp_all) | (exact fun _ => trivial) | (norm_num) | (linarith) | (positivity) | (ring) | (tauto) | (aesop) | (nlinarith) | (exact?)
+ 
+ end MCore
+--- a/imports/final-proof/YANG_MILLS/645b2999/lean/MCore/K13.lean
++++ b/imports/final-proof/YANG_MILLS/645b2999/lean/MCore/K13.lean
+@@ -1,4 +1,5 @@
+ import MCore.K12
++import Mathlib.Tactic
+ 
+ namespace MCore
+ 
+@@ -14,7 +15,8 @@
+ /-- A Hamiltonian interface alone proves no positive spectral gap. -/
+ theorem k13_gap_still_separate : k8_target.gap = .positiveMassGap := k12_gap_still_separate
+ 
+-theorem k13_target_still_open : k6_dependency.target.status = .openBridge := k12_target_still_open
++theorem k13_target_still_open : k6_dependency.target.status = .openBridge := by
++  first | (rfl) | (decide) | (trivial) | (simp) | (omega) | (simp_all) | (exact fun _ => trivial) | (norm_num) | (linarith) | (positivity) | (ring) | (tauto) | (aesop) | (nlinarith) | (exact?)
+ 
+ theorem k13_no_promotion : ¬ Nonempty (ProofCertificate k6_dependency.target) := k12_no_promotion
+ 
