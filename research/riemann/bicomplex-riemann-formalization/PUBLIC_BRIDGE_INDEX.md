@@ -18,6 +18,10 @@ Maps the nine application areas to their laws, shared analysis methods, source p
 
 See [scaling analogies, superdiffusion, and blast-wave audit](SCALING_ANALOGY_AUDIT.md) for the derivations of the (x^{0.2}) factor, fBm/Lévy distinctions, conditional Sedov–Taylor and Chevalier exponents, and the claim-by-claim evidence verdict. Matching exponents are labeled model analogies unless a defined transform or data-supported causal bridge is established.
 
+## RH-conditional and spectral bridge
+
+See [RH conditional and spectral bridge theorem skeleton](RH_CONDITIONAL_SPECTRAL_BRIDGES.md) for the RH consequences, zero symmetries, Euler product, and Hilbert–Pólya route. This is the analytic/spectral side of the archive; the [scaling analogy audit](SCALING_ANALOGY_AUDIT.md) covers applied exponent comparisons.
+
 ## Cross-domain method links
 
 - **Eigenvalue stability:** BZ, SIR, laser, EEG signal models, flutter; only after defining state, units, equilibrium and sign convention.
