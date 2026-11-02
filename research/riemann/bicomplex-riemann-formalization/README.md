@@ -25,4 +25,4 @@ The identity `(1+k)(1-k)=0` follows algebraically from `k²=1`; it is a zero-div
 | Explicit-formula scaling | `Formal/ExplicitFormulaScaling.lean` | Abstract exponent bookkeeping, not the analytic explicit formula |
 | Analytic and classical routes | `ANALYTIC_BRIDGES.md`, `CLASSICAL_RH_BRIDGES.md` | Open obligations, not completed proofs |
 
-A passing [Lean workflow](../../.github/workflows/riemann-bridge-formalization.yml) can certify the declarations compiled under the pinned toolchain and passed the configured axiom audit. It does not certify unformalized prose, empirical interpretations, or RH. Every entry marked `WRITTEN_UNCHECKED` remains unchecked until a successful run covers the exact commit.
+A passing [Lean workflow](../../../.github/workflows/riemann-bridge-formalization.yml) can certify the declarations compiled under the pinned toolchain and passed the configured axiom audit. It does not certify unformalized prose, empirical interpretations, or RH. Every entry marked `WRITTEN_UNCHECKED` remains unchecked until a successful run covers the exact commit.
