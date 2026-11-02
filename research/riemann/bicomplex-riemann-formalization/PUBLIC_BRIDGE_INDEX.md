@@ -1,26 +1,25 @@
-# Public bridge index
+# Applied systems bridge index (independent of Riemann analysis)
 
-“Bridge” means a proposed correspondence or proof obligation, not a validated transfer theorem.
+Maps the nine application areas to their laws, shared analysis methods, source producers, materials, and validation tasks. It does not map them to zeta zeros.
 
-| Item | Domain analogy | Required bridge | Package references |
+| Item | Applied analysis | Standard model | Producers and source materials |
 |---:|---|---|---|
-| 7 | Belousov–Zhabotinsky chemistry | Define a reaction-diffusion model and derive any relation between oscillation/stability and a zeta coordinate. | `APPLICATION_BRIDGES.md`, `FORMULA_CATALOG.md`, `OPEN_BRIDGE_REGISTRY.csv` |
-| 8 | SIR epidemic | Specify equations, units, thresholds, and evidence for the proposed `0.3/0.7` coordinates. | Application registry; `Formal/ApplicationBridges.lean` proves arithmetic only. |
-| 9 | Room acoustics | Derive modal growth/decay and phase behavior from boundary conditions and geometry. | `APPLICATION_BRIDGES.md`; zero-divisor identity does not prove acoustic cancellation. |
-| 10 | Laser mode | Define the cavity operator and derive its threshold; distinguish instability from a zeta zero. | `APPLICATION_BRIDGES.md`; no physical model is formalized. |
-| 11 | Seismic fault | Specify PDE/interface conditions and wavenumber convention; prove any connection to bicomplex factors. | `APPLICATION_BRIDGES.md`; no geophysical theorem is asserted. |
-| 12 | EEG | Supply a neural model and clinically grounded criteria; spectral coordinates alone cannot diagnose seizure/sleep. | `APPLICATION_BRIDGES.md`; no clinical data/inference is formalized. |
-| 13 | Aeroelastic flutter | Derive coupled bending/torsion eigenvalues and instability threshold from a stated model. | `APPLICATION_BRIDGES.md`; no bridge to `(1+k)(1-k)=0` is proved. |
-| 14 | Markets/leverage | Define a stochastic/agent model and test leverage claims; “2008 as a 0.7/0.3 rectangle” is unestablished. | `APPLICATION_BRIDGES.md`; no market-data theorem is supplied. |
-| 15 | Social spread | Specify transmission dynamics and validate any reproduction-number interpretation with data or simulation. | `APPLICATION_BRIDGES.md`; no platform data are supplied. |
+| 7 | [BZ chemistry](CROSS_DOMAIN_ANALYSIS.md#7-belousovzhabotinsky-bz-chemistry) | FKN/Oregonator kinetics, limit cycles | [Zhabotinsky; Field–Körös–Noyes](SOURCE_MATERIALS.md#bz-chemistry) |
+| 8 | [SIR epidemic](CROSS_DOMAIN_ANALYSIS.md#8-sir-epidemics) | SIR/SEIR, next-generation matrix | [Kermack–McKendrick; CDC](SOURCE_MATERIALS.md#sir-epidemics) |
+| 9 | [Room acoustics](CROSS_DOMAIN_ANALYSIS.md#9-room-acoustics-and-echo) | Wave equation, modes, RT60 | [Sabine; York OpenAIR](SOURCE_MATERIALS.md#room-acoustics) |
+| 10 | [Laser](CROSS_DOMAIN_ANALYSIS.md#10-laser-modes) | Stimulated emission, cavity threshold | [Einstein; Maiman](SOURCE_MATERIALS.md#laser) |
+| 11 | [Seismic/fault](CROSS_DOMAIN_ANALYSIS.md#11-seismic-waves-and-faults) | Elastic waves, interface conditions | [USGS; EarthScope/IRIS](SOURCE_MATERIALS.md#seismology) |
+| 12 | [EEG](CROSS_DOMAIN_ANALYSIS.md#12-eeg-alpha-seizure-and-sleep) | Signal analysis, ILAE/AASM criteria | [ILAE; AASM; PhysioNet](SOURCE_MATERIALS.md#eegsleepseizure) |
+| 13 | [Aeroelastic flutter](CROSS_DOMAIN_ANALYSIS.md#13-aeroelastic-flutter) | Coupled structural/aero eigenproblem | [Theodorsen/NACA/NASA; FAA](SOURCE_MATERIALS.md#aeroelastic-flutter) |
+| 14 | [Finance](CROSS_DOMAIN_ANALYSIS.md#14-finance-leverage-bubbles-and-crashes) | Balance sheets, Minsky regimes, stress data | [Minsky; FCIC; Fed/OFR](SOURCE_MATERIALS.md#finance) |
+| 15 | [Social diffusion](CROSS_DOMAIN_ANALYSIS.md#15-online-diffusion) | Network cascade/complex contagion | [Centola; Goel et al.](SOURCE_MATERIALS.md#social-diffusion) |
 
-## Additional classical routes
+## Cross-domain method links
 
-| Route | Files | Status here |
-|---|---|---|
-| Dirichlet series, Euler product, analytic continuation, functional equation, completed ξ | `CLASSICAL_RH_BRIDGES.md`, `CLASSICAL_RH_REGISTRY.csv` | Open formalization obligations |
-| Zero symmetries and four-point orbit | `Formal/CenteredSymmetry.lean`, `Formal/AnalyticBridgeContracts.lean` | Abstract conditional results; no zeta zero set instantiated |
-| Hadamard product, mollification, explicit formula, Hilbert–Pólya/Berry–Keating | `ANALYTIC_BRIDGES.md`, `OPEN_BRIDGE_REGISTRY.csv` | Research routes; analytic/spectral steps remain open |
-| Riemann–von Mangoldt count, Nyman–Beurling, Li, de Bruijn–Newman, finite certified zero counts, prime-counting equivalences | `CLASSICAL_RH_BRIDGES.md`, `CLASSICAL_RH_REGISTRY.csv` | Listed as obligations, not proofs in this package |
+- **Eigenvalue stability:** BZ, SIR, laser, EEG signal models, flutter; only after defining state, units, equilibrium and sign convention.
+- **Wave/transfer operators:** acoustics, seismology, laser cavities, structural modes; each requires its own PDE and boundary/material conditions.
+- **Network contagion:** epidemics, social diffusion, financial default; node/edge/event definitions differ.
+- **Feedback/gain-loss:** BZ, laser, flutter, finance; energy flow and cash-flow are not interchangeable.
+- **Inverse problems:** EEG, acoustics, seismology, finance, social media; measurements alone may not identify the cause.
 
-The coordinate pair `sigma+b=0.3`, `sigma-b=0.7` for `sigma=0.5,b=-0.2` does not imply that ζ has a zero at either point. Davenport–Heilbronn concerns a different function. A Lean build checks only the encoded declarations.
+See the [full analysis](CROSS_DOMAIN_ANALYSIS.md), [source materials](SOURCE_MATERIALS.md), and [validation protocols](VALIDATION_PROTOCOLS.md). Similar equations support only a **MODEL ANALOGY** until an exact transform or causal/empirical bridge is proven.
