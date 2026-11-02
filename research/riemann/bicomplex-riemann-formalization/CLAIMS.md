@@ -25,6 +25,10 @@
 | RH implies a meaningful Hilbert–Pólya operator exists | Not established | RH permits a tautological diagonal operator on zero ordinates, but does not provide an independent arithmetic operator or determinant identity. |
 | A self-adjoint operator alone proves RH | False as stated | One also needs an exact, exhaustive zero/spectrum correspondence and a nonvanishing-factor determinant identity. |
 | Berry–Keating `xp` already has zeta ordinates as eigenvalues | Not established | The classical Hamiltonian is a heuristic proposal; the standard half-line dilation realization has continuous spectrum, and regularizations need separate proofs. |
+| A second Dirichlet L-function changes the local Euler factor of Riemann ζ into exponents 0.8 and 0.4 | False | Davenport–Heilbronn is a different linear combination of Dirichlet L-functions, not a perturbation of ζ's Euler factors. |
+| The bicomplex zero divisor `(1+k)(1-k)=0` breaks RH for classical ζ | False | It is an identity in a different algebra; it does not alter the classical zeta function or its zero set. |
+| The elementary integrals `∫₀¹x^{-1/2}dx` and `∫₀¹x^{-0.3}dx` evaluate ζ on those lines | False | They are finite power integrals, not the Mellin representation of ζ; the latter integral requires `Re(s)>1`. |
+| A finite prime-counting error at `x=10^12` refutes an RH asymptotic bound | False | A finite value cannot contradict an asymptotic O-bound with an unspecified constant. |
 | RH-conditional consequences listed in `RH_CONDITIONAL_SPECTRAL_BRIDGES.md` are formalized in Lean | False | They are classical theorems summarized in documentation; the current Lean package has no analytic definition of `ζ`/`ξ` or these estimates. |
 | The current algebraic and conditional theorem terms are kernel-verified | Not verified | Lean/Lake are unavailable in this environment; see `FORMAL_PROOF_STATUS.md` |
 | A full bicomplex pair is zero iff both component values are zero | Lean source theorem written, kernel check pending | `Formal/ComponentLift.lean`; generic product-value statement, not an analytic zeta lift |
