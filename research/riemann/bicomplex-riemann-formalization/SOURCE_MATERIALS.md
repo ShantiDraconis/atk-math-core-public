@@ -44,3 +44,12 @@ Representative originators, standards bodies, data custodians, and primary mater
 | Symmetry and zero counts | [NIST DLMF §25.10](https://dlmf.nist.gov/25.10) | Functional equation and conjugation yield reflected zero orbits; the midpoint is not asserted to be a zero. |
 
 See the detailed [off-line zero-count and symmetry audit](OFF_LINE_ZERO_COUNTS_AND_SYMMETRY.md).
+
+## Unconditional zero-location and proportion references
+
+| Result | Source | Scope |
+|---|---|---|
+| Rigorous RH verification up to height \\(3\\times10^{12}\\) | [Platt–Trudgian (2021)](https://doi.org/10.1112/blms.12460) | Interval-arithmetic check of all zeros below a finite height; no RH proof at arbitrary height. |
+| First \\(10^{13}\\) zeros computation | [Gourdon (2004), cited in later verification literature](https://www.ams.org/mcom/2011-80-276/S0025-5718-2011-02472-5/S0025-5718-2011-02472-5.pdf) | Numerical computation; later source notes it was not independently certified. |
+| More than two fifths on the line | [Conrey (1989)](https://eudml.org/doc/153151) | Published unconditional positive-proportion theorem. |
+| More than 67.25% simple and on the line | [Lamzouri (2026) preprint](https://arxiv.org/abs/2609.02882) | Preprint claims a new unconditional bound; not an all-zeros conclusion. |
