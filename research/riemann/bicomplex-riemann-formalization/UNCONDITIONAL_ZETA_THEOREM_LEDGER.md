@@ -39,6 +39,25 @@ These identities are unconditional. If \(\rho=\beta+i\gamma\) is a nontrivial ze
 \]
 with multiplicity. They do not imply \(\beta=1/2\): a symmetric set can contain two distinct reflected points.
 
+### U2a. Scope of the four unconditional formulas
+
+| Formula | Exact unconditional scope | What it does not prove |
+|---|---|---|
+| \\(\\xi(s)=\\xi(1-s)\\) | Completed-function identity, entire continuation, all complex \\(s\\). | It reflects zeros; it does not fix each zero under reflection. |
+| \\(\\xi(\\bar s)=\\overline{\\xi(s)}\\) | Conjugation identity for the completed function; \\(\\zeta\\) is real under conjugation away from its pole. | It does not imply a zero lies on the real axis or critical line. |
+| \\(\\zeta(s)=\\prod_p(1-p^{-s})^{-1}\\) | Absolutely convergent Euler product for \\(\\operatorname{Re}s>1\\). | It is not an Euler-product formula valid throughout the critical strip and does not provide a \\(p^{-1/2}\\) constraint there. |
+| Hadamard product for \\(\\xi\\) | Canonical genus-one product for the entire order-one function, with zeros counted with multiplicity and the required locally uniform convergence convention. | It encodes the zero set; it does not prove where its factors' zeros are located. |
+
+### U2b. Unconditional rectangular zero orbit
+
+If \\(\\rho=\\beta+i\\gamma\\) is a nontrivial zero and the point is off the line, the completed-function identities give
+\\[
+\\rho,\\quad \\bar\\rho=\\beta-i\\gamma,\\quad 1-\\rho=1-\\beta-i\\gamma,\\quad 1-\\bar\\rho=1-\\beta+i\\gamma.
+\\]
+This is an unconditional orbit statement. It is not an unconditional existence statement for any off-line zero. The same-height pair's midpoint is \\(1/2+i\\gamma\\), but zerohood at the midpoint is not part of the symmetry theorem.
+
+The split-complex identity \\((1+k)(1-k)=0\\) when \\(k^2=1\\), and the field identity \\((1+k)(1-k)=2\\) when \\(k^2=-1\\), are algebra facts in different algebras. Neither is one of the analytic zero-location theorems above. There is no known theorem that a \\(p^{-1/2}\\) factor plus \\(2\\ne0\\) “locks” zeta zeros onto the critical line.
+
 ### U3. Zero-free regions outside the critical strip and trivial zeros
 
 The functional equation and standard gamma-factor analysis show that \(\zeta(s)\) has no zeros for \(\operatorname{Re}s\le0\) except the trivial zeros \(s=-2,-4,-6,\ldots\). The prime number theorem's classical zero-free theorem gives no zeros on \(\operatorname{Re}s=1\). Together with U1, the nontrivial zeros lie in the open critical strip \(0<\operatorname{Re}s<1\).
