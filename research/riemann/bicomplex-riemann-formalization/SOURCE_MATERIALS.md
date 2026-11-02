@@ -33,3 +33,14 @@ Representative originators, standards bodies, data custodians, and primary mater
 | Hunga Tonga plume | [Carr et al. (2022), GRL, DOI 10.1029/2022GL098131](https://doi.org/10.1029/2022GL098131); [Toohey et al. (2022), Science, DOI 10.1126/science.abo4076](https://doi.org/10.1126/science.abo4076) | Satellite observations of plume-top heights around 55–57 km | Peak altitude does not establish a (t^{0.7}) mass or height law. |
 | Finance and long memory | [Lo (1991), *Long-Term Memory in Stock Market Prices*](https://doi.org/10.2307/293836); [Federal Reserve IFDP 956](https://www.federalreserve.gov/pubs/ifdp/2008/956/ifdp956.htm) | Modified R/S testing and evidence that raw return series need not show widespread long memory | Hurst estimates depend on series and method; no automatic bubble/crash interpretation. |
 | Blast pressure phases | [U.S. DoD, Munitions Safety Information Analysis Center, fuel/air explosives overview](https://www.msiac.nato.int/publication/l-165-volumetric-explosives-part-1-fuel-air-explosives/) | Distinctions in fuel-air combustion and transitions between regimes | Does not imply a universal (t^{0.7}) front law or bicomplex cancellation. |
+
+
+## Off-line zeros in related zeta functions
+
+| Function | Source/result | Scope |
+|---|---|---|
+| Davenport–Heilbronn mod-5 function | [Davenport–Heilbronn (1936)](https://doi.org/10.1112/jlms/s1-11.4.307); [Voronin strip lower bound summary](https://www.mathnet.ru/php/archive.phtml?jrnid=cheb&option_lang=eng&paperid=604); [Balanzario–Sánchez-Ortiz numerical zeros](https://doi.org/10.1090/S0025-5718-07-01999-0) | Infinitely many off-line zeros for this distinct function; numerical lists are not a complete infinite inventory. |
+| Epstein zeta for positive-definite binary forms with class number greater than one | [Laurinčikas, zeros of Epstein zeta functions](https://doi.org/10.1515/forum-2012-0057) | Infinitely many off-line zeros for applicable forms; no transfer to Riemann \\(\\zeta\\). |
+| Symmetry and zero counts | [NIST DLMF §25.10](https://dlmf.nist.gov/25.10) | Functional equation and conjugation yield reflected zero orbits; the midpoint is not asserted to be a zero. |
+
+See the detailed [off-line zero-count and symmetry audit](OFF_LINE_ZERO_COUNTS_AND_SYMMETRY.md).
