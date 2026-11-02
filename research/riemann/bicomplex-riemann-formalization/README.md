@@ -14,6 +14,7 @@ The identity `(1+k)(1-k)=0` follows algebraically from `k²=1`; it is a zero-div
 - [Applied bridge index](PUBLIC_BRIDGE_INDEX.md): maps items 7–15 to equations, methods, sources, and validation tasks.
 - [Scaling analogy audit](SCALING_ANALOGY_AUDIT.md): derives the proposed (x^{0.2}) bridge and audits physical examples, evidence, and limits.
 - [RH conditional and spectral bridges](RH_CONDITIONAL_SPECTRAL_BRIDGES.md): states conditional RH consequences, the exact bicomplex implication, zero symmetries, Euler-product limits, and Hilbert–Pólya proof obligations.
+- [Two-locks audit](TWO_LOCKS_AUDIT.md): audits Euler-product claims, the bicomplex zero divisor, numerical points, Mellin integrals, derivative claims, and proposed physical analogies.
 - [Formula catalog](FORMULA_CATALOG.md), [claim ledger](CLAIMS.md), and [formal file guide](FORMAL_FILE_GUIDE.md).
 - [Proof status](FORMAL_PROOF_STATUS.md) and [CSV status register](FORMAL_PROOF_STATUS.csv).
 - [Open bridge registry](OPEN_BRIDGE_REGISTRY.csv) and [classical RH registry](CLASSICAL_RH_REGISTRY.csv).
