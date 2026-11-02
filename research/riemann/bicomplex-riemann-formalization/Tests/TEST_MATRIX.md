@@ -17,8 +17,9 @@
 | N2 | The Euler product reproduces zeta in its absolute-convergence half-plane. | `test_euler_product_matches_zeta_only_in_its_convergence_region` | Finite-prime approximation at `s=2+3i`; it deliberately makes no claim in `0<Re(s)<1`. |
 | N3 | Davenport–Heilbronn has a known zero near `0.8085171824566374+85.69934848537759i`. | `test_davenport_heilbronn_off_line_zero_reproduces` | Reproduces the location under several truncations with SciPy double precision. This is not a rigorous zero-isolation certificate. The theorem-level off-line-zero result is established in the cited literature. |
 | N4 | The completed Davenport–Heilbronn combination has a Riemann-type functional equation. | `test_davenport_heilbronn_completed_functional_equation` | Numerical consistency check for the specified normalization. |
-| N5 | `G(s)=zeta(s)+zeta(s+1)` has a zero near `0.0988845032321+14.153479151268i`. | `test_shifted_zeta_sum_off_line_zero_reproduces` | Numerical root reproduction at multiple truncations. A rigorous claim would still need interval isolation and a zero-count certificate. |
-| N6 | The same-height reflection `1-rho` is not generally a zero of this shifted sum. | `test_shifted_sum_does_not_have_the_claimed_reflection_pair` | At the reproduced root, the residual at `1-rho` is nonzero while the conjugate residual is small. No arithmetic mean of unrelated zeros is used. |
+| N5 | Reflection and conjugation produce the Davenport–Heilbronn zero quartet. | `test_davenport_heilbronn_zero_has_the_expected_quartet` | Checks the four residuals numerically at the known root and its symmetry partners. |
+| N6 | `G(s)=zeta(s)+zeta(s+1)` has a zero near `0.0988845032321+14.153479151268i`. | `test_shifted_zeta_sum_off_line_zero_reproduces` | Numerical root reproduction at multiple truncations. A rigorous claim would still need interval isolation and a zero-count certificate. |
+| N7 | The same-height reflection `1-rho` is not generally a zero of this shifted sum. | `test_shifted_sum_does_not_have_the_claimed_reflection_pair` | At the reproduced root, the residual at `1-rho` is nonzero while the conjugate residual is small. No arithmetic mean of unrelated zeros is used. |
 
 ## Not certified by this suite
 
