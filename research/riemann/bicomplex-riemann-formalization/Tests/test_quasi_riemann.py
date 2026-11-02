@@ -7,12 +7,10 @@ are tested separately from numerical observations.
 
 from __future__ import annotations
 
-import cmath
 import math
 import unittest
 from fractions import Fraction
 
-import numpy as np
 from scipy.optimize import root
 from scipy.special import bernoulli, gamma
 
