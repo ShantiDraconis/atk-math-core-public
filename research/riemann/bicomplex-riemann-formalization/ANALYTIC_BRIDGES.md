@@ -41,7 +41,7 @@ See [RH conditional and spectral bridge theorem skeleton](RH_CONDITIONAL_SPECTRA
 
 ## Unconditional theorem inventory
 
-The exact distinction between classical unconditional theorems, RH-conditional consequences, finite-height computations, and unrelated-function countermodels is recorded in [UNCONDITIONAL_ZETA_THEOREM_LEDGER.md](UNCONDITIONAL_ZETA_THEOREM_LEDGER.md). In particular, no result from Davenport–Heilbronn, Epstein zeta, or a modified sum is an off-line zero of classical Riemann \\(\\zeta\\).
+The exact distinction between classical unconditional theorems, RH-conditional consequences, finite-height computations, and unrelated-function countermodels is recorded in [UNCONDITIONAL_ZETA_THEOREM_LEDGER.md](UNCONDITIONAL_ZETA_THEOREM_LEDGER.md). In particular, no result from Davenport–Heilbronn, Epstein zeta, or a modified sum is an off-line zero of classical Riemann \(\zeta\).
 
 ## Scope boundary
 
