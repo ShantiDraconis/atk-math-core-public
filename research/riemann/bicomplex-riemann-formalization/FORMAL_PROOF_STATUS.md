@@ -29,7 +29,7 @@ verification status is `WRITTEN_UNCHECKED`, not `KERNEL_VERIFIED`.
 
 ## Unconditional zeta facts versus this package
 
-The unconditional classical facts relevant to the bridge chain—Euler-product zero-freeness for \\(\\operatorname{Re}s>1\\), functional-equation symmetry, the Riemann–von Mangoldt total count, Hardy's infinitude theorem, and rigorous finite-height verification—are cataloged with scopes and sources in [UNCONDITIONAL_ZETA_THEOREM_LEDGER.md](UNCONDITIONAL_ZETA_THEOREM_LEDGER.md). These classical analytic results are not declarations proved by this Lean package.
+The unconditional classical facts relevant to the bridge chain—Euler-product zero-freeness for \(\operatorname{Re}s>1\), functional-equation symmetry, the Riemann–von Mangoldt total count, Hardy's infinitude theorem, and rigorous finite-height verification—are cataloged with scopes and sources in [UNCONDITIONAL_ZETA_THEOREM_LEDGER.md](UNCONDITIONAL_ZETA_THEOREM_LEDGER.md). These classical analytic results are not declarations proved by this Lean package.
 
 ## Still open
 
