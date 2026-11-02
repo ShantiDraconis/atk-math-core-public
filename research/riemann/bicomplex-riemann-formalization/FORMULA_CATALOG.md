@@ -398,19 +398,23 @@ Since the proven lower bound is \(\Lambda\ge0\), this is equivalently
 \(\mathrm{RH}\Longleftrightarrow\Lambda=0\). This equivalence identifies
 another target; it does not prove \(\Lambda=0\).
 
-## 4. Off-line zeros in related functions
+## 4. Unconditional theorem ledger
+
+See [unconditional zeta theorem ledger](UNCONDITIONAL_ZETA_THEOREM_LEDGER.md) for proof sketches and status of the unconditional facts, finite verification, conditional consequences, and open RH statement.
+
+## 5. Off-line zeros in related functions
 
 See [off-line zero counts and symmetry](OFF_LINE_ZERO_COUNTS_AND_SYMMETRY.md) for the precise Davenport–Heilbronn/Voronin and Epstein counting statements and the proof that a pair's midpoint on the symmetry line is not thereby a zero.
 
-## 5. Audit of the two proposed RH locks
+## 6. Audit of the two proposed RH locks
 
 See [two-locks audit](TWO_LOCKS_AUDIT.md) for the corrected calculations at \(0.7+14i\), the Mellin integral domain, exponent derivatives, the \(\kappa\) coefficient in Davenport–Heilbronn, and the exact standard needed to refute RH.
 
-## 6. Conditional and spectral bridge theorem map
+## 7. Conditional and spectral bridge theorem map
 
 See [RH conditional and spectral bridges](RH_CONDITIONAL_SPECTRAL_BRIDGES.md) for the proof skeletons and precise status of the von Koch/Cramér prime bounds, Lindelöf implication, weak Mertens equivalence, the full component-lift (b=0) implication under RH, zero symmetry orbits, Euler-product scope, and Hilbert–Pólya/Berry–Keating. These classical analytic results are not formalized by the Lean source in this package.
 
-## 7. Formula status
+## 8. Formula status
 
 | Status | Meaning |
 |---|---|
