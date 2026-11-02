@@ -35,6 +35,10 @@ The four-point statement is represented in centered coordinates by reflection
 set supplied with both closure assumptions. A symmetry orbit does not imply
 `x=0`; the critical-line conclusion requires additional mathematics.
 
+## Conditional consequence and spectral audit
+
+See [RH conditional and spectral bridge theorem skeleton](RH_CONDITIONAL_SPECTRAL_BRIDGES.md) for the exact bicomplex conditional (b=0) lemma, zero-orbit logic, Euler-product limits, classical RH consequences, and the Hilbert–Pólya/Berry–Keating implication with its missing construction. RH does not itself supply a meaningful spectral operator; the exact exhaustive spectral correspondence is the open producer.
+
 ## Scope boundary
 
 The finite algebraic and conditional Lean files are separated from the open
