@@ -31,3 +31,8 @@ The identity `(1+k)(1-k)=0` follows algebraically from `k²=1`; it is a zero-div
 | Analytic and classical routes | `ANALYTIC_BRIDGES.md`, `CLASSICAL_RH_BRIDGES.md`, `RH_CONDITIONAL_SPECTRAL_BRIDGES.md` | Conditional consequences and open obligations, not a completed RH proof |
 
 A passing [Lean workflow](../../../.github/workflows/riemann-bridge-formalization.yml) can certify the declarations compiled under the pinned toolchain and passed the configured axiom audit. It does not certify unformalized prose, empirical interpretations, or RH. Every entry marked `WRITTEN_UNCHECKED` remains unchecked until a successful run covers the exact commit.
+
+
+## Reproducibility tests
+
+The [quasi-Riemann test suite](Tests/README.md) separates exact structural checks from floating-point reproductions. Its root checks are exploratory and are not rigorous zero-isolation certificates. See the [test matrix](Tests/TEST_MATRIX.md) for scope, limitations, and references.
