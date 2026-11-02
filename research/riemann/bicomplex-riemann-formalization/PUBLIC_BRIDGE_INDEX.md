@@ -4,15 +4,15 @@ Maps the nine application areas to their laws, shared analysis methods, source p
 
 | Item | Applied analysis | Standard model | Producers and source materials |
 |---:|---|---|---|
-| 7 | [BZ chemistry](CROSS_DOMAIN_ANALYSIS.md#7-belousovzhabotinsky-bz-chemistry) | FKN/Oregonator kinetics, limit cycles | [Zhabotinsky; Field–Körös–Noyes](SOURCE_MATERIALS.md#bz-chemistry) |
-| 8 | [SIR epidemic](CROSS_DOMAIN_ANALYSIS.md#8-sir-epidemics) | SIR/SEIR, next-generation matrix | [Kermack–McKendrick; CDC](SOURCE_MATERIALS.md#sir-epidemics) |
-| 9 | [Room acoustics](CROSS_DOMAIN_ANALYSIS.md#9-room-acoustics-and-echo) | Wave equation, modes, RT60 | [Sabine; York OpenAIR](SOURCE_MATERIALS.md#room-acoustics) |
-| 10 | [Laser](CROSS_DOMAIN_ANALYSIS.md#10-laser-modes) | Stimulated emission, cavity threshold | [Einstein; Maiman](SOURCE_MATERIALS.md#laser) |
-| 11 | [Seismic/fault](CROSS_DOMAIN_ANALYSIS.md#11-seismic-waves-and-faults) | Elastic waves, interface conditions | [USGS; EarthScope/IRIS](SOURCE_MATERIALS.md#seismology) |
-| 12 | [EEG](CROSS_DOMAIN_ANALYSIS.md#12-eeg-alpha-seizure-and-sleep) | Signal analysis, ILAE/AASM criteria | [ILAE; AASM; PhysioNet](SOURCE_MATERIALS.md#eegsleepseizure) |
-| 13 | [Aeroelastic flutter](CROSS_DOMAIN_ANALYSIS.md#13-aeroelastic-flutter) | Coupled structural/aero eigenproblem | [Theodorsen/NACA/NASA; FAA](SOURCE_MATERIALS.md#aeroelastic-flutter) |
-| 14 | [Finance](CROSS_DOMAIN_ANALYSIS.md#14-finance-leverage-bubbles-and-crashes) | Balance sheets, Minsky regimes, stress data | [Minsky; FCIC; Fed/OFR](SOURCE_MATERIALS.md#finance) |
-| 15 | [Social diffusion](CROSS_DOMAIN_ANALYSIS.md#15-online-diffusion) | Network cascade/complex contagion | [Centola; Goel et al.](SOURCE_MATERIALS.md#social-diffusion) |
+| 7 | [BZ chemistry](CROSS_DOMAIN_ANALYSIS.md#7-belousovzhabotinsky-bz-chemistry) | FKN/Oregonator kinetics, limit cycles | [Zhabotinsky; Field–Körös–Noyes](SOURCE_MATERIALS.md) |
+| 8 | [SIR epidemic](CROSS_DOMAIN_ANALYSIS.md#8-sir-epidemics) | SIR/SEIR, next-generation matrix | [Kermack–McKendrick; CDC](SOURCE_MATERIALS.md) |
+| 9 | [Room acoustics](CROSS_DOMAIN_ANALYSIS.md#9-room-acoustics-and-echo) | Wave equation, modes, RT60 | [Sabine; York OpenAIR](SOURCE_MATERIALS.md) |
+| 10 | [Laser](CROSS_DOMAIN_ANALYSIS.md#10-laser-modes) | Stimulated emission, cavity threshold | [Einstein; Maiman](SOURCE_MATERIALS.md) |
+| 11 | [Seismic/fault](CROSS_DOMAIN_ANALYSIS.md#11-seismic-waves-and-faults) | Elastic waves, interface conditions | [USGS; EarthScope/IRIS](SOURCE_MATERIALS.md) |
+| 12 | [EEG](CROSS_DOMAIN_ANALYSIS.md#12-eeg-alpha-seizure-and-sleep) | Signal analysis, ILAE/AASM criteria | [ILAE; AASM; PhysioNet](SOURCE_MATERIALS.md) |
+| 13 | [Aeroelastic flutter](CROSS_DOMAIN_ANALYSIS.md#13-aeroelastic-flutter) | Coupled structural/aero eigenproblem | [Theodorsen/NACA/NASA; FAA](SOURCE_MATERIALS.md) |
+| 14 | [Finance](CROSS_DOMAIN_ANALYSIS.md#14-finance-leverage-bubbles-and-crashes) | Balance sheets, Minsky regimes, stress data | [Minsky; FCIC; Fed/OFR](SOURCE_MATERIALS.md) |
+| 15 | [Social diffusion](CROSS_DOMAIN_ANALYSIS.md#15-online-diffusion) | Network cascade/complex contagion | [Centola; Goel et al.](SOURCE_MATERIALS.md) |
 
 ## Cross-domain method links
 
