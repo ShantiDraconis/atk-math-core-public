@@ -73,7 +73,7 @@ This is an unconditional total-zero count. It does not say how many lie on the l
 
 ### U5. Infinitely many zeros on the critical line
 
-Hardy's theorem proves unconditionally that \(\zeta(1/2+it)\) has infinitely many zeros for real \(t\). Stronger unconditional results prove a positive proportion of zeros lie on the line. Neither result says that all nontrivial zeros lie there.
+Hardy's theorem proves unconditionally that \(\zeta(1/2+it)\) has infinitely many zeros for real \(t\). Selberg proved a positive proportion; Conrey (1989) proved more than two fifths (later summaries state 40.77%). A September 2026 arXiv preprint by Youness Lamzouri claims an unconditional bound greater than 67.25% of nontrivial zeros that are simple and on the line. This is a preprint claim, not an all-zeros theorem. Even if accepted, the remaining zeros may also lie on the line with multiplicity. None of these proportions proves RH.
 
 ### U6. Rigorous finite-height verification
 
@@ -81,7 +81,7 @@ Platt and Trudgian used interval arithmetic to verify that every nontrivial zero
 \[
 0<\operatorname{Im}\rho\le3\times10^{12}
 \]
-has \(\operatorname{Re}\rho=1/2\), and that the zeros in that range are simple. This is a rigorous finite-height theorem/computation. It does not cover arbitrary height and therefore does not prove RH. Quoting a count such as “the first \(10^{13}\) zeros” should be accompanied by the precise height and certification source.
+has \(\operatorname{Re}\rho=1/2\), and that the zeros in that range are simple. This is a rigorous finite-height theorem/computation. It does not cover arbitrary height and therefore does not prove RH. Gourdon (2004) reported computation of the first \(10^{13}\) zeros, but later literature notes that this computation was not independently certified. State whether a claim is a computation or a rigorous interval-arithmetic verification, and give the height/count precisely.
 
 ## B. RH-conditional theorems
 
@@ -159,7 +159,9 @@ The next genuine formal producer would be a complete analytic development of a c
 ## References
 
 - NIST DLMF, [zeta zeros and symmetries](https://dlmf.nist.gov/25.10), [definition/Euler product](https://dlmf.nist.gov/25.2), and [zero-counting/explicit-formula material](https://dlmf.nist.gov/25.16).
-- A. Platt and T. Trudgian, [The Riemann hypothesis is true up to \(3\cdot10^{12}\)](https://doi.org/10.1112/blms.12460), *Bulletin of the London Mathematical Society* (2021).
+- A. Platt and T. Trudgian, [The Riemann hypothesis is true up to \(3\cdot10^{12}\)](https://doi.org/10.1112/blms.12460), *Bulletin of the London Mathematical Society* (2021), rigorous interval-arithmetic verification.
+- J. B. Conrey, [More than two fifths of the zeros of the Riemann zeta function are on the critical line](https://eudml.org/doc/153151), 1989.
+- Y. Lamzouri, [A new proof that more than two thirds of the zeros are simple and on the critical line](https://arxiv.org/abs/2609.02882), arXiv preprint posted 2 September 2026; claims a bound above 67.25%.
 - Hardy's theorem and proof context: [A note on Hardy's theorem](https://hrj.episciences.org/2634).
 - Davenport–Heilbronn/Voronin count and symmetry examples: [Gritsenko's survey/result record](https://www.mathnet.ru/php/archive.phtml?jrnid=cheb&option_lang=eng&paperid=604).
 - Epstein zero counts: [Laurinčikas, On the zeros of Epstein zeta functions](https://doi.org/10.1515/forum-2012-0057).
