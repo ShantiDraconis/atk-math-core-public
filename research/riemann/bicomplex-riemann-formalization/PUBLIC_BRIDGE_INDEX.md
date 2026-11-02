@@ -20,7 +20,7 @@ See [scaling analogies, superdiffusion, and blast-wave audit](SCALING_ANALOGY_AU
 
 ## Audit of the two proposed RH locks
 
-See [two-locks audit](TWO_LOCKS_AUDIT.md) for the distinction between Euler-product zero-freeness in \\(\\operatorname{Re}s>1\\), the bicomplex zero-divisor identity, the Davenport–Heilbronn function, the Mellin integral's domain, and an actual certified off-line zeta zero.
+See [two-locks audit](TWO_LOCKS_AUDIT.md) for the distinction between Euler-product zero-freeness in \(\operatorname{Re}s>1\), the bicomplex zero-divisor identity, the Davenport–Heilbronn function, the Mellin integral's domain, and an actual certified off-line zeta zero.
 
 ## RH-conditional and spectral bridge
 
