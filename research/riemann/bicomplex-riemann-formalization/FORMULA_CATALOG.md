@@ -400,7 +400,7 @@ another target; it does not prove \(\Lambda=0\).
 
 ## 4. Audit of the two proposed RH locks
 
-See [two-locks audit](TWO_LOCKS_AUDIT.md) for the corrected calculations at \\(0.7+14i\\), the Mellin integral domain, exponent derivatives, the \\(\\kappa\\) coefficient in Davenport–Heilbronn, and the exact standard needed to refute RH.
+See [two-locks audit](TWO_LOCKS_AUDIT.md) for the corrected calculations at \(0.7+14i\), the Mellin integral domain, exponent derivatives, the \(\kappa\) coefficient in Davenport–Heilbronn, and the exact standard needed to refute RH.
 
 ## 5. Conditional and spectral bridge theorem map
 
