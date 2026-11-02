@@ -14,6 +14,10 @@ Maps the nine application areas to their laws, shared analysis methods, source p
 | 14 | [Finance](CROSS_DOMAIN_ANALYSIS.md#14-finance-leverage-bubbles-and-crashes) | Balance sheets, Minsky regimes, stress data | [Minsky; FCIC; Fed/OFR](SOURCE_MATERIALS.md) |
 | 15 | [Social diffusion](CROSS_DOMAIN_ANALYSIS.md#15-online-diffusion) | Network cascade/complex contagion | [Centola; Goel et al.](SOURCE_MATERIALS.md) |
 
+## Scaling-exponent audit
+
+See [scaling analogies, superdiffusion, and blast-wave audit](SCALING_ANALOGY_AUDIT.md) for the derivations of the (x^{0.2}) factor, fBm/Lévy distinctions, conditional Sedov–Taylor and Chevalier exponents, and the claim-by-claim evidence verdict. Matching exponents are labeled model analogies unless a defined transform or data-supported causal bridge is established.
+
 ## Cross-domain method links
 
 - **Eigenvalue stability:** BZ, SIR, laser, EEG signal models, flutter; only after defining state, units, equilibrium and sign convention.
