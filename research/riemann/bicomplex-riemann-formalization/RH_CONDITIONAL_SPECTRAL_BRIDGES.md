@@ -10,7 +10,7 @@ This note develops the strongest legitimate bridges in the recovered chain. It d
 - **OPEN BRIDGE**: the theorem schema is clear, but its analytic/spectral construction is missing.
 - **FALSE INFERENCE**: does not follow from the preceding equations.
 
-See also the [formula catalog](FORMULA_CATALOG.md), [analytic bridge register](ANALYTIC_BRIDGES.md), [exact bridge obligations](FORMAL_BRIDGE_CONTRACTS.md), and [scaling analogy audit](SCALING_ANALOGY_AUDIT.md).
+See also the [formula catalog](FORMULA_CATALOG.md), [analytic bridge register](ANALYTIC_BRIDGES.md), [exact bridge obligations](FORMAL_BRIDGE_CONTRACTS.md), [scaling analogy audit](SCALING_ANALOGY_AUDIT.md), and [two-locks audit](TWO_LOCKS_AUDIT.md).
 
 ## 1. The conditional bicomplex statement that really follows
 
