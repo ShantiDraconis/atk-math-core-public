@@ -20,3 +20,16 @@ Representative originators, standards bodies, data custodians, and primary mater
 - Separate theory authors from later reviewers, data collectors, and dataset curators.
 - Do not publish personal/clinical records, restricted platform data, or copyrighted material without authorization.
 - Historical sources can document what happened; they do not automatically validate a new model.
+
+
+## Additional scaling references for the (x^{0.2}) audit
+
+| Topic | Primary or authoritative source | What it supports | Limit |
+|---|---|---|---|
+| Fractional Brownian motion | [Mandelbrot & Van Ness (1968), *Fractional Brownian Motions, Fractional Noises and Applications*](https://doi.org/10.1137/1010093) | Self-affinity and long-range dependence model for fBm | Does not identify a physical dataset with (H=0.7). |
+| Sedov–Taylor similarity | [Sedov–Taylor dimensional scaling overview](https://link.springer.com/chapter/10.1007/978-3-031-45473-8_4); [Taylor cylindrical shock paper record](https://cir.nii.ac.jp/crid/1362544420179438976) | (Rpropto t^{2/(d+2)}) for uniform-density energy-conserving idealized blasts, with geometry-specific cases | Actual explosions may violate energy-conserving similarity assumptions. |
+| Supernova ejecta/wind interaction | [Chevalier (1982), DOI 10.1086/160126](https://doi.org/10.1086/160126) | Self-similar interaction of power-law ejecta with an external medium | A model family; object-specific exponents require measurements and stage identification. |
+| Denali rupture | [Dreger et al. (2004), GRL, DOI 10.1029/2003GL018333](https://doi.org/10.1029/2003GL018333); [USGS: Denali high-frequency rupture analysis](https://www.usgs.gov/publications/rupture-process-m-79-denali-fault-alaska-earthquake-subevents-directivity-and-scaling) | Model-dependent rupture-velocity estimates, including a supershear segment in one analysis | Does not support a universal moment-time exponent (2.1). |
+| Hunga Tonga plume | [Carr et al. (2022), GRL, DOI 10.1029/2022GL098131](https://doi.org/10.1029/2022GL098131); [Toohey et al. (2022), Science, DOI 10.1126/science.abo4076](https://doi.org/10.1126/science.abo4076) | Satellite observations of plume-top heights around 55–57 km | Peak altitude does not establish a (t^{0.7}) mass or height law. |
+| Finance and long memory | [Lo (1991), *Long-Term Memory in Stock Market Prices*](https://doi.org/10.2307/293836); [Federal Reserve IFDP 956](https://www.federalreserve.gov/pubs/ifdp/2008/956/ifdp956.htm) | Modified R/S testing and evidence that raw return series need not show widespread long memory | Hurst estimates depend on series and method; no automatic bubble/crash interpretation. |
+| Blast pressure phases | [U.S. DoD, Munitions Safety Information Analysis Center, fuel/air explosives overview](https://www.msiac.nato.int/publication/l-165-volumetric-explosives-part-1-fuel-air-explosives/) | Distinctions in fuel-air combustion and transitions between regimes | Does not imply a universal (t^{0.7}) front law or bicomplex cancellation. |
