@@ -208,6 +208,12 @@ class NumericalReproductionTests(unittest.TestCase):
         rhs = completed_davenport_heilbronn(1 - s, 300)
         self.assertLess(abs(lhs - rhs) / max(1.0, abs(lhs)), 2e-9)
 
+    def test_davenport_heilbronn_zero_has_the_expected_quartet(self) -> None:
+        rho = 0.8085171824566374 + 85.69934848537759j
+        orbit = (rho, 1 - rho, rho.conjugate(), 1 - rho.conjugate())
+        residuals = [abs(davenport_heilbronn(point, 300)) for point in orbit]
+        self.assertTrue(all(residual < 1e-8 for residual in residuals), residuals)
+
     def test_shifted_zeta_sum_off_line_zero_reproduces(self) -> None:
         shifted_sum = lambda s, n: zeta_em(s, n) + zeta_em(s + 1, n)
         expected = 0.0988845032321 + 14.153479151268j
