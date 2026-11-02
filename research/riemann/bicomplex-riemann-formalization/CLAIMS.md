@@ -33,6 +33,12 @@
 | Functional-equation symmetry makes two off-line zeros “average into” a zero on the line | False | The midpoint has real part 1/2 arithmetically; zerohood of the midpoint does not follow. |
 | The finite list of computed Davenport–Heilbronn zeros is the complete off-line zero set | False | The set is infinite; a numerical inventory can only be exhaustive up to a certified finite height. |
 | Breaking a function's functional equation creates zeros at prescribed real parts | Not established | No zero follows from breaking symmetry alone; any candidate requires a specified function and certified complex zero. |
+| “Unconditionally RH cannot be refuted” | False statement of current knowledge | RH is open; a rigorously certified off-line zero of classical \\($\\zeta\\) would refute it. See `UNCONDITIONAL_ZETA_THEOREM_LEDGER.md`. |
+| The Euler product and functional equation unconditionally prove all zeros lie on the line | False | They prove zero-freeness in stated regions and reflection symmetry; the universal line-location assertion is RH. |
+| The first \\(10^{13}\\) zeros or every zero up to height \\(3\\cdot10^{12}\\) prove RH | False | These are finite-height verifications; they do not quantify over all heights. |
+| Breaking Euler/functional-equation assumptions conditionally refutes RH | False | It gives a counterexample to a broader theorem about other functions, not a counterexample to classical zeta RH. |
+| The proposed sum \\(G(s)=\\zeta(s)+\\zeta(s+1)\\) has an infinite zero family with real-part average 0.1205 | Not established | Two real parts do not specify complex zeros; no certified roots/count theorem was supplied, and G is a different meromorphic function. |
+| The formal Lean package proves the classical unconditional zeta lemmas | False | It proves algebraic and generic bridge statements only; the analytic definitions and classical theorem producers are not included. |
 | A finite prime-counting error at `x=10^12` refutes an RH asymptotic bound | False | A finite value cannot contradict an asymptotic O-bound with an unspecified constant. |
 | RH-conditional consequences listed in `RH_CONDITIONAL_SPECTRAL_BRIDGES.md` are formalized in Lean | False | They are classical theorems summarized in documentation; the current Lean package has no analytic definition of `ζ`/`ξ` or these estimates. |
 | The current algebraic and conditional theorem terms are kernel-verified | Not verified | Lean/Lake are unavailable in this environment; see `FORMAL_PROOF_STATUS.md` |
