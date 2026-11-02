@@ -10,7 +10,8 @@ The identity `(1+k)(1-k)=0` follows algebraically from `k²=1`; it is a zero-div
 
 ## Navigation
 
-- [Public bridge index](PUBLIC_BRIDGE_INDEX.md): items 7–15 and classical analytic routes linked to their files and obligations.
+- [Applied systems analysis](CROSS_DOMAIN_ANALYSIS.md), [source materials](SOURCE_MATERIALS.md), and [validation protocols](VALIDATION_PROTOCOLS.md): domain laws, cross-domain methods, authors/data producers, and falsifiable criteria, separate from RH claims.
+- [Applied bridge index](PUBLIC_BRIDGE_INDEX.md): maps items 7–15 to equations, methods, sources, and validation tasks.
 - [Formula catalog](FORMULA_CATALOG.md), [claim ledger](CLAIMS.md), and [formal file guide](FORMAL_FILE_GUIDE.md).
 - [Proof status](FORMAL_PROOF_STATUS.md) and [CSV status register](FORMAL_PROOF_STATUS.csv).
 - [Open bridge registry](OPEN_BRIDGE_REGISTRY.csv) and [classical RH registry](CLASSICAL_RH_REGISTRY.csv).
