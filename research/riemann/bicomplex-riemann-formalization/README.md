@@ -13,6 +13,7 @@ The identity `(1+k)(1-k)=0` follows algebraically from `k²=1`; it is a zero-div
 - [Applied systems analysis](CROSS_DOMAIN_ANALYSIS.md), [source materials](SOURCE_MATERIALS.md), and [validation protocols](VALIDATION_PROTOCOLS.md): domain laws, cross-domain methods, authors/data producers, and falsifiable criteria, separate from RH claims.
 - [Applied bridge index](PUBLIC_BRIDGE_INDEX.md): maps items 7–15 to equations, methods, sources, and validation tasks.
 - [Scaling analogy audit](SCALING_ANALOGY_AUDIT.md): derives the proposed (x^{0.2}) bridge and audits physical examples, evidence, and limits.
+- [RH conditional and spectral bridges](RH_CONDITIONAL_SPECTRAL_BRIDGES.md): states conditional RH consequences, the exact bicomplex implication, zero symmetries, Euler-product limits, and Hilbert–Pólya proof obligations.
 - [Formula catalog](FORMULA_CATALOG.md), [claim ledger](CLAIMS.md), and [formal file guide](FORMAL_FILE_GUIDE.md).
 - [Proof status](FORMAL_PROOF_STATUS.md) and [CSV status register](FORMAL_PROOF_STATUS.csv).
 - [Open bridge registry](OPEN_BRIDGE_REGISTRY.csv) and [classical RH registry](CLASSICAL_RH_REGISTRY.csv).
@@ -24,6 +25,6 @@ The identity `(1+k)(1-k)=0` follows algebraically from `k²=1`; it is a zero-div
 | Shift/application coordinates | `Formal/ShiftModel.lean`, `Formal/ApplicationBridges.lean` | Exact coordinate arithmetic only |
 | Symmetry/transfer contracts | `Formal/CenteredSymmetry.lean`, `Formal/BridgeContracts.lean`, `Formal/AnalyticBridgeContracts.lean` | Conditional results; no zeta instance |
 | Explicit-formula scaling | `Formal/ExplicitFormulaScaling.lean` | Abstract exponent bookkeeping, not the analytic explicit formula |
-| Analytic and classical routes | `ANALYTIC_BRIDGES.md`, `CLASSICAL_RH_BRIDGES.md` | Open obligations, not completed proofs |
+| Analytic and classical routes | `ANALYTIC_BRIDGES.md`, `CLASSICAL_RH_BRIDGES.md`, `RH_CONDITIONAL_SPECTRAL_BRIDGES.md` | Conditional consequences and open obligations, not a completed RH proof |
 
 A passing [Lean workflow](../../../.github/workflows/riemann-bridge-formalization.yml) can certify the declarations compiled under the pinned toolchain and passed the configured axiom audit. It does not certify unformalized prose, empirical interpretations, or RH. Every entry marked `WRITTEN_UNCHECKED` remains unchecked until a successful run covers the exact commit.
