@@ -16,6 +16,7 @@ The identity `(1+k)(1-k)=0` follows algebraically from `k²=1`; it is a zero-div
 - [RH conditional and spectral bridges](RH_CONDITIONAL_SPECTRAL_BRIDGES.md): states conditional RH consequences, the exact bicomplex implication, zero symmetries, Euler-product limits, and Hilbert–Pólya proof obligations.
 - [Two-locks audit](TWO_LOCKS_AUDIT.md): audits Euler-product claims, the bicomplex zero divisor, numerical points, Mellin integrals, derivative claims, and proposed physical analogies.
 - [Off-line zero counts and symmetry](OFF_LINE_ZERO_COUNTS_AND_SYMMETRY.md): records the infinite off-line zero results for Davenport–Heilbronn/Epstein, the symmetry orbit, and why paired-zero averages are not zeros.
+- [Unconditional zeta theorem ledger](UNCONDITIONAL_ZETA_THEOREM_LEDGER.md): separates unconditional zeta theorems, RH-conditional consequences, finite-height verification, and countermodels from different functions.
 - [Formula catalog](FORMULA_CATALOG.md), [claim ledger](CLAIMS.md), and [formal file guide](FORMAL_FILE_GUIDE.md).
 - [Proof status](FORMAL_PROOF_STATUS.md) and [CSV status register](FORMAL_PROOF_STATUS.csv).
 - [Open bridge registry](OPEN_BRIDGE_REGISTRY.csv) and [classical RH registry](CLASSICAL_RH_REGISTRY.csv).
