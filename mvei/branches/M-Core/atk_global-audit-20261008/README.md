@@ -5,7 +5,7 @@ Lean sources from the branch `atk/global-audit-20261008` of the private reposito
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 12 — closed 12, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 14 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `820a7f68e1c46268973028bffb7957a3ea5d0167d598b63e6690eed2ce1e64fd`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_global-audit-20261008/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `2b24ad3f6a94c147b5b5fdaa66c83723980066f472f5fa97c87fc1386377dff6`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_global-audit-20261008/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

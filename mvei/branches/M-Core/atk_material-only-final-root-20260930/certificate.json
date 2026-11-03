@@ -288,7 +288,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-30T16:50:26+00:00",
+  "generated_at": "2026-11-03T08:19:01+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -473,6 +473,6 @@
   "lean/MCore/FinalFail/SemanticParallel.lean": "3fcf6ca711dd35f2f46235df26768b752042787b5f7bed7d92b3293f39a283bd",
   "lean/MCore/FinalFail/SevenLocalNuclei.lean": "79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d"
  },
- "published_at": "2026-11-02T20:55:49Z",
- "certificate_sha256": "e1a43b933feca56cab86237376005ce5c7f95fbca28d33fad9c223b7e81dcb4b"
+ "published_at": "2026-11-03T11:28:18Z",
+ "certificate_sha256": "08954e364b05e28804e1d752e03e2451174791ba902698adb50a84e5b2cd1b60"
 }

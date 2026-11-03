@@ -679,15 +679,16 @@
  open scoped ComplexConjugate
 --- a/atk-kernel/ATK/BaseWilsonMedida.lean
 +++ b/atk-kernel/ATK/BaseWilsonMedida.lean
-@@ -21,6 +21,8 @@
+@@ -20,6 +20,9 @@
+ import Mathlib.MeasureTheory.Constructions.Pi
  import Mathlib.MeasureTheory.Group.Measure
  import Mathlib.Analysis.SpecialFunctions.Exp
- 
-+noncomputable section
++import Mathlib.MeasureTheory.Integral.Bochner.Basic
 +
++noncomputable section
+ 
  open MeasureTheory
  open scoped ENNReal
- 
 --- a/atk-kernel/ATK/BealCompleto.lean
 +++ b/atk-kernel/ATK/BealCompleto.lean
 @@ -1,5 +1,7 @@
@@ -2255,6 +2256,17 @@
  /-!
  # ATK — I-Mathematics no kernel: os 15 certificados e a ponte com o `I` do ATK
  
+--- a/atk-kernel/ATK/IPortadores.lean
++++ b/atk-kernel/ATK/IPortadores.lean
+@@ -349,7 +349,7 @@
+ open Elem
+ 
+ def I : Elem := singularity .I
+-def J : Elem := singularity .J
++@[match_pattern] def J : Elem := singularity .J
+ 
+ def add : Elem → Elem → Elem
+   | real a, real b => real (a + b)
 --- a/atk-kernel/ATK/Indeterminacy.lean
 +++ b/atk-kernel/ATK/Indeterminacy.lean
 @@ -3,6 +3,11 @@

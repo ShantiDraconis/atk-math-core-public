@@ -18,7 +18,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-29T05:36:17+00:00",
+  "generated_at": "2026-11-03T08:19:01+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0",
    "leanprover/lean4:v4.34.1"
@@ -35,7 +35,7 @@
    "name": "ATK.CookLevinGen.Vals.H",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 181,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{E : Env R} {c₀ T H P Q : ℕ} (h : Vals ρ E c₀ T H P Q) : E (ρ.hb c₀) = H"
   },
@@ -43,7 +43,7 @@
    "name": "ATK.CookLevinGen.Vals.update_i",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 159,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{E : Env R} {c₀ T H P Q : ℕ} (h : Vals ρ E c₀ T H P Q) (hd : Dist ρ c₀) (i : ℕ) : Vals ρ (update E ρ.ri i) c₀ T H P Q where hT"
   },
@@ -51,7 +51,7 @@
    "name": "ATK.CookLevinGen.Vals.update_j",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 170,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{E : Env R} {c₀ T H P Q : ℕ} (h : Vals ρ E c₀ T H P Q) (hd : Dist ρ c₀) (j : ℕ) : Vals ρ (update E ρ.rj j) c₀ T H P Q where hT"
   },
@@ -59,7 +59,7 @@
    "name": "ATK.CookLevinGen.Vals.update_t",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 148,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{E : Env R} {c₀ T H P Q : ℕ} (h : Vals ρ E c₀ T H P Q) (hd : Dist ρ c₀) (t : ℕ) : Vals ρ (update E ρ.rt t) c₀ T H P Q where hT"
   },
@@ -67,7 +67,7 @@
    "name": "ATK.CookLevinGen.clas_conseqG",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 306,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{E : Env R} {c₀ T H P Q : ℕ} (h : Vals ρ E c₀ T H P Q) (hd : Dist ρ c₀) (hdc : A.d ≤ c₀) {t : ℕ} (ht : E ρ.rt = t) (pre : ClaT R K) (hpre : ∀ r ∈ pre.reads, r ≠ ρ.rj) (r : Cfg Γ Λ σ) (hlen : ∀ k, (r.stk k).length ≤ c₀) : (conseqG A ρ c₀ pre r).clas w E = (A.conseq H t r).map (pre.eval E ++ ·)"
   },
@@ -75,7 +75,7 @@
    "name": "ATK.CookLevinGen.clas_genA",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 249,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{E : Env R} {c₀ T H P Q : ℕ} (h : Vals ρ E c₀ T H P Q) (acc : Γ A.k₁) : (genA A ρ acc).clas w E = A.fA T acc"
   },
@@ -83,7 +83,7 @@
    "name": "ATK.CookLevinGen.clas_genE",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 186,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{E : Env R} {c₀ T H P Q : ℕ} (h : Vals ρ E c₀ T H P Q) (hd : Dist ρ c₀) : (genE A ρ c₀).clas w E = A.fE T H"
   },
@@ -91,7 +91,7 @@
    "name": "ATK.CookLevinGen.clas_genP",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 226,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{E : Env R} {c₀ T H P Q : ℕ} (h : Vals ρ E c₀ T H P Q) (hd : Dist ρ c₀) : (genP A ρ c₀).clas w E = A.fP T H"
   },
@@ -99,7 +99,7 @@
    "name": "ATK.CookLevinGen.clas_genR",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 384,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{E : Env R} {c₀ T H P Q : ℕ} (h : Vals ρ E c₀ T H P Q) (hd : Dist ρ c₀) (hdc : A.d ≤ c₀) (hlen : ∀ l v (p : A.Pat) k, ((stepAux (A.M l) v (A.janela p)).stk k).length ≤ c₀) : (genR A ρ c₀).clas w E = A.fR T H"
   },
@@ -107,7 +107,7 @@
    "name": "ATK.CookLevinGen.clas_umSoG",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 78,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(L : ℕ) (v : ℕ → VarT R K) (E : Env R) : (umSoG L v).clas w E = umSo ((List.range L).map fun j => (v j).eval E)"
   },
@@ -115,7 +115,7 @@
    "name": "ATK.CookLevinGen.eval_antesT",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 264,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(jl jv : ℕ) (p : A.Pat) {E : Env R} {t : ℕ} (ht : E ρ.rt = t) : (antesT A ρ jl jv p).eval E = A.antes t jl jv p"
   },
@@ -123,7 +123,7 @@
    "name": "ATK.CookLevinGen.eval_append",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 302,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{E : Env R} (pre l : ClaT R K) : ClaT.eval E (pre ++ l) = pre.eval E ++ l.eval E"
   },
@@ -131,7 +131,7 @@
    "name": "ATK.CookLevinGen.eval_append_single",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 298,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{E : Env R} (pre : ClaT R K) (ℓ : LitT R K) : ClaT.eval E (pre ++ [ℓ]) = pre.eval E ++ [ℓ.eval E]"
   },
@@ -139,7 +139,7 @@
    "name": "ATK.CookLevinGen.fI_eq",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 507,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(pre cands : List (Γ A.k₀)) (Q H : ℕ) : A.fI pre cands Q H = [[(.y 0 (jl0 A), true)], [(.z 0 (jv0 A), true)]] ++ ((Tab.ks (K"
   },
@@ -147,7 +147,7 @@
    "name": "ATK.CookLevinGen.fI_split",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 529,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(enc : Bool → Γ A.k₀) (cands : List (Γ A.k₀)) (w : List Bool) {Q H : ℕ} (hH : 2 * w.length + 2 + Q < H) : A.fI (((w.flatMap fun b => [b, b]) ++ [false, true]).map enc) cands Q H = [[(.y 0 (jl0 A), true)], [(.z 0 (jv0 A), true)]] ++ ((Tab.ks (K"
   },
@@ -155,7 +155,7 @@
    "name": "ATK.CookLevinGen.fIcell_hi",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 525,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(pre cands : List (Γ A.k₀)) (Q H : ℕ) {i : ℕ} (hi : pre.length + Q ≤ i) : fIcell A pre cands Q H i = [[(.x 0 A.k₀ i (jnone A A.k₀), true)]]"
   },
@@ -163,7 +163,7 @@
    "name": "ATK.CookLevinGen.fIcell_lt",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 514,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(pre cands : List (Γ A.k₀)) (Q H : ℕ) {i : ℕ} (hi : i < pre.length) : fIcell A pre cands Q H i = F0 A i pre[i]?"
   },
@@ -171,7 +171,7 @@
    "name": "ATK.CookLevinGen.fIcell_mid",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 518,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(pre cands : List (Γ A.k₀)) (Q H : ℕ) {i : ℕ} (hi : pre.length ≤ i) (hi' : i < pre.length + Q) (hH : i + 1 < H) : fIcell A pre cands Q H i = ((jsLivres A cands).map fun j => [(.x 0 A.k₀ i j, false)]) ++ [[(.x 0 A.k₀ i (jnone A A.k₀), false), (.x 0 A.k₀ (i + 1) (jnone A A.k₀), true)]]"
   },
@@ -179,7 +179,7 @@
    "name": "ATK.CookLevinGen.flatMap_triples",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 58,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{α β γ δ : Type} (la : List α) (lb : List β) (lc : List γ) (F : α → β → γ → List δ) : (la.flatMap fun a => lb.flatMap fun b => lc.flatMap fun c => F a b c) = (la.flatMap fun a => lb.flatMap fun b => lc.map fun c => (a, b, c)).flatMap fun q => F q.1 q.2.1 q.2.2"
   },
@@ -187,7 +187,7 @@
    "name": "ATK.CookLevinGen.length_pre",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 486,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(enc : Bool → Γ A.k₀) (w : List Bool) : ((((w.flatMap fun b => [b, b]) ++ [false, true]).map enc)).length = 2 * w.length + 2"
   },
@@ -195,7 +195,7 @@
    "name": "ATK.CookLevinGen.noMaximo_range",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 43,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{K : Type} (g : ℕ → Var K) : ∀ L : ℕ, noMaximo ((List.range L).map g) = (List.range L).flatMap fun a => ((List.range L).filter (fun b => decide (a < b))).map fun b => [(g a, false), (g b, false)] | 0 => rfl | L + 1 => by have ih"
   },
@@ -203,7 +203,7 @@
    "name": "ATK.CookLevinGen.preClas_spec",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 456,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(enc : Bool → Γ A.k₀) : ∀ (w : List Bool) (i₀ : ℕ) (rest : List (Γ A.k₀)), (List.range (2 * w.length + rest.length)).flatMap (fun i => F0 A (i₀ + i) ((w.flatMap fun b => [enc b, enc b]) ++ rest)[i]?) = preClas A enc i₀ w ++ (List.range rest.length).flatMap fun i => F0 A (i₀ + 2 * w.length + i) rest[i]? | [], i₀, rest => by simp [preClas] | b :: bs, i₀, rest => by have ih"
   },
@@ -211,7 +211,7 @@
    "name": "ATK.CookLevinGen.range_filter_add_lt",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 36,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(c : ℕ) {H : ℕ} (hc : c ≤ H) : (List.range H).filter (fun j => decide (c + j < H)) = List.range (H - c)"
   },
@@ -219,7 +219,7 @@
    "name": "ATK.CookLevinGen.range_filter_lt",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 19,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(m : ℕ) : ∀ n, m ≤ n → (List.range n).filter (fun j => decide (j < m)) = List.range m | 0, h => by have : m = 0"
   },
@@ -227,7 +227,7 @@
    "name": "ATK.CookLevinGen.reads_antesT",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 379,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(jl jv : ℕ) (p : A.Pat) : (antesT A ρ jl jv p).reads ⊆ {ρ.rt}"
   },
@@ -235,7 +235,7 @@
    "name": "ATK.CookLevinGen.reads_subset",
    "file": "atk-kernel/ATK/CookLevinGen.lean",
    "line": 371,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{C : ClaT R K} {S : Finset (Fin R)} (h : ∀ ℓ ∈ C, ℓ.1.reads ⊆ S) : C.reads ⊆ S"
   },
@@ -411,7 +411,7 @@
    "name": "ATK.LacosGen.ClaT.cmd_env",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 248,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) (C : ClaT R K) (E : Env R) : (sem w C.cmd E).1 = E"
   },
@@ -419,7 +419,7 @@
    "name": "ATK.LacosGen.ClaT.cmd_lp",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 257,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Finset (Fin R)} (C : ClaT R K) (h : ∀ r ∈ C.reads, r ∉ W) : Lp W C.cmd"
   },
@@ -427,7 +427,7 @@
    "name": "ATK.LacosGen.ClaT.cmd_out",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 251,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) (C : ClaT R K) (E : Env R) : (sem w C.cmd E).2 = codCNF (renomeia [C.eval E])"
   },
@@ -435,7 +435,7 @@
    "name": "ATK.LacosGen.ClaT.eval_congr",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 262,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Finset (Fin R)} (C : ClaT R K) (h : ∀ r ∈ C.reads, r ∉ W) {E E' : Env R} (hE : ∀ r, r ∉ W → E r = E' r) : C.eval E = C.eval E'"
   },
@@ -443,7 +443,7 @@
    "name": "ATK.LacosGen.ClaT.mem_reads",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 222,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{C : ClaT R K} {ℓ : LitT R K} (hℓ : ℓ ∈ C) : ℓ.1.reads ⊆ C.reads"
   },
@@ -451,7 +451,7 @@
    "name": "ATK.LacosGen.ClaT.seq_env",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 234,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) : ∀ (C : ClaT R K) (E : Env R), (sem w (seqC (C.map LitT.cmd)) E).1 = E | [], E => rfl | ℓ :: C, E => by simp only [List.map_cons, seqC, sem, LitT.cmd_env]; exact seq_env w C E"
   },
@@ -459,7 +459,7 @@
    "name": "ATK.LacosGen.ClaT.seq_out",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 239,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) : ∀ (C : ClaT R K) (E : Env R), (sem w (seqC (C.map LitT.cmd)) E).2 = ((C.eval E).map fun ℓ => (nome ℓ.1, ℓ.2)).flatMap codLiteral | [], E => by simp [seqC, sem, eval] | ℓ :: C, E => by simp only [List.map_cons, seqC, sem, LitT.cmd_env, LitT.cmd_out, eval, List.flatMap_cons] rw [seq_out w C E] rfl"
   },
@@ -467,7 +467,7 @@
    "name": "ATK.LacosGen.Gen.clas_clasL",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 450,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) (E : Env R) (Cs : List (ClaT R K)) : (clasL Cs).clas w E = Cs.map (ClaT.eval E)"
   },
@@ -475,7 +475,7 @@
    "name": "ATK.LacosGen.Gen.clas_congr",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 341,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) {W : Finset (Fin R)} : ∀ (g : Gen R K), g.ok W → ∀ {E E' : Env R}, (∀ r, r ∉ W → E r = E' r) → g.clas w E = g.clas w E' | cla C, h, E, E', hE => by simp only [clas]; rw [ClaT.eval_congr C h hE] | nil, _, _, _, _ => rfl | seq g₁ g₂, h, E, E', hE => by simp only [clas] rw [clas_congr w g₁ h.1 hE, clas_congr w g₂ h.2 hE] | forU x y g, h, E, E', hE => by simp only [clas] rw [hE x h.1] "
   },
@@ -483,7 +483,7 @@
    "name": "ATK.LacosGen.Gen.clas_seqL",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 437,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) (E : Env R) : ∀ (gs : List (Gen R K)), (seqL gs).clas w E = gs.flatMap (clas w E ·) | [] => rfl | g :: gs => by simp only [seqL, clas, List.flatMap_cons]; rw [clas_seqL w E gs]"
   },
@@ -491,7 +491,7 @@
    "name": "ATK.LacosGen.Gen.lp",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 334,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Finset (Fin R)} : ∀ (g : Gen R K), g.ok W → Lp W g.cmd | cla C, h => ClaT.cmd_lp C h | nil, _ => Lp.emit W _ | seq g₁ g₂, h => Lp.seq (lp g₁ h.1) (lp g₂ h.2) | forU x y g, h => Lp.forU h.1 h.2.1 (lp g h.2.2) | bits c g₀ g₁, h => Lp.bitsC h.1 (lp g₀ h.2.1) (lp g₁ h.2.2)"
   },
@@ -499,7 +499,7 @@
    "name": "ATK.LacosGen.Gen.ok_clasL",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 457,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Finset (Fin R)} (Cs : List (ClaT R K)) (h : ∀ C ∈ Cs, ∀ r ∈ C.reads, r ∉ W) : (clasL Cs).ok W"
   },
@@ -507,7 +507,7 @@
    "name": "ATK.LacosGen.Gen.ok_seqL",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 442,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Finset (Fin R)} : ∀ (gs : List (Gen R K)), (∀ g ∈ gs, g.ok W) → (seqL gs).ok W | [], _ => trivial | g :: gs, h => ⟨h g (by simp), ok_seqL gs fun g' hg' => h g' (by simp [hg'])⟩"
   },
@@ -515,7 +515,7 @@
    "name": "ATK.LacosGen.Gen.out",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 366,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) {W : Finset (Fin R)} : ∀ (g : Gen R K), g.ok W → ∀ (E : Env R), (sem w g.cmd E).2 = codCNF (renomeia (g.clas w E)) | cla C, _, E => ClaT.cmd_out w C E | nil, _, _ => by simp [cmd, sem, clas, codCNF, renomeia] | seq g₁ g₂, h, E => by simp only [cmd, clas] rw [Lp.out_seq w (lp g₁ h.1) (lp g₂ h.2), out w g₁ h.1, out w g₂ h.2] simp only [renomeia, codCNF, List.map_append, List.flatMap_"
   },
@@ -523,7 +523,7 @@
    "name": "ATK.LacosGen.LitT.cmd_env",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 195,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) (ℓ : LitT R K) (E : Env R) : (sem w ℓ.cmd E).1 = E"
   },
@@ -531,7 +531,7 @@
    "name": "ATK.LacosGen.LitT.cmd_lp",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 202,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Finset (Fin R)} (ℓ : LitT R K) (h : ∀ r ∈ ℓ.1.reads, r ∉ W) : Lp W ℓ.cmd"
   },
@@ -539,7 +539,7 @@
    "name": "ATK.LacosGen.LitT.cmd_out",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 198,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) (ℓ : LitT R K) (E : Env R) : (sem w ℓ.cmd E).2 = codLiteral (nome (ℓ.1.eval E), ℓ.2)"
   },
@@ -547,7 +547,7 @@
    "name": "ATK.LacosGen.Term.env",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 52,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) (s : List Bool) : ∀ (τ : Term R) (E : Env R), (sem w (τ.cmd s) E).1 = E | reg _, _ => rfl | const _, _ => rfl | add a b, E => by simp only [cmd, sem]; rw [env w s a, env w s b]"
   },
@@ -555,7 +555,7 @@
    "name": "ATK.LacosGen.Term.eval_congr",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 73,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Finset (Fin R)} : ∀ (τ : Term R), (∀ r ∈ τ.reads, r ∉ W) → ∀ {E E' : Env R}, (∀ r, r ∉ W → E r = E' r) → τ.eval E = τ.eval E' | reg r, h, E, E', hE => hE r (h r (by simp [reads])) | const _, _, _, _, _ => rfl | add a b, h, E, E', hE => by simp only [eval] rw [eval_congr a (fun r hr => h r (by simp [reads, hr])) hE, eval_congr b (fun r hr => h r (by simp [reads, hr])) hE] end Term variable {K "
   },
@@ -563,7 +563,7 @@
    "name": "ATK.LacosGen.Term.lp",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 66,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Finset (Fin R)} (s : List Bool) : ∀ (τ : Term R), (∀ r ∈ τ.reads, r ∉ W) → Lp W (τ.cmd s) | reg r, h => Lp.emitU s (h r (by simp [reads])) | const _, _ => Lp.emit W _ | add a b, h => Lp.seq (lp s a fun r hr => h r (by simp [reads, hr])) (lp s b fun r hr => h r (by simp [reads, hr]))"
   },
@@ -571,7 +571,7 @@
    "name": "ATK.LacosGen.Term.out",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 58,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) (s : List Bool) : ∀ (τ : Term R) (E : Env R), (sem w (τ.cmd s) E).2 = (List.replicate (τ.eval E) s).flatten | reg _, _ => rfl | const _, _ => rfl | add a b, E => by simp only [cmd, sem, eval] rw [out w s a, env w s a, out w s b, List.replicate_add, List.flatten_append]"
   },
@@ -579,7 +579,7 @@
    "name": "ATK.LacosGen.VarT.cmd_env",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 130,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) : ∀ (v : VarT R K) (E : Env R), (sem w v.cmd E).1 = E | x _ _ _ _, E => by simp only [cmd, sem, un_env] | y _ _, E => by simp only [cmd, sem, un_env] | z _ _, E => by simp only [cmd, sem, un_env]"
   },
@@ -587,7 +587,7 @@
    "name": "ATK.LacosGen.VarT.cmd_lp",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 147,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Finset (Fin R)} : ∀ (v : VarT R K), (∀ r ∈ v.reads, r ∉ W) → Lp W v.cmd | x t _ i j, h => by simp only [reads, Finset.mem_union] at h exact Lp.seq (Lp.emit W _) (Lp.seq (un_lp fun r hr => h r (by simp [hr])) (Lp.seq (Lp.emit W _) (Lp.seq (un_lp fun r hr => h r (by simp [hr])) (Lp.seq (un_lp fun r hr => h r (by simp [hr])) (Lp.emit W _))))) | y t j, h => by simp only [reads, Finset.mem_union] "
   },
@@ -595,7 +595,7 @@
    "name": "ATK.LacosGen.VarT.cmd_out",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 135,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) : ∀ (v : VarT R K) (E : Env R), (sem w v.cmd E).2 = (cadeia (v.eval E)).flatMap simb | x t k i j, E => by simp only [cmd, sem, un_env, un_out, eval, cadeia, List.flatMap_append, List.flatMap_cons, List.flatMap_nil, simb, List.append_assoc, List.cons_append, List.nil_append] | y t j, E => by simp only [cmd, sem, un_env, un_out, eval, cadeia, List.flatMap_append, List.flatMap_cons, L"
   },
@@ -603,7 +603,7 @@
    "name": "ATK.LacosGen.VarT.eval_congr",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 162,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Finset (Fin R)} : ∀ (v : VarT R K), (∀ r ∈ v.reads, r ∉ W) → ∀ {E E' : Env R}, (∀ r, r ∉ W → E r = E' r) → v.eval E = v.eval E' | x t _ i j, h, E, E', hE => by simp only [reads, Finset.mem_union] at h simp only [eval] rw [Term.eval_congr t (fun r hr => h r (by simp [hr])) hE, Term.eval_congr i (fun r hr => h r (by simp [hr])) hE, Term.eval_congr j (fun r hr => h r (by simp [hr])) hE] | y t j,"
   },
@@ -611,7 +611,7 @@
    "name": "ATK.LacosGen.VarT.un_env",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 117,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) (τ : Term R) (E : Env R) : (sem w (un τ) E).1 = E"
   },
@@ -619,7 +619,7 @@
    "name": "ATK.LacosGen.VarT.un_lp",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 120,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Finset (Fin R)} {τ : Term R} (h : ∀ r ∈ τ.reads, r ∉ W) : Lp W (un τ)"
   },
@@ -627,7 +627,7 @@
    "name": "ATK.LacosGen.VarT.un_out",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 108,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : List Bool) (τ : Term R) (E : Env R) : (sem w (un τ) E).2 = (unario (τ.eval E)).flatMap simb"
   },
@@ -635,7 +635,7 @@
    "name": "ATK.LacosGen.clasBitsAux_congr",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 280,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{R : ℕ} {α : Type} (f₀ f₁ : Env R → List α) (c : Fin R) (S : Finset (Fin R)) (hcS : c ∉ S) (h₀ : ∀ E E' : Env R, (∀ r, r ∉ S → E r = E' r) → f₀ E = f₀ E') (h₁ : ∀ E E' : Env R, (∀ r, r ∉ S → E r = E' r) → f₁ E = f₁ E') : ∀ (L : List Bool) (E E' : Env R), (∀ r, r ∉ S → E r = E' r) → clasBitsAux f₀ f₁ c L E = clasBitsAux f₀ f₁ c L E' | [], _, _, _ => rfl | b :: L, E, E', hE => by simp only [clasBits"
   },
@@ -643,12 +643,12 @@
    "name": "ATK.LacosGen.seqC_lp",
    "file": "atk-kernel/ATK/LacosGen.lean",
    "line": 212,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Finset (Fin R)} : ∀ {cs : List (Cmd R)}, (∀ c ∈ cs, Lp W c) → Lp W (seqC cs) | [], _ => Lp.emit W _ | c :: cs, h => Lp.seq (h c (by simp)) (seqC_lp fun c' hc' => h c' (by simp [hc'])) namespace ClaT"
   }
  ],
- "closed": 21,
+ "closed": 77,
  "files_sha256": {
   "atk-kernel/ATK/AlgebraTerminal.lean": "ab045c0a40a165fbe781e2c2e58eee54e1b79e6164a635016bf98a4959b2823b",
   "atk-kernel/ATK/BaezDuarteBridge.lean": "6cb5d5346a77a4bb236de5c8dd10bfa1753492dc43016a87424d69c148f355a7",
@@ -672,12 +672,16 @@
   "atk-kernel/ATK/Conditional/YangMills.lean": "2d84f374b93e2bd4557098f86e205ba6a5c4141da7dc8453589a31e1b4aaf5a5",
   "atk-kernel/ATK/ContracaoDN.lean": "d7d2a018cc9fd69d8ca99c8e260b2a4b34681e050683861b91ebf5cfd289e8ec",
   "atk-kernel/ATK/CookLevinBase.lean": "8240cd58a4cf9cae7589afd906aa48417624427c4381af6e220e417e9df92600",
+  "atk-kernel/ATK/CookLevinGen.lean": "7283001a69e837339f0c9aceec9439c59d217a58db306061dace8e756dd31ebc",
+  "atk-kernel/ATK/CookLevinReducao.lean": "92eba3a30e9ca6883ec298e8598f4eb3371213111d6d6a3fc3fe6e6ae5e84582",
+  "atk-kernel/ATK/CookLevinTableau.lean": "1a47f6b4dc45d5920ce651c7c29284bc82abbb1e41c9ed6ab468a2b624858b7b",
   "atk-kernel/ATK/FermatRightTriangle.lean": "b31212601d3712ea6f226ab20e78e26e11ce1e86d82197307f746ea2c301e5cd",
   "atk-kernel/ATK/FinalRoot.lean": "800ebc823c6c797a4f1f1249ea333bf44445d6f9db942046ab9f37d2995eebad",
   "atk-kernel/ATK/ForaDaLinha.lean": "5a7baee5430fd146ebc24bef636b934ab56105f8744a68364fbc194876cd2919",
   "atk-kernel/ATK/Fragmentos.lean": "a408b89e8737ef09c654b619f68036b51e36b1d577ff1a247727daf463d0f374",
   "atk-kernel/ATK/Indeterminacy.lean": "9fc0a38993d4846610033b2a38e63894b463a738633a142520561e209bd88f57",
   "atk-kernel/ATK/IndeterminacyStates.lean": "1a4c9ee6bd9b773c76e53ba812e1c920a6ecb2c4616f0a96179f6af279bc8a8e",
+  "atk-kernel/ATK/LacosGen.lean": "4bb03b81d3fb9f7044329d4c587708014782f4fce4905cc56986391c78ddab65",
   "atk-kernel/ATK/LacosLp.lean": "03051273b0f46a09f01035bbb9c17b20125ebca9a27938743df0db6e75df29af",
   "atk-kernel/ATK/LigacaoNS.lean": "3f3783fc28394feb2d42b2bc6a0b8960ccf9b72217ed4e23560578be20bddf76",
   "atk-kernel/ATK/LigacaoPNP.lean": "a677ff4783b1f6a638a95fb4e2dbd29bcdf5dd98c905a971d3ca3fc6740e8cdf",
@@ -696,6 +700,6 @@
   "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
   "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
  },
- "published_at": "2026-10-29T20:16:01Z",
- "certificate_sha256": "be6088facefaf276c54f6ad1976a11e87d1e2656d2421e17f24da959e93c5cfc"
+ "published_at": "2026-11-03T11:28:09Z",
+ "certificate_sha256": "ffb62b702cf8bb0853f8c92854a846485649d89d30a4d706a9af428c296484ca"
 }

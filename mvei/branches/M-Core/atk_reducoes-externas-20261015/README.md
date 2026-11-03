@@ -5,7 +5,7 @@ Lean sources from the branch `atk/reducoes-externas-20261015` of the private rep
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 28 — closed 15, conditional 0, open 0, proof error 0, not reached 13, no result 0.
 * History: 4 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `c28de428fa3265fe775058834cd0965e8a0793db28aa4a219c5d04444abea003`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_reducoes-externas-20261015/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `0938e80a241938472bca589a207560ef3890675a64fe849ee4d863941b407ef3`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_reducoes-externas-20261015/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

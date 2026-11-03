@@ -5,7 +5,7 @@ Lean sources from the branch `atk/beal-442-fermat42-20261013` of the private rep
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 25 — closed 25, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 2 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `6989840e2c26d128b26caf6f78ffb62b2f975c362fccd41d8c918c8032979b9f`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_beal-442-fermat42-20261013/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `82439f925ad87ef350166c459a1ad916e3481d54a753e8d931253efe058639ca`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_beal-442-fermat42-20261013/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

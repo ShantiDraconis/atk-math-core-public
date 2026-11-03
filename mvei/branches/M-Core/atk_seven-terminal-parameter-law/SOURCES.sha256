@@ -5,6 +5,8 @@ b7b1e5764451649e092acaa42c2a992386940c7a18eb80cc7e94a7d545f5345c  branches/M-Cor
 54deb42c3e0d344359ecab23e499cb0e60114146b007003b540c2d564a36024f  branches/M-Core/atk_seven-terminal-parameter-law/lean/MCore/FinalFail/BoundaryAtoms.lean
 7441cfa7bed39df4bf1a4c1f2d6fd44b7e815cf84c72177fd49ec63e19c7cbee  branches/M-Core/atk_seven-terminal-parameter-law/lean/MCore/FinalFail/DirectProducerCuts.lean
 4b35cf595226b84dc7d7abf931330e59359aae03c2f0ce5bb8029b3eeb6d739d  branches/M-Core/atk_seven-terminal-parameter-law/lean/MCore/FinalFail/ProblemSignature.lean
+df46f2181bd69627192b1b6eadf0e9fc1c787b200080a04c3e2c76c106bca577  branches/M-Core/atk_seven-terminal-parameter-law/lean/MCore/FinalFail/RPAEndpointLattice.lean
+cd0245c37a624b798392535bee3339d2917d5ff98f80e539f006b6bf3b215407  branches/M-Core/atk_seven-terminal-parameter-law/lean/MCore/FinalFail/RPATransitionDuality.lean
 be66d8c211db7a78d648b1d4be0a27f54fdd969e305640e8a401abb80c507668  branches/M-Core/atk_seven-terminal-parameter-law/lean/MCore/FinalFail/Semantic/BSD.lean
 7461d91a196c5d7a61ba7f3fabce0947d529902426ec1e96cab2994b97f787a0  branches/M-Core/atk_seven-terminal-parameter-law/lean/MCore/FinalFail/Semantic/Beal.lean
 c82ec2d0082ec5c801c4f2937246e831021f00ef8dec5cc7059628a9df7b4d03  branches/M-Core/atk_seven-terminal-parameter-law/lean/MCore/FinalFail/Semantic/Hodge.lean

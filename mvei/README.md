@@ -11,18 +11,18 @@ This folder records what the Lean 4 kernel said about the Lean sources of the pr
 
 ## What the kernel said
 
-MVEI verification of 2026-10-30T16:50:26+00:00, on commit `390e3781109fa42e977d143caa9204ed94166a7b`. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
+MVEI verification of 2026-11-03T08:19:01+00:00, on commit `390e3781109fa42e977d143caa9204ed94166a7b`. Each theorem was read with `Lean.collectAxioms`, the function behind `#print axioms`.
 
 | Lean project | Lean version | Build | Closed | Conditional | Open (`sorry`) | Checked file by file: closed / conditional / open / proof error / not reached |
 |---|---|---|---:|---:|---:|---|
-| `.` | v4.19.0 | OK | 245 | 0 | 0 | 257 / 6 / 5 / 3 / 218 |
+| `.` | v4.19.0 | OK | 245 | 0 | 0 | 427 / 6 / 11 / 3 / 42 |
 | `atk-kernel` | v4.34.1 | OK | 11 236 | 0 | 0 | 36 / 0 / 0 / 0 / 3 |
 
 | Closed theorems in this repository | |
 |---|---:|
-| Counting each project | 11 774 |
-| Unique (name + statement) | 11 756 |
-| Unique, without the lemmas Lean generates itself (`eq_1`, `mk.inj`, `sizeOf_spec`, `deriving`) | 9 790 |
+| Counting each project | 11 944 |
+| Unique (name + statement) | 11 926 |
+| Unique, without the lemmas Lean generates itself (`eq_1`, `mk.inj`, `sizeOf_spec`, `deriving`) | 9 959 |
 
 *Closed* means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`. It says that the statement as written in the file is proved; it does not say that an open problem is solved. Every statement is in `VERIFICACAO.json`. *Conditional* means the proof also uses axioms declared in the repository; *open* means it uses `sorry`. *Checked file by file* covers the files that no build reached: each one went through Lean whole, with a `#print axioms` for each theorem.
 
@@ -38,15 +38,21 @@ MVEI verification of 2026-10-30T16:50:26+00:00, on commit `390e3781109fa42e977d1
 | `MCore.Research.UserProgram.commutatorDefect_zero_of_commutes` | `. (file by file)` | open | `sorryAx` |
 | `MCore.Research.UserProgram.commutes_preserves_rotation_fixed` | `. (file by file)` | open | `sorryAx` |
 | `MCore.Research.UserProgram.commutes_preserves_constant_sector` | `. (file by file)` | open | `sorryAx` |
+| `MCore.Research.UserProgram.LinearC3Operator.preserves_sector0` | `. (file by file)` | open | `sorryAx` |
+| `MCore.Research.UserProgram.LinearC3Operator.preserves_sector1` | `. (file by file)` | open | `sorryAx` |
+| `MCore.Research.UserProgram.LinearC3Operator.preserves_sector2` | `. (file by file)` | open | `sorryAx` |
+| `MCore.Research.UserProgram.opDelta_C_zero` | `. (file by file)` | open | `sorryAx` |
+| `MCore.Research.UserProgram.cycleDefect_zero` | `. (file by file)` | open | `sorryAx` |
+| `MCore.Research.UserProgram.I3KernelInhabitant_sound` | `. (file by file)` | open | `sorryAx` |
 | `MCore.Research.UserProgram.phase_sum_zero` | `. (file by file)` | open | `sorryAx` |
 
 ### Declared theorems
 
-The `.lean` files of the verified commit declare 9 572 `theorem`/`lemma` (counting copies). The kernel checked 9 342 of them (9 336 closed, 2 conditional, 4 open). The closed count in the table above is larger: it also counts the theorems Lean generates by itself (equation lemmas, structure fields, `deriving`), which are not written in the text. For 230 the kernel has no result:
+The `.lean` files of the verified commit declare 9 572 `theorem`/`lemma` (counting copies). The kernel checked 9 518 of them (9 506 closed, 2 conditional, 10 open). The closed count in the table above is larger: it also counts the theorems Lean generates by itself (equation lemmas, structure fields, `deriving`), which are not written in the text. For 54 the kernel has no result:
 
 | Reason | Theorems |
 |---|---:|
-| checked file by file: Lean did not reach the theorem (missing import, syntax error or timeout) | 221 |
+| checked file by file: Lean did not reach the theorem (missing import, syntax error or timeout) | 45 |
 | the project built, but the file is not part of the lakefile target | 4 |
 | checked file by file: the written proof does not pass the kernel | 3 |
 | the file compiled, but the name did not appear in the kernel (private, mutual or macro-generated) | 2 |
@@ -56,7 +62,7 @@ The `.lean` files of the verified commit declare 9 572 `theorem`/`lemma` (counti
 * `correcoes/imports-no-topo.patch` (import fora do início do arquivo, 1 file(s)): applies to the published sources: `git apply -p1 --directory=imports/M-Core mvei/correcoes/imports-no-topo.patch` (in order, after the ones above)
 * `correcoes/renomear-imports-mathlib.patch` (import de módulo que não existe na versão do Mathlib do projeto (renomeado ou dividido), 2 file(s)): applies to the published sources: `git apply -p1 --directory=imports/M-Core mvei/correcoes/renomear-imports-mathlib.patch` (in order, after the ones above)
 * `correcoes/tatica-encontrada.patch` (prova que não passava (ou axioma) que uma tática padrão fecha no kernel, 2 file(s)): applies to the published sources: `git apply -p1 --directory=imports/M-Core mvei/correcoes/tatica-encontrada.patch` (in order, after the ones above)
-* `correcoes/vocabulario-lean4.patch` (grafia que o Lean 4 não lê (nome acentuado, λ/Σ/Π como nome, ∀ x y ∈ s, docstring solta, constant, tática do Mathlib sem import), 492 file(s)): made for the verified commit; it does not apply to the published commit as is
+* `correcoes/vocabulario-lean4.patch` (grafia que o Lean 4 não lê (nome acentuado, λ/Σ/Π como nome, ∀ x y ∈ s, docstring solta, constant, tática do Mathlib sem import), 493 file(s)): made for the verified commit; it does not apply to the published commit as is
 * `correcoes/z-provas-reparadas.patch` (prova que não passava no kernel (o enunciado fica igual), 7 file(s)): applies to the published sources: `git apply -p1 --directory=imports/M-Core mvei/correcoes/z-provas-reparadas.patch` (in order, after the ones above)
 
 ## Files in this folder

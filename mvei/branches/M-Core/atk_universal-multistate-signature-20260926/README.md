@@ -5,7 +5,7 @@ Lean sources from the branch `atk/universal-multistate-signature-20260926` of th
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 28 — closed 3, conditional 0, open 0, proof error 0, not reached 25, no result 0.
 * History: 21 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `21f3869627b9057b5424ae435f1f230ddb5e61d1d735dc3c2bc7f42a942878f6`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_universal-multistate-signature-20260926/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `889bf893e24bb76ffd0ef189e20627a481c3bfe1c8b1677a4a3e8c9bdcae0cb9`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_universal-multistate-signature-20260926/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

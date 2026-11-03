@@ -208,7 +208,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-30T16:50:26+00:00",
+  "generated_at": "2026-11-03T08:19:01+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0",
    "leanprover/lean4:v4.34.1"
@@ -225,7 +225,7 @@
    "name": "ATK.NSAltaOrdem.BoaW.continuous_wsq_re_inner",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 80,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : ℝ → E3 → C3} (hf : BoaW f) (hg : BoaW g) (k : ℕ) : Continuous fun p : ℝ × E3 => w k p.2 ^ 2 * (2 * (inner ℂ (f p.1 p.2) (g p.1 p.2)).re)"
   },
@@ -233,7 +233,7 @@
    "name": "ATK.NSAltaOrdem.BoaW.integrable_J",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 50,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : ℝ → E3 → C3} (hf : BoaW f) (k : ℕ) (s : ℝ) : Integrable fun ξ => w k ξ ^ 2 * ‖f s ξ‖ ^ 2"
   },
@@ -241,7 +241,7 @@
    "name": "ATK.NSAltaOrdem.BoaW.integrable_wsq_mul_norm",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 359,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : ℝ → E3 → C3} (hf : BoaW f) (hg : BoaW g) (k : ℕ) (s : ℝ) : Integrable fun ξ => w k ξ ^ 2 * (‖f s ξ‖ * ‖g s ξ‖)"
   },
@@ -249,7 +249,7 @@
    "name": "ATK.NSAltaOrdem.BoaW.rapida",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 265,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : ℝ → E3 → C3} (hf : BoaW f) (s : ℝ) : Rapida fun ξ => ‖f s ξ‖"
   },
@@ -257,7 +257,7 @@
    "name": "ATK.NSAltaOrdem.BoaW.wsq_re_inner_bound",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 63,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : ℝ → E3 → C3} (hf : BoaW f) (hg : BoaW g) (k : ℕ) : ∃ C, 0 ≤ C ∧ ∀ s ξ, ‖w k ξ ^ 2 * (2 * (inner ℂ (f s ξ) (g s ξ)).re)‖ ≤ C * (w 4 ξ)⁻¹"
   },
@@ -265,7 +265,7 @@
    "name": "ATK.NSAltaOrdem.D_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 387,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} {a : ℝ → E3 → C3} (hν : 0 ≤ ν) (ha : BoaW a) (hdivF : ∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) (k : ℕ) (s : ℝ) : D ν a k s ≤ -(4 * π ^ 2 * ν) * J (k + 1) (a s) + 8 * π ^ 2 * ν * J k (a s) + 2 * Tn (a s) k"
   },
@@ -273,7 +273,7 @@
    "name": "ATK.NSAltaOrdem.J_nonneg",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 47,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(k : ℕ) (f : E3 → C3) : 0 ≤ J k f"
   },
@@ -281,7 +281,7 @@
    "name": "ATK.NSAltaOrdem.J_sub_eq",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 133,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ha : BoaW a) (hmild : ∀ t ∈ Icc 0 T, ∀ ξ, a t ξ = heat ν t ξ • a₀ ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) (k : ℕ) {t : ℝ} (ht : t ∈ Icc 0 T) : J k (a t) - J k (a 0) = ∫ s in (0 : ℝ)..t, D ν a k s"
   },
@@ -289,7 +289,7 @@
    "name": "ATK.NSAltaOrdem.K1_nonneg",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 607,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} (hν : 0 < ν) : 0 ≤ K1 ν"
   },
@@ -297,7 +297,7 @@
    "name": "ATK.NSAltaOrdem.K2_nonneg",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 610,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} (hν : 0 < ν) : 0 ≤ K2 ν"
   },
@@ -305,7 +305,7 @@
    "name": "ATK.NSAltaOrdem.K2b_nonneg",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 613,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} (hν : 0 < ν) : 0 ≤ K2b ν"
   },
@@ -313,7 +313,7 @@
    "name": "ATK.NSAltaOrdem.K3_nonneg",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 616,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} (hν : 0 < ν) : 0 ≤ K3 ν"
   },
@@ -321,7 +321,7 @@
    "name": "ATK.NSAltaOrdem.L0_pow8_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 569,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hR : Rapida fun ξ => ‖f ξ‖) : (∫ ξ, ‖f ξ‖) ^ 8 ≤ c72 ^ 4 * J 1 f * J 2 f ^ 3"
   },
@@ -329,7 +329,7 @@
    "name": "ATK.NSAltaOrdem.L0_sq_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 558,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hR : Rapida fun ξ => ‖f ξ‖) : (∫ ξ, ‖f ξ‖) ^ 2 ≤ I4 * J 2 f"
   },
@@ -337,7 +337,7 @@
    "name": "ATK.NSAltaOrdem.L1_sq_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 562,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hR : Rapida fun ξ => ‖f ξ‖) : (∫ ξ, ‖ξ‖ * ‖f ξ‖) ^ 2 ≤ I4 * J 3 f"
   },
@@ -345,7 +345,7 @@
    "name": "ATK.NSAltaOrdem.L1w_pow8_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 580,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hR : Rapida fun ξ => ‖f ξ‖) : (∫ ξ, w 1 ξ * ‖f ξ‖) ^ 8 ≤ c72 ^ 4 * J 2 f * J 3 f ^ 3"
   },
@@ -353,7 +353,7 @@
    "name": "ATK.NSAltaOrdem.Rapida.C_nonneg",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 241,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X : E3 → ℝ} (h : Rapida X) {m : ℕ} {C : ℝ} (hC : ∀ ξ, X ξ ≤ C * (w m ξ)⁻¹) : 0 ≤ C"
   },
@@ -361,7 +361,7 @@
    "name": "ATK.NSAltaOrdem.Rapida.cv",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 285,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{Y Z : E3 → ℝ} (hY : Rapida Y) (hZ : Rapida Z) : Rapida (cv Y Z) where cont"
   },
@@ -369,7 +369,7 @@
    "name": "ATK.NSAltaOrdem.Rapida.integrable",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 239,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X : E3 → ℝ} (h : Rapida X) : Integrable X"
   },
@@ -377,7 +377,7 @@
    "name": "ATK.NSAltaOrdem.Rapida.integrable_cv_integrand",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 276,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{Y Z : E3 → ℝ} (hY : Rapida Y) (hZ : Rapida Z) (ξ : E3) : Integrable fun η => Y η * Z (ξ - η)"
   },
@@ -385,7 +385,7 @@
    "name": "ATK.NSAltaOrdem.Rapida.mansa",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 237,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X : E3 → ℝ} (h : Rapida X) : Mansa X"
   },
@@ -393,7 +393,7 @@
    "name": "ATK.NSAltaOrdem.Rapida.mul",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 451,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X Y : E3 → ℝ} (hX : Rapida X) (hY : Rapida Y) : Rapida fun ξ => X ξ * Y ξ where cont"
   },
@@ -401,7 +401,7 @@
    "name": "ATK.NSAltaOrdem.Rapida.mul_w",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 245,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X : E3 → ℝ} (h : Rapida X) (j : ℕ) : Rapida fun ξ => w j ξ * X ξ where cont"
   },
@@ -409,7 +409,7 @@
    "name": "ATK.NSAltaOrdem.Rapida.norm_mul",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 255,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X : E3 → ℝ} (h : Rapida X) : Rapida fun ξ => ‖ξ‖ * X ξ where cont"
   },
@@ -417,7 +417,7 @@
    "name": "ATK.NSAltaOrdem.Rapida.of_norm",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 262,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hc : Continuous f) (hb : ∀ m : ℕ, ∃ C, ∀ ξ, ‖f ξ‖ ≤ C * (w m ξ)⁻¹) : Rapida fun ξ => ‖f ξ‖"
   },
@@ -425,7 +425,7 @@
    "name": "ATK.NSAltaOrdem.S3_nonneg",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 447,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X Y Z : E3 → ℝ} (hX : ∀ ξ, 0 ≤ X ξ) (hY : ∀ ξ, 0 ≤ Y ξ) (hZ : ∀ ξ, 0 ≤ Z ξ) : 0 ≤ S3 X Y Z"
   },
@@ -433,7 +433,7 @@
    "name": "ATK.NSAltaOrdem.T1_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 624,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} (hν : 0 < ν) : 2 * Tn f 1 ≤ 2 * π ^ 2 * ν * J 2 f + K1 ν * J 1 f ^ 5"
   },
@@ -441,7 +441,7 @@
    "name": "ATK.NSAltaOrdem.T2_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 659,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} (hν : 0 < ν) : 2 * Tn f 2 ≤ 4 * π ^ 2 * ν * J 3 f + (K2 ν * J 1 f ^ 4 + K2b ν * J 2 f) * J 2 f"
   },
@@ -449,7 +449,7 @@
    "name": "ATK.NSAltaOrdem.T3_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 716,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} (hν : 0 < ν) : 2 * Tn f 3 ≤ 4 * π ^ 2 * ν * J 4 f + K3 ν * J 2 f * J 3 f"
   },
@@ -457,7 +457,7 @@
    "name": "ATK.NSAltaOrdem.Tn_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 465,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hd : ∀ ξ, inner ℂ (cpx ξ) (f ξ) = 0) (hR : Rapida fun ξ => ‖f ξ‖) (j : ℕ) : Tn f (j + 1) ≤ 2 * π * 2 ^ j * (S3 (fun ξ => w (j + 2) ξ * ‖f ξ‖) (fun η => w j η * ‖f η‖) (fun ζ => ‖ζ‖ * ‖f ζ‖) + S3 (fun ξ => w (j + 2) ξ * ‖f ξ‖) (fun η => ‖f η‖) (fun ζ => w j ζ * (‖ζ‖ * ‖f ζ‖)))"
   },
@@ -465,7 +465,7 @@
    "name": "ATK.NSAltaOrdem.Tn_nonneg",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 356,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(f : E3 → C3) (k : ℕ) : 0 ≤ Tn f k"
   },
@@ -473,7 +473,7 @@
    "name": "ATK.NSAltaOrdem.continuous_D",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 91,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} {a : ℝ → E3 → C3} (ha : BoaW a) (k : ℕ) : Continuous (D ν a k)"
   },
@@ -481,7 +481,7 @@
    "name": "ATK.NSAltaOrdem.continuous_J",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 106,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{a : ℝ → E3 → C3} (ha : BoaW a) (k : ℕ) : Continuous fun s => J k (a s)"
   },
@@ -489,7 +489,7 @@
    "name": "ATK.NSAltaOrdem.cv_eq_convolution",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 272,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Y Z : E3 → ℝ) : cv Y Z = convolution Y Z (ContinuousLinearMap.mul ℝ ℝ) volume"
   },
@@ -497,7 +497,7 @@
    "name": "ATK.NSAltaOrdem.dissip_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 375,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ν : ℝ) (hν : 0 ≤ ν) (k : ℕ) (ξ : E3) (x : ℝ) (hx : 0 ≤ x) : -2 * (w k ξ ^ 2 * (kappa ν ξ * x)) ≤ -(4 * π ^ 2 * ν) * (w (k + 1) ξ ^ 2 * x) + 8 * π ^ 2 * ν * (w k ξ ^ 2 * x)"
   },
@@ -505,7 +505,7 @@
    "name": "ATK.NSAltaOrdem.ep_pos",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 605,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} (hν : 0 < ν) : 0 < ep ν"
   },
@@ -513,7 +513,7 @@
    "name": "ATK.NSAltaOrdem.gronwall",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 174,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{φ Dφ g : ℝ → ℝ} {T : ℝ} (hφ : ∀ t ∈ Icc 0 T, φ t = φ 0 + ∫ s in (0 : ℝ)..t, Dφ s) (hD : Continuous Dφ) (hg : Continuous g) (hDg : ∀ s ∈ Icc 0 T, Dφ s ≤ g s * φ s) {t : ℝ} (ht : t ∈ Icc 0 T) : φ t ≤ φ 0 * Real.exp (∫ s in (0 : ℝ)..t, g s)"
   },
@@ -521,7 +521,7 @@
    "name": "ATK.NSAltaOrdem.hasDerivAt_J",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 157,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ha : BoaW a) (hmild : ∀ t ∈ Icc 0 T, ∀ ξ, a t ξ = heat ν t ξ • a₀ ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) (k : ℕ) {s : ℝ} (hs : s ∈ Ioo 0 T) : HasDerivAt (fun r => J k (a r)) (D ν a k s) s"
   },
@@ -529,7 +529,7 @@
    "name": "ATK.NSAltaOrdem.integral_P_sq_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 533,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hR : Rapida fun ξ => ‖f ξ‖) : ∫ ζ, (‖ζ‖ * ‖f ζ‖) ^ 2 ≤ J 1 f"
   },
@@ -537,7 +537,7 @@
    "name": "ATK.NSAltaOrdem.integral_mul_cv",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 305,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(X Y Z : E3 → ℝ) : ∫ ξ, X ξ * cv Y Z ξ = ∫ ξ, ∫ η, X ξ * Y η * Z (ξ - η)"
   },
@@ -545,7 +545,7 @@
    "name": "ATK.NSAltaOrdem.integral_sq_le_I4",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 538,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{B : E3 → ℝ} (hB : Rapida B) : (∫ ξ, B ξ) ^ 2 ≤ I4 * ∫ ξ, (w 2 ξ * B ξ) ^ 2"
   },
@@ -553,7 +553,7 @@
    "name": "ATK.NSAltaOrdem.integral_wA_sq",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 515,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(f : E3 → C3) (j : ℕ) : ∫ ξ, (w j ξ * ‖f ξ‖) ^ 2 = J j f"
   },
@@ -561,7 +561,7 @@
    "name": "ATK.NSAltaOrdem.integral_wP_sq_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 519,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hR : Rapida fun ξ => ‖f ξ‖) (j : ℕ) : ∫ ζ, (w j ζ * (‖ζ‖ * ‖f ζ‖)) ^ 2 ≤ J (j + 1) f"
   },
@@ -569,7 +569,7 @@
    "name": "ATK.NSAltaOrdem.norm_Nl_le_cv",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 329,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hd : ∀ ξ, inner ℂ (cpx ξ) (f ξ) = 0) (hR : Rapida fun ξ => ‖f ξ‖) (ξ : E3) : ‖Nl f f ξ‖ ≤ 2 * π * cv (fun η => ‖f η‖) (fun ζ => ‖ζ‖ * ‖f ζ‖) ξ"
   },
@@ -577,7 +577,7 @@
    "name": "ATK.NSAltaOrdem.w_inv_mul_w_sq",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 29,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(k m : ℕ) (ξ : E3) : w k ξ ^ 2 * (w (2 * k + m) ξ)⁻¹ = (w m ξ)⁻¹"
   },
@@ -585,7 +585,7 @@
    "name": "ATK.NSAltaOrdem.w_mul_cv_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 313,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{Y Z : E3 → ℝ} (hY : Rapida Y) (hZ : Rapida Z) (j : ℕ) (ξ : E3) : w j ξ * cv Y Z ξ ≤ 2 ^ j * (cv (fun η => w j η * Y η) Z ξ + cv Y (fun ζ => w j ζ * Z ζ) ξ)"
   },
@@ -593,7 +593,7 @@
    "name": "ATK.NSAltaOrdem.w_sq",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 24,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(k : ℕ) (ξ : E3) : w k ξ ^ 2 = w (2 * k) ξ"
   },
@@ -601,7 +601,7 @@
    "name": "ATK.NSAltaOrdem.w_zero",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 510,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ξ : E3) : w 0 ξ = 1"
   },
@@ -609,7 +609,7 @@
    "name": "ATK.NSAltaOrdem.wsq_mul_le",
    "file": "atk-kernel/ATK/NSAltaOrdem.lean",
    "line": 33,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{k : ℕ} {x C : ℝ} {ξ : E3} (h : x ≤ C * (w (2 * k + 4) ξ)⁻¹) : w k ξ ^ 2 * x ≤ C * (w 4 ξ)⁻¹"
   },
@@ -617,39 +617,47 @@
    "name": "ATK.NSB3.b3_modeloNS",
    "file": "atk-kernel/ATK/NSB3.lean",
    "line": 28,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": ": ATK.Conditional.NavierStokes.EnstrophyBlowupCriterion modeloNS"
   },
   {
    "name": "ATK.NSB3.clay_ns_de_O3",
    "file": "atk-kernel/ATK/NSB3.lean",
    "line": 34,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(hO3 : ATK.Conditional.NavierStokes.EnstrophyAPrioriBound modeloNS) : ∀ ν : ℝ, 0 < ν → ∀ u₀ : SchwartzMap E3 E3, (∀ x, div u₀ x = 0) → ∃ U P, SolucaoGlobal ν u₀ U P"
   },
   {
    "name": "ATK.NSB3.explosao_enstrofia",
    "file": "atk-kernel/ATK/NSB3.lean",
    "line": 41,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : ATK.AtaqueNS.Explosao) : ∃ d, modeloNS.Admissible d ∧ ∃ T : ℝ, 0 < T ∧ modeloNS.SmoothOn d T ∧ ∀ B : ℝ, ∃ t ∈ Set.Ico 0 T, B < modeloNS.enstrophy d t"
   },
   {
    "name": "ATK.NSB3.regularidade_de_cota",
    "file": "atk-kernel/ATK/NSB3.lean",
    "line": 48,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(hA : ATK.Conditional.NavierStokes.EnstrophyAPrioriBound modeloNS) : ¬ ATK.AtaqueNS.Explosao"
   },
   {
    "name": "ATK.NSClasse.b3_de_classeD",
    "file": "atk-kernel/ATK/NSClasse.lean",
    "line": 55,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(R : ℝ × (E3 → E3) → ℝ → (E3 × ℝ → E3) → Prop) (hR : ∀ d, Local (R d)) (hEx : ExistenciaLocalD R) (hUn : UnicidadeD R) (hCo : ContinuacaoD R) (hEn : DesigualdadeEnergiaD R) : ATK.Conditional.NavierStokes.EnstrophyBlowupCriterion modeloNS"
   },
@@ -657,23 +665,27 @@
    "name": "ATK.NSClasse.desigualdadeEnergiaF",
    "file": "atk-kernel/ATK/NSClasse.lean",
    "line": 213,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": ": DesigualdadeEnergiaD fun d => ClasseF d.1"
   },
   {
    "name": "ATK.NSClasse.existenciaLocalF",
    "file": "atk-kernel/ATK/NSClasse.lean",
    "line": 163,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": ": ExistenciaLocalD fun d => ClasseF d.1"
   },
   {
    "name": "ATK.NSClasse.local_ClasseF",
    "file": "atk-kernel/ATK/NSClasse.lean",
    "line": 159,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ν : ℝ) : Local (ClasseF ν)"
   },
@@ -681,7 +693,7 @@
    "name": "ATK.NSClasse.norm_re3_of_real",
    "file": "atk-kernel/ATK/NSClasse.lean",
    "line": 208,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{v : C3} (hv : cj3 v = v) : ‖re3 v‖ = ‖v‖"
   },
@@ -689,7 +701,7 @@
    "name": "ATK.NSContinuacao.BoaW.de_cola",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 203,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{t₀ : ℝ} {a b : ℝ → E3 → C3} (ha : BoaW a) (hb : BoaW b) (hab : b 0 = a t₀) : BoaW (cola t₀ a b) where cont"
   },
@@ -697,23 +709,27 @@
    "name": "ATK.NSContinuacao.J1_le_of",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 148,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(hν : 0 ≤ ν) (ha : BoaW a) (hmild : ∀ t ∈ Icc 0 T, ∀ ξ, a t ξ = heat ν t ξ • a 0 ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) (hherm : ∀ t, Herm (a t)) (hdivF : ∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) {B : ℝ} {s : ℝ} (hs : s ∈ Icc 0 T) (hB : ∫ x, gradSq (fatia (Uf ν a) s) x ≤ B) : J 1 (a s) ≤ 2 * (∫ ξ, ‖a 0 ξ‖ ^ 2) + 2 * (B / (4 * π ^ 2))"
   },
   {
    "name": "ATK.NSContinuacao.amp_inj",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 64,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{f g : E3 → C3} (hf : Continuous f) (hg : Continuous g) {A B : ℝ} (hA : ∀ ξ, ‖f ξ‖ ≤ A * (w 4 ξ)⁻¹) (hB : ∀ ξ, ‖g ξ‖ ≤ B * (w 4 ξ)⁻¹) (h : ∀ x, Vf f x = Vf g x) : f = g"
   },
   {
    "name": "ATK.NSContinuacao.cola_div",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 226,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{t₀ : ℝ} {a b : ℝ → E3 → C3} (ha : ∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) (hb : ∀ t ξ, inner ℂ (cpx ξ) (b t ξ) = 0) (t : ℝ) (ξ : E3) : inner ℂ (cpx ξ) (cola t₀ a b t ξ) = 0"
   },
@@ -721,7 +737,7 @@
    "name": "ATK.NSContinuacao.cola_ge",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 197,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{t₀ t : ℝ} {a b : ℝ → E3 → C3} (hab : b 0 = a t₀) (h : t₀ ≤ t) : cola t₀ a b t = b (t - t₀)"
   },
@@ -729,7 +745,7 @@
    "name": "ATK.NSContinuacao.cola_gt",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 194,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{t₀ t : ℝ} (a b : ℝ → E3 → C3) (h : t₀ < t) : cola t₀ a b t = b (t - t₀)"
   },
@@ -737,7 +753,7 @@
    "name": "ATK.NSContinuacao.cola_herm",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 220,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{t₀ : ℝ} {a b : ℝ → E3 → C3} (ha : ∀ t, Herm (a t)) (hb : ∀ t, Herm (b t)) (t : ℝ) : Herm (cola t₀ a b t)"
   },
@@ -745,7 +761,7 @@
    "name": "ATK.NSContinuacao.cola_le",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 191,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{t₀ t : ℝ} (a b : ℝ → E3 → C3) (h : t ≤ t₀) : cola t₀ a b t = a t"
   },
@@ -753,7 +769,7 @@
    "name": "ATK.NSContinuacao.cola_mild",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 245,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν t₀ τ : ℝ} (ht₀ : 0 ≤ t₀) {a b : ℝ → E3 → C3} (ha : BoaW a) (hb : BoaW b) (hma : ∀ t ∈ Icc 0 t₀, ∀ ξ, a t ξ = heat ν t ξ • a 0 ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) (hmb : ∀ t ∈ Icc 0 τ, ∀ ξ, b t ξ = heat ν t ξ • a t₀ ξ - ∫ s in (0 : ℝ)..t, duhI ν b b t s ξ) (hτ : 0 ≤ τ) : ∀ t ∈ Icc 0 (t₀ + τ), ∀ ξ, cola t₀ a b t ξ = heat ν t ξ • cola t₀ a b 0 ξ - ∫ s in (0 : ℝ)..t, duhI ν (cola t₀ a b) (cola"
   },
@@ -761,15 +777,17 @@
    "name": "ATK.NSContinuacao.continuacaoF",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 330,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": ": ContinuacaoD fun d => ClasseF d.1"
   },
   {
    "name": "ATK.NSContinuacao.continuous_duhI_s",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 237,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν τ : ℝ} {a : ℝ → E3 → C3} (ha : BoaW a) (ξ : E3) : Continuous fun s => duhI ν a a τ s ξ"
   },
@@ -777,7 +795,7 @@
    "name": "ATK.NSContinuacao.duhI_congr",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 233,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν τ s : ℝ} {a c : ℝ → E3 → C3} (h : c s = a s) (ξ : E3) : duhI ν c c τ s ξ = duhI ν a a τ s ξ"
   },
@@ -785,15 +803,17 @@
    "name": "ATK.NSContinuacao.enstrofia_eq",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 113,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(ha : BoaW a) (hmild : ∀ t ∈ Icc 0 T, ∀ ξ, a t ξ = heat ν t ξ • a 0 ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) (hherm : ∀ t, Herm (a t)) {t : ℝ} (ht : t ∈ Icc 0 T) : ∫ x, gradSq (fatia (Uf ν a) t) x = 4 * π ^ 2 * ∫ ξ, ‖ξ‖ ^ 2 * ‖a t ξ‖ ^ 2"
   },
   {
    "name": "ATK.NSContinuacao.existe_branda_T",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 30,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν M : ℝ} (hν : 0 < ν) {a₀ : E3 → C3} (h₀ : Dado a₀ M) (hdiv : ∀ ξ, inner ℂ (cpx ξ) (a₀ ξ) = 0) (hh : Herm a₀) : ∃ a : ℝ → E3 → C3, Boa4 a (2 * M) ∧ (∀ t ∈ Icc 0 (T0 ν M), ∀ ξ, a t ξ = heat ν t ξ • a₀ ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) ∧ (∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) ∧ (∀ (m : ℕ) (Mm : ℝ), (∀ ξ, ‖a₀ ξ‖ ≤ Mm * (w m ξ)⁻¹) → ∃ C, ∀ t ξ, ‖a t ξ‖ ≤ C * (w m ξ)⁻¹) ∧ ∀ t, Herm (a t)"
   },
@@ -801,7 +821,7 @@
    "name": "ATK.NSContinuacao.heat_add",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 181,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ν x y : ℝ) (ξ : E3) : heat ν x ξ * heat ν y ξ = heat ν (x + y) ξ"
   },
@@ -809,7 +829,7 @@
    "name": "ATK.NSContinuacao.herm_cj_smul",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 89,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hf : Herm f) (j : Fin 3) : Herm fun ξ => cj j ξ • f ξ"
   },
@@ -817,7 +837,7 @@
    "name": "ATK.NSContinuacao.norm_cj_smul_sq",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 102,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(j : Fin 3) (ξ : E3) (v : C3) : ‖cj j ξ • v‖ ^ 2 = (2 * π * ξ j) ^ 2 * ‖v‖ ^ 2"
   },
@@ -825,15 +845,17 @@
    "name": "ATK.NSContinuacao.solucao_de_amp",
    "file": "atk-kernel/ATK/NSContinuacao.lean",
    "line": 297,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{ν T : ℝ} (hν : 0 < ν) (hT : 0 < T) {a : ℝ → E3 → C3} (haW : BoaW a) (hmild : ∀ t ∈ Icc 0 T, ∀ ξ, a t ξ = heat ν t ξ • a 0 ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) (hherm : ∀ t, Herm (a t)) (hdivF : ∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) : SolR (ClasseF ν) ν (fun x => re3 (Vf (a 0) x)) T (Uf ν a) (Pf ν a)"
   },
   {
    "name": "ATK.NSCorte.S3_nonneg",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 184,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Ψ : E3 → E3) (x : E3) : 0 ≤ S3 Ψ x"
   },
@@ -841,7 +863,7 @@
    "name": "ATK.NSCorte.S3_schwartz",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 262,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Ψ : SchwartzMap E3 E3) : ∃ C, 0 ≤ C ∧ ∀ x, S3 Ψ x ≤ C * (w 4 x)⁻¹"
   },
@@ -849,7 +871,7 @@
    "name": "ATK.NSCorte.abs_conv_term_le",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 284,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : E3) {G : E3 → E3} (x : E3) : |∑ j, ∑ k, v j * v k * dX j G x k| ≤ 9 * ‖v‖ ^ 2 * ‖iteratedFDeriv ℝ 1 G x‖"
   },
@@ -857,7 +879,7 @@
    "name": "ATK.NSCorte.chi_eq_comp",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 128,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(R : ℝ) : chi R = (⇑bump0) ∘ (R⁻¹ • ContinuousLinearMap.id ℝ E3)"
   },
@@ -865,7 +887,7 @@
    "name": "ATK.NSCorte.chi_eq_one",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 139,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{R : ℝ} (hR : 0 < R) {x : E3} (hx : ‖x‖ ≤ R) : chi R x = 1"
   },
@@ -873,7 +895,7 @@
    "name": "ATK.NSCorte.cmp_apply",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 32,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(j k : Fin 3) (L : E3 →L[ℝ] E3) : cmp j k L = L (e j) k"
   },
@@ -881,7 +903,7 @@
    "name": "ATK.NSCorte.contDiff_chi",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 132,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(R : ℝ) : ContDiff ℝ ∞ (chi R)"
   },
@@ -889,7 +911,7 @@
    "name": "ATK.NSCorte.contDiff_corte",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 174,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(R : ℝ) {Ψ : E3 → E3} (hΨ : ContDiff ℝ ∞ Ψ) : ContDiff ℝ ∞ (corte R Ψ)"
   },
@@ -897,7 +919,7 @@
    "name": "ATK.NSCorte.contDiff_rot",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 47,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F : E3 → E3} (hF : ContDiff ℝ ∞ F) : ContDiff ℝ ∞ (rot F)"
   },
@@ -905,7 +927,7 @@
    "name": "ATK.NSCorte.continuous_S3",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 279,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{Ψ : E3 → E3} (hΨ : ContDiff ℝ ∞ Ψ) : Continuous (S3 Ψ)"
   },
@@ -913,7 +935,7 @@
    "name": "ATK.NSCorte.corte_eventuallyEq",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 228,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{R : ℝ} {x : E3} (hR : ‖x‖ + 1 ≤ R) (Ψ : E3 → E3) : corte R Ψ =ᶠ[𝓝 x] Ψ"
   },
@@ -921,7 +943,7 @@
    "name": "ATK.NSCorte.dX_dX_eq",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 94,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Type*} [NormedAddCommGroup W] [NormedSpace ℝ W] {G : E3 → W} (hG : ContDiff ℝ ∞ G) (i j : Fin 3) (x : E3) : dX i (dX j G) x = iteratedFDeriv ℝ 2 G x ![e i, e j]"
   },
@@ -929,7 +951,7 @@
    "name": "ATK.NSCorte.dX_eventuallyEq",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 241,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Type*} [NormedAddCommGroup W] [NormedSpace ℝ W] {G₁ G₂ : E3 → W} {x : E3} (h : G₁ =ᶠ[𝓝 x] G₂) (j : Fin 3) : dX j G₁ =ᶠ[𝓝 x] dX j G₂"
   },
@@ -937,7 +959,7 @@
    "name": "ATK.NSCorte.dX_rot",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 54,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F : E3 → E3} (hF : ContDiff ℝ ∞ F) (j : Fin 3) (x : E3) : dX j (rot F) x = rotL (fderiv ℝ (fderiv ℝ F) x (e j))"
   },
@@ -945,7 +967,7 @@
    "name": "ATK.NSCorte.div_rot",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 64,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F : E3 → E3} (hF : ContDiff ℝ ∞ F) (x : E3) : div (rot F) x = 0"
   },
@@ -953,7 +975,7 @@
    "name": "ATK.NSCorte.exists_bound_bump0",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 146,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(n : ℕ) : ∃ B, ∀ y, ‖iteratedFDeriv ℝ n bump0 y‖ ≤ B"
   },
@@ -961,7 +983,7 @@
    "name": "ATK.NSCorte.exists_bound_corte",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 193,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ∃ K, 0 ≤ K ∧ ∀ {R : ℝ}, 1 ≤ R → ∀ {Ψ : E3 → E3}, ContDiff ℝ ∞ Ψ → ∀ {n : ℕ}, n ≤ 3 → ∀ x, ‖iteratedFDeriv ℝ n (corte R Ψ) x‖ ≤ K * S3 Ψ x"
   },
@@ -969,7 +991,7 @@
    "name": "ATK.NSCorte.formulacao_fraca_rot",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 310,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (Ψ : SchwartzMap E3 E3) {t : ℝ} (ht : t ∈ Ico 0 T) : (∫ x, inner ℝ (U (x, t)) (rot Ψ x)) - ∫ x, inner ℝ (u₀ x) (rot Ψ x) = ∫ s in (0 : ℝ)..t, Bw ν U (rot Ψ) s"
   },
@@ -977,7 +999,7 @@
    "name": "ATK.NSCorte.hasCompactSupport_chi",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 136,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{R : ℝ} (hR : R ≠ 0) : HasCompactSupport (chi R)"
   },
@@ -985,7 +1007,7 @@
    "name": "ATK.NSCorte.hasCompactSupport_corte",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 177,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{R : ℝ} (hR : R ≠ 0) (Ψ : E3 → E3) : HasCompactSupport (corte R Ψ)"
   },
@@ -993,7 +1015,7 @@
    "name": "ATK.NSCorte.hasCompactSupport_rot",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 50,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F : E3 → E3} (hF : HasCompactSupport F) : HasCompactSupport (rot F)"
   },
@@ -1001,7 +1023,7 @@
    "name": "ATK.NSCorte.lap_eq_of_eventuallyEq",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 251,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{G₁ G₂ : E3 → E3} {x : E3} (h : G₁ =ᶠ[𝓝 x] G₂) : lap G₁ x = lap G₂ x"
   },
@@ -1009,7 +1031,7 @@
    "name": "ATK.NSCorte.le_S3",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 187,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Ψ : E3 → E3) {m : ℕ} (hm : m ≤ 3) (x : E3) : ‖iteratedFDeriv ℝ m Ψ x‖ ≤ S3 Ψ x"
   },
@@ -1017,7 +1039,7 @@
    "name": "ATK.NSCorte.norm_dX_le",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 86,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Type*} [NormedAddCommGroup W] [NormedSpace ℝ W] (G : E3 → W) (j : Fin 3) (x : E3) : ‖dX j G x‖ ≤ ‖iteratedFDeriv ℝ 1 G x‖"
   },
@@ -1025,7 +1047,7 @@
    "name": "ATK.NSCorte.norm_iteratedFDeriv_chi_le",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 150,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{R : ℝ} (hR : 1 ≤ R) (n : ℕ) {B : ℝ} (hB : ∀ y, ‖iteratedFDeriv ℝ n bump0 y‖ ≤ B) (x : E3) : ‖iteratedFDeriv ℝ n (chi R) x‖ ≤ B"
   },
@@ -1033,7 +1055,7 @@
    "name": "ATK.NSCorte.norm_iteratedFDeriv_rot_le",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 77,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F : E3 → E3} (hF : ContDiff ℝ ∞ F) (n : ℕ) (x : E3) : ‖iteratedFDeriv ℝ n (rot F) x‖ ≤ ‖rotL‖ * ‖iteratedFDeriv ℝ (n + 1) F x‖"
   },
@@ -1041,7 +1063,7 @@
    "name": "ATK.NSCorte.norm_lap_le",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 107,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{G : E3 → E3} (hG : ContDiff ℝ ∞ G) (x : E3) : ‖lap G x‖ ≤ 3 * ‖iteratedFDeriv ℝ 2 G x‖"
   },
@@ -1049,7 +1071,7 @@
    "name": "ATK.NSCorte.rotL_apply",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 42,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(L : E3 →L[ℝ] E3) (a : Fin 3) : rotL L a = if a = 0 then L (e 1) 2 - L (e 2) 1 else if a = 1 then L (e 2) 0 - L (e 0) 2 else L (e 0) 1 - L (e 1) 0"
   },
@@ -1057,7 +1079,7 @@
    "name": "ATK.NSCorte.rot_eventuallyEq",
    "file": "atk-kernel/ATK/NSCorte.lean",
    "line": 246,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{G₁ G₂ : E3 → E3} {x : E3} (h : G₁ =ᶠ[𝓝 x] G₂) : rot G₁ =ᶠ[𝓝 x] rot G₂"
   },
@@ -1065,7 +1087,7 @@
    "name": "ATK.NSCotaUniforme.J2_le",
    "file": "atk-kernel/ATK/NSCotaUniforme.lean",
    "line": 189,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hν : 0 < ν) (ha : BoaW a) (hdivF : ∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) (hmild : ∀ t ∈ Icc 0 T, ∀ ξ, a t ξ = heat ν t ξ • a 0 ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) {M1 : ℝ} (hM10 : 0 ≤ M1) (hM1 : ∀ s ∈ Icc 0 T, J 1 (a s) ≤ M1) {Tb : ℝ} (hTb : T ≤ Tb) {t : ℝ} (ht : t ∈ Icc 0 T) : J 2 (a t) ≤ J 2 (a 0) * Real.exp (E2 ν Tb M1 (J 1 (a 0)))"
   },
@@ -1073,7 +1095,7 @@
    "name": "ATK.NSCotaUniforme.J3_le",
    "file": "atk-kernel/ATK/NSCotaUniforme.lean",
    "line": 239,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hν : 0 < ν) (ha : BoaW a) (hdivF : ∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) (hmild : ∀ t ∈ Icc 0 T, ∀ ξ, a t ξ = heat ν t ξ • a 0 ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) {M2 : ℝ} (hM20 : 0 ≤ M2) (hM2 : ∀ s ∈ Icc 0 T, J 2 (a s) ≤ M2) {Tb : ℝ} (hTb : T ≤ Tb) {t : ℝ} (ht : t ∈ Icc 0 T) : J 3 (a t) ≤ J 3 (a 0) * Real.exp (Tb * (8 * π ^ 2 * ν + K3 ν * M2))"
   },
@@ -1081,7 +1103,7 @@
    "name": "ATK.NSCotaUniforme.J_mono",
    "file": "atk-kernel/ATK/NSCotaUniforme.lean",
    "line": 26,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hR : Rapida fun ξ => ‖f ξ‖) (k : ℕ) : J k f ≤ J (k + 1) f"
   },
@@ -1089,7 +1111,7 @@
    "name": "ATK.NSCotaUniforme.J_mono_le",
    "file": "atk-kernel/ATK/NSCotaUniforme.lean",
    "line": 35,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hR : Rapida fun ξ => ‖f ξ‖) {k n : ℕ} (h : k ≤ n) : J k f ≤ J n f"
   },
@@ -1097,7 +1119,7 @@
    "name": "ATK.NSCotaUniforme.cota_de_J3",
    "file": "atk-kernel/ATK/NSCotaUniforme.lean",
    "line": 297,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hν : 0 < ν) (ha : BoaW a) (hdivF : ∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) (hmild : ∀ t ∈ Icc 0 T, ∀ ξ, a t ξ = heat ν t ξ • a 0 ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) {M0 M3 : ℝ} (hM0 : ∀ ξ, ‖a 0 ξ‖ ≤ M0 * (w 4 ξ)⁻¹) (hM30 : 0 ≤ M3) (hM3 : ∀ s ∈ Icc 0 T, J 3 (a s) ≤ M3) {Tb : ℝ} (hTb : T ≤ Tb) {t : ℝ} (ht : t ∈ Icc 0 T) (ξ : E3) : ‖a t ξ‖ ≤ Mfin ν Tb M0 M3 * (w 4 ξ)⁻¹"
   },
@@ -1105,7 +1127,7 @@
    "name": "ATK.NSCotaUniforme.cv_le_half",
    "file": "atk-kernel/ATK/NSCotaUniforme.lean",
    "line": 41,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{Y Z : E3 → ℝ} (hY : Rapida Y) (hZ : Rapida Z) (ξ : E3) : cv Y Z ξ ≤ ((∫ η, Y η ^ 2) + ∫ ζ, Z ζ ^ 2) / 2"
   },
@@ -1113,7 +1135,7 @@
    "name": "ATK.NSCotaUniforme.int_J2_le",
    "file": "atk-kernel/ATK/NSCotaUniforme.lean",
    "line": 149,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hν : 0 < ν) (ha : BoaW a) (hdivF : ∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) (hmild : ∀ t ∈ Icc 0 T, ∀ ξ, a t ξ = heat ν t ξ • a 0 ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) {M1 : ℝ} (hM1 : ∀ s ∈ Icc 0 T, J 1 (a s) ≤ M1) {t : ℝ} (ht : t ∈ Icc 0 T) : 2 * π ^ 2 * ν * ∫ s in (0 : ℝ)..t, J 2 (a s) ≤ J 1 (a 0) + t * C1 ν M1"
   },
@@ -1121,7 +1143,7 @@
    "name": "ATK.NSCotaUniforme.norm_le_duhamel",
    "file": "atk-kernel/ATK/NSCotaUniforme.lean",
    "line": 264,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hν : 0 < ν) (ha : BoaW a) (hmild : ∀ t ∈ Icc 0 T, ∀ ξ, a t ξ = heat ν t ξ • a 0 ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) {t : ℝ} (ht : t ∈ Icc 0 T) (ξ : E3) : ‖a t ξ‖ ≤ ‖a 0 ξ‖ + ∫ s in (0 : ℝ)..t, heat ν (t - s) ξ * ‖Nl (a s) (a s) ξ‖"
   },
@@ -1129,7 +1151,7 @@
    "name": "ATK.NSCotaUniforme.w2_int_heat_le",
    "file": "atk-kernel/ATK/NSCotaUniforme.lean",
    "line": 93,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν : ℝ} (hν : 0 < ν) {t : ℝ} (ht : 0 ≤ t) (ξ : E3) : w 2 ξ * ∫ s in (0 : ℝ)..t, heat ν (t - s) ξ ≤ 2 * t + 1 / (2 * π ^ 2 * ν)"
   },
@@ -1137,7 +1159,7 @@
    "name": "ATK.NSCotaUniforme.w2_norm_Nl_le",
    "file": "atk-kernel/ATK/NSCotaUniforme.lean",
    "line": 60,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hd : ∀ ξ, inner ℂ (cpx ξ) (f ξ) = 0) (hR : Rapida fun ξ => ‖f ξ‖) (ξ : E3) : w 2 ξ * ‖Nl f f ξ‖ ≤ 16 * π * J 3 f"
   },
@@ -1145,7 +1167,7 @@
    "name": "ATK.NSDado.Vf_ahat",
    "file": "atk-kernel/ATK/NSDado.lean",
    "line": 68,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u₀ : SchwartzMap E3 E3) (x : E3) : Vf (ahat u₀) x = cpx (u₀ x)"
   },
@@ -1153,7 +1175,7 @@
    "name": "ATK.NSDado.ahat_bound",
    "file": "atk-kernel/ATK/NSDado.lean",
    "line": 52,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u₀ : SchwartzMap E3 E3) (m : ℕ) : ∃ C, 0 ≤ C ∧ ∀ ξ, ‖ahat u₀ ξ‖ ≤ C * (w m ξ)⁻¹"
   },
@@ -1161,7 +1183,7 @@
    "name": "ATK.NSDado.ahat_cont",
    "file": "atk-kernel/ATK/NSDado.lean",
    "line": 49,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u₀ : SchwartzMap E3 E3) : Continuous (ahat u₀)"
   },
@@ -1169,7 +1191,7 @@
    "name": "ATK.NSDado.ahat_dado",
    "file": "atk-kernel/ATK/NSDado.lean",
    "line": 64,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u₀ : SchwartzMap E3 E3) : ∃ M, Dado (ahat u₀) M"
   },
@@ -1177,7 +1199,7 @@
    "name": "ATK.NSDado.ahat_div",
    "file": "atk-kernel/ATK/NSDado.lean",
    "line": 91,
-   "state": "nao_checado",
+   "state": "erro",
    "axioms_beyond_standard": [],
    "statement": "(u₀ : SchwartzMap E3 E3) (hdiv : ∀ x, div u₀ x = 0) (ξ : E3) : inner ℂ (cpx ξ) (ahat u₀ ξ) = 0"
   },
@@ -1185,7 +1207,7 @@
    "name": "ATK.NSDado.ahat_eq",
    "file": "atk-kernel/ATK/NSDado.lean",
    "line": 47,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u₀ : SchwartzMap E3 E3) : ahat u₀ = ⇑(𝓕 (uc u₀) : SchwartzMap E3 C3)"
   },
@@ -1193,7 +1215,7 @@
    "name": "ATK.NSDado.ahat_herm",
    "file": "atk-kernel/ATK/NSDado.lean",
    "line": 77,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u₀ : SchwartzMap E3 E3) : Herm (ahat u₀)"
   },
@@ -1201,7 +1223,7 @@
    "name": "ATK.NSDado.cpxL_apply",
    "file": "atk-kernel/ATK/NSDado.lean",
    "line": 36,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(x : E3) : cpxL x = cpx x"
   },
@@ -1209,7 +1231,7 @@
    "name": "ATK.NSDado.uc_apply",
    "file": "atk-kernel/ATK/NSDado.lean",
    "line": 42,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u₀ : SchwartzMap E3 E3) (x : E3) : uc u₀ x = cpx (u₀ x)"
   },
@@ -1217,7 +1239,7 @@
    "name": "ATK.NSDuhamel.Ap_lin",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 599,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) {G : E3 → C3} {R M₁ M₂ : ℝ} (hR : 0 ≤ R) {ψ₁ ψ₂ : E3 → ℂ} (h₁ : Loc R M₁ (tst G ψ₁)) (h₂ : Loc R M₂ (tst G ψ₂)) (c₁ c₂ : ℂ) : Ap U s (tst G (fun η => c₁ * ψ₁ η + c₂ * ψ₂ η)) = c₁ * Ap U s (tst G ψ₁) + c₂ * Ap U s (tst G ψ₂)"
   },
@@ -1225,7 +1247,7 @@
    "name": "ATK.NSDuhamel.Ap_sub",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 619,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) {G : E3 → C3} {R M₁ M₂ : ℝ} (hR : 0 ≤ R) {ψ₁ ψ₂ : E3 → ℂ} (h₁ : Loc R M₁ (tst G ψ₁)) (h₂ : Loc R M₂ (tst G ψ₂)) : Ap U s (tst G ψ₁) - Ap U s (tst G ψ₂) = Ap U s (tst G (fun η => ψ₁ η - ψ₂ η))"
   },
@@ -1233,7 +1255,7 @@
    "name": "ATK.NSDuhamel.Loc.norm_mt_le",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 192,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{R M : ℝ} {H : E3 → C3} (hH : Loc R M H) (hR : 0 ≤ R) (ξ : E3) : ‖mtf H ξ‖ ≤ 8 * π * R * M * chiB R ξ"
   },
@@ -1241,7 +1263,7 @@
    "name": "ATK.NSDuhamel.abs_coord_le",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 121,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : C3) (k : Fin 3) : ‖v k‖ ≤ ‖v‖"
   },
@@ -1249,7 +1271,7 @@
    "name": "ATK.NSDuhamel.abs_exp_sub_exp_le",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 84,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{q a b : ℝ} (hq : 0 ≤ q) (ha : 0 ≤ a) (hb : 0 ≤ b) : |Real.exp (-(q * a)) - Real.exp (-(q * b))| ≤ q * |a - b|"
   },
@@ -1257,7 +1279,7 @@
    "name": "ATK.NSDuhamel.abs_exp_taylor_le",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 102,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{q a b t : ℝ} (hq : 0 ≤ q) (hab : a ≤ b) (hbt : b ≤ t) (hsmall : q * (b - a) ≤ 1) : |Real.exp (-(q * (t - b))) - Real.exp (-(q * (t - a))) - (b - a) * q * Real.exp (-(q * (t - a)))| ≤ (q * (b - a)) ^ 2"
   },
@@ -1265,7 +1287,7 @@
    "name": "ATK.NSDuhamel.chiB_nonneg",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 180,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(R : ℝ) (ξ : E3) : 0 ≤ chiB R ξ"
   },
@@ -1273,7 +1295,7 @@
    "name": "ATK.NSDuhamel.chiB_sq",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 183,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(R : ℝ) (ξ : E3) : chiB R ξ ^ 2 = chiB R ξ"
   },
@@ -1281,7 +1303,7 @@
    "name": "ATK.NSDuhamel.const_of_sq",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 26,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{H : ℝ → ℂ} {t δ K : ℝ} (ht : 0 ≤ t) (hδ : 0 < δ) (h : ∀ r r', 0 ≤ r → r ≤ r' → r' ≤ t → r' - r ≤ δ → ‖H r' - H r‖ ≤ K * (r' - r) ^ 2) : H t = H 0"
   },
@@ -1289,7 +1311,7 @@
    "name": "ATK.NSDuhamel.contDiff_hk",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 377,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ν τ : ℝ) : ContDiff ℝ ∞ (hk ν τ)"
   },
@@ -1297,7 +1319,7 @@
    "name": "ATK.NSDuhamel.contDiff_qf",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 382,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ν : ℝ) : ContDiff ℝ ∞ (qf ν)"
   },
@@ -1305,7 +1327,7 @@
    "name": "ATK.NSDuhamel.contDiff_tst",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 434,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{φ : E3 → ℂ} (hφ : ContDiff ℝ ∞ φ) : ContDiff ℝ ∞ (tst G φ)"
   },
@@ -1313,15 +1335,17 @@
    "name": "ATK.NSDuhamel.continuous_NU",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 255,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) : Continuous (NU U s)"
   },
   {
    "name": "ATK.NSDuhamel.continuous_cr",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 157,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": Continuous fun p : C3 × C3 => cr p.1 p.2"
   },
@@ -1329,7 +1353,7 @@
    "name": "ATK.NSDuhamel.continuous_mt",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 163,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{H : E3 → C3} (hH : Continuous H) : Continuous (mtf H)"
   },
@@ -1337,15 +1361,17 @@
    "name": "ATK.NSDuhamel.duhamel",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 694,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (hν : 0 ≤ ν) (u₀S : SchwartzMap E3 E3) (hu₀ : ∀ x, u₀S x = u₀ x) {G : E3 → C3} (hG : ContDiff ℝ ∞ G) (hGs : HasCompactSupport G) {t : ℝ} (ht : t ∈ Ico 0 T) : Ap U t G = A0 u₀S (tst G (hk ν t)) - ∫ s in (0 : ℝ)..t, np U s (tst G (hk ν (t - s)))"
   },
   {
    "name": "ATK.NSDuhamel.exists_MG",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 419,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ∃ MG, 0 ≤ MG ∧ ∀ ξ, ‖G ξ‖ ≤ MG"
   },
@@ -1353,7 +1379,7 @@
    "name": "ATK.NSDuhamel.exists_R",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 411,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ∃ R, 0 ≤ R ∧ ∀ ξ, R < ‖ξ‖ → G ξ = 0"
   },
@@ -1361,15 +1387,17 @@
    "name": "ATK.NSDuhamel.fw",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 465,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (u₀S : SchwartzMap E3 E3) (hu₀ : ∀ x, u₀S x = u₀ x) {φ : E3 → ℂ} (hφ : ContDiff ℝ ∞ φ) {t' : ℝ} (ht' : t' ∈ Ico 0 T) : Ap U t' (tst G φ) - A0 u₀S (tst G φ) = ∫ s in (0 : ℝ)..t', (-Ap U s (tst G (fun η => qf ν η * φ η)) - np U s (tst G φ))"
   },
   {
    "name": "ATK.NSDuhamel.hasCompactSupport_tst",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 437,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(φ : E3 → ℂ) : HasCompactSupport (tst G φ)"
   },
@@ -1377,7 +1405,7 @@
    "name": "ATK.NSDuhamel.heat_eq_exp",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 397,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ν τ : ℝ) (ξ : E3) : heat ν τ ξ = Real.exp (-((4 * π ^ 2 * ν * ‖ξ‖ ^ 2) * τ))"
   },
@@ -1385,7 +1413,7 @@
    "name": "ATK.NSDuhamel.integrable_Ap",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 263,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) {R M : ℝ} (hR : 0 ≤ R) {H : E3 → C3} (hH : Loc R M H) : Integrable fun ξ => ⟪bF U s ξ, mtf H ξ⟫_ℂ"
   },
@@ -1393,7 +1421,7 @@
    "name": "ATK.NSDuhamel.integrable_chiB",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 175,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(R : ℝ) : Integrable (chiB R)"
   },
@@ -1401,15 +1429,17 @@
    "name": "ATK.NSDuhamel.integrable_np",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 312,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) {R M : ℝ} (hR : 0 ≤ R) {H : E3 → C3} (hH : Loc R M H) : Integrable fun ξ => ⟪NU U s ξ, mtf H ξ⟫_ℂ"
   },
   {
    "name": "ATK.NSDuhamel.integral_chiB",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 210,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(R : ℝ) : ∫ ξ, chiB R ξ = volume.real (Metric.closedBall (0 : E3) R)"
   },
@@ -1417,7 +1447,7 @@
    "name": "ATK.NSDuhamel.integral_norm_sq_bF",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 225,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) : ∫ ξ, ‖bF U s ξ‖ ^ 2 = ∫ x, ‖U (x, s)‖ ^ 2"
   },
@@ -1425,7 +1455,7 @@
    "name": "ATK.NSDuhamel.intervalIntegrable_Ap",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 485,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {t : ℝ} (ht0 : 0 ≤ t) (ht : t < T) {φ : E3 → ℂ} (hφ : ContDiff ℝ ∞ φ) : IntervalIntegrable (fun s => Ap U s (tst G φ)) volume 0 t"
   },
@@ -1433,23 +1463,27 @@
    "name": "ATK.NSDuhamel.intervalIntegrable_np_fam",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 554,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {t : ℝ} (ht0 : 0 ≤ t) (ht : t < T) {Ht : ℝ → E3 → C3} (hcont : Continuous fun p : ℝ × E3 => Ht p.1 p.2) {R M : ℝ} (hR : 0 ≤ R) (hloc : ∀ s ∈ Icc 0 t, Loc R M (Ht s)) : IntervalIntegrable (fun s => np U s (Ht s)) volume 0 t"
   },
   {
    "name": "ATK.NSDuhamel.lip_Ap",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 647,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (u₀S : SchwartzMap E3 E3) (hu₀ : ∀ x, u₀S x = u₀ x) {G : E3 → C3} (hG : ContDiff ℝ ∞ G) (hGs : HasCompactSupport G) {R MG : ℝ} (hR0 : 0 ≤ R) (hR : ∀ ξ, R < ‖ξ‖ → G ξ = 0) (hMG0 : 0 ≤ MG) (hMG : ∀ ξ, ‖G ξ‖ ≤ MG) {t : ℝ} (ht : t ∈ Ico 0 T) {C : ℝ} (hC : ∀ s ∈ Icc 0 t, ∫ x, ‖U (x, s)‖ ^ 2 ≤ C) {ψ : E3 → ℂ} (hψ : ContDiff ℝ ∞ ψ) {M M' : ℝ} (hM0 : 0 ≤ M) (hM'0 : 0 ≤ M') (h"
   },
   {
    "name": "ATK.NSDuhamel.loc_tst",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 423,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{R : ℝ} (hR : ∀ ξ, R < ‖ξ‖ → G ξ = 0) {MG : ℝ} (hMG0 : 0 ≤ MG) (hMG : ∀ ξ, ‖G ξ‖ ≤ MG) {φ : E3 → ℂ} (hφ : Continuous φ) {M : ℝ} (hM0 : 0 ≤ M) (hM : ∀ ξ, ‖ξ‖ ≤ R → ‖φ ξ‖ ≤ M) : Loc R (MG * M) (tst G φ) where cont"
   },
@@ -1457,7 +1491,7 @@
    "name": "ATK.NSDuhamel.memLp_bF",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 230,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(U : E3 × ℝ → E3) (s : ℝ) : MemLp (bF U s) 2"
   },
@@ -1465,7 +1499,7 @@
    "name": "ATK.NSDuhamel.mt_smul",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 153,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(H : E3 → C3) (φ : E3 → ℂ) (ξ : E3) : mtf (fun η => φ η • H η) ξ = φ ξ • mtf H ξ"
   },
@@ -1473,7 +1507,7 @@
    "name": "ATK.NSDuhamel.mtf_tst_lin",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 587,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : E3 → C3) (c₁ c₂ : ℂ) (ψ₁ ψ₂ : E3 → ℂ) (ξ : E3) : mtf (tst G (fun η => c₁ * ψ₁ η + c₂ * ψ₂ η)) ξ = c₁ • mtf (tst G ψ₁) ξ + c₂ • mtf (tst G ψ₂) ξ"
   },
@@ -1481,7 +1515,7 @@
    "name": "ATK.NSDuhamel.mtf_tst_qf",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 453,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : E3 → C3) (ν : ℝ) (φ : E3 → ℂ) (ξ : E3) : mtf (tst G (fun η => qf ν η * φ η)) ξ = qf ν ξ • mtf (tst G φ) ξ"
   },
@@ -1489,7 +1523,7 @@
    "name": "ATK.NSDuhamel.norm_Ap_le",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 285,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) {C : ℝ} (hC : ∫ x, ‖U (x, s)‖ ^ 2 ≤ C) {R M : ℝ} (hR : 0 ≤ R) {H : E3 → C3} (hH : Loc R M H) : ‖Ap U s H‖ ≤ 4 * π * R * M * (C + volume.real (Metric.closedBall (0 : E3) R))"
   },
@@ -1497,7 +1531,7 @@
    "name": "ATK.NSDuhamel.norm_NU_le",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 232,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) (ξ : E3) : ‖NU U s ξ‖ ≤ 2 * π * ‖ξ‖ * ∫ x, ‖U (x, s)‖ ^ 2"
   },
@@ -1505,7 +1539,7 @@
    "name": "ATK.NSDuhamel.norm_cr_le",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 125,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v w : C3) : ‖cr v w‖ ≤ 4 * (‖v‖ * ‖w‖)"
   },
@@ -1513,7 +1547,7 @@
    "name": "ATK.NSDuhamel.norm_hk_le",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 386,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν τ : ℝ} (hν : 0 ≤ ν) (hτ : 0 ≤ τ) (ξ : E3) : ‖hk ν τ ξ‖ ≤ 1"
   },
@@ -1521,7 +1555,7 @@
    "name": "ATK.NSDuhamel.norm_mt_le",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 144,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(H : E3 → C3) (ξ : E3) : ‖mtf H ξ‖ ≤ 8 * π * (‖ξ‖ * ‖H ξ‖)"
   },
@@ -1529,7 +1563,7 @@
    "name": "ATK.NSDuhamel.norm_np_le",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 338,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) {C : ℝ} (hC : ∫ x, ‖U (x, s)‖ ^ 2 ≤ C) {R M : ℝ} (hR : 0 ≤ R) {H : E3 → C3} (hH : Loc R M H) : ‖np U s H‖ ≤ 16 * π ^ 2 * R ^ 2 * C * M * volume.real (Metric.closedBall (0 : E3) R)"
   },
@@ -1537,7 +1571,7 @@
    "name": "ATK.NSDuhamel.norm_qf_le",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 390,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν R : ℝ} (hν : 0 ≤ ν) {ξ : E3} (hξ : ‖ξ‖ ≤ R) : ‖qf ν ξ‖ ≤ 4 * π ^ 2 * ν * R ^ 2"
   },
@@ -1545,31 +1579,37 @@
    "name": "ATK.NSDuhamel.np_lin",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 609,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) {G : E3 → C3} {R M₁ M₂ : ℝ} (hR : 0 ≤ R) {ψ₁ ψ₂ : E3 → ℂ} (h₁ : Loc R M₁ (tst G ψ₁)) (h₂ : Loc R M₂ (tst G ψ₂)) (c₁ c₂ : ℂ) : np U s (tst G (fun η => c₁ * ψ₁ η + c₂ * ψ₂ η)) = c₁ * np U s (tst G ψ₁) + c₂ * np U s (tst G ψ₂)"
   },
   {
    "name": "ATK.NSDuhamel.np_sub",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 627,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) {G : E3 → C3} {R M₁ M₂ : ℝ} (hR : 0 ≤ R) {ψ₁ ψ₂ : E3 → ℂ} (h₁ : Loc R M₁ (tst G ψ₁)) (h₂ : Loc R M₂ (tst G ψ₂)) : np U s (tst G ψ₁) - np U s (tst G ψ₂) = np U s (tst G (fun η => ψ₁ η - ψ₂ η))"
   },
   {
    "name": "ATK.NSDuhamel.stronglyMeasurable_NUc",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 524,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {t : ℝ} (ht0 : 0 ≤ t) (ht : t < T) : StronglyMeasurable fun p : ℝ × E3 => NU U (max 0 (min p.1 t)) p.2"
   },
   {
    "name": "ATK.NSDuhamel.tstS_apply",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 444,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{φ : E3 → ℂ} (hφ : ContDiff ℝ ∞ φ) (ξ : E3) : tstS hG hGs hφ ξ = tst G φ ξ"
   },
@@ -1577,7 +1617,7 @@
    "name": "ATK.NSDuhamel.tst_apply",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 400,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : E3 → C3) (φ : E3 → ℂ) (ξ : E3) : tst G φ ξ = φ ξ • G ξ"
   },
@@ -1585,7 +1625,7 @@
    "name": "ATK.NSDuhamel.tst_sub",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 402,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : E3 → C3) (φ ψ : E3 → ℂ) : tst G (fun ξ => φ ξ - ψ ξ) = fun ξ => tst G φ ξ - tst G ψ ξ"
   },
@@ -1593,7 +1633,7 @@
    "name": "ATK.NSDuhamel.uIcc_sub",
    "file": "atk-kernel/ATK/NSDuhamel.lean",
    "line": 643,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{a b t : ℝ} (ha : 0 ≤ a) (hab : a ≤ b) (hb : b ≤ t) : uIcc a b ⊆ uIcc 0 t"
   },
@@ -1601,7 +1641,7 @@
    "name": "ATK.NSEnergia.BoaW.inner_bound",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 135,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : ℝ → E3 → C3} (hf : BoaW f) (hg : BoaW g) : ∃ C, 0 ≤ C ∧ ∀ s ξ, ‖inner ℂ (f s ξ) (g s ξ)‖ ≤ C * (w 4 ξ)⁻¹"
   },
@@ -1609,7 +1649,7 @@
    "name": "ATK.NSEnergia.BoaW.integrable_inner",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 150,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : ℝ → E3 → C3} (hf : BoaW f) (hg : BoaW g) (s : ℝ) : Integrable fun ξ => inner ℂ (f s ξ) (g s ξ)"
   },
@@ -1617,7 +1657,7 @@
    "name": "ATK.NSEnergia.BoaW.integrable_norm_sq",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 160,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : ℝ → E3 → C3} (hf : BoaW f) (s : ℝ) : Integrable fun ξ => ‖f s ξ‖ ^ 2"
   },
@@ -1625,7 +1665,7 @@
    "name": "ATK.NSEnergia.ader_one",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 169,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ν : ℝ) (a : ℝ → E3 → C3) (t : ℝ) (ξ : E3) : ader ν a 1 t ξ = -((kappa ν ξ : ℝ) : ℂ) • a t ξ - lp ξ (Nl (a t) (a t) ξ)"
   },
@@ -1633,7 +1673,7 @@
    "name": "ATK.NSEnergia.cpx_sub",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 26,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ξ η : E3) : cpx (ξ - η) = cpx ξ - cpx η"
   },
@@ -1641,7 +1681,7 @@
    "name": "ATK.NSEnergia.energia_decresce",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 238,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hν : 0 ≤ ν) (ha : BoaW a) (hmild : ∀ t ∈ Icc 0 T, ∀ ξ, a t ξ = heat ν t ξ • a₀ ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) (hherm : ∀ t, Herm (a t)) (hdivF : ∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) {t : ℝ} (ht : t ∈ Icc 0 T) : ∫ ξ, ‖a t ξ‖ ^ 2 ≤ ∫ ξ, ‖a 0 ξ‖ ^ 2"
   },
@@ -1649,7 +1689,7 @@
    "name": "ATK.NSEnergia.inner_Nl_self",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 104,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hc : Continuous f) {A : ℝ} (hA0 : 0 ≤ A) (hA : ∀ ξ, ‖f ξ‖ ≤ A * (w 5 ξ)⁻¹) (ξ : E3) : inner ℂ (f ξ) (Nl f f ξ) = ((2 * π : ℝ) * Complex.I : ℂ) * ∫ η, Ftri f ξ η"
   },
@@ -1657,7 +1697,7 @@
    "name": "ATK.NSEnergia.inner_cj3_cj3",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 29,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v v' : C3) : inner ℂ (cj3 v) (cj3 v') = inner ℂ v' v"
   },
@@ -1665,7 +1705,7 @@
    "name": "ATK.NSEnergia.inner_lp_of_div",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 129,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ξ : E3} {v : C3} (hv : inner ℂ (cpx ξ) v = 0) (u : C3) : inner ℂ v (lp ξ u) = inner ℂ v u"
   },
@@ -1673,7 +1713,7 @@
    "name": "ATK.NSEnergia.integrable_Ftri",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 91,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hc : Continuous f) {A : ℝ} (hA0 : 0 ≤ A) (hA : ∀ ξ, ‖f ξ‖ ≤ A * (w 5 ξ)⁻¹) : Integrable (Function.uncurry (Ftri f)) ((volume : Measure E3).prod volume)"
   },
@@ -1681,7 +1721,7 @@
    "name": "ATK.NSEnergia.integral_Ftri_eq_zero",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 40,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hh : Herm f) (hd : ∀ ξ, inner ℂ (cpx ξ) (f ξ) = 0) (η : E3) : ∫ ξ, Ftri f ξ η = 0"
   },
@@ -1689,7 +1729,7 @@
    "name": "ATK.NSEnergia.integral_inner_Nl_self",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 119,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hc : Continuous f) (hh : Herm f) (hd : ∀ ξ, inner ℂ (cpx ξ) (f ξ) = 0) {A : ℝ} (hA0 : 0 ≤ A) (hA : ∀ ξ, ‖f ξ‖ ≤ A * (w 5 ξ)⁻¹) : ∫ ξ, inner ℂ (f ξ) (Nl f f ξ) = 0"
   },
@@ -1697,7 +1737,7 @@
    "name": "ATK.NSEnergia.integral_re_inner_ader_le",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 206,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hν : 0 ≤ ν) (ha : BoaW a) (hherm : ∀ t, Herm (a t)) (hdivF : ∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) (s : ℝ) : ∫ ξ, 2 * (inner ℂ (a s ξ) (ader ν a 1 s ξ)).re ≤ 0"
   },
@@ -1705,7 +1745,7 @@
    "name": "ATK.NSEnergia.norm_Ftri_le",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 69,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} {A : ℝ} (hA0 : 0 ≤ A) (hA : ∀ ξ, ‖f ξ‖ ≤ A * (w 5 ξ)⁻¹) (ξ η : E3) : ‖Ftri f ξ η‖ ≤ A ^ 3 * ((w 4 ξ)⁻¹ * (w 4 η)⁻¹)"
   },
@@ -1713,7 +1753,7 @@
    "name": "ATK.NSEnergia.norm_mul_w5_le",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 61,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ξ : E3) : ‖ξ‖ * (w 5 ξ)⁻¹ ≤ (w 4 ξ)⁻¹"
   },
@@ -1721,7 +1761,7 @@
    "name": "ATK.NSEnergia.norm_sq_sub_eq",
    "file": "atk-kernel/ATK/NSEnergia.lean",
    "line": 179,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ha : BoaW a) (hmild : ∀ t ∈ Icc 0 T, ∀ ξ, a t ξ = heat ν t ξ • a₀ ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) (ξ : E3) {t : ℝ} (ht : t ∈ Icc 0 T) : ‖a t ξ‖ ^ 2 - ‖a 0 ξ‖ ^ 2 = ∫ s in (0 : ℝ)..t, 2 * (inner ℂ (a s ξ) (ader ν a 1 s ξ)).re"
   },
@@ -1729,7 +1769,7 @@
    "name": "ATK.NSEstimativas.Mansa.integrable",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 59,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X : E3 → ℝ} (h : Mansa X) : Integrable X"
   },
@@ -1737,7 +1777,7 @@
    "name": "ATK.NSEstimativas.Mansa.integrable_sq",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 70,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X : E3 → ℝ} (h : Mansa X) : Integrable fun ξ => X ξ ^ 2"
   },
@@ -1745,7 +1785,7 @@
    "name": "ATK.NSEstimativas.Mansa.le_const",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 63,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X : E3 → ℝ} (h : Mansa X) : ∃ C, 0 ≤ C ∧ ∀ ξ, X ξ ≤ C"
   },
@@ -1753,7 +1793,7 @@
    "name": "ATK.NSEstimativas.Mansa.sqrt",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 78,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X : E3 → ℝ} (h : Mansa X) : Continuous fun ξ => Real.sqrt (X ξ)"
   },
@@ -1761,7 +1801,7 @@
    "name": "ATK.NSEstimativas.absorve",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 335,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{T Y Z K ε : ℝ} (n : ℕ) (hT : 0 ≤ T) (hY : 0 ≤ Y) (hZ : 0 ≤ Z) (hK : 0 ≤ K) (hε : 0 < ε) (h : T ^ (n + 1) ≤ K * Y ^ n * Z) : T ≤ ε * Y + K * Z / ε ^ n"
   },
@@ -1769,7 +1809,7 @@
    "name": "ATK.NSEstimativas.c72_nonneg",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 216,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": 0 ≤ c72"
   },
@@ -1777,7 +1817,7 @@
    "name": "ATK.NSEstimativas.cs_sq",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 24,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{α : Type*} [MeasurableSpace α] {μ : Measure α} {f g : α → ℝ} (hf0 : ∀ x, 0 ≤ f x) (hg0 : ∀ x, 0 ≤ g x) (hf : AEStronglyMeasurable f μ) (hg : AEStronglyMeasurable g μ) (hf2 : Integrable (fun x => f x ^ 2) μ) (hg2 : Integrable (fun x => g x ^ 2) μ) : (∫ x, f x * g x ∂μ) ^ 2 ≤ (∫ x, f x ^ 2 ∂μ) * (∫ x, g x ^ 2 ∂μ)"
   },
@@ -1785,7 +1825,7 @@
    "name": "ATK.NSEstimativas.integrable_72",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 211,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": Integrable fun ξ : E3 => (1 + ‖ξ‖) ^ (-(7 / 2 : ℝ))"
   },
@@ -1793,7 +1833,7 @@
    "name": "ATK.NSEstimativas.integrable_sq_mul_rpow",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 200,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{B : E3 → ℝ} (hBc : Continuous B) (hB0 : ∀ ξ, 0 ≤ B ξ) {C : ℝ} (hB : ∀ ξ, B ξ ≤ C * (w 8 ξ)⁻¹) {p : ℝ} (hp : p ≤ 4) : Integrable fun ξ => B ξ ^ 2 * (1 + ‖ξ‖) ^ p"
   },
@@ -1801,7 +1841,7 @@
    "name": "ATK.NSEstimativas.interp_L1",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 219,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{B : E3 → ℝ} (hBc : Continuous B) (hB0 : ∀ ξ, 0 ≤ B ξ) {C : ℝ} (hB : ∀ ξ, B ξ ≤ C * (w 8 ξ)⁻¹) : (∫ ξ, B ξ) ^ 8 ≤ c72 ^ 4 * (∫ ξ, (1 + ‖ξ‖) ^ 2 * B ξ ^ 2) * (∫ ξ, (1 + ‖ξ‖) ^ 4 * B ξ ^ 2) ^ 3"
   },
@@ -1809,7 +1849,7 @@
    "name": "ATK.NSEstimativas.one_add_norm_pos",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 160,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ξ : E3) : 0 < 1 + ‖ξ‖"
   },
@@ -1817,7 +1857,7 @@
    "name": "ATK.NSEstimativas.rpow_mul_rpow",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 164,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{u : ℝ} (hu : 0 < u) (a b : ℝ) : u ^ a * u ^ b = u ^ (a + b)"
   },
@@ -1825,7 +1865,7 @@
    "name": "ATK.NSEstimativas.rpow_natc",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 170,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{u : ℝ} (hu : 0 < u) (n : ℕ) : u ^ (n : ℝ) = u ^ n"
   },
@@ -1833,7 +1873,7 @@
    "name": "ATK.NSEstimativas.rpow_sq",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 167,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{u : ℝ} (hu : 0 < u) (a : ℝ) : (u ^ a) ^ 2 = u ^ (2 * a)"
   },
@@ -1841,7 +1881,7 @@
    "name": "ATK.NSEstimativas.sq_mul_rpow_le",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 172,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{B : E3 → ℝ} (hB0 : ∀ ξ, 0 ≤ B ξ) {C : ℝ} (hB : ∀ ξ, B ξ ≤ C * (w 8 ξ)⁻¹) {p : ℝ} (hp : p ≤ 4) (ξ : E3) : B ξ ^ 2 * (1 + ‖ξ‖) ^ p ≤ C ^ 2 * (w 4 ξ)⁻¹"
   },
@@ -1849,7 +1889,7 @@
    "name": "ATK.NSEstimativas.tri_le",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 81,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X Y Z : E3 → ℝ} (hX : Mansa X) (hY : Mansa Y) (hZ : Mansa Z) : (∫ ξ, ∫ η, X ξ * Y η * Z (ξ - η)) ^ 2 ≤ (∫ ξ, X ξ ^ 2) * (∫ η, Y η) ^ 2 * (∫ ζ, Z ζ ^ 2)"
   },
@@ -1857,7 +1897,7 @@
    "name": "ATK.NSEstimativas.tri_leZ",
    "file": "atk-kernel/ATK/NSEstimativas.lean",
    "line": 147,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X Y Z : E3 → ℝ} (hX : Mansa X) (hY : Mansa Y) (hZ : Mansa Z) : (∫ ξ, ∫ η, X ξ * Y η * Z (ξ - η)) ^ 2 ≤ (∫ ξ, X ξ ^ 2) * (∫ η, Y η ^ 2) * (∫ ζ, Z ζ) ^ 2"
   },
@@ -1865,7 +1905,7 @@
    "name": "ATK.NSExistencia.Amp.dX_clm_V",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 83,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Type*} [NormedAddCommGroup W] [NormedSpace ℝ W] (L : C3 →L[ℝ] W) {T : ℝ} {c : ℕ → ℝ → E3 → C3} (hc : Amp T c) {t : ℝ} (ht : t ∈ Icc 0 T) (j : Fin 3) (y : E3) : dX j (fun z => L (V (c 0) (z, t))) y = L (V (mulC (cj j) c 0) (y, t))"
   },
@@ -1873,7 +1913,7 @@
    "name": "ATK.NSExistencia.Amp.differentiableAt_fatia",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 77,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{T : ℝ} {c : ℕ → ℝ → E3 → C3} (hc : Amp T c) {t : ℝ} (ht : t ∈ Icc 0 T) (y : E3) : DifferentiableAt ℝ (fun z => V (c 0) (z, t)) y"
   },
@@ -1881,7 +1921,7 @@
    "name": "ATK.NSExistencia.BoaW.integrable_ex",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 110,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : ℝ → E3 → C3} (hf : BoaW f) (t : ℝ) (x : E3) : Integrable fun ξ => ex x ξ • f t ξ"
   },
@@ -1889,7 +1929,7 @@
    "name": "ATK.NSExistencia.NSEq_Uf",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 300,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hherm : ∀ t, Herm (a t)) (hdivF : ∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) {t : ℝ} (ht : t ∈ Ioo 0 T) (x : E3) : NSEq ν (Uf ν a) (Pf ν a) x t"
   },
@@ -1897,7 +1937,7 @@
    "name": "ATK.NSExistencia.continuous_fatia_V",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 179,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{T : ℝ} {c : ℕ → ℝ → E3 → C3} (hc : Amp T c) {t : ℝ} (ht : t ∈ Icc 0 T) : Continuous fun z => V (c 0) (z, t)"
   },
@@ -1905,7 +1945,7 @@
    "name": "ATK.NSExistencia.conv_Uf",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 257,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hherm : ∀ t, Herm (a t)) (hdivF : ∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) {t : ℝ} (ht : t ∈ Icc 0 T) (x : E3) : conv (fatia (Uf ν a) t) x = re3 (Vf (Nl (a t) (a t)) x)"
   },
@@ -1913,7 +1953,7 @@
    "name": "ATK.NSExistencia.dX_Uf",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 220,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{t : ℝ} (ht : t ∈ Icc 0 T) (j : Fin 3) (y : E3) : dX j (fatia (Uf ν a) t) y = re3 (V (mulC (cj j) (ader ν a) 0) (y, t))"
   },
@@ -1921,7 +1961,7 @@
    "name": "ATK.NSExistencia.dX_clm",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 67,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Type*} [NormedAddCommGroup W] [NormedSpace ℝ W] (L : C3 →L[ℝ] W) {g : E3 → C3} {y : E3} (hg : DifferentiableAt ℝ g y) (j : Fin 3) : dX j (fun z => L (g z)) y = L (dX j g y)"
   },
@@ -1929,7 +1969,7 @@
    "name": "ATK.NSExistencia.deriv_Uf",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 237,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{t : ℝ} (ht : t ∈ Ioo 0 T) (x : E3) : deriv (fun s => Uf ν a (x, s)) t = re3 (Vf (ader ν a 1 t) x)"
   },
@@ -1937,7 +1977,7 @@
    "name": "ATK.NSExistencia.div_Uf",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 275,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hdivF : ∀ t ξ, inner ℂ (cpx ξ) (a t ξ) = 0) {t : ℝ} (ht : t ∈ Icc 0 T) (x : E3) : div (fatia (Uf ν a) t) x = 0"
   },
@@ -1945,31 +1985,37 @@
    "name": "ATK.NSExistencia.energia_Uf",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 315,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{A : ℝ} (hA0 : 0 ≤ A) (hA : ∀ t ξ, ‖a t ξ‖ ≤ A * (w 5 ξ)⁻¹) {t : ℝ} (ht : t ∈ Icc 0 T) : Integrable (fun x => ‖Uf ν a (x, t)‖ ^ 2) ∧ ∫ x, ‖Uf ν a (x, t)‖ ^ 2 ≤ A ^ 2 * I4"
   },
   {
    "name": "ATK.NSExistencia.enstrofia_Uf",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 339,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{A : ℝ} (hA0 : 0 ≤ A) (hA : ∀ t ξ, ‖a t ξ‖ ≤ A * (w 5 ξ)⁻¹) {t : ℝ} (ht : t ∈ Icc 0 T) : Integrable (gradSq (fatia (Uf ν a) t)) ∧ ∫ x, gradSq (fatia (Uf ν a) t) x ≤ 3 * ((2 * π * A) ^ 2 * I4)"
   },
   {
    "name": "ATK.NSExistencia.existenciaLocal",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 387,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": ": ATK.NSReducao.ExistenciaLocal"
   },
   {
    "name": "ATK.NSExistencia.fatia_Pf",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 104,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(t : ℝ) : fatia (Pf ν a) t = fun z => re0L (V (pk ν a 0) (z, t))"
   },
@@ -1977,7 +2023,7 @@
    "name": "ATK.NSExistencia.fatia_Uf",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 102,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(t : ℝ) : fatia (Uf ν a) t = fun z => re3L (V (ader ν a 0) (z, t))"
   },
@@ -1985,7 +2031,7 @@
    "name": "ATK.NSExistencia.grad_Pf",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 244,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{t : ℝ} (ht : t ∈ Icc 0 T) (x : E3) : grad (fatia (Pf ν a) t) x = ∑ j, (Vf (fun ξ => cj j ξ • pk ν a 0 t ξ) x 0).re • e j"
   },
@@ -1993,7 +2039,7 @@
    "name": "ATK.NSExistencia.identidade_V",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 115,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ha : BoaW a) (hmild : ∀ t ∈ Icc 0 T, ∀ ξ, a t ξ = heat ν t ξ • a₀ ξ - ∫ s in (0 : ℝ)..t, duhI ν a a t s ξ) {t : ℝ} (ht : t ∈ Icc 0 T) (x : E3) : Vf (ader ν a 1 t) x + Vf (Nl (a t) (a t)) x - (ν : ℂ) • ∑ j, Vf (fun ξ => cj j ξ • (cj j ξ • a t ξ)) x + ∑ j, (Vf (fun ξ => cj j ξ • pk ν a 0 t ξ) x 0) • cpx (e j) = 0"
   },
@@ -2001,7 +2047,7 @@
    "name": "ATK.NSExistencia.integrable_amp",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 106,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hf : AEStronglyMeasurable f) {C : ℝ} (hC : ∀ ξ, ‖f ξ‖ ≤ C * (w 4 ξ)⁻¹) (x : E3) : Integrable fun ξ => ex x ξ • f ξ"
   },
@@ -2009,7 +2055,7 @@
    "name": "ATK.NSExistencia.integral_sq_le",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 194,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{g : E3 → C3} (hg : AEStronglyMeasurable g) {C : ℝ} (hC0 : 0 ≤ C) (hC : ∀ ξ, ‖g ξ‖ ≤ C * (w 4 ξ)⁻¹) : ∫ ξ, ‖g ξ‖ ^ 2 ≤ C ^ 2 * I4"
   },
@@ -2017,7 +2063,7 @@
    "name": "ATK.NSExistencia.lap_Uf",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 225,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{t : ℝ} (ht : t ∈ Icc 0 T) (x : E3) : lap (fatia (Uf ν a) t) x = re3 (∑ j, Vf (fun ξ => cj j ξ • (cj j ξ • a t ξ)) x)"
   },
@@ -2025,7 +2071,7 @@
    "name": "ATK.NSExistencia.norm_cj_smul_le",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 183,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{A : ℝ} {f : E3 → C3} (hf : ∀ ξ, ‖f ξ‖ ≤ A * (w 5 ξ)⁻¹) (j : Fin 3) (ξ : E3) : ‖cj j ξ • f ξ‖ ≤ (2 * π * A) * (w 4 ξ)⁻¹"
   },
@@ -2033,7 +2079,7 @@
    "name": "ATK.NSExistencia.norm_re3_le",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 34,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : C3) : ‖re3 v‖ ≤ ‖v‖"
   },
@@ -2041,7 +2087,7 @@
    "name": "ATK.NSExistencia.re0L_apply",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 65,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : C3) : re0L v = (v 0).re"
   },
@@ -2049,7 +2095,7 @@
    "name": "ATK.NSExistencia.re3_add",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 43,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v w : C3) : re3 (v + w) = re3 v + re3 w"
   },
@@ -2057,7 +2103,7 @@
    "name": "ATK.NSExistencia.re3_ofReal_smul",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 58,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(r : ℝ) (v : C3) : re3 ((r : ℂ) • v) = r • re3 v"
   },
@@ -2065,7 +2111,7 @@
    "name": "ATK.NSExistencia.re3_real_smul",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 47,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(r : ℝ) (v : C3) : re3 (r • v) = r • re3 v"
   },
@@ -2073,7 +2119,7 @@
    "name": "ATK.NSExistencia.re3_smul_cpx",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 55,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(c : ℂ) (x : E3) : re3 (c • cpx x) = c.re • x"
   },
@@ -2081,7 +2127,7 @@
    "name": "ATK.NSExistencia.re3_smul_of_im",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 52,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{c : ℂ} (hc : c.im = 0) (v : C3) : re3 (c • v) = c.re • re3 v"
   },
@@ -2089,7 +2135,7 @@
    "name": "ATK.NSExistencia.re3_sub",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 45,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v w : C3) : re3 (v - w) = re3 v - re3 w"
   },
@@ -2097,7 +2143,7 @@
    "name": "ATK.NSExistencia.re3_sum",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 49,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ι : Type*} (s : Finset ι) (f : ι → C3) : re3 (∑ i ∈ s, f i) = ∑ i ∈ s, re3 (f i)"
   },
@@ -2105,7 +2151,7 @@
    "name": "ATK.NSExistencia.real_V",
    "file": "atk-kernel/ATK/NSExistencia.lean",
    "line": 253,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hherm : ∀ t, Herm (a t)) (t : ℝ) (x : E3) : cj3 (Vf (a t) x) = Vf (a t) x"
   },
@@ -2489,7 +2535,7 @@
    "name": "ATK.NSFraca.bound_U",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 322,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hU : ContDiffOn ℝ ∞ U (univ ×ˢ Ico 0 T)) {K : Set E3} (hK : IsCompact K) {a b : ℝ} (ha : 0 ≤ a) (hb : b < T) : ∃ M, 0 ≤ M ∧ ∀ x ∈ K, ∀ r ∈ Icc a b, ‖U (x, r)‖ ≤ M"
   },
@@ -2497,7 +2543,7 @@
    "name": "ATK.NSFraca.contDiff_comp",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 41,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → E3} (hf : ContDiff ℝ ∞ f) (k : Fin 3) : ContDiff ℝ ∞ fun y => f y k"
   },
@@ -2505,7 +2551,7 @@
    "name": "ATK.NSFraca.contDiff_dX",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 36,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Type*} [NormedAddCommGroup W] [NormedSpace ℝ W] {g : E3 → W} (hg : ContDiff ℝ ∞ g) (j : Fin 3) : ContDiff ℝ ∞ (dX j g)"
   },
@@ -2513,7 +2559,7 @@
    "name": "ATK.NSFraca.contDiff_lap",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 340,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{g : E3 → E3} (hg : ContDiff ℝ ∞ g) : ContDiff ℝ ∞ (lap g)"
   },
@@ -2521,7 +2567,7 @@
    "name": "ATK.NSFraca.continuousOn_Bw",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 531,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν T : ℝ} {U : E3 × ℝ → E3} {Φ : E3 → E3} (hU : ContDiffOn ℝ ∞ U (univ ×ˢ Ico 0 T)) (hΦ : ContDiff ℝ ∞ Φ) (hc : HasCompactSupport Φ) {t : ℝ} (ht : t ∈ Ico 0 T) : ContinuousOn (Bw ν U Φ) (Icc 0 t)"
   },
@@ -2529,7 +2575,7 @@
    "name": "ATK.NSFraca.continuousOn_U_r",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 336,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hU : ContDiffOn ℝ ∞ U (univ ×ˢ Ico 0 T)) (x : E3) {t : ℝ} (ht : t < T) : ContinuousOn (fun r => U (x, r)) (Icc 0 t)"
   },
@@ -2537,7 +2583,7 @@
    "name": "ATK.NSFraca.continuousOn_integral_dom",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 310,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F : E3 → ℝ → ℝ} {S : Set ℝ} {H : E3 → ℝ} (hH : Continuous H) (hHc : HasCompactSupport H) (hmeas : ∀ r ∈ S, Continuous fun x => F x r) (hcont : ∀ x, ContinuousOn (F x) S) {C : ℝ} (hb : ∀ r ∈ S, ∀ x, |F x r| ≤ C * |H x|) : ContinuousOn (fun r => ∫ x, F x r) S"
   },
@@ -2545,7 +2591,7 @@
    "name": "ATK.NSFraca.continuous_fatia_U",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 332,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hU : ContDiffOn ℝ ∞ U (univ ×ˢ Ico 0 T)) {r : ℝ} (hr : r ∈ Ico 0 T) : Continuous fun x => U (x, r)"
   },
@@ -2553,7 +2599,7 @@
    "name": "ATK.NSFraca.dX_comp",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 29,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → E3} {x : E3} (hf : DifferentiableAt ℝ f x) (j k : Fin 3) : dX j (fun y => f y k) x = dX j f x k"
   },
@@ -2561,7 +2607,7 @@
    "name": "ATK.NSFraca.dX_mul",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 54,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{a b : E3 → ℝ} {x : E3} (ha : DifferentiableAt ℝ a x) (hb : DifferentiableAt ℝ b x) (j : Fin 3) : dX j (fun y => a y * b y) x = dX j a x * b x + a x * dX j b x"
   },
@@ -2569,7 +2615,7 @@
    "name": "ATK.NSFraca.dX_of_not_mem",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 275,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Type*} [NormedAddCommGroup W] [NormedSpace ℝ W] {g : E3 → W} {x : E3} (hx : x ∉ tsupport g) (j : Fin 3) : dX j g x = 0"
   },
@@ -2577,7 +2623,7 @@
    "name": "ATK.NSFraca.formulacao_fraca",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 348,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (hΦ : ContDiff ℝ ∞ Φ) (hc : HasCompactSupport Φ) (hdivΦ : ∀ x, div Φ x = 0) {t : ℝ} (ht : t ∈ Ico 0 T) : (∫ x, inner ℝ (U (x, t)) (Φ x)) - ∫ x, inner ℝ (u₀ x) (Φ x) = ∫ s in (0 : ℝ)..t, Bw ν U Φ s"
   },
@@ -2585,7 +2631,7 @@
    "name": "ATK.NSFraca.hasCompactSupport_lap",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 344,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{g : E3 → E3} (hg : HasCompactSupport g) : HasCompactSupport (lap g)"
   },
@@ -2593,7 +2639,7 @@
    "name": "ATK.NSFraca.hcs_comp",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 105,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(k : Fin 3) : HasCompactSupport fun y => Φ y k"
   },
@@ -2601,7 +2647,7 @@
    "name": "ATK.NSFraca.hcs_mul",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 63,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{u v : E3 → ℝ} (h : HasCompactSupport u ∨ HasCompactSupport v) : HasCompactSupport fun x => u x * v x"
   },
@@ -2609,7 +2655,7 @@
    "name": "ATK.NSFraca.integrable_cs",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 94,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{u v : E3 → ℝ} (hu : Continuous u) (hv : Continuous v) (h : HasCompactSupport u ∨ HasCompactSupport v) : Integrable fun x => u x * v x"
   },
@@ -2617,7 +2663,7 @@
    "name": "ATK.NSFraca.integral_inner_conv",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 193,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → E3} (hf : ContDiff ℝ ∞ f) (hdivf : ∀ x, div f x = 0) : ∫ x, inner ℝ (conv f x) (Φ x) = -∫ x, ∑ j, ∑ k, f x j * f x k * dX j Φ x k"
   },
@@ -2625,7 +2671,7 @@
    "name": "ATK.NSFraca.integral_inner_grad",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 163,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{p : E3 → ℝ} (hp : ContDiff ℝ ∞ p) (hdiv : ∀ x, div Φ x = 0) : ∫ x, inner ℝ (grad p x) (Φ x) = 0"
   },
@@ -2633,7 +2679,7 @@
    "name": "ATK.NSFraca.integral_inner_lap",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 117,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → E3} (hf : ContDiff ℝ ∞ f) : ∫ x, inner ℝ (lap f x) (Φ x) = ∫ x, inner ℝ (f x) (lap Φ x)"
   },
@@ -2641,7 +2687,7 @@
    "name": "ATK.NSFraca.lap_comp",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 108,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → E3} (hf : ContDiff ℝ ∞ f) (x : E3) (k : Fin 3) : lap f x k = lap (fun y => f y k) x"
   },
@@ -2649,7 +2695,7 @@
    "name": "ATK.NSFraca.lap_of_not_mem",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 292,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{g : E3 → E3} {x : E3} (hx : x ∉ tsupport g) : lap g x = 0"
   },
@@ -2657,7 +2703,7 @@
    "name": "ATK.NSFraca.mapsTo_fatia",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 306,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{x : E3} {a b : ℝ} (h0 : 0 ≤ a) (hb : b < T) : MapsTo (fun r : ℝ => (x, r)) (Icc a b) (univ ×ˢ Ico 0 T)"
   },
@@ -2665,7 +2711,7 @@
    "name": "ATK.NSFraca.tsupport_dX",
    "file": "atk-kernel/ATK/NSFraca.lean",
    "line": 285,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Type*} [NormedAddCommGroup W] [NormedSpace ℝ W] (g : E3 → W) (j : Fin 3) : tsupport (dX j g) ⊆ tsupport g"
   },
@@ -2673,7 +2719,7 @@
    "name": "ATK.NSFracaFourier.Bw_combo",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 465,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (G : 𝓢(E3, C3)) {s : ℝ} (hs : s ∈ Ico 0 T) : ((Bw ν U (rot (Psr G)) s : ℝ) : ℂ) + Complex.I * ((Bw ν U (rot (Psi G)) s : ℝ) : ℂ) = BwC ν U G s"
   },
@@ -2681,7 +2727,7 @@
    "name": "ATK.NSFracaFourier.Ms_apply",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 87,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : 𝓢(E3, C3)) (ξ : E3) : Ms G ξ = mtf G ξ"
   },
@@ -2689,15 +2735,17 @@
    "name": "ATK.NSFracaFourier.NU_eq",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 638,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) (ξ : E3) : NU U s ξ = ∑ j, cj j ξ • 𝓕 (fun x => cpx (U (x, s) j • U (x, s))) ξ"
   },
   {
    "name": "ATK.NSFracaFourier.abs_conv_sum_le",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 359,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : E3) {K : ℝ} (D : Fin 3 → E3) (hD : ∀ j, ‖D j‖ ≤ K) : |∑ j, ∑ k, v j * v k * D j k| ≤ 9 * K * ‖v‖ ^ 2"
   },
@@ -2705,7 +2753,7 @@
    "name": "ATK.NSFracaFourier.abs_mul_le_sq",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 276,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : E3) (j k : Fin 3) : |v j * v k| ≤ ‖v‖ ^ 2"
   },
@@ -2713,7 +2761,7 @@
    "name": "ATK.NSFracaFourier.cj_sum_cpx",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 630,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v ξ : E3) : ∑ j, cj j ξ • cpx (v j • v) = ((2 * π : ℝ) * Complex.I : ℂ) • (⟪cpx ξ, cpx v⟫_ℂ • cpx v)"
   },
@@ -2721,7 +2769,7 @@
    "name": "ATK.NSFracaFourier.continuous_coord",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 284,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → E3} (hf : Continuous f) (j : Fin 3) : Continuous fun x => f x j"
   },
@@ -2729,7 +2777,7 @@
    "name": "ATK.NSFracaFourier.continuous_fourier_L1",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 645,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hf : Integrable f) : Continuous (𝓕 f)"
   },
@@ -2737,7 +2785,7 @@
    "name": "ATK.NSFracaFourier.crL_apply",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 74,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(j : Fin 3) (w : C3) : crL j w = cr (eC j) w"
   },
@@ -2745,7 +2793,7 @@
    "name": "ATK.NSFracaFourier.cr_add_right",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 61,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v w w' : C3) : cr v (w + w') = cr v w + cr v w'"
   },
@@ -2753,7 +2801,7 @@
    "name": "ATK.NSFracaFourier.cr_apply0",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 57,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v w : C3) : cr v w 0 = v 1 * w 2 - v 2 * w 1"
   },
@@ -2761,7 +2809,7 @@
    "name": "ATK.NSFracaFourier.cr_apply1",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 59,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v w : C3) : cr v w 1 = v 2 * w 0 - v 0 * w 2"
   },
@@ -2769,7 +2817,7 @@
    "name": "ATK.NSFracaFourier.cr_apply2",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 60,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v w : C3) : cr v w 2 = v 0 * w 1 - v 1 * w 0"
   },
@@ -2777,7 +2825,7 @@
    "name": "ATK.NSFracaFourier.cr_smul_right",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 64,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v w : C3) (c : ℂ) : cr v (c • w) = c • cr v w"
   },
@@ -2785,7 +2833,7 @@
    "name": "ATK.NSFracaFourier.dX_fourierInv_fun",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 171,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(S : 𝓢(E3, C3)) (j : Fin 3) : dX j (⇑(𝓕⁻ S : 𝓢(E3, C3))) = ⇑(𝓕⁻ (mulCj j S) : 𝓢(E3, C3))"
   },
@@ -2793,7 +2841,7 @@
    "name": "ATK.NSFracaFourier.dX_im3",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 188,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{Φ : E3 → C3} (hΦ : Differentiable ℝ Φ) (j : Fin 3) (x : E3) : dX j (fun y => im3 (Φ y)) x = im3 (dX j Φ x)"
   },
@@ -2801,7 +2849,7 @@
    "name": "ATK.NSFracaFourier.dX_re3",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 183,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{Φ : E3 → C3} (hΦ : Differentiable ℝ Φ) (j : Fin 3) (x : E3) : dX j (fun y => re3 (Φ y)) x = re3 (dX j Φ x)"
   },
@@ -2809,7 +2857,7 @@
    "name": "ATK.NSFracaFourier.dX_rot_Psi",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 440,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : 𝓢(E3, C3)) (j : Fin 3) (x : E3) : dX j (rot (Psi G)) x = im3 ((𝓕⁻ (mulCj j (Ms G)) : 𝓢(E3, C3)) x)"
   },
@@ -2817,7 +2865,7 @@
    "name": "ATK.NSFracaFourier.dX_rot_Psr",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 436,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : 𝓢(E3, C3)) (j : Fin 3) (x : E3) : dX j (rot (Psr G)) x = re3 ((𝓕⁻ (mulCj j (Ms G)) : 𝓢(E3, C3)) x)"
   },
@@ -2825,7 +2873,7 @@
    "name": "ATK.NSFracaFourier.decomp",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 44,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : C3) : cpx (re3 v) + Complex.I • cpx (im3 v) = v"
   },
@@ -2833,7 +2881,7 @@
    "name": "ATK.NSFracaFourier.exists_bound_D",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 452,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : 𝓢(E3, C3)) : ∃ K, 0 ≤ K ∧ ∀ j x, ‖(𝓕⁻ (mulCj j (Ms G)) : 𝓢(E3, C3)) x‖ ≤ K"
   },
@@ -2841,7 +2889,7 @@
    "name": "ATK.NSFracaFourier.exists_bound_schwartz",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 272,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(S : 𝓢(E3, C3)) : ∃ K, 0 ≤ K ∧ ∀ x, ‖S x‖ ≤ K"
   },
@@ -2849,7 +2897,7 @@
    "name": "ATK.NSFracaFourier.exists_energy",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 250,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {t : ℝ} (ht : t < T) : ∃ C, 0 ≤ C ∧ ∀ s ∈ Icc 0 t, ∫ x, ‖U (x, s)‖ ^ 2 ≤ C"
   },
@@ -2857,7 +2905,7 @@
    "name": "ATK.NSFracaFourier.fderiv_postcomp",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 143,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F : E3 → C3} (hF : Differentiable ℝ F) (L : C3 →L[ℝ] E3) (x : E3) : fderiv ℝ (fun y => L (F y)) x = L.comp (fderiv ℝ F x)"
   },
@@ -2865,7 +2913,7 @@
    "name": "ATK.NSFracaFourier.fourierInv_Ms",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 126,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : 𝓢(E3, C3)) (x : E3) : (𝓕⁻ (Ms G) : 𝓢(E3, C3)) x = cr (eC 0) (dX 0 (⇑(𝓕⁻ G : 𝓢(E3, C3))) x) + cr (eC 1) (dX 1 (⇑(𝓕⁻ G : 𝓢(E3, C3))) x) + cr (eC 2) (dX 2 (⇑(𝓕⁻ G : 𝓢(E3, C3))) x)"
   },
@@ -2873,7 +2921,7 @@
    "name": "ATK.NSFracaFourier.fourierInv_add_apply",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 122,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(f g : 𝓢(E3, C3)) (x : E3) : (𝓕⁻ (f + g) : 𝓢(E3, C3)) x = (𝓕⁻ f : 𝓢(E3, C3)) x + (𝓕⁻ g : 𝓢(E3, C3)) x"
   },
@@ -2881,7 +2929,7 @@
    "name": "ATK.NSFracaFourier.fourierInv_postcomp",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 111,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(L : C3 →L[ℂ] C3) (f : 𝓢(E3, C3)) (x : E3) : (𝓕⁻ (SchwartzMap.postcompCLM L f) : 𝓢(E3, C3)) x = L ((𝓕⁻ f : 𝓢(E3, C3)) x)"
   },
@@ -2889,15 +2937,17 @@
    "name": "ATK.NSFracaFourier.fourier_smul_sum",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 617,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{f : Fin 3 → E3 → C3} (hf : ∀ j, Integrable (f j)) (c : Fin 3 → ℂ) (ξ : E3) : ∑ j, c j • 𝓕 (f j) ξ = 𝓕 (fun x => ∑ j, c j • f j x) ξ"
   },
   {
    "name": "ATK.NSFracaFourier.fraca_complexa",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 510,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (G : 𝓢(E3, C3)) {t : ℝ} (ht : t ∈ Ico 0 T) : (∫ x, ⟪cpx (U (x, t)), (𝓕⁻ (Ms G) : 𝓢(E3, C3)) x⟫_ℂ) - ∫ x, ⟪cpx (u₀ x), (𝓕⁻ (Ms G) : 𝓢(E3, C3)) x⟫_ℂ = ∫ s in (0 : ℝ)..t, BwC ν U G s"
   },
@@ -2905,15 +2955,17 @@
    "name": "ATK.NSFracaFourier.fraca_fourier",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 701,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (u₀S : SchwartzMap E3 E3) (hu₀ : ∀ x, u₀S x = u₀ x) (G : 𝓢(E3, C3)) {t : ℝ} (ht : t ∈ Ico 0 T) : (∫ ξ, ⟪bF U t ξ, mtf G ξ⟫_ℂ) - ∫ ξ, ⟪ahat u₀S ξ, mtf G ξ⟫_ℂ = ∫ s in (0 : ℝ)..t, ((ν : ℂ) * (∫ ξ, ⟪bF U s ξ, (-(4 * π ^ 2 * ‖ξ‖ ^ 2 : ℝ) : ℂ) • mtf G ξ⟫_ℂ) - ∫ ξ, ⟪NU U s ξ, mtf G ξ⟫_ℂ)"
   },
   {
    "name": "ATK.NSFracaFourier.im3L_apply",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 42,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : C3) : im3L v = im3 v"
   },
@@ -2921,7 +2973,7 @@
    "name": "ATK.NSFracaFourier.im3_add",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 195,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v w : C3) : im3 (v + w) = im3 v + im3 w"
   },
@@ -2929,7 +2981,7 @@
    "name": "ATK.NSFracaFourier.im3_apply",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 33,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : C3) (k : Fin 3) : im3 v k = (v k).im"
   },
@@ -2937,7 +2989,7 @@
    "name": "ATK.NSFracaFourier.inner_cpx_eq",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 224,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : E3) (w : C3) : ⟪cpx v, w⟫_ℂ = (inner ℝ v (re3 w) : ℂ) + Complex.I * (inner ℝ v (im3 w) : ℂ)"
   },
@@ -2945,7 +2997,7 @@
    "name": "ATK.NSFracaFourier.integrable_conv_term",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 288,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → E3} (hf : Continuous f) (hf2 : Integrable fun x => ‖f x‖ ^ 2) {D : Fin 3 → Fin 3 → E3 → ℂ} (hD : ∀ j k, Continuous (D j k)) {K : ℝ} (hK : ∀ j k x, ‖D j k x‖ ≤ K) : Integrable fun x => ∑ j, ∑ k, ((f x j * f x k : ℝ) : ℂ) * D j k x"
   },
@@ -2953,7 +3005,7 @@
    "name": "ATK.NSFracaFourier.integrable_conv_term_real",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 302,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → E3} (hf : Continuous f) (hf2 : Integrable fun x => ‖f x‖ ^ 2) {D : Fin 3 → Fin 3 → E3 → ℝ} (hD : ∀ j k, Continuous (D j k)) {K : ℝ} (hK : ∀ j k x, |D j k x| ≤ K) : Integrable fun x => ∑ j, ∑ k, f x j * f x k * D j k x"
   },
@@ -2961,7 +3013,7 @@
    "name": "ATK.NSFracaFourier.integrable_cpx_mul",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 595,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) (j : Fin 3) : Integrable fun x => cpx (U (x, s) j • U (x, s))"
   },
@@ -2969,7 +3021,7 @@
    "name": "ATK.NSFracaFourier.integrable_inner_of_bounded_left",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 648,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : E3 → C3} (hf : AEStronglyMeasurable f volume) {K : ℝ} (hK : ∀ x, ‖f x‖ ≤ K) (hg : Integrable g) : Integrable fun x => ⟪f x, g x⟫_ℂ"
   },
@@ -2977,7 +3029,7 @@
    "name": "ATK.NSFracaFourier.integrable_inner_real",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 259,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : E3 → E3} (hf : MemLp f 2) (hg : MemLp g 2) : Integrable fun x => inner ℝ (f x) (g x)"
   },
@@ -2985,7 +3037,7 @@
    "name": "ATK.NSFracaFourier.integrable_sq_U",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 255,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) : Integrable fun x => ‖U (x, s)‖ ^ 2"
   },
@@ -2993,7 +3045,7 @@
    "name": "ATK.NSFracaFourier.integral_cpx_inner",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 428,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → E3} (hf : MemLp f 2) (S : 𝓢(E3, C3)) : ∫ x, ⟪cpx (f x), S x⟫_ℂ = ((∫ x, inner ℝ (f x) (re3 (S x)) : ℝ) : ℂ) + Complex.I * ((∫ x, inner ℝ (f x) (im3 (S x)) : ℝ) : ℂ)"
   },
@@ -3001,7 +3053,7 @@
    "name": "ATK.NSFracaFourier.integral_inner_bounded",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 605,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hf : Integrable f) {g : E3 → C3} (hg : Continuous g) {K : ℝ} (hK : ∀ x, ‖g x‖ ≤ K) : Integrable fun x => ⟪f x, g x⟫_ℂ"
   },
@@ -3009,15 +3061,17 @@
    "name": "ATK.NSFracaFourier.integral_inner_fourier_L1",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 569,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{f g : E3 → C3} (hf : Integrable f) (hg : Integrable g) : ∫ ξ, ⟪𝓕 f ξ, g ξ⟫_ℂ = ∫ x, ⟪f x, 𝓕⁻ g x⟫_ℂ"
   },
   {
    "name": "ATK.NSFracaFourier.intervalIntegrable_Bw",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 377,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {φ : E3 → E3} (hlap : Continuous (lap φ)) (hlap2 : Integrable fun x => ‖lap φ x‖ ^ 2) (hd : ∀ j, Continuous (dX j φ)) {K : ℝ} (hK : ∀ j x, ‖dX j φ x‖ ≤ K) {t : ℝ} (ht0 : 0 ≤ t) (ht : t < T) : IntervalIntegrable (Bw ν U φ) volume 0 t"
   },
@@ -3025,7 +3079,7 @@
    "name": "ATK.NSFracaFourier.intervalIntegrable_param",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 312,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{W : Type*} [NormedAddCommGroup W] [NormedSpace ℝ W] [CompleteSpace W] {F : E3 × ℝ → W} {t : ℝ} (ht : 0 ≤ t) (hF : ContinuousOn F (univ ×ˢ Icc 0 t)) {M : ℝ} (hM : ∀ s ∈ Icc 0 t, ‖∫ x, F (x, s)‖ ≤ M) : IntervalIntegrable (fun s => ∫ x, F (x, s)) volume 0 t"
   },
@@ -3033,7 +3087,7 @@
    "name": "ATK.NSFracaFourier.lapS_apply",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 97,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(S : 𝓢(E3, C3)) (ξ : E3) : lapS S ξ = (-(4 * π ^ 2 * ‖ξ‖ ^ 2 : ℝ) : ℂ) • S ξ"
   },
@@ -3041,7 +3095,7 @@
    "name": "ATK.NSFracaFourier.lap_fourierInv",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 177,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(S : 𝓢(E3, C3)) (x : E3) : lap (⇑(𝓕⁻ S : 𝓢(E3, C3))) x = (𝓕⁻ (lapS S) : 𝓢(E3, C3)) x"
   },
@@ -3049,7 +3103,7 @@
    "name": "ATK.NSFracaFourier.lap_im3",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 207,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(S : 𝓢(E3, C3)) (x : E3) : lap (fun y => im3 ((𝓕⁻ S : 𝓢(E3, C3)) y)) x = im3 ((𝓕⁻ (lapS S) : 𝓢(E3, C3)) x)"
   },
@@ -3057,7 +3111,7 @@
    "name": "ATK.NSFracaFourier.lap_re3",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 196,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(S : 𝓢(E3, C3)) (x : E3) : lap (fun y => re3 ((𝓕⁻ S : 𝓢(E3, C3)) y)) x = re3 ((𝓕⁻ (lapS S) : 𝓢(E3, C3)) x)"
   },
@@ -3065,7 +3119,7 @@
    "name": "ATK.NSFracaFourier.lap_rot_Psi",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 448,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : 𝓢(E3, C3)) (x : E3) : lap (rot (Psi G)) x = im3 ((𝓕⁻ (lapS (Ms G)) : 𝓢(E3, C3)) x)"
   },
@@ -3073,7 +3127,7 @@
    "name": "ATK.NSFracaFourier.lap_rot_Psr",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 444,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : 𝓢(E3, C3)) (x : E3) : lap (rot (Psr G)) x = re3 ((𝓕⁻ (lapS (Ms G)) : 𝓢(E3, C3)) x)"
   },
@@ -3081,7 +3135,7 @@
    "name": "ATK.NSFracaFourier.memLp_U",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 240,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) : MemLp (fun x => U (x, s)) 2"
   },
@@ -3089,7 +3143,7 @@
    "name": "ATK.NSFracaFourier.memLp_cU",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 246,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) : MemLp (fun x => cpx (U (x, s))) 2"
   },
@@ -3097,7 +3151,7 @@
    "name": "ATK.NSFracaFourier.memLp_im3_schwartz",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 269,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(S : 𝓢(E3, C3)) : MemLp (fun x => im3 (S x)) 2"
   },
@@ -3105,7 +3159,7 @@
    "name": "ATK.NSFracaFourier.memLp_re3_schwartz",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 266,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(S : 𝓢(E3, C3)) : MemLp (fun x => re3 (S x)) 2"
   },
@@ -3113,7 +3167,7 @@
    "name": "ATK.NSFracaFourier.norm_fourier_le_L1",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 611,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (ξ : E3) : ‖𝓕 f ξ‖ ≤ ∫ x, ‖f x‖"
   },
@@ -3121,7 +3175,7 @@
    "name": "ATK.NSFracaFourier.norm_im3_le",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 348,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : C3) : ‖im3 v‖ ≤ ‖v‖"
   },
@@ -3129,7 +3183,7 @@
    "name": "ATK.NSFracaFourier.norm_inner_le_half",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 355,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(a b : E3) : ‖inner ℝ a b‖ ≤ (‖a‖ ^ 2 + ‖b‖ ^ 2) / 2"
   },
@@ -3137,7 +3191,7 @@
    "name": "ATK.NSFracaFourier.norm_re3_le",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 341,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : C3) : ‖re3 v‖ ≤ ‖v‖"
   },
@@ -3145,7 +3199,7 @@
    "name": "ATK.NSFracaFourier.re3_add",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 193,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v w : C3) : re3 (v + w) = re3 v + re3 w"
   },
@@ -3153,7 +3207,7 @@
    "name": "ATK.NSFracaFourier.rot_Psi",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 159,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : 𝓢(E3, C3)) (x : E3) : rot (Psi G) x = im3 ((𝓕⁻ (Ms G) : 𝓢(E3, C3)) x)"
   },
@@ -3161,7 +3215,7 @@
    "name": "ATK.NSFracaFourier.rot_Psi_fun",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 221,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : 𝓢(E3, C3)) : rot (Psi G) = fun x => im3 ((𝓕⁻ (Ms G) : 𝓢(E3, C3)) x)"
   },
@@ -3169,7 +3223,7 @@
    "name": "ATK.NSFracaFourier.rot_Psr",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 147,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : 𝓢(E3, C3)) (x : E3) : rot (Psr G) x = re3 ((𝓕⁻ (Ms G) : 𝓢(E3, C3)) x)"
   },
@@ -3177,7 +3231,7 @@
    "name": "ATK.NSFracaFourier.rot_Psr_fun",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 218,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : 𝓢(E3, C3)) : rot (Psr G) = fun x => re3 ((𝓕⁻ (Ms G) : 𝓢(E3, C3)) x)"
   },
@@ -3185,7 +3239,7 @@
    "name": "ATK.NSFracaFourier.term_A",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 654,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) (S : 𝓢(E3, C3)) : ∫ x, ⟪cpx (U (x, s)), (𝓕⁻ S : 𝓢(E3, C3)) x⟫_ℂ = ∫ ξ, ⟪bF U s ξ, S ξ⟫_ℂ"
   },
@@ -3193,15 +3247,17 @@
    "name": "ATK.NSFracaFourier.term_C",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 658,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (G : 𝓢(E3, C3)) {s : ℝ} (hs : s ∈ Ico 0 T) : ∫ x, ∑ j, ∑ k, ((U (x, s) j * U (x, s) k : ℝ) : ℂ) * (𝓕⁻ (mulCj j (Ms G)) : 𝓢(E3, C3)) x k = -∫ ξ, ⟪NU U s ξ, mtf G ξ⟫_ℂ"
   },
   {
    "name": "ATK.NSFracaFourier.term_D",
    "file": "atk-kernel/ATK/NSFracaFourier.lean",
    "line": 692,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u₀S : SchwartzMap E3 E3) (G : 𝓢(E3, C3)) : ∫ x, ⟪cpx (u₀S x), (𝓕⁻ (Ms G) : 𝓢(E3, C3)) x⟫_ℂ = ∫ ξ, ⟪ahat u₀S ξ, mtf G ξ⟫_ℂ"
   },
@@ -3209,15 +3265,17 @@
    "name": "ATK.NSIdent.NU_eq_Nl",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 750,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (hν : 0 ≤ ν) (u₀S : SchwartzMap E3 E3) (hu₀ : ∀ x, u₀S x = u₀ x) (hdiv₀ : ∀ ξ, ⟪cpx ξ, ahat u₀S ξ⟫_ℂ = 0) {s : ℝ} (hs : s ∈ Ico 0 T) (ξ : E3) : NU U s ξ = Nl (bt ν U u₀S s) (bt ν U u₀S s) ξ"
   },
   {
    "name": "ATK.NSIdent.NU_herm",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 687,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(U : E3 × ℝ → E3) (s : ℝ) (ξ : E3) : NU U s (-ξ) = ATK.NSSimetria.cj3 (NU U s ξ)"
   },
@@ -3225,31 +3283,37 @@
    "name": "ATK.NSIdent.bF_ae_eq_bt",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 630,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (hν : 0 ≤ ν) (u₀S : SchwartzMap E3 E3) (hu₀ : ∀ x, u₀S x = u₀ x) (hdiv₀ : ∀ ξ, ⟪cpx ξ, ahat u₀S ξ⟫_ℂ = 0) {t : ℝ} (ht : t ∈ Ico 0 T) : bF U t =ᵐ[volume] bt ν U u₀S t"
   },
   {
    "name": "ATK.NSIdent.bt_herm",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 711,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(u₀S : SchwartzMap E3 E3) (t : ℝ) : ATK.NSSimetria.Herm (bt ν U u₀S t)"
   },
   {
    "name": "ATK.NSIdent.bt_mild",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 766,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (hν : 0 ≤ ν) (u₀S : SchwartzMap E3 E3) (hu₀ : ∀ x, u₀S x = u₀ x) (hdiv₀ : ∀ ξ, ⟪cpx ξ, ahat u₀S ξ⟫_ℂ = 0) {t : ℝ} (ht : t ∈ Ico 0 T) (ξ : E3) : bt ν U u₀S t ξ = heat ν t ξ • bt ν U u₀S 0 ξ - ∫ s in (0 : ℝ)..t, duhI ν (bt ν U u₀S) (bt ν U u₀S) t s ξ"
   },
   {
    "name": "ATK.NSIdent.bt_zero",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 722,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u₀S : SchwartzMap E3 E3) (ξ : E3) : bt ν U u₀S 0 ξ = ahat u₀S ξ"
   },
@@ -3257,7 +3321,7 @@
    "name": "ATK.NSIdent.cj3_cpx",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 684,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : E3) : ATK.NSSimetria.cj3 (cpx v) = cpx v"
   },
@@ -3265,7 +3329,7 @@
    "name": "ATK.NSIdent.contDiff_cU",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 181,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) : ContDiff ℝ ∞ fun x => cpx (U (x, s))"
   },
@@ -3273,7 +3337,7 @@
    "name": "ATK.NSIdent.dX_cU",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 185,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) (j : Fin 3) (x : E3) : dX j (fun y => cpx (U (y, s))) x = cpx (dX j (fatia U s) x)"
   },
@@ -3281,7 +3345,7 @@
    "name": "ATK.NSIdent.div_bF",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 215,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) : ∀ᵐ ξ ∂volume, ⟪cpx ξ, bF U s ξ⟫_ℂ = 0"
   },
@@ -3289,23 +3353,27 @@
    "name": "ATK.NSIdent.div_bt",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 619,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (hν : 0 ≤ ν) (u₀S : SchwartzMap E3 E3) (hdiv₀ : ∀ ξ, ⟪cpx ξ, ahat u₀S ξ⟫_ℂ = 0) {t : ℝ} (ht : t ∈ Ico 0 T) (ξ : E3) : ⟪cpx ξ, bt ν U u₀S t ξ⟫_ℂ = 0"
   },
   {
    "name": "ATK.NSIdent.duh_part",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 561,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (hν : 0 ≤ ν) {t : ℝ} (ht : t ∈ Ico 0 T) : StronglyMeasurable (fun ξ => ∫ s in (0 : ℝ)..t, heat ν (t - s) ξ • ATK.NSFourierBase.lp ξ (NU U s ξ)) ∧ ∃ C, 0 ≤ C ∧ ∀ ξ, ‖∫ s in (0 : ℝ)..t, heat ν (t - s) ξ • ATK.NSFourierBase.lp ξ (NU U s ξ)‖ ≤ 2 * π * ‖ξ‖ * C * t"
   },
   {
    "name": "ATK.NSIdent.enstrofia_FL",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 137,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hf : Differentiable ℝ f) (h2 : MemLp f 2) (hd : ∀ j, MemLp (dX j f) 2) : Integrable (fun ξ => ‖ξ‖ ^ 2 * ‖FL f ξ‖ ^ 2) ∧ 4 * π ^ 2 * ∫ ξ, ‖ξ‖ ^ 2 * ‖FL f ξ‖ ^ 2 = ∑ j, ∫ x, ‖dX j f x‖ ^ 2"
   },
@@ -3313,7 +3381,7 @@
    "name": "ATK.NSIdent.enstrofia_bF",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 225,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) : Integrable (fun ξ => ‖ξ‖ ^ 2 * ‖bF U s ξ‖ ^ 2) ∧ 4 * π ^ 2 * ∫ ξ, ‖ξ‖ ^ 2 * ‖bF U s ξ‖ ^ 2 = ∫ x, gradSq (fatia U s) x"
   },
@@ -3321,15 +3389,17 @@
    "name": "ATK.NSIdent.enstrofia_bt",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 738,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (hν : 0 ≤ ν) (u₀S : SchwartzMap E3 E3) (hu₀ : ∀ x, u₀S x = u₀ x) (hdiv₀ : ∀ ξ, ⟪cpx ξ, ahat u₀S ξ⟫_ℂ = 0) {t : ℝ} (ht : t ∈ Ico 0 T) : Integrable (fun ξ => ‖ξ‖ ^ 2 * ‖bt ν U u₀S t ξ‖ ^ 2) ∧ 4 * π ^ 2 * ∫ ξ, ‖ξ‖ ^ 2 * ‖bt ν U u₀S t ξ‖ ^ 2 = ∫ x, gradSq (fatia U t) x"
   },
   {
    "name": "ATK.NSIdent.eq_zero_of_perp",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 504,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{a : E3} (ha : a ≠ 0) {v : C3} (hdiv : ⟪cpx a, v⟫_ℂ = 0) (hk : ∀ k : Fin 3, ⟪v, cr (cpx a) (EuclideanSpace.single k (1 : ℂ))⟫_ℂ = 0) : v = 0"
   },
@@ -3337,7 +3407,7 @@
    "name": "ATK.NSIdent.exists_enstrophy",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 199,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {t : ℝ} (ht : t < T) : ∃ C, 0 ≤ C ∧ ∀ s ∈ Icc 0 t, ∫ x, gradSq (fatia U s) x ≤ C"
   },
@@ -3345,7 +3415,7 @@
    "name": "ATK.NSIdent.exists_grad",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 194,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) : Integrable (gradSq (fatia U s))"
   },
@@ -3353,7 +3423,7 @@
    "name": "ATK.NSIdent.fourierInv_tkS",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 39,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{φ : E3 → ℝ} (hφ : ContDiff ℝ ∞ φ) (hφs : HasCompactSupport φ) (k : Fin 3) (x : E3) : (𝓕⁻ (tkS hφ hφs k) : 𝓢(E3, C3)) x = (𝓕⁻ (phS hφ hφs) : 𝓢(E3, ℂ)) x • EuclideanSpace.single k (1 : ℂ)"
   },
@@ -3361,7 +3431,7 @@
    "name": "ATK.NSIdent.hasCompactSupport_mtf",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 549,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{G : E3 → C3} (hGs : HasCompactSupport G) : HasCompactSupport (mtf G)"
   },
@@ -3369,7 +3439,7 @@
    "name": "ATK.NSIdent.inner_cpx_FL_eq_zero",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 54,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hf : Differentiable ℝ f) (h2 : MemLp f 2) (hd : ∀ j, MemLp (dX j f) 2) (hdiv : ∀ x, ∑ j, dX j f x j = 0) : ∀ᵐ ξ ∂volume, ⟪cpx ξ, FL f ξ⟫_ℂ = 0"
   },
@@ -3377,7 +3447,7 @@
    "name": "ATK.NSIdent.inner_cpx_cpx",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 676,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(a b : E3) : ⟪cpx a, cpx b⟫_ℂ = ((inner ℝ a b : ℝ) : ℂ)"
   },
@@ -3385,7 +3455,7 @@
    "name": "ATK.NSIdent.inner_cpx_mtf",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 166,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : E3 → C3) (ξ : E3) : ⟪cpx ξ, mtf G ξ⟫_ℂ = 0"
   },
@@ -3393,7 +3463,7 @@
    "name": "ATK.NSIdent.inner_cr_e0",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 484,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(a : E3) (v : C3) : ⟪v, cr (cpx a) (EuclideanSpace.single 0 (1 : ℂ))⟫_ℂ = (a 2 : ℂ) * conj (v 1) - (a 1 : ℂ) * conj (v 2)"
   },
@@ -3401,7 +3471,7 @@
    "name": "ATK.NSIdent.inner_cr_e1",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 492,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(a : E3) (v : C3) : ⟪v, cr (cpx a) (EuclideanSpace.single 1 (1 : ℂ))⟫_ℂ = (a 0 : ℂ) * conj (v 2) - (a 2 : ℂ) * conj (v 0)"
   },
@@ -3409,7 +3479,7 @@
    "name": "ATK.NSIdent.inner_cr_e2",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 498,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(a : E3) (v : C3) : ⟪v, cr (cpx a) (EuclideanSpace.single 2 (1 : ℂ))⟫_ℂ = (a 1 : ℂ) * conj (v 0) - (a 0 : ℂ) * conj (v 1)"
   },
@@ -3417,7 +3487,7 @@
    "name": "ATK.NSIdent.inner_lp_mtf",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 173,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : E3 → C3) (ξ : E3) (v : C3) : ⟪lp ξ v, mtf G ξ⟫_ℂ = ⟪v, mtf G ξ⟫_ℂ"
   },
@@ -3425,7 +3495,7 @@
    "name": "ATK.NSIdent.inner_real_smul_left",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 289,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(r : ℝ) (v w : C3) : ⟪r • v, w⟫_ℂ = (r : ℂ) * ⟪v, w⟫_ℂ"
   },
@@ -3433,15 +3503,17 @@
    "name": "ATK.NSIdent.integrableOn_g",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 327,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (hν : 0 ≤ ν) {t : ℝ} (ht0 : 0 ≤ t) (ht : t < T) (ξ : E3) : IntegrableOn (fun s => heat ν (t - s) ξ • ATK.NSFourierBase.lp ξ (NU U s ξ)) (Ioc 0 t)"
   },
   {
    "name": "ATK.NSIdent.integrable_FL_coord",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 49,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(f : E3 → C3) (j : Fin 3) : LocallyIntegrable (fun ξ => FL f ξ j) volume"
   },
@@ -3449,7 +3521,7 @@
    "name": "ATK.NSIdent.integral_inner_left",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 283,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{α : Type*} [MeasurableSpace α] {μ : Measure α} {f : α → C3} (hf : Integrable f μ) (c : C3) : ∫ x, ⟪f x, c⟫_ℂ ∂μ = ⟪∫ x, f x ∂μ, c⟫_ℂ"
   },
@@ -3457,23 +3529,27 @@
    "name": "ATK.NSIdent.integral_norm_sq_bt",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 725,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (hν : 0 ≤ ν) (u₀S : SchwartzMap E3 E3) (hu₀ : ∀ x, u₀S x = u₀ x) (hdiv₀ : ∀ ξ, ⟪cpx ξ, ahat u₀S ξ⟫_ℂ = 0) {t : ℝ} (ht : t ∈ Ico 0 T) : ∫ ξ, ‖bt ν U u₀S t ξ‖ ^ 2 = ∫ x, ‖U (x, t)‖ ^ 2"
   },
   {
    "name": "ATK.NSIdent.locInt_bt",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 587,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (hν : 0 ≤ ν) (u₀S : SchwartzMap E3 E3) {t : ℝ} (ht : t ∈ Ico 0 T) : LocallyIntegrable (bt ν U u₀S t) volume"
   },
   {
    "name": "ATK.NSIdent.locInt_inner_cont",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 537,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{g : E3 → C3} (hg : LocallyIntegrable g volume) {w : E3 → C3} (hw : Continuous w) : LocallyIntegrable (fun ξ => ⟪g ξ, w ξ⟫_ℂ) volume"
   },
@@ -3481,7 +3557,7 @@
    "name": "ATK.NSIdent.measurable_lp",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 250,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": Measurable fun p : E3 × C3 => ATK.NSFourierBase.lp p.1 p.2"
   },
@@ -3489,15 +3565,17 @@
    "name": "ATK.NSIdent.memLp_bt",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 733,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (hν : 0 ≤ ν) (u₀S : SchwartzMap E3 E3) (hu₀ : ∀ x, u₀S x = u₀ x) (hdiv₀ : ∀ ξ, ⟪cpx ξ, ahat u₀S ξ⟫_ℂ = 0) {t : ℝ} (ht : t ∈ Ico 0 T) : MemLp (bt ν U u₀S t) 2"
   },
   {
    "name": "ATK.NSIdent.memLp_dX_cU",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 204,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) (j : Fin 3) : MemLp (dX j fun y => cpx (U (y, s))) 2"
   },
@@ -3505,7 +3583,7 @@
    "name": "ATK.NSIdent.mtf_tst_hk",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 292,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : E3 → C3) (ν τ : ℝ) (ξ : E3) : mtf (tst G (hk ν τ)) ξ = hk ν τ ξ • mtf G ξ"
   },
@@ -3513,7 +3591,7 @@
    "name": "ATK.NSIdent.norm_cj",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 131,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(j : Fin 3) (ξ : E3) : ‖cj j ξ‖ = 2 * π * |ξ j|"
   },
@@ -3521,7 +3599,7 @@
    "name": "ATK.NSIdent.norm_g_le",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 315,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {t : ℝ} (hν : 0 ≤ ν) {s : ℝ} (hs : s ∈ Icc 0 t) (ht : t < T) {C : ℝ} (hC : ∫ x, ‖U (x, s)‖ ^ 2 ≤ C) (ξ : E3) : ‖heat ν (t - s) ξ • ATK.NSFourierBase.lp ξ (NU U s ξ)‖ ≤ 2 * π * ‖ξ‖ * C"
   },
@@ -3529,7 +3607,7 @@
    "name": "ATK.NSIdent.norm_np_integrand_le",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 259,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν T : ℝ} {u₀ : E3 → E3} {U : E3 × ℝ → E3} {P : E3 × ℝ → ℝ} (h : SolucaoLocal ν u₀ T U P) {s : ℝ} (hs : s ∈ Ico 0 T) {C : ℝ} (hC : ∫ x, ‖U (x, s)‖ ^ 2 ≤ C) {R M : ℝ} (hR : 0 ≤ R) {H : E3 → C3} (hH : Loc R M H) (ξ : E3) : ‖⟪NU U s ξ, mtf H ξ⟫_ℂ‖ ≤ 16 * π ^ 2 * R ^ 2 * C * M * chiB R ξ"
   },
@@ -3537,7 +3615,7 @@
    "name": "ATK.NSIdent.np_integrand_eq",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 299,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(G : E3 → C3) (t s : ℝ) (ξ : E3) : ⟪NU U s ξ, mtf (tst G (hk ν (t - s))) ξ⟫_ℂ = ⟪heat ν (t - s) ξ • ATK.NSFourierBase.lp ξ (NU U s ξ), mtf G ξ⟫_ℂ"
   },
@@ -3545,23 +3623,27 @@
    "name": "ATK.NSIdent.pair_bt",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 348,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (hν : 0 ≤ ν) (u₀S : SchwartzMap E3 E3) (hu₀ : ∀ x, u₀S x = u₀ x) {G : E3 → C3} (hG : ContDiff ℝ ∞ G) (hGs : HasCompactSupport G) {t : ℝ} (ht : t ∈ Ico 0 T) : (Integrable fun ξ => ⟪bt ν U u₀S t ξ, mtf G ξ⟫_ℂ) ∧ ∫ ξ, ⟪bF U t ξ, mtf G ξ⟫_ℂ = ∫ ξ, ⟪bt ν U u₀S t ξ, mtf G ξ⟫_ℂ"
   },
   {
    "name": "ATK.NSIdent.stronglyMeasurable_gc",
    "file": "atk-kernel/ATK/NSIdent.lean",
    "line": 304,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) {t : ℝ} (ht0 : 0 ≤ t) (ht : t < T) : StronglyMeasurable fun p : ℝ × E3 => heat ν (t - p.1) p.2 • ATK.NSFourierBase.lp p.2 (NU U (max 0 (min p.1 t)) p.2)"
   },
   {
    "name": "ATK.NSL2.FL_dX",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 208,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (j : Fin 3) (hf : Differentiable ℝ f) (h2 : MemLp f 2) (hd : MemLp (dX j f) 2) : FL (dX j f) =ᵐ[volume] fun ξ => cj j ξ • FL f ξ"
   },
@@ -3569,7 +3651,7 @@
    "name": "ATK.NSL2.FL_eq",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 37,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (h : MemLp f 2) : FL f = ⇑(𝓕 (h.toLp f) : Lp C3 2 (volume : Measure E3))"
   },
@@ -3577,7 +3659,7 @@
    "name": "ATK.NSL2.ae_eq_of_integral_inner_eq",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 105,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{g₁ g₂ : E3 → C3} (h₁ : LocallyIntegrable g₁ volume) (h₂ : LocallyIntegrable g₂ volume) (h : ∀ H : E3 → C3, ContDiff ℝ ∞ H → HasCompactSupport H → ∫ ξ, ⟪g₁ ξ, H ξ⟫_ℂ = ∫ ξ, ⟪g₂ ξ, H ξ⟫_ℂ) : g₁ =ᵐ[volume] g₂"
   },
@@ -3585,7 +3667,7 @@
    "name": "ATK.NSL2.coeFn_fourier_toLp",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 388,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(p : 𝓢(E3, C3)) : ((𝓕 (p.toLp 2) : Lp C3 2 (volume : Measure E3)) : E3 → C3) =ᵐ[volume] ⇑(𝓕 p : 𝓢(E3, C3))"
   },
@@ -3593,7 +3675,7 @@
    "name": "ATK.NSL2.conj_cj",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 199,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(j : Fin 3) (ξ : E3) : conj (cj j ξ) = -cj j ξ"
   },
@@ -3601,7 +3683,7 @@
    "name": "ATK.NSL2.contDiff_tk",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 89,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{φ : E3 → ℝ} (hφ : ContDiff ℝ ∞ φ) (k : Fin 3) : ContDiff ℝ ∞ (tk φ k)"
   },
@@ -3609,7 +3691,7 @@
    "name": "ATK.NSL2.continuous_of_dist_le",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 483,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : Lp C3 2 (volume : Measure E3) → C3} {K : ℝ} (hK : 0 ≤ K) (h : ∀ u u', dist (f u) (f u') ≤ K * dist u u') : Continuous f"
   },
@@ -3617,15 +3699,17 @@
    "name": "ATK.NSL2.conv_FL",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 509,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{F G : E3 → C3} (hF : MemLp F 2) (hG : MemLp G 2) (ξ : E3) : ∫ η, B (FL F η) (FL G (ξ - η)) = 𝓕 (fun x => B (F x) (G x)) ξ"
   },
   {
    "name": "ATK.NSL2.conv_fourier_schwartz",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 240,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(p q : 𝓢(E3, C3)) (ξ : E3) : ∫ η, B ((𝓕 p : 𝓢(E3, C3)) η) ((𝓕 q : 𝓢(E3, C3)) (ξ - η)) = 𝓕 (fun x => B (p x) (q x)) ξ"
   },
@@ -3633,7 +3717,7 @@
    "name": "ATK.NSL2.cvB_congr",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 370,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F F' G G' : E3 → C3} (hF : F =ᵐ[volume] F') (hG : G =ᵐ[volume] G') (ξ : E3) : ∫ η, B (F η) (G (ξ - η)) = ∫ η, B (F' η) (G' (ξ - η))"
   },
@@ -3641,23 +3725,27 @@
    "name": "ATK.NSL2.cvL_base",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 396,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(ξ : E3) (p q : 𝓢(E3, C3)) : cvL B ξ (p.toLp 2) (q.toLp 2) = prL B ξ (p.toLp 2) (q.toLp 2)"
   },
   {
    "name": "ATK.NSL2.cvL_eq_prL",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 487,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(ξ : E3) (u v : Lp C3 2 (volume : Measure E3)) : cvL B ξ u v = prL B ξ u v"
   },
   {
    "name": "ATK.NSL2.dX_fourierInv",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 193,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(S : 𝓢(E3, C3)) (j : Fin 3) (x : E3) : dX j (⇑(𝓕⁻ S : 𝓢(E3, C3))) x = (𝓕⁻ (mulCj j S) : 𝓢(E3, C3)) x"
   },
@@ -3665,7 +3753,7 @@
    "name": "ATK.NSL2.dist_cvL_left",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 403,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ξ : E3) (u u' v : Lp C3 2 (volume : Measure E3)) : dist (cvL B ξ u v) (cvL B ξ u' v) ≤ ‖B‖ * ‖v‖ * dist u u'"
   },
@@ -3673,7 +3761,7 @@
    "name": "ATK.NSL2.dist_cvL_right",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 424,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ξ : E3) (u v v' : Lp C3 2 (volume : Measure E3)) : dist (cvL B ξ u v) (cvL B ξ u v') ≤ ‖B‖ * ‖u‖ * dist v v'"
   },
@@ -3681,23 +3769,27 @@
    "name": "ATK.NSL2.dist_prL_left",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 449,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(ξ : E3) (u u' v : Lp C3 2 (volume : Measure E3)) : dist (prL B ξ u v) (prL B ξ u' v) ≤ ‖B‖ * ‖v‖ * dist u u'"
   },
   {
    "name": "ATK.NSL2.dist_prL_right",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 466,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(ξ : E3) (u v v' : Lp C3 2 (volume : Measure E3)) : dist (prL B ξ u v) (prL B ξ u v') ≤ ‖B‖ * ‖u‖ * dist v v'"
   },
   {
    "name": "ATK.NSL2.fourierL_sub",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 384,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u u' : Lp C3 2 (volume : Measure E3)) : (𝓕 (u - u') : Lp C3 2 (volume : Measure E3)) = 𝓕 u - 𝓕 u'"
   },
@@ -3705,7 +3797,7 @@
    "name": "ATK.NSL2.hasCompactSupport_tk",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 92,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{φ : E3 → ℝ} (hφ : HasCompactSupport φ) (k : Fin 3) : HasCompactSupport (tk φ k)"
   },
@@ -3713,7 +3805,7 @@
    "name": "ATK.NSL2.hasTemperateGrowth_coord",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 175,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(j : Fin 3) : (fun ξ : E3 => inner ℝ ξ (e j)).HasTemperateGrowth"
   },
@@ -3721,7 +3813,7 @@
    "name": "ATK.NSL2.innR_apply",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 157,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v w : C3) : innR v w = ⟪v, w⟫_ℂ"
   },
@@ -3729,7 +3821,7 @@
    "name": "ATK.NSL2.inner_tk",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 85,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : C3) (φ : E3 → ℝ) (k : Fin 3) (ξ : E3) : ⟪v, tk φ k ξ⟫_ℂ = (φ ξ : ℂ) * conj (v k)"
   },
@@ -3737,7 +3829,7 @@
    "name": "ATK.NSL2.integrable_cvB",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 306,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F G : E3 → C3} (hF : MemLp F 2) (hG : MemLp G 2) (ξ : E3) : Integrable fun η => B (F η) (G (ξ - η))"
   },
@@ -3745,7 +3837,7 @@
    "name": "ATK.NSL2.integrable_inner_of_hasCompactSupport",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 96,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{g : E3 → C3} (hg : LocallyIntegrable g volume) {H : E3 → C3} (hH : Continuous H) (hHs : HasCompactSupport H) : Integrable fun ξ => ⟪g ξ, H ξ⟫_ℂ"
   },
@@ -3753,7 +3845,7 @@
    "name": "ATK.NSL2.integrable_inner_of_memLp",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 168,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : E3 → C3} (hf : MemLp f 2) (hg : MemLp g 2) : Integrable fun x => ⟪f x, g x⟫_ℂ"
   },
@@ -3761,7 +3853,7 @@
    "name": "ATK.NSL2.integrable_norm_mul_sub",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 298,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F G : E3 → C3} (hF : MemLp F 2) (hG : MemLp G 2) (ξ : E3) : Integrable fun η => ‖F η‖ * ‖G (ξ - η)‖"
   },
@@ -3769,7 +3861,7 @@
    "name": "ATK.NSL2.integrable_prB",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 315,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F G : E3 → C3} (hF : MemLp F 2) (hG : MemLp G 2) : Integrable fun x => B (F x) (G x)"
   },
@@ -3777,7 +3869,7 @@
    "name": "ATK.NSL2.integrable_prB_e",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 349,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "{F G : E3 → C3} (hF : MemLp F 2) (hG : MemLp G 2) (ξ : E3) : Integrable fun x => 𝐞 (-⟪x, ξ⟫_ℝ) • B (F x) (G x)"
   },
@@ -3785,7 +3877,7 @@
    "name": "ATK.NSL2.integrable_sq_norm_of_memLp",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 268,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F : E3 → C3} (hF : MemLp F 2) : Integrable fun x => ‖F x‖ ^ 2"
   },
@@ -3793,7 +3885,7 @@
    "name": "ATK.NSL2.integral_inner_FL",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 57,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hf : MemLp f 2) (H : 𝓢(E3, C3)) : ∫ ξ, ⟪FL f ξ, H ξ⟫_ℂ = ∫ x, ⟪f x, (𝓕⁻ H : 𝓢(E3, C3)) x⟫_ℂ"
   },
@@ -3801,7 +3893,7 @@
    "name": "ATK.NSL2.integral_inner_dX",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 159,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f Ψ : E3 → C3} (j : Fin 3) (hf : Differentiable ℝ f) (hΨ : Differentiable ℝ Ψ) (h1 : Integrable fun x => ⟪dX j f x, Ψ x⟫_ℂ) (h2 : Integrable fun x => ⟪f x, dX j Ψ x⟫_ℂ) (h3 : Integrable fun x => ⟪f x, Ψ x⟫_ℂ) : ∫ x, ⟪f x, dX j Ψ x⟫_ℂ = -∫ x, ⟪dX j f x, Ψ x⟫_ℂ"
   },
@@ -3809,7 +3901,7 @@
    "name": "ATK.NSL2.integral_norm_mul_le",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 290,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F G : E3 → C3} (hF : MemLp F 2) (hG : MemLp G 2) : ∫ x, ‖F x‖ * ‖G x‖ ≤ √(∫ x, ‖F x‖ ^ 2) * √(∫ x, ‖G x‖ ^ 2)"
   },
@@ -3817,7 +3909,7 @@
    "name": "ATK.NSL2.integral_norm_mul_sub_le",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 272,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F G : E3 → C3} (hF : MemLp F 2) (hG : MemLp G 2) (ξ : E3) : ∫ η, ‖F η‖ * ‖G (ξ - η)‖ ≤ √(∫ η, ‖F η‖ ^ 2) * √(∫ η, ‖G η‖ ^ 2)"
   },
@@ -3825,7 +3917,7 @@
    "name": "ATK.NSL2.integral_norm_sq_FL",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 49,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (h : MemLp f 2) : ∫ ξ, ‖FL f ξ‖ ^ 2 = ∫ x, ‖f x‖ ^ 2"
   },
@@ -3833,7 +3925,7 @@
    "name": "ATK.NSL2.locallyIntegrable_FL",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 46,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(f : E3 → C3) : LocallyIntegrable (FL f) volume"
   },
@@ -3841,7 +3933,7 @@
    "name": "ATK.NSL2.locallyIntegrable_smul",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 203,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{c : E3 → ℂ} (hc : Continuous c) {g : E3 → C3} (hg : LocallyIntegrable g volume) : LocallyIntegrable (fun ξ => c ξ • g ξ) volume"
   },
@@ -3849,7 +3941,7 @@
    "name": "ATK.NSL2.memLp_FL",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 41,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(f : E3 → C3) : MemLp (FL f) 2"
   },
@@ -3857,7 +3949,7 @@
    "name": "ATK.NSL2.mulCj_apply",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 183,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(j : Fin 3) (S : 𝓢(E3, C3)) (ξ : E3) : mulCj j S ξ = cj j ξ • S ξ"
   },
@@ -3865,7 +3957,7 @@
    "name": "ATK.NSL2.norm_cvB_le",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 329,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F G : E3 → C3} (hF : MemLp F 2) (hG : MemLp G 2) (ξ : E3) : ‖∫ η, B (F η) (G (ξ - η))‖ ≤ ‖B‖ * (√(∫ η, ‖F η‖ ^ 2) * √(∫ η, ‖G η‖ ^ 2))"
   },
@@ -3873,7 +3965,7 @@
    "name": "ATK.NSL2.norm_prB_le",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 339,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "{F G : E3 → C3} (hF : MemLp F 2) (hG : MemLp G 2) (ξ : E3) : ‖∫ x, 𝐞 (-⟪x, ξ⟫_ℝ) • B (F x) (G x)‖ ≤ ‖B‖ * (√(∫ x, ‖F x‖ ^ 2) * √(∫ x, ‖G x‖ ^ 2))"
   },
@@ -3881,7 +3973,7 @@
    "name": "ATK.NSL2.prB_congr",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 378,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "{F F' G G' : E3 → C3} (hF : F =ᵐ[volume] F') (hG : G =ᵐ[volume] G') (ξ : E3) : ∫ x, 𝐞 (-⟪x, ξ⟫_ℝ) • B (F x) (G x) = ∫ x, 𝐞 (-⟪x, ξ⟫_ℝ) • B (F' x) (G' x)"
   },
@@ -3889,7 +3981,7 @@
    "name": "ATK.NSL2.sqrt_integral_norm_sq_Lp",
    "file": "atk-kernel/ATK/NSL2.lean",
    "line": 325,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(w : Lp C3 2 (volume : Measure E3)) : √(∫ x, ‖(w : E3 → C3) x‖ ^ 2) = ‖w‖"
   },
@@ -4321,7 +4413,7 @@
    "name": "ATK.NSPlancherel.Vf_eq_fourierInv",
    "file": "atk-kernel/ATK/NSPlancherel.lean",
    "line": 28,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(f : E3 → C3) (x : E3) : Vf f x = 𝓕⁻ f x"
   },
@@ -4329,15 +4421,17 @@
    "name": "ATK.NSPlancherel.continuous_fourierInv",
    "file": "atk-kernel/ATK/NSPlancherel.lean",
    "line": 53,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(hf : Integrable f) : Continuous (𝓕⁻ f)"
   },
   {
    "name": "ATK.NSPlancherel.continuous_neg_inner",
    "file": "atk-kernel/ATK/NSPlancherel.lean",
    "line": 47,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": Continuous fun p : E3 × E3 => (-innerₗ E3 : E3 →ₗ[ℝ] E3 →ₗ[ℝ] ℝ) p.1 p.2"
   },
@@ -4345,31 +4439,37 @@
    "name": "ATK.NSPlancherel.fourierInv_eq_vector",
    "file": "atk-kernel/ATK/NSPlancherel.lean",
    "line": 35,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : E3 → C3) : 𝓕⁻ h = VectorFourier.fourierIntegral 𝐞 volume (-innerₗ E3) h"
   },
   {
    "name": "ATK.NSPlancherel.fourierInv_eq_vector_scalar",
    "file": "atk-kernel/ATK/NSPlancherel.lean",
    "line": 41,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : E3 → ℂ) : 𝓕⁻ h = VectorFourier.fourierIntegral 𝐞 volume (-innerₗ E3) h"
   },
   {
    "name": "ATK.NSPlancherel.fourierInv_toLp_ae_eq",
    "file": "atk-kernel/ATK/NSPlancherel.lean",
    "line": 68,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(hf1 : Integrable f) (hf2 : MemLp f 2) : ((𝓕⁻ (hf2.toLp f) : Lp C3 2 (volume : Measure E3)) : E3 → C3) =ᵐ[volume] 𝓕⁻ f"
   },
   {
    "name": "ATK.NSPlancherel.integrable_of_bound",
    "file": "atk-kernel/ATK/NSPlancherel.lean",
    "line": 150,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{g : E3 → C3} (hg : AEStronglyMeasurable g) {C : ℝ} (hC : ∀ ξ, ‖g ξ‖ ≤ C * (w 4 ξ)⁻¹) : Integrable g"
   },
@@ -4377,31 +4477,37 @@
    "name": "ATK.NSPlancherel.integral_norm_sq_Vf",
    "file": "atk-kernel/ATK/NSPlancherel.lean",
    "line": 154,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{g : E3 → C3} (hg : AEStronglyMeasurable g) {C : ℝ} (hC : ∀ ξ, ‖g ξ‖ ≤ C * (w 4 ξ)⁻¹) : Integrable (fun x => ‖Vf g x‖ ^ 2) ∧ ∫ x, ‖Vf g x‖ ^ 2 = ∫ ξ, ‖g ξ‖ ^ 2"
   },
   {
    "name": "ATK.NSPlancherel.integral_smul_fourierInv",
    "file": "atk-kernel/ATK/NSPlancherel.lean",
    "line": 58,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{G : E3 → ℂ} (hG : Integrable G) (hf : Integrable f) : ∫ x, G x • 𝓕⁻ f x = ∫ ξ, 𝓕⁻ G ξ • f ξ"
   },
   {
    "name": "ATK.NSPlancherel.memLp_two_fourierInv",
    "file": "atk-kernel/ATK/NSPlancherel.lean",
    "line": 115,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(hf1 : Integrable f) (hf2 : MemLp f 2) : MemLp (𝓕⁻ f) 2"
   },
   {
    "name": "ATK.NSPlancherel.memLp_two_of_bound",
    "file": "atk-kernel/ATK/NSPlancherel.lean",
    "line": 133,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{g : E3 → C3} (hg : AEStronglyMeasurable g) {C : ℝ} (hC : ∀ ξ, ‖g ξ‖ ≤ C * (w 4 ξ)⁻¹) : MemLp g 2"
   },
@@ -4409,7 +4515,7 @@
    "name": "ATK.NSPlancherel.neg_innerₗ_flip",
    "file": "atk-kernel/ATK/NSPlancherel.lean",
    "line": 31,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": (-innerₗ E3 : E3 →ₗ[ℝ] E3 →ₗ[ℝ] ℝ).flip = -innerₗ E3"
   },
@@ -4417,7 +4523,7 @@
    "name": "ATK.NSPlancherel.norm_fourierInv_Lp",
    "file": "atk-kernel/ATK/NSPlancherel.lean",
    "line": 112,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(u : Lp C3 2 (volume : Measure E3)) : ‖𝓕⁻ u‖ = ‖u‖"
   },
@@ -5225,7 +5331,7 @@
    "name": "ATK.NSTrilinear.H1_of_bound",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 485,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hfm : Measurable f) {A : ℝ} (hA : ∀ ζ, ‖f ζ‖ ≤ A * (w 5 ζ)⁻¹) : H1 f ∧ nH1 f ≤ A ^ 2 * I4"
   },
@@ -5233,7 +5339,7 @@
    "name": "ATK.NSTrilinear.H1_sub",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 514,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : E3 → C3} (hfm : Measurable f) (hgm : Measurable g) (hf : H1 f) (hg : H1 g) : H1 (f - g) ∧ nH1 (f - g) ≤ 2 * nH1 f + 2 * nH1 g"
   },
@@ -5241,7 +5347,7 @@
    "name": "ATK.NSTrilinear.Nl_split",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 273,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : E3 → C3} (hf : MemLp f 2) (hg : MemLp g 2) (ξ : E3) : Nl f f ξ - Nl g g ξ = Nl (f - g) f ξ + Nl g (f - g) ξ"
   },
@@ -5249,7 +5355,7 @@
    "name": "ATK.NSTrilinear.Psi_nonneg",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 204,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(f g h : E3 → C3) (p : E3 × E3) : 0 ≤ Psi f g h p"
   },
@@ -5257,7 +5363,7 @@
    "name": "ATK.NSTrilinear.aesm_sub_left",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 247,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{g : E3 → C3} (hg : AEStronglyMeasurable g volume) (ξ : E3) : AEStronglyMeasurable (fun η => g (ξ - η)) volume"
   },
@@ -5265,7 +5371,7 @@
    "name": "ATK.NSTrilinear.inner_Nl_eq",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 343,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{b d : E3 → C3} (hb : MemLp b 2) (hd : MemLp d 2) (ξ : E3) : ⟪d ξ, Nl b d ξ⟫_ℂ = ((2 * π : ℝ) * Complex.I : ℂ) * ∫ η, Ftri2 b d (ξ, η)"
   },
@@ -5273,7 +5379,7 @@
    "name": "ATK.NSTrilinear.integrable_Nl_L2",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 253,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : E3 → C3} (hf : MemLp f 2) (hg : MemLp g 2) (ξ : E3) : Integrable fun η => ⟪cpx ξ, f η⟫_ℂ • g (ξ - η)"
   },
@@ -5281,7 +5387,7 @@
    "name": "ATK.NSTrilinear.integrable_Psi",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 213,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g h : E3 → C3} (hfm : Measurable f) (hgm : Measurable g) (hhm : Measurable h) (hf : H1 f) (hg : H1 g) (hh : H1 h) : Integrable (Psi f g h) (volume.prod volume) ∧ ∫ p, Psi f g h p ∂(volume.prod volume) ≤ (I4 * nH1 f + nH1 g * nH1 h) / 2"
   },
@@ -5289,7 +5395,7 @@
    "name": "ATK.NSTrilinear.integrable_fst_mul_sub",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 36,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hφm : Measurable φ) (hψm : Measurable ψ) (hφ : Integrable φ) (hψ : Integrable ψ) : Integrable (fun p : E3 × E3 => φ p.1 * ψ (p.1 - p.2)) (volume.prod volume)"
   },
@@ -5297,7 +5403,7 @@
    "name": "ATK.NSTrilinear.integrable_inner_Nl",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 309,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{d f g : E3 → C3} (hdm : Measurable d) (hfm : Measurable f) (hgm : Measurable g) (hf : MemLp f 2) (hg : MemLp g 2) (hP : Integrable (Psi d f g) (volume.prod volume)) : Integrable fun ξ => ⟪d ξ, Nl f g ξ⟫_ℂ"
   },
@@ -5305,7 +5411,7 @@
    "name": "ATK.NSTrilinear.integrable_snd_mul_sub",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 64,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hφm : Measurable φ) (hψm : Measurable ψ) (hφ : Integrable φ) (hψ : Integrable ψ) : Integrable (fun p : E3 × E3 => φ p.2 * ψ (p.1 - p.2)) (volume.prod volume)"
   },
@@ -5313,7 +5419,7 @@
    "name": "ATK.NSTrilinear.integral_Ftri2_eq_zero",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 322,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{b d : E3 → C3} (hdh : Herm d) (η : E3) (hbη : ⟪cpx η, b η⟫_ℂ = 0) : ∫ ξ, Ftri2 b d (ξ, η) = 0"
   },
@@ -5321,7 +5427,7 @@
    "name": "ATK.NSTrilinear.integral_Psi_right",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 292,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(f g h : E3 → C3) (ξ : E3) : ∫ η, Psi f g h (ξ, η) = ‖ξ‖ * ‖f ξ‖ * ∫ η, ‖g η‖ * ‖h (ξ - η)‖"
   },
@@ -5329,7 +5435,7 @@
    "name": "ATK.NSTrilinear.integral_fst_mul_sub",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 54,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hφm : Measurable φ) (hψm : Measurable ψ) (hφ : Integrable φ) (hψ : Integrable ψ) : ∫ p : E3 × E3, φ p.1 * ψ (p.1 - p.2) ∂(volume.prod volume) = (∫ ξ, φ ξ) * ∫ ξ, ψ ξ"
   },
@@ -5337,7 +5443,7 @@
    "name": "ATK.NSTrilinear.integral_inner_Nl_cancel",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 351,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{b d : E3 → C3} (hbm : Measurable b) (hdm : Measurable d) (hb : MemLp b 2) (hd : MemLp d 2) (hbd : ∀ η, ⟪cpx η, b η⟫_ℂ = 0) (hdh : Herm d) (hint : Integrable (Psi d b d) (volume.prod volume)) : ∫ ξ, ⟪d ξ, Nl b d ξ⟫_ℂ = 0"
   },
@@ -5345,7 +5451,7 @@
    "name": "ATK.NSTrilinear.integral_snd_mul_sub",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 82,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(hφm : Measurable φ) (hψm : Measurable ψ) (hφ : Integrable φ) (hψ : Integrable ψ) : ∫ p : E3 × E3, φ p.2 * ψ (p.1 - p.2) ∂(volume.prod volume) = (∫ ξ, φ ξ) * ∫ ξ, ψ ξ"
   },
@@ -5353,7 +5459,7 @@
    "name": "ATK.NSTrilinear.measurable_Nl",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 263,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : E3 → C3} (hf : Measurable f) (hg : Measurable g) : Measurable (Nl f g)"
   },
@@ -5361,7 +5467,7 @@
    "name": "ATK.NSTrilinear.measurable_Psi",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 207,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g h : E3 → C3} (hf : Measurable f) (hg : Measurable g) (hh : Measurable h) : Measurable (Psi f g h)"
   },
@@ -5369,7 +5475,7 @@
    "name": "ATK.NSTrilinear.measurable_phiE",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 541,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : E3 → C3} (hfm : Measurable f) (hgm : Measurable g) : Measurable (phiE f g)"
   },
@@ -5377,7 +5483,7 @@
    "name": "ATK.NSTrilinear.measurable_w",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 479,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(m : ℕ) : Measurable fun ξ : E3 => w m ξ"
   },
@@ -5385,7 +5491,7 @@
    "name": "ATK.NSTrilinear.measurable_w_inv",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 100,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(m : ℕ) : Measurable fun ξ : E3 => (w m ξ)⁻¹"
   },
@@ -5393,7 +5499,7 @@
    "name": "ATK.NSTrilinear.nH1_nonneg",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 198,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(f : E3 → C3) : 0 ≤ nH1 f"
   },
@@ -5401,7 +5507,7 @@
    "name": "ATK.NSTrilinear.norm_Nl_le_L2",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 285,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hf : MemLp f 2) (ξ : E3) : ‖Nl f f ξ‖ ≤ 2 * π * ‖ξ‖ * ∫ η, ‖f η‖ ^ 2"
   },
@@ -5409,7 +5515,7 @@
    "name": "ATK.NSTrilinear.norm_inner_Nl_le",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 305,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{d f g : E3 → C3} (hf : MemLp f 2) (hg : MemLp g 2) (ξ : E3) : ‖⟪d ξ, Nl f g ξ⟫_ℂ‖ ≤ 2 * π * ∫ η, Psi d f g (ξ, η)"
   },
@@ -5417,7 +5523,7 @@
    "name": "ATK.NSTrilinear.norm_integral_inner_Nl_le",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 383,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{d f : E3 → C3} (hdm : Measurable d) (hd : MemLp d 2) (hdd : ∀ η, ⟪cpx η, d η⟫_ℂ = 0) {A : ℝ} (hA0 : 0 ≤ A) (hA : ∀ ζ, ‖f ζ‖ ≤ A * (w 5 ζ)⁻¹) : ‖∫ ξ, ⟪d ξ, Nl d f ξ⟫_ℂ‖ ≤ 2 * π * (A * I4 * ∫ ξ, ‖d ξ‖ ^ 2)"
   },
@@ -5425,7 +5531,7 @@
    "name": "ATK.NSTrilinear.norm_mul_Nl_le",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 298,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{d f g : E3 → C3} (hf : MemLp f 2) (hg : MemLp g 2) (ξ : E3) : ‖d ξ‖ * ‖Nl f g ξ‖ ≤ 2 * π * ∫ η, Psi d f g (ξ, η)"
   },
@@ -5433,7 +5539,7 @@
    "name": "ATK.NSTrilinear.phiE_props",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 550,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f g : E3 → C3} (hfm : Measurable f) (hgm : Measurable g) {A : ℝ} (hA0 : 0 ≤ A) (hA : ∀ ζ, ‖f ζ‖ ≤ A * (w 5 ζ)⁻¹) (hfd : ∀ ξ, ⟪cpx ξ, f ξ⟫_ℂ = 0) (hfh : Herm f) (hg : MemLp g 2) (hgH : H1 g) (hgd : ∀ ξ, ⟪cpx ξ, g ξ⟫_ℂ = 0) (hgh : Herm g) : Integrable (phiE f g) ∧ ∫ ξ, ‖phiE f g ξ‖ ≤ 2 * π * (2 * I4 * nH1 (f - g) + nH1 f ^ 2 + nH1 g ^ 2) ∧ ∫ ξ, phiE f g ξ ≤ 4 * π * (A * I4 * ∫ ξ, ‖f ξ - g ξ‖ ^ 2)"
   },
@@ -5441,7 +5547,7 @@
    "name": "ATK.NSTrilinear.tri_bound",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 115,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{F G H : E3 → ℝ} (hFm : Measurable F) (hGm : Measurable G) (hHm : Measurable H) (hF0 : ∀ ξ, 0 ≤ F ξ) (hG0 : ∀ ξ, 0 ≤ G ξ) (hH0 : ∀ ξ, 0 ≤ H ξ) (hF : Integrable fun ξ => F ξ ^ 2) (hG : Integrable fun ξ => G ξ ^ 2) (hH : Integrable fun ξ => H ξ ^ 2) : Integrable (fun p : E3 × E3 => F p.1 * G p.2 * H (p.1 - p.2) * ((w 1 p.2)⁻¹ * (w 1 (p.1 - p.2))⁻¹)) (volume.prod volume) ∧ ∫ p : E3 × E3, F p.1 * G p."
   },
@@ -5449,7 +5555,7 @@
    "name": "ATK.NSTrilinear.tri_pt",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 104,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{X Y Z W1 W2 : ℝ} (hX : 0 ≤ X) (hY : 0 ≤ Y) (hZ : 0 ≤ Z) (hW1 : 0 ≤ W1) (hW2 : 0 ≤ W2) : X * Y * Z * (W1 * W2) ≤ (X ^ 2 * W1 ^ 4 + X ^ 2 * W2 ^ 4) / 4 + Y ^ 2 * Z ^ 2 / 2"
   },
@@ -5457,7 +5563,7 @@
    "name": "ATK.NSTrilinear.w1_inv_pow4",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 94,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ξ : E3) : (w 1 ξ)⁻¹ ^ 4 = (w 4 ξ)⁻¹"
   },
@@ -5465,7 +5571,7 @@
    "name": "ATK.NSTrilinear.w4_inv_le_one",
    "file": "atk-kernel/ATK/NSTrilinear.lean",
    "line": 379,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(ζ : E3) : (w 4 ζ)⁻¹ ≤ 1"
   },
@@ -5473,7 +5579,7 @@
    "name": "ATK.NSUnicidade.H1_of_enstrofia",
    "file": "atk-kernel/ATK/NSUnicidade.lean",
    "line": 570,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hf2 : MemLp f 2) (hf1 : Integrable fun ξ => ‖ξ‖ ^ 2 * ‖f ξ‖ ^ 2) : H1 f ∧ nH1 f ≤ 2 * (∫ ξ, ‖f ξ‖ ^ 2) + 2 * ∫ ξ, ‖ξ‖ ^ 2 * ‖f ξ‖ ^ 2"
   },
@@ -5481,7 +5587,7 @@
    "name": "ATK.NSUnicidade.energia_edo",
    "file": "atk-kernel/ATK/NSUnicidade.lean",
    "line": 119,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{l t M : ℝ} {g : ℝ → C3} (hl : 0 ≤ l) (ht : 0 ≤ t) (hg : IntervalIntegrable g volume 0 t) (hM : ∀ r ∈ Icc 0 t, ‖g r‖ ≤ M) {s : ℝ} (hs : s ∈ Icc 0 t) : (‖fE l g s‖ ^ 2 = ∫ r in (0 : ℝ)..s, (-(2 * l) * ‖fE l g r‖ ^ 2 + 2 * (⟪fE l g r, g r⟫_ℂ).re)) ∧ ‖fE l g s‖ ^ 2 ≤ ∫ r in (0 : ℝ)..s, 2 * (⟪fE l g r, g r⟫_ℂ).re"
   },
@@ -5489,7 +5595,7 @@
    "name": "ATK.NSUnicidade.fE_eq",
    "file": "atk-kernel/ATK/NSUnicidade.lean",
    "line": 81,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(l : ℝ) (g : ℝ → C3) (s : ℝ) : fE l g s = Real.exp (-(l * s)) • FE l g s"
   },
@@ -5497,7 +5603,7 @@
    "name": "ATK.NSUnicidade.gronwall_int",
    "file": "atk-kernel/ATK/NSUnicidade.lean",
    "line": 30,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{E : ℝ → ℝ} {t K M : ℝ} (ht : 0 ≤ t) (hK : 0 ≤ K) (hE0 : ∀ s ∈ Icc 0 t, 0 ≤ E s) (hEM : ∀ s ∈ Icc 0 t, E s ≤ M) (hint : IntervalIntegrable E volume 0 t) (h : ∀ s ∈ Icc 0 t, E s ≤ K * ∫ r in (0 : ℝ)..s, E r) : ∀ s ∈ Icc 0 t, E s = 0"
   },
@@ -5505,7 +5611,7 @@
    "name": "ATK.NSUnicidade.hasDerivAt_norm_sq_C3",
    "file": "atk-kernel/ATK/NSUnicidade.lean",
    "line": 106,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : ℝ → C3} {f' : C3} {x : ℝ} (hf : HasDerivAt f f' x) : HasDerivAt (fun r => ‖f r‖ ^ 2) (2 * (⟪f x, f'⟫_ℂ).re) x"
   },
@@ -5513,7 +5619,7 @@
    "name": "ATK.NSUnicidade.integral_sq_le_nH1",
    "file": "atk-kernel/ATK/NSUnicidade.lean",
    "line": 260,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{f : E3 → C3} (hf2 : MemLp f 2) (hH : H1 f) : ∫ ξ, ‖f ξ‖ ^ 2 ≤ nH1 f"
   },
@@ -5521,7 +5627,7 @@
    "name": "ATK.NSUnicidade.norm_sq_lip",
    "file": "atk-kernel/ATK/NSUnicidade.lean",
    "line": 90,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{B : ℝ} (hB : 0 ≤ B) : LipschitzOnWith (Real.toNNReal (2 * B)) (fun v : C3 => ‖v‖ ^ 2) (Metric.closedBall 0 B)"
   },
@@ -5529,7 +5635,7 @@
    "name": "ATK.NSUnicidade.re_inner_self_C3",
    "file": "atk-kernel/ATK/NSUnicidade.lean",
    "line": 103,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(v : C3) : (⟪v, v⟫_ℂ).re = ‖v‖ ^ 2"
   },
@@ -5537,23 +5643,27 @@
    "name": "ATK.NSUnicidade.stronglyMeasurable_btc",
    "file": "atk-kernel/ATK/NSUnicidade.lean",
    "line": 517,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(h : SolucaoLocal ν u₀ T U P) (u₀S : SchwartzMap E3 E3) {t : ℝ} (ht0 : 0 ≤ t) (ht : t < T) : StronglyMeasurable fun p : ℝ × E3 => bt ν U u₀S (max 0 (min p.1 t)) p.2"
   },
   {
    "name": "ATK.NSUnicidade.unicidadeF",
    "file": "atk-kernel/ATK/NSUnicidade.lean",
    "line": 596,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": ": ATK.NSClasse.UnicidadeD fun d => ATK.NSClasse.ClasseF d.1"
   },
   {
    "name": "ATK.NSUnicidade.unicidade_fourier",
    "file": "atk-kernel/ATK/NSUnicidade.lean",
    "line": 272,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{ν t : ℝ} {a b G : ℝ → E3 → C3} (hν : 0 ≤ ν) (ht : 0 ≤ t) (ha : ATK.NSTempo.BoaW a) (hah : ∀ r, ATK.NSSimetria.Herm (a r)) (had : ∀ r ξ, ⟪cpx ξ, a r ξ⟫_ℂ = 0) (ham : ∀ r ∈ Icc 0 t, ∀ ξ, a r ξ = heat ν r ξ • a 0 ξ - ∫ q in (0 : ℝ)..r, duhI ν a a r q ξ) (hbm : StronglyMeasurable fun p : ℝ × E3 => b p.1 p.2) (hbh : ∀ r ∈ Icc 0 t, ATK.NSSimetria.Herm (b r)) (hbd : ∀ r ∈ Icc 0 t, ∀ ξ, ⟪cpx ξ, b r ξ⟫_ℂ "
   },
@@ -5974,18 +6084,36 @@
    "statement": "∀ {L A B : ℝ}, 1 < L → 1 ≤ B → ∃ n, A * B ^ n < L ^ 2 ^ n"
   }
  ],
- "closed": 252,
+ "closed": 660,
  "files_sha256": {
   "atk-kernel/ATK/Conditional/NavierStokes.lean": "332fc2e50242c07cfee0b40cf545bbbd2dac0ae4d860c4e21ac2f639ca04a531",
   "atk-kernel/ATK/LigacaoNS.lean": "3f3783fc28394feb2d42b2bc6a0b8960ccf9b72217ed4e23560578be20bddf76",
+  "atk-kernel/ATK/NSAltaOrdem.lean": "72cc4644066355ff25e5afee8e2cc93003636728bac9d40cf035ab4cadd92974",
+  "atk-kernel/ATK/NSClasse.lean": "95b78fd66b069a206c4fa186179d4ee1371b83877e0fc1b69b053a847f8ffbb9",
+  "atk-kernel/ATK/NSContinuacao.lean": "f8fd41018b98b9f378a3185ede0c0f10ac54d3e5a07fa72164d49e8821475927",
+  "atk-kernel/ATK/NSCorte.lean": "6883f4e2387713ea73d8421508a9f3a38bf591e1927ab5465d6438b3e00e01d0",
+  "atk-kernel/ATK/NSCotaUniforme.lean": "a7d2aea2b902cbb23dc32d1e951812f35cafadafe4e985bd4aa04fa09b36585a",
+  "atk-kernel/ATK/NSDado.lean": "2e34d507176fe4cf6dbefc71f4c3f3e428d82c39a222e38a0f8a7a45bfe40f8f",
+  "atk-kernel/ATK/NSDuhamel.lean": "3c243b62751fb2ba8e6c4ff550bb5b0a00fa1f86cfdbb4f1fa47f18e0c1591e4",
+  "atk-kernel/ATK/NSEnergia.lean": "de7baa4c6f8165f0f3510d715d6a709f074fb311173e25d082de2807cb0cf898",
+  "atk-kernel/ATK/NSEstimativas.lean": "71aa4673320a4249fb795f7a39e933bfc8645962648dda0c4c463ba55f393ead",
+  "atk-kernel/ATK/NSExistencia.lean": "3a8c41836df7f8d5085c73519ac7afc47cd08e33e54d5ae669dc2bc14a116221",
   "atk-kernel/ATK/NSFisico.lean": "e00cdf3eed7cb5004800a69ef2f0f3dd7949518b390a5bf1f45511bb59ef8786",
   "atk-kernel/ATK/NSFourierBase.lean": "3e35f5036384d80260dc7e92e58c2d315145636a43375158e7419d811480320c",
+  "atk-kernel/ATK/NSFraca.lean": "608fe3704397f4f392b7a8e9a3f51d4bba5f94602fd6f81584b547f4437677f8",
+  "atk-kernel/ATK/NSFracaFourier.lean": "8b6dd8e2d918f0c4931a38155d8e77d8d82b414416b53061b706e14dd8e76ca2",
+  "atk-kernel/ATK/NSIdent.lean": "566cd6184a7715a9e678bece3a9a6870a6ed65711ae787b4eca000914f983cf9",
+  "atk-kernel/ATK/NSL2.lean": "b3a5253cbb085868407c0c8e7a579e83800c2f859f40ec464421cc89d58a4867",
   "atk-kernel/ATK/NSMild.lean": "676a50e0215f55c406c1d2591fd922c7b4be05c0f60be63afe904ea62f745fca",
   "atk-kernel/ATK/NSPicard.lean": "08164ec913d3d1a7450b4cf9c0d8bbf235bf8bf03fde09c572885a27025c266b",
+  "atk-kernel/ATK/NSPlancherel.lean": "cf82e500be458b3b2d50d360a9a9865cc5c3d23c72a5b5b1fc2d590e2394607b",
   "atk-kernel/ATK/NSPressao.lean": "ef8a73b1a2eb831f7b91ac16f2288e8856c82e8222b9b27ac8eb9b886224505b",
+  "atk-kernel/ATK/NSReducao.lean": "25e22411950562c05c8fbbcefd1ed99407b40b98ab19f586845225d90a1751ab",
   "atk-kernel/ATK/NSSimetria.lean": "17382274669bdda07990566aeab936753c3119c05ce98f577c64400866227a05",
   "atk-kernel/ATK/NSSuave.lean": "bb8ab804361633c6656c0725c1a9f39cc9efcd68c67091d9c2e29ea8aa3167df",
   "atk-kernel/ATK/NSTempo.lean": "e4583f27a8f6299dfad3d98cafa91585397042c3e5b1cf4ff352e86bb18b34ca",
+  "atk-kernel/ATK/NSTrilinear.lean": "ed5f67fdcb80e3d764a01760055cd63b801aa9b896b5ef030cee42b77be0b327",
+  "atk-kernel/ATK/NSUnicidade.lean": "ffb41878b6a384a198917f3ca4dec84de03879d6a298af6112282044d343f45c",
   "atk-kernel/ATK/OSExemplo.lean": "bcd478063b95c7df26143166e90c397981f22ed95d9a14d9bef24a91ec975a65",
   "atk-kernel/ATK/OSLacuna.lean": "b3ceb33864abd45732b93bfe9ef3c2b67a58788acbf443c98ef5aa7db9d75a8e",
   "atk-kernel/ATK/OSProcesso.lean": "12667a0e91e3b799d68384d69ff9397c73563844009ba6444078ea7a8ac65422",
@@ -5995,6 +6123,6 @@
   "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
   "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
  },
- "published_at": "2026-11-02T20:55:41Z",
- "certificate_sha256": "aab2f312ac457d533c6d33854677fd607c97f93d13b72219c1fb18d944b58306"
+ "published_at": "2026-11-03T11:28:09Z",
+ "certificate_sha256": "d9359afa696347048e09fce2a67987ebbfb4b15bd1f682c5f6dc79eb9746482a"
 }

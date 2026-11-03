@@ -1,0 +1,8 @@
+# Projeto mínimo para compilar, sem alterar, os arquivos originais em src/
+# (mesmo toolchain e mesma Mathlib declarados no lakefile original: v4.21.0).
+name = "atk_legacy"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.21.0"

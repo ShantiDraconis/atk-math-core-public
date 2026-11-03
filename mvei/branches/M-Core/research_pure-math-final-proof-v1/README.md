@@ -3,9 +3,9 @@
 Lean sources from the branch `research/pure-math-final-proof-v1` of the private repository `ShantiDraconis/M-Core`, commit `ef31a391b2127be4a51fdf0aa51ccb51a5670cd5` (2026-09-20T11:02:20+01:00), that hold theorems found only on branches (no default branch of any repository has a theorem with the same name). Published here: the files with the theorems the kernel closed, the local files they import and the Lake files of their project.
 
 * Branch state: parada (not in the default branch).
-* Theorems only on branches, in this branch: 75 — closed 36, conditional 15, open 0, proof error 0, not reached 0, no result 24.
+* Theorems only on branches, in this branch: 75 — closed 57, conditional 15, open 0, proof error 1, not reached 1, no result 1.
 * History: 82 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `193185b59b4b029d498cf2bd3070c3362de7c3f4a2e7b717581f1c8b25e97d39`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/research_pure-math-final-proof-v1/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `63b3cd60ee936e4d3ec83daefbf6d2fc950297734e84ef613cc3e81506a19b24`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/research_pure-math-final-proof-v1/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 
@@ -27,12 +27,12 @@ Closed means the kernel accepted the proof and it depends only on `propext`, `Cl
 | `MCore.V21.closed_locus_stable` | `MCore/V21/CoreIdentity.lean`:53 | fechado |
 | `MCore.V21.coreIdentity_fixed` | `MCore/V21/CoreIdentity.lean`:46 | fechado |
 | `MCore.V21.registered_endpoint` | `MCore/V21/ProblemEmbedding.lean`:34 | fechado |
-| `MCore.V22.ExactDecomposition.asIff` | `MCore/V22/RecursiveDecomposition.lean`:12 | nao_checado |
-| `MCore.V22.ExactDecomposition.child_proof_closes_parent` | `MCore/V22/RecursiveDecomposition.lean`:24 | nao_checado |
-| `MCore.V22.ProblemInstance.promotion_requires_goal` | `MCore/V22/ProblemInstance.lean`:19 | nao_checado |
+| `MCore.V22.ExactDecomposition.asIff` | `MCore/V22/RecursiveDecomposition.lean`:12 | fechado |
+| `MCore.V22.ExactDecomposition.child_proof_closes_parent` | `MCore/V22/RecursiveDecomposition.lean`:24 | fechado |
+| `MCore.V22.ProblemInstance.promotion_requires_goal` | `MCore/V22/ProblemInstance.lean`:19 | fechado |
 | `MCore.V22.ResidualSystem.acc_irrefl` | `MCore/V22/ResidualCalculus.lean`:24 | nao_checado |
-| `MCore.V22.ResidualSystem.no_step_from_closed` | `MCore/V22/ResidualCalculus.lean`:38 | nao_checado |
-| `MCore.V22.ResidualSystem.step_irrefl` | `MCore/V22/ResidualCalculus.lean`:33 | nao_checado |
+| `MCore.V22.ResidualSystem.no_step_from_closed` | `MCore/V22/ResidualCalculus.lean`:38 | fechado |
+| `MCore.V22.ResidualSystem.step_irrefl` | `MCore/V22/ResidualCalculus.lean`:33 | erro |
 | `MCore.V22.Tests.closed_open_classifies` | `MCore/V22/Tests.lean`:11 | fechado |
 | `MCore.V22.Tests.false_true_is_both_closed` | `MCore/V22/Tests.lean`:13 | fechado |
 | `MCore.V22.Tests.indeterminate_absorbs_left` | `MCore/V22/Tests.lean`:15 | fechado |
@@ -45,44 +45,44 @@ Closed means the kernel accepted the proof and it depends only on `propext`, `Cl
 | `MCore.V22.allProblems_count` | `MCore/V22/Universe.lean`:24 | fechado |
 | `MCore.V22.allStages_count` | `MCore/V22/Universe.lean`:34 | fechado |
 | `MCore.V22.beal_blocker_is_middle` | `MCore/V22/NodeLocator.lean`:53 | fechado |
-| `MCore.V22.beal_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:29 | nao_checado |
+| `MCore.V22.beal_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:29 | fechado |
 | `MCore.V22.beal_has_one_exact_blocker` | `MCore/V22/ExactBlockers.lean`:105 | condicional |
-| `MCore.V22.blocker_mem_implies_hasExactBlocker` | `MCore/V22/ExactBlockerNecessity.lean`:15 | nao_checado |
+| `MCore.V22.blocker_mem_implies_hasExactBlocker` | `MCore/V22/ExactBlockerNecessity.lean`:15 | fechado |
 | `MCore.V22.blocking_nodes_count` | `MCore/V22/NodeLocator.lean`:39 | condicional |
 | `MCore.V22.bsd_blocker_is_middle` | `MCore/V22/NodeLocator.lean`:49 | fechado |
-| `MCore.V22.bsd_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:25 | nao_checado |
+| `MCore.V22.bsd_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:25 | fechado |
 | `MCore.V22.bsd_has_one_exact_blocker` | `MCore/V22/ExactBlockers.lean`:101 | condicional |
 | `MCore.V22.candidate_record_not_mainCertified` | `MCore/V22/FrontierRegistry.lean`:59 | fechado |
 | `MCore.V22.candidate_scope_not_main` | `MCore/V22/FrontierRegistry.lean`:55 | fechado |
-| `MCore.V22.certificate_implies_final` | `MCore/V22/ResidualCalculus.lean`:68 | nao_checado |
-| `MCore.V22.certificate_to_certifiedClosed` | `MCore/V22/ClosureCriterion.lean`:27 | nao_checado |
-| `MCore.V22.certifiedClosed_implies_goal` | `MCore/V22/ClosureCriterion.lean`:22 | nao_checado |
-| `MCore.V22.certifiedClosed_to_certificate` | `MCore/V22/ClosureCriterion.lean`:38 | nao_checado |
-| `MCore.V22.closedDirections_start_iff_final` | `MCore/V22/RecursiveDecomposition.lean`:41 | nao_checado |
-| `MCore.V22.closure_state_count` | `MCore/V22/BidirectionalClosure.lean`:35 | nao_checado |
+| `MCore.V22.certificate_implies_final` | `MCore/V22/ResidualCalculus.lean`:68 | fechado |
+| `MCore.V22.certificate_to_certifiedClosed` | `MCore/V22/ClosureCriterion.lean`:27 | fechado |
+| `MCore.V22.certifiedClosed_implies_goal` | `MCore/V22/ClosureCriterion.lean`:22 | fechado |
+| `MCore.V22.certifiedClosed_to_certificate` | `MCore/V22/ClosureCriterion.lean`:38 | nao_alcancado |
+| `MCore.V22.closedDirections_start_iff_final` | `MCore/V22/RecursiveDecomposition.lean`:41 | fechado |
+| `MCore.V22.closure_state_count` | `MCore/V22/BidirectionalClosure.lean`:35 | fechado |
 | `MCore.V22.constructor_blocker_count` | `MCore/V22/NodeLocator.lean`:115 | condicional |
 | `MCore.V22.constructor_closes_frontier` | `MCore/V22/FrontierKernel.lean`:22 | fechado |
 | `MCore.V22.exact_mathematical_blocker_count` | `MCore/V22/ExactBlockers.lean`:78 | fechado |
 | `MCore.V22.frontier_constructor_iff_global` | `MCore/V22/FrontierKernel.lean`:36 | fechado |
 | `MCore.V22.frontier_subnode_count` | `MCore/V22/NodeLocator.lean`:93 | condicional |
 | `MCore.V22.hodge_blocker_is_middle` | `MCore/V22/NodeLocator.lean`:45 | fechado |
-| `MCore.V22.hodge_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:21 | nao_checado |
+| `MCore.V22.hodge_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:21 | fechado |
 | `MCore.V22.hodge_has_one_exact_blocker` | `MCore/V22/ExactBlockers.lean`:97 | condicional |
 | `MCore.V22.kernel_unassigned_nodes_count` | `MCore/V22/NodeLocator.lean`:42 | condicional |
-| `MCore.V22.navierStokes_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:45 | nao_checado |
+| `MCore.V22.navierStokes_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:45 | fechado |
 | `MCore.V22.ns_blocker_is_middle` | `MCore/V22/NodeLocator.lean`:69 | fechado |
 | `MCore.V22.ns_has_two_exact_blockers` | `MCore/V22/ExactBlockers.lean`:93 | condicional |
-| `MCore.V22.open_problem_has_registered_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:53 | nao_checado |
+| `MCore.V22.open_problem_has_registered_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:53 | fechado |
 | `MCore.V22.pnp_blocker_is_middle` | `MCore/V22/NodeLocator.lean`:57 | fechado |
-| `MCore.V22.pnp_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:33 | nao_checado |
+| `MCore.V22.pnp_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:33 | fechado |
 | `MCore.V22.pnp_has_one_exact_blocker` | `MCore/V22/ExactBlockers.lean`:109 | condicional |
 | `MCore.V22.primary_frontier_count` | `MCore/V22/FrontierRegistry.lean`:170 | fechado |
-| `MCore.V22.recursive_frontier_exact` | `MCore/V22/RecursiveDecomposition.lean`:54 | nao_checado |
-| `MCore.V22.research_direction_count` | `MCore/V22/BidirectionalClosure.lean`:89 | nao_checado |
+| `MCore.V22.recursive_frontier_exact` | `MCore/V22/RecursiveDecomposition.lean`:54 | fechado |
+| `MCore.V22.research_direction_count` | `MCore/V22/BidirectionalClosure.lean`:89 | fechado |
 | `MCore.V22.rh_blocker_is_middle` | `MCore/V22/NodeLocator.lean`:61 | fechado |
 | `MCore.V22.rh_has_two_exact_blockers` | `MCore/V22/ExactBlockers.lean`:85 | condicional |
-| `MCore.V22.riemann_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:37 | nao_checado |
-| `MCore.V22.witness_incompatibility` | `MCore/V22/BidirectionalClosure.lean`:97 | nao_checado |
-| `MCore.V22.yangMills_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:41 | nao_checado |
+| `MCore.V22.riemann_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:37 | fechado |
+| `MCore.V22.witness_incompatibility` | `MCore/V22/BidirectionalClosure.lean`:97 | fechado |
+| `MCore.V22.yangMills_has_exact_blocker` | `MCore/V22/ExactBlockerNecessity.lean`:41 | fechado |
 | `MCore.V22.ym_blocker_is_middle` | `MCore/V22/NodeLocator.lean`:65 | fechado |
 | `MCore.V22.ym_has_two_exact_blockers` | `MCore/V22/ExactBlockers.lean`:89 | condicional |

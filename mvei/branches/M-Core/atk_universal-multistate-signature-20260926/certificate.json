@@ -113,7 +113,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-30T16:50:26+00:00",
+  "generated_at": "2026-11-03T08:19:01+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -358,6 +358,6 @@
   "lean/MCore/FinalFail/ExactGapLedger.lean": "e3f1fce7f53c274cdde3b7c12f0c7ae0b25f949307234cc7eae8f84fc0255605",
   "lean/MCore/FinalFail/SevenLocalNuclei.lean": "50df3ee014e1d7c0800d1fadb89cb8b25235cd4666eca5a6a3f7d03b79ce2e01"
  },
- "published_at": "2026-11-02T20:55:49Z",
- "certificate_sha256": "21f3869627b9057b5424ae435f1f230ddb5e61d1d735dc3c2bc7f42a942878f6"
+ "published_at": "2026-11-03T11:28:17Z",
+ "certificate_sha256": "889bf893e24bb76ffd0ef189e20627a481c3bfe1c8b1677a4a3e8c9bdcae0cb9"
 }

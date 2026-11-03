@@ -183,7 +183,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-10-30T16:50:26+00:00",
+  "generated_at": "2026-11-03T08:19:01+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0",
    "leanprover/lean4:v4.21.0",
@@ -201,47 +201,57 @@
    "name": "ATK.Audit.Contracts.beal_producer_iff",
    "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
    "line": 53,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(T : Type) (Cx : T → Prop) : Nonempty (Beal.Producer T Cx) ↔ Beal.Target T Cx"
   },
   {
    "name": "ATK.Audit.Contracts.bsd_producer_iff",
    "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
    "line": 33,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(C : Type) (Adm R F : C → Prop) : Nonempty (BSD.Producer C Adm R F) ↔ BSD.Target C Adm R F"
   },
   {
    "name": "ATK.Audit.Contracts.hodge_producer_iff",
    "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
    "line": 38,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(V Cl Cy : Type) [Nonempty Cy] (SP : V → Prop) (HC : V → Cl → Prop) (Rep : V → Cy → Cl → Prop) : Nonempty (Hodge.Producer V Cl Cy SP HC Rep) ↔ Hodge.Target V Cl Cy SP HC Rep"
   },
   {
    "name": "ATK.Audit.Contracts.ns_producer_iff",
    "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
    "line": 11,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(I S : Type) [Nonempty S] (Adm : I → Prop) (Sol : I → S → Prop) (Reg : S → Prop) : Nonempty (NS.Producer I S Adm Sol Reg) ↔ NS.Target I S Adm Sol Reg"
   },
   {
    "name": "ATK.Audit.Contracts.pnp_producer_iff",
    "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
    "line": 57,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(M : Type) (D P : M → Prop) : Nonempty (PNP.Producer M D P) ↔ PNP.Target M D P"
   },
   {
    "name": "ATK.Audit.Contracts.pnp_target_vacuous",
    "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
    "line": 61,
-   "state": "nao_checado",
+   "state": "erro",
    "axioms_beyond_standard": [],
    "statement": ": PNP.Target Unit (fun _ => True) (fun _ => False)"
   },
@@ -249,48 +259,60 @@
    "name": "ATK.Audit.Contracts.rh_producer_vacuous",
    "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
    "line": 3,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": ": Nonempty (RH.Producer (fun n : Nat => (0 : Rat) / ((n : Rat) + 1)) (fun _ => True))"
   },
   {
    "name": "ATK.Audit.Contracts.ym_producer_iff",
    "file": "atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean",
    "line": 28,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(T : Type) (Phys Gap : T → Prop) : Nonempty (YM.Producer T Phys Gap) ↔ YM.Target T Phys Gap"
   },
   {
    "name": "ATK.Audit.certificate_iff",
    "file": "atk-batch2/appendix/orig-tc/ATK/TerminalCertificate.lean",
    "line": 2,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(P : Prop) : Nonempty (ATK.Certificate.ProofCertificate P) ↔ P"
   },
   {
    "name": "ATK.Audit.gate_iff",
    "file": "atk-batch2/appendix/orig-fo/ATK/KernelGates.lean",
    "line": 2,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(C : Prop) : Nonempty (ATK.TerminalGate C) ↔ C"
   },
   {
    "name": "ATK.Audit.lane_iff",
    "file": "atk-batch2/appendix/orig-eg/ATKExactGate.lean",
    "line": 2,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(P : Prop) : Nonempty (ATK.Lane P) ↔ P"
   },
   {
    "name": "ATK.Audit.sevenGates_iff",
    "file": "atk-batch2/appendix/orig-fo/ATK/TerminalTargets.lean",
    "line": 2,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(t : ATK.SevenTargets) : Nonempty (ATK.SevenGates t) ↔ (t.RH ∧ t.NS ∧ t.YM ∧ t.BSD ∧ t.Hodge ∧ t.Beal ∧ t.PNP)"
   },
   {
@@ -299,7 +321,7 @@
    "line": 19,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∃ e, e.materialObligation ∧ e.concreteStatement"
+   "statement": ": ∃ e : Endpoint, e.materialObligation ∧ e.concreteStatement"
   },
   {
    "name": "ATK.AuditOfInterfaces.obligation_iff",
@@ -307,7 +329,7 @@
    "line": 16,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (T : Prop), Nonempty (ATK.KernelInterfaces.Obligation T) ↔ T"
+   "statement": "(T : Prop) : Nonempty (Obligation T) ↔ T"
   },
   {
    "name": "ATK.BSD.torsion_card_pos",
@@ -361,7 +383,7 @@
    "name": "ATK.Certificate.seven_verify",
    "file": "atk-batch2/originals/terminal-certificates/ATK/TerminalCertificate.lean",
    "line": 13,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "{R N Y B H E P : Prop} (r : ProofCertificate R) (n : ProofCertificate N) (y : ProofCertificate Y) (b : ProofCertificate B) (h : ProofCertificate H) (e : ProofCertificate E) (p : ProofCertificate P) : R ∧ N ∧ Y ∧ B ∧ H ∧ E ∧ P"
   },
@@ -369,7 +391,7 @@
    "name": "ATK.Certificate.verify",
    "file": "atk-batch2/originals/terminal-certificates/ATK/TerminalCertificate.lean",
    "line": 10,
-   "state": "nao_checado",
+   "state": "nao_alcancado",
    "axioms_beyond_standard": [],
    "statement": "{target : Prop} (c : ProofCertificate target) : target"
   },
@@ -641,31 +663,37 @@
    "name": "ATK.ConcreteAnalytic.infimum_antitone",
    "file": "atk-batch2/originals/material-math/ATK/ConcreteAnalytic.lean",
    "line": 4,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{α : Type*} (cost : α → Real) (A B : Set α) (hAB : A ⊆ B) (hA : (cost '' A).BddBelow) (hAn : (cost '' A).Nonempty) : sInf (cost '' B) ≤ sInf (cost '' A)"
   },
   {
    "name": "ATK.ConcreteArithmetic.common_prime_divides_third",
    "file": "atk-batch2/originals/material-math/ATK/ConcreteArithmetic.lean",
    "line": 21,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{a b c x y z : Nat} (hz : 0 < z) (heq : a ^ x + b ^ y = c ^ z) {p : Nat} (hp : Nat.Prime p) (hpa : p ∣ a) (hpb : p ∣ b) : p ∣ c"
   },
   {
    "name": "ATK.ConcreteArithmetic.no_natural_descent",
    "file": "atk-batch2/originals/material-math/ATK/ConcreteArithmetic.lean",
    "line": 4,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "erro",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "{C : Type*} (hC : Nonempty C) (measure : C → Nat) (step : C → C) (decreases : ∀ c, measure (step c) < measure c) : False"
   },
   {
    "name": "ATK.ConcreteSemantics.eval_conj",
    "file": "atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean",
    "line": 17,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(a : Nat → Bool) (p q : BoolExpr) : eval a (.conj p q) = (eval a p && eval a q)"
   },
@@ -673,7 +701,7 @@
    "name": "ATK.ConcreteSemantics.eval_double_neg",
    "file": "atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean",
    "line": 21,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(a : Nat → Bool) (p : BoolExpr) : eval a (.neg (.neg p)) = eval a p"
   },
@@ -681,7 +709,7 @@
    "name": "ATK.ConcreteSemantics.verifies_conj",
    "file": "atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean",
    "line": 28,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(a : Nat → Bool) (p q : BoolExpr) : verifies a (.conj p q) ↔ verifies a p ∧ verifies a q"
   },
@@ -907,7 +935,7 @@
    "line": 5,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (d u s : ℝ), 0 < s → d - u ^ 2 / s ≤ d"
+   "statement": "(d u s : ℝ) (hs : 0 < s) : d - u ^ 2 / s ≤ d"
   },
   {
    "name": "ATK.FinalRoot.terminal_from_independent_producer",
@@ -915,7 +943,7 @@
    "line": 31,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ {M C : Prop}, M → (M → C) → C"
+   "statement": "{M C : Prop} (material : M) (bridge : M → C) : C"
   },
   {
    "name": "ATK.FinalRoot.torsion_card_positive",
@@ -923,7 +951,7 @@
    "line": 11,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (G : Type u_1) [Group G] [inst : Fintype G], 0 < Fintype.card G"
+   "statement": "(G : Type*) [Group G] [Fintype G] : 0 < Fintype.card G"
   },
   {
    "name": "ATK.Formal.add_assoc_int",
@@ -955,7 +983,7 @@
    "line": 11,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ {P Q R : Prop}, (P → Q) → (Q → R) → P → R"
+   "statement": "{P Q R : Prop} (pq : P → Q) (qr : Q → R) : P → R"
   },
   {
    "name": "ATK.Formal.conjunction_commutes",
@@ -963,7 +991,7 @@
    "line": 13,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ {P Q : Prop}, P ∧ Q → Q ∧ P"
+   "statement": "{P Q : Prop} : P ∧ Q → Q ∧ P"
   },
   {
    "name": "ATK.Formal.eval_conj",
@@ -971,7 +999,7 @@
    "line": 66,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (a b : ATK.Formal.Expr), ATK.Formal.eval (a.conj b) = (ATK.Formal.eval a && ATK.Formal.eval b)"
+   "statement": "(a b : Expr) : eval (.conj a b) = (eval a && eval b)"
   },
   {
    "name": "ATK.Formal.eval_literal",
@@ -979,7 +1007,7 @@
    "line": 64,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (b : Bool), ATK.Formal.eval (ATK.Formal.Expr.lit b) = b"
+   "statement": "(b : Bool) : eval (.lit b) = b"
   },
   {
    "name": "ATK.Formal.eval_neg",
@@ -987,7 +1015,7 @@
    "line": 68,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (a : ATK.Formal.Expr), ATK.Formal.eval a.neg = !ATK.Formal.eval a"
+   "statement": "(a : Expr) : eval (.neg a) = !(eval a)"
   },
   {
    "name": "ATK.Formal.inhabited_to_exists",
@@ -995,7 +1023,7 @@
    "line": 8,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ {α : Sort u} (a : α), Nonempty α"
+   "statement": "{α : Sort u} (a : α) : Nonempty α"
   },
   {
    "name": "ATK.Formal.no_decrease_at_zero",
@@ -1003,7 +1031,7 @@
    "line": 19,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (f : Nat → Nat), ¬∀ (n : Nat), f n < n"
+   "statement": "(f : Nat → Nat) : ¬ (∀ n, f n < n)"
   },
   {
    "name": "ATK.Formal.successor_strict",
@@ -1011,7 +1039,7 @@
    "line": 18,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (n : Nat), n < n + 1"
+   "statement": "(n : Nat) : n < n + 1"
   },
   {
    "name": "ATK.Formal.terminal_application",
@@ -1019,7 +1047,7 @@
    "line": 69,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ {Material Target : Prop}, Material → (Material → Target) → Target"
+   "statement": "{Material Target : Prop} (inhabitant : Material) (bridge : Material → Target) : Target"
   },
   {
    "name": "ATK.Formal.translate_comp",
@@ -1027,7 +1055,7 @@
    "line": 41,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (p v w : ATK.Formal.Point2),   ATK.Formal.translate (ATK.Formal.translate p v) w = ATK.Formal.translate p (ATK.Formal.translate v w)"
+   "statement": "(p v w : Point2) : translate (translate p v) w = translate p (translate v w)"
   },
   {
    "name": "ATK.Formal.translate_origin",
@@ -1035,7 +1063,7 @@
    "line": 37,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (p : ATK.Formal.Point2), ATK.Formal.translate p ATK.Formal.origin = p"
+   "statement": "(p : Point2) : translate p origin = p"
   },
   {
    "name": "ATK.Formal.zero_le_all",
@@ -1043,7 +1071,7 @@
    "line": 15,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (n : Nat), 0 ≤ n"
+   "statement": "(n : Nat) : 0 ≤ n"
   },
   {
    "name": "ATK.Horizon.completed_zeta_symmetric",
@@ -1457,7 +1485,7 @@
    "name": "ATK.Refutations.common_prime_divides_third_as_written_false",
    "file": "atk-batch2/patched/material-math/ATK/Refutations.lean",
    "line": 12,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ (∀ {a b c x y z : ℕ}, 0 < z → a ^ x + b ^ y = c ^ z → ∀ {p : ℕ}, Nat.Prime p → p ∣ a → p ∣ b → p ∣ c)"
   },
@@ -1465,7 +1493,7 @@
    "name": "ATK.Refutations.infimum_antitone_as_written_false",
    "file": "atk-batch2/patched/material-math/ATK/Refutations.lean",
    "line": 22,
-   "state": "nao_checado",
+   "state": "erro",
    "axioms_beyond_standard": [],
    "statement": ": ¬ (∀ (cost : ℝ → ℝ) (A B : Set ℝ), A ⊆ B → BddBelow (cost '' A) → (cost '' A).Nonempty → sInf (cost '' B) ≤ sInf (cost '' A))"
   },
@@ -1507,7 +1535,7 @@
    "line": 9,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (e : ATK.Terminal.Endpoint), e.materialObligation → e.concreteStatement"
+   "statement": "(e : Endpoint) (proof : e.materialObligation) : e.concreteStatement"
   },
   {
    "name": "ATK.Terminal.finite_group_nonempty",
@@ -1515,7 +1543,7 @@
    "line": 28,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (G : Type u_1) [Group G] [inst : Fintype G], 0 < Fintype.card G"
+   "statement": "(G : Type*) [Group G] [Fintype G] : 0 < Fintype.card G"
   },
   {
    "name": "ATK.Terminal.independent_terminal",
@@ -1523,7 +1551,7 @@
    "line": 33,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ {Material Terminal : Prop}, Material → (Material → Terminal) → Terminal"
+   "statement": "{Material Terminal : Prop} (material_proof : Material) (bridge_proof : Material → Terminal) : Terminal"
   },
   {
    "name": "ATK.Terminal.no_inhabitant_of_strict_descent",
@@ -1539,7 +1567,7 @@
    "line": 5,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "∀ (D : ℕ → ℝ), (∀ (n : ℕ), 0 ≤ D n) → Antitone D → ∃ l, 0 ≤ l ∧ Filter.Tendsto D Filter.atTop (nhds l)"
+   "statement": "(D : ℕ → ℝ) (h0 : ∀ n, 0 ≤ D n) (hmono : Antitone D) : ∃ l : ℝ, 0 ≤ l ∧ Filter.Tendsto D Filter.atTop (nhds l)"
   },
   {
    "name": "ATK.Transition.Pipeline.closes",
@@ -1657,7 +1685,7 @@
    "name": "ATK.Universal.BSD.terminal",
    "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
    "line": 55,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(p : Producer Curve Admissible RankEquality RefinedFormula) : Target Curve Admissible RankEquality RefinedFormula"
   },
@@ -1665,7 +1693,7 @@
    "name": "ATK.Universal.Beal.terminal",
    "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
    "line": 84,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(p : Producer Triple Counterexample) : Target Triple Counterexample"
   },
@@ -1673,7 +1701,7 @@
    "name": "ATK.Universal.Hodge.terminal",
    "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
    "line": 72,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(p : Producer Variety Class Cycle SmoothProjective HodgeClass Represents) : Target Variety Class Cycle SmoothProjective HodgeClass Represents"
   },
@@ -1681,7 +1709,7 @@
    "name": "ATK.Universal.NS.terminal",
    "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
    "line": 31,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(p : Producer InitialData Solution Admissible Solves GlobalRegular) : Target InitialData Solution Admissible Solves GlobalRegular"
   },
@@ -1689,7 +1717,7 @@
    "name": "ATK.Universal.PNP.terminal",
    "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
    "line": 95,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(p : Producer Machine DecidesSAT PolynomialTime) : Target Machine DecidesSAT PolynomialTime"
   },
@@ -1697,15 +1725,17 @@
    "name": "ATK.Universal.RH.terminal",
    "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
    "line": 17,
-   "state": "nao_checado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(p : Producer DN Converges) (b : SemanticBridge DN Converges RHStatement) : RHStatement"
   },
   {
    "name": "ATK.Universal.YM.terminal",
    "file": "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean",
    "line": 45,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(p : Producer Theory Physical MassGap) : Target Theory Physical MassGap"
   },
@@ -1713,7 +1743,7 @@
    "name": "ATK.VerifiedAuxiliary.bsd_recover_h22",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 33,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h11 h12 h22 R : ℝ) (h11ne : h11 ≠ 0) (hR : R = h11 * h22 - h12 ^ 2) : h22 = (R + h12 ^ 2) / h11"
   },
@@ -1721,7 +1751,7 @@
    "name": "ATK.VerifiedAuxiliary.bsd_regulator_example",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 28,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": (2 : ℚ) * 3 - 1 ^ 2 = 5"
   },
@@ -1729,7 +1759,7 @@
    "name": "ATK.VerifiedAuxiliary.bsd_regulator_identity",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 31,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(h11 h12 h22 : ℝ) : h11 * h22 - h12 ^ 2 = h11 * h22 - h12 * h12"
   },
@@ -1737,7 +1767,7 @@
    "name": "ATK.VerifiedAuxiliary.hodge_linear_realization",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 38,
-   "state": "nao_checado",
+   "state": "erro",
    "axioms_beyond_standard": [],
    "statement": "{n : ℕ} (A : Matrix (Fin n) (Fin n) ℚ) (b : Fin n → ℚ) [Invertible A] : ∃ q : Fin n → ℚ, A *ᵥ q = b"
   },
@@ -1745,7 +1775,7 @@
    "name": "ATK.VerifiedAuxiliary.ns_budget_example",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 19,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": (1 : ℚ) / 4 + 1 / 3 = 7 / 12"
   },
@@ -1753,7 +1783,7 @@
    "name": "ATK.VerifiedAuxiliary.ns_budget_identity",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 20,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(b t : ℝ) : (1 - b - t) + (b + t) = 1"
   },
@@ -1761,7 +1791,7 @@
    "name": "ATK.VerifiedAuxiliary.ns_bulk_tail_bound",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 22,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(b t ν z B T : ℝ) (hB : B ≤ b * (ν * z)) (hT : T ≤ t * (ν * z)) : B + T ≤ (b + t) * (ν * z)"
   },
@@ -1769,7 +1799,7 @@
    "name": "ATK.VerifiedAuxiliary.ns_margin_example",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 16,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": (1 : ℚ) - 1 / 4 - 1 / 3 = 5 / 12"
   },
@@ -1777,7 +1807,7 @@
    "name": "ATK.VerifiedAuxiliary.ns_margin_positive",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 21,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(b t : ℝ) (h : b + t < 1) : 0 < 1 - b - t"
   },
@@ -1785,7 +1815,7 @@
    "name": "ATK.VerifiedAuxiliary.rh_finite_decrement",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 5,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": (5 : ℚ) / 6 - 7 / 12 = 1 / 4"
   },
@@ -1793,7 +1823,7 @@
    "name": "ATK.VerifiedAuxiliary.rh_ratio",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 8,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ((7 : ℚ) / 12) / (5 / 6) = 7 / 10"
   },
@@ -1801,7 +1831,7 @@
    "name": "ATK.VerifiedAuxiliary.rh_relative_reduction",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 9,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": (1 : ℚ) - (7 / 10) = 3 / 10"
   },
@@ -1809,7 +1839,7 @@
    "name": "ATK.VerifiedAuxiliary.rh_schur_antitone",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 12,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(d₀ d₁ r s : ℝ) (hs : 0 < s) (h : d₀ - d₁ = r ^ 2 / s) : d₁ ≤ d₀"
   },
@@ -1817,7 +1847,7 @@
    "name": "ATK.VerifiedAuxiliary.rh_schur_nonnegative",
    "file": "atk-legacy/src/VerifiedAuxiliary.lean",
    "line": 10,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(r s : ℝ) (hs : 0 < s) : 0 ≤ r ^ 2 / s"
   },
@@ -1833,7 +1863,7 @@
    "name": "ATK.lane_closes",
    "file": "atk-batch2/originals/exact-gate/ATKExactGate.lean",
    "line": 7,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{P : Prop} (l : Lane P) : P"
   },
@@ -1865,7 +1895,7 @@
    "name": "ATK.seven_close",
    "file": "atk-batch2/originals/exact-gate/ATKExactGate.lean",
    "line": 9,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{R NS YM BSD H B PNP : Prop} (r : Lane R) (ns : Lane NS) (ym : Lane YM) (bsd : Lane BSD) (h : Lane H) (b : Lane B) (pnp : Lane PNP) : R ∧ NS ∧ YM ∧ BSD ∧ H ∧ B ∧ PNP"
   },
@@ -1873,7 +1903,7 @@
    "name": "ATK.weakClosure_inhabited",
    "file": "atk-batch2/originals/exact-gate/ATKExactGate.lean",
    "line": 23,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": Nonempty WeakClosure"
   },
@@ -1881,7 +1911,7 @@
    "name": "ATKExactValues.absorption",
    "file": "atk-legacy/src/ATK_ExactValues.lean",
    "line": 13,
-   "state": "nao_checado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(bulk tail rem nu z y cB cT C : ℝ) (hb : bulk ≤ cB * nu * z) (ht : tail ≤ cT * nu * z) (hr : rem ≤ C * y ^ 2) : bulk + tail + rem ≤ (cB + cT) * nu * z + C * y ^ 2"
   },
@@ -1926,14 +1956,20 @@
    "statement": "∀ {n : ℕ} (x : EuclideanSpace ℝ (Fin n)), NavierStokes.Comparator.divergence 0 x = 0"
   }
  ],
- "closed": 169,
+ "closed": 196,
  "files_sha256": {
   "atk-batch2/appendix/orig-fo/ATK/KernelGates.lean": "e35aec6f3571c88d127490a4a8691423015346b20fdbe31f9158da0050be37e5",
+  "atk-batch2/originals/exact-gate/ATKExactGate.lean": "5cb667413b43a81ab76a42b13a383be382ba7cb7c6a687d9655114fd9740329f",
   "atk-batch2/originals/formal-operators/ATK/FormalOperators.lean": "e5608c279efe88ca17db017da75f66086fba254bf3530b74e122a030745ff6cf",
   "atk-batch2/originals/formal-operators/ATK/KernelGates.lean": "180c7cd4c800d1eddeab0903520b5bc1659a7d3d9159c192632a6bfe505787a1",
   "atk-batch2/originals/formal-operators/ATK/MaterialExamples.lean": "6bf6e181a93c17a6193944bddfdd4f073bbf5410801bfd16995a7ddaadc24169",
   "atk-batch2/originals/formal-operators/lakefile.toml": "72b2d419f2e8d88c1e86ddb44c49ddd9e35e36ee5d6aa47c0900751c687e6ddd",
   "atk-batch2/originals/formal-operators/lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
+  "atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean": "87b82ba44bbe0ade3ada08113ca9f986e141f42079de834ee9656151fa6e1c6b",
+  "atk-batch2/patched/material-math/ATK/Refutations.lean": "b9ae3219010f8bb50bffe092a16d973f02de3f7e610c652a4a4abc3887f461b5",
+  "atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean": "e99e0cae8c4cf10fa7967f36f8efca8b9e57acbf05fe0275df11624b10304f32",
+  "atk-batch2/patched/terminal-certificates/lakefile.toml": "f4e8960f30bcc213078da8c130d237f58822d748b3b15fe636badddcd3879d95",
+  "atk-batch2/patched/terminal-certificates/lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
   "atk-interfaces-patched/lakefile.toml": "8b2734be6b3685a61654729136aafb7fed0dc5b44197ebe799c4ebe5fdb6bd5b",
   "atk-interfaces-patched/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
   "atk-interfaces-patched/lean/ATK/AuditOfInterfaces.lean": "d246108e3dd36cf3a6f6677c3147ef843d72de31b0ddc9cb34f9b77bc8d251ec",
@@ -1957,9 +1993,13 @@
   "atk-kernel/ATK/Transition.lean": "4f06de37a30fad9503ada06137d9ccd746e1a1fb25695fdeb2b9d99ee8ed9a66",
   "atk-kernel/lakefile.toml": "139e6ddf32cce30e56e879c1770e14aabcae182a42f8f740d7912fbe7fc4946d",
   "atk-kernel/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+  "atk-legacy/lakefile.toml": "f83690fb736748ed641575b17b35759e7a74ff7931bbff2066c5298f3f177cea",
+  "atk-legacy/lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
+  "atk-legacy/src/ATK_ExactValues.lean": "87a5232d46bcf7126f3ae86a5e36aea1dfeae5741eaeafc1369ba2101346c502",
+  "atk-legacy/src/VerifiedAuxiliary.lean": "06a504f9a44b2eebcadfb4446482f2081d91b4f6ad79a9431a98f4035783e4cc",
   "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
   "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
  },
- "published_at": "2026-11-02T20:55:41Z",
- "certificate_sha256": "4b4723b1d2744ab76612e6538163199c1bf68afb8add4920e59b026c85679606"
+ "published_at": "2026-11-03T11:28:09Z",
+ "certificate_sha256": "0a930251facab24ca70c3e3aeab962996ae6c21399b77c9b9a89eca528fcaebf"
 }

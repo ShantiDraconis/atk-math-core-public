@@ -3,26 +3,26 @@
 Lean sources from the branch `atk-kernel-check` of the private repository `ShantiDraconis/M-Core`, commit `0572b8b344d2d8a4e6fc6c29df8dc9bee810e532` (2026-10-13T02:35:23+01:00), that hold theorems found only on branches (no default branch of any repository has a theorem with the same name). Published here: the files with the theorems the kernel closed, the local files they import and the Lake files of their project.
 
 * Branch state: em andamento (not in the default branch).
-* Theorems only on branches, in this branch: 216 — closed 169, conditional 0, open 0, proof error 0, not reached 0, no result 47.
+* Theorems only on branches, in this branch: 216 — closed 196, conditional 0, open 1, proof error 17, not reached 2, no result 0.
 * History: 35 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `4b4723b1d2744ab76612e6538163199c1bf68afb8add4920e59b026c85679606`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk-kernel-check/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `0a930251facab24ca70c3e3aeab962996ae6c21399b77c9b9a89eca528fcaebf`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk-kernel-check/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 
 | Theorem | File | State |
 |---|---|---|
-| `ATK.Audit.Contracts.beal_producer_iff` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:53 | nao_checado |
-| `ATK.Audit.Contracts.bsd_producer_iff` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:33 | nao_checado |
-| `ATK.Audit.Contracts.hodge_producer_iff` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:38 | nao_checado |
-| `ATK.Audit.Contracts.ns_producer_iff` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:11 | nao_checado |
-| `ATK.Audit.Contracts.pnp_producer_iff` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:57 | nao_checado |
-| `ATK.Audit.Contracts.pnp_target_vacuous` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:61 | nao_checado |
-| `ATK.Audit.Contracts.rh_producer_vacuous` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:3 | nao_checado |
-| `ATK.Audit.Contracts.ym_producer_iff` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:28 | nao_checado |
-| `ATK.Audit.certificate_iff` | `atk-batch2/appendix/orig-tc/ATK/TerminalCertificate.lean`:2 | nao_checado |
-| `ATK.Audit.gate_iff` | `atk-batch2/appendix/orig-fo/ATK/KernelGates.lean`:2 | nao_checado |
-| `ATK.Audit.lane_iff` | `atk-batch2/appendix/orig-eg/ATKExactGate.lean`:2 | nao_checado |
-| `ATK.Audit.sevenGates_iff` | `atk-batch2/appendix/orig-fo/ATK/TerminalTargets.lean`:2 | nao_checado |
+| `ATK.Audit.Contracts.beal_producer_iff` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:53 | erro |
+| `ATK.Audit.Contracts.bsd_producer_iff` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:33 | erro |
+| `ATK.Audit.Contracts.hodge_producer_iff` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:38 | erro |
+| `ATK.Audit.Contracts.ns_producer_iff` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:11 | erro |
+| `ATK.Audit.Contracts.pnp_producer_iff` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:57 | erro |
+| `ATK.Audit.Contracts.pnp_target_vacuous` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:61 | erro |
+| `ATK.Audit.Contracts.rh_producer_vacuous` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:3 | erro |
+| `ATK.Audit.Contracts.ym_producer_iff` | `atk-batch2/appendix/pat-tc/ATK/UniversalContracts.lean`:28 | erro |
+| `ATK.Audit.certificate_iff` | `atk-batch2/appendix/orig-tc/ATK/TerminalCertificate.lean`:2 | erro |
+| `ATK.Audit.gate_iff` | `atk-batch2/appendix/orig-fo/ATK/KernelGates.lean`:2 | erro |
+| `ATK.Audit.lane_iff` | `atk-batch2/appendix/orig-eg/ATKExactGate.lean`:2 | erro |
+| `ATK.Audit.sevenGates_iff` | `atk-batch2/appendix/orig-fo/ATK/TerminalTargets.lean`:2 | erro |
 | `ATK.AuditOfInterfaces.endpoint_vacuous` | `atk-interfaces-patched/lean/ATK/AuditOfInterfaces.lean`:19 | fechado |
 | `ATK.AuditOfInterfaces.obligation_iff` | `atk-interfaces-patched/lean/ATK/AuditOfInterfaces.lean`:16 | fechado |
 | `ATK.BSD.torsion_card_pos` | `atk-kernel/ATK/BSD.lean`:47 | fechado |
@@ -31,8 +31,8 @@ Closed means the kernel accepted the proof and it depends only on `propext`, `Cl
 | `ATK.BealDescent.descent_iff_beal` | `atk-kernel/ATK/BealDescent.lean`:71 | fechado |
 | `ATK.BealDescent.descent_of_beal` | `atk-kernel/ATK/BealDescent.lean`:63 | fechado |
 | `ATK.BealDescent.no_primitive_of_descent` | `atk-kernel/ATK/BealDescent.lean`:43 | fechado |
-| `ATK.Certificate.seven_verify` | `atk-batch2/originals/terminal-certificates/ATK/TerminalCertificate.lean`:13 | nao_checado |
-| `ATK.Certificate.verify` | `atk-batch2/originals/terminal-certificates/ATK/TerminalCertificate.lean`:10 | nao_checado |
+| `ATK.Certificate.seven_verify` | `atk-batch2/originals/terminal-certificates/ATK/TerminalCertificate.lean`:13 | nao_alcancado |
+| `ATK.Certificate.verify` | `atk-batch2/originals/terminal-certificates/ATK/TerminalCertificate.lean`:10 | nao_alcancado |
 | `ATK.Closure.Ioc_not_compact` | `atk-kernel/ATK/Closure.lean`:379 | fechado |
 | `ATK.Closure.beal_false_iff` | `atk-kernel/ATK/Closure.lean`:318 | fechado |
 | `ATK.Closure.beal_refuted_by_witness` | `atk-kernel/ATK/Closure.lean`:333 | fechado |
@@ -66,12 +66,12 @@ Closed means the kernel accepted the proof and it depends only on `propext`, `Cl
 | `ATK.Closure.smoothForce_zero` | `atk-kernel/ATK/Closure.lean`:172 | fechado |
 | `ATK.Closure.transport_fails_nonuniform` | `atk-kernel/ATK/Closure.lean`:425 | fechado |
 | `ATK.Closure.transport_law` | `atk-kernel/ATK/Closure.lean`:414 | fechado |
-| `ATK.ConcreteAnalytic.infimum_antitone` | `atk-batch2/originals/material-math/ATK/ConcreteAnalytic.lean`:4 | nao_checado |
-| `ATK.ConcreteArithmetic.common_prime_divides_third` | `atk-batch2/originals/material-math/ATK/ConcreteArithmetic.lean`:21 | nao_checado |
-| `ATK.ConcreteArithmetic.no_natural_descent` | `atk-batch2/originals/material-math/ATK/ConcreteArithmetic.lean`:4 | nao_checado |
-| `ATK.ConcreteSemantics.eval_conj` | `atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean`:17 | nao_checado |
-| `ATK.ConcreteSemantics.eval_double_neg` | `atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean`:21 | nao_checado |
-| `ATK.ConcreteSemantics.verifies_conj` | `atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean`:28 | nao_checado |
+| `ATK.ConcreteAnalytic.infimum_antitone` | `atk-batch2/originals/material-math/ATK/ConcreteAnalytic.lean`:4 | erro |
+| `ATK.ConcreteArithmetic.common_prime_divides_third` | `atk-batch2/originals/material-math/ATK/ConcreteArithmetic.lean`:21 | erro |
+| `ATK.ConcreteArithmetic.no_natural_descent` | `atk-batch2/originals/material-math/ATK/ConcreteArithmetic.lean`:4 | erro |
+| `ATK.ConcreteSemantics.eval_conj` | `atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean`:17 | fechado |
+| `ATK.ConcreteSemantics.eval_double_neg` | `atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean`:21 | fechado |
+| `ATK.ConcreteSemantics.verifies_conj` | `atk-batch2/originals/material-math/ATK/ConcreteSemantics.lean`:28 | fechado |
 | `ATK.Enstrophy.cubic_beyond_drift` | `atk-kernel/ATK/Enstrophy.lean`:126 | fechado |
 | `ATK.Enstrophy.cubic_inside` | `atk-kernel/ATK/Enstrophy.lean`:101 | fechado |
 | `ATK.Enstrophy.cubic_on_line_equilibrium` | `atk-kernel/ATK/Enstrophy.lean`:120 | fechado |
@@ -168,8 +168,8 @@ Closed means the kernel accepted the proof and it depends only on `propext`, `Cl
 | `ATK.RHConvergence.bdDistSq_limit_nonneg` | `atk-kernel/ATK/RHConvergence.lean`:36 | fechado |
 | `ATK.RHConvergence.bdDistSq_succ_le` | `atk-kernel/ATK/RHConvergence.lean`:18 | fechado |
 | `ATK.RHConvergence.rh_iff_limit_zero_of_criterion` | `atk-kernel/ATK/RHConvergence.lean`:39 | fechado |
-| `ATK.Refutations.common_prime_divides_third_as_written_false` | `atk-batch2/patched/material-math/ATK/Refutations.lean`:12 | nao_checado |
-| `ATK.Refutations.infimum_antitone_as_written_false` | `atk-batch2/patched/material-math/ATK/Refutations.lean`:22 | nao_checado |
+| `ATK.Refutations.common_prime_divides_third_as_written_false` | `atk-batch2/patched/material-math/ATK/Refutations.lean`:12 | fechado |
+| `ATK.Refutations.infimum_antitone_as_written_false` | `atk-batch2/patched/material-math/ATK/Refutations.lean`:22 | erro |
 | `ATK.Riemann.abstract_bound_vacuous` | `atk-kernel/ATK/Riemann.lean`:65 | fechado |
 | `ATK.Riemann.bdDistSq_nonneg` | `atk-kernel/ATK/Riemann.lean`:88 | fechado |
 | `ATK.Riemann.bd_bound_tendsto` | `atk-kernel/ATK/Riemann.lean`:90 | fechado |
@@ -193,35 +193,35 @@ Closed means the kernel accepted the proof and it depends only on `propext`, `Cl
 | `ATK.Transition.sqrt_sub_le` | `atk-kernel/ATK/Transition.lean`:175 | fechado |
 | `ATK.Transition.tangent_escape` | `atk-kernel/ATK/Transition.lean`:159 | fechado |
 | `ATK.Transition.transport_comp` | `atk-kernel/ATK/Transition.lean`:106 | fechado |
-| `ATK.Universal.BSD.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:55 | nao_checado |
-| `ATK.Universal.Beal.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:84 | nao_checado |
-| `ATK.Universal.Hodge.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:72 | nao_checado |
-| `ATK.Universal.NS.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:31 | nao_checado |
-| `ATK.Universal.PNP.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:95 | nao_checado |
-| `ATK.Universal.RH.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:17 | nao_checado |
-| `ATK.Universal.YM.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:45 | nao_checado |
-| `ATK.VerifiedAuxiliary.bsd_recover_h22` | `atk-legacy/src/VerifiedAuxiliary.lean`:33 | nao_checado |
-| `ATK.VerifiedAuxiliary.bsd_regulator_example` | `atk-legacy/src/VerifiedAuxiliary.lean`:28 | nao_checado |
-| `ATK.VerifiedAuxiliary.bsd_regulator_identity` | `atk-legacy/src/VerifiedAuxiliary.lean`:31 | nao_checado |
-| `ATK.VerifiedAuxiliary.hodge_linear_realization` | `atk-legacy/src/VerifiedAuxiliary.lean`:38 | nao_checado |
-| `ATK.VerifiedAuxiliary.ns_budget_example` | `atk-legacy/src/VerifiedAuxiliary.lean`:19 | nao_checado |
-| `ATK.VerifiedAuxiliary.ns_budget_identity` | `atk-legacy/src/VerifiedAuxiliary.lean`:20 | nao_checado |
-| `ATK.VerifiedAuxiliary.ns_bulk_tail_bound` | `atk-legacy/src/VerifiedAuxiliary.lean`:22 | nao_checado |
-| `ATK.VerifiedAuxiliary.ns_margin_example` | `atk-legacy/src/VerifiedAuxiliary.lean`:16 | nao_checado |
-| `ATK.VerifiedAuxiliary.ns_margin_positive` | `atk-legacy/src/VerifiedAuxiliary.lean`:21 | nao_checado |
-| `ATK.VerifiedAuxiliary.rh_finite_decrement` | `atk-legacy/src/VerifiedAuxiliary.lean`:5 | nao_checado |
-| `ATK.VerifiedAuxiliary.rh_ratio` | `atk-legacy/src/VerifiedAuxiliary.lean`:8 | nao_checado |
-| `ATK.VerifiedAuxiliary.rh_relative_reduction` | `atk-legacy/src/VerifiedAuxiliary.lean`:9 | nao_checado |
-| `ATK.VerifiedAuxiliary.rh_schur_antitone` | `atk-legacy/src/VerifiedAuxiliary.lean`:12 | nao_checado |
-| `ATK.VerifiedAuxiliary.rh_schur_nonnegative` | `atk-legacy/src/VerifiedAuxiliary.lean`:10 | nao_checado |
+| `ATK.Universal.BSD.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:55 | fechado |
+| `ATK.Universal.Beal.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:84 | fechado |
+| `ATK.Universal.Hodge.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:72 | fechado |
+| `ATK.Universal.NS.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:31 | fechado |
+| `ATK.Universal.PNP.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:95 | fechado |
+| `ATK.Universal.RH.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:17 | aberto-sorry |
+| `ATK.Universal.YM.terminal` | `atk-batch2/patched/terminal-certificates/ATK/UniversalContracts.lean`:45 | fechado |
+| `ATK.VerifiedAuxiliary.bsd_recover_h22` | `atk-legacy/src/VerifiedAuxiliary.lean`:33 | fechado |
+| `ATK.VerifiedAuxiliary.bsd_regulator_example` | `atk-legacy/src/VerifiedAuxiliary.lean`:28 | fechado |
+| `ATK.VerifiedAuxiliary.bsd_regulator_identity` | `atk-legacy/src/VerifiedAuxiliary.lean`:31 | fechado |
+| `ATK.VerifiedAuxiliary.hodge_linear_realization` | `atk-legacy/src/VerifiedAuxiliary.lean`:38 | erro |
+| `ATK.VerifiedAuxiliary.ns_budget_example` | `atk-legacy/src/VerifiedAuxiliary.lean`:19 | fechado |
+| `ATK.VerifiedAuxiliary.ns_budget_identity` | `atk-legacy/src/VerifiedAuxiliary.lean`:20 | fechado |
+| `ATK.VerifiedAuxiliary.ns_bulk_tail_bound` | `atk-legacy/src/VerifiedAuxiliary.lean`:22 | fechado |
+| `ATK.VerifiedAuxiliary.ns_margin_example` | `atk-legacy/src/VerifiedAuxiliary.lean`:16 | fechado |
+| `ATK.VerifiedAuxiliary.ns_margin_positive` | `atk-legacy/src/VerifiedAuxiliary.lean`:21 | fechado |
+| `ATK.VerifiedAuxiliary.rh_finite_decrement` | `atk-legacy/src/VerifiedAuxiliary.lean`:5 | fechado |
+| `ATK.VerifiedAuxiliary.rh_ratio` | `atk-legacy/src/VerifiedAuxiliary.lean`:8 | fechado |
+| `ATK.VerifiedAuxiliary.rh_relative_reduction` | `atk-legacy/src/VerifiedAuxiliary.lean`:9 | fechado |
+| `ATK.VerifiedAuxiliary.rh_schur_antitone` | `atk-legacy/src/VerifiedAuxiliary.lean`:12 | fechado |
+| `ATK.VerifiedAuxiliary.rh_schur_nonnegative` | `atk-legacy/src/VerifiedAuxiliary.lean`:10 | fechado |
 | `ATK.close_seven` | `atk-batch2/originals/formal-operators/ATK/KernelGates.lean`:10 | fechado |
-| `ATK.lane_closes` | `atk-batch2/originals/exact-gate/ATKExactGate.lean`:7 | nao_checado |
+| `ATK.lane_closes` | `atk-batch2/originals/exact-gate/ATKExactGate.lean`:7 | fechado |
 | `ATK.natural_succ_positive` | `atk-batch2/originals/formal-operators/ATK/MaterialExamples.lean`:6 | fechado |
 | `ATK.natural_zero_inhabitant` | `atk-batch2/originals/formal-operators/ATK/MaterialExamples.lean`:3 | fechado |
 | `ATK.no_strict_decrease_from_zero` | `atk-batch2/originals/formal-operators/ATK/MaterialExamples.lean`:9 | fechado |
-| `ATK.seven_close` | `atk-batch2/originals/exact-gate/ATKExactGate.lean`:9 | nao_checado |
-| `ATK.weakClosure_inhabited` | `atk-batch2/originals/exact-gate/ATKExactGate.lean`:23 | nao_checado |
-| `ATKExactValues.absorption` | `atk-legacy/src/ATK_ExactValues.lean`:13 | nao_checado |
+| `ATK.seven_close` | `atk-batch2/originals/exact-gate/ATKExactGate.lean`:9 | fechado |
+| `ATK.weakClosure_inhabited` | `atk-batch2/originals/exact-gate/ATKExactGate.lean`:23 | fechado |
+| `ATKExactValues.absorption` | `atk-legacy/src/ATK_ExactValues.lean`:13 | fechado |
 | `NavierStokes.Comparator.divergence_add` | `atk-kernel/ATK/FCNavierStokes.lean`:85 | fechado |
 | `NavierStokes.Comparator.divergence_const` | `atk-kernel/ATK/FCNavierStokes.lean`:79 | fechado |
 | `NavierStokes.Comparator.divergence_of_not_differentiableAt` | `atk-kernel/ATK/FCNavierStokes.lean`:68 | fechado |

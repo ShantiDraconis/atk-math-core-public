@@ -5,7 +5,7 @@ Lean sources from the branch `conditional` of the private repository `ShantiDrac
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 23 — closed 23, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 9 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `afeb5de6e49f0d3646d5dd23c55b3a3c485e250c2b7ce7916006e90ca55efa58`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/conditional/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `b5b75d0eca8f54329c8a6a852d382555e825c45f86ae6a6b71536f4f7960a839`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/conditional/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 
