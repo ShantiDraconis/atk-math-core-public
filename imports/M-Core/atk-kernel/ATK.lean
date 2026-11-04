@@ -409,3 +409,11 @@ import ATK.ZeroClasses.TetaExpoente
 import ATK.ZeroClasses.LiouvilleRH
 import ATK.ZeroClasses.TuranLiouville
 import ATK.ZeroClasses.PrimosCurtos
+import ATK.ZeroClasses.PontesRH
+import ATK.ZeroClasses.PontesRHAbscissa
+import ATK.FracoesChi
+import ATK.FracoesBernoulli
+import ATK.FracoesEscala
+import ATK.FracoesSAT
+import ATK.FracoesGama
+import ATK.FracoesGamaZeros

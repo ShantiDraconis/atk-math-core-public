@@ -4,8 +4,8 @@ This folder records what the Lean 4 kernel said about the Lean sources of the pr
 
 ## What is published
 
-* Source: `ShantiDraconis/M-Core`, commit `390e3781109fa42e977d143caa9204ed94166a7b` (2026-10-27T20:01:22Z).
-* 589 files: 583 `.lean` files and the Lake files (`lakefile.*`, `lean-toolchain`, `lake-manifest.json`), plus 2 license or origin file(s) that third-party code requires (`atk-kernel/ATK/FltRegular/LICENSE`, `atk-kernel/ATK/FltRegular/ORIGEM.md`). Paths are the same as in the source repository.
+* Source: `ShantiDraconis/M-Core`, commit `21a802bf02688c3672139c877b1d82f3c590f7cb` (2026-11-04T19:44:46Z). This is newer than the commit MVEI verified (`390e378`); the files added since then are covered in [Added after the verified commit](#added-after-the-verified-commit).
+* 597 files: 591 `.lean` files and the Lake files (`lakefile.*`, `lean-toolchain`, `lake-manifest.json`), plus 2 license or origin file(s) that third-party code requires (`atk-kernel/ATK/FltRegular/LICENSE`, `atk-kernel/ATK/FltRegular/ORIGEM.md`). Paths are the same as in the source repository.
 * Nothing else from the private repository is published (documents, commercial license, prompts, storefront material). The `Contaminated/` folder, which the author quarantined and marked as never evidence, is left out too.
 * `SOURCES.sha256` lists every published file with its SHA-256. From the repository root: `sha256sum -c mvei/SOURCES.sha256`.
 
@@ -65,8 +65,29 @@ The `.lean` files of the verified commit declare 9 572 `theorem`/`lemma` (counti
 * `correcoes/vocabulario-lean4.patch` (grafia que o Lean 4 não lê (nome acentuado, λ/Σ/Π como nome, ∀ x y ∈ s, docstring solta, constant, tática do Mathlib sem import), 493 file(s)): made for the verified commit; it does not apply to the published commit as is
 * `correcoes/z-provas-reparadas.patch` (prova que não passava no kernel (o enunciado fica igual), 7 file(s)): applies to the published sources: `git apply -p1 --directory=imports/M-Core mvei/correcoes/z-provas-reparadas.patch` (in order, after the ones above)
 
+## Added after the verified commit
+
+Between the verified commit `390e378` and the published commit `21a802b`, 8 `.lean` files were added and 1 changed (`atk-kernel/ATK.lean`, which only adds their imports). No other published file changed. The MVEI tables above do not cover these files. Their 106 theorems were checked by the Lean kernel twice, outside MVEI:
+
+* **M-Core CI** (private repository), job "Lean 4 + Mathlib — compilação e auditoria de axiomas", run 41828386817 on commit `a777620`: T1 GREEN, 8 665/8 665 theorems of `atk-kernel` with only the standard axioms (`sources_sha256 f844898a…a797`). The Lean and Lake files of `a777620` and `21a802b` are identical; the two commits differ only in `atk-kernel/audits/`.
+* **Local build**: `lake build` of the 8 modules with Lean v4.34.1 (the `atk-kernel` toolchain) and `#print axioms` for each theorem. All 106 depend only on `propext`, `Classical.choice` and `Quot.sound`. None uses `sorry`, `admit`, `native_decide` or a declared `axiom`.
+
+| File | Theorems | Content |
+|---|---:|---|
+| `atk-kernel/ATK/ZeroClasses/PontesRH.lean` | 33 | Six proposed "bridges" to RH. Each one turns out to be a theorem, equivalent to RH, or ill-posed: `c ≤ ½` is RH, the induction step `RHAte T → RHAte (T + δ)` is RH, and Hilbert–Pólya (eigenvalue form) implies RH. |
+| `atk-kernel/ATK/ZeroClasses/PontesRHAbscissa.lean` | 4 | The same `c` as the abscissa of `Σ μ(n)n^{−s}`. |
+| `atk-kernel/ATK/FracoesChi.lean` | 22 | `χ = 1/p + 1/q + 1/r − 1`: trichotomy, the gap `1/42` at `(2,3,7)`, orders of the polyhedral groups, Hurwitz's bound `84(g − 1)`, Euler `V − E + F = 2`, Beal exponents and `χ`. |
+| `atk-kernel/ATK/FracoesBernoulli.lean` | 20 | `ζ(−1) = −1/12`, `ζ(−3) = 1/120`, `ζ(−5)`, `ζ(−7)`, `ζ(−9)` from Bernoulli numbers; von Staudt–Clausen for small indices. |
+| `atk-kernel/ATK/FracoesGama.lean` | 13 | Continued fractions with a rational tail for the ordinates of zeros of `ζ`, from rational balls taken as hypotheses. |
+| `atk-kernel/ATK/FracoesEscala.lean` | 8 | Scaling law `∫‖k^a f(k·)‖^q = k^{aq−d}∫‖f‖^q`; criticality of Navier–Stokes and Yang–Mills. |
+| `atk-kernel/ATK/FracoesSAT.lean` | 5 | The `7/8` clause average for 3-SAT and the binomial identity behind Schöning's walk. |
+| `atk-kernel/ATK/FracoesGamaZeros.lean` | 1 | The continued fractions above for three certified zeros. |
+
+None of these theorems proves the Riemann hypothesis or any other open problem. Several are equivalences with RH, which stays open. Each theorem with its file, line and axioms is in [`AFTER_VERIFIED_COMMIT.csv`](AFTER_VERIFIED_COMMIT.csv).
+
 ## Files in this folder
 
+* `AFTER_VERIFIED_COMMIT.csv` — the 106 theorems of the files added after the verified commit: file, line, name, axioms, state
 * `VERIFICACAO.json` — each Lean project of this repository, each theorem the kernel read, its statement, its axioms and its state (`fechado` closed, `condicional` conditional, `aberto-sorry` open)
 * `TEOREMAS.csv` — each declared `theorem`/`lemma`: file, line, state in the kernel (`nao_checado` = not checked) and, if not checked, why (in Portuguese)
 * `BUILD_LOG.txt` — one block per project: Lean version, result, errors
