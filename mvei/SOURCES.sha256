@@ -14,7 +14,7 @@ c0f73298b882cbb68f2c74984838214f1a186e751edf91255a6c43b2a4609465  imports/M-Core
 c97b12ce7f55e76b9ff49d7f8a0551975cc913917a3d9e6854a15637ceb06ffb  imports/M-Core/MCore/IBoundaryProvenance.lean
 b845447465da6346ee219a93f9e9957428ddc7b33f51a082e8a7fbf212a91717  imports/M-Core/MCore/ScaleFixture.lean
 2c2a26d14ab76e42c424e22d43c55feb0be929015b0e049e3f67903492b4d244  imports/M-Core/MCore/ZeroQuotient.lean
-561ddd0f857b3ff8a47a41ec68214bad20f2a69045c3ddd04ccb82c8d3fac6ff  imports/M-Core/atk-kernel/ATK.lean
+7eb25bba1c814d30b0f191c2b81d57087eba33add4a7a2d3003f3dc3a9300267  imports/M-Core/atk-kernel/ATK.lean
 587b2b9e262aa330a60b8dee12bf77acdd75abaedb99acade9916d92779e6709  imports/M-Core/atk-kernel/ATK/ASWReciproca.lean
 25b2cc254f3718260080f8924f72a82d4592a379bf4923a087099af5afab39b5  imports/M-Core/atk-kernel/ATK/ATKI.lean
 2075cec2b384028e9aca99d9a57ae05cdfb26d2ead2be12b07a48a88d3176ae3  imports/M-Core/atk-kernel/ATK/ATKIAlgebra.lean
@@ -182,14 +182,6 @@ cc8e14acfc40e099ee4b06bcf2eae10cbd6214965ffe1348bcefacb021e28fe3  imports/M-Core
 aecc0c5e1cd07ec54266e28a165b0047f8d78037c8503795a8b852a6a07a3db7  imports/M-Core/atk-kernel/ATK/FltRegular/SmallNumbers/Seven/Seven.lean
 9ff1a79d3a15ec778d6cf766f48761b85978420d0bcdb8149be2a2bc53c77e3a  imports/M-Core/atk-kernel/ATK/FltRegular/SmallNumbers/SmallNumbers.lean
 5a7baee5430fd146ebc24bef636b934ab56105f8744a68364fbc194876cd2919  imports/M-Core/atk-kernel/ATK/ForaDaLinha.lean
-ff04f6d01ad68479e74ffae42919538e49ea5f2c90fd1409a2587074b9b50c87  imports/M-Core/atk-kernel/ATK/FracoesBernoulli.lean
-22653765f971e828cddbf6dd33476e9c96c849b1028345e5c410c0f416730f34  imports/M-Core/atk-kernel/ATK/FracoesChi.lean
-6ee9ab8d8b05c5124cb0e21f9152811bce5ed810368c01d15a558559320eaeb8  imports/M-Core/atk-kernel/ATK/FracoesEscala.lean
-10912758d33ba745cf223e6493c0966d0a5a98e7c7c26f94ac555a51c3604064  imports/M-Core/atk-kernel/ATK/FracoesGama.lean
-3f5fb5bdfe6eb59b5b6e92ed23959183e1f5add2a24baf0c03805e3af89492ce  imports/M-Core/atk-kernel/ATK/FracoesGamaZeros.lean
-cc49bec8a363ae05f340fac132b5635924f029d0e2a7a9d895580a0410009764  imports/M-Core/atk-kernel/ATK/FracoesParRecorde.lean
-e50f7552139d4cd8798084c82540b54998d0a53d3b55d6ce1e853d83fce4e6b4  imports/M-Core/atk-kernel/ATK/FracoesSAT.lean
-2e74f4ca6d74112e01439737e69ff92e636d367d6c6f18e398d6339610962c64  imports/M-Core/atk-kernel/ATK/FracoesSATMedia.lean
 a408b89e8737ef09c654b619f68036b51e36b1d577ff1a247727daf463d0f374  imports/M-Core/atk-kernel/ATK/Fragmentos.lean
 5eedaf4f9d7c39fd1944d562236f9c76bfc05a47416341408044e87d38fe0de2  imports/M-Core/atk-kernel/ATK/FreyBeal.lean
 6e11077c731acb4d638a6924d4b7cdb921611b07334d877b0ef2f4e39987eff5  imports/M-Core/atk-kernel/ATK/FreyBealResidual.lean
@@ -290,11 +282,6 @@ dbb57849c04d6982ff6f427a74cabd39f47057c5fd217e95984988558c02a708  imports/M-Core
 c98cd4c49cd689ae9417300ddb6128dde4c29e980c0341db64611b4606722c17  imports/M-Core/atk-kernel/ATK/NavierStokes.lean
 cb2cc7451cb9307f9e11da50b8041f2b0db7de9ee24faa97038639c82254bb2b  imports/M-Core/atk-kernel/ATK/NecessidadeBD.lean
 1d6dbb3d928b918d0e185e3f95b0a9b2c2ba6ba279d9502b7df72438f90ed0e8  imports/M-Core/atk-kernel/ATK/NecessidadeRH.lean
-bcd478063b95c7df26143166e90c397981f22ed95d9a14d9bef24a91ec975a65  imports/M-Core/atk-kernel/ATK/OSExemplo.lean
-b3ceb33864abd45732b93bfe9ef3c2b67a58788acbf443c98ef5aa7db9d75a8e  imports/M-Core/atk-kernel/ATK/OSLacuna.lean
-12667a0e91e3b799d68384d69ff9397c73563844009ba6444078ea7a8ac65422  imports/M-Core/atk-kernel/ATK/OSProcesso.lean
-94414e12f9d7b1c80b1a25fc5b5a038bc9139ed6a5ba3340d09c14131fbadd3f  imports/M-Core/atk-kernel/ATK/OSSimetria.lean
-26be3fc882690ff8e32a086c92db8cc86eefbffa1b05d686f3b2f9ce88e2fa66  imports/M-Core/atk-kernel/ATK/OSTransferencia.lean
 f00ef734669fb7a878f9ec77913dc0cdfde20cf578684bc41b8d61d68de73828  imports/M-Core/atk-kernel/ATK/ObligationsClosed.lean
 519075073f7fb200d82415d6093f438a92918b4fe944a61252d5ac94129bd18a  imports/M-Core/atk-kernel/ATK/ObrigacoesMinimas.lean
 19637ad18c3bd16862192c09e201fd9bf9c3ad1ea6bfd64f47e4ceaba50da8c4  imports/M-Core/atk-kernel/ATK/OmegaClasses.lean
@@ -445,8 +432,6 @@ cf608b99aea838b9e2e8c6b4fc08df60169781ec2999ffbd631bb08033c33fce  imports/M-Core
 16c151e2d68311677da6f8a7a6cb115b2b2f1e03b1278ef3becd33420a752cd9  imports/M-Core/atk-kernel/ATK/ZeroClasses/PiLiRH.lean
 4dbc1c6c4d85f97c3e3ea9cdc75adc8371a3a7a40ccd75de3bb3e81c1217090b  imports/M-Core/atk-kernel/ATK/ZeroClasses/PiUnilateral.lean
 bb1049c311fe09b866dea145e01fd0a79ab91a18e900be6076ddfd01c4323fcc  imports/M-Core/atk-kernel/ATK/ZeroClasses/Pontes.lean
-c84b78f4d992a5250306942b57c152028db1eac6b1bffe8a1d61d2ae780d953d  imports/M-Core/atk-kernel/ATK/ZeroClasses/PontesRH.lean
-3f5c7484dc10c46b3d2cdae59a41ddfb72c95c33487a5f382694b8c69f473c85  imports/M-Core/atk-kernel/ATK/ZeroClasses/PontesRHAbscissa.lean
 81ca6d6f563758c8c413bb0dc149b43c3d44aff221790f93edc755b941336d74  imports/M-Core/atk-kernel/ATK/ZeroClasses/PrimosCurtos.lean
 1143ecaa52938b1afbd396f59adab62da7ead4f688c46d06e09201fb5ead88f9  imports/M-Core/atk-kernel/ATK/ZeroClasses/PsiLog2.lean
 d5039556a2c0b063f8e44f10bd6549e0b794f7aa46450063573865390fc31e43  imports/M-Core/atk-kernel/ATK/ZeroClasses/PsiRH.lean

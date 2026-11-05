@@ -201,6 +201,346 @@
  
  theorem I3State.index_next (s : I3State) :
      s.next.index = s.index + 1 := by
+--- a/lean/MCore/Research/UserProgram/C3Fourier.lean
++++ b/lean/MCore/Research/UserProgram/C3Fourier.lean
+@@ -31,14 +31,14 @@
+ 
+ theorem ComplexThreeChannel.fourier_inversion (x : ComplexThreeChannel) :
+     ComplexThreeChannel.fromFourier x.fourier0 x.fourier1 x.fourier2 = x := by
+-  apply ComplexThreeChannel.ext <;>
+-    simp [ComplexThreeChannel.fromFourier, ComplexThreeChannel.fourier0,
+-      ComplexThreeChannel.fourier1, ComplexThreeChannel.fourier2]
+-  all_goals
+-    have h := omega3_sq_add_omega3_add_one
+-    field_simp
+-    ring_nf at h ⊢
+-    nlinarith [h]
++  have h := omega3_sq_add_omega3_add_one
++  obtain ⟨a, b, c⟩ := x
++  simp only [ComplexThreeChannel.fromFourier, ComplexThreeChannel.fourier0,
++    ComplexThreeChannel.fourier1, ComplexThreeChannel.fourier2, ComplexThreeChannel.mk.injEq]
++  refine ⟨?_, ?_, ?_⟩
++  · linear_combination ((b + c) / 3) * h
++  · linear_combination ((a + 2 * (omega3 - 1) * b + (omega3 ^ 2 - omega3 + 1) * c) / 3) * h
++  · linear_combination ((a + (omega3 ^ 2 - omega3 + 1) * b + 2 * (omega3 - 1) * c) / 3) * h
+ 
+ theorem ComplexThreeChannel.fourier0_rotate (x : ComplexThreeChannel) :
+     x.rotate.fourier0 = x.fourier0 := by
+@@ -47,21 +47,14 @@
+ 
+ theorem ComplexThreeChannel.fourier1_rotate (x : ComplexThreeChannel) :
+     x.rotate.fourier1 = omega3 * x.fourier1 := by
+-  simp [ComplexThreeChannel.rotate, ComplexThreeChannel.fourier1]
++  simp only [ComplexThreeChannel.rotate, ComplexThreeChannel.fourier1]
+   have h := omega3_sq_add_omega3_add_one
+-  have hc := omega3_cube
+-  field_simp
+-  ring_nf at h hc ⊢
+-  nlinarith [h, hc]
++  linear_combination (-(x.travessia * (omega3 - 1)) / 3) * h
+ 
+ theorem ComplexThreeChannel.fourier2_rotate (x : ComplexThreeChannel) :
+     x.rotate.fourier2 = omega3^2 * x.fourier2 := by
+-  simp [ComplexThreeChannel.rotate, ComplexThreeChannel.fourier2]
++  simp only [ComplexThreeChannel.rotate, ComplexThreeChannel.fourier2]
+   have h := omega3_sq_add_omega3_add_one
+-  have hc := omega3_cube
+-  have h4 := omega3_four
+-  field_simp
+-  ring_nf at h hc h4 ⊢
+-  nlinarith [h, hc, h4]
++  linear_combination (-((omega3 - 1) * (x.travessia + omega3 * x.semente)) / 3) * h
+ 
+ end MCore.Research.UserProgram
+--- a/lean/MCore/Research/UserProgram/C3Intertwiner.lean
++++ b/lean/MCore/Research/UserProgram/C3Intertwiner.lean
+@@ -29,9 +29,11 @@
+   · intro h
+     cases A with
+     | mk run =>
+-      apply congrArg Operator.run |>.injective
++      show (⟨run ∘ ComplexThreeChannel.rotate⟩ : Operator ComplexThreeChannel) =
++        ⟨ComplexThreeChannel.rotate ∘ run⟩
++      congr 1
+       funext x
+-      simpa [Operator.comp, rotationOperator, Function.comp_apply] using h x
++      exact h x
+ 
+ theorem commutatorDefect_zero_of_commutes
+     (A : C3Operator) (hA : CommutesWithRotation A) (x : ComplexThreeChannel) :
+@@ -65,9 +67,9 @@
+     apply ComplexThreeChannel.ext <;>
+       simp [ComplexThreeChannel.rotate, hMT, hTS]
+   · intro h
+-    have hm := congrArg ComplexThreeChannel.manifesto h
+-    have ht := congrArg ComplexThreeChannel.travessia h
+-    constructor <;> simpa [ComplexThreeChannel.rotate] using ‹_›
++    have hm : x.travessia = x.manifesto := congrArg ComplexThreeChannel.manifesto h
++    have ht : x.semente = x.travessia := congrArg ComplexThreeChannel.travessia h
++    exact ⟨hm.symm, ht.symm⟩
+ 
+ theorem commutes_preserves_constant_sector
+     (A : C3Operator) (hA : CommutesWithRotation A) :
+--- a/lean/MCore/Research/UserProgram/C3LinearSectors.lean
++++ b/lean/MCore/Research/UserProgram/C3LinearSectors.lean
+@@ -39,6 +39,7 @@
+     (hx : RotationEigenvector lam x) :
+     RotationEigenvector lam (A.run x) := by
+   unfold RotationEigenvector at hx ⊢
++  unfold LinearC3Operator.commutesWithRotation at hA
+   rw [← hA x, hx]
+   exact A.map_smul_channel lam x
+ 
+--- a/lean/MCore/Research/UserProgram/ConcreteOperators.lean
++++ b/lean/MCore/Research/UserProgram/ConcreteOperators.lean
+@@ -38,17 +38,20 @@
+ 
+ theorem opDelta_zero_of_fixed {x : I3Vector} (hx : x.rotate = x) :
+     opDelta x = 0 := by
+-  simp [opDelta, hx]
++  rw [opDelta_apply, hx]
++  exact I3Vector.add_neg x
+ 
+ theorem opGamma_rotate (x : I3Vector) :
+     opGamma x.rotate = opGamma x := by
+-  ext <;> simp [opGamma, I3Vector.rotate]
+-  all_goals ring
++  obtain ⟨m, t, s⟩ := x
++  show (⟨t + s + m, s + m + t, m + t + s⟩ : I3Vector) = ⟨m + t + s, t + s + m, s + m + t⟩
++  congr 1 <;> ring
+ 
+ theorem opGamma_fixed (x : I3Vector) :
+     (opGamma x).rotate = opGamma x := by
+-  ext <;> simp [opGamma, I3Vector.rotate]
+-  all_goals ring
++  obtain ⟨m, t, s⟩ := x
++  show (⟨t + s + m, s + m + t, m + t + s⟩ : I3Vector) = ⟨m + t + s, t + s + m, s + m + t⟩
++  congr 1 <;> ring
+ 
+ theorem opC_fixed (x : I3Vector) :
+     (opC x).rotate = opC x := by
+--- a/lean/MCore/Research/UserProgram/CrossOperatorLaws.lean
++++ b/lean/MCore/Research/UserProgram/CrossOperatorLaws.lean
+@@ -9,13 +9,27 @@
+ 
+ theorem opGamma_eq_three_C (x : I3Vector) :
+     opGamma x = I3Vector.scale 3 (opC x) := by
+-  ext <;> simp [opGamma, opC, I3Vector.scale, I3Vector.sum, I3Vector.rotate]
+-  all_goals ring
++  have hadd : ∀ a b : I3Vector, a + b =
++      ⟨a.manifesto + b.manifesto, a.travessia + b.travessia, a.semente + b.semente⟩ := fun _ _ => rfl
++  have hneg : ∀ a : I3Vector, -a = ⟨-a.manifesto, -a.travessia, -a.semente⟩ := fun _ => rfl
++  have hsmul : ∀ (z : ℂ) (a : I3Vector), z • a = ⟨z * a.manifesto, z * a.travessia, z * a.semente⟩ :=
++    fun _ _ => rfl
++  have hzero : (0 : I3Vector) = ⟨0, 0, 0⟩ := rfl
++  obtain ⟨m, t, s⟩ := x
++  simp only [opGamma, opC, I3Vector.scale, I3Vector.sum, I3Vector.rotate, hadd, hneg, hsmul, hzero, I3Vector.mk.injEq]
++  refine ⟨?_, ?_, ?_⟩ <;> ring
+ 
+ theorem opC_delta_zero (x : I3Vector) :
+     opC (opDelta x) = 0 := by
+-  ext <;> simp [opC, opDelta, I3Vector.sum, I3Vector.rotate]
+-  all_goals ring
++  have hadd : ∀ a b : I3Vector, a + b =
++      ⟨a.manifesto + b.manifesto, a.travessia + b.travessia, a.semente + b.semente⟩ := fun _ _ => rfl
++  have hneg : ∀ a : I3Vector, -a = ⟨-a.manifesto, -a.travessia, -a.semente⟩ := fun _ => rfl
++  have hsmul : ∀ (z : ℂ) (a : I3Vector), z • a = ⟨z * a.manifesto, z * a.travessia, z * a.semente⟩ :=
++    fun _ _ => rfl
++  have hzero : (0 : I3Vector) = ⟨0, 0, 0⟩ := rfl
++  obtain ⟨m, t, s⟩ := x
++  simp only [opC, opDelta, I3Vector.sum, I3Vector.rotate, hadd, hneg, hsmul, hzero, I3Vector.mk.injEq]
++  refine ⟨?_, ?_, ?_⟩ <;> ring
+ 
+ theorem opDelta_C_zero (x : I3Vector) :
+     opDelta (opC x) = 0 := by
+@@ -24,26 +38,54 @@
+ 
+ theorem delta_cycle_telescopes (x : I3Vector) :
+     opDelta x + opDelta x.rotate + opDelta x.rotate.rotate = 0 := by
+-  ext <;> simp [opDelta, I3Vector.rotate]
+-  all_goals ring
++  have hadd : ∀ a b : I3Vector, a + b =
++      ⟨a.manifesto + b.manifesto, a.travessia + b.travessia, a.semente + b.semente⟩ := fun _ _ => rfl
++  have hneg : ∀ a : I3Vector, -a = ⟨-a.manifesto, -a.travessia, -a.semente⟩ := fun _ => rfl
++  have hsmul : ∀ (z : ℂ) (a : I3Vector), z • a = ⟨z * a.manifesto, z * a.travessia, z * a.semente⟩ :=
++    fun _ _ => rfl
++  have hzero : (0 : I3Vector) = ⟨0, 0, 0⟩ := rfl
++  obtain ⟨m, t, s⟩ := x
++  simp only [opDelta, I3Vector.rotate, hadd, hneg, hsmul, hzero, I3Vector.mk.injEq]
++  refine ⟨?_, ?_, ?_⟩ <;> ring
+ 
+ def oscillatoryPart (x : I3Vector) : I3Vector :=
+   x + (-(opC x))
+ 
+ theorem oscillatoryPart_sum_zero (x : I3Vector) :
+     (oscillatoryPart x).sum = 0 := by
+-  simp [oscillatoryPart, opC, I3Vector.sum]
++  have hadd : ∀ a b : I3Vector, a + b =
++      ⟨a.manifesto + b.manifesto, a.travessia + b.travessia, a.semente + b.semente⟩ := fun _ _ => rfl
++  have hneg : ∀ a : I3Vector, -a = ⟨-a.manifesto, -a.travessia, -a.semente⟩ := fun _ => rfl
++  have hsmul : ∀ (z : ℂ) (a : I3Vector), z • a = ⟨z * a.manifesto, z * a.travessia, z * a.semente⟩ :=
++    fun _ _ => rfl
++  have hzero : (0 : I3Vector) = ⟨0, 0, 0⟩ := rfl
++  obtain ⟨m, t, s⟩ := x
++  simp only [oscillatoryPart, opC, I3Vector.sum, hadd, hneg, hsmul, hzero]
+   ring
+ 
+ theorem reconstruct_C_osc (x : I3Vector) :
+     opC x + oscillatoryPart x = x := by
+-  ext <;> simp [oscillatoryPart, opC, I3Vector.sum]
+-  all_goals ring
++  have hadd : ∀ a b : I3Vector, a + b =
++      ⟨a.manifesto + b.manifesto, a.travessia + b.travessia, a.semente + b.semente⟩ := fun _ _ => rfl
++  have hneg : ∀ a : I3Vector, -a = ⟨-a.manifesto, -a.travessia, -a.semente⟩ := fun _ => rfl
++  have hsmul : ∀ (z : ℂ) (a : I3Vector), z • a = ⟨z * a.manifesto, z * a.travessia, z * a.semente⟩ :=
++    fun _ _ => rfl
++  have hzero : (0 : I3Vector) = ⟨0, 0, 0⟩ := rfl
++  obtain ⟨m, t, s⟩ := x
++  simp only [oscillatoryPart, opC, I3Vector.sum, hadd, hneg, hsmul, hzero, I3Vector.mk.injEq]
++  refine ⟨?_, ?_, ?_⟩ <;> ring
+ 
+ theorem opC_oscillatory_zero (x : I3Vector) :
+     opC (oscillatoryPart x) = 0 := by
+-  ext <;> simp [opC, oscillatoryPart, I3Vector.sum]
+-  all_goals ring
++  have hadd : ∀ a b : I3Vector, a + b =
++      ⟨a.manifesto + b.manifesto, a.travessia + b.travessia, a.semente + b.semente⟩ := fun _ _ => rfl
++  have hneg : ∀ a : I3Vector, -a = ⟨-a.manifesto, -a.travessia, -a.semente⟩ := fun _ => rfl
++  have hsmul : ∀ (z : ℂ) (a : I3Vector), z • a = ⟨z * a.manifesto, z * a.travessia, z * a.semente⟩ :=
++    fun _ _ => rfl
++  have hzero : (0 : I3Vector) = ⟨0, 0, 0⟩ := rfl
++  obtain ⟨m, t, s⟩ := x
++  simp only [opC, oscillatoryPart, I3Vector.sum, hadd, hneg, hsmul, hzero, I3Vector.mk.injEq]
++  refine ⟨?_, ?_, ?_⟩ <;> ring
+ 
+ def CrossOperatorLaw : Prop :=
+   (∀ x, opGamma x = I3Vector.scale 3 (opC x)) ∧
+--- a/lean/MCore/Research/UserProgram/CyclicInvariant.lean
++++ b/lean/MCore/Research/UserProgram/CyclicInvariant.lean
+@@ -25,10 +25,11 @@
+     f s = f .manifesto := by
+   cases s
+   · rfl
+-  · simpa [I3State.next] using (h I3State.manifesto).symm
++  · simpa [I3State.next] using h I3State.manifesto
+   ·
+     have h1 := h I3State.manifesto
+     have h2 := h I3State.travessia
+-    simpa [I3State.next] using h2.symm.trans h1.symm
++    simp only [I3State.next] at h1 h2
++    exact h2.trans h1
+ 
+ end MCore.Research.UserProgram
+--- a/lean/MCore/Research/UserProgram/GlobalCertificate.lean
++++ b/lean/MCore/Research/UserProgram/GlobalCertificate.lean
+@@ -60,7 +60,8 @@
+   ]
+ 
+ theorem i3Provenance_nonempty : i3Provenance ≠ [] := by
+-  decide
++  unfold i3Provenance
++  exact List.cons_ne_nil _ _
+ 
+ def ExternalMaterialBridge (Endpoint : Prop) : Prop :=
+   I3KernelCertificate → Endpoint
+--- a/lean/MCore/Research/UserProgram/I3Geometry.lean
++++ b/lean/MCore/Research/UserProgram/I3Geometry.lean
+@@ -13,17 +13,14 @@
+ 
+ theorem omega3_sq_add_omega3_add_one :
+     omega3^2 + omega3 + 1 = 0 := by
++  have h3 : ((Real.sqrt 3 : ℝ) : ℂ) ^ 2 = 3 := by
++    rw [← Complex.ofReal_pow, sqrt_three_sq]; norm_num
+   unfold omega3
+-  apply Complex.ext <;> simp [Complex.ext_iff, sqrt_three_sq] <;> ring_nf
+-  · rw [Real.sq_sqrt] <;> norm_num
+-  · ring
++  linear_combination (Complex.I ^ 2 / 4) * h3 + (3 / 4 : ℂ) * Complex.I_sq
+ 
+ theorem omega3_cube : omega3^3 = 1 := by
+   have h := omega3_sq_add_omega3_add_one
+-  calc
+-    omega3^3 - 1 = (omega3 - 1) * (omega3^2 + omega3 + 1) := by ring
+-    _ = 0 := by rw [h, mul_zero]
+-  exact sub_eq_zero.mp this
++  linear_combination (omega3 - 1) * h
+ 
+ def I3State.phase : I3State → ℂ
+   | .manifesto => 1
+@@ -40,9 +37,10 @@
+ theorem phase_next (s : I3State) :
+     I3State.phase s.next = omega3 * I3State.phase s := by
+   cases s
+-  · simp [I3State.phase]
+-  · simp [I3State.phase, pow_two]
+-  · simp [I3State.phase, ← pow_succ, omega3_cube]
++  · simp [I3State.phase, I3State.next]
++  · simp [I3State.phase, I3State.next, pow_two]
++  · simp only [I3State.phase, I3State.next]
++    rw [← pow_succ', omega3_cube]
+ 
+ structure ComplexThreeChannel where
+   manifesto : ℂ
+--- a/lean/MCore/Research/UserProgram/I3VectorAlgebra.lean
++++ b/lean/MCore/Research/UserProgram/I3VectorAlgebra.lean
+@@ -29,25 +29,25 @@
+ 
+ theorem I3Vector.add_assoc (x y z : I3Vector) :
+     (x + y) + z = x + (y + z) := by
+-  ext <;> simp [add_assoc]
++  ext <;> exact _root_.add_assoc _ _ _
+ 
+ theorem I3Vector.add_zero (x : I3Vector) : x + 0 = x := by
+-  ext <;> simp
++  ext <;> exact _root_.add_zero _
+ 
+ theorem I3Vector.add_neg (x : I3Vector) : x + (-x) = 0 := by
+-  ext <;> simp
++  ext <;> exact add_neg_cancel _
+ 
+ theorem I3Vector.smul_add (a : ℂ) (x y : I3Vector) :
+     a • (x + y) = a • x + a • y := by
+-  ext <;> simp [mul_add]
++  ext <;> exact mul_add _ _ _
+ 
+ theorem I3Vector.add_smul (a b : ℂ) (x : I3Vector) :
+     (a + b) • x = a • x + b • x := by
+-  ext <;> simp [add_mul]
++  ext <;> exact add_mul _ _ _
+ 
+ theorem I3Vector.mul_smul (a b : ℂ) (x : I3Vector) :
+     (a * b) • x = a • (b • x) := by
+-  ext <;> simp [mul_assoc]
++  ext <;> exact _root_.mul_assoc _ _ _
+ 
+ def I3Vector.rotate (x : I3Vector) : I3Vector :=
+   ⟨x.travessia, x.semente, x.manifesto⟩
+--- a/lean/MCore/Research/UserProgram/ModeDecomposition.lean
++++ b/lean/MCore/Research/UserProgram/ModeDecomposition.lean
+@@ -40,14 +40,18 @@
+ 
+ theorem ComplexThreeChannel.meanPart_idempotent (x : ComplexThreeChannel) :
+     x.meanPart.meanPart = x.meanPart := by
+-  apply ComplexThreeChannel.ext <;>
+-    simp [ComplexThreeChannel.meanPart, ComplexThreeChannel.mean_meanPart]
++  apply ComplexThreeChannel.ext <;> exact x.mean_meanPart
+ 
+ theorem ComplexThreeChannel.oscPart_idempotent (x : ComplexThreeChannel) :
+     x.oscPart.oscPart = x.oscPart := by
+-  apply ComplexThreeChannel.ext <;>
+-    simp [ComplexThreeChannel.oscPart, ComplexThreeChannel.centered,
+-      ComplexThreeChannel.mean_oscPart]
++  have h : x.oscPart.mean = 0 := x.mean_oscPart
++  apply ComplexThreeChannel.ext
++  · show x.oscPart.manifesto - x.oscPart.mean = x.oscPart.manifesto
++    rw [h, sub_zero]
++  · show x.oscPart.travessia - x.oscPart.mean = x.oscPart.travessia
++    rw [h, sub_zero]
++  · show x.oscPart.semente - x.oscPart.mean = x.oscPart.semente
++    rw [h, sub_zero]
+ 
+ theorem ComplexThreeChannel.meanPart_oscPart (x : ComplexThreeChannel) :
+     x.oscPart.meanPart =
 --- a/lean/MCore/Research/UserProgram/Operators.lean
 +++ b/lean/MCore/Research/UserProgram/Operators.lean
 @@ -10,7 +10,7 @@
@@ -212,3 +552,23 @@
  
  theorem Operator.comp_assoc {α : Type} (f g h : Operator α) :
      Operator.comp (Operator.comp f g) h =
+--- a/lean/MCore/Research/UserProgram/SemanticProofCore.lean
++++ b/lean/MCore/Research/UserProgram/SemanticProofCore.lean
+@@ -26,7 +26,7 @@
+   run : A.Carrier → B.Carrier
+ 
+ def SemanticMap.id (A : SemanticCarrier) : SemanticMap A A :=
+-  ⟨id⟩
++  ⟨_root_.id⟩
+ 
+ def SemanticMap.comp {A B C : SemanticCarrier}
+     (g : SemanticMap B C) (f : SemanticMap A B) : SemanticMap A C :=
+@@ -69,7 +69,7 @@
+ 
+ def rotationHabitant : Habitant RotationLaw where
+   witness := .manifesto
+-  proof := by decide
++  proof := I3State.next_three _
+ 
+ def RotationGlobalLaw : Prop :=
+   ∀ s : I3State, s.next.next.next = s

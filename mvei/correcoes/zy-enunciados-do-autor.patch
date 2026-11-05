@@ -1,0 +1,40 @@
+--- a/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean
++++ b/imports/final-proof/NAVIER_STOKES/bdf538c8/formal/lean/CriticalBarrier/B2_8_SignedFlux_GapIsolation.lean
+@@ -113,7 +113,7 @@
+ /-- Therefore the B2.8 closure needs an additional directional/depletion
+     hypothesis or a genuinely PDE-derived mechanism excluding the expansive
+     alignment example. -/
+-structure MissingDirectionalCertificate (Pi R kappa err : Scalar) : Prop where
++structure MissingDirectionalCertificate (Pi R kappa err : Scalar) where
+   alignmentDepletion : Prop
+   directionalMechanism : alignmentDepletion
+   signedFlux : alignmentDepletion → Pi ≤ (kappa + err) * R
+--- a/lean/MCore/Research/UserProgram/C3Intertwiner.lean
++++ b/lean/MCore/Research/UserProgram/C3Intertwiner.lean
+@@ -1,5 +1,6 @@
+ import Mathlib
+ import MCore.Research.UserProgram.C3Fourier
++import MCore.Research.UserProgram.ModeDecomposition
+ import MCore.Research.UserProgram.Operators
+ 
+ noncomputable section
+--- a/lean/MCore/Research/UserProgram/C3LinearSectors.lean
++++ b/lean/MCore/Research/UserProgram/C3LinearSectors.lean
+@@ -5,6 +5,17 @@
+ 
+ namespace MCore.Research.UserProgram
+ 
++/-- Coordenadas de `ComplexThreeChannel` em `ℂ × ℂ × ℂ` (para dar a estrutura de `ℂ`-módulo). -/
++def ComplexThreeChannel.equivProd : ComplexThreeChannel ≃ ℂ × ℂ × ℂ where
++  toFun x := (x.manifesto, x.travessia, x.semente)
++  invFun p := ⟨p.1, p.2.1, p.2.2⟩
++  left_inv x := by cases x; rfl
++  right_inv p := by rcases p with ⟨a, b, c⟩; rfl
++
++instance : AddCommGroup ComplexThreeChannel := ComplexThreeChannel.equivProd.addCommGroup
++
++instance : Module ℂ ComplexThreeChannel := ComplexThreeChannel.equivProd.module ℂ
++
+ structure LinearC3Operator where
+   run : ComplexThreeChannel →ₗ[ℂ] ComplexThreeChannel
+ 
