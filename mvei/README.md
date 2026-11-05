@@ -4,8 +4,8 @@ This folder records what the Lean 4 kernel said about the Lean sources of the pr
 
 ## What is published
 
-* Source: `ShantiDraconis/M-Core`, commit `21a802bf02688c3672139c877b1d82f3c590f7cb` (2026-11-04T19:44:46Z). This is newer than the commit MVEI verified (`390e378`); the files added since then are covered in [Added after the verified commit](#added-after-the-verified-commit).
-* 597 files: 591 `.lean` files and the Lake files (`lakefile.*`, `lean-toolchain`, `lake-manifest.json`), plus 2 license or origin file(s) that third-party code requires (`atk-kernel/ATK/FltRegular/LICENSE`, `atk-kernel/ATK/FltRegular/ORIGEM.md`). Paths are the same as in the source repository.
+* Source: `ShantiDraconis/M-Core`, commit `05ce1d7c2ffcc6cbca5812850bdc8a2b6bda5e93` (2026-11-05T10:43:51Z). This is newer than the commit MVEI verified (`390e378`); the files added since then are covered in [Added after the verified commit](#added-after-the-verified-commit).
+* 604 files: 598 `.lean` files and the Lake files (`lakefile.*`, `lean-toolchain`, `lake-manifest.json`), plus 2 license or origin file(s) that third-party code requires (`atk-kernel/ATK/FltRegular/LICENSE`, `atk-kernel/ATK/FltRegular/ORIGEM.md`). Paths are the same as in the source repository.
 * Nothing else from the private repository is published (documents, commercial license, prompts, storefront material). The `Contaminated/` folder, which the author quarantined and marked as never evidence, is left out too.
 * `SOURCES.sha256` lists every published file with its SHA-256. From the repository root: `sha256sum -c mvei/SOURCES.sha256`.
 
@@ -67,10 +67,12 @@ The `.lean` files of the verified commit declare 9 572 `theorem`/`lemma` (counti
 
 ## Added after the verified commit
 
-Between the verified commit `390e378` and the published commit `21a802b`, 8 `.lean` files were added and 1 changed (`atk-kernel/ATK.lean`, which only adds their imports). No other published file changed. The MVEI tables above do not cover these files. Their 106 theorems were checked by the Lean kernel twice, outside MVEI:
+Between the verified commit `390e378` and the published commit `05ce1d7`, 15 `.lean` files were added and 1 changed (`atk-kernel/ATK.lean`, which only adds their imports). No other published file changed. The MVEI tables above do not cover these files. Their 182 theorems were checked by the Lean kernel outside MVEI:
 
-* **M-Core CI** (private repository), job "Lean 4 + Mathlib — compilação e auditoria de axiomas", run 41828386817 on commit `a777620`: T1 GREEN, 8 665/8 665 theorems of `atk-kernel` with only the standard axioms (`sources_sha256 f844898a…a797`). The Lean and Lake files of `a777620` and `21a802b` are identical; the two commits differ only in `atk-kernel/audits/`.
-* **Local build**: `lake build` of the 8 modules with Lean v4.34.1 (the `atk-kernel` toolchain) and `#print axioms` for each theorem. All 106 depend only on `propext`, `Classical.choice` and `Quot.sound`. None uses `sorry`, `admit`, `native_decide` or a declared `axiom`.
+* **M-Core CI** (private repository), job "Lean 4 + Mathlib — compilação e auditoria de axiomas":
+  * run 41828386817 on commit `a777620` (first 8 files, 106 theorems): T1 GREEN, 8 665/8 665 theorems of `atk-kernel` with only the standard axioms (`sources_sha256 f844898a…a797`);
+  * run 41917163252 on commit `14cb7fc` (next 7 files, 76 theorems): T6 GREEN, 8 741/8 741 theorems with only the standard axioms (`sources_sha256 1f002f59…989e`). The Lean and Lake files of `14cb7fc` and of the published `05ce1d7` (the merge of M-Core PR #181) are identical.
+* **Local build**: `lake build` of the 15 modules with Lean v4.34.1 (the `atk-kernel` toolchain) and `#print axioms` for each theorem. All 182 depend only on `propext`, `Classical.choice` and `Quot.sound` (a few on a subset of them). None uses `sorry`, `admit`, `native_decide` or a declared `axiom`.
 
 | File | Theorems | Content |
 |---|---:|---|
@@ -82,12 +84,15 @@ Between the verified commit `390e378` and the published commit `21a802b`, 8 `.le
 | `atk-kernel/ATK/FracoesEscala.lean` | 8 | Scaling law `∫‖k^a f(k·)‖^q = k^{aq−d}∫‖f‖^q`; criticality of Navier–Stokes and Yang–Mills. |
 | `atk-kernel/ATK/FracoesSAT.lean` | 5 | The `7/8` clause average for 3-SAT and the binomial identity behind Schöning's walk. |
 | `atk-kernel/ATK/FracoesGamaZeros.lean` | 1 | The continued fractions above for three certified zeros. |
+| `atk-kernel/ATK/FracoesParRecorde.lean` | 16 | The closest pair of zeros in the certified data (12 363 187 982 787/788), from its two Arb balls taken as hypotheses: continued fractions of both fractional parts with a rational tail, the simplest fraction in each ball (minimal by Farey neighbours), the gap and `−Δγ²/2` in exact rationals, and `3/2000 < s < 1/600 < 1/400 < s` of the previous record pair. |
+| `atk-kernel/ATK/FracoesSATMedia.lean` | 8 | Every 3-CNF formula with distinct variables per clause: the average number of satisfied clauses is exactly `7m/8`, and some assignment satisfies at least `7m/8` (Johnson). |
+| `atk-kernel/ATK/OSLacuna.lean`, `OSTransferencia.lean`, `OSProcesso.lean`, `OSSimetria.lean`, `OSExemplo.lean` | 52 | Osterwalder–Schrader reconstruction in time: Hilbert space from a reflection-positive stationary measure, transfer matrix `e^{−tH}`, spectral gap from exponential clustering, symmetries as isometries, an example in `ℂ²` where the bound is attained. Published before as branch-only theorems (`branches/M-Core/atk_rh-rho-independent/`); now in the default branch. |
 
 None of these theorems proves the Riemann hypothesis or any other open problem. Several are equivalences with RH, which stays open. Each theorem with its file, line and axioms is in [`AFTER_VERIFIED_COMMIT.csv`](AFTER_VERIFIED_COMMIT.csv).
 
 ## Files in this folder
 
-* `AFTER_VERIFIED_COMMIT.csv` — the 106 theorems of the files added after the verified commit: file, line, name, axioms, state
+* `AFTER_VERIFIED_COMMIT.csv` — the 182 theorems of the files added after the verified commit: file, line, name, axioms, state
 * `VERIFICACAO.json` — each Lean project of this repository, each theorem the kernel read, its statement, its axioms and its state (`fechado` closed, `condicional` conditional, `aberto-sorry` open)
 * `TEOREMAS.csv` — each declared `theorem`/`lemma`: file, line, state in the kernel (`nao_checado` = not checked) and, if not checked, why (in Portuguese)
 * `BUILD_LOG.txt` — one block per project: Lean version, result, errors

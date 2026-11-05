@@ -417,3 +417,10 @@ import ATK.FracoesEscala
 import ATK.FracoesSAT
 import ATK.FracoesGama
 import ATK.FracoesGamaZeros
+import ATK.FracoesParRecorde
+import ATK.FracoesSATMedia
+import ATK.OSLacuna
+import ATK.OSTransferencia
+import ATK.OSProcesso
+import ATK.OSSimetria
+import ATK.OSExemplo

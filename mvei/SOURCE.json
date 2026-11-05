@@ -1,9 +1,9 @@
 {
  "source_repository": "ShantiDraconis/M-Core",
- "source_commit": "21a802bf02688c3672139c877b1d82f3c590f7cb",
- "source_commit_date": "2026-11-04T19:44:46Z",
- "files": 597,
- "lean_files": 591,
+ "source_commit": "05ce1d7c2ffcc6cbca5812850bdc8a2b6bda5e93",
+ "source_commit_date": "2026-11-05T10:43:51Z",
+ "files": 604,
+ "lean_files": 598,
  "verified_commit": "390e3781109fa42e977d143caa9204ed94166a7b",
  "verification_generated_at": "2026-11-03T08:19:01+00:00",
  "lean_files_added_after_verified_commit": [
@@ -12,26 +12,43 @@
   "atk-kernel/ATK/FracoesEscala.lean",
   "atk-kernel/ATK/FracoesGama.lean",
   "atk-kernel/ATK/FracoesGamaZeros.lean",
+  "atk-kernel/ATK/FracoesParRecorde.lean",
   "atk-kernel/ATK/FracoesSAT.lean",
+  "atk-kernel/ATK/FracoesSATMedia.lean",
+  "atk-kernel/ATK/OSExemplo.lean",
+  "atk-kernel/ATK/OSLacuna.lean",
+  "atk-kernel/ATK/OSProcesso.lean",
+  "atk-kernel/ATK/OSSimetria.lean",
+  "atk-kernel/ATK/OSTransferencia.lean",
   "atk-kernel/ATK/ZeroClasses/PontesRH.lean",
   "atk-kernel/ATK/ZeroClasses/PontesRHAbscissa.lean"
  ],
  "lean_files_changed_after_verified_commit": [
   "atk-kernel/ATK.lean"
  ],
- "published_at": "2026-11-04T21:35:54Z",
+ "published_at": "2026-11-05T11:14:41Z",
  "published_by": "incremental update of the MVEI mirror (only the files added or changed after the verified commit)",
  "kernel_check_after_verified_commit": {
   "file": "mvei/AFTER_VERIFIED_COMMIT.csv",
-  "theorems": 106,
+  "theorems": 182,
   "ci": {
    "repository": "ShantiDraconis/M-Core (private)",
    "workflow_job": "Lean 4 + Mathlib — compilação e auditoria de axiomas",
-   "run_id": 41828386817,
-   "commit": "a777620",
-   "result": "T1 GREEN: 8665/8665 theorems with only the standard axioms; sources_sha256 f844898a5e67989235a5fe7c5e32490a88c3e5098d11857878b901d1bb64a797",
-   "note": "the Lean and Lake files of a777620 and of the published commit 21a802b are identical (git diff a777620 21a802b touches only audits/)"
+   "run_id": 41917163252,
+   "commit": "14cb7fc",
+   "result": "T6 GREEN: 8741/8741 theorems with only the standard axioms; sources_sha256 1f002f591987f141cd38570a2361e04a08977cc3424475201edc031d8f03989e",
+   "note": "the Lean and Lake files of 14cb7fc and of the published commit 05ce1d7 (merge of PR #181) are identical"
   },
-  "local": "lake build of the 8 added modules on Lean v4.34.1 (the atk-kernel toolchain), #print axioms for each theorem"
+  "local": "lake build of the 15 added modules on Lean v4.34.1 (the atk-kernel toolchain), #print axioms for each theorem",
+  "ci_earlier": [
+   {
+    "repository": "ShantiDraconis/M-Core (private)",
+    "workflow_job": "Lean 4 + Mathlib — compilação e auditoria de axiomas",
+    "run_id": 41828386817,
+    "commit": "a777620",
+    "result": "T1 GREEN: 8665/8665 theorems with only the standard axioms; sources_sha256 f844898a5e67989235a5fe7c5e32490a88c3e5098d11857878b901d1bb64a797",
+    "note": "the Lean and Lake files of a777620 and of the published commit 21a802b are identical (git diff a777620 21a802b touches only audits/)"
+   }
+  ]
  }
 }
