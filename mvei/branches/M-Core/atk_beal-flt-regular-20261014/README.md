@@ -5,7 +5,7 @@ Lean sources from the branch `atk/beal-flt-regular-20261014` of the private repo
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 13 — closed 13, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 4 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `2fc176d5b490150a9478a2ef34f0ae4217ad719fd5d091fc1317cf05147310da`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_beal-flt-regular-20261014/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `b37cd8838c3aa4a322d7fc06dcac94c3d21ee6b30307e1632b5b441ac0020219`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_beal-flt-regular-20261014/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

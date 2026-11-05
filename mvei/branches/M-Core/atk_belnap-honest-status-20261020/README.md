@@ -5,7 +5,7 @@ Lean sources from the branch `atk/belnap-honest-status-20261020` of the private 
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 14 — closed 14, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 8 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `93f7f39a0ef7fd0f2f67adf2f9dda49a3b94bd7e6e762084bebbe22b68fac0f3`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_belnap-honest-status-20261020/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `3614c3816220c7291d6472ca3b975d412395cd9caf3e513c8dec988d835f7627`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_belnap-honest-status-20261020/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

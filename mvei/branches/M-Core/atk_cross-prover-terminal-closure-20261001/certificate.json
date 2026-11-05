@@ -1,0 +1,335 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/cross-prover-terminal-closure-20261001",
+ "branch_state": "parada",
+ "head_commit": "2040548e094e6a89030fb5ce04d5f679796839bf",
+ "head_commit_date": "2026-10-01T18:11:40+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "2040548e094e6a89030fb5ce04d5f679796839bf",
+   "date": "2026-10-01T18:11:40+02:00",
+   "subject": "formal: complete seven-lane Lean Coq Isabelle theorem crosswalk"
+  },
+  {
+   "commit": "732f26498e7d9d46be6b63db1c2d67f13ed6ba47",
+   "date": "2026-10-01T18:11:26+02:00",
+   "subject": "formal: add explicit seven-lane bundle in Isabelle"
+  },
+  {
+   "commit": "95461d98edbb05cf3dcea446ced7d4f875ee621e",
+   "date": "2026-10-01T18:11:24+02:00",
+   "subject": "formal: add explicit seven-lane bundle in Coq"
+  },
+  {
+   "commit": "07090bc5a7e3cf1f4c73bed4a0a36dd1410a578a",
+   "date": "2026-10-01T18:10:43+02:00",
+   "subject": "formal: document cross-prover closure semantics and trust boundary"
+  },
+  {
+   "commit": "d4527e63a4f068ba6afdc8035e0dc65a02d30cf3",
+   "date": "2026-10-01T18:10:40+02:00",
+   "subject": "formal: add Lean Coq Isabelle closure crosswalk"
+  },
+  {
+   "commit": "823b0e2f1bff0d31c5cb3f5e2022176a75b1062f",
+   "date": "2026-10-01T18:10:08+02:00",
+   "subject": "formal: harden Coq exact-closure mirror"
+  },
+  {
+   "commit": "4d16ce57232ec0d5baa60b63443f6774aa4ae09b",
+   "date": "2026-10-01T18:09:40+02:00",
+   "subject": "formal: add Isabelle mirror of exact material closure semantics"
+  },
+  {
+   "commit": "e8b5689beb0b65650a207cb767fdbc5f47242970",
+   "date": "2026-10-01T18:09:38+02:00",
+   "subject": "formal: add Coq mirror of exact material closure semantics"
+  },
+  {
+   "commit": "20836281767f9e7eb7c98d557ce58fce7ebe163f",
+   "date": "2026-10-01T18:08:51+02:00",
+   "subject": "atk: add exact cross-prover terminal closure contract in Lean"
+  },
+  {
+   "commit": "baec0973b548b2a73d131d68a5aa1e9fb52f5578",
+   "date": "2026-10-01T18:08:18+02:00",
+   "subject": "atk: port universal producer dependency into cross-prover branch"
+  },
+  {
+   "commit": "8b569d63a255a78d44b0b70c0c1d917a37ab785a",
+   "date": "2026-10-01T18:08:14+02:00",
+   "subject": "atk: port universal producer dependency into cross-prover branch"
+  },
+  {
+   "commit": "256ca2308bf4bdfaa553f82da3fdcb7929d1902e",
+   "date": "2026-10-01T18:07:56+02:00",
+   "subject": "atk: import material multistate dynamics into cross-prover closure branch"
+  },
+  {
+   "commit": "d6fd0c9b001a7e1cf696accbbc6050c7a068dca4",
+   "date": "2026-10-01T18:05:50+02:00",
+   "subject": "audit: register material multistate closure algebra"
+  },
+  {
+   "commit": "f96373a0c4259dcc2e4362d48793aac87f552b15",
+   "date": "2026-10-01T17:50:59+02:00",
+   "subject": "audit: align global material frontier to unified and hardened lanes"
+  },
+  {
+   "commit": "b606788de929c509bdbdc093613960cb750298fe",
+   "date": "2026-10-01T17:50:32+02:00",
+   "subject": "atk: align NS and Hodge registry to unified material producers"
+  },
+  {
+   "commit": "34216b533a02a934aa1d9c8bd49fe7f23d637908",
+   "date": "2026-10-01T17:49:02+02:00",
+   "subject": "audit: expand new material mathematics laws operators and exact gaps"
+  },
+  {
+   "commit": "996a5e36d21843d14148386aca60c70f542e9eb5",
+   "date": "2026-10-01T17:47:15+02:00",
+   "subject": "audit: record P02 falsified routes and harden YM producer index"
+  },
+  {
+   "commit": "25e01ea402eb6a9f451ff26f4ee59bf9cae9620b",
+   "date": "2026-10-01T17:46:39+02:00",
+   "subject": "atk: register nonvacuous YM material terminal"
+  },
+  {
+   "commit": "7b21e617bc92a4bf8fe7760e944b5c83cdb8a010",
+   "date": "2026-10-01T17:46:30+02:00",
+   "subject": "atk: replace vacuous YM B60 cut with material hardening v3"
+  },
+  {
+   "commit": "6e8ee647ae206423f849671fc1cd45cb8b521a1e",
+   "date": "2026-10-01T17:32:49+02:00",
+   "subject": "audit: index exact material producers operators and residues"
+  },
+  {
+   "commit": "a42a30acdac09e95b05792adc968cb2ceafdfabd",
+   "date": "2026-10-01T17:30:54+02:00",
+   "subject": "audit: map external evidence to exact material producers"
+  },
+  {
+   "commit": "7bc65661e74f6642eaee47b0201970c4621e8db1",
+   "date": "2026-10-01T17:30:14+02:00",
+   "subject": "audit: register NS G1 to canonical signed-gain adapter"
+  },
+  {
+   "commit": "7b0457cac24d21877de70fa75caba3efdefe19cf",
+   "date": "2026-10-01T17:05:16+02:00",
+   "subject": "audit: consolidate deepest material residues across all seven lanes"
+  },
+  {
+   "commit": "62a8ebc0e3c79839f63ddcdc97f6cabc935d7e6b",
+   "date": "2026-10-01T17:01:40+02:00",
+   "subject": "atk: register deepest material frontiers for RH NS BSD YM"
+  },
+  {
+   "commit": "705f1a2974df9cd98e6b84ec17f1cf0d097646ac",
+   "date": "2026-10-01T17:01:23+02:00",
+   "subject": "atk: compress RH NS BSD YM to deepest material residues"
+  },
+  {
+   "commit": "2b2f7dec605f90990ba0f082f920ca9f0b841b56",
+   "date": "2026-10-01T16:49:37+02:00",
+   "subject": "audit: harden Hodge target and record BSD residual precisely"
+  },
+  {
+   "commit": "96ac6edfe69e27fb8e9d6fa7afd2e9569c46a873",
+   "date": "2026-10-01T16:48:47+02:00",
+   "subject": "atk: register nonvacuous Hodge terminal target"
+  },
+  {
+   "commit": "44f452590c0f3d8bef7d4d915b6a560f228c6534",
+   "date": "2026-10-01T16:48:44+02:00",
+   "subject": "atk: harden Hodge material cut against vacuous model"
+  },
+  {
+   "commit": "4ef56b9a9110ed0f88a0c31a18200fabd8a1170d",
+   "date": "2026-10-01T16:10:25+02:00",
+   "subject": "audit: record exact post-P01 material frontier and tri-state hardening"
+  },
+  {
+   "commit": "c9f6461c6732510e5205edbda12e661b66abe934",
+   "date": "2026-10-01T16:07:33+02:00",
+   "subject": "atk: register post-P01 and Gram-scalar terminal frontiers"
+  },
+  {
+   "commit": "7ab7edf8f0bbe143d3f602d20f5a2819a409cbd9",
+   "date": "2026-10-01T16:07:30+02:00",
+   "subject": "atk: align material cuts after P01 closure and RH Gram reduction"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.ATK.CrossProverClosure.global_closure_projects_beal",
+   "file": "lean/MCore/ATK/CrossProverTerminalClosure.lean",
+   "line": 70,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : UniversalProblemSpec} (P : ExactClosurePackage S) : ((S.materialize P.materialization).lane .beal).Inhabitant"
+  },
+  {
+   "name": "MCore.ATK.CrossProverClosure.global_closure_projects_bsd",
+   "file": "lean/MCore/ATK/CrossProverTerminalClosure.lean",
+   "line": 58,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : UniversalProblemSpec} (P : ExactClosurePackage S) : ((S.materialize P.materialization).lane .bsd).Inhabitant"
+  },
+  {
+   "name": "MCore.ATK.CrossProverClosure.global_closure_projects_hodge",
+   "file": "lean/MCore/ATK/CrossProverTerminalClosure.lean",
+   "line": 64,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : UniversalProblemSpec} (P : ExactClosurePackage S) : ((S.materialize P.materialization).lane .hodge).Inhabitant"
+  },
+  {
+   "name": "MCore.ATK.CrossProverClosure.global_closure_projects_navierStokes",
+   "file": "lean/MCore/ATK/CrossProverTerminalClosure.lean",
+   "line": 52,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : UniversalProblemSpec} (P : ExactClosurePackage S) : ((S.materialize P.materialization).lane .navierStokes).Inhabitant"
+  },
+  {
+   "name": "MCore.ATK.CrossProverClosure.global_closure_projects_pnp",
+   "file": "lean/MCore/ATK/CrossProverTerminalClosure.lean",
+   "line": 40,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : UniversalProblemSpec} (P : ExactClosurePackage S) : ((S.materialize P.materialization).lane .pnp).Inhabitant"
+  },
+  {
+   "name": "MCore.ATK.CrossProverClosure.global_closure_projects_riemann",
+   "file": "lean/MCore/ATK/CrossProverTerminalClosure.lean",
+   "line": 32,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : UniversalProblemSpec} (P : ExactClosurePackage S) : ((S.materialize P.materialization).lane .riemann).Inhabitant"
+  },
+  {
+   "name": "MCore.ATK.CrossProverClosure.global_closure_projects_yangMills",
+   "file": "lean/MCore/ATK/CrossProverTerminalClosure.lean",
+   "line": 46,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "{S : UniversalProblemSpec} (P : ExactClosurePackage S) : ((S.materialize P.materialization).lane .yangMills).Inhabitant"
+  },
+  {
+   "name": "MCore.ATK.CrossProverClosure.pair_closed_exactly_when_both_closed",
+   "file": "lean/MCore/ATK/CrossProverTerminalClosure.lean",
+   "line": 76,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(a b : GateState) : combine a b = .closed ↔ a = .closed ∧ b = .closed"
+  },
+  {
+   "name": "MCore.ATK.CrossProverClosure.zero_defect_is_not_universal_terminal_constructor",
+   "file": "lean/MCore/ATK/CrossProverTerminalClosure.lean",
+   "line": 83,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ (∀ (R : ReductionLane) (T : TerminalSpec R) (x : R.State), R.defect x = 0 → Nonempty T.Inhabitant)"
+  },
+  {
+   "name": "MCore.ATK.MaterialMultistate.MaterialOperatorSystem.repression_is_nonexpansive",
+   "file": "lean/MCore/ATK/MaterialMultistateDynamics.lean",
+   "line": 125,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : S.State) : S.defect (S.repression x) ≤ S.defect x"
+  },
+  {
+   "name": "MCore.ATK.MaterialMultistate.MaterialOperatorSystem.torsion_cannot_strictly_close",
+   "file": "lean/MCore/ATK/MaterialMultistateDynamics.lean",
+   "line": 119,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : S.State) (hpos : 0 < S.defect x) : ¬ S.defect (S.torsion x) < S.defect x"
+  },
+  {
+   "name": "MCore.ATK.MaterialMultistate.closed_closed_is_closed",
+   "file": "lean/MCore/ATK/MaterialMultistateDynamics.lean",
+   "line": 29,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": combine .closed .closed = .closed"
+  },
+  {
+   "name": "MCore.ATK.MaterialMultistate.closed_open_is_open",
+   "file": "lean/MCore/ATK/MaterialMultistateDynamics.lean",
+   "line": 23,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": combine .closed .open = .open"
+  },
+  {
+   "name": "MCore.ATK.MaterialMultistate.combine_eq_closed_iff",
+   "file": "lean/MCore/ATK/MaterialMultistateDynamics.lean",
+   "line": 16,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(a b : GateState) : combine a b = .closed ↔ a = .closed ∧ b = .closed"
+  },
+  {
+   "name": "MCore.ATK.MaterialMultistate.open_closed_is_open",
+   "file": "lean/MCore/ATK/MaterialMultistateDynamics.lean",
+   "line": 20,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": combine .open .closed = .open"
+  },
+  {
+   "name": "MCore.ATK.MaterialMultistate.open_open_is_open",
+   "file": "lean/MCore/ATK/MaterialMultistateDynamics.lean",
+   "line": 26,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": combine .open .open = .open"
+  },
+  {
+   "name": "MCore.ATK.MaterialMultistate.pair_terminal_requires_both",
+   "file": "lean/MCore/ATK/MaterialMultistateDynamics.lean",
+   "line": 181,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(a b : GateState) (h : combine a b = .closed) : a = .closed ∧ b = .closed"
+  },
+  {
+   "name": "MCore.ATK.MaterialMultistate.zero_defect_does_not_erase_terminal_type",
+   "file": "lean/MCore/ATK/MaterialMultistateDynamics.lean",
+   "line": 152,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ (∀ (R : ReductionLane) (T : TerminalSpec R) (x : R.State), R.defect x = 0 → Nonempty T.Inhabitant)"
+  }
+ ],
+ "closed": 11,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/ATK/CrossProverTerminalClosure.lean": "c83eb456f9ca3b6ba4515dc5bc03386e60a91bc7801ffb6c4857b04c49366e77",
+  "lean/MCore/ATK/MaterialMultistateDynamics.lean": "719aa997738b3ed4c7f10a3ca7d1d967aa3375685166c395a00641bb390294c9",
+  "lean/MCore/ATK/SevenLaneSpecialization.lean": "82eb2a8e8c906be8cef87fca38012805068d56c9013335ea7e3029647e5884ef",
+  "lean/MCore/ATK/StructuralDefect.lean": "35d09396dc6fb98dde9dc7d952ad4dcafa3ebb63012509d88b5f597389359bd3",
+  "lean/MCore/ATK/UniversalProducerTheorem.lean": "b5b17a53f50bda02a22853f318faed9512472923c062198f103521e5eef2af70"
+ },
+ "published_at": "2026-11-05T17:43:15Z",
+ "certificate_sha256": "cca20a9aa046d302b5a40c3c9ad4e535234e0132ae62349df90c70292cab5655"
+}

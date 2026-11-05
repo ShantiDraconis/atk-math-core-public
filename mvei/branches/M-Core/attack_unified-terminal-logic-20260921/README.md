@@ -5,7 +5,7 @@ Lean sources from the branch `attack/unified-terminal-logic-20260921` of the pri
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 14 — closed 14, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 34 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `f81f0001d8779a567c6da39286282b6285e9705cfaa1005d2380714dc7b88bd4`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/attack_unified-terminal-logic-20260921/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `d814a708c5c8762de1868645b9d5ed25a35b6f811bc141fcb01d0625ce2baa77`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/attack_unified-terminal-logic-20260921/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

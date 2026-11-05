@@ -163,7 +163,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -195,7 +195,7 @@
    "name": "MCore.ATK.MaterialDecision.inconsistent_gives_false",
    "file": "lean/MCore/ATK/MaterialDecisionClosure.lean",
    "line": 43,
-   "state": "erro",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{P : Prop} (hp : P) (hn : ¬ P) : False"
   },
@@ -211,7 +211,7 @@
    "name": "MCore.ATK.SevenMaterialDecisions.global_projects_beal",
    "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
    "line": 107,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .beal).statement)"
   },
@@ -219,7 +219,7 @@
    "name": "MCore.ATK.SevenMaterialDecisions.global_projects_bsd",
    "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
    "line": 95,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .bsd).statement)"
   },
@@ -227,7 +227,7 @@
    "name": "MCore.ATK.SevenMaterialDecisions.global_projects_hodge",
    "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
    "line": 101,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .hodge).statement)"
   },
@@ -235,7 +235,7 @@
    "name": "MCore.ATK.SevenMaterialDecisions.global_projects_navierStokes",
    "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
    "line": 89,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .navierStokes).statement)"
   },
@@ -243,7 +243,7 @@
    "name": "MCore.ATK.SevenMaterialDecisions.global_projects_pnp",
    "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
    "line": 77,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .pnp).statement)"
   },
@@ -251,7 +251,7 @@
    "name": "MCore.ATK.SevenMaterialDecisions.global_projects_riemann",
    "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
    "line": 70,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .riemann).statement)"
   },
@@ -259,7 +259,7 @@
    "name": "MCore.ATK.SevenMaterialDecisions.global_projects_yangMills",
    "file": "lean/MCore/ATK/SevenMaterialDecisions.lean",
    "line": 83,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{S : SevenDecisionSpec} (G : SevenDecisionBundle S) : Nonempty (Decided (S.lane .yangMills).statement)"
   },
@@ -283,7 +283,7 @@
    "name": "MCore.ATK.TwoSidedMaterial.TwoSidedClosure.close",
    "file": "lean/MCore/ATK/TwoSidedMaterialClosure.lean",
    "line": 14,
-   "state": "erro",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{P Q : Prop} (W : TwoSidedClosure P Q) : Q"
   },
@@ -328,13 +328,15 @@
    "statement": "(P : Prop) : Nonempty (TwoSidedClosure P P) ↔ P"
   }
  ],
- "closed": 10,
+ "closed": 19,
  "files_sha256": {
   "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
   "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
   "lean/MCore/ATK/MaterialDecisionClosure.lean": "385d87358b1123d1a1c30ad53db2b5ff8c8353b5cb292b38a58295668e9098a0",
+  "lean/MCore/ATK/SevenMaterialDecisions.lean": "c65bc4c4c0e8a0a9502e4f03dd848c4f99477ba0f899a061d44fff4c6aac2d0a",
+  "lean/MCore/ATK/StructuralDefect.lean": "35d09396dc6fb98dde9dc7d952ad4dcafa3ebb63012509d88b5f597389359bd3",
   "lean/MCore/ATK/TwoSidedMaterialClosure.lean": "e891df3899cd8a4e428988f842b3e63205dbbc6e98c80a2ad17179a937f4cac4"
  },
- "published_at": "2026-11-03T11:28:18Z",
- "certificate_sha256": "5e4b238645932a4961988ed8900af19cd5808311c68725612a826185be744f66"
+ "published_at": "2026-11-05T17:43:15Z",
+ "certificate_sha256": "33955e3bf77ce2f6a77cc326504a5614e8957298e8b48ef41c406d43dec06750"
 }

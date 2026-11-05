@@ -1,0 +1,192 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/global-closed-scope-20261007",
+ "branch_state": "parada",
+ "head_commit": "6ac1067111b0779604315fdbc69fede34c6c911c",
+ "head_commit_date": "2026-10-07T17:24:55+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "6ac1067111b0779604315fdbc69fede34c6c911c",
+   "date": "2026-10-07T17:24:55+02:00",
+   "subject": "extend kernel audit over recovered P01 fragments"
+  },
+  {
+   "commit": "555f47e9783a12091144d1fe7a41ffbb24e94772",
+   "date": "2026-10-07T17:24:48+02:00",
+   "subject": "recover physical and integrated P01 proof fragments"
+  },
+  {
+   "commit": "f292901c11fb5572b022a3c87e13377c64181c51",
+   "date": "2026-10-07T17:24:31+02:00",
+   "subject": "add recovered P01 verifier and SAT semantics"
+  },
+  {
+   "commit": "1adaf7bf95abe8bd7090fde729555fd26a3a64bf",
+   "date": "2026-10-07T17:24:09+02:00",
+   "subject": "audit recovered verifier fragments"
+  },
+  {
+   "commit": "29560cbbc8f39880ec2feec6ab3b9fe809848c5b",
+   "date": "2026-10-07T17:24:02+02:00",
+   "subject": "add recovered P01 verifier and SAT semantics fragments"
+  },
+  {
+   "commit": "1890c976c10ace191f7d456e6984f3498ce1cbd2",
+   "date": "2026-10-07T17:21:49+02:00",
+   "subject": "audit recovered closed fragments in global scope gate"
+  },
+  {
+   "commit": "7b968b7cc23e0b6139d5edd1f9a16caecbbdfefb",
+   "date": "2026-10-07T17:21:37+02:00",
+   "subject": "recover closed PNP fragments"
+  },
+  {
+   "commit": "66a94c4b43287f607954960c05f37fd8a47d4022",
+   "date": "2026-10-07T17:00:21+02:00",
+   "subject": "add first materialized closed theorem to global scope"
+  },
+  {
+   "commit": "18221fd70fd512f45e3caacf5debe77f4def03bf",
+   "date": "2026-10-07T16:55:29+02:00",
+   "subject": "add kernel gate for CLOSED_MATH-only global scope"
+  },
+  {
+   "commit": "d65b84a2f6999404a346161b469f28bed53d10fb",
+   "date": "2026-10-07T16:54:30+02:00",
+   "subject": "formalize CLOSED_MATH-only global scoped certificate"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.FinalFail.ClosedScope.certify",
+   "file": "lean/MCore/FinalFail/GlobalClosedScope.lean",
+   "line": 21,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(C : GlobalClosedScope) : GlobalClosedScopeCertificate C"
+  },
+  {
+   "name": "MCore.FinalFail.ClosedScope.certify_cons",
+   "file": "lean/MCore/FinalFail/GlobalClosedScope.lean",
+   "line": 33,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(P : Prop) (hP : P) (C : GlobalClosedScope) : GlobalClosedScopeCertificate (cons P hP C)"
+  },
+  {
+   "name": "MCore.FinalFail.ClosedScope.entry_is_closed",
+   "file": "lean/MCore/FinalFail/GlobalClosedScope.lean",
+   "line": 11,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(C : GlobalClosedScope) (e : ClosedMathEntry) (_hmem : e ∈ C.entries) : e.statement"
+  },
+  {
+   "name": "MCore.FinalFail.ClosedScope.materializedClosedScope_certified",
+   "file": "lean/MCore/FinalFail/GlobalClosedScope.lean",
+   "line": 65,
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": ": GlobalClosedScopeCertificate materializedClosedScope"
+  },
+  {
+   "name": "MCore.FinalFail.ClosedScope.ymConditionalClosedWitness",
+   "file": "lean/MCore/FinalFail/GlobalClosedScope.lean",
+   "line": 58,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": ": YMConditionalClosedStatement"
+  },
+  {
+   "name": "MCore.FinalFail.RecoveredClosedFragments.declaredSATCorrect_iff_no_semanticMismatch",
+   "file": "lean/MCore/FinalFail/RecoveredClosedFragments.lean",
+   "line": 34,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ""
+  },
+  {
+   "name": "MCore.FinalFail.RecoveredClosedFragments.decode_verify_iff_satBits",
+   "file": "lean/MCore/FinalFail/RecoveredClosedFragments.lean",
+   "line": 23,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(x : BitString) : (∃ phi : CircuitK1.Circuit, decodeCircuit x = some phi ∧ ∃ w : SATWitness phi, verifyWitness phi w = true) ↔ MCore.Real.CanonicalSATBoundary.SATBits circuitBitEncoding x"
+  },
+  {
+   "name": "MCore.FinalFail.RecoveredClosedFragments.integrated_phase_bridge",
+   "file": "lean/MCore/FinalFail/RecoveredClosedFragments.lean",
+   "line": 43,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ""
+  },
+  {
+   "name": "MCore.FinalFail.RecoveredClosedFragments.no_semanticMismatch_iff_match",
+   "file": "lean/MCore/FinalFail/RecoveredClosedFragments.lean",
+   "line": 31,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ""
+  },
+  {
+   "name": "MCore.FinalFail.RecoveredClosedFragments.physical_read_witness_correct",
+   "file": "lean/MCore/FinalFail/RecoveredClosedFragments.lean",
+   "line": 37,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ""
+  },
+  {
+   "name": "MCore.FinalFail.RecoveredClosedFragments.physical_source_end_preserved",
+   "file": "lean/MCore/FinalFail/RecoveredClosedFragments.lean",
+   "line": 40,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ""
+  },
+  {
+   "name": "MCore.FinalFail.RecoveredClosedFragments.verifier_correct",
+   "file": "lean/MCore/FinalFail/RecoveredClosedFragments.lean",
+   "line": 17,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(phi : CircuitK1.Circuit) (w : SATWitness phi) : verifyWitness phi w = true ↔ SATWitnessAccepts phi w"
+  },
+  {
+   "name": "MCore.FinalFail.RecoveredClosedFragments.witness_guess_phase_polynomial",
+   "file": "lean/MCore/FinalFail/RecoveredClosedFragments.lean",
+   "line": 14,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": ""
+  }
+ ],
+ "closed": 3,
+ "files_sha256": {
+  "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/YangMills/A1/B60ConcretePhysicalAdapter.lean": "df1ebcd42c8f7fa73ddd38f126311dbdf69e33bbfaf4e60143296d63c94dc8eb",
+  "imports/final-proof/YANG_MILLS/645b2999/lean/MCore/YangMills/A1/FrontierDecompositionV2.lean": "e008278f8cdaf8e7747eca72032c9c399ba4a83d668e1efd1394e716ba9040d1",
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/FinalFail/GlobalClosedScope.lean": "2d877102b693ef6fe6b00061e26a2ff5247ed7e5b50aaaacc801c60e96063f5b"
+ },
+ "published_at": "2026-11-05T17:43:15Z",
+ "certificate_sha256": "c3aebafdc358374bc7b867c2a694d27a1122a9529e28e30f12f3613a7b9bf61d"
+}

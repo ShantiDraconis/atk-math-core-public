@@ -1,0 +1,251 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "attack/proposed-hypothesis-20260929",
+ "branch_state": "parada",
+ "head_commit": "27876381ea09f7e2547189bb0309636b88568a04",
+ "head_commit_date": "2026-09-29T12:20:22+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "27876381ea09f7e2547189bb0309636b88568a04",
+   "date": "2026-09-29T12:20:22+02:00",
+   "subject": "final-fail: reword ProposedHypothesis docstring so the hygiene gate does not match prose"
+  },
+  {
+   "commit": "6b4dbc3a5ce092ab2bafb8082790c261ce9894b1",
+   "date": "2026-09-29T11:57:24+02:00",
+   "subject": "final-fail: ProposedHypothesis bundles the seven accepted hypotheses and enables all inhabitants"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.FinalFail.Proposed.beal_accepted_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 213,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (BealAcceptedInhabitant BealEquationData (fun _ => True) (fun d => 1 < Nat.gcd d.a (Nat.gcd d.b d.c)))"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.beal_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 163,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty BealUniversalGCDTarget"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.beal_interpretation_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 181,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty BealInterpretation"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.bsd_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 172,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (BSDTarget M)"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.bsd_interpretation_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 198,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (BSDInterpretation M.Curve M.Realizable M.AnalyticOrder M.MordellWeilRank M.RefinedFormula)"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.enableAll",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 245,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": AllSevenEnabled M"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.hodge_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 170,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (HodgeTarget M)"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.hodge_interpretation_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 193,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (HodgeInterpretation M.Variety M.Class M.Cycle M.SmoothProjective @M.RationalHodge @M.Realizes)"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.ns_accepted_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 223,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (NavierStokesAcceptedInhabitant M.Flow M.Stabilizer M.ActualNS M.Stabilizes)"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.ns_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 168,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (NSTarget M)"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.ns_interpretation_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 188,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (NavierStokesInterpretation M.Flow M.Stabilizer M.ActualNS M.Stabilizes)"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.proposed_enables_all",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 257,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(M : LaneModels.{u}) : ProposedHypothesis M → AllSevenEnabled M"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.proposed_is_fail_closed",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 272,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ∀ r ∈ activationLedger, r.origin = .acceptedHypothesis"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.proposed_provedCount_eq_zero",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 268,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": MCore.FinalProof.provedCount = 0"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.proposed_unconditionalCount_eq_zero",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 262,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": unconditionalCount = 0"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.pvsnp_accepted_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 218,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (PvsNPAcceptedInhabitant M.Language (fun L => L = M.SAT ∧ M.InNP L ∧ ¬ M.InP L))"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.pvsnp_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 166,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (PvsNPTarget M)"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.pvsnp_interpretation_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 184,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (PvsNPInterpretation M.Language M.InP M.InNP M.SAT)"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.riemann_accepted_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 208,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty RiemannAcceptedInhabitant"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.riemann_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 158,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty RiemannOffCriticalZero"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.riemann_interpretation_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 176,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty RiemannInterpretation"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.ym_accepted_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 228,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (YangMillsAcceptedInhabitant M.Theory M.Genuine4D M.OSReconstructs M.PositiveMassGap)"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.ym_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 174,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (YMTarget M)"
+  },
+  {
+   "name": "MCore.FinalFail.Proposed.ym_interpretation_enabled",
+   "file": "lean/MCore/FinalFail/ProposedHypothesis.lean",
+   "line": 203,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty (YangMillsInterpretation M.Theory M.Genuine4D M.OSReconstructs M.PositiveMassGap)"
+  }
+ ],
+ "closed": 24,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/FinalFail/AcceptedInhabitants.lean": "59cfcb6c889d6babcca9036a34d2f01eca7e9b8a2af11f2da034b4e102414b3c",
+  "lean/MCore/FinalFail/AcceptedSemanticActivation.lean": "6c8d3bff0bad718c736ecfbde2bc92937dfddc95de68ce0c17d5b539420de653",
+  "lean/MCore/FinalFail/BSDConcreteDomain.lean": "b7b1e5764451649e092acaa42c2a992386940c7a18eb80cc7e94a7d545f5345c",
+  "lean/MCore/FinalFail/BoundaryAtoms.lean": "54deb42c3e0d344359ecab23e499cb0e60114146b007003b540c2d564a36024f",
+  "lean/MCore/FinalFail/DirectProducerCuts.lean": "f116affeaad25a1d5ab154b7afbaca74e73e5d72e7d35dd2cbd39170d365a645",
+  "lean/MCore/FinalFail/EnabledInhabitants.lean": "30bed554a6da771e646d3f6d7e1695cb3b9ec49e890a6cd6e8ba50ee26313bf1",
+  "lean/MCore/FinalFail/ExactGapLedger.lean": "e3f1fce7f53c274cdde3b7c12f0c7ae0b25f949307234cc7eae8f84fc0255605",
+  "lean/MCore/FinalFail/ProposedHypothesis.lean": "76f5fbff4d1ad683eb6ed6fa7cd9e88bd6b20c3b314e4c0372bcc296a8d19e89",
+  "lean/MCore/FinalFail/Semantic/BSD.lean": "be66d8c211db7a78d648b1d4be0a27f54fdd969e305640e8a401abb80c507668",
+  "lean/MCore/FinalFail/Semantic/Beal.lean": "7461d91a196c5d7a61ba7f3fabce0947d529902426ec1e96cab2994b97f787a0",
+  "lean/MCore/FinalFail/Semantic/Hodge.lean": "c82ec2d0082ec5c801c4f2937246e831021f00ef8dec5cc7059628a9df7b4d03",
+  "lean/MCore/FinalFail/Semantic/NavierStokes.lean": "d5cb2e2d3bf4e3be8816d020852bed1bca3920e9365bc37246b84421824f2905",
+  "lean/MCore/FinalFail/Semantic/PvsNP.lean": "d9e1c3abda3fa56fc38b15a4d79b925e274bdc8bd4a5a0db10156208bfbe656b",
+  "lean/MCore/FinalFail/Semantic/Riemann.lean": "3e27a82494ef344bf6017275345cd6d8af1e2f2ab3c34f7d684d5c6dfc26370e",
+  "lean/MCore/FinalFail/Semantic/YangMills.lean": "46576c47f06fef4d4fe52a6812097bf72a3127d18af23effc2107da7615e301c",
+  "lean/MCore/FinalFail/SemanticParallel.lean": "3fcf6ca711dd35f2f46235df26768b752042787b5f7bed7d92b3293f39a283bd",
+  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d",
+  "lean/MCore/FinalProofRegistry.lean": "290e3b6560a8d282e2b32647e8435a64af57004fe7373a1af442b11fec60e750"
+ },
+ "published_at": "2026-11-05T17:43:14Z",
+ "certificate_sha256": "3c536ce3aee96c3ab29a40b287e5c86c2db3d92b784164e517f71356aede9f2a"
+}

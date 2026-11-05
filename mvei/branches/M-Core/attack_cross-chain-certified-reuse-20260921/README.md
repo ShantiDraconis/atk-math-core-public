@@ -5,7 +5,7 @@ Lean sources from the branch `attack/cross-chain-certified-reuse-20260921` of th
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 6 — closed 6, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 7 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `43c46b0583afc30090cfc48c6d9394a294b4204ec54a04585276f0a74eb6a8c0`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/attack_cross-chain-certified-reuse-20260921/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `a38c361db12e2df8aacc9dd669f560012b899b2b66fc8fd913fef28be6f6787a`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/attack_cross-chain-certified-reuse-20260921/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

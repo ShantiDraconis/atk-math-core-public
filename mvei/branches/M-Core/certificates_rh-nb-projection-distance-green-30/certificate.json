@@ -183,7 +183,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -207,10 +207,8 @@
    "name": "MCore.RH.LCRH.FiniteGramData.matrix_symm",
    "file": "MCore/RH/LCRH/GramMatrix.lean",
    "line": 32,
-   "state": "erro",
-   "axioms_beyond_standard": [
-    "sorryAx"
-   ],
+   "state": "fechado",
+   "axioms_beyond_standard": [],
    "statement": "(G : FiniteGramData E n) (i j : Fin n) : G.matrix i j = G.matrix j i"
   },
   {
@@ -430,7 +428,7 @@
    "statement": "∀ {P Positivity RH : Prop}, (P → Positivity) → (Positivity → RH) → P → RH"
   }
  ],
- "closed": 28,
+ "closed": 29,
  "files_sha256": {
   "MCore/RH/BridgeInterfaces.lean": "6b331e249f6f91fe2271dc01b2c46e846ec794fe3c19e43d9bd0f73054a2b8e8",
   "MCore/RH/Certificate.lean": "33d934e79f98d07bcd49118ea249e9e74cf78c3dd01976c8e0513218c3e23c1e",
@@ -448,6 +446,6 @@
   "lakefile.lean": "f53cac7f442d9cb312870f171649382381e313931ad59cfc8d0799f52df430ac",
   "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
  },
- "published_at": "2026-11-03T11:28:17Z",
- "certificate_sha256": "70fa4d393aa44feca60c31e63c6160f87905079bc849856bedd3d5ff9bb6d2d5"
+ "published_at": "2026-11-05T17:43:14Z",
+ "certificate_sha256": "05a2bb04b70376452de265d2467bf623cdd44c834c549e9d38772663ea957829"
 }

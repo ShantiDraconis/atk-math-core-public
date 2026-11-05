@@ -5,7 +5,7 @@ Lean sources from the branch `atk/mathlib-provenance-20261014` of the private re
 * Branch state: em andamento (not in the default branch).
 * Theorems only on branches, in this branch: 23 — closed 4, conditional 0, open 0, proof error 1, not reached 18, no result 0.
 * History: 11 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `aed6762f53390893e693f82f96136d9b17558adc11a9611f52c8de4a66438370`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_mathlib-provenance-20261014/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `0d5ddf495cbaa73b2f35e8d05dba527569537fa4317cc128c4d8cbe3a765ea36`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_mathlib-provenance-20261014/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

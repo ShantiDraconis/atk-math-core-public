@@ -1268,7 +1268,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -4721,6 +4721,6 @@
   "lean/MCore/MaterialMath/TriState/Tripotent.lean": "0c538d7add40b799319eca53081cac4120de8395f94b343195187bfc158eb06e",
   "lean/MCore/MaterialMath/UnconditionalRoot.lean": "b205535cb336edc34a9ce43c9b84df607223e29fb5539fc6b0f184825692659e"
  },
- "published_at": "2026-11-03T11:28:09Z",
- "certificate_sha256": "d6b3c6bab2ec3c502ff298edb08732812fde6bfd6b822784879e67351175c9cd"
+ "published_at": "2026-11-05T17:43:06Z",
+ "certificate_sha256": "2b49089ee2d6a59ee02e842bcc8b8f898259e57432a533a097c67a547a346b72"
 }

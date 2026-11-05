@@ -5,7 +5,7 @@ Lean sources from the branch `atk/proof-engine-rncb` of the private repository `
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 8 — closed 8, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 29 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `caf3f51443c0abb02da854df02e9a29c1640abf9718895faad418867e39e6674`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_proof-engine-rncb/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `8872bc5f95e7076211bc21e8f30d0637c283bdb3b55871f456e3ac3df88968b9`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_proof-engine-rncb/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

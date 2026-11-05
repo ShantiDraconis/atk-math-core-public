@@ -5,7 +5,7 @@ Lean sources from the branch `atk/bsd-mathlib-v434-probe` of the private reposit
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 3 — closed 3, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 4 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `da93149728f68ca7c0a9e3705b726b47d1c0cf9abc4ecf3da5550a4f9ba15485`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_bsd-mathlib-v434-probe/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `f071430bcea3c1dbe8fcd28654b7aa45bfc831392e69c4666e88da4c609eaa57`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_bsd-mathlib-v434-probe/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

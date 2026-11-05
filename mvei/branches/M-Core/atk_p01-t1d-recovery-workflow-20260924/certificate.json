@@ -1,0 +1,314 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/p01-t1d-recovery-workflow-20260924",
+ "branch_state": "parada",
+ "head_commit": "514a9500203950d2c4b46ab77aa5eab3ee461d4c",
+ "head_commit_date": "2026-09-24T19:30:03+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "514a9500203950d2c4b46ab77aa5eab3ee461d4c",
+   "date": "2026-09-24T19:30:03+01:00",
+   "subject": "ci: use recovered cf885872 P01 base before active overlays"
+  },
+  {
+   "commit": "fdbe88545c484882a194b6e9e13d8c960794bf2a",
+   "date": "2026-09-24T19:29:49+01:00",
+   "subject": "recovery: import P01WitnessPreservingPrep.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "74c8a4bf69f5435b95af4a718c3c4ae57c593139",
+   "date": "2026-09-24T19:29:46+01:00",
+   "subject": "recovery: import P01VerifierGateMachine.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "0dba71c57d0c0597c929d336325492fb5251fdaf",
+   "date": "2026-09-24T19:29:44+01:00",
+   "subject": "recovery: import P01VerifierComposition.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "c1f5c30d0b2660b96e9cfd8d8f7b95a54e3a4448",
+   "date": "2026-09-24T19:29:42+01:00",
+   "subject": "recovery: import P01VerifiedRelation.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "0f7d5fe3735feb72dc3b5fd535566399d4ad3438",
+   "date": "2026-09-24T19:29:39+01:00",
+   "subject": "recovery: import P01RecursiveFiniteControlFrontier.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "92d25e6639f89cac792227acda1637169295cdf7",
+   "date": "2026-09-24T19:29:37+01:00",
+   "subject": "recovery: import P01ParserWitnessComposition.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "2a4c0f6c142f78f6b24e3dc8fcc912f7ff94a347",
+   "date": "2026-09-24T19:29:34+01:00",
+   "subject": "recovery: import P01IntegratedNTMRequirements.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "6681802b94b4f38c6d418f8dac7bfe9214e4728c",
+   "date": "2026-09-24T19:29:28+01:00",
+   "subject": "recovery: import P01IntegratedNTMFrontier.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "29a8c5c781439acd8c951b590c4944e3dc593b03",
+   "date": "2026-09-24T19:29:25+01:00",
+   "subject": "recovery: import P01GlobalParserSimulation.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "dd3cf9ae6669c99cc5e6aa513b6a507b2f65817e",
+   "date": "2026-09-24T19:29:23+01:00",
+   "subject": "recovery: import P01GlobalParserRuntime.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "9d8a689a428cea87e0d1026dd3b2b0b305bf0a32",
+   "date": "2026-09-24T19:29:20+01:00",
+   "subject": "recovery: import P01GlobalParserBound.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "59ea9edd4c4cf8724c2f644de83c677bfe7d228f",
+   "date": "2026-09-24T19:29:17+01:00",
+   "subject": "recovery: import P01FullVerifierTraversal.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "f27f08a7c8f6240676c87a3f8db175fa9f687406",
+   "date": "2026-09-24T19:29:14+01:00",
+   "subject": "recovery: import P01FullVerifierStackSemantics.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "a61df43931ec1738b71e842057d07193d50d351e",
+   "date": "2026-09-24T19:29:10+01:00",
+   "subject": "recovery: import P01FullVerifierShuttleReturn.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "11f7134a3d8db5c7ab22f3636a0e0d9b0e10daa1",
+   "date": "2026-09-24T19:29:08+01:00",
+   "subject": "recovery: import P01FullVerifierReverseDecoderGap.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "a993daf08a4391c854f0a6ba6db0996d508936c7",
+   "date": "2026-09-24T19:28:55+01:00",
+   "subject": "recovery: import P01FullVerifierReadWitnessLocal.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "3cc41317546dc6f82ee5fab97aa9f866fdc36889",
+   "date": "2026-09-24T19:28:52+01:00",
+   "subject": "recovery: import P01FullVerifierPhysicalShuttles.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "7274775e7562438ea341509277ef4bdde8aa3166",
+   "date": "2026-09-24T19:28:49+01:00",
+   "subject": "recovery: import P01FullVerifierPhysicalMoves.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "52ae2f442fea05e05359d3b47d1586a1fc8aaa07",
+   "date": "2026-09-24T19:28:47+01:00",
+   "subject": "recovery: import P01FullVerifierPhysicalControl.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "472ab9587242ae6c80afc627a229c1579e7edd57",
+   "date": "2026-09-24T19:28:44+01:00",
+   "subject": "recovery: import P01FullVerifierPhysical.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "2208851a485db72ae3ba4ee8ecbcf295fa6c5296",
+   "date": "2026-09-24T19:28:41+01:00",
+   "subject": "recovery: import P01FullVerifierMachine.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "1072169ee25e21f11c6a462b8e775d10652290b0",
+   "date": "2026-09-24T19:28:38+01:00",
+   "subject": "recovery: import P01FullVerifierEvalLocal.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "04547269b0a9682ac2486dc4c0f35a0b3b40c64d",
+   "date": "2026-09-24T19:28:35+01:00",
+   "subject": "recovery: import P01FinalCertificate.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "b70101150d209ab43102df96134ce939969ab9bf",
+   "date": "2026-09-24T19:28:33+01:00",
+   "subject": "recovery: import P01ConstructionClose.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "f174e3596a92603bea38c4d9bec1e52343efd6b4",
+   "date": "2026-09-24T19:28:30+01:00",
+   "subject": "recovery: import P01ComponentFailProof.lean from m-core-p-vs-np cf885872"
+  },
+  {
+   "commit": "caf622e5b7da0da9d06620f802f0d77a9321d43d",
+   "date": "2026-09-24T19:21:34+01:00",
+   "subject": "ci: repair P01 T1D recovery workflow execution"
+  },
+  {
+   "commit": "17038000dbf33be72b18c3886624c51d1333e74d",
+   "date": "2026-09-24T18:59:22+01:00",
+   "subject": "ci: split P01 T1D recovery into fail-closed gates"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.Real.P01ComponentFailProof.all_legacy_components_are_trivially_inhabited",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01ComponentFailProof.lean",
+   "line": 64,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty ParserMachineCertificate ∧ Nonempty WitnessGuessMachineCertificate ∧ Nonempty VerifierMachineCertificate"
+  },
+  {
+   "name": "MCore.Real.P01ComponentFailProof.parser_component_is_trivially_inhabited",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01ComponentFailProof.lean",
+   "line": 40,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty ParserMachineCertificate"
+  },
+  {
+   "name": "MCore.Real.P01ComponentFailProof.verifier_component_is_trivially_inhabited",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01ComponentFailProof.lean",
+   "line": 56,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty VerifierMachineCertificate"
+  },
+  {
+   "name": "MCore.Real.P01ComponentFailProof.witness_guess_component_is_trivially_inhabited",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01ComponentFailProof.lean",
+   "line": 48,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": Nonempty WitnessGuessMachineCertificate"
+  },
+  {
+   "name": "MCore.Real.P01ComponentFailProof.zero_bound_poly",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01ComponentFailProof.lean",
+   "line": 34,
+   "state": "nao_checado",
+   "axioms_beyond_standard": [],
+   "statement": ": PolynomialTimeBound (fun _ => 0)"
+  },
+  {
+   "name": "MCore.Real.P01FullVerifierReadWitnessLocal.physicalWitnessRead_correct",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01FullVerifierReadWitnessLocal.lean",
+   "line": 15,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(witness source : BitString) (i : Nat) (hi : i < witness.length) : physicalWitnessRead witness source i = some witness[i]"
+  },
+  {
+   "name": "MCore.Real.P01FullVerifierReverseDecoderGap.reverse_decoder_length_from_correct",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01FullVerifierReverseDecoderGap.lean",
+   "line": 25,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": "(R : ReverseDecoderCertificate) (phi : Circuit) : (R.scanReverse (encodeCircuit phi)).length <= (encodeCircuit phi).length"
+  },
+  {
+   "name": "MCore.Real.P01FullVerifierShuttleReturn.execMoves_append",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01FullVerifierShuttleReturn.lean",
+   "line": 10,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{Symbol : Type} (blank : Symbol) (xs ys : List Direction) (t : Tape Symbol) : execMoves blank (xs ++ ys) t = execMoves blank ys (execMoves blank xs t)"
+  },
+  {
+   "name": "MCore.Real.P01FullVerifierShuttleReturn.witness_roundTrip_exec",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01FullVerifierShuttleReturn.lean",
+   "line": 19,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(witness source : CanonicalFinalProof.BitString) (i : Nat) : execMoves (none : Option Bool) (moveToWitnessSeq source i ++ moveToStackSeq source i) (sourceEndTape witness source) = execMoves (none : Option Bool) (moveToStackSeq source i) (execMoves (none : Option Bool) (moveToWitnessSeq source i) (sourceEndTape witness source))"
+  },
+  {
+   "name": "MCore.Real.P01IntegratedNTMFrontier.construction_only_closes",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01IntegratedNTMFrontier.lean",
+   "line": 46,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(C : IntegratedP01Construction) : SATInNPGap circuitBitEncoding"
+  },
+  {
+   "name": "MCore.Real.P01RecursiveFiniteControlFrontier.frame_machine_has_canonical_machine_type",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01RecursiveFiniteControlFrontier.lean",
+   "line": 43,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ∃ stateCount : Nat, Nonempty (TM (Fin (stateCount + 1)) (Option Bool))"
+  },
+  {
+   "name": "MCore.Real.P01RecursiveFiniteControlFrontier.frame_protocol_source_closed",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01RecursiveFiniteControlFrontier.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": BlankNormalizedFrameTapeOperationalGap"
+  },
+  {
+   "name": "MCore.Real.P01RecursiveFiniteControlFrontier.p01_frontier_implies_target",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01RecursiveFiniteControlFrontier.lean",
+   "line": 84,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(h : P01OperationalFrontier) : CanonicalSATMachineClosure"
+  },
+  {
+   "name": "MCore.Real.P01RecursiveFiniteControlFrontier.p01_promotion_requires_canonical_closure",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01RecursiveFiniteControlFrontier.lean",
+   "line": 70,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(h : P01Target) : CanonicalSATMachineClosure"
+  },
+  {
+   "name": "MCore.Real.P01RecursiveFiniteControlFrontier.recursive_parser_implies_legacy_parser",
+   "file": "imports/pnp/cf885872/lean/MCore/Real/P01RecursiveFiniteControlFrontier.lean",
+   "line": 57,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": RecursiveFiniteControlParserClosed → RecursiveParserOperationalGap"
+  }
+ ],
+ "closed": 13,
+ "files_sha256": {
+  "imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean": "e8578eaaa92f9c1f976710ad674d561b2031bb8741ed44b7ed62fc26783d90cb",
+  "imports/pnp/85d1031d/lean/MCore/Real/P01VerifierComposition.lean": "7d3383402858e8dfde062f1b2f036a92fd95d96b585473ede6ef550c2a7fcb66",
+  "imports/pnp/cf885872/lean/MCore/Real/P01ComponentFailProof.lean": "803a35048ec3d02e6821d7d535735d4fb299069405a22d8779bdda60e861726f",
+  "imports/pnp/cf885872/lean/MCore/Real/P01FinalCertificate.lean": "a2fb1783141c741fc51c2b9cc73bf6f7375c8557f30d7fb17c64c00819d0ed88",
+  "imports/pnp/cf885872/lean/MCore/Real/P01FullVerifierMachine.lean": "3131a5dcef61107689708e74385d3877b8fa8ecadad6546f8037682093e968bb",
+  "imports/pnp/cf885872/lean/MCore/Real/P01FullVerifierPhysicalControl.lean": "6112645215aa69f2cb0ce7d489d158b8f677d5cc6c9640b5af43305a831f709e",
+  "imports/pnp/cf885872/lean/MCore/Real/P01FullVerifierPhysicalMoves.lean": "2257354a0680e2bdc3251311ada1078384cc645980f2ee55a95b3e4bb58fc8ba",
+  "imports/pnp/cf885872/lean/MCore/Real/P01FullVerifierPhysicalShuttles.lean": "d08436f99ef94b82ee6126ba6e6863756c7419447fd98c27b6008bcf036f7e1e",
+  "imports/pnp/cf885872/lean/MCore/Real/P01FullVerifierReadWitnessLocal.lean": "a1c26884ade2f8bc16c38558f51ec88be82c2355581a034f58053be8974f6c5a",
+  "imports/pnp/cf885872/lean/MCore/Real/P01FullVerifierShuttleReturn.lean": "0fa43be0a673bb8ba96010a275405f8fdf798635f5db1c089d21d8a0d59dea24",
+  "imports/pnp/cf885872/lean/MCore/Real/P01FullVerifierStackSemantics.lean": "6fb31e646d52e215a4165ace00f8bca0d1809265510459e14ebd3c619f0b4de3",
+  "imports/pnp/cf885872/lean/MCore/Real/P01FullVerifierTraversal.lean": "b792b4dffa2c7e346fcd36e635c6d867a8a0898cfc5ee543c63ecc09666cdd1d",
+  "imports/pnp/cf885872/lean/MCore/Real/P01GlobalParserBound.lean": "669305bac06f0fb9f8c545dc3e6835475cb6b06c09dc2020dfe8e9279fadee24",
+  "imports/pnp/cf885872/lean/MCore/Real/P01GlobalParserRuntime.lean": "06231c733b9e00df9f4dacb3a1c0a25976f5926d16a1e0455691155d6c6d2067",
+  "imports/pnp/cf885872/lean/MCore/Real/P01GlobalParserSimulation.lean": "b7dc0476fb4341909a3a32fffe248855f8778bbd64bd1856be42ada78b19a0e5",
+  "imports/pnp/cf885872/lean/MCore/Real/P01IntegratedNTMFrontier.lean": "aa6486e94fc8920dcf642a645c0662611b34a4c35cf2ac0fa060d4514e0d7904",
+  "imports/pnp/cf885872/lean/MCore/Real/P01ParserWitnessComposition.lean": "d0291d5a595a07a39fa660a2ac0344ffa98604f7a2bc873890e60ccdfb259dec",
+  "imports/pnp/cf885872/lean/MCore/Real/P01RecursiveFiniteControlFrontier.lean": "6e8b0b16b921a1524fd9c065de60b5fbaa7855c9161ee6e7e6a94a256236fc5a",
+  "imports/pnp/cf885872/lean/MCore/Real/P01VerifiedRelation.lean": "0cf6824ff9f46ee875a54604e18f0352a80ddd4fc084c5a23266fe3cf00d0469",
+  "imports/pnp/cf885872/lean/MCore/Real/P01VerifierGateMachine.lean": "7eb5ff0abdae08836479f197710da27d6faaf6cf445646bd1e468244dfc40508",
+  "imports/pnp/cf885872/lean/MCore/Real/P01WitnessPreservingPrep.lean": "8ee1709191fe5aee9ef8b9fa0c1a8ab030bb90807f0c572995c090ab660d167b",
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+ },
+ "published_at": "2026-11-05T17:43:15Z",
+ "certificate_sha256": "d6de1b4548de0341112ff424ee19a084781f0004463595fa1752da737670ca1b"
+}

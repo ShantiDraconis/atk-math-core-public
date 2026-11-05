@@ -1,0 +1,84 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/two-sided-boundary-meet-20260929",
+ "branch_state": "parada",
+ "head_commit": "89c3819be9f2e5928ba107c2c77ca559cf90f750",
+ "head_commit_date": "2026-09-29T11:29:42+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "89c3819be9f2e5928ba107c2c77ca559cf90f750",
+   "date": "2026-09-29T11:29:42+01:00",
+   "subject": "ci: certify two-sided boundary meet"
+  },
+  {
+   "commit": "37739dd2409cdf571190a1eae35d1facf2e2846e",
+   "date": "2026-09-29T11:29:25+01:00",
+   "subject": "atk: formalize two-sided boundary meet inhabitant"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.FinalFail.TwoSidedBoundary.enableMeet",
+   "file": "lean/MCore/FinalFail/TwoSidedBoundary.lean",
+   "line": 44,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(B : TwoSidedBoundary) (positive : B.Positive) (negative : B.Negative) (h : B.positiveMap positive = B.negativeMap negative) : AcceptedDualInhabitant B"
+  },
+  {
+   "name": "MCore.FinalFail.TwoSidedBoundary.execute_meet_agrees",
+   "file": "lean/MCore/FinalFail/TwoSidedBoundary.lean",
+   "line": 79,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{B : TwoSidedBoundary} (m : Meet B) : executeToFrontier B (Sum.inl m.positive) = executeToFrontier B (Sum.inr m.negative)"
+  },
+  {
+   "name": "MCore.FinalFail.TwoSidedBoundary.meet_exact_equality",
+   "file": "lean/MCore/FinalFail/TwoSidedBoundary.lean",
+   "line": 53,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{B : TwoSidedBoundary} (m : Meet B) : B.positiveMap m.positive = B.negativeMap m.negative"
+  },
+  {
+   "name": "MCore.FinalFail.TwoSidedBoundary.phaseCycle_length",
+   "file": "lean/MCore/FinalFail/TwoSidedBoundary.lean",
+   "line": 102,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": phaseCycle.length = 5"
+  },
+  {
+   "name": "MCore.FinalFail.TwoSidedBoundary.unconditionalDualCount_eq_zero",
+   "file": "lean/MCore/FinalFail/TwoSidedBoundary.lean",
+   "line": 111,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": unconditionalDualCount = 0"
+  }
+ ],
+ "closed": 5,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/FinalFail/ExactGapLedger.lean": "e3f1fce7f53c274cdde3b7c12f0c7ae0b25f949307234cc7eae8f84fc0255605",
+  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d",
+  "lean/MCore/FinalFail/TwoSidedBoundary.lean": "a6233a555e2c2c7915f130ee786154adc49b50c43922f5eea90fe4ba434dbe1a"
+ },
+ "published_at": "2026-11-05T17:43:15Z",
+ "certificate_sha256": "47e38f9c8c6c26a519e0d692a3e9070fdcbbdb42659f46a7cbc6b61517cb548f"
+}

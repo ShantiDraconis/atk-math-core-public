@@ -1,0 +1,159 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "atk/closed-math-habitant-probe-20261007",
+ "branch_state": "parada",
+ "head_commit": "ae05cad66ce398f9a2d721b2511982a1b7c3d191",
+ "head_commit_date": "2026-10-07T21:20:42+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "ae05cad66ce398f9a2d721b2511982a1b7c3d191",
+   "date": "2026-10-07T21:20:42+02:00",
+   "subject": "ci: kernel-check MATERIAL habitants and fail-closed probe"
+  },
+  {
+   "commit": "cdd167666351489a2c6ee9ce4a9df80ad3a217ad",
+   "date": "2026-10-07T21:20:22+02:00",
+   "subject": "formal: classify seven terminal HABITANTS as MATERIAL without proof promotion"
+  },
+  {
+   "commit": "52d0eb80e2778dd0e08b1e424093a1621d2ada0c",
+   "date": "2026-10-07T21:12:14+02:00",
+   "subject": "formal: map seven HABITANTS to audited endpoint bridges"
+  },
+  {
+   "commit": "9a4d09358a2acbf1b18e9bb2fb1b39c06dc1c653",
+   "date": "2026-10-07T21:07:02+02:00",
+   "subject": "formal: classify seven terminal min-cuts as HABITANTS"
+  },
+  {
+   "commit": "8168dcd28f36a5f9f1d9ce3b1f2b1ac1b11a2be0",
+   "date": "2026-10-07T21:04:50+02:00",
+   "subject": "ci: run isolated CLOSED_MATH habitant kernel probe"
+  },
+  {
+   "commit": "3d3e8b899c7e6b85a5dd2ea4f66bd4e9f9fca32d",
+   "date": "2026-10-07T21:03:37+02:00",
+   "subject": "audit: add fail-closed CLOSED_MATH habitant probe"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.ClosedMathHabitantProbe.forced_label_is_not_material_witness",
+   "file": "lean/MCore/ClosedMathHabitantProbe.lean",
+   "line": 40,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": ": forcedStage = .closedMath ∧ FinalFail.producedDirectCount = 0"
+  },
+  {
+   "name": "MCore.ClosedMathHabitantProbe.forced_stage_is_closed",
+   "file": "lean/MCore/ClosedMathHabitantProbe.lean",
+   "line": 23,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": forcedStage = .closedMath"
+  },
+  {
+   "name": "MCore.ClosedMathHabitantProbe.label_does_not_close_open_direct_cuts",
+   "file": "lean/MCore/ClosedMathHabitantProbe.lean",
+   "line": 31,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": ": FinalFail.openDirectCount = 7"
+  },
+  {
+   "name": "MCore.ClosedMathHabitantProbe.label_does_not_produce_direct_inhabitants",
+   "file": "lean/MCore/ClosedMathHabitantProbe.lean",
+   "line": 26,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
+   "statement": ": FinalFail.producedDirectCount = 0"
+  },
+  {
+   "name": "MCore.Habitants.all_terminal_objects_are_material_classified",
+   "file": "lean/MCore/Habitants.lean",
+   "line": 102,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ∀ h ∈ globalHabitants, h.stage = .material"
+  },
+  {
+   "name": "MCore.Habitants.endpointBridgeCount_eq_seven",
+   "file": "lean/MCore/Habitants.lean",
+   "line": 156,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": endpointBridgeCount = 7"
+  },
+  {
+   "name": "MCore.Habitants.globalHabitants_atomCount",
+   "file": "lean/MCore/Habitants.lean",
+   "line": 101,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": atomCount = 8"
+  },
+  {
+   "name": "MCore.Habitants.globalHabitants_count",
+   "file": "lean/MCore/Habitants.lean",
+   "line": 99,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": globalHabitants.length = 7"
+  },
+  {
+   "name": "MCore.Habitants.materialInhabitedCount_eq_zero",
+   "file": "lean/MCore/Habitants.lean",
+   "line": 158,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": materialInhabitedCount = 0"
+  }
+ ],
+ "closed": 6,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/ClosedMathHabitantProbe.lean": "4130c56e416459d3d9387e358ba6b9dd2bf92249b1aeba720910fec300a8ab0f",
+  "lean/MCore/FinalFail/AcceptedSemanticActivation.lean": "6c8d3bff0bad718c736ecfbde2bc92937dfddc95de68ce0c17d5b539420de653",
+  "lean/MCore/FinalFail/BSDConcreteDomain.lean": "b7b1e5764451649e092acaa42c2a992386940c7a18eb80cc7e94a7d545f5345c",
+  "lean/MCore/FinalFail/BoundaryAtoms.lean": "54deb42c3e0d344359ecab23e499cb0e60114146b007003b540c2d564a36024f",
+  "lean/MCore/FinalFail/DirectProducerCuts.lean": "7441cfa7bed39df4bf1a4c1f2d6fd44b7e815cf84c72177fd49ec63e19c7cbee",
+  "lean/MCore/FinalFail/RPAConfirmation.lean": "c4297991a6b6069c4d9b18406971c4d424dce081bae1e4db8508762fc56c054b",
+  "lean/MCore/FinalFail/RPALattice.lean": "20cd1e5b6ad242ce46f3592265aa0fd69bee55c47febbd45d99c394bce7799c6",
+  "lean/MCore/FinalFail/RPALatticeCube3.lean": "2d437dc2806e3c645f4be9268aec4a9186fd03523a2aa54ed31a308da9217562",
+  "lean/MCore/FinalFail/Semantic/BSD.lean": "be66d8c211db7a78d648b1d4be0a27f54fdd969e305640e8a401abb80c507668",
+  "lean/MCore/FinalFail/Semantic/Beal.lean": "7461d91a196c5d7a61ba7f3fabce0947d529902426ec1e96cab2994b97f787a0",
+  "lean/MCore/FinalFail/Semantic/Hodge.lean": "c82ec2d0082ec5c801c4f2937246e831021f00ef8dec5cc7059628a9df7b4d03",
+  "lean/MCore/FinalFail/Semantic/NavierStokes.lean": "d5cb2e2d3bf4e3be8816d020852bed1bca3920e9365bc37246b84421824f2905",
+  "lean/MCore/FinalFail/Semantic/PvsNP.lean": "d9e1c3abda3fa56fc38b15a4d79b925e274bdc8bd4a5a0db10156208bfbe656b",
+  "lean/MCore/FinalFail/Semantic/Riemann.lean": "3e27a82494ef344bf6017275345cd6d8af1e2f2ab3c34f7d684d5c6dfc26370e",
+  "lean/MCore/FinalFail/Semantic/YangMills.lean": "46576c47f06fef4d4fe52a6812097bf72a3127d18af23effc2107da7615e301c",
+  "lean/MCore/FinalFail/SemanticParallel.lean": "3fcf6ca711dd35f2f46235df26768b752042787b5f7bed7d92b3293f39a283bd",
+  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d",
+  "lean/MCore/FinalFail/UniversalTerminalClosure.lean": "fb3ff48d134a3b80d70f1923cc58e8339d3f7b2211b1c9214085ac79389f8170",
+  "lean/MCore/FinalProofRegistry.lean": "de3e92e27df2fb982e52696be13cdf93f8b6971fc557489d660f7393509d1284",
+  "lean/MCore/Habitants.lean": "3d17ef08322b88bb9bdb89dd4f3efeb00d2ef2ef12d5bf01627c643f7ea2b506"
+ },
+ "published_at": "2026-11-05T17:43:15Z",
+ "certificate_sha256": "52ac980dbaed093f9613959fd963c6c28c7cdee14d5e56f8cae8e279aa29be2e"
+}

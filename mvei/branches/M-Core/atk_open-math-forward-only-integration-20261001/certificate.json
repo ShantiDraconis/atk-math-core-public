@@ -633,7 +633,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -1618,6 +1618,6 @@
   "lean/MCore/MaterialMath/TriStateTerminalClosure.lean": "bb74c15dff74cf6b2b515c57f027beec4eac291c5858ebfa38dbdcbde26c896c",
   "lean/MCore/MaterialMath/TwoSidedMaterialResolution.lean": "75a23758b105ca6d072f59d193a1f0d2c52ee130cfee4f4c84e9a94a1cbfeab5"
  },
- "published_at": "2026-11-03T11:28:09Z",
- "certificate_sha256": "f90bf3881005f4a83863aaf12526afeebb21319d14b0c5b87fb16407322d3508"
+ "published_at": "2026-11-05T17:43:07Z",
+ "certificate_sha256": "6e492d4c522e173d95709a2343362cc22a8f00c491d48fd24f17cef632396d1c"
 }

@@ -5,7 +5,7 @@ Lean sources from the branch `atk/open-math-forward-only-integration-20261001` o
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 114 — closed 98, conditional 0, open 10, proof error 3, not reached 3, no result 0.
 * History: 125 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `f90bf3881005f4a83863aaf12526afeebb21319d14b0c5b87fb16407322d3508`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_open-math-forward-only-integration-20261001/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `6e492d4c522e173d95709a2343362cc22a8f00c491d48fd24f17cef632396d1c`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/atk_open-math-forward-only-integration-20261001/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

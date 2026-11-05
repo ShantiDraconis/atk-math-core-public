@@ -1,0 +1,96 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "cert/final-fail-projective-brain-v1-bf17e3a4",
+ "branch_state": "parada",
+ "head_commit": "dd95e39d606e418bd8ee2f11f62b9b5b1248c443",
+ "head_commit_date": "2026-09-21T22:15:18+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "dd95e39d606e418bd8ee2f11f62b9b5b1248c443",
+   "date": "2026-09-21T22:15:18+01:00",
+   "subject": "cert(final-fail): pin SHA256 for projective brain v1"
+  },
+  {
+   "commit": "34d7cf5f6d59341e03084e220a20f81bb9a266a6",
+   "date": "2026-09-21T22:15:07+01:00",
+   "subject": "cert(final-fail): record GREEN projective brain v1"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.FinalFail.ClosedCenterBrain.brain_fail_is_relational_hard_fail",
+   "file": "lean/MCore/FinalFail/BrainKernel.lean",
+   "line": 57,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(B : ClosedCenterBrain) {c : B.Center} (h : B.FailAt c) : B.asHardAtom.FailAt c"
+  },
+  {
+   "name": "MCore.FinalFail.ClosedCenterBrain.global_stability_contains_both_loops",
+   "file": "lean/MCore/FinalFail/BrainKernel.lean",
+   "line": 50,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(B : ClosedCenterBrain) {c : B.Center} (h : B.GloballyStable c) : B.IdentityStable c ∧ B.GenerativelyStable c"
+  },
+  {
+   "name": "MCore.FinalFail.false_ne_true",
+   "file": "lean/MCore/FinalFail/ProjectiveBrainTests.lean",
+   "line": 10,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": false ≠ true"
+  },
+  {
+   "name": "MCore.FinalFail.singletonResolution_not_fail",
+   "file": "lean/MCore/FinalFail/ProjectiveBrainTests.lean",
+   "line": 31,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ¬ FundamentalIndeterminacy singletonResolution"
+  },
+  {
+   "name": "MCore.FinalFail.toyBrain_center_is_fail",
+   "file": "lean/MCore/FinalFail/ProjectiveBrainTests.lean",
+   "line": 47,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(c : toyBrain.Center) : toyBrain.FailAt c"
+  },
+  {
+   "name": "MCore.FinalFail.toyBrain_identity_loop_fixed",
+   "file": "lean/MCore/FinalFail/ProjectiveBrainTests.lean",
+   "line": 51,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(c : toyBrain.Center) : toyBrain.IdentityStable c"
+  }
+ ],
+ "closed": 6,
+ "files_sha256": {
+  "lakefile.lean": "f53cac7f442d9cb312870f171649382381e313931ad59cfc8d0799f52df430ac",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/FinalFail/BrainKernel.lean": "3707624df30df7520917f90911bcc18129c3c7878898d86f0aba8d5985bf7162",
+  "lean/MCore/FinalFail/ClosedCenterHard.lean": "8cf937c40341793b7a5d9b6ec6ee909e9211603cfd6861ef889a38e809022292",
+  "lean/MCore/FinalFail/FundamentalIndeterminacy.lean": "5a0940bac03613dc11086cf991d224518697a1fd2974a7216d50613042f999c8",
+  "lean/MCore/FinalFail/MinimalOpenBridge.lean": "69cb24fc52a0bfb5850c5ecb880d5200cbe5d12e5b144e2bd77e8dd9bed02727",
+  "lean/MCore/FinalFail/ProjectiveBrainTests.lean": "a870d57ec43d4a40de20c31b581ddbdc42d57febdc8a971f746d92dbc8364f3d",
+  "lean/MCore/FinalFail/RelationalHardAtom.lean": "40fd0423c86833fcf60dc6116735584dcb75239ca396af6a0373604dd23e33bf",
+  "lean/MCore/FinalFail/TriadicObstructionCalculus.lean": "83f31dfc0e5d1282b54b2e1a8fe332e45177b069a533cb51cbee6287414af5e8"
+ },
+ "published_at": "2026-11-05T17:43:15Z",
+ "certificate_sha256": "22b037366b563697b23a61aac20565fa9e5c5cb6ba8b83e188a8bbd819cabf9f"
+}

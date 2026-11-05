@@ -1,0 +1,9 @@
+f53cac7f442d9cb312870f171649382381e313931ad59cfc8d0799f52df430ac  branches/M-Core/cert_final-fail-projective-brain-v1-bf17e3a4/lakefile.lean
+55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea  branches/M-Core/cert_final-fail-projective-brain-v1-bf17e3a4/lean-toolchain
+3707624df30df7520917f90911bcc18129c3c7878898d86f0aba8d5985bf7162  branches/M-Core/cert_final-fail-projective-brain-v1-bf17e3a4/lean/MCore/FinalFail/BrainKernel.lean
+8cf937c40341793b7a5d9b6ec6ee909e9211603cfd6861ef889a38e809022292  branches/M-Core/cert_final-fail-projective-brain-v1-bf17e3a4/lean/MCore/FinalFail/ClosedCenterHard.lean
+5a0940bac03613dc11086cf991d224518697a1fd2974a7216d50613042f999c8  branches/M-Core/cert_final-fail-projective-brain-v1-bf17e3a4/lean/MCore/FinalFail/FundamentalIndeterminacy.lean
+69cb24fc52a0bfb5850c5ecb880d5200cbe5d12e5b144e2bd77e8dd9bed02727  branches/M-Core/cert_final-fail-projective-brain-v1-bf17e3a4/lean/MCore/FinalFail/MinimalOpenBridge.lean
+a870d57ec43d4a40de20c31b581ddbdc42d57febdc8a971f746d92dbc8364f3d  branches/M-Core/cert_final-fail-projective-brain-v1-bf17e3a4/lean/MCore/FinalFail/ProjectiveBrainTests.lean
+40fd0423c86833fcf60dc6116735584dcb75239ca396af6a0373604dd23e33bf  branches/M-Core/cert_final-fail-projective-brain-v1-bf17e3a4/lean/MCore/FinalFail/RelationalHardAtom.lean
+83f31dfc0e5d1282b54b2e1a8fe332e45177b069a533cb51cbee6287414af5e8  branches/M-Core/cert_final-fail-projective-brain-v1-bf17e3a4/lean/MCore/FinalFail/TriadicObstructionCalculus.lean

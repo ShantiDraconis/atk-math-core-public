@@ -3,16 +3,16 @@
 Lean sources from the branch `certificates/rh-nb-projection-distance-green-30` of the private repository `ShantiDraconis/M-Core`, commit `74d3f261bf8d80d7bd8371841966b8f9f837c536` (2026-09-16T12:10:52+02:00), that hold theorems found only on branches (no default branch of any repository has a theorem with the same name). Published here: the files with the theorems the kernel closed, the local files they import and the Lake files of their project.
 
 * Branch state: parada (not in the default branch).
-* Theorems only on branches, in this branch: 29 — closed 28, conditional 0, open 0, proof error 1, not reached 0, no result 0.
+* Theorems only on branches, in this branch: 29 — closed 29, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 35 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `70fa4d393aa44feca60c31e63c6160f87905079bc849856bedd3d5ff9bb6d2d5`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/certificates_rh-nb-projection-distance-green-30/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `05a2bb04b70376452de265d2467bf623cdd44c834c549e9d38772663ea957829`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/certificates_rh-nb-projection-distance-green-30/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 
 | Theorem | File | State |
 |---|---|---|
 | `MCore.RH.LCRH.FiniteGramData.energy_nonneg` | `MCore/RH/LCRH/GramMatrix.lean`:27 | fechado |
-| `MCore.RH.LCRH.FiniteGramData.matrix_symm` | `MCore/RH/LCRH/GramMatrix.lean`:32 | erro |
+| `MCore.RH.LCRH.FiniteGramData.matrix_symm` | `MCore/RH/LCRH/GramMatrix.lean`:32 | fechado |
 | `MCore.RH.NB.NestedApproximationSpaces.D_antitone` | `MCore/RH/NB/ProjectionDistance.lean`:42 | fechado |
 | `MCore.RH.NB.NestedApproximationSpaces.D_nonneg` | `MCore/RH/NB/ProjectionDistance.lean`:38 | fechado |
 | `MCore.RH.NB.NestedApproximationSpaces.D_succ_le` | `MCore/RH/NB/ProjectionDistance.lean`:55 | fechado |

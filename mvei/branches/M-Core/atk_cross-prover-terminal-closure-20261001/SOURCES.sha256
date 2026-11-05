@@ -1,0 +1,7 @@
+d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e  branches/M-Core/atk_cross-prover-terminal-closure-20261001/lakefile.lean
+55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea  branches/M-Core/atk_cross-prover-terminal-closure-20261001/lean-toolchain
+c83eb456f9ca3b6ba4515dc5bc03386e60a91bc7801ffb6c4857b04c49366e77  branches/M-Core/atk_cross-prover-terminal-closure-20261001/lean/MCore/ATK/CrossProverTerminalClosure.lean
+719aa997738b3ed4c7f10a3ca7d1d967aa3375685166c395a00641bb390294c9  branches/M-Core/atk_cross-prover-terminal-closure-20261001/lean/MCore/ATK/MaterialMultistateDynamics.lean
+82eb2a8e8c906be8cef87fca38012805068d56c9013335ea7e3029647e5884ef  branches/M-Core/atk_cross-prover-terminal-closure-20261001/lean/MCore/ATK/SevenLaneSpecialization.lean
+35d09396dc6fb98dde9dc7d952ad4dcafa3ebb63012509d88b5f597389359bd3  branches/M-Core/atk_cross-prover-terminal-closure-20261001/lean/MCore/ATK/StructuralDefect.lean
+b5b17a53f50bda02a22853f318faed9512472923c062198f103521e5eef2af70  branches/M-Core/atk_cross-prover-terminal-closure-20261001/lean/MCore/ATK/UniversalProducerTheorem.lean

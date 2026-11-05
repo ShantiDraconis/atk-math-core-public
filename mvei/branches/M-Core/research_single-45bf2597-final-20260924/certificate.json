@@ -1,0 +1,87 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "research/single-45bf2597-final-20260924",
+ "branch_state": "parada",
+ "head_commit": "17d753e81d9e05806a42ee959b56450d81bf24cd",
+ "head_commit_date": "2026-09-24T19:37:39+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "17d753e81d9e05806a42ee959b56450d81bf24cd",
+   "date": "2026-09-24T19:37:39+01:00",
+   "subject": "ci: repair final external branch kernel gate"
+  },
+  {
+   "commit": "13510607a0a7f805042db289d313d73b2068bd40",
+   "date": "2026-09-24T08:07:08+01:00",
+   "subject": "research: add minimal final root envelope"
+  },
+  {
+   "commit": "3383b16d54f89d93d13f2264c68a0c20c7615d21",
+   "date": "2026-09-24T08:06:12+01:00",
+   "subject": "research: add minimal external certificate envelope"
+  },
+  {
+   "commit": "2109adb3318b9b2efe19f44825b86cbcfb64aea3",
+   "date": "2026-09-24T08:04:29+01:00",
+   "subject": "research: close open-math with 45bf2597 certificate only"
+  },
+  {
+   "commit": "dacc882d219b4f3e2226819c9214f2a4bd66e5f7",
+   "date": "2026-09-24T07:49:04+01:00",
+   "subject": "research: minimal single-producer structure (.github/workflows/research-final-external-minimal.yml)"
+  },
+  {
+   "commit": "3efa239400e9656cadabfbacccdf94c67b668c9a",
+   "date": "2026-09-24T07:49:00+01:00",
+   "subject": "research: minimal single-producer structure (research/final-external/status.json)"
+  },
+  {
+   "commit": "e9207fb15023740379161ea744fe6a4afcd9a5d3",
+   "date": "2026-09-24T07:48:56+01:00",
+   "subject": "research: minimal single-producer structure (research/final-external/manifest.json)"
+  },
+  {
+   "commit": "b5a568a7626cde751ffbf4ee981330c563e0b382",
+   "date": "2026-09-24T07:48:53+01:00",
+   "subject": "research: minimal single-producer structure (lean/MCore/Research/FinalExternalBranch.lean)"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.Research.producer_shape",
+   "file": "lean/MCore/Research/FinalExternalBranch.lean",
+   "line": 34,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": branchState.producerCount = branchState.requiredProducers"
+  }
+ ],
+ "closed": 1,
+ "files_sha256": {
+  "MCore.lean": "597b7272bbce5fb4ffe1f65ecf33cfa4a1e931efb2e6557ec5c94d19a8215531",
+  "MCore/A1Amplitude.lean": "6ad674041b6241a18452f6de87ec9aea4f46d2d4ba75d04be05dd0f589758b37",
+  "MCore/A2SelfRef.lean": "095f6a313c06541c3af597b349e733389eedff9d862c0e8988cf7564b4a30d03",
+  "MCore/A3Zero.lean": "46ebc8a20fe61acdbd3073e19a3768ee1ca5cee57cee374900de6fdeb5ab0b4f",
+  "MCore/A4Scale.lean": "5f2d642f8388280461f91924bd80d4140acd58aaf485947d9d24938156f68b46",
+  "MCore/Admissible.lean": "8918f122fb4811a99320503a6a7d0074955129c17bd1a6f5ec4a53ef5cf975a7",
+  "MCore/Core.lean": "ae45ba15213312d6f28ace5021c9e7f6bf44d6c08a3f9b07c4d457d333d16e49",
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/Research/FinalExternalBranch.lean": "8a831b41bf9c1c5fa986f5202f4be53203297f9ba532816315c1844c64fa2ee5"
+ },
+ "published_at": "2026-11-05T17:43:22Z",
+ "certificate_sha256": "d208eb79f1a5a37a5aca7482c50b6c3e289735f97ecfd7b710aac813cc08ce4e"
+}

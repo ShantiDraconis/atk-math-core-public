@@ -183,7 +183,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0",
    "leanprover/lean4:v4.21.0",
@@ -983,7 +983,7 @@
    "line": 11,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{P Q R : Prop} (pq : P → Q) (qr : Q → R) : P → R"
+   "statement": "∀ {P Q R : Prop}, (P → Q) → (Q → R) → P → R"
   },
   {
    "name": "ATK.Formal.conjunction_commutes",
@@ -991,7 +991,7 @@
    "line": 13,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{P Q : Prop} : P ∧ Q → Q ∧ P"
+   "statement": "∀ {P Q : Prop}, P ∧ Q → Q ∧ P"
   },
   {
    "name": "ATK.Formal.eval_conj",
@@ -999,7 +999,7 @@
    "line": 66,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(a b : Expr) : eval (.conj a b) = (eval a && eval b)"
+   "statement": "∀ (a b : ATK.Formal.Expr), ATK.Formal.eval (a.conj b) = (ATK.Formal.eval a && ATK.Formal.eval b)"
   },
   {
    "name": "ATK.Formal.eval_literal",
@@ -1007,7 +1007,7 @@
    "line": 64,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(b : Bool) : eval (.lit b) = b"
+   "statement": "∀ (b : Bool), ATK.Formal.eval (ATK.Formal.Expr.lit b) = b"
   },
   {
    "name": "ATK.Formal.eval_neg",
@@ -1015,7 +1015,7 @@
    "line": 68,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(a : Expr) : eval (.neg a) = !(eval a)"
+   "statement": "∀ (a : ATK.Formal.Expr), ATK.Formal.eval a.neg = !ATK.Formal.eval a"
   },
   {
    "name": "ATK.Formal.inhabited_to_exists",
@@ -1023,7 +1023,7 @@
    "line": 8,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{α : Sort u} (a : α) : Nonempty α"
+   "statement": "∀ {α : Sort u} (a : α), Nonempty α"
   },
   {
    "name": "ATK.Formal.no_decrease_at_zero",
@@ -1031,7 +1031,7 @@
    "line": 19,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(f : Nat → Nat) : ¬ (∀ n, f n < n)"
+   "statement": "∀ (f : Nat → Nat), ¬∀ (n : Nat), f n < n"
   },
   {
    "name": "ATK.Formal.successor_strict",
@@ -1039,7 +1039,7 @@
    "line": 18,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(n : Nat) : n < n + 1"
+   "statement": "∀ (n : Nat), n < n + 1"
   },
   {
    "name": "ATK.Formal.terminal_application",
@@ -1047,7 +1047,7 @@
    "line": 69,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "{Material Target : Prop} (inhabitant : Material) (bridge : Material → Target) : Target"
+   "statement": "∀ {Material Target : Prop}, Material → (Material → Target) → Target"
   },
   {
    "name": "ATK.Formal.translate_comp",
@@ -1055,7 +1055,7 @@
    "line": 41,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(p v w : Point2) : translate (translate p v) w = translate p (translate v w)"
+   "statement": "∀ (p v w : ATK.Formal.Point2),   ATK.Formal.translate (ATK.Formal.translate p v) w = ATK.Formal.translate p (ATK.Formal.translate v w)"
   },
   {
    "name": "ATK.Formal.translate_origin",
@@ -1063,7 +1063,7 @@
    "line": 37,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(p : Point2) : translate p origin = p"
+   "statement": "∀ (p : ATK.Formal.Point2), ATK.Formal.translate p ATK.Formal.origin = p"
   },
   {
    "name": "ATK.Formal.zero_le_all",
@@ -1071,7 +1071,7 @@
    "line": 15,
    "state": "fechado",
    "axioms_beyond_standard": [],
-   "statement": "(n : Nat) : 0 ≤ n"
+   "statement": "∀ (n : Nat), 0 ≤ n"
   },
   {
    "name": "ATK.Horizon.completed_zeta_symmetric",
@@ -2000,6 +2000,6 @@
   "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
   "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
  },
- "published_at": "2026-11-03T11:28:09Z",
- "certificate_sha256": "0a930251facab24ca70c3e3aeab962996ae6c21399b77c9b9a89eca528fcaebf"
+ "published_at": "2026-11-05T17:43:06Z",
+ "certificate_sha256": "0ad3f0f4dbd95b0d416df75f71fb64a157feb6eec877592b12a2a1fd4be9430a"
 }

@@ -93,7 +93,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -117,8 +117,10 @@
    "name": "MCore.ATL.V3.fail_closed_without_term",
    "file": "lean/MCore/ATL/V3/Master.lean",
    "line": 7,
-   "state": "nao_alcancado",
-   "axioms_beyond_standard": [],
+   "state": "aberto-sorry",
+   "axioms_beyond_standard": [
+    "sorryAx"
+   ],
    "statement": "(c : ExternalCertificate) (hk : c.kind = .theorem) (ht : c.termHash = none) : c.status ≠ .proved"
   },
   {
@@ -133,27 +135,23 @@
    "name": "MCore.ATL.V3.scientific_implies_semantic",
    "file": "lean/MCore/ATL/V3/Promotion.lean",
    "line": 37,
-   "state": "erro",
-   "axioms_beyond_standard": [
-    "sorryAx"
-   ],
-   "statement": "(e : PromotionEvidence) (h : mayReach e .scientific = true) : mayReach e .semantic = true"
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (e : MCore.ATL.V3.PromotionEvidence),   MCore.ATL.V3.mayReach e MCore.ATL.V3.PromotionLayer.scientific = true →     MCore.ATL.V3.mayReach e MCore.ATL.V3.PromotionLayer.semantic = true"
   },
   {
    "name": "MCore.ATL.V3.semantic_implies_kernel",
    "file": "lean/MCore/ATL/V3/Promotion.lean",
    "line": 42,
-   "state": "erro",
-   "axioms_beyond_standard": [
-    "sorryAx"
-   ],
-   "statement": "(e : PromotionEvidence) (h : mayReach e .semantic = true) : mayReach e .kernel = true"
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "∀ (e : MCore.ATL.V3.PromotionEvidence),   MCore.ATL.V3.mayReach e MCore.ATL.V3.PromotionLayer.semantic = true →     MCore.ATL.V3.mayReach e MCore.ATL.V3.PromotionLayer.kernel = true"
   },
   {
    "name": "MCore.ATL.V3.theorem_without_term_not_proved",
    "file": "lean/MCore/ATL/V3/Certificate.lean",
    "line": 39,
-   "state": "nao_alcancado",
+   "state": "erro",
    "axioms_beyond_standard": [],
    "statement": "(c : ExternalCertificate) (hk : c.kind = .theorem) (ht : c.termHash = none) : c.status ≠ .proved"
   },
@@ -166,13 +164,14 @@
    "statement": "∀ (e : MCore.ATL.V3.MinedEvidence), e.kernelAudited = false → e.emittable = false"
   }
  ],
- "closed": 3,
+ "closed": 5,
  "files_sha256": {
   "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
   "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
   "lean/MCore/ATL/V3/Core.lean": "2144edd58558c6a00eea0f1e4c3a2deb83c24e4cb80dd980802c4c8306daa155",
-  "lean/MCore/ATL/V3/Mining.lean": "0bb4020e1823153f757184ddc3f416baad3ba56152802e1b53d01c0186d28969"
+  "lean/MCore/ATL/V3/Mining.lean": "0bb4020e1823153f757184ddc3f416baad3ba56152802e1b53d01c0186d28969",
+  "lean/MCore/ATL/V3/Promotion.lean": "6c9d1225b5e64788827e7091474e4ca3e1221f2a58ae888d54ed7b85ab4053c0"
  },
- "published_at": "2026-11-03T11:28:19Z",
- "certificate_sha256": "3c44ef18df47c94d24aaac9ccfcef583ab56ced9c04913f70537088faccd5e58"
+ "published_at": "2026-11-05T17:43:15Z",
+ "certificate_sha256": "ebdbe1d5d1c256d52a2e9650be6c7a1bb8b1c6d6c4a52b52d8d591052e2065b4"
 }

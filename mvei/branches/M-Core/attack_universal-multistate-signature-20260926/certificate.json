@@ -1,0 +1,130 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "attack/universal-multistate-signature-20260926",
+ "branch_state": "parada",
+ "head_commit": "3fe5ac2bc56cd9275a211eb908e0881a8c18c304",
+ "head_commit_date": "2026-09-26T23:58:25+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "3fe5ac2bc56cd9275a211eb908e0881a8c18c304",
+   "date": "2026-09-26T23:58:25+01:00",
+   "subject": "finalfail: attach ledger evidence to universal multistate theorem"
+  },
+  {
+   "commit": "87664ec340231b07e9ad2c38f6344aa130701aa0",
+   "date": "2026-09-26T23:58:10+01:00",
+   "subject": "ci: fix M-Core multistate Lean working directory"
+  },
+  {
+   "commit": "d28a3e2ea36767f23fdc10bde797869330412a01",
+   "date": "2026-09-26T23:48:19+01:00",
+   "subject": "finalfail: make multistate number universal across distinct problems"
+  },
+  {
+   "commit": "8b99dfa1eb194e0645afbec45a895cea4056a253",
+   "date": "2026-09-26T23:47:44+01:00",
+   "subject": "ci: gate universal multistate signature"
+  },
+  {
+   "commit": "a70ceb685f95d3a8cf5a3f92ad72c4b6a650c937",
+   "date": "2026-09-26T23:47:31+01:00",
+   "subject": "finalfail: export universal multistate signature"
+  },
+  {
+   "commit": "941a28523e936dbca6b09500c4e489f5ceb6e742",
+   "date": "2026-09-26T23:47:24+01:00",
+   "subject": "finalfail: formalize universal multistate numerical signature"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.FinalFail.ledger_evidence_for_all_manifestations",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 223,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ∀ p : AtlasProblemId, ledgerEvidenceFor p"
+  },
+  {
+   "name": "MCore.FinalFail.manifestations_share_number",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 155,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p q : AtlasProblemId) : (manifestationOf p).number = (manifestationOf q).number"
+  },
+  {
+   "name": "MCore.FinalFail.same_number_different_manifestation_possible",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 179,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": (manifestationOf .riemann).number = (manifestationOf .hodge).number /\\ (manifestationOf .riemann).form ≠ (manifestationOf .hodge).form"
+  },
+  {
+   "name": "MCore.FinalFail.same_universal_number_structure",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 144,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : AtlasProblemId) : (manifestationOf p).number = universalNumber"
+  },
+  {
+   "name": "MCore.FinalFail.signature_does_not_promote_open_math",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 246,
+   "state": "nao_alcancado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : AtlasProblemId) (h : producerStateOf p = .openMath) : (manifestationOf p).producer = .openMath"
+  },
+  {
+   "name": "MCore.FinalFail.universal_multistate_signature",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 164,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": exists N : UniversalNumberStructure, (N.c0 = 0 /\\ N.openState = 1 /\\ N.c2 = 2) /\\ forall p : AtlasProblemId, (manifestationOf p).number = N"
+  },
+  {
+   "name": "MCore.FinalFail.universal_multistate_theorem_with_evidence",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 229,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ∃ N : UniversalNumberStructure, (N.c0 = 0 /\\ N.openState = 1 /\\ N.c2 = 2) /\\ (∀ p : AtlasProblemId, (manifestationOf p).number = N /\\ ledgerEvidenceFor p)"
+  },
+  {
+   "name": "MCore.FinalFail.universal_number_is_zero_one_two",
+   "file": "lean/MCore/FinalFail/UniversalMultiStateSignature.lean",
+   "line": 148,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": universalNumber.c0 = 0 /\\ universalNumber.openState = 1 /\\ universalNumber.c2 = 2"
+  }
+ ],
+ "closed": 7,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/FinalFail/ExactGapLedger.lean": "e3f1fce7f53c274cdde3b7c12f0c7ae0b25f949307234cc7eae8f84fc0255605",
+  "lean/MCore/FinalFail/ProblemSignature.lean": "c57e384bdb589cf5630daa0ab92b2ee38ad0ccde87196d99c227c7d94577b736",
+  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "50df3ee014e1d7c0800d1fadb89cb8b25235cd4666eca5a6a3f7d03b79ce2e01",
+  "lean/MCore/FinalFail/SevenProblemSignatures.lean": "bfeed1d2791b9f4d1e1a2877bd1209a80fefa27b317085fccd81d20fa6b47812",
+  "lean/MCore/FinalFail/UniversalMultiStateSignature.lean": "1b41b54ce156c7138a122f2f7f793c51c5761040ba1826def01c3da2022151b7"
+ },
+ "published_at": "2026-11-05T17:43:15Z",
+ "certificate_sha256": "88f82d2f7188c8acc71786bb801d681858f5949fe3a785f6e5b8b717eaafc69e"
+}

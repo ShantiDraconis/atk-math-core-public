@@ -288,7 +288,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -304,7 +304,7 @@
    "name": "MCore.FinalFail.MaterialOnly.final_root_not_ready",
    "file": "lean/MCore/FinalFail/MaterialOnlyFinalRoot.lean",
    "line": 52,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ finalRootReady"
   },
@@ -312,7 +312,7 @@
    "name": "MCore.FinalFail.MaterialOnly.material_math_not_ready",
    "file": "lean/MCore/FinalFail/MaterialOnlyFinalRoot.lean",
    "line": 47,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ materialMathReady"
   },
@@ -320,7 +320,7 @@
    "name": "MCore.FinalFail.MaterialOnly.no_wiring_gap_in_open_math",
    "file": "lean/MCore/FinalFail/MaterialOnlyFinalRoot.lean",
    "line": 57,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": openFinalProblems = 7 ∧ openDirectCount = 7 ∧ materialProducerPlanCount = 7 ∧ pendingMechanicalCount = 1"
   },
@@ -368,7 +368,7 @@
    "name": "MCore.FinalFail.Universal.candidate_closes_core",
    "file": "lean/MCore/FinalFail/UniversalClosure.lean",
    "line": 115,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{Core : Prop} (A : ProducerAdapter Core) (h : A.Candidate) : Core"
   },
@@ -376,7 +376,7 @@
    "name": "MCore.FinalFail.Universal.exact_candidate_iff_core",
    "file": "lean/MCore/FinalFail/UniversalClosure.lean",
    "line": 122,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{Core : Prop} (A : ExactProducerAdapter Core) : A.Candidate ↔ Core"
   },
@@ -384,7 +384,7 @@
    "name": "MCore.FinalFail.Universal.exact_universal_closure_iff",
    "file": "lean/MCore/FinalFail/UniversalClosure.lean",
    "line": 166,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(K : ExactUniversalKernel) : SevenEndpoints K.Endpoint ↔ SevenInhabitants K.Core"
   },
@@ -392,7 +392,7 @@
    "name": "MCore.FinalFail.Universal.sevenEndpoints_iff_forall",
    "file": "lean/MCore/FinalFail/UniversalClosure.lean",
    "line": 94,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Endpoint : ProblemId → Prop) : SevenEndpoints Endpoint ↔ ∀ p, Endpoint p"
   },
@@ -400,7 +400,7 @@
    "name": "MCore.FinalFail.Universal.sevenInhabitants_iff_forall",
    "file": "lean/MCore/FinalFail/UniversalClosure.lean",
    "line": 87,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(Core : ProblemId → Prop) : SevenInhabitants Core ↔ ∀ p, Core p"
   },
@@ -408,7 +408,7 @@
    "name": "MCore.FinalFail.Universal.universal_closure",
    "file": "lean/MCore/FinalFail/UniversalClosure.lean",
    "line": 138,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(K : UniversalKernel) (h : SevenInhabitants K.Core) : SevenEndpoints K.Endpoint"
   },
@@ -416,7 +416,7 @@
    "name": "MCore.FinalFail.Universal.universal_final_root",
    "file": "lean/MCore/FinalFail/UniversalClosure.lean",
    "line": 192,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(K : UniversalKernel) {Mechanical Release : Prop} (h : FinalRootInputs K Mechanical Release) : FinalRootResult K Mechanical Release"
   },
@@ -424,7 +424,7 @@
    "name": "MCore.FinalFail.Universal.universal_final_root_has_all_endpoints",
    "file": "lean/MCore/FinalFail/UniversalClosure.lean",
    "line": 204,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(K : UniversalKernel) {Mechanical Release : Prop} (h : FinalRootResult K Mechanical Release) : ∀ p, K.Endpoint p"
   },
@@ -432,7 +432,7 @@
    "name": "MCore.FinalFail.Universal.universal_nucleus_closure",
    "file": "lean/MCore/FinalFail/UniversalClosure.lean",
    "line": 158,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(F : UniversalNucleusFamily) (h : SevenInhabitants F.toKernel.Core) : SevenEndpoints F.toKernel.Endpoint"
   },
@@ -440,7 +440,7 @@
    "name": "MCore.FinalFail.master_material_only_boundary",
    "file": "lean/MCore/FinalFail/Master.lean",
    "line": 23,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": Semantic.openDirectCount = 7 ∧ Semantic.pendingMechanicalCount = 1"
   },
@@ -448,21 +448,33 @@
    "name": "MCore.FinalFail.master_universal_requires_seven",
    "file": "lean/MCore/FinalFail/Master.lean",
    "line": 29,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(K : Universal.UniversalKernel) (h : Universal.SevenInhabitants K.Core) : Universal.SevenEndpoints K.Endpoint"
   }
  ],
- "closed": 5,
+ "closed": 19,
  "files_sha256": {
   "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
   "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
   "lean/MCore/FinalFail/AcceptedSemanticActivation.lean": "6c8d3bff0bad718c736ecfbde2bc92937dfddc95de68ce0c17d5b539420de653",
+  "lean/MCore/FinalFail/ArtifactAttachment.lean": "b7905196e4fa77106b5edc2ec8b253d7eb183c271e4dbc15e3c0bb6e3233c0d7",
+  "lean/MCore/FinalFail/Attack/Beal.lean": "8a8fff82c409cfb11f911cd2e6ff1dd0d6123a8db3895fe0fce24acacf7dcdc5",
+  "lean/MCore/FinalFail/Attack/NavierStokes.lean": "4d2e6c2739fc040a4fb08fec8ab9d5bfb9184dc366a392aecec576f4105c33fe",
   "lean/MCore/FinalFail/BSDConcreteDomain.lean": "b7b1e5764451649e092acaa42c2a992386940c7a18eb80cc7e94a7d545f5345c",
   "lean/MCore/FinalFail/BoundaryAtoms.lean": "54deb42c3e0d344359ecab23e499cb0e60114146b007003b540c2d564a36024f",
+  "lean/MCore/FinalFail/ClosedCenterHard.lean": "8cf937c40341793b7a5d9b6ec6ee909e9211603cfd6861ef889a38e809022292",
+  "lean/MCore/FinalFail/DeltaIsolation.lean": "959b4b861b30b8c97a0abcc07575adfacac80315055ba84683dd57b53dc2d9cc",
   "lean/MCore/FinalFail/DirectProducerCuts.lean": "8d370ff6426a4c595ca1730a90c8864b7fbcf2c154e4ef9c1c5d2449e49a03ec",
+  "lean/MCore/FinalFail/ExactGapLedger.lean": "04632992361e85196935151b4513ddd42faaa3f6224f3ff8e1ef0b6dd127834c",
+  "lean/MCore/FinalFail/FundamentalIndeterminacy.lean": "5a0940bac03613dc11086cf991d224518697a1fd2974a7216d50613042f999c8",
+  "lean/MCore/FinalFail/Master.lean": "db33d092186388e53ecee00a8544579a6280c4eb8dbe978999ec574f8518a9bb",
+  "lean/MCore/FinalFail/MaterialOnlyFinalRoot.lean": "befc76841e36639262bc64471f29f1e0d67e9e9882eeb6647f6192c0c97539bd",
   "lean/MCore/FinalFail/MaterialProducerNormalForms.lean": "2ddeac0c3dd2a10c36e794bd94a8c7c28ccdc6845d7af388188715eace3e4025",
   "lean/MCore/FinalFail/MechanicalClosure.lean": "46a5c72a6392e292406ad0b3a687651f1f5af868811961c3472b94ae083ee109",
+  "lean/MCore/FinalFail/MinimalOpenBridge.lean": "69cb24fc52a0bfb5850c5ecb880d5200cbe5d12e5b144e2bd77e8dd9bed02727",
+  "lean/MCore/FinalFail/RecoveryFirewall.lean": "5fdad8c2bbe00b240fe7ed8509c2e2c526451e58f94711c7426eb0206c55d7c5",
+  "lean/MCore/FinalFail/RelationalHardAtom.lean": "40fd0423c86833fcf60dc6116735584dcb75239ca396af6a0373604dd23e33bf",
   "lean/MCore/FinalFail/Semantic/BSD.lean": "be66d8c211db7a78d648b1d4be0a27f54fdd969e305640e8a401abb80c507668",
   "lean/MCore/FinalFail/Semantic/Beal.lean": "7461d91a196c5d7a61ba7f3fabce0947d529902426ec1e96cab2994b97f787a0",
   "lean/MCore/FinalFail/Semantic/Hodge.lean": "c82ec2d0082ec5c801c4f2937246e831021f00ef8dec5cc7059628a9df7b4d03",
@@ -471,8 +483,10 @@
   "lean/MCore/FinalFail/Semantic/Riemann.lean": "3e27a82494ef344bf6017275345cd6d8af1e2f2ab3c34f7d684d5c6dfc26370e",
   "lean/MCore/FinalFail/Semantic/YangMills.lean": "46576c47f06fef4d4fe52a6812097bf72a3127d18af23effc2107da7615e301c",
   "lean/MCore/FinalFail/SemanticParallel.lean": "3fcf6ca711dd35f2f46235df26768b752042787b5f7bed7d92b3293f39a283bd",
-  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d"
+  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d",
+  "lean/MCore/FinalFail/TriadicObstructionCalculus.lean": "83f31dfc0e5d1282b54b2e1a8fe332e45177b069a533cb51cbee6287414af5e8",
+  "lean/MCore/FinalFail/UniversalClosure.lean": "761d095867ea8635e91396280f38c26e61eeb581827508169da5b55bf1f28eca"
  },
- "published_at": "2026-11-03T11:28:18Z",
- "certificate_sha256": "08954e364b05e28804e1d752e03e2451174791ba902698adb50a84e5b2cd1b60"
+ "published_at": "2026-11-05T17:43:14Z",
+ "certificate_sha256": "6e9a95753c48e46cb35239322496d6720a32a6add66136acbf1f19328d71ab5b"
 }

@@ -1,0 +1,344 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "cert/material-algebra-ed1354ea-run36854907433",
+ "branch_state": "parada",
+ "head_commit": "50f62d67de9d0a4f26c03712d2c44086a16019cf",
+ "head_commit_date": "2026-10-01T13:26:33+02:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "50f62d67de9d0a4f26c03712d2c44086a16019cf",
+   "date": "2026-10-01T13:26:33+02:00",
+   "subject": "certify GREEN material algebra at ed1354ea"
+  },
+  {
+   "commit": "ed1354eacb7161e6021450acc758610cd06dc46b",
+   "date": "2026-10-01T13:21:55+02:00",
+   "subject": "rerun material algebra after explicit proof hardening"
+  },
+  {
+   "commit": "ddae59ad6b77b5b42ff87f23719ebf6c1c776fb7",
+   "date": "2026-10-01T13:21:37+02:00",
+   "subject": "harden material algebra proofs without congr or implicit ext"
+  },
+  {
+   "commit": "8cc71c345fec4293b7d2c717eb6db90c09d6fbdb",
+   "date": "2026-10-01T13:16:39+02:00",
+   "subject": "rerun material algebra after additive law fix"
+  },
+  {
+   "commit": "1cc8f8cc34ffbb87f6e8f119e94cfc593f1c45c8",
+   "date": "2026-10-01T13:16:32+02:00",
+   "subject": "strengthen material algebra axiom audit"
+  },
+  {
+   "commit": "0af3820f7f595ecf416e0024f165f76cc1bbe657",
+   "date": "2026-10-01T13:15:08+02:00",
+   "subject": "fix seven-lane additive laws by structural extensionality"
+  },
+  {
+   "commit": "e00cc4c2023832de7578edfc0b0dc65b33a94c1a",
+   "date": "2026-10-01T13:06:16+02:00",
+   "subject": "complete TriState finite three-element algebra"
+  },
+  {
+   "commit": "e2aaa1e99add1fe44a1951dd2377d488bcb6d8f2",
+   "date": "2026-10-01T13:03:23+02:00",
+   "subject": "harden evidence derivative stability proof"
+  },
+  {
+   "commit": "b0e8840b1acc3cefb5b642a2c7cd1dc875007280",
+   "date": "2026-10-01T13:03:04+02:00",
+   "subject": "formalize terminal producer algebra evidence arithmetic and topology"
+  },
+  {
+   "commit": "636b5aa79b2b1f3bba3df52844c383687729877f",
+   "date": "2026-10-01T13:02:29+02:00",
+   "subject": "trigger material algebra one-shot"
+  },
+  {
+   "commit": "64f62a9ef7375d84c8529e91e2eaf0c082d0a471",
+   "date": "2026-10-01T13:02:23+02:00",
+   "subject": "add one-shot validator for material algebra"
+  },
+  {
+   "commit": "a79bf5ec27f95e8b733605ad7b0ee5cfe7d2ed3d",
+   "date": "2026-10-01T13:01:58+02:00",
+   "subject": "harden material algebra universes and vector laws"
+  },
+  {
+   "commit": "32e21fe36baface8648739f3cc85d8a67ebe77bd",
+   "date": "2026-10-01T13:01:24+02:00",
+   "subject": "formalize algebra of material producers, residuals, defects and tri-state lane vectors"
+  },
+  {
+   "commit": "2166870fe91a0be5e5484b19c4b525be73edfbd2",
+   "date": "2026-10-01T12:25:27+02:00",
+   "subject": "remove strict one-shot validator after GREEN"
+  },
+  {
+   "commit": "da0df2348597c9573ce6c2ab59075efb3957f525",
+   "date": "2026-10-01T12:25:24+02:00",
+   "subject": "remove strict one-shot validator after GREEN"
+  },
+  {
+   "commit": "9dc4db35c141cdd9f57eeeeb9c2247478bc00aa9",
+   "date": "2026-10-01T12:20:25+02:00",
+   "subject": "trigger strict global material module validation"
+  },
+  {
+   "commit": "1beb8726d0ee5415922e548995b1a52e80dc8e6a",
+   "date": "2026-10-01T12:20:18+02:00",
+   "subject": "add strict one-shot validator for global material module"
+  },
+  {
+   "commit": "c2388accc5147f8e56699019686ee5110f581449",
+   "date": "2026-10-01T12:18:59+02:00",
+   "subject": "complete semantic orientations for all seven lanes"
+  },
+  {
+   "commit": "351e774c652c597e878480cee9d366d19d80d556",
+   "date": "2026-10-01T12:18:16+02:00",
+   "subject": "formalize mixed-orientation RH firewall"
+  },
+  {
+   "commit": "cd74b0150cb88edc4b615903a4545ca521ef9ade",
+   "date": "2026-10-01T12:18:10+02:00",
+   "subject": "make semantic lane orientation explicit"
+  },
+  {
+   "commit": "a324bc56e9f200e62a0abfdc1d6910738c35ea6c",
+   "date": "2026-10-01T12:16:42+02:00",
+   "subject": "harden source hygiene audit against Lean comments and false positives"
+  },
+  {
+   "commit": "46864f6f2b89bf94141a9d7ef40ab17a1a493e8c",
+   "date": "2026-10-01T12:15:50+02:00",
+   "subject": "add fail-closed reusable validator for global positive frontier"
+  },
+  {
+   "commit": "5b15c68c3b807056a9fd903d0419b6ed62fbf80e",
+   "date": "2026-10-01T12:00:06+02:00",
+   "subject": "remove one-shot global positive frontier trigger after GREEN"
+  },
+  {
+   "commit": "34ad4a71374897ef6706f5fefd368c4406a8d089",
+   "date": "2026-10-01T12:00:02+02:00",
+   "subject": "remove one-shot global positive frontier trigger after GREEN"
+  },
+  {
+   "commit": "519bd9fb2328867e706b586942324576ccac6e40",
+   "date": "2026-10-01T11:57:02+02:00",
+   "subject": "add comprehensive global material proof/refutation master"
+  },
+  {
+   "commit": "548d1c5c7904d8a6d413b4a58a655325bc7941b9",
+   "date": "2026-10-01T11:54:45+02:00",
+   "subject": "trigger final global positive frontier validation"
+  },
+  {
+   "commit": "9da5de491d316b5b3c344349d57841aa96d103cf",
+   "date": "2026-10-01T11:54:38+02:00",
+   "subject": "audit exact global positive frontier law"
+  },
+  {
+   "commit": "028e998362eaef8bd1c583c2fe90ce8177a6ea8d",
+   "date": "2026-10-01T11:54:27+02:00",
+   "subject": "add exact global positive frontier iff law"
+  },
+  {
+   "commit": "050b7913c0bd9b51c9ecf08367bfa4da1e720fd6",
+   "date": "2026-10-01T11:53:54+02:00",
+   "subject": "rerun latest global positive material frontier"
+  },
+  {
+   "commit": "4c37d0b94860d218b3086ded0982047c55b717d7",
+   "date": "2026-10-01T11:53:43+02:00",
+   "subject": "add global orientation firewall between positive and negative roots"
+  },
+  {
+   "commit": "954a2a66cb42ff304d56d824274bb51a188c3d93",
+   "date": "2026-10-01T11:51:17+02:00",
+   "subject": "trigger global positive material frontier one-shot"
+  },
+  {
+   "commit": "8933d1192e29fdf6362c123fca9b543d278d35e0",
+   "date": "2026-10-01T11:51:10+02:00",
+   "subject": "add one-shot validator for global positive material frontier"
+  },
+  {
+   "commit": "cca4831e017a0f802244a66dcaf96c27b1a19e93",
+   "date": "2026-10-01T11:50:54+02:00",
+   "subject": "add global proof/refutation/inhabitant evidence ledger"
+  },
+  {
+   "commit": "73bb2b4ab8a45ecd534a072a3497632daef757bf",
+   "date": "2026-10-01T11:50:23+02:00",
+   "subject": "formalize positive seven-lane material frontier and exact semantic laws"
+  },
+  {
+   "commit": "703001b23e5ee61ba1c9841be5cc741d1d2a4fb3",
+   "date": "2026-10-01T11:37:41+02:00",
+   "subject": "remove one-shot global conditional validator after GREEN"
+  },
+  {
+   "commit": "17e32b9bd995768daf5e700c3089d5cfdf74b948",
+   "date": "2026-10-01T11:37:37+02:00",
+   "subject": "remove one-shot global conditional validator after GREEN"
+  },
+  {
+   "commit": "70b46f20a36699b3dd1b738778c0ece63fef338a",
+   "date": "2026-10-01T11:32:25+02:00",
+   "subject": "rerun global conditional final one-shot"
+  },
+  {
+   "commit": "a565b6e59d0a99e079fdc68b912ba8f476924fd7",
+   "date": "2026-10-01T11:32:15+02:00",
+   "subject": "fix global conditional validator bootstrap"
+  },
+  {
+   "commit": "5fd5dc14edec4b19592fd22cd5732af745abdc0b",
+   "date": "2026-10-01T11:31:22+02:00",
+   "subject": "trigger global conditional final one-shot"
+  },
+  {
+   "commit": "409a7885c1a1984165d20035cdeac57b0b0a8217",
+   "date": "2026-10-01T11:31:16+02:00",
+   "subject": "add one-shot global conditional final validator"
+  },
+  {
+   "commit": "783bac2ef71218e0a5ae66b71515fc2b2facb492",
+   "date": "2026-10-01T10:16:23+02:00",
+   "subject": "record exact hypotheses for global conditional final"
+  },
+  {
+   "commit": "bd4923a22f296a323148c317138396135639013d",
+   "date": "2026-10-01T10:16:08+02:00",
+   "subject": "densify seven accepted hypotheses into global conditional final theorem"
+  },
+  {
+   "commit": "839ba15f95ee8df1d2d0a8cd6262e16a4326325e",
+   "date": "2026-10-01T01:45:34+02:00",
+   "subject": "fix(atk): repair producer normalizer recursion and induction reduction"
+  },
+  {
+   "commit": "cc7590f3861f1409a26d4afec8437d04267ab4b8",
+   "date": "2026-10-01T01:42:46+02:00",
+   "subject": "ci(atk): audit explicit seven-lane universal specialization"
+  },
+  {
+   "commit": "06057f82f04b43197e4558b60c2bded7245e6c49",
+   "date": "2026-10-01T01:42:35+02:00",
+   "subject": "formal(atk): specialize universal producer to explicit seven-lane bundles"
+  },
+  {
+   "commit": "93bf8bbb09a09350dcb58c0172070b23697eae56",
+   "date": "2026-10-01T01:27:34+02:00",
+   "subject": "fix(atk): make constructive normalizer recursion explicit"
+  },
+  {
+   "commit": "ae379bfe8a6b15cb9172d301f48477816f588da4",
+   "date": "2026-10-01T01:26:44+02:00",
+   "subject": "ci(atk): audit fixed-target universal resolution theorem"
+  },
+  {
+   "commit": "7567b552d03a4f4436cc0dc28c9d116b4afc4b7b",
+   "date": "2026-10-01T01:26:34+02:00",
+   "subject": "harden(atk): fix terminal types before universal materialization"
+  },
+  {
+   "commit": "cf17c7415666370d7f73526c9a4eb68698c3c5f7",
+   "date": "2026-10-01T01:24:58+02:00",
+   "subject": "ci(atk): audit split universal materialization theorem"
+  },
+  {
+   "commit": "9ec65fbd31c8e10a34bb0c6f62b6ef3522b602f6",
+   "date": "2026-10-01T01:24:49+02:00",
+   "subject": "feat(atk): separate universal structural reduction from material extraction"
+  },
+  {
+   "commit": "e0293cbca5f91f9d77912914b6c484f2a03f20e3",
+   "date": "2026-10-01T01:17:49+02:00",
+   "subject": "feat(atk): make universal producer constructive through final root"
+  },
+  {
+   "commit": "509d6f1fd841e0fd6fc6f91750070777958b93fd",
+   "date": "2026-10-01T01:16:56+02:00",
+   "subject": "ci(atk): audit materialization firewall theorem"
+  },
+  {
+   "commit": "a46d31bfc39866e81775295a170ec703f0e7ce4a",
+   "date": "2026-10-01T01:16:48+02:00",
+   "subject": "feat(atk): prove materialization firewall for universal structure"
+  },
+  {
+   "commit": "5e053b0b3ec580b37f9e34b14b831aa4d7c8b112",
+   "date": "2026-10-01T01:14:12+02:00",
+   "subject": "ci(atk): kernel-check universal producer theorem"
+  },
+  {
+   "commit": "bb3fe8df8347b40582f95a346a6fa50f040a6be8",
+   "date": "2026-10-01T01:13:58+02:00",
+   "subject": "feat(atk): formalize universal producer theorem and no-loop law"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.FinalFail.MaterialCalculus.EvidenceState.SevenEvidenceVector.aggregate_proved_iff",
+   "file": "lean/MCore/FinalFail/MaterialProducerCalculus.lean",
+   "line": 282,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(v : SevenEvidenceVector) : aggregate v = .proved ↔ v.riemann = .proved ∧ v.beal = .proved ∧ v.pvsnp = .proved ∧ v.navierStokes = .proved ∧ v.hodge = .proved ∧ v.bsd = .proved ∧ v.yangMills = .proved"
+  },
+  {
+   "name": "MCore.FinalFail.MaterialCalculus.EvidenceState.SevenEvidenceVector.currentMaterialFrontier_aggregate_open",
+   "file": "lean/MCore/FinalFail/MaterialProducerCalculus.lean",
+   "line": 304,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": currentMaterialFrontier.aggregate = .open"
+  },
+  {
+   "name": "MCore.FinalFail.MaterialCalculus.EvidenceState.positiveRoot_evidence_aggregate_proved",
+   "file": "lean/MCore/FinalFail/MaterialProducerCalculus.lean",
+   "line": 352,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{Language : Type uL} {InP InNP : Language → Prop} {SAT : Language} {Flow : Type uF} {Stabilizer : Type uS} {ActualNS : Flow → Prop} {Stabilizes : Stabilizer → Flow → Prop} {Variety : Type uV} {Class : Variety → Type uC} {Cycle : Variety → Type uZ} {SmoothProjective : Variety → Prop} {RationalHodge : {X : Variety} → Class X → Prop} {Realizes : {X : Variety} → Cycle X → Class X → Prop} {Curve : Type"
+  }
+ ],
+ "closed": 3,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/FinalFail/AcceptedSemanticActivation.lean": "6c8d3bff0bad718c736ecfbde2bc92937dfddc95de68ce0c17d5b539420de653",
+  "lean/MCore/FinalFail/BoundaryAtoms.lean": "54deb42c3e0d344359ecab23e499cb0e60114146b007003b540c2d564a36024f",
+  "lean/MCore/FinalFail/GlobalConditionalFinal.lean": "2ba1d500851365ec8622f849089f21ff1c74b48f075030efecd764780966f5d7",
+  "lean/MCore/FinalFail/GlobalPositiveMaterialFrontier.lean": "b1b3eeff3854950a29805ceb13e1e5f0dedf8b15b7d050da4a94109adb15225f",
+  "lean/MCore/FinalFail/MaterialProducerCalculus.lean": "cfaebd70e0ae7611dd0bb5b08fd048cabeac3566849a70bf6b57bd7de88a8384",
+  "lean/MCore/FinalFail/Semantic/BSD.lean": "be66d8c211db7a78d648b1d4be0a27f54fdd969e305640e8a401abb80c507668",
+  "lean/MCore/FinalFail/Semantic/Beal.lean": "7461d91a196c5d7a61ba7f3fabce0947d529902426ec1e96cab2994b97f787a0",
+  "lean/MCore/FinalFail/Semantic/Hodge.lean": "c82ec2d0082ec5c801c4f2937246e831021f00ef8dec5cc7059628a9df7b4d03",
+  "lean/MCore/FinalFail/Semantic/NavierStokes.lean": "d5cb2e2d3bf4e3be8816d020852bed1bca3920e9365bc37246b84421824f2905",
+  "lean/MCore/FinalFail/Semantic/PvsNP.lean": "d9e1c3abda3fa56fc38b15a4d79b925e274bdc8bd4a5a0db10156208bfbe656b",
+  "lean/MCore/FinalFail/Semantic/Riemann.lean": "3e27a82494ef344bf6017275345cd6d8af1e2f2ab3c34f7d684d5c6dfc26370e",
+  "lean/MCore/FinalFail/Semantic/YangMills.lean": "46576c47f06fef4d4fe52a6812097bf72a3127d18af23effc2107da7615e301c",
+  "lean/MCore/FinalFail/SemanticParallel.lean": "4666459c91dfd15a983a51731e128256f2abb127c504bd46fc9b28ff64c03b18",
+  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d"
+ },
+ "published_at": "2026-11-05T17:43:21Z",
+ "certificate_sha256": "5731c845abdc84d98708538b5472a6f2aab097db95e94f91794e19149e565784"
+}

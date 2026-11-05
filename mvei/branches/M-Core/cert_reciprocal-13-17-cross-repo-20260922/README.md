@@ -5,7 +5,7 @@ Lean sources from the branch `cert/reciprocal-13-17-cross-repo-20260922` of the 
 * Branch state: parada (not in the default branch).
 * Theorems only on branches, in this branch: 7 — closed 7, conditional 0, open 0, proof error 0, not reached 0, no result 0.
 * History: 23 commit(s) of this branch that are not in the default branch, with date and subject, in `certificate.json`.
-* `certificate.json` (SHA-256 of its content: `82015ebde63d614351e5db1edd8071b3ebe1ed572c42535107687ef1a50e0a13`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/cert_reciprocal-13-17-cross-repo-20260922/SOURCES.sha256`.
+* `certificate.json` (SHA-256 of its content: `5be8cd1e03f9564f858193daac395ce9264794bb703751fa8c88b1f0576c5bdf`) lists every theorem with its state and the axioms beyond the standard three, and the SHA-256 of every published file. From the repository root: `sha256sum -c mvei/branches/M-Core/cert_reciprocal-13-17-cross-repo-20260922/SOURCES.sha256`.
 
 Closed means the kernel accepted the proof and it depends only on `propext`, `Classical.choice` and `Quot.sound`; it proves the statement written in the file and is not a claim that an open problem is solved.
 

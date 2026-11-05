@@ -1,0 +1,183 @@
+{
+ "type": "MVEI kernel certificate for a branch",
+ "source_repository": "ShantiDraconis/M-Core",
+ "branch": "attack/multistate-signature-20260926",
+ "branch_state": "parada",
+ "head_commit": "3e72b4d71370944f021b8209b9f8f4fa8ce5d09a",
+ "head_commit_date": "2026-09-27T00:14:46+01:00",
+ "history_not_on_default_branch": [
+  {
+   "commit": "3e72b4d71370944f021b8209b9f8f4fa8ce5d09a",
+   "date": "2026-09-27T00:14:46+01:00",
+   "subject": "ci(mcore): isolate structural logic certification scope"
+  },
+  {
+   "commit": "6be42b0a34955e72b7d18cb69213cc2ad77abfa7",
+   "date": "2026-09-27T00:14:27+01:00",
+   "subject": "fix(mcore): minimize structural evidence theorem to certified seven-problem core"
+  },
+  {
+   "commit": "9f445dd5c83aa1c581ddd5283100b8e568052e12",
+   "date": "2026-09-26T23:57:02+01:00",
+   "subject": "ci(mcore): gate universal collapse theorem"
+  },
+  {
+   "commit": "f69fe4294dcba90ec34dc031cc20891d4397e645",
+   "date": "2026-09-26T23:56:55+01:00",
+   "subject": "feat(mcore): isolate exact universal collapse law over all terminal cores"
+  },
+  {
+   "commit": "ef07eaf4374c737f963065ec2d99756575bc0012",
+   "date": "2026-09-26T23:52:20+01:00",
+   "subject": "ci(mcore): gate cross-problem multistate evidence theorem"
+  },
+  {
+   "commit": "15108f8689f8588c69e62ec54333ac871e0ad91f",
+   "date": "2026-09-26T23:52:11+01:00",
+   "subject": "feat(mcore): cross problem multistate structure with existing signature evidence"
+  },
+  {
+   "commit": "61d1ac802ed0001428b71ccf1d4c74719c5b133a",
+   "date": "2026-09-26T23:49:29+01:00",
+   "subject": "fix(mcore): simplify distinct manifestation proof"
+  },
+  {
+   "commit": "6b842e97eea656068783f426099976cc07634508",
+   "date": "2026-09-26T23:48:37+01:00",
+   "subject": "fix(mcore): separate universal multistate number from problem manifestations"
+  },
+  {
+   "commit": "0faa379fe76b7a67c0aad3306b0e0ccde91e5677",
+   "date": "2026-09-26T23:47:20+01:00",
+   "subject": "ci(mcore): gate universal multistate signature theorem"
+  },
+  {
+   "commit": "b258025c0c008b9b22ef74ae2236dfe091a8fe1e",
+   "date": "2026-09-26T23:47:00+01:00",
+   "subject": "feat(mcore): formalize invariant multistate problem signature number"
+  }
+ ],
+ "verification": {
+  "generated_at": "2026-11-05T15:19:16+00:00",
+  "lean": [
+   "leanprover/lean4:v4.19.0"
+  ],
+  "checker": "Lean 4 kernel; axioms read with Lean.collectAxioms (#print axioms)",
+  "standard_axioms": [
+   "Classical.choice",
+   "Quot.sound",
+   "propext"
+  ]
+ },
+ "theorems_only_on_branches": [
+  {
+   "name": "MCore.MultistateSignature.distinct_problems_have_distinct_signatures",
+   "file": "lean/MCore/MultistateSignature.lean",
+   "line": 59,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "{p q : ProblemId} (hpq : p ≠ q) (st : ClosureStage) : (manifest p st).signature ≠ (manifest q st).signature"
+  },
+  {
+   "name": "MCore.MultistateSignature.manifestation_signature",
+   "file": "lean/MCore/MultistateSignature.lean",
+   "line": 45,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : ProblemId) (st : ClosureStage) : (manifest p st).signature = signatureOf p"
+  },
+  {
+   "name": "MCore.MultistateSignature.problem_realizes_three_state_structure",
+   "file": "lean/MCore/MultistateSignature.lean",
+   "line": 52,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : ProblemId) : (manifest p .c0).number = 0 ∧ (manifest p .open).number = 1 ∧ (manifest p .c2).number = 2"
+  },
+  {
+   "name": "MCore.MultistateSignature.same_structural_number",
+   "file": "lean/MCore/MultistateSignature.lean",
+   "line": 39,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p q : ProblemId) (st : ClosureStage) : (manifest p st).number = (manifest q st).number"
+  },
+  {
+   "name": "MCore.MultistateSignature.universal_multistate_manifestation",
+   "file": "lean/MCore/MultistateSignature.lean",
+   "line": 69,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ∀ p : ProblemId, (manifest p .c0).number = 0 ∧ (manifest p .open).number = 1 ∧ (manifest p .c2).number = 2 ∧ (∀ st : ClosureStage, (manifest p st).signature = signatureOf p)"
+  },
+  {
+   "name": "MCore.UniversalCollapse.structural_evidence_is_classification_only",
+   "file": "lean/MCore/UniversalCollapse.lean",
+   "line": 28,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : ProblemId) : (realize p .start).number = 0 ∧ (realize p .obstruction).number = 1 ∧ (realize p .terminal).number = 2 ∧ (realize p .terminal).obstruction = obstructionOf p"
+  },
+  {
+   "name": "MCore.UniversalCollapse.universal_collapse_closes_all",
+   "file": "lean/MCore/UniversalCollapse.lean",
+   "line": 20,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(F : NucleusFamily) (hU : UniversalCollapseLaw F) : ∀ p : ProblemId, (F.nucleus p).Endpoint"
+  },
+  {
+   "name": "MCore.UniversalCollapse.universal_collapse_exact",
+   "file": "lean/MCore/UniversalCollapse.lean",
+   "line": 38,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(F : NucleusFamily) : UniversalCollapseLaw F ↔ (∀ p : ProblemId, (F.nucleus p).Core)"
+  },
+  {
+   "name": "MCore.UniversalMultistateEvidence.common_three_state_skeleton",
+   "file": "lean/MCore/UniversalMultistateEvidence.lean",
+   "line": 60,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : ProblemId) : (realize p .start).number = 0 ∧ (realize p .obstruction).number = 1 ∧ (realize p .terminal).number = 2"
+  },
+  {
+   "name": "MCore.UniversalMultistateEvidence.realization_preserves_existing_obstruction",
+   "file": "lean/MCore/UniversalMultistateEvidence.lean",
+   "line": 71,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p : ProblemId) (s : StructuralState) : (realize p s).signature.obstruction = match (realize p s).obstruction with | .primitiveSolution => .primitive | .signedTransferDefect => .transfer | .nonAlgebraicHodgeClass => .algebraicity | .polynomialSATDecider => .complexity | .rankMismatch => .rank | .nonzeroDNLimit => .residue | .nonpositiveSpectralGap => .spectral"
+  },
+  {
+   "name": "MCore.UniversalMultistateEvidence.same_number_different_problem",
+   "file": "lean/MCore/UniversalMultistateEvidence.lean",
+   "line": 66,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": "(p q : ProblemId) (s : StructuralState) : (realize p s).number = (realize q s).number"
+  },
+  {
+   "name": "MCore.UniversalMultistateEvidence.universal_structure_distinct_manifestations",
+   "file": "lean/MCore/UniversalMultistateEvidence.lean",
+   "line": 84,
+   "state": "fechado",
+   "axioms_beyond_standard": [],
+   "statement": ": ∀ p : ProblemId, (realize p .start).number = 0 ∧ (realize p .obstruction).number = 1 ∧ (realize p .terminal).number = 2 ∧ (realize p .terminal).kind = manifestationOf p ∧ (realize p .terminal).signature = signatureOf p ∧ (realize p .terminal).obstruction = obstructionOf p"
+  }
+ ],
+ "closed": 12,
+ "files_sha256": {
+  "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lean/MCore/FinalFail/ProblemSignature.lean": "c57e384bdb589cf5630daa0ab92b2ee38ad0ccde87196d99c227c7d94577b736",
+  "lean/MCore/FinalFail/SevenLocalNuclei.lean": "50df3ee014e1d7c0800d1fadb89cb8b25235cd4666eca5a6a3f7d03b79ce2e01",
+  "lean/MCore/FinalFail/SevenProblemSignatures.lean": "bfeed1d2791b9f4d1e1a2877bd1209a80fefa27b317085fccd81d20fa6b47812",
+  "lean/MCore/MultistateSignature.lean": "78469468e569e7997bf96031f9cee3033ba384a60adb49dae787703a301101d0",
+  "lean/MCore/UniversalCollapse.lean": "3632628679a97ee92f23859cb41dbb3e9fc3f7dfdb1c9c63fd4b2ef7e55d9d13",
+  "lean/MCore/UniversalMultistateEvidence.lean": "6ac01be0dfa0a546173e38df74e3fcdad0b8bfa77254dc006970c3ed59bce9fb"
+ },
+ "published_at": "2026-11-05T17:43:15Z",
+ "certificate_sha256": "0fdb2de15a6a84380a4f286433ae76277c3705443ae185cce0f342e884597e8a"
+}

@@ -158,7 +158,7 @@
   }
  ],
  "verification": {
-  "generated_at": "2026-11-03T08:19:01+00:00",
+  "generated_at": "2026-11-05T15:19:16+00:00",
   "lean": [
    "leanprover/lean4:v4.19.0"
   ],
@@ -182,7 +182,7 @@
    "name": "MCore.FinalProof.ProducerReduction.comp_map",
    "file": "lean/MCore/ProducerCalculus.lean",
    "line": 28,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{A : Type u} {B : Type v} {C : Type w} (g : ProducerReduction B C) (f : ProducerReduction A B) (a : A) : (comp g f).map a = g.map (f.map a)"
   },
@@ -190,7 +190,7 @@
    "name": "MCore.FinalProof.ProducerReduction.id_map",
    "file": "lean/MCore/ProducerCalculus.lean",
    "line": 25,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(A : Type u) (a : A) : (id A).map a = a"
   },
@@ -198,7 +198,7 @@
    "name": "MCore.FinalProof.ProducerReduction.nonempty_forward",
    "file": "lean/MCore/ProducerCalculus.lean",
    "line": 34,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{A : Type u} {B : Type v} (f : ProducerReduction A B) (h : Nonempty A) : Nonempty B"
   },
@@ -206,7 +206,7 @@
    "name": "MCore.FinalProof.TerminalLane.closed_of_upstream",
    "file": "lean/MCore/ProducerCalculus.lean",
    "line": 89,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(L : TerminalLane) {A : Type u} (r : ProducerReduction A L.Producer) (hA : Nonempty A) : L.Closed"
   },
@@ -222,7 +222,7 @@
    "name": "MCore.FinalProof.TerminalLane.target_of_reduction_chain",
    "file": "lean/MCore/ProducerCalculus.lean",
    "line": 98,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(L : TerminalLane) {A : Type u} {B : Type v} (ab : ProducerReduction A B) (bp : ProducerReduction B L.Producer) (hA : Nonempty A) : L.Target"
   },
@@ -230,7 +230,7 @@
    "name": "MCore.FinalProof.conditional_constructor_closes",
    "file": "lean/MCore/ProducerCalculus.lean",
    "line": 139,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{A : Type u} {P : Prop} (f : A → P) (hA : Nonempty A) : P"
   },
@@ -254,7 +254,7 @@
    "name": "MCore.FinalProof.neutralWrapper_nonempty_iff",
    "file": "lean/MCore/ProducerCalculus.lean",
    "line": 63,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{A : Type u} {W : Type v} (N : NeutralWrapper A W) : Nonempty W ↔ Nonempty A"
   },
@@ -262,7 +262,7 @@
    "name": "MCore.FinalProof.no_universal_conditional_promotion",
    "file": "lean/MCore/ProducerCalculus.lean",
    "line": 127,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": ": ¬ (∀ (A : Type) (P : Prop), Nonempty (A → P) → P)"
   },
@@ -270,7 +270,7 @@
    "name": "MCore.FinalProof.producerEquiv_nonempty_iff",
    "file": "lean/MCore/ProducerCalculus.lean",
    "line": 48,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{A : Type u} {B : Type v} (e : ProducerEquiv A B) : Nonempty A ↔ Nonempty B"
   },
@@ -278,7 +278,7 @@
    "name": "MCore.FinalProof.product_nonempty_iff",
    "file": "lean/MCore/ProducerCalculus.lean",
    "line": 81,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "{A : Type u} {B : Type v} : Nonempty (A × B) ↔ Nonempty A ∧ Nonempty B"
   },
@@ -286,7 +286,7 @@
    "name": "MCore.FinalProof.proposition_equivalence_conserves_wrapper",
    "file": "lean/MCore/ProducerCalculus.lean",
    "line": 148,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(P Q : Prop) (e : P ↔ Q) : Nonempty (EquivalentWrapper P) ↔ Nonempty (EquivalentWrapper Q)"
   },
@@ -294,7 +294,7 @@
    "name": "MCore.FinalProof.universal_closure_from_reductions",
    "file": "lean/MCore/ProducerCalculus.lean",
    "line": 112,
-   "state": "nao_alcancado",
+   "state": "fechado",
    "axioms_beyond_standard": [],
    "statement": "(S : SevenLaneSystem) (Upstream : Fin 7 → Type u) (reduce : ∀ i : Fin 7, ProducerReduction (Upstream i) (S.lane i).Producer) (inhabited : ∀ i : Fin 7, Nonempty (Upstream i)) : S.FinalRoot"
   },
@@ -323,7 +323,7 @@
    "statement": "(P : Prop) : P ↔ Nonempty (EquivalentWrapper P)"
   }
  ],
- "closed": 7,
+ "closed": 19,
  "files_sha256": {
   "lakefile.lean": "d453e9ad2bff22b6fae33e09b3771a25798cebf8872f4b6fd5416ce9feea174e",
   "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
@@ -342,8 +342,9 @@
   "lean/MCore/FinalFail/SevenLocalNuclei.lean": "79fc27dc336362b4b164e1457f92d5ae670f7d765c9e479ca451f5c8ce346f7d",
   "lean/MCore/FinalProofFirewall.lean": "8cf5f5e22b5267c18c9ffc4ad3c89f5c0eba66546c046b207849b052d0f15f8f",
   "lean/MCore/FinalProofRegistry.lean": "e26a7bdfd809f8e4c7e95ebef0da17c5a7f238287eadc1088cbdaada2a048c43",
+  "lean/MCore/ProducerCalculus.lean": "22d23959390e864e054e853899ea6e7240054cd0e6ec68d8c0999b97bd5109c6",
   "lean/MCore/UniversalTerminalClosure.lean": "d3b880f903a9958342387d9bf7a4d96af623d769cfd1f3a0eaff63d5ac42dbfb"
  },
- "published_at": "2026-11-03T11:28:18Z",
- "certificate_sha256": "3cea00b71d77345274cf05af813e7a09fcd26f41cbecdb289161238414e4f21c"
+ "published_at": "2026-11-05T17:43:15Z",
+ "certificate_sha256": "291ee4352a6408960dcb81d108d6b2be7a901649eb3ee3f35cfca44994569e5e"
 }
