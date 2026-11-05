@@ -10,6 +10,10 @@ Related publication: https://doi.org/10.5281/zenodo.15164501 (historical publica
 
 Do not add confidential data or third-party code without checking its license and attribution.
 
+## License
+
+The author's content is licensed under the [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0) (see [`LICENSE`](LICENSE)): free for noncommercial use (study, research, teaching, checking the proofs) with the Required Notice; commercial use needs a separate license from the author. Third-party code (for example `ATK/FltRegular/`), Lean and Mathlib keep their own licenses. Cite with [`CITATION.cff`](CITATION.cff).
+
 <!-- mvei:start -->
 ## Lean sources and kernel check (MVEI)
 

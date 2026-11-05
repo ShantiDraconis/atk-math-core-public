@@ -1,0 +1,29 @@
+Copyright (c) 2026 Tiago Paschoalatto Fagliari (ShantiDraconis)
+ORCID: https://orcid.org/0009-0006-6874-3910
+
+SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+
+Except where noted below, all content of this repository authored by the copyright holder (including the
+Lean formalizations under imports/, branches/ and research/, and the records under mvei/, provenance/ and
+docs/) is licensed under the PolyForm Noncommercial License 1.0.0:
+
+    https://polyformproject.org/licenses/noncommercial/1.0.0
+
+Required Notice: Copyright (c) 2026 Tiago Paschoalatto Fagliari (ShantiDraconis)
+(https://github.com/ShantiDraconis/atk-math-core-public)
+
+Summary (the license text above governs): you may use, copy, modify and share this content for any
+noncommercial purpose, such as personal study, research, teaching and checking the proofs, as long as
+everyone who receives a copy also receives these terms (or their URL) and the Required Notice. Any
+commercial use needs a separate written license from the copyright holder (M-Core Research OS Commercial
+License); ask through https://github.com/ShantiDraconis.
+
+Not covered by this license (each keeps its own terms):
+- third-party code included so that the sources build, for example
+  imports/M-Core/atk-kernel/ATK/FltRegular/ (see its LICENSE and ORIGEM.md);
+- Lean 4, Mathlib and the other dependencies that Lake fetches;
+- the copies that the copyright holder has also published under CC0 1.0 in
+  ShantiDraconis/clay-riemann-proof, which remain available there under CC0.
+
+This license covers the text of the files. Mathematical statements and results are cited, not licensed:
+please cite this repository (CITATION.cff).
